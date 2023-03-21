@@ -17112,6 +17112,7 @@
         <members>LLC_BI__Treasury_Service__c.Treasury_Service_Layout</members>
         <members>Lead.Lead_Layout</members>
         <members>Opportunity.Opportunity_Layout</members>
+        <members>PersonAccount.Individual_Compact</members>
         <members>nFORCE__Screen_Section__c.Screen_Section_Layout</members>
         <name>CompactLayout</name>
     </types>
@@ -17180,6 +17181,7 @@
         <members>Account.EXUS__Business_Credit_Product__c</members>
         <members>Account.Estimated_Annual_Revenue__c</members>
         <members>Account.Fax</members>
+        <members>Account.Full_Legal_Name_Formula__c</members>
         <members>Account.Industry</members>
         <members>Account.Integration_Source__c</members>
         <members>Account.IsCustomerPortal</members>
@@ -17380,6 +17382,7 @@
         <members>Account.Tax_Id_Type__c</members>
         <members>Account.TickerSymbol</members>
         <members>Account.Tier</members>
+        <members>Account.Total_Relationship_Exposure__c</members>
         <members>Account.Total_Secured_Exposure__c</members>
         <members>Account.Type</members>
         <members>Account.UnsupportedBusiness__c</members>
