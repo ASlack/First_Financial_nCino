@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__HMDA_Purchaser_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>--DEPRECATED--This field is optional unless the loan requires HMDA, then it is required. It is manually populated. This field indicates the type of entity that purchased the loan.</description>
+    <externalId>false</externalId>
+    <label>-D Type of Purchase</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Code 0—Loan was not originated or was not sold in calendar year covered by register</fullName>
+                <default>false</default>
+                <label>Code 0—Loan was not originated or was not sold in calendar year covered by register</label>
+            </value>
+            <value>
+                <fullName>Code 1—Fannie Mae (FNMA)</fullName>
+                <default>false</default>
+                <label>Code 1—Fannie Mae (FNMA)</label>
+            </value>
+            <value>
+                <fullName>Code 2—Ginnie Mae (GNMA)</fullName>
+                <default>false</default>
+                <label>Code 2—Ginnie Mae (GNMA)</label>
+            </value>
+            <value>
+                <fullName>Code 3—Freddie Mac (FHLMC)</fullName>
+                <default>false</default>
+                <label>Code 3—Freddie Mac (FHLMC)</label>
+            </value>
+            <value>
+                <fullName>Code 4—Farmer Mac (FAMC)</fullName>
+                <default>false</default>
+                <label>Code 4—Farmer Mac (FAMC)</label>
+            </value>
+            <value>
+                <fullName>Code 5—Private securitization</fullName>
+                <default>false</default>
+                <label>Code 5—Private securitization</label>
+            </value>
+            <value>
+                <fullName>Code 6—Commercial bank, savings bank, or savings association</fullName>
+                <default>false</default>
+                <label>Code 6—Commercial bank, savings bank, or savings association</label>
+            </value>
+            <value>
+                <fullName>Code 7—Life insurance company, credit union, mortgage bank, or finance company</fullName>
+                <default>false</default>
+                <label>Code 7—Life insurance company, credit union, mortgage bank, or finance company</label>
+            </value>
+            <value>
+                <fullName>Code 8—Affiliate institution</fullName>
+                <default>false</default>
+                <label>Code 8—Affiliate institution</label>
+            </value>
+            <value>
+                <fullName>Code 9—Other type of purchaser</fullName>
+                <default>false</default>
+                <label>Code 9—Other type of purchaser</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

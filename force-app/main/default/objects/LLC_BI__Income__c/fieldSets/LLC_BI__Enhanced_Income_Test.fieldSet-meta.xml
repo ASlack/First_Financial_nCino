@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Enhanced_Income_Test</fullName>
+    <description>(Test) A sample income fieldset for testing purposes.</description>
+    <displayedFields>
+        <field>LLC_BI__Business_Name__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Enhanced Income Test</label>
+</FieldSet>

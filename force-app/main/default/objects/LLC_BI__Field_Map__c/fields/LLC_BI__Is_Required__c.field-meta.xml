@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Is_Required__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The system administrator populates this checkbox field to indicate that the data service must provide the defined field from the source object when mapping. By default, this field is deselected.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select this option to ensure the given field is provided from the source object.</inlineHelpText>
+    <label>Is Required</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

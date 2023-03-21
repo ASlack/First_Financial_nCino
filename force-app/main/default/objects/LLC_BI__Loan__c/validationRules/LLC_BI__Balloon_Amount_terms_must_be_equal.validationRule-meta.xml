@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Balloon_Amount_terms_must_be_equal</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(LLC_BI__Balloon__c = true, ISPICKVAL(LLC_BI__Balloon_Product_Structure__c, &apos;Balloon Amount&apos;), BLANKVALUE(LLC_BI__Amortized_Term_Months__c, 0) != BLANKVALUE(LLC_BI__Term_Months__c, 0))</errorConditionFormula>
+    <errorMessage>Loan Term and Amortized Term must have the same value.</errorMessage>
+</ValidationRule>

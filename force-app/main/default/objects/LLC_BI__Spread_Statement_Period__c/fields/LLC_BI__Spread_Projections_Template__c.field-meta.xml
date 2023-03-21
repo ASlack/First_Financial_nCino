@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Spread_Projections_Template__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This required lookup field looks up to the Spread Projections Template object.</description>
+    <externalId>false</externalId>
+    <label>Spread Projections Template</label>
+    <referenceTo>LLC_BI__Spread_Projections_Template__c</referenceTo>
+    <relationshipLabel>Spread Statement Periods</relationshipLabel>
+    <relationshipName>Spread_Statement_Periods</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

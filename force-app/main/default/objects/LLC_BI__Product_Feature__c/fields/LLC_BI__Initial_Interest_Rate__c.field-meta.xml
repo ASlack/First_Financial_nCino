@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Initial_Interest_Rate__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field will be used for Expere Doc Prep, which has not yet been implemented. This field is not required. It is manually populated. It designates the initial interest rate on the account.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The initial interest rate on the account.</inlineHelpText>
+    <label>Initial Interest Rate</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>4</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Conditional_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The user populates this required picklist field with the conditional type that indicates the circumstances under which the business activity is called.  By default, this value is set to Success Conditional.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This system-populated field indicates the conditional type of the business activity.</inlineHelpText>
+    <label>Conditional Type</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Success Conditional</fullName>
+                <default>true</default>
+                <label>Success Conditional</label>
+            </value>
+            <value>
+                <fullName>Error Conditional</fullName>
+                <default>false</default>
+                <label>Error Conditional</label>
+            </value>
+            <value>
+                <fullName>Finalizer Success Conditional</fullName>
+                <default>false</default>
+                <label>Finalizer Success Conditional</label>
+            </value>
+            <value>
+                <fullName>Finalizer Error Conditional</fullName>
+                <default>false</default>
+                <label>Finalizer Error Conditional</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

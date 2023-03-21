@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFUSE__Timeout__c</fullName>
+    <defaultValue>3000</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The HTTP request timeout duration in milliseconds</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Timeout</label>
+    <precision>5</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

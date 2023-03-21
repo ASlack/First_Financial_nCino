@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__approvalDate__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional and represents a time stamp that lists the date/time that the document was approved.</description>
+    <externalId>false</externalId>
+    <label>Approval Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

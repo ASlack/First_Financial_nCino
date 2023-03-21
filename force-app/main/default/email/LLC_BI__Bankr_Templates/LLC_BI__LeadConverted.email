@@ -1,0 +1,3 @@
+"{!LLC_BI__Loan__c.Name}" with a relationship of "{!LLC_BI__Loan__c.LLC_BI__Account__c}" has just been converted from a lead.
+
+You can view the Loan Details here:  {!LLC_BI__Loan__c.Link}

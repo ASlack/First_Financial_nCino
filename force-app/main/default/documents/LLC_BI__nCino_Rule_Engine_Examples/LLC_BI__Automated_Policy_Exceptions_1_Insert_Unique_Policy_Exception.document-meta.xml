@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>An example implementation of a sub flow that checks for uniqueness of a Policy Exception before creating one.</description>
+    <internalUseOnly>false</internalUseOnly>
+    <name>Automated Policy Exceptions: 1 - Insert Unique Policy Exception</name>
+    <public>false</public>
+</Document>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Enable_Exclusion_2__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>When used in tandem with &quot;Is Default Filter&quot;, it also controls whether the Exclude toggles displays for the Product Package table. This field should have the same configuration across all statistic configurations that share an Exposure Type.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Administrators manually select this optional checkbox field. It controls whether excluded loans and debts should be removed from the exposure calculation.</inlineHelpText>
+    <label>Enable Exclusion 2</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

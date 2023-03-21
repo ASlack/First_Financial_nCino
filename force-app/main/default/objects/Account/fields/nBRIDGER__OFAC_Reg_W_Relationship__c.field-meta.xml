@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nBRIDGER__OFAC_Reg_W_Relationship__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Indicates that this relationship has an OFAC Watchlist Match.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates that this relationship has an OFAC Watchlist Match.</inlineHelpText>
+    <label>OFAC Reg W</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

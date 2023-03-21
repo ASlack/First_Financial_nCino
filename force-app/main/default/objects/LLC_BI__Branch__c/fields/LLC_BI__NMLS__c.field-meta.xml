@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__NMLS__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Administrators populate this mandatory field to capture a financial institution&apos;s unique National Mortgage Licensing System (NMLS) branch number. By default, it is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the unique National Mortgage Licensing System (NMLS) number for the financial institution&apos;s branch.</inlineHelpText>
+    <label>NMLS</label>
+    <length>30</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

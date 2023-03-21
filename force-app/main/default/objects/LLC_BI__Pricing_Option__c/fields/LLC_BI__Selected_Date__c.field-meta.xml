@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Selected_Date__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is automatically populated with the date and time that a Pricing Option record was selected and applied to a loan.</description>
+    <externalId>false</externalId>
+    <label>Selected Date</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

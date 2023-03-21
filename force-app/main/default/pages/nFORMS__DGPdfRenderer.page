@@ -1,0 +1,13 @@
+<apex:page controller="nFORMS.DGPdfRendererController"
+	action="{!saveMetadataToWorkflow}"
+	docType="html-5.0"
+	sidebar="false"
+	showHeader="false"
+	renderAs="pdf"
+>
+	<apex:stylesheet value="{!URLFOR($Resource.nFORMS__html_templating, '/skins/ui/oxide/content.min.css')}"/>
+	<apex:stylesheet value="{!URLFOR($Resource.nFORMS__html_templating, '/skins/content/default/content.min.css')}"/>
+	<main>
+		<apex:outputText value="{!processedFormMarkup}" escape="false" />
+	</main>
+</apex:page>

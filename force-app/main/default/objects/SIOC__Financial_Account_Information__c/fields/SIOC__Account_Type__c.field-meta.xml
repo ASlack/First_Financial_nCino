@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SIOC__Account_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this text field to indicate the type of the account.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The system-populated field displays the type of the account.</inlineHelpText>
+    <label>Account Type</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCOC__Date_Paid__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this optional date field to provide the date that the liability was paid as indicated in the integration response. There is no default. If not included in the response the field remains blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This system-populated field displays the date that the liability was paid as indicated in the integration response.</inlineHelpText>
+    <label>Date Paid</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

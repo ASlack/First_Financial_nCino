@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label></label>
+        <name>LLC_BI__Clone_External_Fields</name>
+    </fieldSets>
+    <sharingReasons>
+        <label></label>
+        <name>LLC_BI__Enhanced_DocMan_Sharing</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label></label>
+        <name>NDOC__Enhanced_DocMan_Sharing</name>
+    </sharingReasons>
+</CustomObjectTranslation>

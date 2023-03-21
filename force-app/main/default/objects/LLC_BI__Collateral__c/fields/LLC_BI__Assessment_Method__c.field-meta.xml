@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Assessment_Method__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional and manually populated. Use it to specify the method by which the collateral has been assessed.</description>
+    <externalId>false</externalId>
+    <label>Assessment Method</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Appraisal</fullName>
+                <default>false</default>
+                <label>Appraisal</label>
+            </value>
+            <value>
+                <fullName>Net Book Value</fullName>
+                <default>false</default>
+                <label>Net Book Value</label>
+            </value>
+            <value>
+                <fullName>Property Tax Assessment</fullName>
+                <default>false</default>
+                <label>Property Tax Assessment</label>
+            </value>
+            <value>
+                <fullName>Internal Valuation</fullName>
+                <default>false</default>
+                <label>Internal Valuation</label>
+            </value>
+            <value>
+                <fullName>Sales Invoice</fullName>
+                <default>false</default>
+                <label>Sales Invoice</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

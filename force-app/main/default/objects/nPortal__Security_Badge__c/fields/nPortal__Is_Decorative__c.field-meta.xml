@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nPortal__Is_Decorative__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Administrators populate this checkbox field to indicate if the screen reader reads off the security badge.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select this field to hide the security badge from the screen reader.</inlineHelpText>
+    <label>Is Decorative</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

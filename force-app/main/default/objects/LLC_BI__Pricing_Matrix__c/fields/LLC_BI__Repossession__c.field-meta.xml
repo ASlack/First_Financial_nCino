@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Repossession__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The user selects this checkbox field to indicate the applicant&apos;s credit report contains a repossession tradeline history. By default, this field is deselected.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select this field to indicate an applicant&apos;s credit report contains a repossession tradeline history.</inlineHelpText>
+    <label>Repossession</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

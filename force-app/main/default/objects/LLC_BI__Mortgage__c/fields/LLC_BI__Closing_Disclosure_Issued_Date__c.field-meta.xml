@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Closing_Disclosure_Issued_Date__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The user manually populates this field with the date the Closing Disclosure is delivered to the applicant.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the date the Closing Disclosure is delivered to the applicant.</inlineHelpText>
+    <label>Closing Disclosure Issued Date</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

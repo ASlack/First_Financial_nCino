@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Registration_Number__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Users populate this optional field to indicate the license plate or registration number of the vehicle.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the license plate or registration number of the vehicle.</inlineHelpText>
+    <label>Registration Number</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

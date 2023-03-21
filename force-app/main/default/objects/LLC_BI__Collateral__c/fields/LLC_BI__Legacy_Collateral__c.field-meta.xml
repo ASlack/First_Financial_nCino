@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Legacy_Collateral__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field links to the legacy collateral record after being migrated to the new collateral structure. It is auto-populated.</description>
+    <externalId>false</externalId>
+    <label>Legacy Collateral</label>
+    <referenceTo>LLC_BI__Loan_Collateral__c</referenceTo>
+    <relationshipLabel>Legacy Collateral</relationshipLabel>
+    <relationshipName>Legacy_Collateral</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

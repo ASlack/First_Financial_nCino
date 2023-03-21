@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Spread__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is manually populated. It indicates the interest spread applied to a variable rate index for a Pricing Rate Component record.</description>
+    <externalId>false</externalId>
+    <label>Spread</label>
+    <precision>11</precision>
+    <required>false</required>
+    <scale>8</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

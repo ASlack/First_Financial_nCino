@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Conditional_Question__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field is required. It is manually populated. This field is used to set which question to render when the option matches.</description>
+    <externalId>false</externalId>
+    <label>Conditional_Question</label>
+    <referenceTo>nFORCE__Question__c</referenceTo>
+    <relationshipLabel>Option Rules (Conditional_Question)</relationshipLabel>
+    <relationshipName>Conditional_Question</relationshipName>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

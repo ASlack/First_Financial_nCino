@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__UI_Setup_for_Direct_File_Tansfer</fullName>
+    <description>UI - TM Form Wizard</description>
+    <displayedFields>
+        <field>LLC_BI__Online_Banking_Service__r.LLC_BI__Automated_Scheduling_Software__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>LLC_BI__Online_Banking_Service__r.LLC_BI__Scheduling_Software_Description__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>LLC_BI__Online_Banking_Service__r.LLC_BI__Communication_Setup__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>UI Setup for Direct File Tansfer</label>
+</FieldSet>

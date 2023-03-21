@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Loan_Modification_Sent__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This checkbox is used to specify whether the loan modification has been sent for approval. If the box is checked, the loan modification has been sent. This field is automatically populated when the loan modification record is submitted for approval.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check this box when the loan modification has been sent</inlineHelpText>
+    <label>Loan Modification Sent</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SIOC__Primary_Entity__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this checkbox field to indicate that the entity started the application.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This system-populated field selects this checkbox when the entity starts the application.</inlineHelpText>
+    <label>Primary Entity</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

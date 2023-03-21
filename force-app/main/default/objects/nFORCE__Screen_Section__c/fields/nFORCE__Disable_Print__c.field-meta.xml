@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Disable_Print__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is optional. The admin manually populates this field. This field is not used if &quot;nFORCE__Disable_Print__c&quot; is enabled on nFORCE__Screen__c. Otherwise, when this field is enabled, screen sections are not printed. If disabled, the screen section prints if it is expanded at the time the admin prints. By default, this is disabled.</description>
+    <externalId>false</externalId>
+    <label>Disable Print</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

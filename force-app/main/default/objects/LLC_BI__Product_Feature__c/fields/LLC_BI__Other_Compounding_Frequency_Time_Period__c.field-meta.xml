@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Other_Compounding_Frequency_Time_Period__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This is the number of periods (without units) used for the compounding frequency when the type &quot;Other&quot; was selected for the compounding frequency. For example, &quot;6&quot; for a 6 month, or &quot;1&quot; for 1 Year. This will be used when calculating the IRA financial disclosure as well as included on the certificate of deposit.</description>
+    <externalId>false</externalId>
+    <label>Other Compounding Frequency Time Period</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

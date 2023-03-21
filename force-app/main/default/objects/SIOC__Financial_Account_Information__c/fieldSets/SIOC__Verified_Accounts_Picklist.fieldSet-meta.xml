@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SIOC__Verified_Accounts_Picklist</fullName>
+    <description>The system displays the fields in the field set as previously verified account picklist options on the From Account field on the Fund Account route.</description>
+    <displayedFields>
+        <field>SIOC__Account_Name__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>SIOC__Account_Number_Truncated__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>LastModifiedDate</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Verified Accounts Picklist</label>
+</FieldSet>

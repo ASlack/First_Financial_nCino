@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Validation_Service__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this optional text field to provide the name of a cross-package validation service for custom validation on a screen section. By default, it is null.</description>
+    <externalId>false</externalId>
+    <label>Validation Service</label>
+    <length>80</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

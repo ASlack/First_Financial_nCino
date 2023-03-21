@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Is_Race_Collected_Visually__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this checkbox field to indicate the applicant has declined to provide their race and the loan officer has collected race information on the basis of visual observation or surname. By default, this field is deselected.</description>
+    <externalId>false</externalId>
+    <formula>IF(
+        ISPICKVAL(LLC_BI__HMDA_Race_Collected__c, &apos;1&apos;),
+        IF(
+        OR(
+        INCLUDES(LLC_BI__HMDA_Race__c,&apos;1&apos;),
+        INCLUDES(LLC_BI__HMDA_Race__c,&apos;2&apos;),
+        INCLUDES(LLC_BI__HMDA_Race__c,&apos;21&apos;),
+        INCLUDES(LLC_BI__HMDA_Race__c,&apos;22&apos;),
+        INCLUDES(LLC_BI__HMDA_Race__c,&apos;23&apos;),
+        INCLUDES(LLC_BI__HMDA_Race__c,&apos;24&apos;),
+        INCLUDES(LLC_BI__HMDA_Race__c,&apos;25&apos;),
+        INCLUDES(LLC_BI__HMDA_Race__c,&apos;26&apos;),
+        INCLUDES(LLC_BI__HMDA_Race__c,&apos;27&apos;),
+        INCLUDES(LLC_BI__HMDA_Race__c,&apos;3&apos;),
+        INCLUDES(LLC_BI__HMDA_Race__c,&apos;4&apos;),
+        INCLUDES(LLC_BI__HMDA_Race__c,&apos;41&apos;),
+        INCLUDES(LLC_BI__HMDA_Race__c,&apos;42&apos;),
+        INCLUDES(LLC_BI__HMDA_Race__c,&apos;43&apos;),
+        INCLUDES(LLC_BI__HMDA_Race__c,&apos;44&apos;),
+        INCLUDES(LLC_BI__HMDA_Race__c,&apos;5&apos;)
+        ),
+        true, false),
+        false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>This field indicates that the applicant declined to provide their race, but the loan officer collected this information on the basis of visual observation or surname.</inlineHelpText>
+    <label>Is Race Collected Visually</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Data_Snapshot__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this required field with the lookup to the snapshot record.</description>
+    <externalId>false</externalId>
+    <label>Snapshot</label>
+    <referenceTo>nFORCE__Data_Snapshot__c</referenceTo>
+    <relationshipName>Data_Snapshot</relationshipName>
+    <required>true</required>
+    <type>Lookup</type>
+</CustomField>

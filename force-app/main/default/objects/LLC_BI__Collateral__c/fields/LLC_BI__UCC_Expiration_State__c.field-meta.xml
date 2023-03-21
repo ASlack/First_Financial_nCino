@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__UCC_Expiration_State__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional and manually populated. Use this field to specify the date in which the UCC filing in the state will expire. This is typically five years after it was initiated.</description>
+    <externalId>false</externalId>
+    <label>UCC Expiration (State)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

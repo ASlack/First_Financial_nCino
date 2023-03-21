@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SESOC__Document_Collection__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this lookup field to track the association to a document collection.</description>
+    <externalId>false</externalId>
+    <label>Document Collection</label>
+    <referenceTo>LLC_BI__Document_Collection__c</referenceTo>
+    <relationshipLabel>Packages</relationshipLabel>
+    <relationshipName>Packages</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

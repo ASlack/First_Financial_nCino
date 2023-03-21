@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCOC__CreditBureauResponse__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This required master-detail field contains the lookup key to the associated Credit Burearu Response.</description>
+    <externalId>false</externalId>
+    <label>Credit Bureau Response</label>
+    <referenceTo>SCOC__CreditBureauResponse__c</referenceTo>
+    <relationshipLabel>Credit Bureau Response Subscriber Ids</relationshipLabel>
+    <relationshipName>SubscriberIdList</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

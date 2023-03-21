@@ -1,0 +1,131 @@
+<apex:page standardController="Account" extensions="nFORCE.AddressAutoCompleteController">
+    <c:Include_NDS />
+    <apex:slds />
+    <c:Internationalize />
+    <!-- Should match apex:includeScript defined in <nFORCE:Include_jQuery /> -->
+    <apex:includeScript value="{!URLFOR($Resource.nFORCE__jquery, '/js/jquery.min.js')}"/>
+
+    <!-- Should match apex:includeScript defined in <nFORCE:Include_AngularJS /> -->
+    <apex:includeScript value="{!URLFOR($Resource.nFORCE__angularJS, '/angularJS/angular-1.8.7/angular.min.js')}"/>
+
+    <!-- Should match apex:includeScript & apex:stylesheet defined in <nFORCE:Include_Bootstrap /> -->
+    <apex:includeScript value="{!URLFOR($Resource.nFORCE__bootstrap, '/js/bootstrap.min.js')}"/>
+    <apex:stylesheet value="{!URLFOR($Resource.nFORCE__bootstrap, '/css/bootstrap-force.min.css')}"/>
+
+    <div class="slds slds-scope" ng-app="nds" ng-controller="ndsController as vm">
+        <div class="slds-grid">
+            <div class="slds-col slds-size_1-of-5">
+                <nav class="slds-nav-vertical" aria-label="Sub page">
+                    <div class="slds-nav-vertical__section">
+                        <h2 id="entity-header" class="slds-nav-vertical__title">Components</h2>
+                        <ul aria-describedby="entity-header">
+                            <li ng-repeat="component in vm.components" ng-class="vm.getNavigationClass(component)">
+                                <a href="#" class="slds-nav-vertical__action" aria-current="true" ng-click="vm.activeComponent = component">
+                                    {{component}}
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="slds-col slds-size_4-of-5">
+                <div class="slds-box slds-m-around_medium">
+                    <div id="address-input" ng-if="vm.activeComponent === 'Address Input'">
+                        <nds-input-address
+                            id="123"
+                            required="true"
+                            label="Address"
+                            address-label="Address"
+                            placeholder="Enter Address..."
+                            street="{{vm.address.street}}"
+                            street-label="Street"
+                            city="{{vm.address.city}}"
+                            city-label="City"
+                            province="{{vm.address.province}}"
+                            province-label="Province"
+                            postal-code="{{vm.address.postalCode}}"
+                            postal-code-label="Postal Code"
+                            country="{{vm.address.country}}"
+                            country-label="Country"
+                            google-maps-api-key="{!addressApiKey}"
+                            ng-on-address_change="vm.addressChanged($event)"
+                        ></nds-input-address>
+                    </div>
+                    <div id="currency-component" ng-if="vm.activeComponent === 'Currency Input'">
+                        <nds-input-currency
+                            value="{{vm.currencyInputControls.value}}"
+                            label="{{vm.currencyInputControls.label}}"
+                            iso-code="{{vm.currencyInputControls.isoCode}}"
+                        ></nds-input-currency>
+                        <nds-output-currency
+                            value="{{vm.currencyInputControls.value}}"
+                            label="Output"
+                            iso-code="{{vm.currencyInputControls.isoCode}}"
+                        ></nds-output-currency>
+                        <nds-input-text
+                            label="ISO Code"
+                            value="{{vm.currencyInputControls.isoCode}}"
+                            ng-on-value_change="vm.isoCodeChanged($event)"
+                        ></nds-input-text>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        (function (angular) {
+            'use strict';
+            angular.module('nds', [])
+                .controller('ndsController', ndsController);
+
+            function ndsController() {
+                var ctrl = this;
+                ctrl.showAddressInput = false;
+                ctrl.components = ['Address Input', 'Currency Input'];
+                ctrl.activeComponent = ctrl.components[0];
+
+                ctrl.currencyInputControls = {
+                    label: 'Test NDS Currency Input',
+                    value: 1234.56,
+                    locale: '',
+                    userCurrency: '',
+                    multiCurrencyEnabled: '',
+                    isoCode: ''
+                }
+
+                ctrl.googleKey = '';
+                ctrl.address = {
+                    street: '123 Derp Ln',
+                    city: 'Derpington',
+                    province: 'Derplantis',
+                    country: 'Derpandia',
+                    postalCode: '123derp'
+                }
+                ctrl.enteredKey = false;
+
+                ctrl.getNavigationClass = function(component) {
+                    let classes = 'slds-nav-vertical__item';
+                    if (component === ctrl.activeComponent) {
+                        classes += ' slds-is-active';
+                    }
+                    return classes;
+                }
+
+                ctrl.googleKeyChanged = function(event) {
+                    ctrl.googleKey = event.detail;
+                    if (ctrl.googleKey) {
+                        ctrl.enteredKey = true;
+                    }
+                }
+
+                ctrl.addressChanged = function(event) {
+                    ctrl.address = event.detail;
+                }
+
+                ctrl.isoCodeChanged  = function(event) {
+                    ctrl.currencyInputControls.isoCode = event.detail;
+                }
+            }
+        }(window.angular));
+    </script>
+</apex:page>

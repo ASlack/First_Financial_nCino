@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Zen_Insurance_Company__c</fullName>
+    <description>Dropdown list of Insurance Company names</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If the Insurance Company for this service is not in the dropdown list, please select &quot;Other&quot;.</inlineHelpText>
+    <label>Insurance Company</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>AIG Insurance</fullName>
+                <default>false</default>
+                <label>AIG Insurance</label>
+            </value>
+            <value>
+                <fullName>Chubb Insurance</fullName>
+                <default>false</default>
+                <label>Chubb Insurance</label>
+            </value>
+            <value>
+                <fullName>Guardian Insurance</fullName>
+                <default>false</default>
+                <label>Guardian Insurance</label>
+            </value>
+            <value>
+                <fullName>Liberty Mutual</fullName>
+                <default>false</default>
+                <label>Liberty Mutual</label>
+            </value>
+            <value>
+                <fullName>Lloyd&apos;s of London</fullName>
+                <default>false</default>
+                <label>Lloyd&apos;s of London</label>
+            </value>
+            <value>
+                <fullName>Mapfre Praico</fullName>
+                <default>false</default>
+                <label>Mapfre Praico</label>
+            </value>
+            <value>
+                <fullName>Multinational Insurance</fullName>
+                <default>false</default>
+                <label>Multinational Insurance</label>
+            </value>
+            <value>
+                <fullName>One Alliance</fullName>
+                <default>false</default>
+                <label>One Alliance</label>
+            </value>
+            <value>
+                <fullName>Optima Seguros</fullName>
+                <default>false</default>
+                <label>Optima Seguros</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Travelers Indemnity</fullName>
+                <default>false</default>
+                <label>Travelers Indemnity</label>
+            </value>
+            <value>
+                <fullName>Triple S</fullName>
+                <default>false</default>
+                <label>Triple S</label>
+            </value>
+            <value>
+                <fullName>United Surety</fullName>
+                <default>false</default>
+                <label>United Surety</label>
+            </value>
+            <value>
+                <fullName>Universal Insurance</fullName>
+                <default>false</default>
+                <label>Universal Insurance</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Screen_Section_Resource__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Name of the screen section resource type to be used for this route</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Which screen section resource should be used for this route?</inlineHelpText>
+    <label>Screen Section Resource</label>
+    <length>50</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

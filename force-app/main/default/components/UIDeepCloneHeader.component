@@ -1,0 +1,21 @@
+<apex:component allowDML="true" layout="none" controller="UserInterfaceDeepClone">
+
+    <apex:sectionHeader title="UI Management" subtitle="Clone UI Group" />
+
+    <!-- <apex:attribute name="groupId" type="Id" description="Id" assignTo="{!RecordId}" /> -->
+    <apex:attribute name="groupSFID" description="group id" type="string"/>
+    <apex:attribute name="groupName" description="group name" type="string"/>
+    <apex:attribute name="groupApp" description="group app" type="string"/>  
+    <apex:attribute name="groupLookupkey" description="group lookupkey" type="string"/>    
+    
+    <apex:pageBlock id="pgbk2" mode="detail">
+        <apex:pageBlockSection id="pgbk1_1" title="Original Group Information" columns="2">     
+            <apex:outputLabel value="Name: " style="font-weight:800;" /><apex:outputText value="{!groupName}" />
+            <apex:outputLabel value="App: " style="font-weight:800;" /><apex:outputText value="{!groupApp}" />
+            <apex:outputLabel value="lookupKey: " style="font-weight:800;" /><apex:outputText value="{!groupLookupkey}" />
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+    
+    <apex:pageMessages /> 
+
+</apex:component>

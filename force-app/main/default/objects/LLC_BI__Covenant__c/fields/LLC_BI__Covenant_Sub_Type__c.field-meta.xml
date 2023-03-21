@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Covenant_Sub_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Deprecated; use Covenant_Type_Reference__c</description>
+    <externalId>false</externalId>
+    <label>-D Covenant Sub Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>LLC_BI__Covenant_Type__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Tax Returns</fullName>
+                <default>false</default>
+                <label>Tax Returns</label>
+            </value>
+            <value>
+                <fullName>Personal Financial Statement</fullName>
+                <default>false</default>
+                <label>Personal Financial Statement</label>
+            </value>
+            <value>
+                <fullName>Business Financial Statement</fullName>
+                <default>false</default>
+                <label>Business Financial Statement</label>
+            </value>
+            <value>
+                <fullName>Lease Information</fullName>
+                <default>false</default>
+                <label>Lease Information</label>
+            </value>
+            <value>
+                <fullName>Debt Service Coverage of Borrower</fullName>
+                <default>false</default>
+                <label>Debt Service Coverage of Borrower</label>
+            </value>
+            <value>
+                <fullName>Debt Service Coverage with and without Distributions</fullName>
+                <default>false</default>
+                <label>Debt Service Coverage with and without Distributions</label>
+            </value>
+            <value>
+                <fullName>Global Debt Service Coverage</fullName>
+                <default>false</default>
+                <label>Global Debt Service Coverage</label>
+            </value>
+            <value>
+                <fullName>Minimum Working Capital Ratio</fullName>
+                <default>false</default>
+                <label>Minimum Working Capital Ratio</label>
+            </value>
+            <value>
+                <fullName>Maximum Debt to Worth</fullName>
+                <default>false</default>
+                <label>Maximum Debt to Worth</label>
+            </value>
+            <value>
+                <fullName>Accounts Payable</fullName>
+                <default>false</default>
+                <label>Accounts Payable</label>
+            </value>
+            <value>
+                <fullName>Key Man Life Insurance</fullName>
+                <default>false</default>
+                <label>Key Man Life Insurance</label>
+            </value>
+            <value>
+                <fullName>Maintain Accounts</fullName>
+                <default>false</default>
+                <label>Maintain Accounts</label>
+            </value>
+            <value>
+                <fullName>Minimum Liquidity</fullName>
+                <default>false</default>
+                <label>Minimum Liquidity</label>
+            </value>
+            <value>
+                <fullName>Limiting Compensation</fullName>
+                <default>false</default>
+                <label>Limiting Compensation</label>
+            </value>
+            <value>
+                <fullName>Minimum Working Capital</fullName>
+                <default>false</default>
+                <label>Minimum Working Capital</label>
+            </value>
+            <value>
+                <fullName>Minimum Current Ratio</fullName>
+                <default>false</default>
+                <label>Minimum Current Ratio</label>
+            </value>
+            <value>
+                <fullName>Minimum Times Interest Earned</fullName>
+                <default>false</default>
+                <label>Minimum Times Interest Earned</label>
+            </value>
+            <value>
+                <fullName>Fixed Asset Purchases</fullName>
+                <default>false</default>
+                <label>Fixed Asset Purchases</label>
+            </value>
+            <value>
+                <fullName>Collateral Insurance</fullName>
+                <default>false</default>
+                <label>Collateral Insurance</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Financial Statement Requirements</controllingFieldValue>
+            <valueName>Tax Returns</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Statement Requirements</controllingFieldValue>
+            <valueName>Personal Financial Statement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Statement Requirements</controllingFieldValue>
+            <valueName>Business Financial Statement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Statement Requirements</controllingFieldValue>
+            <valueName>Lease Information</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Indicators</controllingFieldValue>
+            <valueName>Debt Service Coverage of Borrower</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Indicators</controllingFieldValue>
+            <valueName>Debt Service Coverage with and without Distributions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Indicators</controllingFieldValue>
+            <valueName>Global Debt Service Coverage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Indicators</controllingFieldValue>
+            <valueName>Minimum Working Capital Ratio</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Indicators</controllingFieldValue>
+            <valueName>Maximum Debt to Worth</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Indicators</controllingFieldValue>
+            <valueName>Accounts Payable</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Indicators</controllingFieldValue>
+            <valueName>Minimum Liquidity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Indicators</controllingFieldValue>
+            <valueName>Limiting Compensation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Indicators</controllingFieldValue>
+            <valueName>Minimum Working Capital</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Indicators</controllingFieldValue>
+            <valueName>Minimum Current Ratio</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Indicators</controllingFieldValue>
+            <valueName>Minimum Times Interest Earned</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Indicators</controllingFieldValue>
+            <valueName>Fixed Asset Purchases</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Default Covenants</controllingFieldValue>
+            <valueName>Key Man Life Insurance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Default Covenants</controllingFieldValue>
+            <valueName>Maintain Accounts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Default Covenants</controllingFieldValue>
+            <valueName>Collateral Insurance</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Is_Conditional_Lookup__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this checkbox field if the field configuration is a conditional lookup. The value should not be manually altered.</description>
+    <externalId>false</externalId>
+    <label>Is Conditional Lookup</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

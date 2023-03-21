@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Order__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is required. The admin manually populates this field. It is the order of the question in relation to a questionnaire.</description>
+    <externalId>false</externalId>
+    <label>Order</label>
+    <precision>9</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

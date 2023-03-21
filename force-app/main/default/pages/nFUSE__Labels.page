@@ -1,0 +1,6 @@
+<apex:page >
+    <apex:outputLabel value="{!$Label.nFUSE__DocPrep_Click}" rendered="false"/>
+    <apex:outputLabel value="{!$Label.nFUSE__DocPrep_View_Documents}" rendered="false"/>
+    <apex:outputLabel value="{!$Label.nFUSE__DocPrep_Edit_Your_Documents}" rendered="false"/>
+
+</apex:page>

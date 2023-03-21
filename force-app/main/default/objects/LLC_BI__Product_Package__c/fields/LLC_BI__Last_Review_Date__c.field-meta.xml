@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Last_Review_Date__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is an optional date field. Only used if the customer will be initiating Reviews from the Product Package level. This field is used to show the date of the last review completed on the Product Package and its loans and relationships associated to those loans.</description>
+    <externalId>false</externalId>
+    <label>Last Review Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

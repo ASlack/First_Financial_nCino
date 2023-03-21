@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__HMDA_Preapproval_Requested__c</fullName>
+    <deprecated>false</deprecated>
+    <description>--DEPRECATED-- This field is optional unless the loan requires HMDA, then it is required. It is manually populated. This field indicates whether the transaction involved a pre-approval request for a home purchase loan under a pre-approval program.</description>
+    <externalId>false</externalId>
+    <label>-D Request for Preapproval</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Code 1—Preapproval requested</fullName>
+                <default>false</default>
+                <label>Code 1—Preapproval requested</label>
+            </value>
+            <value>
+                <fullName>Code 2—Preapproval not requested</fullName>
+                <default>false</default>
+                <label>Code 2—Preapproval not requested</label>
+            </value>
+            <value>
+                <fullName>Code 3—Not applicable</fullName>
+                <default>false</default>
+                <label>Code 3—Not applicable</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

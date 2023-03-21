@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Data_Source__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this field to associate the period to the data source that was referenced when this period was imported. For example, if a data source was imported via Data Recognition for Financial Statements, this field will be populated with the Data Recognition for Financial Statements data source. By default, it is blank.</description>
+    <externalId>false</externalId>
+    <label>Data Source</label>
+    <referenceTo>LLC_BI__Data_Source__c</referenceTo>
+    <relationshipLabel>Spread Statement Period</relationshipLabel>
+    <relationshipName>Spread_Statement_Period</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

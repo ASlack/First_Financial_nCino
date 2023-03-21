@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Proforma_Profitability_Top_Component</fullName>
+    <description>This packaged field set determines which fields display on the top component of the Proforma Profitability card.</description>
+    <displayedFields>
+        <field>LLC_BI__Relationship__r.RecordTypeId</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>LLC_BI__Relationship__r.ShippingCity</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Proforma Profitability Top Component</label>
+</FieldSet>

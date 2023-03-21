@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Rate_Change_Percent__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field will be used for Expere Doc Prep, which has not yet been implemented. This field is not required. It is manually populated. It is the amount by which a variable rate may change within the specified term.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The amount by which a variable rate may change within the specified term.</inlineHelpText>
+    <label>Rate Change Percent</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>4</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

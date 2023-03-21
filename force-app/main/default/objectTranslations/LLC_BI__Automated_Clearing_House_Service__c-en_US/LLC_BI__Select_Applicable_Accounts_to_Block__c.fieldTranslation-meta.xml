@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>LLC_BI__Select_Applicable_Accounts_to_Block__c</name>
+    <picklistValues>
+        <masterLabel>Populate from Deposit Object</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Test</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

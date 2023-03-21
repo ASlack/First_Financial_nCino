@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Is_Debit_Card__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This data indicates that the customer is requesting a debit card rather than an ATM card. By selecting this option, additional data is collected surrounding debit card names, policies and liability. This checkbox field must be selected if the product is a debit card. The field is configured when setting up available ancillary services.</description>
+    <externalId>false</externalId>
+    <label>Is Debit Card</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

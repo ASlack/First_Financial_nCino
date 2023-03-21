@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Field_Name__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is required. It is manually populated. This field uniquely identifies the statistic within the specified category. The value is populated from the LLC_BI__StatisticsConfiguration__c.LLC_BI__Field_Name__c associated with the LLC_BI__StatisticsConfiguration__c record that generated this statistic.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Name of statistic field</inlineHelpText>
+    <label>Field Name</label>
+    <length>255</length>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

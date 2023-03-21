@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Quantitative_Value__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is populated automatically whenever a quantitative value is entered for the parent risk grade factor in a risk grade worksheet.</description>
+    <externalId>false</externalId>
+    <label>Quantitative Value</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

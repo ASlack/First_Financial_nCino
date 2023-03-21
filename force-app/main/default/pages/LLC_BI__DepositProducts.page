@@ -1,0 +1,39 @@
+<apex:page standardController="LLC_BI__Deposit__c" extensions="LLC_BI.VF_ProductController">
+	
+	<apex:outputPanel rendered="{!IF(RelationshipName!=null,true,false)}">
+		<apex:sectionHeader title="Select Product for Customer" subtitle="Add New {!$Label.LLC_BI__DepositAdd} for {!RelationshipName}"/>
+	</apex:outputPanel>
+	
+	<apex:outputPanel rendered="{!IF(RelationshipName!=null,false,true)}">
+		<apex:sectionHeader title="Select Product for Customer" subtitle="Add New {!$Label.LLC_BI__DepositAdd}"/>
+	</apex:outputPanel>
+	
+	<apex:messages />
+	<apex:form >
+		<apex:pageBlock > 
+			<apex:pageBlockSection >
+	
+					<c:ProductCreator pageController="{!pageController}"												
+	                            	ProductNameLabel="Name for New {!$Label.LLC_BI__DepositAdd}" />
+		
+	      </apex:pageBlockSection>
+	      
+			<apex:commandButton action="{!createProductWrapper}"
+				value="Create New {!$Label.LLC_BI__DepositAdd}"
+				oncomplete="handleRedirect('{!HTMLENCODE(newObjectId)}', '{!HTMLENCODE(returnUrl)}', event)"/>
+			- <a href="javascript:history.back()">Cancel</a>
+
+		</apex:pageBlock>
+	</apex:form>
+
+	<script>
+		function handleRedirect(ret, retUrl) {
+			if (ret !== null && ret !== '') {
+				LifeCycle.Navigator.navigateToSObject(ret);
+			} else if (retUrl !== null && retUrl !== '' ) {
+				LifeCycle.Navigator.navigateToURL(retUrl);
+			}
+		}
+	</script>
+	
+</apex:page>

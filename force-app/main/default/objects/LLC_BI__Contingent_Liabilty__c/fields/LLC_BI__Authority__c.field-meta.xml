@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Authority__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This pick-list is used to specify whether the contact listed is &quot;Authorized&quot; or &quot;Not Authorized&quot; as a signer on the loan</description>
+    <externalId>false</externalId>
+    <label>Signing Authority</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Authorized</fullName>
+                <default>false</default>
+                <label>Authorized</label>
+            </value>
+            <value>
+                <fullName>Not Authorized</fullName>
+                <default>false</default>
+                <label>Not Authorized</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

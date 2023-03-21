@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Fee_Payable_To__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field is manually entered and is used to lookup to a relationship that the fee is being paid to.</description>
+    <externalId>false</externalId>
+    <label>Fee Payable To</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Fees</relationshipLabel>
+    <relationshipName>Fees</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

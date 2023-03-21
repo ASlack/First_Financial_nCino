@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Ownership_Structure_Role__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field is automatically set during the Deposit Account Opening workflow to associate an Authorized Signer to a specific Ownership Structure Role.</description>
+    <externalId>false</externalId>
+    <label>Ownership Structure Role</label>
+    <referenceTo>LLC_BI__Ownership_Structure_Role__c</referenceTo>
+    <relationshipLabel>Authorized Signers</relationshipLabel>
+    <relationshipName>Signers</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

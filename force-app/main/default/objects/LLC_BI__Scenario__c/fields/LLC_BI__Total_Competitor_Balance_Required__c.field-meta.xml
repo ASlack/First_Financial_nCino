@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Total_Competitor_Balance_Required__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is populated automatically via a trigger. It stores the competitor&apos;s annualized minimum required balance for all bill points in the scenario.</description>
+    <externalId>false</externalId>
+    <label>Total Competitor Balance Required</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

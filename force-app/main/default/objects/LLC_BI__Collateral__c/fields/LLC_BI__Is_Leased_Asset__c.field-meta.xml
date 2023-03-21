@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Is_Leased_Asset__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this optional checkbox field anytime an associated pledge record has the Is_Leased_Asset_c field on the Collateral Pledged object set to true. If an associated pledge record has been removed or invalidated, the checkbox is not selected.</description>
+    <externalId>false</externalId>
+    <label>Is Leased Asset</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

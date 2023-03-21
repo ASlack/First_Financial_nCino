@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label></label>
+        <name>LLC_BI__Add_Rate_Available_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>LLC_BI__Expanded_Offer_Card_Rate_Table</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>LLC_BI__Fixed_Rate_Additional_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>LLC_BI__Fixed_With_Index_Additional_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>LLC_BI__Rate_Data_for_Pricing_Option</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>LLC_BI__Rate_Structure_Table</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>LLC_BI__Variable_Rate_Additional_Fields</name>
+    </fieldSets>
+</CustomObjectTranslation>

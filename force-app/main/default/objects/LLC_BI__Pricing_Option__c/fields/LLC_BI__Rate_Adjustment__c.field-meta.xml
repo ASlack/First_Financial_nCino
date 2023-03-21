@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Rate_Adjustment__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Users populate this required field with the value to which they want to adjust the rate by. By default, it is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter a number within the threshold to adjust the rate.</inlineHelpText>
+    <label>Rate Adjustment</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>8</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

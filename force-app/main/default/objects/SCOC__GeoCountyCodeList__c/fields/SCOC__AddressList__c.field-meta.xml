@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCOC__AddressList__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This required master-detail field contains the lookup key to the associated Address list item.</description>
+    <externalId>false</externalId>
+    <label>Address List</label>
+    <referenceTo>SCOC__AddressList__c</referenceTo>
+    <relationshipLabel>Address List Geo County Codes</relationshipLabel>
+    <relationshipName>GeoCountyCodeList</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

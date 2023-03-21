@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Is_Revolving__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is manually selected. When enabled, it is used as a flag for the product feature to specify a product as a Revolving Line of Credit. When disabled, it is used as a flag to say the product is not a Revolving Line of Credit. By default, it is disabled. No logic is run on this field.</description>
+    <externalId>false</externalId>
+    <label>Is Revolving</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

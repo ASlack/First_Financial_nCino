@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Build_Layout</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <height>600</height>
+    <linkType>page</linkType>
+    <masterLabel>Build Section</masterLabel>
+    <openType>sidebar</openType>
+    <page>nFORCE__LayoutBuilder</page>
+    <protected>false</protected>
+</WebLink>

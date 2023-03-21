@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Closing_Disbursement_Date__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Users manually populate this optional date field to indicate the payment disbursement date for the closed loan. Payment disbursement cannot occur prior to the Projected Close Date. By default, this field is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the desired payment disbursement date for the closed loan.</inlineHelpText>
+    <label>Closing Disbursement Date</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

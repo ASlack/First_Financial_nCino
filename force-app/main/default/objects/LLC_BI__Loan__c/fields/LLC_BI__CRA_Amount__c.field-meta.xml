@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__CRA_Amount__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is manually populated. This field indicates the loan amount reported in thousands, rounded to the nearest thousand ($500 or higher should be rounded up to the next thousand).</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Report the amount in thousands, rounded to the nearest thousand ($500 should be rounded up to the next thousand).</inlineHelpText>
+    <label>Loan Amount (amount in thousands)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

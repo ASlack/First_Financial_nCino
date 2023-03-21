@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Loan__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is manually populated. This field specifies the loan that these answers are associated with.</description>
+    <externalId>false</externalId>
+    <label>Loan</label>
+    <referenceTo>LLC_BI__Loan__c</referenceTo>
+    <relationshipLabel>Answers</relationshipLabel>
+    <relationshipName>Answers</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

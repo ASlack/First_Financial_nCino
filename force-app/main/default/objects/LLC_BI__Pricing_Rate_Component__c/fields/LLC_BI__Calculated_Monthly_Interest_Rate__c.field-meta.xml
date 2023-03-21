@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Calculated_Monthly_Interest_Rate__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this field with a formula to convert the annual interest rate to the calculated monthly interest rate when the default equation Annual Interest Rate / 12 = Monthly Interest Rate is not applicable. The system uses this field for Rate &amp; Payment Structure calculations if the Monthly_Interest_Rate_Field field on Product Feature contains the value Calculated_Monthly_Interest_Rate. This field is not editable.</description>
+    <externalId>false</externalId>
+    <formula>EXP((1/12) * LN(1 + LLC_BI__Rate__c + LLC_BI__Spread__c)) - 1</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Displays the formula to calculate the conversion from annual interest rate to monthly interest rate.</inlineHelpText>
+    <label>Calculated Monthly Interest Rate</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>4</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

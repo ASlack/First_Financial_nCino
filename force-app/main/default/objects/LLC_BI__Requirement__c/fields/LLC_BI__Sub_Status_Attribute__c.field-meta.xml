@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Sub_Status_Attribute__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this optional picklist field to control the available values displayed to the end user for the sub-status field. By default, it is blank. An admin is required to configure the picklist values and use Matrix Manager to institute these values.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This auto-populated field can display the status of the requirement, and determines the available sub-status of the requirement in process.</inlineHelpText>
+    <label>Sub-Status Attribute</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Loan-To Do</fullName>
+                <default>false</default>
+                <label>Loan-To Do</label>
+            </value>
+            <value>
+                <fullName>Loan-In Progress</fullName>
+                <default>false</default>
+                <label>Loan-In Progress</label>
+            </value>
+            <value>
+                <fullName>Loan-Complete</fullName>
+                <default>false</default>
+                <label>Loan-Complete</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Is_Standby__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is not required and is manually populated. This field is only used as a data point currently. A standby letter of credit (SLOC) is a guarantee of payment issued by a bank on behalf of a client that is used as &quot;payment of last resort&quot; should the client fail to fulfill a contractual commitment with a third party.</description>
+    <externalId>false</externalId>
+    <label>Is Standby</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

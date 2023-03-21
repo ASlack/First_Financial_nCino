@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Field_Order__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this required field with the field order based on the respective context of the snapshot objects field set.</description>
+    <externalId>false</externalId>
+    <label>Field Order</label>
+    <precision>18</precision>
+    <required>true</required>
+    <scale>0</scale>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

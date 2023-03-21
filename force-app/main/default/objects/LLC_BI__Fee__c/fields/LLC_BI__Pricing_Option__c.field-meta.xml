@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Pricing_Option__c</fullName>
+    <deleteConstraint>Cascade</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The system populates this field to link fees to pricing options in order to display fees with the appropriate pricing option.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field indicates the pricing option that should have fees assigned to it.</inlineHelpText>
+    <label>Pricing Option</label>
+    <referenceTo>LLC_BI__Pricing_Option__c</referenceTo>
+    <relationshipLabel>Fees</relationshipLabel>
+    <relationshipName>Fees</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

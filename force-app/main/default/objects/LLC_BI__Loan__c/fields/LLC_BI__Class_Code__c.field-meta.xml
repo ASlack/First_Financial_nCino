@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Class_Code__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. If in use, it is automatically populated. This field is used to categorize loans by class. It is used for reporting purposes only.</description>
+    <externalId>false</externalId>
+    <label>Class Code</label>
+    <length>80</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

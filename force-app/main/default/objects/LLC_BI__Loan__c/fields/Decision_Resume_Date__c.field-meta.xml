@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Decision_Resume_Date__c</fullName>
+    <description>This field is set when underwriters receive RFIa and check is Review Ready checkbox.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Date when banker reviews and confirms the information received if sufficient to complete the underwriting process. This date will restart the Reg B clock at 0.</inlineHelpText>
+    <label>Decision Resume Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

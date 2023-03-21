@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Content_Management_Key__c</fullName>
+    <deprecated>false</deprecated>
+    <description>During the document preparation process, the system populates this text field with a static value that uniquely identifies the document for content management purposes.</description>
+    <externalId>true</externalId>
+    <label>Content Management Key</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nDESIGN__Child_Display_Order</fullName>
+    <active>true</active>
+    <description>Ensures children configurations are ordered after their parents.</description>
+    <errorConditionFormula>AND( NOT( ISBLANK( nDESIGN__Parent_Configuration__c ) ) , nDESIGN__Display_Order__c  &lt;=  nDESIGN__Parent_Configuration__r.nDESIGN__Display_Order__c )</errorConditionFormula>
+    <errorMessage>Child configurations must follow their parents in display order.</errorMessage>
+</ValidationRule>

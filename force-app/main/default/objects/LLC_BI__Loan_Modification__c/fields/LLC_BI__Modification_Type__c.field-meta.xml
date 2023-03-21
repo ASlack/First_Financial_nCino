@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Modification_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is a picklist field that is manually entered, and is required only if Loan Modifications are used. It is used to specify the type of modification that is happening on the loan. Loan modifications in general are not required but are optionally created based on financial institution business process.</description>
+    <externalId>false</externalId>
+    <label>Modification Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Correct Existing Note</fullName>
+                <default>false</default>
+                <label>Correct Existing Note</label>
+            </value>
+            <value>
+                <fullName>Extend Amortization</fullName>
+                <default>false</default>
+                <label>Extend Amortization</label>
+            </value>
+            <value>
+                <fullName>Increase Loan Amount</fullName>
+                <default>false</default>
+                <label>Increase Loan Amount</label>
+            </value>
+            <value>
+                <fullName>Interest Rate Reduction</fullName>
+                <default>false</default>
+                <label>Interest Rate Reduction</label>
+            </value>
+            <value>
+                <fullName>Payment Deferral</fullName>
+                <default>false</default>
+                <label>Payment Deferral</label>
+            </value>
+            <value>
+                <fullName>Reduce Loan Amount</fullName>
+                <default>false</default>
+                <label>Reduce Loan Amount</label>
+            </value>
+            <value>
+                <fullName>Interest Only</fullName>
+                <default>false</default>
+                <label>Interest Only</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

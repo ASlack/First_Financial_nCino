@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Interest_Rate_Margin_Percent__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this optional percentage field with information from the Pricing Matrix. The system adds this percentage to the index to determine the applicable rate for the account.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This system-populated field displays the percentage that the system adds to the index to determine the applicable rate for the account.</inlineHelpText>
+    <label>Interest Rate Margin Percent</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>4</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Percent</type>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Enabled_Telemetry_Keys__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Administrators populate this optional text field with the comma-delimited list of telemetry keys they want the system to capture.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the comma-delimited list of keys to capture.</inlineHelpText>
+    <label>Enabled Telemetry Keys</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

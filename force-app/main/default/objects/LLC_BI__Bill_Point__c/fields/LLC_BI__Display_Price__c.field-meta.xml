@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Display_Price__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is populated automatically via formula. This field will display the price of the bill point if the Price Structure is set to &quot;Single.&quot; It will display &quot;Tiered&quot; if the Price Structure is set to &quot;Tiered&quot; or &quot;Progressive Tiered.&quot;</description>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(LLC_BI__Price_Structure__c, &apos;Single&apos;), TEXT(LLC_BI__Price__c), &apos;Tiered&apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Display Price</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

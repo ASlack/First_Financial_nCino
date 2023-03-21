@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__ParentLoanId__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is automatically set and is required. It specifies the Parent Loan Master- Detail relationship, allowing the linking of history of renewals and modifications on the loan records.</description>
+    <externalId>false</externalId>
+    <label>Parent Loan Id</label>
+    <referenceTo>LLC_BI__Loan__c</referenceTo>
+    <relationshipName>RenewalJunction</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

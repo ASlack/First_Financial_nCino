@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Is_Grand_Total__c</fullName>
+    <deprecated>false</deprecated>
+    <description>deprecated field use Is_Summary_Group__c instead</description>
+    <externalId>false</externalId>
+    <formula>IF(LLC_BI__Spread_Statement_Type__r.LLC_BI__Spread_Statement_Total_Group__c  =  Id , true, false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>-D Is Grand Total</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

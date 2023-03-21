@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Takedown_Amount_Less_Or_Equal_Parent</fullName>
+    <active>true</active>
+    <errorConditionFormula>LLC_BI__Amount__c &gt;  LLC_BI__ParentLoan__r.LLC_BI__Amount__c</errorConditionFormula>
+    <errorMessage>Committed amount cannot be greater than the amount taken down from</errorMessage>
+</ValidationRule>

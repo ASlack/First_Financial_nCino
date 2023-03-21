@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Is_Restricted_Dropdown__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Admins select this optional checkbox to remove the ability for users to manually enter unique values in the Picklist Values field. By default, it is unselected.</description>
+    <externalId>false</externalId>
+    <label>Is Restricted Drop-down</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

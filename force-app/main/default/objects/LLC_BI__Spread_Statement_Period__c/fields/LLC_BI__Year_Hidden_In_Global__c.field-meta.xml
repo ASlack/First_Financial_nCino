@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Year_Hidden_In_Global__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is altered by the global analysis UI, used to determine whether or not to show period associated periods of the same year in global analysis view</description>
+    <externalId>false</externalId>
+    <label>Year Hidden In Global</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

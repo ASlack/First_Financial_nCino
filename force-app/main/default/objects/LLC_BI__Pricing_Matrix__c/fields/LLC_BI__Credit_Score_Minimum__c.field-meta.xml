@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Credit_Score_Minimum__c</fullName>
+    <defaultValue>0</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This number field is optional. The user manually populates this field with the low end of the credit score range.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This number field is optional. The user manually populates this field with the low end of the credit score range.</inlineHelpText>
+    <label>Minimum Credit Score</label>
+    <precision>5</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

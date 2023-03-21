@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nPortal__OA_Auto_Decision_Required__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Administrators populate this boolean field to indicate that Auto Decision needs to be run on the assigned route or route group.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select this field to run Auto Decision on the route or route group.</inlineHelpText>
+    <label>OA Auto Decision Required</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

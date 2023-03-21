@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Enable_Method_Logging__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Enable logging upon method entrance and exiting</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check this box to enable logging upon method entrance and exiting. NOTE: This will greatly increase the size of the logs included in your output.</inlineHelpText>
+    <label>Enable Method Logging</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

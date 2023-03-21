@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Screen__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The Screen used to render the content of this group. In the nCino UI this Screen will render in the Topbar.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The Screen used to render the content of this group. In the nCino UI this Screen will render in the Topbar.</inlineHelpText>
+    <label>Screen</label>
+    <referenceTo>nFORCE__Screen__c</referenceTo>
+    <relationshipLabel>Groups</relationshipLabel>
+    <relationshipName>Groups</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

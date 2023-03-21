@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Withdraw_Reason__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is to specify a reason why the loan is being withdrawn.</description>
+    <externalId>false</externalId>
+    <label>Withdraw Reason</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Application Approved but Not Accepted</fullName>
+                <default>false</default>
+                <label>Application Approved but Not Accepted</label>
+            </value>
+            <value>
+                <fullName>Application Withdrawn</fullName>
+                <default>false</default>
+                <label>Application Withdrawn</label>
+            </value>
+            <value>
+                <fullName>Incomplete Application</fullName>
+                <default>false</default>
+                <label>Incomplete Application</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

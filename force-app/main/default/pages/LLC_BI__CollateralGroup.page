@@ -1,0 +1,193 @@
+<apex:page id="CollateralGroup" standardController="LLC_BI__Collateral__c" extensions="LLC_BI.CollateralGroupController"
+	showHeader="false" sidebar="false" rendered="{!isGroup}">
+	<c:CollateralCreationIncludes />
+	<c:CGPledgeRecordsConfiguration />
+	<div id="ncCollateralCreation">
+
+		<script type="text/ng-template" id="CollateralGroup.partial.html">
+			<article class="slds-card no-shadow">
+				<div class="slds-card__header slds-grid">
+					<header class="slds-media slds-media_center slds-has-flexi-truncate">
+						<div class="slds-media__body">
+							<h2 class="slds-card__header-title">
+								{{collateralGroup.labels.collateralHeader}}
+							</h2>
+						</div>
+						<div class="slds-button-group slds-no-flex">
+							<apex:outputPanel layout="none" rendered="{!canAddAssociateCollaterals}">
+								<button
+									class="slds-button slds-button_neutral slds-p-horizontal_large"
+									ng-click="collateralGroup.navigateToEditGroup({ isAddCollateral: true })"
+								>
+									{{collateralGroup.labels.addCollateral}}
+								</button>
+							</apex:outputPanel>
+							<apex:outputPanel layout="none" rendered="{!canRemoveAssociateCollaterals}">
+								<button class="slds-button slds-button_neutral slds-p-horizontal_large"
+									ng-click="collateralGroup.navigateToEditGroup({ loadReviewScreen: true })"
+								>
+									{{collateralGroup.labels.removeCollateral}}
+								</button>
+							</apex:outputPanel>
+						</div>
+					</header>
+				</div>
+				<div class="slds-card__body">
+					<div ng-app="ncTreeGrid">
+						<tree-grid
+							template-url="CollateralGroupTreeGrid.partial.html"
+							guid="{{collateralGroup.guid}}"
+							tree-data="{!HTMLENCODE(colateralGroupTree)}"
+							max-depth="8"
+							parent-controller="collateralGroup"
+						>
+						</tree-grid>
+					</div>
+				</div>
+			</article>
+		</script>
+
+		<script type="text/ng-template" id="CollateralGroupTreeGrid.partial.html">
+			<div class="slds-scrollable_x">
+				<table class="slds-table slds-table_cell-buffer slds-table_bordered slds-tree slds-table_tree">
+					<thead>
+						<tr
+							class="slds-line-height_reset slds-text-title_caps"
+							aria-level="1"
+						>
+							<th
+								ng-repeat="column in vm.treeGrid.columns track by $index"
+								ng-class="{'slds-tree__item': $first}"
+							>
+								<button
+									class="slds-button slds-button_icon slds-button_icon-x-small slds-m-right_x-small slds-hidden"
+									ng-if="$first"
+									aria-hidden="true"
+									tabindex="-1"
+								>
+									<svg class="slds-button__icon slds-button__icon_small" aria-hidden="true">
+										<use
+											href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#')}chevrondown"
+										></use>
+									</svg>
+								</button>
+								<span ng-bind="column.label"></span>
+							</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody ng-repeat="row in vm.flattenedTreeGrid" id="group-treegrid-{{ row.id }}">
+						<tr
+							class="slds-line-height_reset"
+							aria-level="{{ row.depth + 1 }}"
+							ng-class='{ "slds-is-selected" : vm.parentController.isShow == row.id }'
+						>
+							<td ng-repeat="cell in row.cells track by $index" ng-class="{'slds-tree__item': $first}">
+								<button
+									class="slds-button slds-button_icon slds-button_icon-x-small slds-m-right_x-small"
+									ng-if="$first && vm.hideCollapseExpandIcon !== 'true'"
+									ng-click="vm.toggleExpand(row)"
+									ng-class="{'slds-hidden' : !vm.isExpandable(row)}"
+									aria-hidden="true"
+									tabindex="-1"
+								>
+									<svg class="slds-button__icon slds-button__icon_small" aria-hidden="true">
+										<use
+											href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#')}{{
+												row.expanded ? 'chevrondown' : 'chevronright'
+											}}"
+										></use>
+									</svg>
+								</button>
+								<svg-icon
+									ng-if="$first"
+									class="slds"
+									svg-class="slds-icon slds-icon_small slds-icon-text-default"
+									container-class="slds-icon_container slds-m-right_x-small"
+									icon="{{ vm.getUserDataValue(row.userData, 'iconType') }}"
+									background-color="{{ vm.getUserDataValue(row.userData, 'backgroundColor') }}"
+									fill-color="{{ vm.getUserDataValue(row.userData, 'fillColor') }}">
+								</svg-icon>
+								<span ng-bind="vm.getCellLabel(cell)"></span>
+								<span ng-if="vm.isNameField(cell)">
+									<a
+										href="/{{ vm.getRecordIdFromUserData(cell.userData) }}"
+										target="_blank"
+									>
+										<span ng-bind="cell.value.label"></span>
+										<nds-icon
+											icon-type="utility"
+											icon-name="new_window"
+											span-class="slds-current-color"
+											svg-class="slds-p-bottom_xx-small slds-p-left_xxx-small slds-icon_x-small"
+										></nds-icon>
+									</a>
+								</span>
+								<span
+									ng-if="vm.isCurrencyField(cell)"
+									ng-bind="cell.value.decimalValue | intl:cell.value.formatCode: false : vm.getUserDataValue(cell.userData, 'isoCode')">
+								</span>
+								<span class="ng-scope slds-checkbox" ng-if="vm.isStandardCheckBoxCell(cell)">
+									<label class="slds-checkbox__label">
+										<input
+											type="checkbox"
+											ng-model="cell.selected"
+											ng-disabled="!cell.value.enabled" >
+										</input>
+										<span class="slds-checkbox--faux"></span>
+									</label>
+								</span>
+							</td>
+							<td class="row-actions">
+								<div
+									ng-if="row.depth === 0"
+									class="slds-grid slds-grid_align-end slds-grid_vertical-align-center"
+								>
+									<a
+										role="button"
+										class="slds-m-right_xx-small"
+										ng-click="vm.parentController.getRelatedPledgeRecords(row)"
+										ng-bind="vm.parentController.isShow == row.id ?
+											vm.parentController.labels.hideLoansPledged :
+											vm.parentController.labels.showLoansPledged"
+									></a>
+								</div>
+							</td>
+						</tr>
+						<tr ng-show="vm.parentController.isShow == row.id">
+							<td class="slds-theme_shade slds-p-around_none" colspan="{{vm.treeGrid.columns.length + 1}}">
+								<table class="slds-table slds-table_cell-buffer slds-table_bordered slds-tree slds-table_tree slds-m-vertical_large">
+									<thead>
+										<tr class="slds-text-title_caps" aria-level="1">
+											<th
+												ng-repeat="header in vm.parentController.currentRelatedModel.columns"
+												ng-class="{'slds-tree__item': $first}"
+												scope="col"
+											>
+												<span class="slds-truncate" title="Type" ng-bind-html="header.title | uppercase" />
+											</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr
+											ng-repeat="loanRow in vm.parentController.currentRelatedModel.rows | filter:vm.parentController.filterRelatedRows(rowsFiltered)"
+											aria-level="1"
+										>
+											<td
+												ng-repeat="loanColumn in vm.parentController.currentRelatedModel.columns"
+												compile="vm.parentController.getValue(loanColumn, loanRow)"
+												ng-class="{'slds-tree__item': $first}"
+											></td>
+										</tr>
+									</tbody>
+								</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</script>
+
+		<collateral-group />
+	</div>
+</apex:page>

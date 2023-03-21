@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Roof_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Users or an integration manually populate this picklist to identify a property’s roof type for the real estate collateral record.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the property’s roof type from the picklist.</inlineHelpText>
+    <label>Roof Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Solar Tiles</fullName>
+                <default>false</default>
+                <label>Solar Tiles</label>
+            </value>
+            <value>
+                <fullName>Asphalt Shingles</fullName>
+                <default>false</default>
+                <label>Asphalt Shingles</label>
+            </value>
+            <value>
+                <fullName>Metal Roofing</fullName>
+                <default>false</default>
+                <label>Metal Roofing</label>
+            </value>
+            <value>
+                <fullName>Stone-coated Steel</fullName>
+                <default>false</default>
+                <label>Stone-coated Steel</label>
+            </value>
+            <value>
+                <fullName>Slate</fullName>
+                <default>false</default>
+                <label>Slate</label>
+            </value>
+            <value>
+                <fullName>Rubber Slate</fullName>
+                <default>false</default>
+                <label>Rubber Slate</label>
+            </value>
+            <value>
+                <fullName>Clay and Concrete Tiles</fullName>
+                <default>false</default>
+                <label>Clay and Concrete Tiles</label>
+            </value>
+            <value>
+                <fullName>Green Roof</fullName>
+                <default>false</default>
+                <label>Green Roof</label>
+            </value>
+            <value>
+                <fullName>Built-up Roofing</fullName>
+                <default>false</default>
+                <label>Built-up Roofing</label>
+            </value>
+            <value>
+                <fullName>Flat</fullName>
+                <default>false</default>
+                <label>Flat</label>
+            </value>
+            <value>
+                <fullName>Thatched</fullName>
+                <default>false</default>
+                <label>Thatched</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

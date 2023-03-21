@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nArchive__All</fullName>
+    <columns>NAME</columns>
+    <columns>nArchive__Current_Attachment_Id__c</columns>
+    <columns>nArchive__Account__c</columns>
+    <columns>nArchive__AccountDocument__c</columns>
+    <columns>nArchive__Loan__c</columns>
+    <columns>nArchive__LLC_LoanDocument__c</columns>
+    <columns>nArchive__processedFlag__c</columns>
+    <columns>nArchive__UID__c</columns>
+    <columns>nArchive__Document_Placeholder__c</columns>
+    <columns>nArchive__DocumentName__c</columns>
+    <columns>CREATEDBY_USER.ALIAS</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

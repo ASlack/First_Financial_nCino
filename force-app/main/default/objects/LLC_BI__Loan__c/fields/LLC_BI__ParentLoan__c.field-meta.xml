@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__ParentLoan__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field is auto-populated and specifies the parent loan in a multi-tiered facility. This is one component that drives the hierarchical tree structure used for navigation and visual representation of the multi-tiered facility. Knowing the Parent Loan is also used to auto-fill details when creating the lower level loans.</description>
+    <externalId>false</externalId>
+    <label>Parent Loan</label>
+    <referenceTo>LLC_BI__Loan__c</referenceTo>
+    <relationshipLabel>Loans</relationshipLabel>
+    <relationshipName>Loans</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

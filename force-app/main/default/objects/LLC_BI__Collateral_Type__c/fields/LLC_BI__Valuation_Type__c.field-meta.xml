@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Valuation_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>A picklist field used to capture the potential types of collateral valuation. This would be entered by the user when a new valuation is entered. No default value.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The potential types of collateral valuation</inlineHelpText>
+    <label>Valuation Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Actual Cash Value</fullName>
+                <default>false</default>
+                <label>Actual Cash Value</label>
+            </value>
+            <value>
+                <fullName>As Complete Value</fullName>
+                <default>false</default>
+                <label>As Complete Value</label>
+            </value>
+            <value>
+                <fullName>As Is Value</fullName>
+                <default>false</default>
+                <label>As Is Value</label>
+            </value>
+            <value>
+                <fullName>As Stabilized Value</fullName>
+                <default>false</default>
+                <label>As Stabilized Value</label>
+            </value>
+            <value>
+                <fullName>Balance Sheet</fullName>
+                <default>false</default>
+                <label>Balance Sheet</label>
+            </value>
+            <value>
+                <fullName>Book Value</fullName>
+                <default>false</default>
+                <label>Book Value</label>
+            </value>
+            <value>
+                <fullName>Cash Balance</fullName>
+                <default>false</default>
+                <label>Cash Balance</label>
+            </value>
+            <value>
+                <fullName>Contents Value</fullName>
+                <default>false</default>
+                <label>Contents Value</label>
+            </value>
+            <value>
+                <fullName>Fair Market Value - Real Estate</fullName>
+                <default>false</default>
+                <label>Fair Market Value - Real Estate</label>
+            </value>
+            <value>
+                <fullName>Fair Market Value - Equipment / Transportation</fullName>
+                <default>false</default>
+                <label>Fair Market Value - Equipment / Transportation</label>
+            </value>
+            <value>
+                <fullName>Net Orderly Liquidation Value</fullName>
+                <default>false</default>
+                <label>Net Orderly Liquidation Value</label>
+            </value>
+            <value>
+                <fullName>Orderly Liquidation Value</fullName>
+                <default>false</default>
+                <label>Orderly Liquidation Value</label>
+            </value>
+            <value>
+                <fullName>Preliminary Value</fullName>
+                <default>false</default>
+                <label>Preliminary Value</label>
+            </value>
+            <value>
+                <fullName>Purchase Price</fullName>
+                <default>false</default>
+                <label>Purchase Price</label>
+            </value>
+            <value>
+                <fullName>Replacement Cost Value</fullName>
+                <default>false</default>
+                <label>Replacement Cost Value</label>
+            </value>
+            <value>
+                <fullName>Waived Value</fullName>
+                <default>false</default>
+                <label>Waived Value</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

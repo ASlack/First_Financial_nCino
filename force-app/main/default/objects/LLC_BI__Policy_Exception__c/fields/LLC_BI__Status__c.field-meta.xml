@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Status__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field can be manually selected or automatically populated. This field specifies the status of the exception. For users with the appropriate permission to edit an exception status without mitigating reasons can manually select the status. Users without this permission will have the status automatically set when an action (such as mitigating reasons) are added to the policy exception.</description>
+    <externalId>false</externalId>
+    <label>Exception status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Waived</fullName>
+                <default>false</default>
+                <label>Waived</label>
+            </value>
+            <value>
+                <fullName>Mitigated</fullName>
+                <default>false</default>
+                <label>Mitigated</label>
+            </value>
+            <value>
+                <fullName>Unmitigated</fullName>
+                <default>true</default>
+                <label>Unmitigated</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

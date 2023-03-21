@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Dropdown_Items__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Admins manually populate this text field with the drop-down items the user selects in the schedule. Values must be separated by two vertical bar symbols. For example, value1||value2.</description>
+    <externalId>false</externalId>
+    <label>Drop-down Items</label>
+    <length>131072</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>50</visibleLines>
+</CustomField>

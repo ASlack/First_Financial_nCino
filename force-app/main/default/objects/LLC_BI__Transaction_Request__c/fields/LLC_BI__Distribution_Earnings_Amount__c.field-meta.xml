@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Distribution_Earnings_Amount__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. For Coverdell Education Savings Account (CESA) distributions, this is the earnings for the distribution.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>For Coverdell Education Savings Account (CESA) distributions this is the earnings for the distribution.</inlineHelpText>
+    <label>Distribution Earnings Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

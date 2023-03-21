@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CBCFLD__Collateral2__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Lookup to new Collateral</description>
+    <externalId>false</externalId>
+    <label>Collateral2</label>
+    <referenceTo>LLC_BI__Collateral__c</referenceTo>
+    <relationshipLabel>CBC Flood Determination</relationshipLabel>
+    <relationshipName>CBC_Flood_Determination</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

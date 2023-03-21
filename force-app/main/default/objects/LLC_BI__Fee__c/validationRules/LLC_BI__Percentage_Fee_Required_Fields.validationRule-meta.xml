@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Percentage_Fee_Required_Fields</fullName>
+    <active>true</active>
+    <description>When calculation type equals Percentage, Basis Source and Percentage fields are required.</description>
+    <errorConditionFormula>ISPICKVAL(LLC_BI__Calculation_Type__c, &apos;Percentage&apos;) &amp;&amp; (ISPICKVAL(LLC_BI__Basis_Source__c, &apos;&apos;) || ISNULL(LLC_BI__Percentage__c))</errorConditionFormula>
+    <errorMessage>Ensure values are entered for Basis Source and Percentage so the system can calculate the percentage calculation type.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Tpl_LineItem_Config_Defaults_Clash</fullName>
+    <active>true</active>
+    <description>Ensures that amount budgeted and percent of budget fields aren&apos;t both set at the same time.</description>
+    <errorConditionFormula>IF (AND(LLC_BI__Budget__r.LLC_BI__Is_Template__c = True, NOT(ISNULL(LLC_BI__Amount_Budgeted__c)), NOT(ISNULL(LLC_BI__Template_Percent_of_Budget__c))), true, false)</errorConditionFormula>
+    <errorMessage>Please enter an Amount Budgeted or a Template Percent of Budget. Both cannot be entered at once, you must choose to enter one or the other.</errorMessage>
+</ValidationRule>

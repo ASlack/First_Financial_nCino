@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Prepaid_Interest_Accrual_Code__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Administrators and users populate this optional picklist field to determine odd days interest accrual type. By default, it is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the desired accrual code to calculate the prepaid interest due at closing.</inlineHelpText>
+    <label>Odd Days Interest Accrual Code</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>True360_360</fullName>
+                <default>false</default>
+                <label>True360_360</label>
+            </value>
+            <value>
+                <fullName>True360_365</fullName>
+                <default>false</default>
+                <label>True360_365</label>
+            </value>
+            <value>
+                <fullName>Actual_360</fullName>
+                <default>false</default>
+                <label>Actual_360</label>
+            </value>
+            <value>
+                <fullName>True365_360</fullName>
+                <default>false</default>
+                <label>True365_360</label>
+            </value>
+            <value>
+                <fullName>Actual_365</fullName>
+                <default>false</default>
+                <label>Actual_365</label>
+            </value>
+            <value>
+                <fullName>True365_365</fullName>
+                <default>false</default>
+                <label>True365_365</label>
+            </value>
+            <value>
+                <fullName>Actual_Actual</fullName>
+                <default>false</default>
+                <label>Actual_Actual</label>
+            </value>
+            <value>
+                <fullName>Midnight_366</fullName>
+                <default>false</default>
+                <label>Midnight_366</label>
+            </value>
+            <value>
+                <fullName>Actual_Variable_Days_Per_Year</fullName>
+                <default>false</default>
+                <label>Actual_Variable_Days_Per_Year</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

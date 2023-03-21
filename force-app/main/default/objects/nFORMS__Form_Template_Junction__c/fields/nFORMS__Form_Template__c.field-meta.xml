@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORMS__Form_Template__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>A look up to form template to join form templates to the originating ID in order to support versioning.</description>
+    <externalId>false</externalId>
+    <label>Form Template</label>
+    <referenceTo>nFORMS__Form_Template__c</referenceTo>
+    <relationshipLabel>Form Template Junctions</relationshipLabel>
+    <relationshipName>Form_Template_Junctions</relationshipName>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Authority_Number__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This optional field specifies the number of owners that have the authority to pledge this asset as collateral. It is manually populated.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The number of owners of this asset that have the authority to pledge the asset as collateral.</inlineHelpText>
+    <label>Authority Number</label>
+    <summaryFilterItems>
+        <field>LLC_BI__Account_Collateral__c.LLC_BI__Pledging_Authority__c</field>
+        <operation>equals</operation>
+        <value>True</value>
+    </summaryFilterItems>
+    <summaryForeignKey>LLC_BI__Account_Collateral__c.LLC_BI__Collateral__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

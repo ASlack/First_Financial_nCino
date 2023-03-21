@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Show_Total__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Administrators select this boolean field so that the total will show for this configured Section for the Schedule. By default, it is unselected.</description>
+    <externalId>false</externalId>
+    <label>Show Total</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

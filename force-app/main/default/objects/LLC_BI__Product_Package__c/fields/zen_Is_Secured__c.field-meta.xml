@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>zen_Is_Secured__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Checkbox to denote whether or not the product package is secured based on the associated loans.</description>
+    <externalId>false</externalId>
+    <label>Is Secured</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

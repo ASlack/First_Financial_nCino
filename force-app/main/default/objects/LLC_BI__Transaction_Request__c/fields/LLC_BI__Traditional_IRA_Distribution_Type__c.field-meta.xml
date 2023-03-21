@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Traditional_IRA_Distribution_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is a picklist that specifies the type of distribution for a Traditional or Simple IRA.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Specifies the type of distribution for a Traditional or Simple IRA.</inlineHelpText>
+    <label>Traditional IRA Distribution Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Early Distribution no known exception</fullName>
+                <default>false</default>
+                <label>Early Distribution no known exception</label>
+            </value>
+            <value>
+                <fullName>Early Distribution IRS Levy or other exception</fullName>
+                <default>false</default>
+                <label>Early Distribution IRS Levy or other exception</label>
+            </value>
+            <value>
+                <fullName>Disability</fullName>
+                <default>false</default>
+                <label>Disability</label>
+            </value>
+            <value>
+                <fullName>Death</fullName>
+                <default>false</default>
+                <label>Death</label>
+            </value>
+            <value>
+                <fullName>Prohibited Transaction</fullName>
+                <default>false</default>
+                <label>Prohibited Transaction</label>
+            </value>
+            <value>
+                <fullName>Revocation</fullName>
+                <default>false</default>
+                <label>Revocation</label>
+            </value>
+            <value>
+                <fullName>Normal</fullName>
+                <default>false</default>
+                <label>Normal</label>
+            </value>
+            <value>
+                <fullName>Direct Rollover to an employer-sponsored Eligible Retirement Plan</fullName>
+                <default>false</default>
+                <label>Direct Rollover to an employer-sponsored Eligible Retirement Plan</label>
+            </value>
+            <value>
+                <fullName>Qualified Health Savings Account Funding Distribution (QHSAAFD)</fullName>
+                <default>false</default>
+                <label>Qualified Health Savings Account Funding Distribution (QHSAAFD)</label>
+            </value>
+            <value>
+                <fullName>Correction of Excess Contribution in same year as excess contribution</fullName>
+                <default>false</default>
+                <label>Correction of Excess Contribution in same year as excess contribution</label>
+            </value>
+            <value>
+                <fullName>Correction of Excess Contribution in year after excess contribution but by my tax-filing due date</fullName>
+                <default>false</default>
+                <label>Correction of Excess Contribution in year after excess contribution but by my tax-filing due date</label>
+            </value>
+            <value>
+                <fullName>Correction of Excess Contribution after my tax-filing due date</fullName>
+                <default>false</default>
+                <label>Correction of Excess Contribution after my tax-filing due date</label>
+            </value>
+            <value>
+                <fullName>Recharacterization of prior tax year regular contribution/conversion in the current year</fullName>
+                <default>false</default>
+                <label>Recharacterization of prior tax year regular contribution/conversion in the current year</label>
+            </value>
+            <value>
+                <fullName>Recharacterization of current tax year regular contribution/conversion in the current year</fullName>
+                <default>false</default>
+                <label>Recharacterization of current tax year regular contribution/conversion in the current year</label>
+            </value>
+            <value>
+                <fullName>SIMPLE IRA Distribution During Two-Year Period</fullName>
+                <default>false</default>
+                <label>SIMPLE IRA Distribution During Two-Year Period</label>
+            </value>
+            <value>
+                <fullName>Conversion</fullName>
+                <default>false</default>
+                <label>Conversion</label>
+            </value>
+            <value>
+                <fullName>Transfer to another IRA</fullName>
+                <default>false</default>
+                <label>Transfer to another IRA</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

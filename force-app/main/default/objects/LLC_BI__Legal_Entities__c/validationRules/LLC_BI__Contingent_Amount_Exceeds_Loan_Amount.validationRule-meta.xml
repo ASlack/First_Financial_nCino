@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Contingent_Amount_Exceeds_Loan_Amount</fullName>
+    <active>true</active>
+    <description>Ensures the contingent amount does not exceed the loan amount.</description>
+    <errorConditionFormula>LLC_BI__Contingent_Amount__c &gt; LLC_BI__Loan__r.LLC_BI__Amount__c</errorConditionFormula>
+    <errorDisplayField>LLC_BI__Contingent_Amount__c</errorDisplayField>
+    <errorMessage>Contingent amount cannot exceed the loan amount.</errorMessage>
+</ValidationRule>

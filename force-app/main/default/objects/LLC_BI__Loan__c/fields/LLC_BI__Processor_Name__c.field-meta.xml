@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Processor_Name__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is manually populated. This field is a lookup to the user who is assigned as loan processor for this loan.</description>
+    <externalId>false</externalId>
+    <label>Loan Processor</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Processor_Loans</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

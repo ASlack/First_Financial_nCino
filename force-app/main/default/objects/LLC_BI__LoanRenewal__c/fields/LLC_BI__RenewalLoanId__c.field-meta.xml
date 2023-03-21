@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__RenewalLoanId__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field references the ID of the loan renewal record. It is automatically populated when renewal records are created.</description>
+    <externalId>false</externalId>
+    <label>Renewal Loan Id</label>
+    <referenceTo>LLC_BI__Loan__c</referenceTo>
+    <relationshipName>RenewalJunctionObject</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

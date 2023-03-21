@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nPortal__Context_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field associates the group (which comprises an online application) with a particular Online Application Context Type. This value defaults to Applicant, which is the appropriate Context Type for a primary applicant. If the group is for primary applicants, enter Applicant. If the group is for business co-owners added to a deposit application, enter Owner. If the group is for co-borrowers or guarantors added to a small business loan application, enter Other Involved (Individual).</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter a defined Context Type which this Group will be associated to. For primary applicants, enter Applicant. For co-owners added to a deposit, enter Owner. For co-borrowers or guarantors added to a small business loan, enter Other Involved (Individual).</inlineHelpText>
+    <label>Context Type</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

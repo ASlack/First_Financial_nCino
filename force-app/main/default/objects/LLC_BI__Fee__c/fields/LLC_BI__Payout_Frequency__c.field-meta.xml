@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Payout_Frequency__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Users populate this optional picklist field to indicate the desired payout frequency for the escrow account. By default, this field is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the desired payout frequency for the escrow account.</inlineHelpText>
+    <label>Payout Frequency</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Annually</fullName>
+                <default>false</default>
+                <label>Annually</label>
+            </value>
+            <value>
+                <fullName>Semi-Annually</fullName>
+                <default>false</default>
+                <label>Semi-Annually</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

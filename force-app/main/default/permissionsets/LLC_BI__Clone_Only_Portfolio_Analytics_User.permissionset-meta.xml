@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This permission set should only be used for cloning purposes. Use the newly-cloned permission set for the Portfolio Analytics SSO user and Portfolio Analytics connected app.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Clone Only Portfolio Analytics User</label>
+</PermissionSet>

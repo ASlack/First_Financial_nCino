@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Display_Projection_Drivers__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This defaults to false. This field controls the visibility of the Driver column for Projections on the Balance Sheet, Income Statement and NOI Statement.</description>
+    <externalId>false</externalId>
+    <label>Display Projection Drivers</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__HMDA_Date_Application_Received__c</fullName>
+    <deprecated>false</deprecated>
+    <description>--DEPRECATED-- This field is optional unless the loan requires HMDA, then it is required. It is manually populated. This field indicates the date the application was received or the date on the application form.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The date the loan application was received by your institution.</inlineHelpText>
+    <label>-D Date Application Received</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Learn_More__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The Administrator populates this optional text field with a URL to an external resource relevant to the selected product(s). By default, it is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Provide an external hyperlink where users can learn more about the product(s) they selected.</inlineHelpText>
+    <label>Learn More</label>
+    <length>2000</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

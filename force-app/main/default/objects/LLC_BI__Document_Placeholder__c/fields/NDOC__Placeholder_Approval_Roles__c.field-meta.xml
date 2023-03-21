@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NDOC__Placeholder_Approval_Roles__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. This is a semicolon-delimited list of roles that are allowed to approve a specific document. If left blank, all roles can approve the document. This field works in tandem with the older Approval Roles field, which is limited to fewer characters.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Semicolon delimited list of roles that are allowed to approve the document. If left blank all roles can approve the document.</inlineHelpText>
+    <label>Placeholder Approval Roles</label>
+    <length>131072</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>2</visibleLines>
+</CustomField>

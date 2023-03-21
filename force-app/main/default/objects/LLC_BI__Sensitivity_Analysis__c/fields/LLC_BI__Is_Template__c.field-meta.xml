@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Is_Template__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>It must be manually populated. When enabled, the Sensitivity Analysis is treated as a template and can be used to clone additional Sensitivity Analysis. When disabled, it cannot be used to clone additional Sensitivity Analysis. If its parent &quot;LLC_BI_Underwriting_Bundle_c&quot; is marked as a template, then the Sensitivity Analysis is also a template. By default, this is disabled.</description>
+    <externalId>false</externalId>
+    <label>Is Template</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

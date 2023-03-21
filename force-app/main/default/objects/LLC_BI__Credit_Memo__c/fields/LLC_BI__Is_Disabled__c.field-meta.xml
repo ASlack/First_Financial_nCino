@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Is_Disabled__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It defaults to false and can be updated by administrator. When set to true, the disabled credit memo template will not be shown on the Credit Memo selection page. This field should only be used for credit memo records that are templates.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Disabled credit memo templates will not be shown on the Credit Memo selection page.</inlineHelpText>
+    <label>Is Disabled</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

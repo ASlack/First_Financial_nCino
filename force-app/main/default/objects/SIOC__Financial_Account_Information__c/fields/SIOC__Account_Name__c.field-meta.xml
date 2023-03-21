@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SIOC__Account_Name__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this text field with the name of the account.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The system-populated field displays the name of the account.</inlineHelpText>
+    <label>Account Name</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

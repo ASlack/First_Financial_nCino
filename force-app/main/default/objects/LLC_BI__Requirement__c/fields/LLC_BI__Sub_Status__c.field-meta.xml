@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Sub_Status__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The user populates this optional picklist field to define the specific status of a requirement in process. This field is controlled by the Sub-Status Attribute field which dictates applicable sub-statuses by context, status, category, and other requirement attributes as determined by the financial institution. By default, it is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the applicable sub-status for the requirement in process.</inlineHelpText>
+    <label>Sub-Status</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>LLC_BI__Sub_Status_Attribute__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ready</fullName>
+                <default>false</default>
+                <label>Ready</label>
+            </value>
+            <value>
+                <fullName>On Hold</fullName>
+                <default>false</default>
+                <label>On Hold</label>
+            </value>
+            <value>
+                <fullName>Waiting for Review</fullName>
+                <default>false</default>
+                <label>Waiting for Review</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Loan-To Do</controllingFieldValue>
+            <valueName>Ready</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Loan-To Do</controllingFieldValue>
+            <controllingFieldValue>Loan-In Progress</controllingFieldValue>
+            <valueName>On Hold</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Loan-In Progress</controllingFieldValue>
+            <controllingFieldValue>Loan-Complete</controllingFieldValue>
+            <valueName>Waiting for Review</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

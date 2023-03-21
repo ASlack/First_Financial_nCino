@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Enable_Automatic_Calculation__c</fullName>
+    <defaultValue>true</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This optional field is manually selected. It is used to determine if the statistic is automatically updated. An automatically updated statistic updates based on user interactions with nCino, such as creating entity involvement records. When enabled, the statistic is updated automatically; when disabled the statistic does not update automatically. It is enabled by default.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enables automatic calculation of the statistic. An automatically updated statistic updates based on user interactions with nCino, such as creating entity involvement records.</inlineHelpText>
+    <label>Enable Automatic Calculation</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

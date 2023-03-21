@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Funding_Session_ID__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This text field autopopulates with the Session ID during which a funding transaction occurs.</description>
+    <externalId>false</externalId>
+    <label>Funding Session ID</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

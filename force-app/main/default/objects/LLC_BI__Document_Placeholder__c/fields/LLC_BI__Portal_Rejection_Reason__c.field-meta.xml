@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Portal_Rejection_Reason__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. This is the explanation text that is displayed to Customer Portal users when a document is rejected.</description>
+    <externalId>false</externalId>
+    <label>Portal Rejection Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Missing Signature</fullName>
+                <default>false</default>
+                <label>Missing Signature</label>
+            </value>
+            <value>
+                <fullName>Wrong File</fullName>
+                <default>false</default>
+                <label>Wrong File</label>
+            </value>
+            <value>
+                <fullName>Unreadable</fullName>
+                <default>false</default>
+                <label>Unreadable</label>
+            </value>
+            <value>
+                <fullName>Out of Date</fullName>
+                <default>false</default>
+                <label>Out of Date</label>
+            </value>
+            <value>
+                <fullName>Incomplete</fullName>
+                <default>false</default>
+                <label>Incomplete</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

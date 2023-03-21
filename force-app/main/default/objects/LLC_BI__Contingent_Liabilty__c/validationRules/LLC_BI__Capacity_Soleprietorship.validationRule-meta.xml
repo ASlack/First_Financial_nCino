@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Capacity_Soleprietorship</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+            AND(
+                IF(ISBLANK(LLC_BI__Authorized_Account__c),
+                    IF(ISBLANK(LLC_BI__Authorized_Signer__c),
+                        AND(
+                            TEXT(LLC_BI__Entity__r.LLC_BI__Account__r.Type) == &apos;Sole Proprietorship&apos;,
+                            TEXT(LLC_BI__Role__c) != &apos;Sole Proprietorship&apos;
+                        ),
+                        FALSE
+                    ),
+                    AND(
+                        TEXT(LLC_BI__Authorized_Account__r.LLC_BI__Account__r.Type) == &apos;Sole Proprietorship&apos;,
+                        TEXT(LLC_BI__Role__c) != &apos;Sole Proprietorship&apos;
+                    )
+                )
+            ),
+            NOT(ISBLANK(TEXT(LLC_BI__Role__c)))
+        )</errorConditionFormula>
+    <errorDisplayField>LLC_BI__Role__c</errorDisplayField>
+    <errorMessage>The only valid capacity option for this entity&apos;s account type (Sole Proprietorship) are &quot;Sole Proprietorship&quot;</errorMessage>
+</ValidationRule>

@@ -1,0 +1,102 @@
+<div data-bind="if: screenResources">
+  <div data-bind="if: screenResources()['nFORCE.MappedSObjectHierarchyScreenResource_{!NS}__Product_Package__c']">
+    <div data-bind="with: screenResources()['nFORCE.MappedSObjectHierarchyScreenResource_{!NS}__Product_Package__c']">
+      <div data-bind="if: children()[0]">
+        <div data-bind="with: children()[0]">
+          <div data-bind="if: children()[0]">
+            <h4 style="font-weight: bold;">Loans</h4>
+            <table class="table table-condensed">
+              <thead>
+                <tr>
+                  <th> <span class="text-label">Relationship Name</span> </th>
+                  <th> <span class="text-label">Loan Name</span> </th>
+                  <th> <span class="text-label">Loan Number</span> </th>
+                  <th> <span class="text-label">Product</span> </th>
+                  <th> <span class="text-label">Product Line</span> </th>
+                  <th> <span class="text-label">Product Type</span> </th>
+                  <th> <span class="text-label">Projected Close Date</span> </th>
+                  <th> <span class="text-label">Loan Amount</span> </th>
+                  <th> <span class="text-label">Principal Balance</span> </th>
+                  <th> <span class="text-label">Interest Rate</span> </th>
+                  <th> <span class="text-label">Monthly Payment</span> </th>
+                  <th> <span class="text-label">Past Due Days</span> </th>
+                  <th> <span class="text-label">Maturity Date</span> </th>
+                </tr>
+              </thead>
+              <tbody data-bind="foreach: children()[0].children">
+                <!-- ko if: children()[0] -->
+                <!-- ko with: children()[0] -->
+                <!-- ko with: propertyBag -->
+                <tr data-bind="visible: $data.{!NS}__Loan__c_{!NS}__hasRenewal__c.value() == ''">
+                  <td data-bind="if: $data.{!NS}__Loan__c_{!NS}__Account__c &amp;&amp; $data.{!NS}__Loan__c_{!NS}__Account__c.value">
+                    <span data-bind="text: {!NS}__Loan__c_{!NS}__Account__c.displayValue"></span> </td>
+                  <td data-bind="if: $data.{!NS}__Loan__c_Name &amp;&amp; $data.{!NS}__Loan__c_Name.value"> <span
+                      data-bind="text: {!NS}__Loan__c_Name.value"></span> </td>
+                  <td data-bind="if: $data.{!NS}__Loan__c_{!NS}__lookupKey__c &amp;&amp; $data.{!NS}__Loan__c_{!NS}__lookupKey__c.value">
+                    <span data-bind="text: {!NS}__Loan__c_{!NS}__lookupKey__c.value"></span> </td>
+                  <td data-bind="if: $data.{!NS}__Loan__c_{!NS}__Product__c &amp;&amp; $data.{!NS}__Loan__c_{!NS}__Product__c.value">
+                    <span data-bind="text: {!NS}__Loan__c_{!NS}__Product__c.value"></span> </td>
+                  <td data-bind="if: $data.{!NS}__Loan__c_{!NS}__Product_Line__c &amp;&amp; $data.{!NS}__Loan__c_{!NS}__Product_Line__c.value">
+                    <span data-bind="text: {!NS}__Loan__c_{!NS}__Product_Line__c.value"></span> </td>
+                  <td data-bind="if: $data.{!NS}__Loan__c_{!NS}__Product_Type__c &amp;&amp; $data.{!NS}__Loan__c_{!NS}__Product_Type__c.value">
+                    <span data-bind="text: {!NS}__Loan__c_{!NS}__Product_Type__c.value"></span> </td>
+                  <td data-bind="if: $data.{!NS}__Loan__c_{!NS}__CloseDate__c &amp;&amp; $data.{!NS}__Loan__c_{!NS}__CloseDate__c.value">
+                    <span data-bind="dateText: {!NS}__Loan__c_{!NS}__CloseDate__c.value"></span> </td>
+                  <td data-bind="if: $data.{!NS}__Loan__c_{!NS}__Amount__c &amp;&amp; $data.{!NS}__Loan__c_{!NS}__Amount__c.value">
+                    <span data-bind="currencyElement: {!NS}__Loan__c_{!NS}__Amount__c.value,scale:{!NS}__Loan__c_{!NS}__Amount__c.scale,currencyIsoCode:{!NS}__Loan__c_CurrencyIsoCode.value"></span> </td>
+                  <td data-bind="if: $data.{!NS}__Loan__c_{!NS}__Principal_Balance__c &amp;&amp; $data.{!NS}__Loan__c_{!NS}__Principal_Balance__c.value">
+                    <span data-bind="currencyElement: {!NS}__Loan__c_{!NS}__Principal_Balance__c.value,scale:{!NS}__Loan__c_{!NS}__Principal_Balance__c.scale,currencyIsoCode:{!NS}__Loan__c_CurrencyIsoCode.value"></span> </td>
+                  <td data-bind="if: $data.{!NS}__Loan__c_{!NS}__InterestRate__c &amp;&amp; $data.{!NS}__Loan__c_{!NS}__InterestRate__c.value">
+                    <span data-bind="percentText: {!NS}__Loan__c_{!NS}__InterestRate__c.value, scale: undefined, precision: undefined"></span>
+                  </td>
+                  <td data-bind="if: $data.{!NS}__Loan__c_{!NS}__Monthly_Payment__c &amp;&amp; $data.{!NS}__Loan__c_{!NS}__Monthly_Payment__c.value">
+                    <span data-bind="currencyElement: {!NS}__Loan__c_{!NS}__Monthly_Payment__c.value,scale:{!NS}__Loan__c_{!NS}__Monthly_Payment__c.scale,currencyIsoCode:{!NS}__Loan__c_CurrencyIsoCode.value"></span> </td>
+                  <td data-bind="if: $data.{!NS}__Loan__c_{!NS}__Past_Due_Days__c &amp;&amp; $data.{!NS}__Loan__c_{!NS}__Past_Due_Days__c.value">
+                    <span data-bind="numericText: {!NS}__Loan__c_{!NS}__Past_Due_Days__c.value, precision: 0"></span>
+                  </td>
+                  <td data-bind="if: $data.{!NS}__Loan__c_{!NS}__Maturity_Date__c &amp;&amp; $data.{!NS}__Loan__c_{!NS}__Maturity_Date__c.value">
+                    <span data-bind="dateText: {!NS}__Loan__c_{!NS}__Maturity_Date__c.value"></span> </td>
+                </tr> <!-- /ko -->
+                <!-- /ko -->
+                <!-- /ko -->
+              </tbody>
+            </table>
+            <h4 style="font-weight: bold;">Deposits</h4>
+            <table
+              class="table table-condensed"
+              id="deDupe"
+            >
+              <thead>
+                <tr>
+                  <th> <span class="text-label">Deposit Name</span> </th>
+                  <th> <span class="text-label">Product</span> </th>
+                  <th> <span class="text-label">Product Type</span> </th>
+                  <th> <span class="text-label">Product Line</span> </th>
+                  <th> <span class="text-label">Amount</span> </th>
+                </tr>
+              </thead>
+              <tbody data-bind="foreach: children()[0].children">
+                <!-- ko if: children()[1] -->
+                <!-- ko with: children()[1] -->
+                <tr data-bind="with: propertyBag">
+                  <td data-bind="if: $data.{!NS}__Deposit__c_Name &amp;&amp; $data.{!NS}__Deposit__c_Name.value"> <span
+                      data-bind="text: {!NS}__Deposit__c_Name.value"></span> </td>
+                  <td data-bind="if: $data.{!NS}__Deposit__c_{!NS}__Product__c &amp;&amp; $data.{!NS}__Deposit__c_{!NS}__Product__c.value">
+                    <span data-bind="text: {!NS}__Deposit__c_{!NS}__Product__c.value"></span> </td>
+                  <td data-bind="if: $data.{!NS}__Deposit__c_{!NS}__Product_Line__c &amp;&amp; $data.{!NS}__Deposit__c_{!NS}__Product_Line__c.value">
+                    <span data-bind="text: {!NS}__Deposit__c_{!NS}__Product_Line__c.value"></span> </td>
+                  <td data-bind="if: $data.{!NS}__Deposit__c_{!NS}__Product_Type__c &amp;&amp; $data.{!NS}__Deposit__c_{!NS}__Product_Type__c.value">
+                    <span data-bind="text: {!NS}__Deposit__c_{!NS}__Product_Type__c.value"></span> </td>
+                  <td data-bind="if: $data.{!NS}__Deposit__c_{!NS}__Amount__c &amp;&amp; $data.{!NS}__Deposit__c_{!NS}__Amount__c.value">
+                    <span data-bind="currencyElement: {!NS}__Deposit__c_{!NS}__Amount__c.value,scale:{!NS}__Deposit__c_{!NS}__Amount__c.scale,currencyIsoCode:{!NS}__Deposit__c_CurrencyIsoCode.value"></span> </td>
+                </tr> <!-- /ko -->
+                <!-- /ko -->
+              </tbody>
+            </table>
+          </div>
+        </div><div data-bind="if: screenResources"><div data-bind="if: screenResources()['nFORCE.MappedSObjectHierarchyScreenResource_{!NS}__Product_Package__c']"><div data-bind="with: screenResources()['nFORCE.MappedSObjectHierarchyScreenResource_{!NS}__Product_Package__c']"><div data-bind="if: children()[0]"><div data-bind="with: children()[0]"><div data-bind="if: children()[0]"><h4 style="font-weight:700">Loans</h4><table class="table table-condensed"><thead><tr><th><span class="text-label">Relationship Name</span></th><th><span class="text-label">Loan Name</span></th><th><span class="text-label">Loan Number</span></th><th><span class="text-label">Product</span></th><th><span class="text-label">Product Line</span></th><th><span class="text-label">Product Type</span></th><th><span class="text-label">Projected Close Date</span></th><th><span class="text-label">Loan Amount</span></th><th><span class="text-label">Principal Balance</span></th><th><span class="text-label">Interest Rate</span></th><th><span class="text-label">Monthly Payment</span></th><th><span class="text-label">Past Due Days</span></th><th><span class="text-label">Maturity Date</span></th></tr></thead><tbody data-bind="foreach: children()[0].children"><tr data-bind="visible: $data.{!NS}__Loan__c_{!NS}__hasRenewal__c.value() == ''"><td data-bind="if: $data.{!NS}__Loan__c_{!NS}__Account__c && $data.{!NS}__Loan__c_{!NS}__Account__c.value"><span data-bind="text: {!NS}__Loan__c_{!NS}__Account__c.displayValue"></span></td><td data-bind="if: $data.{!NS}__Loan__c_Name && $data.{!NS}__Loan__c_Name.value"><span data-bind="text: {!NS}__Loan__c_Name.value"></span></td><td data-bind="if: $data.{!NS}__Loan__c_{!NS}__lookupKey__c && $data.{!NS}__Loan__c_{!NS}__lookupKey__c.value"><span data-bind="text: {!NS}__Loan__c_{!NS}__lookupKey__c.value"></span></td><td data-bind="if: $data.{!NS}__Loan__c_{!NS}__Product__c && $data.{!NS}__Loan__c_{!NS}__Product__c.value"><span data-bind="text: {!NS}__Loan__c_{!NS}__Product__c.value"></span></td><td data-bind="if: $data.{!NS}__Loan__c_{!NS}__Product_Line__c && $data.{!NS}__Loan__c_{!NS}__Product_Line__c.value"><span data-bind="text: {!NS}__Loan__c_{!NS}__Product_Line__c.value"></span></td><td data-bind="if: $data.{!NS}__Loan__c_{!NS}__Product_Type__c && $data.{!NS}__Loan__c_{!NS}__Product_Type__c.value"><span data-bind="text: {!NS}__Loan__c_{!NS}__Product_Type__c.value"></span></td><td data-bind="if: $data.{!NS}__Loan__c_{!NS}__CloseDate__c && $data.{!NS}__Loan__c_{!NS}__CloseDate__c.value"><span data-bind="dateText: {!NS}__Loan__c_{!NS}__CloseDate__c.value"></span></td><td data-bind="if: $data.{!NS}__Loan__c_{!NS}__Amount__c && $data.{!NS}__Loan__c_{!NS}__Amount__c.value"><span data-bind="currencyElement: {!NS}__Loan__c_{!NS}__Amount__c.value,scale:{!NS}__Loan__c_{!NS}__Amount__c.scale,currencyIsoCode:{!NS}__Loan__c_CurrencyIsoCode.value"></span></td><td data-bind="if: $data.{!NS}__Loan__c_{!NS}__Principal_Balance__c && $data.{!NS}__Loan__c_{!NS}__Principal_Balance__c.value"><span data-bind="currencyElement: {!NS}__Loan__c_{!NS}__Principal_Balance__c.value,scale:{!NS}__Loan__c_{!NS}__Principal_Balance__c.scale,currencyIsoCode:{!NS}__Loan__c_CurrencyIsoCode.value"></span></td><td data-bind="if: $data.{!NS}__Loan__c_{!NS}__InterestRate__c && $data.{!NS}__Loan__c_{!NS}__InterestRate__c.value"><span data-bind="percentText: {!NS}__Loan__c_{!NS}__InterestRate__c.value, scale: undefined, precision: undefined"></span></td><td data-bind="if: $data.{!NS}__Loan__c_{!NS}__Monthly_Payment__c && $data.{!NS}__Loan__c_{!NS}__Monthly_Payment__c.value"><span data-bind="currencyElement: {!NS}__Loan__c_{!NS}__Monthly_Payment__c.value,scale:{!NS}__Loan__c_{!NS}__Monthly_Payment__c.scale,currencyIsoCode:{!NS}__Loan__c_CurrencyIsoCode.value"></span></td><td data-bind="if: $data.{!NS}__Loan__c_{!NS}__Past_Due_Days__c && $data.{!NS}__Loan__c_{!NS}__Past_Due_Days__c.value"><span data-bind="numericText: {!NS}__Loan__c_{!NS}__Past_Due_Days__c.value, precision: 0"></span></td><td data-bind="if: $data.{!NS}__Loan__c_{!NS}__Maturity_Date__c && $data.{!NS}__Loan__c_{!NS}__Maturity_Date__c.value"><span data-bind="dateText: {!NS}__Loan__c_{!NS}__Maturity_Date__c.value"></span></td></tr></tbody></table><h4 style="font-weight:700">Deposits</h4><table class="table table-condensed" id="deDupe"><thead><tr><th><span class="text-label">Deposit Name</span></th><th><span class="text-label">Product</span></th><th><span class="text-label">Product Type</span></th><th><span class="text-label">Product Line</span></th><th><span class="text-label">Amount</span></th></tr></thead><tbody data-bind="foreach: children()[0].children"><tr data-bind="with: propertyBag"><td data-bind="if: $data.{!NS}__Deposit__c_Name && $data.{!NS}__Deposit__c_Name.value"><span data-bind="text: {!NS}__Deposit__c_Name.value"></span></td><td data-bind="if: $data.{!NS}__Deposit__c_{!NS}__Product__c && $data.{!NS}__Deposit__c_{!NS}__Product__c.value"><span data-bind="text: {!NS}__Deposit__c_{!NS}__Product__c.value"></span></td><td data-bind="if: $data.{!NS}__Deposit__c_{!NS}__Product_Line__c && $data.{!NS}__Deposit__c_{!NS}__Product_Line__c.value"><span data-bind="text: {!NS}__Deposit__c_{!NS}__Product_Line__c.value"></span></td><td data-bind="if: $data.{!NS}__Deposit__c_{!NS}__Product_Type__c && $data.{!NS}__Deposit__c_{!NS}__Product_Type__c.value"><span data-bind="text: {!NS}__Deposit__c_{!NS}__Product_Type__c.value"></span></td><td data-bind="if: $data.{!NS}__Deposit__c_{!NS}__Amount__c && $data.{!NS}__Deposit__c_{!NS}__Amount__c.value"><span data-bind="currencyElement: {!NS}__Deposit__c_{!NS}__Amount__c.value,scale:{!NS}__Deposit__c_{!NS}__Amount__c.scale,currencyIsoCode:{!NS}__Deposit__c_CurrencyIsoCode.value"></span></td></tr></tbody></table></div></div></div></div></div></div><script>jQuery(document).ajaxStop(function(){var e={};jQuery("#deDupe tr").each(function(){var t=jQuery(this).text();e[t]?jQuery(this).addClass("hidden"):e[t]=!0})})</script>
+      </div>
+    </div>
+  </div>
+</div>
+<script> jQuery(document).ajaxStop(function () { var seen = {}; jQuery('#deDupe tr').each(function () { var txt = jQuery(this).text(); if (seen[txt]) { jQuery(this).addClass('hidden'); } else { seen[txt] = true; } }); }); </script>

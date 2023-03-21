@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nArchive__missingAttachment__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Flag to indicate the assocated Attachment record is missing from the Placeholder</description>
+    <externalId>false</externalId>
+    <label>Missing Attachment</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Field_Name__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is required and is manually populated. It uniquely identifies the statistic within the specified category. The value is placed in the LLC_BI.Statistic__c.LLC_BI_Field_Name__c field for every statistic that is created as a result of this Statistic Configuration Record. If the LLC_BI__Post_to_Parent_Object__c field indicates TRUE, the value is also used to find and update the field with the same name on the parent object with the calculated value. The parent object is defined by the LLC_BI__Object_Name__c field.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Name used to identify the specific statistic configuration</inlineHelpText>
+    <label>Field Name</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

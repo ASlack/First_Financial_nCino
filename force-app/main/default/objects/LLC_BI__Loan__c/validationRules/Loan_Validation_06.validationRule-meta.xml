@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Loan_Validation_06</fullName>
+    <active>true</active>
+    <description>You Cannot Manually Change the Loan to a Post Approval Stage. The Loan Must be Approved by pressing the &apos;Submit for Approval&apos; Button at the top of the page.</description>
+    <errorConditionFormula>AND(
+OR(
+ISPICKVAL(LLC_BI__Stage__c , &apos;Processing&apos;),
+ISPICKVAL(LLC_BI__Stage__c , &apos;Doc Prep&apos;),
+ISPICKVAL(LLC_BI__Stage__c , &apos;Closing&apos;)),
+ISBLANK(LLC_BI__Credit_Approval_Date__c),
+$User.No_Validation__c = False)</errorConditionFormula>
+    <errorDisplayField>LLC_BI__Stage__c</errorDisplayField>
+    <errorMessage>You Cannot Manually Change the Loan to a Post Approval Stage. The Loan Must be Approved by pressing the &apos;Submit for Approval&apos; Button at the top of the page. - LV06</errorMessage>
+</ValidationRule>

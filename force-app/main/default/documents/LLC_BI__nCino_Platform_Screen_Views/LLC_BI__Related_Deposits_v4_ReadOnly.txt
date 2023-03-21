@@ -1,0 +1,41 @@
+&nbsp<!-- This is a fix for LLCBI-2332 (IE 8 Error) -->
+<!-- ko if: screenResources()['{!NS}.DepositFScreenResource_{!NS}__Loan__c'].children().length== 0 -->
+<p>There are currently no deposits for relationships involved with this loan.</p> <!-- /ko -->
+<!-- ko if: screenResources()['{!NS}.DepositFScreenResource_{!NS}__Loan__c'].children().length > 0 -->
+<table
+  class="table table-bordered table-striped"
+  data-bind="with: screenResources()['{!NS}.DepositFScreenResource_{!NS}__Loan__c']"
+>
+  <thead>
+    <tr>
+      <th colspan="7">Deposits</th>
+    </tr>
+    <tr data-bind="with: children()[0]">
+      <th data-bind="text: children()[0].propertyBag.Account_Name.fieldLabel" />
+      <th data-bind="text: propertyBag.{!NS}__Deposit__c_Name.fieldLabel" />
+      <th data-bind="text: propertyBag.{!NS}__Deposit__c_{!NS}__Open_Date__c.fieldLabel" />
+      <th data-bind="text: propertyBag.{!NS}__Deposit__c_{!NS}__Amount__c.fieldLabel" />
+      <th><span data-bind="text: propertyBag.{!NS}__Deposit__c_{!NS}__Product_Line__c.fieldLabel" /> - <span data-bind="text: propertyBag.{!NS}__Deposit__c_{!NS}__Product_Type__c.fieldLabel" />
+        - <span data-bind="text: propertyBag.{!NS}__Deposit__c_{!NS}__Product__c.fieldLabel" /> </th>
+      <th data-bind="text: propertyBag.{!NS}__Deposit__c_{!NS}__Maturity_Date__c.fieldLabel" />
+      <th class="hidden-print">&nbsp;</th>
+    </tr>
+  </thead>
+  <tbody data-bind="foreach: children()">
+    <tr>
+      <td><span data-bind="text: children()[0].propertyBag.Account_Name.value" />
+        <!-- ko if: children()[0].propertyBag.Account_Type.value != null -->(<span data-bind="text: children()[0].propertyBag.Account_Type.value" />)
+        <!-- /ko -->
+      </td>
+      <td data-bind="text: propertyBag.{!NS}__Deposit__c_Name.value" />
+      <td data-bind="dateText: propertyBag.{!NS}__Deposit__c_{!NS}__Open_Date__c.value" />
+      <td data-bind="currencyElement: propertyBag.{!NS}__Deposit__c_{!NS}__Amount__c.value,scale:propertyBag.{!NS}__Deposit__c_{!NS}__Amount__c.scale,currencyIsoCode:propertyBag.{!NS}__Deposit__c_CurrencyIsoCode.value" />
+      <td><span data-bind="text: propertyBag.{!NS}__Deposit__c_{!NS}__Product_Line__c.value" /> - <span data-bind="text: propertyBag.{!NS}__Deposit__c_{!NS}__Product_Type__c.value" />
+        - <span data-bind="text: propertyBag.{!NS}__Deposit__c_{!NS}__Product__c.value" /> </td>
+      <td data-bind="dateText: propertyBag.{!NS}__Deposit__c_{!NS}__Maturity_Date__c.value" />
+      <td class="hidden-print"><a data-bind="attr: { href: '/'+ propertyBag.{!NS}__Deposit__c_Id.value()+'/e' }">Edit
+          <i class="glyphicon glyphicon-edit"></i></a></td>
+    </tr>
+  </tbody>
+</table>
+<!-- /ko -->

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Home_Lending_Compliance_Calculations__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The user populates this picklist to indicate Home Lending compliance calculations are required for the loan. Examples of compliance calculations specific to U.S. Home Lending are Regulation Z and HOEPA High-Cost Mortgage and Higher-Priced Mortgage Loan.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field indicates if loans originated for this product require Home Lending compliance calculations.</inlineHelpText>
+    <label>Home Lending Compliance Calculations</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>HCM</fullName>
+                <default>false</default>
+                <label>HCM</label>
+            </value>
+            <value>
+                <fullName>HPML</fullName>
+                <default>false</default>
+                <label>HPML</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

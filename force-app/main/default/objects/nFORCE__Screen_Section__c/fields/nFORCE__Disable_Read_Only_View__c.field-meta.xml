@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Disable_Read_Only_View__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Currently, this field doesn’t support any logic. When true, this field will hide the cancel button on the screen section where it is configured and will not display to the user in the nCino UI. By default, this is false.</description>
+    <externalId>false</externalId>
+    <label>Disable Read-Only View</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

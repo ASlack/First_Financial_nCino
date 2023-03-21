@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Total_Lien_Amount__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional and manually populated. It is the sum of all liens both held by the bank and liens entered as held by other institutions. It excludes loans in process. This number is based on liens associated to this collateral.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The sum of all liens both held by the bank and liens entered as held by other institutions, excluding loans in process.</inlineHelpText>
+    <label>Total Lien Amount</label>
+    <summarizedField>LLC_BI__Lien__c.LLC_BI__Amount__c</summarizedField>
+    <summaryFilterItems>
+        <field>LLC_BI__Lien__c.LLC_BI__Active__c</field>
+        <operation>equals</operation>
+        <value>True</value>
+    </summaryFilterItems>
+    <summaryForeignKey>LLC_BI__Lien__c.LLC_BI__Collateral__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

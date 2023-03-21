@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Screen_Is_Editable__c</fullName>
+    <defaultValue>true</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Determines if the screen associated with this route is editable.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Is the Screen associated with this Route editable?</inlineHelpText>
+    <label>Screen Is Editable</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

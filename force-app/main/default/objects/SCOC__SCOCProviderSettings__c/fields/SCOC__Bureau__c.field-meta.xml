@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCOC__Bureau__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Administrators populate this required text field to indicate the credit bureau to associate with the related provider and settings.</description>
+    <externalId>false</externalId>
+    <label>Bureau</label>
+    <length>255</length>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>NDOC__Portal_Rejection_Comment__c</name>
+    <picklistValues>
+        <masterLabel>The document you provided is incomplete. Please fill out the document completely and upload again.</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The document you provided is missing a required signature. Please sign this document and upload again.</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The document you provided is out of date. Please provide a current version of the document.</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The document you uploaded cannot be read. Please upload a legible document.</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>You did not provide the requested document. Please upload the correct document and submit again.</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

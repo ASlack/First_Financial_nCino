@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORMS__Form_Purpose__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Users populate this optional picklist field with the purpose of the form generation template. By default, it is General.</description>
+    <externalId>false</externalId>
+    <label>Form Purpose</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>General</fullName>
+                <default>true</default>
+                <label>General</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

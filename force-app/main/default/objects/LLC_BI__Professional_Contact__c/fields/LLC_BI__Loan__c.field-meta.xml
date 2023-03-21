@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Loan__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is a master detail field that specifies the loan in which the professional contact is associated with.</description>
+    <externalId>false</externalId>
+    <label>Loan</label>
+    <referenceTo>LLC_BI__Loan__c</referenceTo>
+    <relationshipLabel>Professional Contacts</relationshipLabel>
+    <relationshipName>Professional_Contacts</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

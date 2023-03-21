@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Source_Row__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The system auto-populates this optional lookup field with the id of the cloned row from the Spreads Statement Record template.</description>
+    <externalId>false</externalId>
+    <label>Source Row</label>
+    <referenceTo>LLC_BI__Spread_Statement_Record__c</referenceTo>
+    <relationshipLabel>Cloned Spread Statement Records</relationshipLabel>
+    <relationshipName>Cloned_Spread_Statement_Records</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

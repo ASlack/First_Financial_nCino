@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Svc_Total__c</fullName>
+    <defaultValue>0.00</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is populated automatically via trigger. It stores the sum of the fee including discounts for all bill points. It details the total fee for all bill points.</description>
+    <externalId>false</externalId>
+    <label>Service Total</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

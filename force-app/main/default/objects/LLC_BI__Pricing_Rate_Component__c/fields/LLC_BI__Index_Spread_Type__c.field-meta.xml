@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Index_Spread_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this field based on either a negative or positive Spread value.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The system auto-populates this field with Add Spread to Index when the Spread value is positive, and Subtract Spread from Index when the Spread value is negative.</inlineHelpText>
+    <label>Index Spread Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Add Spread to Index</fullName>
+                <default>false</default>
+                <label>Add Spread to Index</label>
+            </value>
+            <value>
+                <fullName>Subtract Spread from Index</fullName>
+                <default>false</default>
+                <label>Subtract Spread from Index</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

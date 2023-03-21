@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Low__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It must be manually populated. It is only populated if its associated Risk Grade Factor&apos;s &quot;LLC_BI__Type__c&quot; is &quot;Quantitative&quot;. This field sets the lowest value which is still within the range of the value set for &quot;Risk_Grade__c&quot; on this record. If the risk grade on this record does not have a low limit, this field should be left blank.</description>
+    <externalId>false</externalId>
+    <label>Low</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

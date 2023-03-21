@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Is_Ready_To_Transmit__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is manually populated. It is used for CUSO implementations. When true, it denotes whether the stage and status referenced on this record represents a stage and status for the loan where its data should be transmitted to the CUSO data storage.</description>
+    <externalId>false</externalId>
+    <label>Is Ready to Transmit</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

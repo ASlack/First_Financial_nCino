@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Add_Signer_Modal</fullName>
+    <availableFields>
+        <field>LLC_BI__Account__r.LLC_BI__Tax_Identification_Number__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <description>The field set on Authorized Account that displays on the Add Signer modal Association Cards when a business is added as a signer.</description>
+    <displayedFields>
+        <field>LLC_BI__Signing_Authority__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Add Signer Modal</label>
+</FieldSet>

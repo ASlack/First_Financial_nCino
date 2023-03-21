@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Review__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is the master- detail, used to specify the review record the accounts should be visible on. This field is automatically populated when a review is initiated for the loans based on the entity involvement of those loans. This field is not editable on the review record ,however it is used in populating the &quot;Loans&quot; and &quot;Relationship&quot; list sections of the review record.</description>
+    <externalId>false</externalId>
+    <label>Review</label>
+    <referenceTo>LLC_BI__Review__c</referenceTo>
+    <relationshipLabel>Review Accounts</relationshipLabel>
+    <relationshipName>Review_Accounts</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

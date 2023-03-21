@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Supports_Common_Sizing__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is automatically populated via a formula. It determines which spread statement types allow the user to enable common sizing. When enabled, the spread statement supports common sizing. Income Statement and Balance Sheet are the only spread statements which have this enabled.</description>
+    <externalId>false</externalId>
+    <formula>OR(ISPICKVAL(LLC_BI__Type__c, &apos;Income Statement&apos;),ISPICKVAL(LLC_BI__Type__c, &apos;Balance Sheet&apos;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Supports Common Sizing</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

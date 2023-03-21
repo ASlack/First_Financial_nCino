@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Amount_Outstanding_Check_Against_Amount</fullName>
+    <active>false</active>
+    <description>Check to make sure the amount outstanding is not being set to be greater than the Amount (total) available</description>
+    <errorConditionFormula>IF(LLC_BI__AmountOutstanding__c &gt; LLC_BI__Amount__c, true, false)</errorConditionFormula>
+    <errorDisplayField>LLC_BI__AmountOutstanding__c</errorDisplayField>
+    <errorMessage>Amount Outstanding cannot exceed the maximum Amount available.</errorMessage>
+</ValidationRule>

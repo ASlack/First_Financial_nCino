@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__HPML_APOR_Spread__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this field with the Higher-Priced Mortgage Loan percentage rate-spread defined by the FFIEC. By default, this field is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field displays the HPML rate-spread for an offer.</inlineHelpText>
+    <label>HPML APOR Spread</label>
+    <precision>6</precision>
+    <required>false</required>
+    <scale>3</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

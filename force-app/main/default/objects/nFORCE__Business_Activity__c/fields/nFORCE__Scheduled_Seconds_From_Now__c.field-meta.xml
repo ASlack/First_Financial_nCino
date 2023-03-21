@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Scheduled_Seconds_From_Now__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The user populates this optional number field to indicate the amount of seconds from now when the scheduled business activity should run. By default, this field is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This number field indicates how many seconds from now the business activity should run.</inlineHelpText>
+    <label>Scheduled Seconds From Now</label>
+    <precision>4</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

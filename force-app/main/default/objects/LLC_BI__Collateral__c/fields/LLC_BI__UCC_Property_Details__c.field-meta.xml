@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__UCC_Property_Details__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this optional lookup field to link new UCC Property Details records that capture additional property details to the UCC Collateral records.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This optional lookup field links the UCC Property Details records that capture additional property details to the UCC Collateral records.</inlineHelpText>
+    <label>UCC Property Details</label>
+    <referenceTo>LLC_BI__UCC_Property_Details__c</referenceTo>
+    <relationshipLabel>Collateral Mgmt</relationshipLabel>
+    <relationshipName>Collateral_Mgmt</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

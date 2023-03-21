@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__External_Dimension__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system populates this required text field with the name of an attribute that the matrix must contain in order for the external data to successfully populate in the external result column. By default, it is blank.</description>
+    <externalId>false</externalId>
+    <label>External Dimension</label>
+    <length>255</length>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

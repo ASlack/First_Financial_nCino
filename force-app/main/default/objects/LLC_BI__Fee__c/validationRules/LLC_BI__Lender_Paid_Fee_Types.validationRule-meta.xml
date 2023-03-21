@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Lender_Paid_Fee_Types</fullName>
+    <active>true</active>
+    <description>Users can only add the General Lender Credit or Cost to Cure as Paid By Lender.</description>
+    <errorConditionFormula>OR (
+				AND(
+					NOT(ISBLANK(TEXT(LLC_BI__Paid_By__c))),
+					NOT(ISPICKVAL(LLC_BI__Paid_By__c, &apos;Lender&apos;)),
+					ISPICKVAL(LLC_BI__Fee_Type__c, &apos;Lender Credit&apos;)
+				),
+				AND(
+					NOT(ISBLANK(TEXT(LLC_BI__Paid_By__c))),
+					NOT(ISPICKVAL(LLC_BI__Paid_By__c, &apos;Lender&apos;)),
+					ISPICKVAL(LLC_BI__Fee_Type__c, &apos;Cost to Cure&apos;)
+				)
+			)</errorConditionFormula>
+    <errorMessage>The General Lender Credit or Cost to Cure cannot be paid by the Borrower or Seller. Select Paid By Lender or leave this field blank.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Period_Out_Of_Range__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is currently not being used.</description>
+    <externalId>false</externalId>
+    <formula>IF(
+  OR(
+    OR(
+      LLC_BI__Year__c &gt; Year(LLC_BI__Spread_Statement_Type__r.LLC_BI__End_Date__c),
+      AND(
+     LLC_BI__Year__c = Year(LLC_BI__Spread_Statement_Type__r.LLC_BI__End_Date__c),
+     LLC_BI__Month__c &gt; Month(LLC_BI__Spread_Statement_Type__r.LLC_BI__End_Date__c)
+      )
+    ),
+    OR(
+      LLC_BI__Year__c &lt; Year(LLC_BI__Spread_Statement_Type__r.LLC_BI__Start_Date__c),
+      AND(
+     LLC_BI__Year__c = Year(LLC_BI__Spread_Statement_Type__r.LLC_BI__Start_Date__c),
+     LLC_BI__Month__c &lt; Month(LLC_BI__Spread_Statement_Type__r.LLC_BI__Start_Date__c)
+      )
+    )
+  ), 1, 0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Period Out Of Range</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

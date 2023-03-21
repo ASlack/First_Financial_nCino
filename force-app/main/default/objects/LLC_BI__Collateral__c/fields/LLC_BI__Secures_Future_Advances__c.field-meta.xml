@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Secures_Future_Advances__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is optional and manually populated. It is a checkbox used to specify that the collateral is used to secure future advances. This scenario is not valid for use with Aircraft or Ship collateral.</description>
+    <externalId>false</externalId>
+    <label>Secures Future Advances</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

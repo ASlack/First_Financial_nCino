@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Disbursement_Description__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is manually populated. This field is a picklist, used to specify how the loan is being disbursed.</description>
+    <externalId>false</externalId>
+    <label>Disbursement Description</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Account</fullName>
+                <default>false</default>
+                <label>Account</label>
+            </value>
+            <value>
+                <fullName>Check</fullName>
+                <default>false</default>
+                <label>Check</label>
+            </value>
+            <value>
+                <fullName>Lender</fullName>
+                <default>false</default>
+                <label>Lender</label>
+            </value>
+            <value>
+                <fullName>Payable</fullName>
+                <default>false</default>
+                <label>Payable</label>
+            </value>
+            <value>
+                <fullName>PayOff</fullName>
+                <default>false</default>
+                <label>PayOff</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>NonLoan</fullName>
+                <default>false</default>
+                <label>NonLoan</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

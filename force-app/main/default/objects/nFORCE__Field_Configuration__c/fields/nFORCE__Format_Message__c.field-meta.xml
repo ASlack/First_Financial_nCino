@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Format_Message__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The error message to display to the user when a field does not match the format expression specified.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter a message to display to the user when their input does not match the format specified in Format Expression.</inlineHelpText>
+    <label>Format Message</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

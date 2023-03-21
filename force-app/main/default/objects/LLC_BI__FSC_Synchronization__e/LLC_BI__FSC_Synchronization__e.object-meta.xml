@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>The queue contains instructions that are used to synchronize content between nCino and Financial Services Cloud.</description>
+    <eventType>StandardVolume</eventType>
+    <label>FSC Synchronization</label>
+    <pluralLabel>FSC Synchronization</pluralLabel>
+    <publishBehavior>PublishAfterCommit</publishBehavior>
+</CustomObject>

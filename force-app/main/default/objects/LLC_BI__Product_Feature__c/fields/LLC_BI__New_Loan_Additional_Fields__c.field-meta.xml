@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__New_Loan_Additional_Fields__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>tbd</description>
+    <externalId>false</externalId>
+    <label>New Loan Additional Fields</label>
+    <referenceTo>nFORCE__Screen__c</referenceTo>
+    <relationshipName>Product_Features</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

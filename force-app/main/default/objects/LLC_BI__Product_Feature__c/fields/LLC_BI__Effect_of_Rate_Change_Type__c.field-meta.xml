@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Effect_of_Rate_Change_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>User selects a value from this optional picklist to identify how interest rate changes affect the loan program. By default, it is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select a change in interest rate to see how it affects the loan.</inlineHelpText>
+    <label>Effect of Rate Change Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Payment Amount</fullName>
+                <default>false</default>
+                <label>Payment Amount</label>
+            </value>
+            <value>
+                <fullName>Maturity</fullName>
+                <default>false</default>
+                <label>Maturity</label>
+            </value>
+            <value>
+                <fullName>Loan Term</fullName>
+                <default>false</default>
+                <label>Loan Term</label>
+            </value>
+            <value>
+                <fullName>Payment and Maturity</fullName>
+                <default>false</default>
+                <label>Payment and Maturity</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

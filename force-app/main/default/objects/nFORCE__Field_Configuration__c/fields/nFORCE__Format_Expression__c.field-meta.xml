@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Format_Expression__c</fullName>
+    <deprecated>false</deprecated>
+    <description>A regular expression for validating the format of this field. If specified, the UI will enforce contents matching the format specified and provide a specified error message if the format is not matched.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter an optional regular expression for enforcing a particular format for the field&apos;s contents.</inlineHelpText>
+    <label>Format Expression</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

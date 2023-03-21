@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Subline_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This picklist is used to indicate a product feature that specifies the subline type of a note.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Specifies the subline type of a note.</inlineHelpText>
+    <label>Subline Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Equipment Acquisition</fullName>
+                <default>false</default>
+                <label>Equipment Acquisition</label>
+            </value>
+            <value>
+                <fullName>Asset Acquisition</fullName>
+                <default>false</default>
+                <label>Asset Acquisition</label>
+            </value>
+            <value>
+                <fullName>Term Loans</fullName>
+                <default>false</default>
+                <label>Term Loans</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

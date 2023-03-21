@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Excluded__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field is populated automatically whenever a child product state config record is created with &quot;LLC_BI__Is_Excluded_From_Stage_Duration__c&quot; enabled. This field links to a Product State Config Pivot record which specifies all &quot;states&quot; (stage and status) that are considered Excluded for this product type in the system. It is used to specify stages that are should be eclused from stage duration in the system.</description>
+    <externalId>false</externalId>
+    <label>Product State Config Excluded</label>
+    <referenceTo>LLC_BI__Product_State_Config_Pivot__c</referenceTo>
+    <relationshipLabel>Product State Config Excluded</relationshipLabel>
+    <relationshipName>Product_Types_Excluded</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

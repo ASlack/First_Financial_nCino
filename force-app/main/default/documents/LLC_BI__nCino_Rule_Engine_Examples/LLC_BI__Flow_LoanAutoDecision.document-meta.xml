@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>An example implementation of the Loan Auto Decision SalesForce Visual Flow that will evaluate a loan and provide an approval recommendation.</description>
+    <internalUseOnly>true</internalUseOnly>
+    <name>Loan Auto-Decision: 5 - Evaluate Loan</name>
+    <public>false</public>
+</Document>

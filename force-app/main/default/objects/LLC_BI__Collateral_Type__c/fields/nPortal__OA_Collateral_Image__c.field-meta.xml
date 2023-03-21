@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nPortal__OA_Collateral_Image__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Populate this field with the URL for the image that should display in online applications for this collateral type.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>For an image hosted online, use the image URL. Alternately, upload an image to Documents, make image visibility public, and populate the field with the image URL.</inlineHelpText>
+    <label>OA Collateral Image</label>
+    <length>2083</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

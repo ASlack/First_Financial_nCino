@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Balloon__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this optional boolean field to indicate whether the product is a balloon product when the loan term is less than the amortization term.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This checkbox will be automatically set to = True when the Amortization Period (Months) and the Term (Months) are different.</inlineHelpText>
+    <label>Balloon</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

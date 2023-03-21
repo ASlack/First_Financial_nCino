@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cm_Financial_Analyst_Narrative__c</fullName>
+    <description>Used to capture the financial analysis information for the Review credit memo. Added for the Commercial Accelerate project.</description>
+    <externalId>false</externalId>
+    <label>Financial Analyst Narrative</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

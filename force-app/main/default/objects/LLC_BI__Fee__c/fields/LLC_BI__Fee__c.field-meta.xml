@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Fee__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this lookup field to track which loan fee a pricing option&apos;s fee writesback to when a user selects a scenario.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Tracks which pricing option fee the system copies to the loan&apos;s fee when a user selects the pricing option.</inlineHelpText>
+    <label>Fee</label>
+    <referenceTo>LLC_BI__Fee__c</referenceTo>
+    <relationshipLabel>Fees</relationshipLabel>
+    <relationshipName>Fees</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

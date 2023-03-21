@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__percentage_only_if_assign_specific</fullName>
+    <active>false</active>
+    <description>--DEPRECATED-- Only populate percentage is contingency type is &apos;Assign Specific&apos; or &apos;Pro Rata&apos;</description>
+    <errorConditionFormula>false</errorConditionFormula>
+    <errorDisplayField>LLC_BI__Contingent_Percentage__c</errorDisplayField>
+    <errorMessage>--DEPRECATED-- A percentage can only be specified if the contingency type is &apos;Assign Specific&apos; or  &apos;Pro Rata&apos;</errorMessage>
+</ValidationRule>

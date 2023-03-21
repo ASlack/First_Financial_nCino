@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__isConvert__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional and can be collected as part of a workflow. It is a hidden field used for reporting purposes, such as number of deposits converted from a lead.</description>
+    <externalId>false</externalId>
+    <label>isConvert</label>
+    <precision>5</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

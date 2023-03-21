@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Traditional_IRA_Contribution_Source__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is a picklist that specifies the source for the rollover to a Traditional IRA.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Specifies the source for the rollover to a Traditional IRA.</inlineHelpText>
+    <label>Traditional IRA Contribution Source</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Traditional IRA</fullName>
+                <default>false</default>
+                <label>Traditional IRA</label>
+            </value>
+            <value>
+                <fullName>Qualified Plan</fullName>
+                <default>false</default>
+                <label>Qualified Plan</label>
+            </value>
+            <value>
+                <fullName>Tax-Sheltered Annuity (TSA)</fullName>
+                <default>false</default>
+                <label>Tax-Sheltered Annuity (TSA)</label>
+            </value>
+            <value>
+                <fullName>457(b)</fullName>
+                <default>false</default>
+                <label>457(b)</label>
+            </value>
+            <value>
+                <fullName>SIMPLE</fullName>
+                <default>false</default>
+                <label>SIMPLE</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

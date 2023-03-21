@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>The Close Date has been moved in/accelerated</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>UNUSED - Workflow Alert: Close Date Accelerated!</name>
+    <style>none</style>
+    <subject>* Close Date Changed for Loan {!LLC_BI__Loan__c.Name} *</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

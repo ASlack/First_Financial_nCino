@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__HSA_Distribution_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is a picklist that specifies the type of distribution for a Health Savings Account (HSA).</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Specifies the type of distribution for a Health Savings Account (HSA).</inlineHelpText>
+    <label>HSA Distribution Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Normal</fullName>
+                <default>false</default>
+                <label>Normal</label>
+            </value>
+            <value>
+                <fullName>Death - Estate Beneficiary - Distribution is in Year of Death</fullName>
+                <default>false</default>
+                <label>Death - Estate Beneficiary - Distribution is in Year of Death</label>
+            </value>
+            <value>
+                <fullName>Death - Estate Beneficiary - Distribution is After Year of Death</fullName>
+                <default>false</default>
+                <label>Death - Estate Beneficiary - Distribution is After Year of Death</label>
+            </value>
+            <value>
+                <fullName>Death - Other Beneficiary - Distribution is in Year of Death</fullName>
+                <default>false</default>
+                <label>Death - Other Beneficiary - Distribution is in Year of Death</label>
+            </value>
+            <value>
+                <fullName>Death - Other Beneficiary - Distribution is After Year of Death</fullName>
+                <default>false</default>
+                <label>Death - Other Beneficiary - Distribution is After Year of Death</label>
+            </value>
+            <value>
+                <fullName>Transfer to my HSA</fullName>
+                <default>false</default>
+                <label>Transfer to my HSA</label>
+            </value>
+            <value>
+                <fullName>Transfer to spouse&apos;s HSA due to death</fullName>
+                <default>false</default>
+                <label>Transfer to spouse&apos;s HSA due to death</label>
+            </value>
+            <value>
+                <fullName>Transfer to former spouse&apos;s HSA due to divorce or legal separation</fullName>
+                <default>false</default>
+                <label>Transfer to former spouse&apos;s HSA due to divorce or legal separation</label>
+            </value>
+            <value>
+                <fullName>Disability</fullName>
+                <default>false</default>
+                <label>Disability</label>
+            </value>
+            <value>
+                <fullName>Prohibited Transaction</fullName>
+                <default>false</default>
+                <label>Prohibited Transaction</label>
+            </value>
+            <value>
+                <fullName>Correction of Excess Contribution by my tax-filing due date</fullName>
+                <default>false</default>
+                <label>Correction of Excess Contribution by my tax-filing due date</label>
+            </value>
+            <value>
+                <fullName>Correction of Excess Contribution - after my tax-filing due date</fullName>
+                <default>false</default>
+                <label>Correction of Excess Contribution - after my tax-filing due date</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

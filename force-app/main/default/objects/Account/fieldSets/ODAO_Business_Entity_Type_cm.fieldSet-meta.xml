@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ODAO_Business_Entity_Type_cm</fullName>
+    <description>Online DAO- Business Information/Your Business Route - Legal Entity Type</description>
+    <displayedFields>
+        <field>Id</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>ODAO-Business Entity Type</label>
+</FieldSet>

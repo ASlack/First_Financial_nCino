@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Pricing_Support_Status__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This Checkbox field will be selected as True if the product is supported by Commercial Pricing and Profitability Pricing calculations, and False if only Profitability calculations are supported for this product.</description>
+    <externalId>false</externalId>
+    <label>Is Pricing Supported</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

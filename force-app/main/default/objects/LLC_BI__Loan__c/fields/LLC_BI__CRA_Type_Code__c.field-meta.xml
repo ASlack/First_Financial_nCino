@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__CRA_Type_Code__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is manually populated. This picklist field indicates the type of loan (Small business, Small farm, Other Lines / Loans for Small Business Purposes, Other Miscellaneous Loan Data, Motor vehicle, Home equity, Credit card, Other - Secured, Other - Unsecured).</description>
+    <externalId>false</externalId>
+    <label>Loan Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Small business</fullName>
+                <default>false</default>
+                <label>Small business</label>
+            </value>
+            <value>
+                <fullName>Small farm</fullName>
+                <default>false</default>
+                <label>Small farm</label>
+            </value>
+            <value>
+                <fullName>Other secured lines of credit - small business</fullName>
+                <default>false</default>
+                <label>Other secured lines of credit - small business</label>
+            </value>
+            <value>
+                <fullName>Home equity</fullName>
+                <default>false</default>
+                <label>Home equity</label>
+            </value>
+            <value>
+                <fullName>Motor vehicle</fullName>
+                <default>false</default>
+                <label>Motor vehicle</label>
+            </value>
+            <value>
+                <fullName>Credit card</fullName>
+                <default>false</default>
+                <label>Credit card</label>
+            </value>
+            <value>
+                <fullName>Other secured consumer loans</fullName>
+                <default>false</default>
+                <label>Other secured consumer loans</label>
+            </value>
+            <value>
+                <fullName>Other unsecured consumer loans</fullName>
+                <default>false</default>
+                <label>Other unsecured consumer loans</label>
+            </value>
+            <value>
+                <fullName>Other loan data</fullName>
+                <default>false</default>
+                <label>Other loan data</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Variable_B_Name__c</fullName>
+    <deprecated>false</deprecated>
+    <description>One of the two variables used in Multi-Variate Analysis.</description>
+    <externalId>false</externalId>
+    <label>Variable B Name</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

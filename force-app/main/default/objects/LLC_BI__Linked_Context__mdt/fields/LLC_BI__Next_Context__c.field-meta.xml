@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Next_Context__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This optional field contains a reference to a Context__mdt object that will come after the current Context__mdt.</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>This field contains a Context__mdt object that will come next after the current Context_Node is processed.</inlineHelpText>
+    <label>Next Context</label>
+    <referenceTo>LLC_BI__Context__mdt</referenceTo>
+    <relationshipLabel>Linked Contexts (Next Context)</relationshipLabel>
+    <relationshipName>Next_Contexts</relationshipName>
+    <required>false</required>
+    <type>MetadataRelationship</type>
+    <unique>false</unique>
+</CustomField>

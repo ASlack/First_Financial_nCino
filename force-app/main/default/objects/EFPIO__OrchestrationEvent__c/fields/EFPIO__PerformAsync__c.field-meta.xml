@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EFPIO__PerformAsync__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Determines if the the intent of this event is to be run asynchronously in a different transaction scope via a Queuable or run Synchronously in the executing transaction scope.</description>
+    <externalId>false</externalId>
+    <label>Perform Asynchronously</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Bundle__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field is required and automatically updated. The Underwriting Bundle to which this object is related.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The Underwriting Bundle to which this object is related.</inlineHelpText>
+    <label>Bundle</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>LLC_BI__Underwriting_Bundle__c.LLC_BI__Is_Template__c</field>
+            <operation>equals</operation>
+            <valueField>$Source.LLC_BI__Is_Template__c</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>LLC_BI__Underwriting_Bundle__c</referenceTo>
+    <relationshipLabel>Spread Statements</relationshipLabel>
+    <relationshipName>Spread_Statements</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

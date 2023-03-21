@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__OpportunityId__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is automatically populated with a trigger. Opportunity ID is the Id of the product opportunity each stage record is associated with. There is no master-detail relationship to enable supporting an unlimited number of opportunities.</description>
+    <externalId>false</externalId>
+    <label>Opportunity Id</label>
+    <length>100</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

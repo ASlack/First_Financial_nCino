@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Interest_Payment_Frequency__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is required if payment type is not &quot;P&amp;I&quot;. It is manually populated. It indicates the frequency requirements for Interest Payments.</description>
+    <externalId>false</externalId>
+    <label>Interest Payment Frequency</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Frequency_Monthly</fullName>
+                <default>true</default>
+                <label>Frequency_Monthly</label>
+            </value>
+            <value>
+                <fullName>Frequency_Annually</fullName>
+                <default>false</default>
+                <label>Frequency_Annually</label>
+            </value>
+            <value>
+                <fullName>Biweekly</fullName>
+                <default>false</default>
+                <label>Biweekly</label>
+            </value>
+            <value>
+                <fullName>Weekly</fullName>
+                <default>false</default>
+                <label>Weekly</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

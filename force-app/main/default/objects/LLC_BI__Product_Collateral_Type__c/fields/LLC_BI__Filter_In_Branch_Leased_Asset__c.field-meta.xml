@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Filter_In_Branch_Leased_Asset__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The user selects this optional checkbox field to filter the product&apos;s associated internal asset type and sub-type picklists. The system displays the associated asset types through product asset type records. By default, this field is deselected.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select this checkbox to enable asset type limiting for the asset collateral type associated with this record.</inlineHelpText>
+    <label>Filter In-Branch Leased Asset</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

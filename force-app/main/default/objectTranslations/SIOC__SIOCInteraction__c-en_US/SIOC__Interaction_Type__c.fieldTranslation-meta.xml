@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help></help>
+    <label></label>
+    <name>SIOC__Interaction_Type__c</name>
+    <picklistValues>
+        <masterLabel>Business Lookup</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Business Verification</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

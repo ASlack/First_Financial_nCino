@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Parent_Onboarding_Case__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Reference to the primary onboarding case that resulted in this additional onboarding case being created.</description>
+    <externalId>false</externalId>
+    <label>Parent Onboarding Case</label>
+    <referenceTo>LLC_BI__Onboarding__c</referenceTo>
+    <relationshipName>Onboarding</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

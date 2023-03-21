@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Initial_Rate_Indicator__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field will be used for Expere Doc Prep, which has not yet been implemented. This field is not required. If enabled, an initial rate (i.e. a teaser rate) was applied to the account. If disabled, this field is not used. By default, it is disabled.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If true an initial rate (i.e. a teaser rate) was applied to the account.</inlineHelpText>
+    <label>Initial Rate Indicator</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

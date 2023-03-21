@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SIOC__VendorResponseEntity__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this required lookup field with the vendor response entity record to which it&apos;s associated.</description>
+    <externalId>false</externalId>
+    <label>Vendor Response Entity</label>
+    <referenceTo>SIOC__VendorResponseEntity__c</referenceTo>
+    <relationshipLabel>Response Indicators</relationshipLabel>
+    <relationshipName>Response_Indicators</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

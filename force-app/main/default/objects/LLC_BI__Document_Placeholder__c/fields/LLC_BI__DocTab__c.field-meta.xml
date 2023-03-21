@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__DocTab__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field is optional and automatically populated. It is only used in classic Doc Man, but is populated for Document Manager as well. It is a lookup to the Tab under which a classic Doc Man placeholder is located.</description>
+    <externalId>false</externalId>
+    <label>DocTab</label>
+    <referenceTo>LLC_BI__DocTab__c</referenceTo>
+    <relationshipLabel>Document Placeholders</relationshipLabel>
+    <relationshipName>Document_Placeholders</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__UI_Users_for_Multi_Factor_Auth</fullName>
+    <description>UI - TM Form Wizard</description>
+    <displayedFields>
+        <field>LLC_BI__Contact_Reference__r.MasterRecordId</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>LLC_BI__Treasury_Service__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>UI Users for Multi Factor Auth</label>
+</FieldSet>

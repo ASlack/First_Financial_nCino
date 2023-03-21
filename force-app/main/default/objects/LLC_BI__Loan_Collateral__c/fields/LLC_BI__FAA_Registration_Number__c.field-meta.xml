@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__FAA_Registration_Number__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This Field is used to record the FAA Registration number on aircraft collateral. The FAA Registration number acts just as a license plate for a motor vehicle does.</description>
+    <externalId>false</externalId>
+    <label>-D FAA Registration Number</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__HMDA_MSA_MD_Number__c</fullName>
+    <deprecated>false</deprecated>
+    <description>--Deprecated-- The five-digit metropolitan statistical area (MSA) number or, if available, the five-digit metropolitan division (MD) number. Used in HMDA reporting.</description>
+    <externalId>false</externalId>
+    <label>-D Five Digit MSA/MD Number</label>
+    <precision>5</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

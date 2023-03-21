@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nPortal__Risk_And_Fraud_Transaction_Log__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this lookup field with the transaction log record from the Risk and Fraud Verification integration. By default, it is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This system-populated field displays the Fraud and Verification integration transaction log record.</inlineHelpText>
+    <label>Risk and Fraud Transaction Log</label>
+    <referenceTo>nFUSE__Transaction_Log__c</referenceTo>
+    <relationshipLabel>Risk and Fraud Contexts</relationshipLabel>
+    <relationshipName>Risk_and_Fraud_Contexts</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

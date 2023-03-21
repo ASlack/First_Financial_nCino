@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__isConvert__c</fullName>
+    <defaultValue>0</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is automatically populated via trigger. This field is used to specify if the loan has been converted from a lead. Setting this field to &quot;1&quot; indicates the loan was converted from lead. This is a hidden field used for reporting purposes, such as reporting the number of loans converted from a lead.</description>
+    <externalId>false</externalId>
+    <label>isConvert</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

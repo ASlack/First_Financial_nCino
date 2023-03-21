@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Is_Bundle_Exception__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Checked when this scenario item is created to overwrite an existing bill point and it&apos;s standard price.</description>
+    <externalId>false</externalId>
+    <label>Is Bundle Exception</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

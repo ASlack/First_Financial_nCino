@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help></help>
+    <label></label>
+    <name>LLC_BI__HMDA_Type__c</name>
+    <picklistValues>
+        <masterLabel>Code 1—Conventional (any loan other than FHA, VA, FSA, or RHS loans)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Code 2—FHA-insured (Federal Housing Administration)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Code 3—VA-guaranteed (Veterans Administration)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Code 4—FSA/RHS-guaranteed (Farm Service Agency or Rural Housing Service)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

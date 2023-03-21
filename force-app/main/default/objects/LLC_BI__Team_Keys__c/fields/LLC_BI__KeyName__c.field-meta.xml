@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__KeyName__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is required. It is manually populated. It is a text field where users and administrators can provide a name for a Team Alert. nCino recommends that Key Names and Template Names be identical.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Use this key in the MailerTeamKey field for the respective object.</inlineHelpText>
+    <label>Key Name</label>
+    <length>100</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

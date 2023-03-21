@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>UI_Order_Entry_Wire_Transfer</fullName>
+    <description>New UI field set for Order Entry of Wire Transfers</description>
+    <displayedFields>
+        <field>LLC_BI__Wire_Service__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>UI Order Entry Wire Transfer</label>
+</FieldSet>

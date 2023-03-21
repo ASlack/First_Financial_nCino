@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__HMDA_Occupancy__c</fullName>
+    <deprecated>false</deprecated>
+    <description>--DEPRECATED-- This field is optional unless the loan requires HMDA, then it is required. It is manually populated. This picklist field indicates whether the property will be owner-occupied as a principal dwelling, not owner-occupied, or N/A.</description>
+    <externalId>false</externalId>
+    <label>-D Occupancy</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Code 1—Owner-occupied as a principal dwelling</fullName>
+                <default>false</default>
+                <label>Code 1—Owner-occupied as a principal dwelling</label>
+            </value>
+            <value>
+                <fullName>Code 2—Not owner-occupied as a principal dwelling</fullName>
+                <default>false</default>
+                <label>Code 2—Not owner-occupied as a principal dwelling</label>
+            </value>
+            <value>
+                <fullName>Code 3—Not applicable</fullName>
+                <default>false</default>
+                <label>Code 3—Not applicable</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

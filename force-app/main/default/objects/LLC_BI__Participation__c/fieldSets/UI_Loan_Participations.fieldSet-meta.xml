@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>UI_Loan_Participations</fullName>
+    <description>New UI Field Set for Loan Participation</description>
+    <label>UI Loan Participations</label>
+</FieldSet>

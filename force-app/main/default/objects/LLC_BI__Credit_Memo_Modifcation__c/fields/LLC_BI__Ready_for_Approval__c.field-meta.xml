@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Ready_for_Approval__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is manually selected and optional. This check box is used to specify that the Memo is ready to be sent for approval.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check this when your loan modification is ready to be sent for approval.</inlineHelpText>
+    <label>Ready for Approval</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

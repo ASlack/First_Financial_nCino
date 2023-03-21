@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Change_Time__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is automatically populated with a trigger. This field is used to specify the Date/Time an opportunity record is created due to a change.</description>
+    <externalId>false</externalId>
+    <label>Start Time</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__IRS_Levy_Indicator__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is optional. If true, the distribution is related to an IRS levy. This is only applicable to Traditional IRAs, SIMPLE IRAs, and Health Savings Accounts (HSAs). The other types of IRAs have a separate distribution type that are used for IRS levies.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If true the distribution is related to an IRS levy. This is only applicable to Traditional IRAs SIMPLE IRAs and Health Savings Accounts (HSAs); the other types of IRA have a separate distribution type that would be used for IRS levies.</inlineHelpText>
+    <label>IRS Levy Indicator</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Source__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is required. It is driven by user selection within the spreading application. It indicates the document that provides the financial information.</description>
+    <externalId>false</externalId>
+    <label>Source</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Tax Return</fullName>
+                <default>false</default>
+                <label>Tax Return</label>
+            </value>
+            <value>
+                <fullName>CPA Audit</fullName>
+                <default>false</default>
+                <label>CPA Audit</label>
+            </value>
+            <value>
+                <fullName>CPA Review</fullName>
+                <default>false</default>
+                <label>CPA Review</label>
+            </value>
+            <value>
+                <fullName>CPA Compiled</fullName>
+                <default>false</default>
+                <label>CPA Compiled</label>
+            </value>
+            <value>
+                <fullName>Comp. Prep</fullName>
+                <default>false</default>
+                <label>Comp. Prep</label>
+            </value>
+            <value>
+                <fullName>Projected</fullName>
+                <default>false</default>
+                <label>Projected</label>
+            </value>
+            <value>
+                <fullName>PFS</fullName>
+                <default>false</default>
+                <label>PFS</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

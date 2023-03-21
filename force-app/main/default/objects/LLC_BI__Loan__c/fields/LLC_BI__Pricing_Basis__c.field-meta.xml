@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Pricing_Basis__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is manually populated. It specifies whether the underlying base rate for a loan is fixed or variable. Note: If your financial institution uses LaserPro, these values cannot be altered.</description>
+    <externalId>false</externalId>
+    <label>Pricing Basis</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Fixed</fullName>
+                <default>false</default>
+                <label>Fixed</label>
+            </value>
+            <value>
+                <fullName>Variable</fullName>
+                <default>false</default>
+                <label>Variable</label>
+            </value>
+            <value>
+                <fullName>Preferred Fixed</fullName>
+                <default>false</default>
+                <label>Preferred Fixed</label>
+            </value>
+            <value>
+                <fullName>Preferred Variable</fullName>
+                <default>false</default>
+                <label>Preferred Variable</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

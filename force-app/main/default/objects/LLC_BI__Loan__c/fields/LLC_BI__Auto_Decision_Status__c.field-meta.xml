@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Auto_Decision_Status__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is automatically updated via the auto decision process. It stores the result of the auto decision process.</description>
+    <externalId>false</externalId>
+    <label>Auto-Decision Status</label>
+    <length>100</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

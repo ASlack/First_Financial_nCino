@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Risk_Grade_Group__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is only populated automatically if the user is creating the risk grade factor from the risk grade group  This field specifies the risk grade group associated with the risk grade factor. Whenever a factor is associated with a group, it is used to calculate that specific group&apos;s risk grade.</description>
+    <externalId>false</externalId>
+    <label>Risk Grade Group</label>
+    <referenceTo>LLC_BI__Risk_Grade_Group__c</referenceTo>
+    <relationshipLabel>Risk Grade Factors</relationshipLabel>
+    <relationshipName>Risk_Grade_Factors</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

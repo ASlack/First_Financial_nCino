@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Operation_Add__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is driven by the &quot;LLC_BI__Operation__c&quot; field. When enabled, the value for this spread statement record (chart of account) is added to the currently calculated value in the group. When disabled, this field does nothing. This field is enabled whenever &quot;LLC_BI__Operation__c&quot; is blank or set to &quot;ADD&quot;</description>
+    <externalId>false</externalId>
+    <formula>OR( ISBLANK( TEXT(LLC_BI__Operation__c) ) ,ISPICKVAL(LLC_BI__Operation__c, &apos;ADD&apos;))</formula>
+    <label>Operation Add</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

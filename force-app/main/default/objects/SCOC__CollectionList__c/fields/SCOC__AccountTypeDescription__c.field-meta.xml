@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCOC__AccountTypeDescription__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Identifies the account type code description for which the inquiry was made.</description>
+    <externalId>false</externalId>
+    <label>Account Type Code Description</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

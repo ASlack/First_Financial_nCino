@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Id_Document_Type__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field is automatically set when the user adds an ID Document during New Customer Onboarding. It specifies the type of identification selected.</description>
+    <externalId>false</externalId>
+    <label>Id Document Type</label>
+    <referenceTo>LLC_BI__Id_Document_Type__c</referenceTo>
+    <relationshipLabel>Id Documents</relationshipLabel>
+    <relationshipName>Id_Documents</relationshipName>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

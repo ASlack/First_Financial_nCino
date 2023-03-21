@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nDESIGN__Break_Page_Before__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Forces a page break before the section when printing.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Forces a page break before the section when printing.</inlineHelpText>
+    <label>Break Page Before</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

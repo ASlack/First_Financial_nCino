@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Related_Feature__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This required picklist field determines the feature this data source is associated to.</description>
+    <externalId>false</externalId>
+    <label>Related Feature</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Spreads - Data Recognition</fullName>
+                <default>false</default>
+                <label>Spreads - Data Recognition</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

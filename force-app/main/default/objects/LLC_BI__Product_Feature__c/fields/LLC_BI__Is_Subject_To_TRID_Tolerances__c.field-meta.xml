@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Is_Subject_To_TRID_Tolerances__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Administrators select this optional checkbox to indicate a loan originated from this product hierarchy is subject to TRID tolerances. By default, this field is deselected.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select this checkbox if the loan is subject to TRID tolerances.</inlineHelpText>
+    <label>Subject To TRID Tolerances</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Date_Range_Must_Be_Valid</fullName>
+    <active>true</active>
+    <description>--DEPRECATED--</description>
+    <errorConditionFormula>FALSE</errorConditionFormula>
+    <errorMessage>--DEPRECATED-- If this bundle is new or a template, the start and end dates must be blank.  If the bundle is not new and not a template, the start and end dates must be set and must not reduce the period range of the statements.</errorMessage>
+</ValidationRule>

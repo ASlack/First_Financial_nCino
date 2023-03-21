@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Debt_Schedule_Date__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Users populate this required date field with the Debt Schedule&apos;s date. By default, the system populates this field with the date the user initially creates the Debt Schedule.</description>
+    <externalId>false</externalId>
+    <label>Debt Schedule Date</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

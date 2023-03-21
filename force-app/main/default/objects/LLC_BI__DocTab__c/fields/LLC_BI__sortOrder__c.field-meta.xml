@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__sortOrder__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional and allows the user to define the order in which tabs appear (from left to right) in classic Document Manager.</description>
+    <externalId>false</externalId>
+    <label>sortOrder</label>
+    <length>3</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

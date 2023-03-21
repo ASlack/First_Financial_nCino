@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Pledge_More_Than_Lendable_Value</fullName>
+    <active>true</active>
+    <description>If the user attempts to pledge an amount greater than the current lendable value, they must check the authorize checkbox.</description>
+    <errorConditionFormula>AND(LLC_BI__Amount_Pledged__c &gt; LLC_BI__Current_Lendable_Value__c,  LLC_BI__Authorize__c == false)</errorConditionFormula>
+    <errorDisplayField>LLC_BI__Authorize__c</errorDisplayField>
+    <errorMessage>You are trying to pledge more than the current lendable value of this collateral. You must check the Authorize Pledge Amount checkbox to continue.</errorMessage>
+</ValidationRule>

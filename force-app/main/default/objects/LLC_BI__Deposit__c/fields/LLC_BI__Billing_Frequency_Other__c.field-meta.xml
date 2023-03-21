@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Billing_Frequency_Other__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional and can be collected as part of a workflow. It describes the frequency with which the safe deposit box rent amount is debited from the account.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Describes the frequency with which the safe deposit box rent amount will be debited from the account.</inlineHelpText>
+    <label>Billing Frequency Other</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

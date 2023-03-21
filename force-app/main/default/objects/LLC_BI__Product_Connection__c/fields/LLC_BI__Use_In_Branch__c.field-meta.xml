@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Use_In_Branch__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Administrators select this optional boolean field to display recommended products in the In-Branch workflow. By default, it is false.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select this checkbox to display recommended products in the In-Branch workflow.</inlineHelpText>
+    <label>Use In-Branch</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

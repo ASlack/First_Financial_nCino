@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Non_Accrual__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is manually populated. When enabled, it indicates non-accrual status. When disabled, it indicates a loan is not in non-accural status. By default, this is disabled. (Non-accrual means that a Loan is not earning the agreed amount of interest, typically as a result of borrower financial distress.)</description>
+    <externalId>false</externalId>
+    <label>Non-Accrual</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

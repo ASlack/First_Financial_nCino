@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__All</fullName>
+    <columns>NAME</columns>
+    <columns>nFORCE__lookupKey__c</columns>
+    <columns>nFORCE__Show_Link_To_Context_Object__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>CREATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>nFORCE__lookupKey__c</field>
+        <operation>equals</operation>
+        <value>42749540180904717</value>
+    </filters>
+    <label>All</label>
+</ListView>

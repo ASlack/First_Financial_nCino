@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Principal_and_Interest__c</fullName>
+    <deprecated>false</deprecated>
+    <description>--DEPRECATED--The system auto-populates this currency field to display the total principal and insurance rate per month for the borrower. By default, this field is based on a calculated value. Replaced by Monthly_Payment__c</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field displays the monthly principal and insurance value.</inlineHelpText>
+    <label>-D Principal and Interest</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

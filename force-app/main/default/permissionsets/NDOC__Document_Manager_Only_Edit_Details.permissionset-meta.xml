@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>NDOC__Document_Manager_Only_Edit_Details</name>
+    </customPermissions>
+    <description>Allows users to only edit details for any view of Document Manager. This permission set does not allow users to create new placeholders.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Document Manager Only Edit Details</label>
+</PermissionSet>

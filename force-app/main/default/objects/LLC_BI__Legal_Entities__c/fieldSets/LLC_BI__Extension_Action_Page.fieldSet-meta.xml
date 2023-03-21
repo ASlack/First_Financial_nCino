@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Extension_Action_Page</fullName>
+    <description>This field set displays fields to determine the loans&apos; extension details.</description>
+    <displayedFields>
+        <field>LLC_BI__Loan__r.Name</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>LLC_BI__Loan__r.LLC_BI__lookupKey__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Extension Action Page</label>
+</FieldSet>

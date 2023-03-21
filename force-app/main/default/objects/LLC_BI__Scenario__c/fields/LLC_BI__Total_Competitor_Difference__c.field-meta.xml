@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Total_Competitor_Difference__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is populated automatically via a trigger. It stores the difference between your calculated fee (including discounts for all bill points) and the competitor&apos;s fees for all bill points</description>
+    <externalId>false</externalId>
+    <label>Total Competitor Difference</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

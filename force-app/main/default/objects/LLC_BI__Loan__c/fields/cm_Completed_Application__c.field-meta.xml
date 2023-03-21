@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cm_Completed_Application__c</fullName>
+    <description>This field tracks the completed application date for the loan record. Added for the commercial accelerate project.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Date where the banker certifies it received all the information required per the term sheet/RFI. This date will initiate the Reg B timer.</inlineHelpText>
+    <label>Completed Application</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

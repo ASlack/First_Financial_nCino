@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__RealEstate__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is automatically set by LLC_BI__RealEstate_Type__c via a formula. This field is a text (true or false) field that is used to specify whether the product is considered a Real Estate type.</description>
+    <externalId>false</externalId>
+    <formula>IF( ISPICKVAL(LLC_BI__RealEstate_Type__c, &apos;None&apos;), &quot;false&quot;,
+IF(ISPICKVAL(LLC_BI__RealEstate_Type__c, &apos;&apos;), &quot;false&quot;, &quot;true&quot;   )
+)</formula>
+    <inlineHelpText>T/F</inlineHelpText>
+    <label>Real Estate</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

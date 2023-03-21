@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingReason xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Enhanced_DocMan_Sharing__c</fullName>
+    <label>Enhanced DocMan Sharing</label>
+</SharingReason>

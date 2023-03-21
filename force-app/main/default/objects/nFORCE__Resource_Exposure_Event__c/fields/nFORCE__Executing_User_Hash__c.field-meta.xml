@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Executing_User_Hash__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system populates this text field with a hash of the UserId of the user that initiated the call to the resource exposure API. The default value is blank.</description>
+    <externalId>false</externalId>
+    <label>Executing User Hash</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

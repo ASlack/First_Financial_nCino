@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Stage__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Administrators populate this multi-select picklist with the loan stage(s) to filter for loans to include in the RLTV calculation.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the loan stage(s) to filter for the loans you want to include in the RLTV calculation.</inlineHelpText>
+    <label>Stage</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Qualification</fullName>
+                <default>false</default>
+                <label>Qualification</label>
+            </value>
+            <value>
+                <fullName>Proposal</fullName>
+                <default>false</default>
+                <label>Proposal</label>
+            </value>
+            <value>
+                <fullName>Credit Underwriting</fullName>
+                <default>false</default>
+                <label>Credit Underwriting</label>
+            </value>
+            <value>
+                <fullName>Loan Committee</fullName>
+                <default>false</default>
+                <label>Loan Committee</label>
+            </value>
+            <value>
+                <fullName>Processing</fullName>
+                <default>false</default>
+                <label>Processing</label>
+            </value>
+            <value>
+                <fullName>Doc Prep</fullName>
+                <default>false</default>
+                <label>Doc Prep</label>
+            </value>
+            <value>
+                <fullName>Doc Review</fullName>
+                <default>false</default>
+                <label>Doc Review</label>
+            </value>
+            <value>
+                <fullName>Closing</fullName>
+                <default>false</default>
+                <label>Closing</label>
+            </value>
+            <value>
+                <fullName>Compliance</fullName>
+                <default>false</default>
+                <label>Compliance</label>
+            </value>
+            <value>
+                <fullName>Closed Funded</fullName>
+                <default>false</default>
+                <label>Closed Funded</label>
+            </value>
+            <value>
+                <fullName>Closed</fullName>
+                <default>false</default>
+                <label>Closed</label>
+            </value>
+            <value>
+                <fullName>Servicing</fullName>
+                <default>false</default>
+                <label>Servicing</label>
+            </value>
+            <value>
+                <fullName>Special Assets</fullName>
+                <default>false</default>
+                <label>Special Assets</label>
+            </value>
+            <value>
+                <fullName>Complete</fullName>
+                <default>false</default>
+                <label>Complete</label>
+            </value>
+            <value>
+                <fullName>Booked</fullName>
+                <default>false</default>
+                <label>Booked</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

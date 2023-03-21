@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Scenario__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Contains bill point for the product, volume, pricing and calculations.</description>
+    <externalId>false</externalId>
+    <label>Scenario</label>
+    <referenceTo>LLC_BI__Scenario__c</referenceTo>
+    <relationshipLabel>Scenario Items</relationshipLabel>
+    <relationshipName>Scenario_Items</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

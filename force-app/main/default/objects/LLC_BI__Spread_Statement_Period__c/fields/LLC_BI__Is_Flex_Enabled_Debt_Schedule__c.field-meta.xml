@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Is_Flex_Enabled_Debt_Schedule__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this optional boolean field with true or false for the specified period. When true and if the formula meets the data loaded Spreads Debt Schedule formula, FLEX calculations will be done for the Debt Schedule Spread Statement Records. Never manually adjust this field unless manual intervention is needed. By default, it is false.</description>
+    <externalId>false</externalId>
+    <label>Is Flex Enabled Debt Schedule</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

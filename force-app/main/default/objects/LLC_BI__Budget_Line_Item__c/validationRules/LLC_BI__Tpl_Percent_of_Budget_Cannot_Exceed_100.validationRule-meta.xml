@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Tpl_Percent_of_Budget_Cannot_Exceed_100</fullName>
+    <active>true</active>
+    <description>Ensures that the budget line item &quot;Template Percent of Budget&quot; field cannot be set to over 100%.</description>
+    <errorConditionFormula>IF(OR(ISNULL(LLC_BI__Template_Percent_of_Budget__c),AND(LLC_BI__Budget__r.LLC_BI__Is_Template__c = True,(( LLC_BI__Template_Percent_of_Budget__c * 100 ) &lt; 101))),false,true)</errorConditionFormula>
+    <errorMessage>The &quot;Template Percent of Budget&quot; field value cannot exceed 100%.</errorMessage>
+</ValidationRule>

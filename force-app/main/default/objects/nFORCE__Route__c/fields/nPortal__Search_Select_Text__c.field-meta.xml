@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nPortal__Search_Select_Text__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field determines the text that displays on the button the user clicks to indicate that they want to apply with a business that has populated in the search results.</description>
+    <externalId>false</externalId>
+    <label>OA Search Select Button Text</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Remaining_Lendable_Value__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional and auto-populates. The field indicates the amount of lendable value available after any pledges and/or liens have been accounted for on the piece of collateral. The value of the field is calculated in this way: Lendable Value - (Total Lien Amount - Total Excluded Lien Amount) - (Total Pledge Amount - Total Excluded Pledge Amount).</description>
+    <externalId>false</externalId>
+    <formula>(LLC_BI__Lendable_Value__c - (LLC_BI__Total_Lien_Amount__c - LLC_BI__Total_Excluded_Lien_Amount__c) - (LLC_BI__Total_Pledge_Amount__c - LLC_BI__Total_Excluded_Pledge_Amount__c))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>The amount of lendable value available after any pledges and/or liens have been accounted for on this piece of collateral.</inlineHelpText>
+    <label>Available Lendable Value</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

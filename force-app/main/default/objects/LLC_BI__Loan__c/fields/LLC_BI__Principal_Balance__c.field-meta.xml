@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Principal_Balance__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is manually populated. This field is used to specify the current principal balance for the Loan. (This is normally less than the original principal amount, because the customer’s payments incrementally reduce the principal.) This field is used for exposure calculations for loans that are not line of credit.</description>
+    <externalId>false</externalId>
+    <label>Principal Balance</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>true</trackTrending>
+    <type>Currency</type>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Switch_UI</fullName>
+    <availability>online</availability>
+    <description>Switch to nCino</description>
+    <displayType>button</displayType>
+    <height>600</height>
+    <linkType>page</linkType>
+    <masterLabel>View in nCino</masterLabel>
+    <openType>noSidebar</openType>
+    <page>LLC_BI__Loan</page>
+    <protected>false</protected>
+</WebLink>

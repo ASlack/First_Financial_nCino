@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>An example flow that evaluates the spreads ratios template for a borrower legal entity, and creates a policy exception if the Debt Service Coverage value is over a threshold</description>
+    <internalUseOnly>false</internalUseOnly>
+    <name>Automated Policy Exceptions: 6 - Debt Service Coverage  Over Threshold</name>
+    <public>false</public>
+</Document>

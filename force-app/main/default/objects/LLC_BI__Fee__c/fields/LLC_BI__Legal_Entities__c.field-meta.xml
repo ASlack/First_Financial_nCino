@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Legal_Entities__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The field is not required and specifies the entity involvement record resulting in the fee.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Lookup to the related entity involvement record to which this fee is being applied.</inlineHelpText>
+    <label>Entity Involvement</label>
+    <referenceTo>LLC_BI__Legal_Entities__c</referenceTo>
+    <relationshipLabel>Fees</relationshipLabel>
+    <relationshipName>Fees</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,100 @@
+<messaging:emailTemplate subject="Your Application in Progress" recipientType="User" relatedToType="Contact">
+    <messaging:htmlEmailBody >
+        <html>
+            <body>
+                <table role="presentation" style="width: 100%;">
+                    <tr>
+                        <td align="center">
+                            <table role="presentation">
+                                <tr>
+                                    <td align="center">
+                                        <apex:image alt=""
+                                            url="{!$Label.nPortal__Email_No_Reply_Logo}"
+                                            style="height: 70px; max-height: 70px;"
+                                        />
+                                    </td>
+                                </tr>
+                            </table>
+                            <div style="width: 400px; font-family: 'Salesforce Sans', Arial, sans-serif; text-align: left;">
+                                <div style="background-color: #f2f5f8; color: #162c52; padding: 20px 30px 20px 30px;">
+                                    <h1>
+                                        <strong style="font-weight: 300; color: #162c52;">
+                                            Here's the link to your application.
+                                        </strong>
+                                    </h1>
+                                    <p style="color: #162c52;">
+                                        We know you're busy. Continue your application anytime using this link.
+                                    </p>
+                                    <table role="presentation">
+                                        <tr>
+                                            <td align="center">
+                                                <a style="width: 100%; background-color: #0070d2; color: #FFFFFF; padding-left: 16px; padding-right: 16px; border: 1px solid #0070d2; border-radius: 4px; line-height: 34px; display: inline-block; text-decoration: none;"
+                                                href="{!$Site.CurrentSiteUrl}">
+                                                    Continue My Application
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <p style="color: #162c52;">
+                                        If you have trouble with the button, use this link:
+                                    </p>
+                                    <p style="color: #162c52;">
+                                        <a href="{!$Site.CurrentSiteUrl}">
+                                                {!$Site.CurrentSiteUrl}
+                                        </a>
+                                    </p>
+                                    <p style="color: #162c52;">
+                                        Give us a call at {!$Organization.Phone} with any questions.
+                                    </p>
+                                </div>
+                                <table role="presentation" style="width: 400px; background-color: #dce1eb; color: #424567; padding: 20px; font-size: 8pt;">
+                                    <tr>
+                                        <td>
+                                            {!$Organization.Name}
+                                        </td>
+                                        <td align="right">
+                                            {!$Label.Email_No_Reply_From}
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            {!$Organization.Street}
+                                        </td>
+                                        <td align="right">
+                                            {!$Organization.Phone}
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            {!$Organization.City}, {!$Organization.State} {!$Organization.PostalCode}
+                                        </td>
+                                        <td align="right">
+                                            &nbsp;
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </body>
+        </html>
+    </messaging:htmlEmailBody>
+
+    <messaging:plainTextEmailBody >
+Here's the link to your application.
+
+We know you're busy. Continue your application anytime using this link.
+
+{!$Site.CurrentSiteUrl}
+
+Give us a call at {!$Organization.Phone} with any questions.
+
+{!$Organization.Name}
+{!$Organization.Street}
+{!$Organization.City}, {!$Organization.State} {!$Organization.PostalCode}
+
+{!$Label.nPortal__Email_No_Reply_From}
+{!$Organization.Phone}
+    </messaging:plainTextEmailBody>
+</messaging:emailTemplate>

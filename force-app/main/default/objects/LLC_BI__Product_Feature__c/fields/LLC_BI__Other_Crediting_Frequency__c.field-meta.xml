@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Other_Crediting_Frequency__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This is the description of a non-standard crediting frequency such as every 45 days. The data will complete the sentence describing compounding frequency and the method by which earnings are paid. For example, &quot;Interest will be compounding daily and paid by check every 45 days.&quot;</description>
+    <externalId>false</externalId>
+    <label>Other Crediting Frequency</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

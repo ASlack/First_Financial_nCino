@@ -1,0 +1,106 @@
+<apex:page showHeader="false"
+	sidebar="false"
+	standardController="LLC_BI__Collateral__c"
+	extensions="LLC_BI.GroupMembersController"
+>
+	<nFORCE:Includes enableFontAwesome="true"
+	enableBS3Namespace="true"
+	enableLifeCycleApp="true"
+	runLifeCycleApp="false"
+	includeIEHacks="false"/>
+	<apex:slds />
+	<nFORCE:Include_Design_System components="true" flavor="vf" />
+	<apex:stylesheet value="{!URLFOR($Resource.LLC_BI__ncCollateralCreation, 'css/Style.css')}" />
+	<nFORCE:Include_Navigator />
+
+	<group-members>
+		<article class="slds-card no-shadow">
+			<div class="slds-card__header slds-grid">
+				<header class="slds-media slds-media_center slds-has-flexi-truncate">
+					<div class="slds-media__body">
+						<h2 class="slds-card__header-title">
+							{!JSENCODE($Label.LLC_BI__Relationships_Header)}
+						</h2>
+					</div>
+					<apex:outputPanel rendered="{!!isSingleRelationshipGroup}">
+						<div class="slds-button-group slds-no-flex">
+							<apex:outputPanel rendered="{!canAddGroupMembers}" >
+								<button
+									class="slds-button slds-button_neutral"
+									onclick="LifeCycle.Collateral.navigateToEditGroup({ isAddCollateral: false })"
+								>
+									{!JSENCODE($Label.Add_Group_Member_Modal)}
+								</button>
+							</apex:outputPanel>
+							<apex:outputPanel rendered="{!canRemoveGroupMembers}">
+								<button class="slds-button slds-button_neutral"
+									onclick="LifeCycle.Collateral.navigateToEditGroup({ loadReviewScreen: true })"
+								>
+									{!JSENCODE($Label.Remove_Group_Member)}
+								</button>
+							</apex:outputPanel>
+						</div>
+					</apex:outputPanel>
+				</header>
+			</div>
+			<div class="slds-card__body">
+				<nds-table border="false">
+					<table class="slds-table_cell-buffer slds-table_bordered">
+						<thead>
+							<tr>
+								<apex:repeat value="{!fieldLabels}" var="fieldLabel">
+									<th>
+										<div class="slds-truncate" title="{!fieldLabel}">
+											<apex:outputText value="{!fieldLabel}" />
+										</div>
+									</th>
+								</apex:repeat>
+							</tr>
+						</thead>
+						<tbody>
+							<apex:repeat value="{!relationships}" var="relationship">
+								<tr>
+									<apex:repeat value="{!fieldPaths}" var="fieldPath">
+										<td>
+											<div class="slds-truncate" title="{!relationship[fieldPath]}">
+												<apex:outputLink rendered="{!fieldPath == 'LLC_BI__Account__r.Name'}"
+													value="/{!relationship['LLC_BI__Account__r.Id']}"
+												>
+													{!relationship[fieldPath]}
+												</apex:outputLink>
+												<apex:outputText rendered="{!fieldPath != 'LLC_BI__Account__r.Name'}"
+													value="{!relationship[fieldPath]}"
+												/>
+											</div>
+										</td>
+									</apex:repeat>
+								</tr>
+							</apex:repeat>
+						</tbody>
+					</table>
+				</nds-table>
+			</div>
+		</article>
+	</group-members>
+
+	<script>
+		(function(){
+			LifeCycle.Collateral = {
+				navigateToEditGroup: function(screen) {
+					var paramString = '';
+
+					if (screen) {
+						paramString = '&' + new URLSearchParams(screen).toString();
+					}
+
+					window.location.assign('{!JSENCODE($Page.CollateralGroupEdit)}' + '?id='
+							+ '{!JSENCODE($CurrentPage.parameters.id)}'
+							+ '&openEditGroup=true'
+							+ paramString
+						);
+				}
+			}
+		}());
+	</script>
+
+</apex:page>

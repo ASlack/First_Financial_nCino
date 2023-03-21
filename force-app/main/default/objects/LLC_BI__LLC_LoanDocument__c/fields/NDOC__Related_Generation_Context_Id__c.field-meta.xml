@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NDOC__Related_Generation_Context_Id__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Stores the id of the related object that informed the creation of the placeholder.</description>
+    <externalId>false</externalId>
+    <label>Related Generation Context Id</label>
+    <length>18</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

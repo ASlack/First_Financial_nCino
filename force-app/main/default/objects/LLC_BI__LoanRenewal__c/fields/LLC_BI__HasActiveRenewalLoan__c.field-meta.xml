@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__HasActiveRenewalLoan__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Flag indicating whether or not this record relates to an active renewal loan. This field is automatically set by the system. It is used behind the scenes to set the appropriate appendages during the renewal and modification process.</description>
+    <externalId>false</externalId>
+    <formula>IF( ISBLANK(  LLC_BI__DeletedLoanName__c ) &amp;&amp; LLC_BI__RevisionNumber__c &gt; 0 &amp;&amp; (LLC_BI__RevisionStatus__c != &apos;Withdrawn&apos;) &amp;&amp; (LLC_BI__RevisionStatus__c != &apos;Declined&apos;) &amp;&amp; (LLC_BI__Is_No_Action_Placeholder__c != true), True, False )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Has Active Renewal Loan</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

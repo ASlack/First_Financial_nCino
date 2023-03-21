@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Billing_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional and can be collected as part of a workflow. It describes how the billing for the safe deposit box is communicated to the lessee.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Describes how the billing for the safe deposit box will be communicated to the lessee.</inlineHelpText>
+    <label>Billing Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Give Notice</fullName>
+                <default>false</default>
+                <label>Give Notice</label>
+            </value>
+            <value>
+                <fullName>Debit Account</fullName>
+                <default>false</default>
+                <label>Debit Account</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

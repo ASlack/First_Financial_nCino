@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>cm_Requested_Property_Rights__c</name>
+    <picklistValues>
+        <masterLabel>Fee Simple</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Leased Fee</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Leasehold</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

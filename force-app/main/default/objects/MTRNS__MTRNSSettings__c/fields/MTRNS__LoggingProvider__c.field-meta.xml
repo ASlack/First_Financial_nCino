@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MTRNS__LoggingProvider__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The Administrator populates this optional text field with the fully-qualified Apex class name of the Logging Provider class that implements the EFPIO.ILoggingProvider_v1 interface. If not set, the system uses the same logging provider set within the EFPIO Logging Settings.</description>
+    <externalId>false</externalId>
+    <label>Logging Provider</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

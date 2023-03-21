@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__NOPAT_Currency__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is automatically populated and represents the Net Operating Profit After Tax that a Scenario, Loan, Deal or Relationship associated to the profitability will generate.</description>
+    <externalId>false</externalId>
+    <label>NOPAT</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

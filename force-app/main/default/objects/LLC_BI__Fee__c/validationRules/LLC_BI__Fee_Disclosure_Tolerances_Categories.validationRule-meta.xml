@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Fee_Disclosure_Tolerances_Categories</fullName>
+    <active>true</active>
+    <description>User must populate TRID Disclosure Category and TRID Tolerances Category for TRID loans.</description>
+    <errorConditionFormula>AND(LLC_BI__Loan__r.LLC_BI__Product_Reference__r.LLC_BI__Product_Feature__r.LLC_BI__Is_Subject_To_TRID_Tolerances__c, 
+			OR(ISBLANK(TEXT(LLC_BI__TRID_Disclosure_Category__c)), ISBLANK(TEXT(LLC_BI__TRID_Tolerances_Category__c))),
+			NOT(
+				OR(
+					ISPICKVAL(LLC_BI__Fee_Type__c, &apos;Lender Credit&apos;), ISPICKVAL(LLC_BI__Fee_Type__c, &apos;Cost to Cure&apos;)
+				    , ISPICKVAL(LLC_BI__Fee_Type__c , &apos;Seller Credit&apos;), ISPICKVAL(LLC_BI__Fee_Type__c , &apos;Earnest Money/Deposit&apos;), ISPICKVAL(LLC_BI__Fee_Type__c , &apos;Down Payment&apos;)
+				)
+			)
+		)</errorConditionFormula>
+    <errorMessage>For loans subject to TRID tolerances, you must select the appropriate TRID Disclosure Category and TRID Tolerances Category for each fee.</errorMessage>
+</ValidationRule>

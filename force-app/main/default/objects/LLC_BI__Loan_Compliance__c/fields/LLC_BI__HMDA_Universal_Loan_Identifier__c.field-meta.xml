@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__HMDA_Universal_Loan_Identifier__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This is a required field.  This field is the identifier used to identify and retrieve a loan or application that contains the FI&apos;s LEI, an internally generated sequence of characters, and a check digit</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The ULI begins with the financial institution&apos;s Legal Entity Identifier.  Follows the Legal Entity Identifier with up to 23 additional characters to identify the covered loan or application.  Ends with a two-character check digit that is calculated using</inlineHelpText>
+    <label>Universal Loan Identifier (ULI)</label>
+    <length>45</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>NDOC__Import_Collateral_Docs_to_Loan_DocMan</name>
+    </customPermissions>
+    <description>Grants the user permission to import collateral documents into the loan document manager.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Import Collateral Docs to Loan DocMan</label>
+</PermissionSet>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__CRA_Revenue__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is manually populated. This field indicates the gross annual revenue of the business or farm to which the loan was made.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>CRA Revenue</inlineHelpText>
+    <label>Revenue Code</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1 - Less than or equal to $1 million</fullName>
+                <default>false</default>
+                <label>1 - Less than or equal to $1 million</label>
+            </value>
+            <value>
+                <fullName>2 - Greater than $1 million</fullName>
+                <default>false</default>
+                <label>2 - Greater than $1 million</label>
+            </value>
+            <value>
+                <fullName>3 - Not Known</fullName>
+                <default>false</default>
+                <label>3 - Not Known</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

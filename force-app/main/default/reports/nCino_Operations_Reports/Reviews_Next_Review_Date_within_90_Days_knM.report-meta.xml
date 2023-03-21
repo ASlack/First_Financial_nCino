@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>LLC_BI__Review__c.LLC_BI__Review_Type__c</field>
+    </columns>
+    <columns>
+        <field>LLC_BI__Review__c.cm_Set_Next_Review_Date__c</field>
+    </columns>
+    <description>Reviews that within 90 days of their next review date.</description>
+    <filter>
+        <criteriaItems>
+            <column>LLC_BI__Review__c.cm_Set_Next_Review_Date__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>lessOrEqual</operator>
+            <value>NEXT_90_DAYS</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Reviews Next Review Date within 90 Days</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$LLC_BI__Review__c@LLC_BI__Review__c.LLC_BI__Account__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>LLC_BI__Review__c.cm_Approved_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

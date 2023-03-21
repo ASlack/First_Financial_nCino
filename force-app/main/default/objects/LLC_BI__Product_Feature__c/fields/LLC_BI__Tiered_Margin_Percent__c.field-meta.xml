@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Tiered_Margin_Percent__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field will be used for Expere Doc Prep, which has not yet been implemented. This field is not required. It is manually populated. It specifies the percentage that is added to (or subtracted from) the index to determine the applicable rate for a given account tier with variable rate tiers. If the margin will be subtracted from the index, this value would be negative. If the margin will be added to the index this value will be positive.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The percentage that is added to (or subtracted from) the index to determine the applicable rate for a given account tier with variable rate tiers.</inlineHelpText>
+    <label>Tiered Margin Percent</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>4</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

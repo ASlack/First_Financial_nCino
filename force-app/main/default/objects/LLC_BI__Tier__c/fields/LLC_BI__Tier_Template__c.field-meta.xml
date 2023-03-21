@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Tier_Template__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this lookup field with a tier template that works as a unique identifier for the cloned tier in context.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The system enters a tier template in which the tier in context was cloned</inlineHelpText>
+    <label>Tier Template</label>
+    <referenceTo>LLC_BI__Tier__c</referenceTo>
+    <relationshipLabel>Related Tiers</relationshipLabel>
+    <relationshipName>RelatedTiers</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

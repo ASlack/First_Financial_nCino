@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Borrower_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Typical borrower types will include borrower, co-borrower, guarantor, limited guarantor.  Value provided must match one of the values in the Type pick list established for this organization.</description>
+    <externalId>false</externalId>
+    <label>Borrower Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Borrower</fullName>
+                <default>false</default>
+                <label>Borrower</label>
+            </value>
+            <value>
+                <fullName>Guarantor</fullName>
+                <default>false</default>
+                <label>Guarantor</label>
+            </value>
+            <value>
+                <fullName>Limited Guarantor</fullName>
+                <default>false</default>
+                <label>Limited Guarantor</label>
+            </value>
+            <value>
+                <fullName>Co-Borrower</fullName>
+                <default>false</default>
+                <label>Co-Borrower</label>
+            </value>
+            <value>
+                <fullName>Related Entity</fullName>
+                <default>false</default>
+                <label>Related Entity</label>
+            </value>
+            <value>
+                <fullName>Primary</fullName>
+                <default>false</default>
+                <label>Primary</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

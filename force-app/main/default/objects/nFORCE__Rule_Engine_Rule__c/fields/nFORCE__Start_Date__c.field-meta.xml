@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Start_Date__c</fullName>
+    <defaultValue>TODAY()</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This date field is manually set and is required. The start date is the date from which the rule will be used. Before this date the rule will be considered as inactive.</description>
+    <externalId>false</externalId>
+    <label>Start Date</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

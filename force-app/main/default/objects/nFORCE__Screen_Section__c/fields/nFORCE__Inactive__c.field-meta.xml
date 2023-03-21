@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Inactive__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is optional and is used by Credit Memo framework. The default value is false. When the value is set to true, the section is condired inactive. On a credit memo view or PDF, inactive sections will not be displayed. On credit memo templates, inactive sections will not be cloned when that template is selected from Credit Memo selection page.</description>
+    <externalId>false</externalId>
+    <label>Inactive</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

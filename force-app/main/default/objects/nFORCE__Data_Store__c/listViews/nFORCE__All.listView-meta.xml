@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__All</fullName>
+    <columns>NAME</columns>
+    <columns>nFORCE__Unique_Name__c</columns>
+    <columns>nFORCE__Count__c</columns>
+    <columns>nFORCE__Max__c</columns>
+    <columns>nFORCE__Min__c</columns>
+    <columns>nFORCE__Average__c</columns>
+    <columns>nFORCE__Sum__c</columns>
+    <columns>nFORCE__Value__c</columns>
+    <columns>nFORCE__Grouping_1__c</columns>
+    <columns>nFORCE__Grouping_2__c</columns>
+    <columns>nFORCE__Timestamp__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

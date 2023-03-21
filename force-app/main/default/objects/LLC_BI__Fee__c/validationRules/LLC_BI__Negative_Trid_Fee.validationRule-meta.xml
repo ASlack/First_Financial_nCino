@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Negative_Trid_Fee</fullName>
+    <active>true</active>
+    <description>The user entered a negative value for the fee. TRID tolerances require a positive value.</description>
+    <errorConditionFormula>AND(
+			LLC_BI__Loan__r.LLC_BI__Product_Reference__r.LLC_BI__Product_Feature__r.LLC_BI__Is_Subject_To_TRID_Tolerances__c, 
+			LLC_BI__Amount__c &lt; 0
+		)</errorConditionFormula>
+    <errorMessage>Enter a positive value in the Fee Amount field. TRID tolerances require a positive value.</errorMessage>
+</ValidationRule>

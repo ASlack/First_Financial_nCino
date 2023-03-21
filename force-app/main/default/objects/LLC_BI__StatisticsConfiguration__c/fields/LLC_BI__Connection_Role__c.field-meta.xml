@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Connection_Role__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Administrators manually populate this field. This field specifies which connection roles to use when calculating exposure and should be used when using the Depth field. If a connection has a role not specified in this list, then the connected account&apos;s loans are not used in  the calculation.  This field is a comma-delineated list with no spaces. Default is null.</description>
+    <externalId>false</externalId>
+    <label>Connection Role</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

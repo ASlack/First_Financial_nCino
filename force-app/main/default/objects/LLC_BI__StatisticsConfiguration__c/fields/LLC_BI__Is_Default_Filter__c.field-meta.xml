@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Is_Default_Filter__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This boolean checkbox field is used by admins. When true, it indicates if the selected exposure type should be the first to display within the type filter on that exposure’s table within Total Exposure.</description>
+    <externalId>false</externalId>
+    <label>Is Default Filter</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

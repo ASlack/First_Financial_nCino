@@ -1,0 +1,30 @@
+&nbsp<!-- This is a fix for LLCBI-2332 (IE 8 Error) -->
+<!-- ko if: screenResources()['{!NS}.Covenant2ScreenResource_{!NS}__Loan__c'].children().length == 0 -->
+<p>There are currently no Covenants for this loan.</p>
+<!-- /ko -->
+<!-- ko if: screenResources()['{!NS}.Covenant2ScreenResource_{!NS}__Loan__c'].children().length > 0 -->
+<table class="table table-bordered table-striped" data-bind="with: screenResources()['{!NS}.Covenant2ScreenResource_{!NS}__Loan__c']">
+<tbody>
+	<tr data-bind="with: children()[0]">
+		<th data-bind="text: children()[0].propertyBag.{!NS}__Covenant2__c_{!NS}__Covenant_Type__c.fieldLabel"/>
+		<th data-bind="text: children()[0].children()[1].propertyBag.Account_Name.fieldLabel"/>
+
+		<th data-bind="text: children()[0].propertyBag.{!NS}__Covenant2__c_{!NS}__Frequency__c.fieldLabel"/>
+		<th data-bind="text: children()[0].propertyBag.{!NS}__Covenant2__c_{!NS}__Next_Evaluation_Date__c.fieldLabel"/>
+		<th data-bind="text: children()[0].propertyBag.{!NS}__Covenant2__c_{!NS}__Financial_Indicator_Value__c.fieldLabel"/>
+		<th data-bind="text: children()[0].propertyBag.{!NS}__Covenant2__c_{!NS}__Active__c.fieldLabel"/>
+	</tr>
+	<!-- ko foreach: children() -->
+		<tr>
+			<td data-bind="text: children()[0].children()[0].propertyBag.{!NS}__Covenant_Type__c_Name.value"/>
+			<td data-bind="text: children()[0].children()[1].propertyBag.Account_Name.value"/>
+			<td data-bind="text: children()[0].propertyBag.{!NS}__Covenant2__c_{!NS}__Frequency__c.value"/>
+			<td data-bind="dateText: children()[0].propertyBag.{!NS}__Covenant2__c_{!NS}__Next_Evaluation_Date__c.value"/>
+			<td data-bind="text: children()[0].propertyBag.{!NS}__Covenant2__c_{!NS}__Financial_Indicator_Value__c.value"/>
+			<td data-bind="text: children()[0].propertyBag.{!NS}__Covenant2__c_{!NS}__Active__c.value"/>
+		</tr>
+	<!-- /ko -->
+	</span>
+</tbody>
+</table>
+<!-- /ko -->

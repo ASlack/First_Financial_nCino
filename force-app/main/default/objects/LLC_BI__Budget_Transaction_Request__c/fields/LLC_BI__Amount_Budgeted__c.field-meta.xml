@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Amount_Budgeted__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Formula field that reads in the budget line item amount budgeted field.</description>
+    <externalId>false</externalId>
+    <formula>LLC_BI__Budget_Line_Item__r.LLC_BI__Amount_Budgeted__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Amount Budgeted</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

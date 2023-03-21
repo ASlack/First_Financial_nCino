@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Treasury_Income_Deal_Impact</fullName>
+    <availableFields>
+        <field>LLC_BI__Product_Package__r.LLC_BI__Capital_Allocation_Rate_of_New_Exposures__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <availableFields>
+        <field>LLC_BI__Product_Package__r.LLC_BI__Cost_of_Capital_of_New_Exposures__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <availableFields>
+        <field>LLC_BI__Product_Package__r.LLC_BI__Expected_Loss_Rate_of_New_Exposures__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <availableFields>
+        <field>LLC_BI__Product_Package__r.LLC_BI__Expected_Term_of_New_Treasury_Services__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <availableFields>
+        <field>LLC_BI__Product_Package__r.LLC_BI__RWA_Percentage_for_New_Treasury_Exposure__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <availableFields>
+        <field>LLC_BI__Product_Package__r.LLC_BI__Treasury_Annual_Operating_Cost__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <description>This field set contains treasury-related fields that may impact deal profitability.</description>
+    <displayedFields>
+        <field>LLC_BI__Product_Package__r.LLC_BI__New_Monthly_Treasury_Income__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>LLC_BI__Product_Package__r.LLC_BI__New_Treasury_Credit_Exposure__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>LLC_BI__Product_Package__r.LLC_BI__Expected_Utilization_of_New_Exposure__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>LLC_BI__Product_Package__r.LLC_BI__New_Treasury_One_Time_Fee_Amount__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Treasury Income Deal Impact</label>
+</FieldSet>

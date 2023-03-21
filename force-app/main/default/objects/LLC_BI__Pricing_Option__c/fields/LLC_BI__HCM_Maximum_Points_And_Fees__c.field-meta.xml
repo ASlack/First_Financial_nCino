@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__HCM_Maximum_Points_And_Fees__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this field to indicate the maximum points and fees an offer can have before it qualifies as High-Cost Mortgage. By default, this field is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field indicates the HCM maximum points and fees for an offer.</inlineHelpText>
+    <label>HCM Maximum Points and Fees</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nPortal__SBL_Others_Involved_Borrower_Type</fullName>
+    <description>For selecting an individual&apos;s borrower type within the business in the Others Involved section of Customer Portal Loan Online Applications</description>
+    <displayedFields>
+        <field>LLC_BI__Borrower_Type__c</field>
+        <isFieldManaged>true</isFieldManaged>
+        <isRequired>true</isRequired>
+    </displayedFields>
+    <label>Others Involved Entity Involvement MRF</label>
+</FieldSet>

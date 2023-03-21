@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Account__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field is required. It is manually populated when a covenant is created through the loan, otherwise it is automatically populated. It identifies the relationship associated with the covenant record and is automatically populated when creating a new covenant record.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Account that the Covenant applies to.</inlineHelpText>
+    <label>Relationship</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Covenants</relationshipLabel>
+    <relationshipName>Covenants</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Display_Common_Sizing__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is driven by user selection within the spreading application. When enabled, common sizing columns are displayed for the spread statement. When disabled, the common sizing columns are not displayed. By default, this is disabled.</description>
+    <externalId>false</externalId>
+    <label>Display Common Sizing</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

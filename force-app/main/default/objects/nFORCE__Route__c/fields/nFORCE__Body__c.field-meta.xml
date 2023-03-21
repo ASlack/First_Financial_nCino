@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Body__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is required. The admin manually populates this field. This field controls what and how data is displayed in the route. If a screen is being used, a layout type must be set. Otherwise, specific values can be set for Visualforce pages in the system.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Search for: UserInterfaceUIBodyTypeOverviewwithImages
+nforce__korelatedlist, nforce__kodatagrid, nforce__kogridlist, nforce__korelatedtable, nforce__korelatedlistchild, nforce__kodatagridlookup</inlineHelpText>
+    <label>Body</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

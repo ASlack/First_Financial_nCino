@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Template_Cannot_Have_Relationship</fullName>
+    <active>true</active>
+    <description>A template cannot be related to a Relationship.</description>
+    <errorConditionFormula>AND(
+  ( LLC_BI__Is_Template__c = True ),
+  NOT( ISBLANK( LLC_BI__Relationship__c ) )
+)</errorConditionFormula>
+    <errorMessage>A template cannot be related to a Relationship.</errorMessage>
+</ValidationRule>

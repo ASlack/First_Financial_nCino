@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Product_Line__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is automatically populated when creating a product type from a product line, otherwise it is manually populated. This field is used to lookup to Product Line to associate with the Product Type.</description>
+    <externalId>false</externalId>
+    <label>Product Line</label>
+    <referenceTo>LLC_BI__Product_Line__c</referenceTo>
+    <relationshipLabel>Product Types</relationshipLabel>
+    <relationshipName>Product_Types</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__AmountOutstanding__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The user populates this text field to record the borrower’s outstanding loan balance. By default, this field is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The amount outstanding for a line of commitment.</inlineHelpText>
+    <label>Amount Outstanding</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

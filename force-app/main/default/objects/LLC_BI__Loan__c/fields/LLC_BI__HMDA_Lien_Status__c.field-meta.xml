@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__HMDA_Lien_Status__c</fullName>
+    <deprecated>false</deprecated>
+    <description>--DEPRECATED-- This field is optional unless the loan requires HMDA, then it is required. It is manually populated. This field indicates whether the property is a first or subordinate lien.</description>
+    <externalId>false</externalId>
+    <label>-D Lien Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Code 1—Secured by a first lien.</fullName>
+                <default>false</default>
+                <label>Code 1—Secured by a first lien.</label>
+            </value>
+            <value>
+                <fullName>Code 2—Secured by a subordinate lien.</fullName>
+                <default>false</default>
+                <label>Code 2—Secured by a subordinate lien.</label>
+            </value>
+            <value>
+                <fullName>Code 3—Not secured by a lien.</fullName>
+                <default>false</default>
+                <label>Code 3—Not secured by a lien.</label>
+            </value>
+            <value>
+                <fullName>Code 4—Not applicable (purchased loan)</fullName>
+                <default>false</default>
+                <label>Code 4—Not applicable (purchased loan)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

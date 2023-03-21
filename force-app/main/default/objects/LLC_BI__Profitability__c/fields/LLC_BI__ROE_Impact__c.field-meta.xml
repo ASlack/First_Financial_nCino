@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__ROE_Impact__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is automatically populated and represents the Scenario or Loan ROE percent impact on the overall Relationship profitability if it moves to a status the financial institution considers closed.</description>
+    <externalId>false</externalId>
+    <label>ROE Impact</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

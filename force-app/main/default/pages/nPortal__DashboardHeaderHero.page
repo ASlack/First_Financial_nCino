@@ -1,0 +1,22 @@
+<apex:page id="DashboardHeaderHero"
+  	docType="html-5.0"
+	sidebar="false"
+	showHeader="false"
+	standardStylesheets="false"
+	applyHtmlTag="false"
+	applyBodyTag="false">
+
+	<div class="center-content-wrapper portal-dashboard-hero-wrapper" n-style="pso-dashboard-hero">
+		<div class="center-content portal-dashboard-hero-content">
+			<h1 resizer="true"
+				class="h2 slds-text-heading--large portal-center-text"
+				n-style="pso-dashboard-topbar-header">
+				{!$Label.Dashboard_Topbar_Header}
+			</h1>
+			<p class="slds-text-heading--small slds-medium-show slds-m-top--small portal-center-text"
+				n-style="pso-dashboard-topbar-smallheader">
+				{!$Label.Dashboard_Topbar_Subheader}
+			</p>
+		</div>
+	</div>
+</apex:page>

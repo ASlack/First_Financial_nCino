@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Handover_Information__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Users populate this optional rich text field with context and other supporting information about the client and their financial situation. By default it is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Provide context and other supporting information about the client and their financial situation.</inlineHelpText>
+    <label>Handover Information</label>
+    <length>32000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

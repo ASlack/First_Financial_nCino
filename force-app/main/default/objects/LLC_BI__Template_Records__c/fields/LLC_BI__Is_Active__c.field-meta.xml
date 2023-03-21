@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Is_Active__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is required and confirms that the template is active. The active flag checks when within the specified period based on start and end dates.The field is manually populated.</description>
+    <externalId>false</externalId>
+    <formula>IF((LLC_BI__Start_Date__c &lt;= TODAY() &amp;&amp; TODAY() &lt;=  LLC_BI__End_Date__c) || (LLC_BI__Start_Date__c &lt;= TODAY() &amp;&amp; ISBLANK(LLC_BI__End_Date__c)) , TRUE, FALSE)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Is Active</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

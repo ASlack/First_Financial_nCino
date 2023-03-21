@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Is_Sex_Collected_Visually__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this checkbox field to indicate the applicant has declined to provide their sex and the loan officer has collected sex information on the basis of visual observation or surname. By default, this field is deselected.</description>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(LLC_BI__HMDA_Sex_Collection_Method__c, &apos;1&apos;),
+        IF(ISPICKVAL(LLC_BI__HMDA_Sex__c, &apos;1&apos;), true,
+        IF(ISPICKVAL(LLC_BI__HMDA_Sex__c, &apos;2&apos;), true,
+        IF(ISPICKVAL(LLC_BI__HMDA_Sex__c, &apos;6&apos;), true,
+        false)))
+        , false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>This field indicates that the applicant declined to provide their sex, but the loan officer collected this information on the basis of visual observation or surname.</inlineHelpText>
+    <label>Is Sex Collected Visually</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

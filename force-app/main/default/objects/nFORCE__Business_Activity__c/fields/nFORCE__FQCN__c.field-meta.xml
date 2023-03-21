@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__FQCN__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The user populates this required text field with the fully qualified class name of the business activity&apos;s handler.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This text field indicates the fully qualified class name of the business activity&apos;s handler.</inlineHelpText>
+    <label>Fully Qualified Class Name</label>
+    <length>255</length>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

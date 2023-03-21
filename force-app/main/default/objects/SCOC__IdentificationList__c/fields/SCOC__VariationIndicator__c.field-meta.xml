@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCOC__VariationIndicator__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Variation Indicator</description>
+    <externalId>false</externalId>
+    <label>Variation Indicator</label>
+    <length>10</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nDESIGN__Parent_Integrity</fullName>
+    <active>true</active>
+    <description>Ensures Parent Configuration and Parent Relationship Name are both populated if one is.</description>
+    <errorConditionFormula>OR( AND(  NOT( ISBLANK( nDESIGN__Parent_Configuration__c ) )  , ISBLANK( nDESIGN__Parent_Relationship_Name__c ) ) , AND( NOT( ISBLANK( nDESIGN__Parent_Relationship_Name__c ) ) , ISBLANK( nDESIGN__Parent_Configuration__c ) ) )</errorConditionFormula>
+    <errorMessage>Parent Configuration and Parent Relationship Name must both be set.</errorMessage>
+</ValidationRule>

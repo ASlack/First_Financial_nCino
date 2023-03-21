@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Hide_Column_Totals__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This defaults to false. Manually update to change. Controls the visibility of column totals below a group.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Controls the visibility of column totals below a group.</inlineHelpText>
+    <label>Hide Column Totals</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

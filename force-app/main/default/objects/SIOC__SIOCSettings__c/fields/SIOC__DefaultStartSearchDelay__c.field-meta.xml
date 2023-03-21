@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SIOC__DefaultStartSearchDelay__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The Administrator populates this optional number field with the number of milliseconds the portal online app should wait between the user typing the business search input and the actual search being triggered.</description>
+    <externalId>false</externalId>
+    <label>Default Start Search Delay</label>
+    <precision>5</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

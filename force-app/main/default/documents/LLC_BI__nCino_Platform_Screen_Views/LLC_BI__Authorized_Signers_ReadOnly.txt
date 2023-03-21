@@ -1,0 +1,26 @@
+<!-- ko if: screenResources()['{!NS}.SignersScreenResource_{!NS}__Loan__c'].children().length== 0 -->
+<p>There are currently no Authorized Signers for this loan.</p>
+<!-- /ko -->
+<!-- ko if: screenResources()['{!NS}.SignersScreenResource_{!NS}__Loan__c'].children().length > 0 -->
+<table class="table table-bordered table-striped" data-bind="with: screenResources()['{!NS}.SignersScreenResource_{!NS}__Loan__c']">
+<thead>
+<tr>
+<th>Authorized Signers</th>
+</tr>
+<tr data-bind="with: children()[0]">
+<th data-bind="text: propertyBag.{!NS}__Contingent_Liabilty__c_{!NS}__Role__c.fieldLabel" />
+<th data-bind="text: children()[0].propertyBag.Contact_Name.fieldLabel" />
+<th data-bind="text: children()[0].children()[0].propertyBag.Account_Name.fieldLabel" />
+<th class="no-print">&nbsp;</th>
+</tr>
+</thead>
+<tbody data-bind="foreach: children()">
+<tr>
+<td data-bind="text: propertyBag.{!NS}__Contingent_Liabilty__c_{!NS}__Role__c.value" />
+<td data-bind="text: children()[0].propertyBag.Contact_Name.value" />
+<td><span data-bind="text: children()[0].children()[0].propertyBag.Account_Name.value" /><span data-bind="visible: children()[0].children()[0].propertyBag.Account_Type.value">&nbsp;(<span data-bind="text: children()[0].children()[0].propertyBag.Account_Type.value" />)</span></td>
+<td class="no-print"><a data-bind="attr: { href: '/'+propertyBag.{!NS}__Contingent_Liabilty__c_Id.value() }">Edit <i class="icon-edit"></i></a></td>
+</tr>
+</tbody>
+</table>
+<!-- /ko -->

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Region__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This picklist field is optional. The user manually populates this field with the name of a region. The picklist values shown here should match the picklist values in the Region field on the account.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This picklist field is optional. The user manually populates this field with the name of a region. The picklist values shown here should match the picklist values in the Region field on the account.</inlineHelpText>
+    <label>Region</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>North</fullName>
+                <default>false</default>
+                <label>North</label>
+            </value>
+            <value>
+                <fullName>East</fullName>
+                <default>false</default>
+                <label>East</label>
+            </value>
+            <value>
+                <fullName>South</fullName>
+                <default>false</default>
+                <label>South</label>
+            </value>
+            <value>
+                <fullName>West</fullName>
+                <default>false</default>
+                <label>West</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

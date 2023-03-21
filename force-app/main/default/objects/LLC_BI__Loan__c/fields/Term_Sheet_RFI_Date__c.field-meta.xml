@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Term_Sheet_RFI_Date__c</fullName>
+    <description>This field is to be set when Relationship Officers sends Term Sheet/RFI.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Date when the banker sends the Term Sheet to the client</inlineHelpText>
+    <label>Term Sheet/RFI Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

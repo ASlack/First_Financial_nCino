@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__MAPR__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this optional field with a Military APR Sherman calculates when the MLA Status flag is set to true.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The system automatically populates this optional field with a Military APR Sherman calculates when the MLA Status flag is set to true.</inlineHelpText>
+    <label>MAPR</label>
+    <precision>6</precision>
+    <required>false</required>
+    <scale>3</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

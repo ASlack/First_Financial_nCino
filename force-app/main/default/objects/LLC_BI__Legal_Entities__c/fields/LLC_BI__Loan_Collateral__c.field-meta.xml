@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Loan_Collateral__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It can be manually populated from a Collateral record. This field specifies the collateral associated with the entity involvement. It is not typically used.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The collateral that the legal entity is associated with.</inlineHelpText>
+    <label>Loan Collateral</label>
+    <referenceTo>LLC_BI__Loan_Collateral__c</referenceTo>
+    <relationshipName>Legal_Entities</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Layout__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Use this lookup field to select the layout for the group.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select a layout for this group.</inlineHelpText>
+    <label>Layout</label>
+    <referenceTo>nFORCE__Layout__c</referenceTo>
+    <relationshipLabel>Groups</relationshipLabel>
+    <relationshipName>Groups</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

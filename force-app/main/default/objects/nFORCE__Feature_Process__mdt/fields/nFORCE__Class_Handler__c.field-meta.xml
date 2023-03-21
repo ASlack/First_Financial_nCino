@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Class_Handler__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. The class handler indicates how to execute the process. It must be specified if the Class does not implement nFORCE.ALifeCycleDataProvider or Database.Batchable.</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Class Handler</label>
+    <length>50</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

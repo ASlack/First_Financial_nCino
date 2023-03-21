@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__ESignature_Email_Message__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field contains a default message that will be inserted in the email template that is sent to signers when initiating an e-signature transaction. The field can include Forms syntax to add logic for incorporating nCino field values into the default message, e.g. Loan Officer contact information.</description>
+    <externalId>false</externalId>
+    <label>E-Signature Email Message</label>
+    <length>131072</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Next_Review_Date__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is an optional date field. Only used if the customer will be initiating Reviews from the product package level. This date field is used to specify the date of the next review for the Product Package. This date will automatically populate, based off of review frequency, once the initial review date is set manually, and a review has been completed (to populate the last review date field) .</description>
+    <externalId>false</externalId>
+    <label>Next Review Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

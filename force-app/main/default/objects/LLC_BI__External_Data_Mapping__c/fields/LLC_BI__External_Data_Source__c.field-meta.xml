@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__External_Data_Source__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The system populates this required lookup field to associate this record to the parent external data source. By default, it is blank.</description>
+    <externalId>false</externalId>
+    <label>External Data Source</label>
+    <referenceTo>LLC_BI__External_Data_Source__c</referenceTo>
+    <relationshipLabel>External Data Mappings</relationshipLabel>
+    <relationshipName>External_Data_Mappings</relationshipName>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

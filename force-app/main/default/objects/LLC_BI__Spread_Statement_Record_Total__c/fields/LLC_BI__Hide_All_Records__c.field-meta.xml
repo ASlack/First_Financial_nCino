@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Hide_All_Records__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This defaults to false. Manually update to change. If this is set to true all the records belonging to this group will be hidden from view but will still be included in the calculation of the total.</description>
+    <externalId>false</externalId>
+    <label>Hide All Records</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCOC__Times60DaysLate__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Number of times tradeline was paid 60 days late.</description>
+    <externalId>false</externalId>
+    <label>Times 60 Days Late</label>
+    <precision>3</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

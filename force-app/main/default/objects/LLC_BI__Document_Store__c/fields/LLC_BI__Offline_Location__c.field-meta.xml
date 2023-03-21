@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Offline_Location__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is not required and used in classic Document Manager. It is a text field where additional information about the storage location can be provided.</description>
+    <externalId>false</externalId>
+    <label>Offline Location</label>
+    <length>32768</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>4</visibleLines>
+</CustomField>

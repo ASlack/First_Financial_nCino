@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Is_Multi_Currency__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Users select this optional checkbox to indicate that the Spread Statement is multi-currency. By default, this field is deselected.</description>
+    <externalId>false</externalId>
+    <label>Is Multi-Currency</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

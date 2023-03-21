@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tax_Id_Type__c</fullName>
+    <description>Indicates the tax id type with a maximum length of 3-4 characters.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates the tax id type with a maximum length of 3-4 characters.</inlineHelpText>
+    <label>Tax Id Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>EIN</fullName>
+                <default>false</default>
+                <label>EIN</label>
+            </value>
+            <value>
+                <fullName>SSN</fullName>
+                <default>false</default>
+                <label>SSN</label>
+            </value>
+            <value>
+                <fullName>ITIN</fullName>
+                <default>false</default>
+                <label>ITIN</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Collateral_Change__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is manually selected and optional. This checkbox is used to specify if the change on the loan is a change in collateral. This field can be associated to a field set on the loan,  IF associated to a field set, when selected the monitored fields section of the memo will display those fields.</description>
+    <externalId>false</externalId>
+    <label>Collateral Change</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

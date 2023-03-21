@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Term_Months__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is manually populated. This field is used to specify the loan&apos;s term, expressed in months. This field contains the complete Principal and Interest Months, not the Interest Only months.</description>
+    <externalId>false</externalId>
+    <label>Loan Term (Months)</label>
+    <precision>10</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

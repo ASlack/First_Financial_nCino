@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Batch_Update_Loans</fullName>
+    <availability>online</availability>
+    <description>This button will execute a batch update for all loans affected by the currently defined Product State Configs.</description>
+    <displayType>button</displayType>
+    <height>600</height>
+    <linkType>page</linkType>
+    <masterLabel>Batch Update Loans</masterLabel>
+    <openType>sidebar</openType>
+    <page>LLC_BI__Product_State_Config_Batch_Update</page>
+    <protected>false</protected>
+</WebLink>

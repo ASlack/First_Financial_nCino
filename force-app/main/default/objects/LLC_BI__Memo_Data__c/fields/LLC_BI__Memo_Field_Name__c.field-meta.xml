@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Memo_Field_Name__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The name of the field on the Memo that represents the category. This field is automatically set when a memo is created, and details of the changes are filled in. This field is set behind the scenes and is used to auto apply changes to the fields adjusted on a memo</description>
+    <externalId>false</externalId>
+    <label>Memo_Field_Name__c</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

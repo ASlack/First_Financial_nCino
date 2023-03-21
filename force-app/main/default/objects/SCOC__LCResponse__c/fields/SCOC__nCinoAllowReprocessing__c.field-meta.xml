@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCOC__nCinoAllowReprocessing__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field contains the nCino Allow Response Reprocessing flag used to enforce reprocessing rules for the LiquidCredit Request.</description>
+    <externalId>false</externalId>
+    <label>nCino Allow Response Reprocessing</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

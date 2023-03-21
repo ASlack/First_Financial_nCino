@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nPortal__External_Name__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional but recommended. Enter the product name that external Portal users should see. When populated, the external name is displayed in place of the standard product name.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the product name that should be displayed to external users in Customer Portal. If no name is provided here, the internal product name will be shown.</inlineHelpText>
+    <label>Product Name</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

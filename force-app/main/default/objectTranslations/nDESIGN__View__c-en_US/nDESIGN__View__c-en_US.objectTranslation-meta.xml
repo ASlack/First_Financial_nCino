@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <webLinks>
+        <label></label>
+        <name>nDESIGN__Convert_Multiple_to_Bootstrap3</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>nDESIGN__Convert_Single_to_Bootstrap3</name>
+    </webLinks>
+</CustomObjectTranslation>

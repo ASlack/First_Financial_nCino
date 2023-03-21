@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#00396F</headerColor>
+        <logo>FFB_StackedFDIC_Color</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>This is the default Gold Standard App from Professional Services Master Org.</description>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>nCino LOS</label>
+    <navType>Standard</navType>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Deal_Proposal</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>LLC_BI__Product_Package__c</pageOrSobjectType>
+        <recordType>LLC_BI__Product_Package__c.Deal_Proposal</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Deal_Proposal</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>LLC_BI__Product_Package__c</pageOrSobjectType>
+        <recordType>LLC_BI__Product_Package__c.Deal_Proposal</recordType>
+        <type>Flexipage</type>
+        <profile>nCino - Premium CRM Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Deal_Proposal</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>LLC_BI__Product_Package__c</pageOrSobjectType>
+        <recordType>LLC_BI__Product_Package__c.Deal_Proposal</recordType>
+        <type>Flexipage</type>
+        <profile>nCino - Standard Platform Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Deal_Proposal</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>LLC_BI__Product_Package__c</pageOrSobjectType>
+        <recordType>LLC_BI__Product_Package__c.Deal_Proposal</recordType>
+        <type>Flexipage</type>
+        <profile>nCino - Standard Platform Data View Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Deal_Proposal</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>LLC_BI__Product_Package__c</pageOrSobjectType>
+        <recordType>LLC_BI__Product_Package__c.Deal_Proposal</recordType>
+        <type>Flexipage</type>
+        <profile>nCino - Lite Seat Profile</profile>
+    </profileActionOverrides>
+    <tabs>standard-home</tabs>
+    <tabs>LLC_BI__Product_Package__c</tabs>
+    <tabs>LLC_BI__Loan__c</tabs>
+    <tabs>standard-Account</tabs>
+    <tabs>standard-Contact</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>standard-Dashboard</tabs>
+    <tabs>standard-Feed</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>nCino_PSO_Lightning_UtilityBar</utilityBar>
+</CustomApplication>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Funded__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is manually populated. This field is used to show the funding percentage of a loan.</description>
+    <externalId>false</externalId>
+    <label>% Funded</label>
+    <precision>5</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Percent</type>
+</CustomField>

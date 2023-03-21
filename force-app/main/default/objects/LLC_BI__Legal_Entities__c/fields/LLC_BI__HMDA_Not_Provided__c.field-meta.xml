@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__HMDA_Not_Provided__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is optional. The user manually populates this field on the HMDA page. If enabled, the applicant does not have to enter other HMDA information. When disabled, other HMDA information is requested, but not required, of the applicant. This field is disabled by default.</description>
+    <externalId>false</externalId>
+    <label>I do not wish to supply this information</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

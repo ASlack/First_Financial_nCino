@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Category__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Administrators and users manually populate this optional field to track individual budget costs as a certain type (e.g. hard cost or soft cost).</description>
+    <externalId>false</externalId>
+    <label>Category</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Financing cost</fullName>
+                <default>false</default>
+                <label>Financing cost</label>
+            </value>
+            <value>
+                <fullName>Hard cost</fullName>
+                <default>false</default>
+                <label>Hard cost</label>
+            </value>
+            <value>
+                <fullName>Interest reserve</fullName>
+                <default>false</default>
+                <label>Interest reserve</label>
+            </value>
+            <value>
+                <fullName>Land cost</fullName>
+                <default>false</default>
+                <label>Land cost</label>
+            </value>
+            <value>
+                <fullName>Soft cost</fullName>
+                <default>false</default>
+                <label>Soft cost</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

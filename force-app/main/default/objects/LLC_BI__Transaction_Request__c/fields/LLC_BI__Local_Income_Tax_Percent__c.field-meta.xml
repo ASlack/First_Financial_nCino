@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Local_Income_Tax_Percent__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It specifies any additional percentage amount (not flat dollar amount) of local income taxes to be withheld from the distribution subtotal. Local taxes do not always apply but, where applicable, only one of the two data points for either the amount (entered under Txn/Deposit/IRAPlans/IRAPlan/LocalIncomeTaxAmount) or the percentage needs to be passed.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Any additional percentage amount of local income taxes to be withheld from the distribution subtotal.</inlineHelpText>
+    <label>Local Income Tax Percent</label>
+    <precision>5</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

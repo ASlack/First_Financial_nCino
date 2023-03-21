@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Source__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this field with a lookup ID to the Data Source object.</description>
+    <externalId>false</externalId>
+    <label>Data Source</label>
+    <referenceTo>LLC_BI__Data_Source__c</referenceTo>
+    <relationshipLabel>Data Source Sections</relationshipLabel>
+    <relationshipName>Data_Source_Sections</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

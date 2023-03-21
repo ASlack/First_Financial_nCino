@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Contract_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional and manually populated. Use this picklist field to specify the contract type as Contract or Letter Contract.</description>
+    <externalId>false</externalId>
+    <label>Contract Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Contract</fullName>
+                <default>false</default>
+                <label>Contract</label>
+            </value>
+            <value>
+                <fullName>Letter Contract</fullName>
+                <default>false</default>
+                <label>Letter Contract</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Appraisal_Date__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional and manually populated. Use this field to specify the date of the most recent appraisal.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Date of the last time the collateral was appraised.</inlineHelpText>
+    <label>Appraisal Date</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

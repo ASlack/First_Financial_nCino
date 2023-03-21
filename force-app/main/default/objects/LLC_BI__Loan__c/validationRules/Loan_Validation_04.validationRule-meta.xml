@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Loan_Validation_04</fullName>
+    <active>true</active>
+    <description>Prevents Users from manually selecting the Approval / Loan Committee Stage.</description>
+    <errorConditionFormula>AND(
+OR(
+ISNEW(),
+ISCHANGED (LLC_BI__Stage__c)),
+ISPICKVAL(LLC_BI__Stage__c, &quot;Approval / Loan Committee&quot;), TRUE)</errorConditionFormula>
+    <errorDisplayField>LLC_BI__Stage__c</errorDisplayField>
+    <errorMessage>You Cannot Manually Change the Loan Stage to Approval / Loan Committee. Please Ensure That All Information is Accurate and Press the &apos;Submit for Approval&apos; Button at the Top of the Page. - LV04</errorMessage>
+</ValidationRule>

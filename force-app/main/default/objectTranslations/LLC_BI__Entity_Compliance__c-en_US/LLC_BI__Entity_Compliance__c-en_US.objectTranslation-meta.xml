@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label></label>
+        <name>LLC_BI__UI_HMDA_Entity_Compliance</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>LLC_BI__UI_HMDA_Entity_Compliance_2017</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>LLC_BI__UI_HMDA_Entity_Compliance_2018</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>nPortal__OA_HMDA_GMI_Default_Fields</name>
+    </fieldSets>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>LLC_BI__HMDA_Effective_2017</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>LLC_BI__HMDA_Effective_2018</name>
+    </recordTypes>
+</CustomObjectTranslation>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Context_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This required field contains the fully qualified name of the sObject type to which this Checklist pertains.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This required field contains the fully qualified name of the sObject type to which this Checklist pertains.</inlineHelpText>
+    <label>Context Type</label>
+    <length>60</length>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

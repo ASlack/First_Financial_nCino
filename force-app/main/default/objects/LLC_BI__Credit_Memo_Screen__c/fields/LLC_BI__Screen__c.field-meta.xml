@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Screen__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This required lookup field automatically populates and is used to specify the Screen record that is associated with the Credit Memo template.</description>
+    <externalId>false</externalId>
+    <label>Screen</label>
+    <referenceTo>nFORCE__Screen__c</referenceTo>
+    <relationshipLabel>Credit Memo Screens</relationshipLabel>
+    <relationshipName>Credit_Memo_Screens</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

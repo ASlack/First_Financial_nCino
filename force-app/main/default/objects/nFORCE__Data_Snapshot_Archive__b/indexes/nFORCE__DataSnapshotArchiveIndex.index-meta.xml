@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Index xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__DataSnapshotArchiveIndex</fullName>
+    <fields>
+        <name>nFORCE__Data_Snapshot__c</name>
+        <sortDirection>DESC</sortDirection>
+    </fields>
+    <fields>
+        <name>nFORCE__Context_Id__c</name>
+        <sortDirection>DESC</sortDirection>
+    </fields>
+    <fields>
+        <name>nFORCE__Field_Order__c</name>
+        <sortDirection>ASC</sortDirection>
+    </fields>
+    <fields>
+        <name>nFORCE__Field_API_Name_Hash__c</name>
+        <sortDirection>DESC</sortDirection>
+    </fields>
+    <fields>
+        <name>nFORCE__Numeric_Index__c</name>
+        <sortDirection>ASC</sortDirection>
+    </fields>
+    <label>Snapshot Archive Index</label>
+</Index>

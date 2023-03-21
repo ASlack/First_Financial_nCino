@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Sub_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional and manually populated. This picklist field is dependent upon the Type field. It defines the basic subtype information about the collateral being used to secure the loan.</description>
+    <externalId>false</externalId>
+    <label>Sub Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>LLC_BI__Type__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Motor Vehicle</fullName>
+                <default>false</default>
+                <label>Motor Vehicle</label>
+            </value>
+            <value>
+                <fullName>Mobile Home</fullName>
+                <default>false</default>
+                <label>Mobile Home</label>
+            </value>
+            <value>
+                <fullName>Pleasure Boat</fullName>
+                <default>false</default>
+                <label>Pleasure Boat</label>
+            </value>
+            <value>
+                <fullName>Ship</fullName>
+                <default>false</default>
+                <label>Ship</label>
+            </value>
+            <value>
+                <fullName>Aircraft</fullName>
+                <default>false</default>
+                <label>Aircraft</label>
+            </value>
+            <value>
+                <fullName>Trailer</fullName>
+                <default>false</default>
+                <label>Trailer</label>
+            </value>
+            <value>
+                <fullName>Other Titled</fullName>
+                <default>false</default>
+                <label>Other Titled</label>
+            </value>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>Savings/CDs</fullName>
+                <default>false</default>
+                <label>Savings/CDs</label>
+            </value>
+            <value>
+                <fullName>Securities</fullName>
+                <default>false</default>
+                <label>Securities</label>
+            </value>
+            <value>
+                <fullName>Note/Instrument</fullName>
+                <default>false</default>
+                <label>Note/Instrument</label>
+            </value>
+            <value>
+                <fullName>Receipts/Bills</fullName>
+                <default>false</default>
+                <label>Receipts/Bills</label>
+            </value>
+            <value>
+                <fullName>Letter of Credit</fullName>
+                <default>false</default>
+                <label>Letter of Credit</label>
+            </value>
+            <value>
+                <fullName>Other Possessory</fullName>
+                <default>false</default>
+                <label>Other Possessory</label>
+            </value>
+            <value>
+                <fullName>Life Insurance</fullName>
+                <default>false</default>
+                <label>Life Insurance</label>
+            </value>
+            <value>
+                <fullName>Described</fullName>
+                <default>false</default>
+                <label>Described</label>
+            </value>
+            <value>
+                <fullName>1-4 Family</fullName>
+                <default>false</default>
+                <label>1-4 Family</label>
+            </value>
+            <value>
+                <fullName>Multi-Family</fullName>
+                <default>false</default>
+                <label>Multi-Family</label>
+            </value>
+            <value>
+                <fullName>Construction</fullName>
+                <default>false</default>
+                <label>Construction</label>
+            </value>
+            <value>
+                <fullName>Lot</fullName>
+                <default>false</default>
+                <label>Lot</label>
+            </value>
+            <value>
+                <fullName>Land</fullName>
+                <default>false</default>
+                <label>Land</label>
+            </value>
+            <value>
+                <fullName>Farm Land</fullName>
+                <default>false</default>
+                <label>Farm Land</label>
+            </value>
+            <value>
+                <fullName>Office</fullName>
+                <default>false</default>
+                <label>Office</label>
+            </value>
+            <value>
+                <fullName>Warehouse</fullName>
+                <default>false</default>
+                <label>Warehouse</label>
+            </value>
+            <value>
+                <fullName>Retail</fullName>
+                <default>false</default>
+                <label>Retail</label>
+            </value>
+            <value>
+                <fullName>Other RE</fullName>
+                <default>false</default>
+                <label>Other RE</label>
+            </value>
+            <value>
+                <fullName>Government Contracts</fullName>
+                <default>false</default>
+                <label>Government Contracts</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Titled</controllingFieldValue>
+            <valueName>Motor Vehicle</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Titled</controllingFieldValue>
+            <controllingFieldValue>Real Estate</controllingFieldValue>
+            <valueName>Mobile Home</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Titled</controllingFieldValue>
+            <valueName>Pleasure Boat</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Titled</controllingFieldValue>
+            <valueName>Ship</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Titled</controllingFieldValue>
+            <valueName>Aircraft</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Titled</controllingFieldValue>
+            <valueName>Trailer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Titled</controllingFieldValue>
+            <valueName>Other Titled</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Possessory</controllingFieldValue>
+            <valueName>None</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Possessory</controllingFieldValue>
+            <valueName>Savings/CDs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Possessory</controllingFieldValue>
+            <valueName>Securities</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Possessory</controllingFieldValue>
+            <valueName>Note/Instrument</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Possessory</controllingFieldValue>
+            <valueName>Receipts/Bills</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Possessory</controllingFieldValue>
+            <valueName>Letter of Credit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Possessory</controllingFieldValue>
+            <valueName>Other Possessory</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Possessory</controllingFieldValue>
+            <valueName>Life Insurance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UCC</controllingFieldValue>
+            <valueName>Described</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Real Estate</controllingFieldValue>
+            <valueName>1-4 Family</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Real Estate</controllingFieldValue>
+            <valueName>Multi-Family</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Real Estate</controllingFieldValue>
+            <valueName>Construction</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Real Estate</controllingFieldValue>
+            <valueName>Lot</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Real Estate</controllingFieldValue>
+            <valueName>Land</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Real Estate</controllingFieldValue>
+            <valueName>Farm Land</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Real Estate</controllingFieldValue>
+            <valueName>Office</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Real Estate</controllingFieldValue>
+            <valueName>Warehouse</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Real Estate</controllingFieldValue>
+            <valueName>Retail</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Real Estate</controllingFieldValue>
+            <valueName>Other RE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>Government Contracts</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

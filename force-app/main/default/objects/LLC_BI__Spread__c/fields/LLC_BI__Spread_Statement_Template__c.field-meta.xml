@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Spread_Statement_Template__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is required. It is populated automatically whenever spreading begins for a Relationship on a Loan. This field specifies the Spread Statement Template associated with the Spread.</description>
+    <externalId>false</externalId>
+    <label>Statement</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>LLC_BI__Spread_Statement_Type__c.LLC_BI__Is_Template__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </filterItems>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>LLC_BI__Spread_Statement_Type__c</referenceTo>
+    <relationshipLabel>Spreads</relationshipLabel>
+    <relationshipName>Spreads</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>true</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

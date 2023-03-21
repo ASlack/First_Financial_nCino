@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__CESA_Distribution_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is the picklist that specifies the type of distribution for a Coverdell Education Savings Account (CESA).</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Specifies the type of distribution for a Coverdell Education Savings Account (CESA).</inlineHelpText>
+    <label>CESA Distribution Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Distributions - Non Transfer</fullName>
+                <default>false</default>
+                <label>Distributions - Non Transfer</label>
+            </value>
+            <value>
+                <fullName>Distributions - Transfer to CESA of same Designated Beneficiary</fullName>
+                <default>false</default>
+                <label>Distributions - Transfer to CESA of same Designated Beneficiary</label>
+            </value>
+            <value>
+                <fullName>Distributions - Transfer to CESA of new qualified designated beneficiary</fullName>
+                <default>false</default>
+                <label>Distributions - Transfer to CESA of new qualified designated beneficiary</label>
+            </value>
+            <value>
+                <fullName>Distributions - Transfer to former spouse&apos;s CESA due to divorce or legal separation</fullName>
+                <default>false</default>
+                <label>Distributions - Transfer to former spouse&apos;s CESA due to divorce or legal separation</label>
+            </value>
+            <value>
+                <fullName>Death</fullName>
+                <default>false</default>
+                <label>Death</label>
+            </value>
+            <value>
+                <fullName>Correction of Excess Contribution in same year as excess contribution</fullName>
+                <default>false</default>
+                <label>Correction of Excess Contribution in same year as excess contribution</label>
+            </value>
+            <value>
+                <fullName>Correction of Excess Contribution in year after excess contribution but by May 31</fullName>
+                <default>false</default>
+                <label>Correction of Excess Contribution in year after excess contribution but by May 31</label>
+            </value>
+            <value>
+                <fullName>Correction of Excess Contribution after May 31 of the tax year after excess contribution</fullName>
+                <default>false</default>
+                <label>Correction of Excess Contribution after May 31 of the tax year after excess contribution</label>
+            </value>
+            <value>
+                <fullName>Disability</fullName>
+                <default>false</default>
+                <label>Disability</label>
+            </value>
+            <value>
+                <fullName>Prohibited Transaction</fullName>
+                <default>false</default>
+                <label>Prohibited Transaction</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

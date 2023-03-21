@@ -1,0 +1,60 @@
+<apex:page docType="html-5.0" controller="nCRED.ConvertBundleToTemplateController" lightningStylesheets="true">
+  <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+  <head>
+    <apex:slds />
+    <nFORCE:Include_Navigator />
+
+    <style>
+      .bulleted {
+        list-style: disc !important;
+      }
+    </style>
+
+    <script>
+      function handleComplete() {
+        sforce.one.showToast({
+          "title": "{!$Label.nCRED__Convert_To_Template_Success_Title}",
+          "message": "{!$Label.nCRED__Convert_To_Template_Success_Message}",
+          "type": "success"
+        });
+        sforce.one.back(true);
+      }
+    </script>
+
+  </head>
+
+  <body>
+    <apex:outputPanel rendered="{!isError}">
+      <div style="height:4rem">
+        <div class="slds-notify_container slds-is-relative">
+          <div class="slds-notify slds-notify_toast slds-theme_error" role="alert">
+            <span class="slds-assistive-text">error</span>
+            <span class="slds-icon_container slds-icon-utility-error slds-m-right_small slds-no-flex slds-align-top" title="Description of icon when needed">
+              <svg class="slds-icon slds-icon_small" aria-hidden="true">
+                <use xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#error')}"></use>
+              </svg>
+            </span>
+            <div class="slds-notify__content">
+              <h2 class="slds-text-heading_small">{!$Label.Convert_To_Template_Error_Title}</h2>
+              <apex:dataList styleClass="bulleted slds-m-left_large" value="{!errorMessages}" var="errorMessage">
+                <apex:outputText value="{!errorMessage}" />
+              </apex:dataList>
+            </div>
+          </div>
+        </div>
+      </div>
+    </apex:outputPanel>
+
+    <div class="slds-m-around_medium slds-p-top_large">{!$Label.nCRED__Convert_To_Template_Confirmation}</div>
+
+    <apex:form >
+      <a class="slds-m-horizontal_medium" onclick="LifeCycle.Navigator.navigateToSObject('{!JSENCODE(contextId)}')">{!$Label.nCRED__Convert_To_Template_Cancel}</a>
+      <apex:commandButton styleClass="slds-button slds-button_brand slds-m-horizontal_small" action="{!convert}" onComplete="handleComplete()"
+        value="{!$Label.nCRED__Convert_To_Template_Convert}" id="convert" disabled="{!isDisabled}" />
+    </apex:form>
+  </body>
+
+  </html>
+
+</apex:page>

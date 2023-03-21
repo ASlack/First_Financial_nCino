@@ -1,0 +1,50 @@
+<apex:page docType="html-5.0"
+	showHeader="false"
+	sidebar="false"
+	applyHtmlTag="false"
+	standardStylesheets="false"
+	controller="nFORCE.TemplateController"
+	extensions="nFORCE.RemoteActionController,LLC_BI.MultiTierInvolvementController,LLC_BI.ProductCreationBaseController">
+
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en">
+
+        <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+            <base href="{!baseHref}" />
+            <apex:slds />
+            <apex:stylesheet value="{!URLFOR($Resource.LLC_BI__multi_tier_involvement, 'styles.css')}" />
+        </head>
+
+        <body>
+            <div class="slds slds-scope">
+                <multi-tier-involvement></multi-tier-involvement>
+                <c:MultiTierInvolvementConfiguration />
+            </div>
+
+            <nFORCE:Internationalize />
+            <nFORCE:Include_Design_System components="true" />
+
+            <!-- the following is for the current deposit structure.  New deposit configuration
+            should be housed in MultiTierInvolvementConfiguration component -->
+            <script>
+                if (!window.LifeCycle) {
+                  window.LifeCycle = {};
+                }
+                window.LifeCycle.MultiTierInvolvement.ConfigDataDeposit = {
+                    contextId: '{!JSENCODE($CurrentPage.parameters.id)}',
+                    contextType: '{!JSENCODE(contextType)}',
+                    fieldSetApis: '{!JSENCODE(fieldSetApis)}',
+                    permissions: '{!JSENCODE(permissions)}',
+                    nextHref: '{!nextHref}', <!-- NOPMD - nextHref is a page reference object -->
+                    anchorText: '{!JSENCODE(anchorText)}',
+                    anchorSrc: '{!URLFOR($Resource.nFORCE__SLDS0102, depositIconPath)}'
+                }
+            </script>
+
+            <script src="{!URLFOR($Resource.multi_tier_involvement, 'runtime.js')}"></script>
+            <script src="{!URLFOR($Resource.multi_tier_involvement, 'polyfills.js')}"></script>
+            <script src="{!URLFOR($Resource.multi_tier_involvement, 'main.js')}"></script>
+        </body>
+
+    </html>
+</apex:page>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Approval_Roles__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. This is a semicolon delimited list of roles that are allowed to approve the document. If left blank, all roles can approve the document. This field is limited to 255 characters in length. This field works in tandem with the newer Placeholder Approval Roles field, which can accept more characters.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Semicolon delimited list of roles that are allowed to approve the document. If left blank all roles can approve the document.</inlineHelpText>
+    <label>Approval Roles</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Is_Secured__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is automatically selected via trigger. It is enabled when the loan has collateral pledged and indicates that the loan has been secured by collateral. When disabled, it indicates that the loan has not been secured by collateral. By default, it is disbaled.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Is Loan Secured With Collateral</inlineHelpText>
+    <label>Is Secured</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

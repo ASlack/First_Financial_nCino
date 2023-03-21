@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Unique__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is optional and is populated by the Section Builder tool. This field denotes whether a section configuration should return only unique records.  When the value is set to true, the view generator will respect the setting and generate appropriate html markup. In a hierarchy of dependent section configurations, only a single record should have a true value to ensure proper markup is generated. The default value is false and will result in view generator creating markup that lists all returned records.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field is optional and is populated by the Section Builder tool. This field denotes whether a tier should return only unique records. When the value is set to true, the generated html code will respect the setting.</inlineHelpText>
+    <label>Unique</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

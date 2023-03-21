@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>nFORCE__Describes_Cache_SObject_Lookup_Field_Access</name>
+    </customPermissions>
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>nFORCE__Describes_Cache_SObject_Type_Access</name>
+    </customPermissions>
+    <description>Grants a user access to permissions needed for DescribesRemote</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>DescribesRemote Access</label>
+</PermissionSet>

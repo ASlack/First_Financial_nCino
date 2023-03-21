@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cm_Covenant_Analysis__c</fullName>
+    <description>Used to capture the covenant narrative information for product package credit memo. Added for the Commercial Accelerate project.</description>
+    <externalId>false</externalId>
+    <label>Covenant Analysis</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

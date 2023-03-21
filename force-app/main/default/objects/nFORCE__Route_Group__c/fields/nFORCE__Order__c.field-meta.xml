@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Order__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is manually populated. It is required. This field specifies the order a route appears on the left navigation or subnavigation bar.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The route display order.</inlineHelpText>
+    <label>Order</label>
+    <precision>9</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

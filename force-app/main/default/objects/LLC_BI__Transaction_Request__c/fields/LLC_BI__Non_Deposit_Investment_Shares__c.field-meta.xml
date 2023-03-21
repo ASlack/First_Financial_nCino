@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Non_Deposit_Investment_Shares__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is the number of shares of the non-deposit investment.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The number of shares of the non-deposit investment.</inlineHelpText>
+    <label>Non-Deposit Investment Shares</label>
+    <precision>16</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

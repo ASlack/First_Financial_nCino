@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Shopped_For__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>--DEPRECATED-- Replaced by Service_Shopped_For__c.
+        The user marks this optional boolean field to true when borrowers shop for a service for fees, costs, and adjustments rather than using the financial-institution-recommended service. By default, it is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This user-populated field displays when the customer shops for a service for fees, costs, and adjustments.</inlineHelpText>
+    <label>-D Shopped For</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

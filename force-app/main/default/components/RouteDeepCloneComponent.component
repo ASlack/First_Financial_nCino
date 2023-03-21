@@ -1,0 +1,47 @@
+<apex:component allowDML="true" layout="none" controller="RouteDeepClone">  
+    
+    <apex:outputPanel id="opRG">
+    <apex:pageBlock id="pgbk1" mode="detail">
+        <apex:pageBlockSection id="pgbk1_1" title="Select Route Groups to Clone" columns="5">     
+            <apex:pageBlockTable value="{!searchResults}" var="rg" styleClass="table table-bordered">
+                <apex:facet name="header">
+                    <input type="checkbox" id="checkAllBox" onchange="toggleCheckAll(this)"/> Select All
+                </apex:facet>
+                <apex:column width="40px">
+                    <apex:inputCheckbox styleClass="selectInput" value="{!rg.checked}"/>
+                </apex:column>
+                <apex:column value="{!rg.rtgrp.Name}" headerValue="Name"/>
+                <apex:column value="{!rg.rtgrp.nFORCE__Route__r.Name}" headerValue="Related Route Name"/>
+                <apex:column value="{!rg.rtgrp.nFORCE__Route__r.nFORCE__App__c}" headerValue="Related Route App"/>
+                <apex:column value="{!rg.rtgrp.nFORCE__Parent_Route__r.Name}" headerValue="Related Parent Route Name"/>
+                <apex:column value="{!rg.rtgrp.nFORCE__Is_Default_Context_Child__c}" headerValue="Is Default Context"/>
+                <apex:column value="{!rg.rtgrp.nFORCE__Is_Hidden__c}" headerValue="Is Hidden"/>
+                <apex:column value="{!rg.rtgrp.nFORCE__Order__c}" headerValue="Order"/>
+            </apex:pageBlockTable>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+    </apex:outputPanel>
+    
+    <apex:pageBlock id="pgbk2" mode="detail">
+        <apex:pageBlockSection id="pgbk2_1" title="Related Route Records" columns="1">
+            <apex:outputText value="" />
+            <apex:outputText value="Select which Route child records will be included in the clone operation." label="" />             
+            <apex:inputcheckbox style="display:block;width:400px;" value="{!includeFieldConfigs}" label="Include Field Configs" />
+            <apex:inputcheckbox style="display:block;width:400px;" value="{!includeRouteTiles}" label="Include Route Tiles" />
+            <apex:inputcheckbox style="display:block;width:400px;" value="{!includeRouteTerms}" label="Include Route Terms" /> 
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+    
+    <apex:pageBlock id="pgbk3" mode="detail">
+        <apex:pageBlockSection id="pgbk3_1" title="New Route Information" columns="1">
+            <apex:outputText value="" />
+            <apex:outputText value="Enter a suffix for the new Route App fields below. 
+                This operation will create an exact duplicate of the original Route and its related components, with no overlap. The Route, Screen, and Screen Sections will be auto-cloned." label="" />             
+            <apex:inputText style="display:block;width:400px;" value="{!newRouteAppValue}" label="Cloned Route App Suffix" />
+
+            <apex:commandButton id="mainbutton" value="Proceed with Clone" style="colStyle4" action="{!prRedirect}" />
+            <apex:message for="mainbutton" />   
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+
+</apex:component>

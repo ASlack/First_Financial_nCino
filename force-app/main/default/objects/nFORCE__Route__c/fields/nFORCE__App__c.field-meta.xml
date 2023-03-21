@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__App__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <deprecated>false</deprecated>
+    <description>This field is manually populated. It is required. This field is a unique identifier for the route, and is used, in conjunction with a group&apos;s app, to uniquely identify a requested app.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is the unique identifier similar to the Salesforce.com API Name.</inlineHelpText>
+    <label>App</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

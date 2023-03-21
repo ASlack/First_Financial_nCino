@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Formula__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The User populates this optional long text field to their desired FLEX formula. By default, it is blank.</description>
+    <externalId>false</externalId>
+    <label>Formula</label>
+    <length>131072</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

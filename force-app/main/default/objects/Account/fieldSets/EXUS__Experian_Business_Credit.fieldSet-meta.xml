@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EXUS__Experian_Business_Credit</fullName>
+    <description>This field set groups the fields sent to Experian for business credit.</description>
+    <displayedFields>
+        <field>EXUS__Business_Credit_Product__c</field>
+        <isFieldManaged>true</isFieldManaged>
+        <isRequired>true</isRequired>
+    </displayedFields>
+    <label>Experian Business Credit</label>
+</FieldSet>

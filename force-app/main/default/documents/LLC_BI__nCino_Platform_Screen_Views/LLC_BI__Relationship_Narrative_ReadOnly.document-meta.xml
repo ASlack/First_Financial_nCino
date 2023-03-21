@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>View for Relationship Narrative Widget</description>
+    <internalUseOnly>true</internalUseOnly>
+    <name>Relationship_Narrative_ReadOnly</name>
+    <public>false</public>
+</Document>

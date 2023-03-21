@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Prior_Fiscal_Year__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This defaults to false. User updated. When checked, linked records will populate any period in a certain year with the value of the period marked as fiscal year in the previous year.</description>
+    <externalId>false</externalId>
+    <label>Prior Fiscal Year</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Status_Icon__c</fullName>
+    <externalId>false</externalId>
+    <formula>IMAGE(CASE(Status, &quot;Qualified&quot;, &quot;/img/samples/light_green.gif&quot;, &quot;Contacted&quot;, &quot;/img/samples/light_yellow.gif&quot;, &quot;Open&quot;, &quot;/img/samples/light_yellow.gif&quot;, &quot;Unqualified&quot;, &quot;/img/samples/light_red.gif&quot;, &quot;/s.gif&quot;), &quot;status color&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Lead Status Icon</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

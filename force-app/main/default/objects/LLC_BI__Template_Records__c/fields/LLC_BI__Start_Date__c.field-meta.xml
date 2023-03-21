@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Start_Date__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is required and specifies the start date used to drive the active or inactive status of this template record. Setting the start date is required to activate the template record. This field is manually populated.</description>
+    <externalId>false</externalId>
+    <label>Start Date</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

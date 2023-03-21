@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unsatisfied_Conditions__c</fullName>
+    <description>Counts the Conditions (related record) tied to a loan and prevents users from advancing stages if Unsatisfied Condition Count is greater than 0.</description>
+    <externalId>false</externalId>
+    <label>Unsatisfied Conditions Preapproval</label>
+    <summaryFilterItems>
+        <field>Condition__c.Condition_Status__c</field>
+        <operation>equals</operation>
+        <value>Unsatisfied</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Condition__c.Type__c</field>
+        <operation>notEqual</operation>
+        <value>Appraisal Acknowledgement - Client, Closing Loan Package Approved (Pre-Closing Review), Collateral Title Submitted, Collection(s) Paid and Explanation Provided, Debt Schedule Submitted, HMDA Data Collected, Judgment or Lien Paid and Explanation Provided</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Condition__c.Type__c</field>
+        <operation>notEqual</operation>
+        <value>&quot;Proof of Insurance (Equipment, Vehicle, etc.) Provided&quot;, Proof of Sufficient Cash Down, Satisfactory Appraisal and Review, Satisfactory Environmental Report, Satisfactory Flood Insurance Coverage, Satisfactory Hazard Insurance</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Condition__c.Type__c</field>
+        <operation>notEqual</operation>
+        <value>Satisfactory Internal Evaluation and Review, Satisfactory Title Commitment, Property Tax (CRIM), Other Legal Documents, &quot;Pledge (Leases, Accounts Receivables, Inventory, etc.)&quot;, Key Man Insurance</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Condition__c.Type__c</field>
+        <operation>notEqual</operation>
+        <value>Appraisal Acknowledgment - Bank, Open Deposit Account, Open Nave Savings Account</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Condition__c.Loan__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

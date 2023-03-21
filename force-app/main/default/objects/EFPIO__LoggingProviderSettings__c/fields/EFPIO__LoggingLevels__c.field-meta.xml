@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EFPIO__LoggingLevels__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The comma delimited list of logging levels. Only System.LoggingLevel enum values are valid for use. This is a cumulative list, so if you only specify ERROR, only logs with ERROR will be stored, however, if you specify INFO, then INFO, WARN, and ERROR logs will be stored. If you specify &quot;WARN, FINE&quot; then only the highest level will be taken into account - FINE in this case, which will consist of FINE, DEBUG, INFO, WARN, and ERROR. Valid values are NONE,ERROR,WARN,INFO,DEBUG,FINE,FINER,FINEST</description>
+    <externalId>false</externalId>
+    <label>Logging Levels to Capture</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

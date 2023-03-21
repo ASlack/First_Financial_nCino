@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Product_Line__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This associates a product line for the product which was selected for a conversion on the specified object</description>
+    <externalId>false</externalId>
+    <formula>LLC_BI__Product__r.LLC_BI__Product_Type__r.LLC_BI__Product_Line__r.Name</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Product Line</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Status__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is automatically populated via formula. It stores in plaintext the value of the LLC_BI__Status__c picklist from the relationship the &quot;connected to&quot; field is referencing.</description>
+    <externalId>false</externalId>
+    <formula>Text(LLC_BI__Connected_To__r.LLC_BI__Status__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

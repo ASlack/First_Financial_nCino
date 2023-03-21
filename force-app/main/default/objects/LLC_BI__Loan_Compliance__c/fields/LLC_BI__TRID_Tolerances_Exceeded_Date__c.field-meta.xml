@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__TRID_Tolerances_Exceeded_Date__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this optional date field to indicate the date the fees associated with the loan exceeded TRID tolerances. By default, this field is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This system-populated field displays the date the fees exceeded TRID tolerances.</inlineHelpText>
+    <label>TRID Tolerances Exceeded Date</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

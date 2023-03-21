@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Product_Package_Data__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is not customer facing and lives behind the scenes. It stores the JSON serialized sObject of the product package or the account in review.</description>
+    <externalId>false</externalId>
+    <label>Product Package Data</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

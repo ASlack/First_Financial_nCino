@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Maximum_Total_Credit_Exposure__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The user populates this currency field to indicate the current total credit exposure for which a credit applicant can qualify. This field filters the offers presented to the customer. By default, this field is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the total credit exposure a borrower can have to qualify for credit.</inlineHelpText>
+    <label>Maximum Total Credit Exposure</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Action_Items__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional and is for user narrative describing follow-up actions that result from the Site Visit. It is manually populated.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>What are the action items for follow-up?</inlineHelpText>
+    <label>Action Items</label>
+    <length>32000</length>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Adverse_Action_Flag__c</fullName>
+    <defaultValue>0</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is automatically populated when an adverse action is approved. This field is used to flag an adverse action workflow. Using a 1 updates this field&apos;s stage to complete and status to declined.  Using a 0 indicates it requires approval.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If AAF = 1, then the stage was changed to decline by Credit. If AAF = 0, then it was changed by non-credit and required approval.</inlineHelpText>
+    <label>Adverse Action Flag</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

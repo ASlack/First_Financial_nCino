@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Loan_Validation_05</fullName>
+    <active>true</active>
+    <description>A Loan Number is Required Prior to Changing the Loan Stage to &apos;Booked&apos;</description>
+    <errorConditionFormula>AND(
+ISPICKVAL(LLC_BI__Stage__c , &apos;Booked&apos;),
+ISBLANK(LLC_BI__lookupKey__c),
+$User.No_Validation__c = False)</errorConditionFormula>
+    <errorDisplayField>LLC_BI__Stage__c</errorDisplayField>
+    <errorMessage>A Loan Number is Required Prior to Changing the Loan Stage to &apos;Booked&apos; - LV05</errorMessage>
+</ValidationRule>

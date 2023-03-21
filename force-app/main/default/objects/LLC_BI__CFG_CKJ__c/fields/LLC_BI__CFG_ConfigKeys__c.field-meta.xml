@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__CFG_ConfigKeys__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional and is manually populated. It is used as a Master Detail look up to Configuration Keys, allowing the keys to be linked to the Configuration Values.</description>
+    <externalId>false</externalId>
+    <label>CFG_ConfigKeys</label>
+    <referenceTo>LLC_BI__CFG_ConfigKey__c</referenceTo>
+    <relationshipLabel>CFG_CKJs</relationshipLabel>
+    <relationshipName>CFG_CKJs</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

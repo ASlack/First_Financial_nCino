@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Total_Lender_Credits__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this optional field to indicate the aggregate total of fees associated with lender credits. By default, this field is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This system-populated field displays the aggregate total of fees for lender credits.</inlineHelpText>
+    <label>Total Lender Credits</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORMS__Form_Template__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this required lookup field to associate a form template to a route group, for Document Generation.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The Form Template is associated to a route group.</inlineHelpText>
+    <label>Form Template</label>
+    <referenceTo>nFORMS__Form_Template__c</referenceTo>
+    <relationshipLabel>Template Configurations</relationshipLabel>
+    <relationshipName>Template_Configurations</relationshipName>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

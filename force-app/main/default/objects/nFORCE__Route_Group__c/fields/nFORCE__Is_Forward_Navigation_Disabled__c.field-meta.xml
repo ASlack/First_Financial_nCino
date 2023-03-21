@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Is_Forward_Navigation_Disabled__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is manually populated. If enabled, this field prevents the user from selecting the associated route from left navigation or subnavigation if they are on a route of lower order. The user can still navigate backwards to any route with these navigation options. If disabled, the user is not prevented from using these navigation options.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Controls ability to use forward routing functionality.</inlineHelpText>
+    <label>Is Forward Navigation Disabled</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

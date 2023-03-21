@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Decline_Reason_4__c</fullName>
+    <deprecated>false</deprecated>
+    <description>A Picklist of options to select an additonal (fourth) reason the loan was declined</description>
+    <externalId>false</externalId>
+    <label>Decline Reason 4</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Bankruptcy</fullName>
+                <default>false</default>
+                <label>Bankruptcy</label>
+            </value>
+            <value>
+                <fullName>Collection action or judgement</fullName>
+                <default>false</default>
+                <label>Collection action or judgement</label>
+            </value>
+            <value>
+                <fullName>Delinquent past or present credit obligations with others</fullName>
+                <default>false</default>
+                <label>Delinquent past or present credit obligations with others</label>
+            </value>
+            <value>
+                <fullName>Excessive obligations in relation to income</fullName>
+                <default>false</default>
+                <label>Excessive obligations in relation to income</label>
+            </value>
+            <value>
+                <fullName>Foreclosure or repossession</fullName>
+                <default>false</default>
+                <label>Foreclosure or repossession</label>
+            </value>
+            <value>
+                <fullName>Garnishment or attachment</fullName>
+                <default>false</default>
+                <label>Garnishment or attachment</label>
+            </value>
+            <value>
+                <fullName>Income insufficient for amount of credit requested</fullName>
+                <default>false</default>
+                <label>Income insufficient for amount of credit requested</label>
+            </value>
+            <value>
+                <fullName>Insufficient number of credit references provided</fullName>
+                <default>false</default>
+                <label>Insufficient number of credit references provided</label>
+            </value>
+            <value>
+                <fullName>Lack of established earnings record</fullName>
+                <default>false</default>
+                <label>Lack of established earnings record</label>
+            </value>
+            <value>
+                <fullName>Length of employment</fullName>
+                <default>false</default>
+                <label>Length of employment</label>
+            </value>
+            <value>
+                <fullName>Length of residence</fullName>
+                <default>false</default>
+                <label>Length of residence</label>
+            </value>
+            <value>
+                <fullName>Limited credit experience</fullName>
+                <default>false</default>
+                <label>Limited credit experience</label>
+            </value>
+            <value>
+                <fullName>No credit file</fullName>
+                <default>false</default>
+                <label>No credit file</label>
+            </value>
+            <value>
+                <fullName>Number of recent inquiries on credit bureau report</fullName>
+                <default>false</default>
+                <label>Number of recent inquiries on credit bureau report</label>
+            </value>
+            <value>
+                <fullName>Poor credit performance with us</fullName>
+                <default>false</default>
+                <label>Poor credit performance with us</label>
+            </value>
+            <value>
+                <fullName>Slow or past due in trade or loan payments</fullName>
+                <default>false</default>
+                <label>Slow or past due in trade or loan payments</label>
+            </value>
+            <value>
+                <fullName>Temporary or irregular employment</fullName>
+                <default>false</default>
+                <label>Temporary or irregular employment</label>
+            </value>
+            <value>
+                <fullName>Temporary residence</fullName>
+                <default>false</default>
+                <label>Temporary residence</label>
+            </value>
+            <value>
+                <fullName>Unable to verify credit references</fullName>
+                <default>false</default>
+                <label>Unable to verify credit references</label>
+            </value>
+            <value>
+                <fullName>Unable to verify employment</fullName>
+                <default>false</default>
+                <label>Unable to verify employment</label>
+            </value>
+            <value>
+                <fullName>Unable to verify income</fullName>
+                <default>false</default>
+                <label>Unable to verify income</label>
+            </value>
+            <value>
+                <fullName>Unable to verify residence</fullName>
+                <default>false</default>
+                <label>Unable to verify residence</label>
+            </value>
+            <value>
+                <fullName>Unacceptable type of credit references provided</fullName>
+                <default>false</default>
+                <label>Unacceptable type of credit references provided</label>
+            </value>
+            <value>
+                <fullName>Value or type of collateral not sufficient</fullName>
+                <default>false</default>
+                <label>Value or type of collateral not sufficient</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

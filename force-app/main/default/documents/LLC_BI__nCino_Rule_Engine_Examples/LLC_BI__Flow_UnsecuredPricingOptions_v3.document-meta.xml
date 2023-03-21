@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This Flow references pricing variables from the Pricing Matrix object to create Pricing Option records. Given relevant loan, product, and account information, the Pricing Option record includes Interest Rate and Term.</description>
+    <internalUseOnly>true</internalUseOnly>
+    <name>Automated Pricing Flow: Version 1 - Pricing Options</name>
+    <public>false</public>
+</Document>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nBIDC__All</fullName>
+    <columns>NAME</columns>
+    <columns>nBIDC__Unique_Name__c</columns>
+    <columns>nBIDC__Count__c</columns>
+    <columns>nBIDC__Max__c</columns>
+    <columns>nBIDC__Min__c</columns>
+    <columns>nBIDC__Average__c</columns>
+    <columns>nBIDC__Sum__c</columns>
+    <columns>nBIDC__Value__c</columns>
+    <columns>nBIDC__Grouping_1__c</columns>
+    <columns>nBIDC__Grouping_2__c</columns>
+    <columns>nBIDC__Timestamp__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

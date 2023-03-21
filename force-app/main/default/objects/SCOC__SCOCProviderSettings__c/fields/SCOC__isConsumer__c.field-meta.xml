@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCOC__isConsumer__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Administrators select this optional checkbox to indicate if the related provider and settings are for consumer credit pulls. The default is unselected which indicates a business credit pull.</description>
+    <externalId>false</externalId>
+    <label>Is Consumer</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

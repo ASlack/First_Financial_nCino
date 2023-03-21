@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Auto_Update_Collateral_Value__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>System administrators select this checkbox to enable the automatic update functionality. This functionality maps fields such as value, valuation date and valuation type to the corresponding collateral management field to keep the collateral values up-to-date.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select this checkbox to enable automatic updates for collateral management records with collateral valuation details. This functionality applies to records with collateral valuation details with a primary valuation type that receive a newer valuation.</inlineHelpText>
+    <label>Auto-Update Collateral Value</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

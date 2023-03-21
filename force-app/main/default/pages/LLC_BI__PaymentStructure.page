@@ -1,0 +1,11 @@
+<apex:page standardController="LLC_BI__Loan__c" extensions="LLC_BI.PaymentStructureController" docType="html-5.0" >
+	<c:PaymentStructure context="{!context}"
+		loanType="{!loanType}"
+		paymentStructureExtendedSectionId="{!paymentStructureExtensionSectionId}"
+		canAddStream="{!canAddStream}"
+		canEditStream="{!canEditStream}"
+		canDeleteStream="{!canDeleteStream}"
+		canAddZeroAmountStream="{!canAddZeroAmountStream}"
+	/>
+	<c:LoanSummary rendered="{!showLoanSummary}"/>
+</apex:page>

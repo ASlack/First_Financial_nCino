@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Stage__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional and can be collected as part of a workflow. This field is a picklist used to specify the stage that the deposit is in.</description>
+    <externalId>false</externalId>
+    <label>Stage</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Qualification</fullName>
+                <default>true</default>
+                <label>Qualification</label>
+            </value>
+            <value>
+                <fullName>Signature Signed</fullName>
+                <default>false</default>
+                <label>Signature Signed</label>
+            </value>
+            <value>
+                <fullName>Active</fullName>
+                <default>false</default>
+                <label>Active</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

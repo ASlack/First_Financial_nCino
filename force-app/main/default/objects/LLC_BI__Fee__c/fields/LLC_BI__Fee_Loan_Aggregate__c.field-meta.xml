@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Fee_Loan_Aggregate__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field links the fee to the Fee Loan Aggregate object, which rolls up data from fee to display on the fees summary tab section of the loan. This field is automatically populated.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The object that rolls up data from fee for display on the Loan</inlineHelpText>
+    <label>Fee Loan Aggregate</label>
+    <referenceTo>LLC_BI__Fee_Loan_Aggregate__c</referenceTo>
+    <relationshipLabel>Fees</relationshipLabel>
+    <relationshipName>Fees</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

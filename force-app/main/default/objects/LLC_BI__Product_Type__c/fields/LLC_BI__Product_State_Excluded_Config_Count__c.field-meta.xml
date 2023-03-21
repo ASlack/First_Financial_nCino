@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Product_State_Excluded_Config_Count__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is populated automatically. It is a Roll Up Summary used to calculate how many Product State Configs have &quot;LLC_BI__Is_Excluded_From_Stage_Duration__c&quot; checked. This value is limited to 10, as that is the number of &quot;states&quot; that can be recorded in the LLC_BI__Product_State_Config_Pivot__c table.</description>
+    <externalId>false</externalId>
+    <label>Product State Excluded Config Count</label>
+    <summaryFilterItems>
+        <field>LLC_BI__Product_State_Config__c.LLC_BI__Is_Excluded_From_Stage_Duration__c</field>
+        <operation>equals</operation>
+        <value>True</value>
+    </summaryFilterItems>
+    <summaryForeignKey>LLC_BI__Product_State_Config__c.LLC_BI__Product_Type__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

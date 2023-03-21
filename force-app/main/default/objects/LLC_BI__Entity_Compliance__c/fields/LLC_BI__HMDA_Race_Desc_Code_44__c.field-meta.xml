@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__HMDA_Race_Desc_Code_44__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field specifies in text description of the applicant’s or borrower’s Other Pacific Islander race(s) if 44 (Other Pacific Islander) is entered.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If Other Pacific Islander is selected as a Race, this text field allows you to specify the Other Pacific Islander race(s). You may enter up to 50 characters.</inlineHelpText>
+    <label>Other Pacific Islander race(s)</label>
+    <length>50</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORMS__Closing_Checklist__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this required field to link a form template to a Closing Checklist in order to create placeholders with predefined values.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Links a form template to a Closing Checklist in order to create placeholders with predefined values.</inlineHelpText>
+    <label>Closing Checklist</label>
+    <referenceTo>LLC_BI__ClosingChecklist__c</referenceTo>
+    <relationshipLabel>Form Templates</relationshipLabel>
+    <relationshipName>Form_Templates</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Disbursements_Negative_Amount_Error</fullName>
+    <active>true</active>
+    <description>System displays error if user enters negative amount.</description>
+    <errorConditionFormula>LLC_BI__Amount__c  &lt; 0 &amp;&amp; ISPICKVAL(LLC_BI__Type__c, &quot;Disbursement&quot;)</errorConditionFormula>
+    <errorDisplayField>LLC_BI__Amount__c</errorDisplayField>
+    <errorMessage>Enter a positive value in this required field.</errorMessage>
+</ValidationRule>

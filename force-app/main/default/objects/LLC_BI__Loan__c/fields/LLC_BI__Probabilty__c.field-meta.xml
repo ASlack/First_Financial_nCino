@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Probabilty__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is manually populated. This field is used to specify the probability that this loan opportunity will close. Entered as a percent.</description>
+    <externalId>false</externalId>
+    <label>Probability (%)</label>
+    <precision>5</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Percent</type>
+</CustomField>

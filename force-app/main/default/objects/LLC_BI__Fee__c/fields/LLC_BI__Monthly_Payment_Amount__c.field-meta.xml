@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Monthly_Payment_Amount__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this currency field to indicate the amount the borrower pays monthly for the fee. By default, this field is blank.</description>
+    <externalId>false</externalId>
+    <formula>LLC_BI__Annual_Payment_Amount__c  / 12</formula>
+    <inlineHelpText>This system-populated field indicates the monthly payment amount for the fee.</inlineHelpText>
+    <label>Monthly Payment Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

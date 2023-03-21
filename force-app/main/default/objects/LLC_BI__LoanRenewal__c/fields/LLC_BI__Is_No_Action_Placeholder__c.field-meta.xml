@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Is_No_Action_Placeholder__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This boolean field is automatically set by the system. When true, it indicates that the record is a link from a No Action Loan to its placeholder in its original hierarchy. The default value is false.</description>
+    <externalId>false</externalId>
+    <label>Is No Action Placeholder</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

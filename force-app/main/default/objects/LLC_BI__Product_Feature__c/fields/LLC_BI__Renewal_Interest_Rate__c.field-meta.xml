@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Renewal_Interest_Rate__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field will be used for Expere Doc Prep, which has not yet been implemented. This field is not required. It is manually populated. It designates the new interest or dividend rate upon automatic renewal.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The new interest or dividend rate upon automatic renewal.</inlineHelpText>
+    <label>Renewal Interest Rate</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>4</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

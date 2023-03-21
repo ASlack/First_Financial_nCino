@@ -1,0 +1,40 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" applyHtmlTag="false" standardStylesheets="false" controller="nFORCE.TemplateController"
+ extensions="nFORCE.RemoteActionController,LLC_BI.EnhancedIncomeController">
+
+	<head>
+		<apex:stylesheet value="{!URLFOR($Resource.LLC_BI__shared_angular_elements, 'styles.css')}" />
+		<nFORCE:Internationalize />
+		<nFORCE:Include_Design_System components="true" />
+		<nFORCE:Includes enableLifeCycleApp="true" enableBS3Namespace="true" />
+		<apex:slds />
+	</head>
+
+	<body>
+		<c:SetSLDSClasses />
+		<div class="slds slds-scope">
+			<income
+				locale="{!JSENCODE(locale)}"
+				account-id="{!JSENCODE(accountId)}"
+				contact-id="{!JSENCODE(contactId)}"
+				loan-id="{!JSENCODE(loanId)}"
+				next-href="{!nextHref.url}"
+				income-label="{!JSENCODE(incomeLabel)}"
+				context-object-label="{!JSENCODE(contextObjectLabel)}"
+				income-field-set="{!JSENCODE(incomeFieldSet)}"
+				show-add-income="{!$ObjectType.Income__c.createable}"
+				show-edit-income="{!$ObjectType.Income__c.updateable}"
+				show-delete-income="{!$ObjectType.Income__c.deletable}"
+				hide-business-tabs="{!JSENCODE(BLANKVALUE($CurrentPage.parameters.hideBusinessTabs, 'false'))}"
+			>
+			</income>
+		</div>
+
+		<script type="application/javascript" src="{!URLFOR($Resource.shared_angular_elements, 'polyfills.js')}"></script>
+		<script type="application/javascript" src="{!URLFOR($Resource.shared_angular_elements, 'main.js')}"></script>
+		<script type="application/javascript" src="{!URLFOR($Resource.income, 'main.js')}"></script>
+		<script type="application/javascript" src="{!URLFOR($Resource.income, 'polyfills.js')}"></script>
+		<script type="application/javascript" src="{!URLFOR($Resource.income, 'runtime.js')}"></script>
+		<script type="application/javascript" src="{!URLFOR($Resource.income, 'styles.js')}"></script>
+		<script type="application/javascript" src="{!URLFOR($Resource.income, 'vendor.js')}"></script>
+	</body>
+</apex:page>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__RLTV_Calculated_Value_Field__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The administrator populates this required field with the API name of the field on the Relationship Loan to Value Calculation object where they want the relationship LTV calculated value to populate.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the API name of the field on the Relationship Loan to Value Calculation object where you want the relationship LTV calculated value to populate.</inlineHelpText>
+    <label>RLTV Calculated Value Field</label>
+    <length>255</length>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

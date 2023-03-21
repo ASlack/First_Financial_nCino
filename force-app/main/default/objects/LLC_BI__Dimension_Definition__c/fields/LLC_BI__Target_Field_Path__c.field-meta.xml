@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Target_Field_Path__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Administrators populate this optional text field on non-queried dimension definitions to set the target field path for value mapping.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>For non-queried dimensions, enter the target field path for value mapping.</inlineHelpText>
+    <label>Target Field Path</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

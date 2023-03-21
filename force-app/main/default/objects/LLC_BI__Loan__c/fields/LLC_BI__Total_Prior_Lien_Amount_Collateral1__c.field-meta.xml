@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Total_Prior_Lien_Amount_Collateral1__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is automatically populated via roll-up. It stores the value of all existing liens for collateral1 records added to a loan.</description>
+    <externalId>false</externalId>
+    <label>Total Prior Lien Amount Collateral1</label>
+    <summarizedField>LLC_BI__Loan_Collateral__c.LLC_BI__Prior_Lien_Amount_Currency__c</summarizedField>
+    <summaryForeignKey>LLC_BI__Loan_Collateral__c.LLC_BI__Loan__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

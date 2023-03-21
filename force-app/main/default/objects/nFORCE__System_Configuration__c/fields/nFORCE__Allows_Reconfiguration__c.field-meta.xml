@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Allows_Reconfiguration__c</fullName>
+    <defaultValue>true</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The field indicates if the the user is allowed to change the configuration associated with the System Configuration Record once it has been configured. If set to FALSE the configure button in the nCino Administration user interface will be disabled once the initial configuration is complete.</description>
+    <externalId>false</externalId>
+    <label>Allows Reconfiguration</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

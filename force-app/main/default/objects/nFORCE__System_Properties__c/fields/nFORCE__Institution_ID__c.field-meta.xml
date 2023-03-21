@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Institution_ID__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This text field contains the Institution ID for custom settings that apply to a specific institution. If the custom setting does not relate to institution configuration, leave this field blank. Manually populate this field with the institution ID to associate the custom setting with that institution. The custom setting cloning script documented in Customer Engagement Solution configuration documentation autopopulates Institution ID when appropriate.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Leave blank if custom setting does not apply to a specific institution. If custom setting applies to a specific institution, manually populate with Institution ID If not already autopopulated.</inlineHelpText>
+    <label>Institution ID</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__CRA_Reportable__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field can be manually selected. When enabled, it indicates that this the loan falls under a category that makes it CRA reportable. When disabled, the loan is not CRA reportable. By default, this field is disabled.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>CRA Reportable</inlineHelpText>
+    <label>CRA Reportable</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

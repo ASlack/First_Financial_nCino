@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help></help>
+    <label></label>
+    <name>LLC_BI__Form_W8_Sponsored_FFI_Type__c</name>
+    <picklistValues>
+        <masterLabel>FFI Foreign Section 957a Corporation</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FFI Investment Entity</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

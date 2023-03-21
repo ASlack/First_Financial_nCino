@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Product_Line__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is requied. It is either automatically set or manually collected as part of the New Deposit Workflow. This field is a picklist that allows the user to specify what product line the deposit is associated with.</description>
+    <externalId>false</externalId>
+    <label>Product Line</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Personal Banking</fullName>
+                <default>true</default>
+                <label>Personal Banking</label>
+            </value>
+            <value>
+                <fullName>Commercial Banking</fullName>
+                <default>false</default>
+                <label>Commercial Banking</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

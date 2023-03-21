@@ -1,0 +1,241 @@
+<apex:page standardController="LLC_BI__Loan__c" extensions="LLC_BI.VF_LoanRenewalController">
+	<nFORCE:Internationalize />
+
+	<script>
+		function formatCurrency(number, isoCode) {
+		  return LifeCycle.Internationalize.format(
+			number,
+			LifeCycle.Internationalize.formats.numeric.CURRENCY,
+			isoCode
+		  );
+		};
+
+		function parseCurrency(elem) {
+			let spaceSplit = elem.innerHTML.trim().split(' ');
+			let isoCode = spaceSplit[0];
+			spaceSplit.shift();
+			let value = parseFloat(spaceSplit.join(''));
+
+			return {
+				isoCode: isoCode,
+				value: value
+			};
+		}
+
+		function formatCurrencies() {
+			let currencyResults = document.querySelectorAll('.currency-value > span');
+
+			if (currencyResults && currencyResults.length) {
+				currencyResults.forEach((currencyResult) => {
+					let parseResults = parseCurrency(currencyResult);
+					currencyResult.innerHTML = parseResults.value !== undefined && !Number.isNaN(parseResults.value) ? 
+						formatCurrency(parseResults.value, parseResults.isoCode) :
+						currencyResult.innerHTML;
+				});
+			}
+		}
+
+		window.addEventListener('load', function () {
+			formatCurrencies();
+		});
+	</script>
+
+	<apex:outputPanel >
+			<div class="row view-container">
+				<div class="col-xs-6">
+					<div class="form-group">
+						<div class="col-xs-4 form-control-static text-right">
+							<apex:outputLabel for="accountName"
+								rendered="{!IF(ISBLANK(loanData.accountName),false,true)}">{!$Label.LLC_BI__Account_Name}
+							</apex:outputLabel>
+						</div>
+						<div class="col-xs-6">
+							<apex:outputText value="{!loanData.accountName}"
+								styleClass="renewalFont"
+								rendered="{!IF(ISBLANK(loanData.accountName),false,true)}" />
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-6">
+					<div class="form-group">
+						<div class="col-xs-4 form-control-static text-right">
+							<apex:outputLabel for="productLine"
+								rendered="{!IF(ISBLANK(loanData.productLine),false,true)}">{!$Label.LLC_BI__Product_Line}
+							</apex:outputLabel>
+						</div>
+						<div class="col-xs-6">
+							<apex:outputText value="{!loanData.productLineLabel}"
+								styleClass="renewalFont"
+								rendered="{!IF(ISBLANK(loanData.productLine),false,true)}" />
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-6">
+					<div class="form-group">
+						<div class="col-xs-4 form-control-static text-right">
+							<apex:outputLabel for="Product"
+								rendered="{!IF(ISBLANK(loanData.product),false,true)}">{!$Label.LLC_BI__Product}
+							</apex:outputLabel>
+						</div>
+						<div class="col-xs-6">
+							<apex:outputText value="{!loanData.productLabel}"
+								styleClass="renewalFont"
+								rendered="{!IF(ISBLANK(loanData.product),false,true)}" />
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-6">
+					<div class="form-group">
+						<div class="col-xs-4 form-control-static text-right">
+							<apex:outputLabel for="status"
+								rendered="{!IF(ISBLANK(loanData.status),false,true)}">{!$Label.LLC_BI__Loan_Status}
+							</apex:outputLabel>
+						</div>
+						<div class="col-xs-6">
+							<apex:outputText value="{!loanData.statusLabel}"
+								styleClass="renewalFont"
+								rendered="{!IF(ISBLANK(loanData.status),false,true)}" />
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-6">
+					<div class="form-group">
+						<div class="col-xs-4 form-control-static text-right">
+							<apex:outputLabel for="renewalNumber"
+								rendered="{!IF(ISBLANK(loanData.renewalNumber),false,true)}">{!$Label.LLC_BI__Renewal_Number}
+							</apex:outputLabel>
+						</div>
+						<div class="col-xs-6">
+							<apex:outputText value="{0,number,####}" styleClass="renewalFont"
+								rendered="{!IF(ISBLANK(loanData.renewalNumber),false,true)}">
+								<apex:param value="{!loanData.renewalNumber}" />
+							</apex:outputText>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-6">
+					<div class="form-group">
+						<div class="col-xs-4 form-control-static text-right">
+							<apex:outputLabel for="loanname"
+								rendered="{!IF(ISBLANK(loanData.name),false,true)}">{!$Label.LLC_BI__Loan_Name}
+							</apex:outputLabel>
+						</div>
+
+						<div class="col-xs-6">
+							<apex:outputText value="{!loanData.name}" styleClass="renewalFont"
+								rendered="{!IF(ISBLANK(loanData.name),false,true)}" />
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-6">
+					<div class="form-group">
+						<div class="col-xs-4 form-control-static text-right">
+							<apex:outputLabel for="productType"
+								rendered="{!IF(ISBLANK(loanData.productType),false,true)}">{!$Label.LLC_BI__Product_Type}
+							</apex:outputLabel>
+						</div>
+
+						<div class="col-xs-6">
+							<apex:outputText value="{!loanData.productTypeLabel}"
+								styleClass="renewalFont"
+								rendered="{!IF(ISBLANK(loanData.productType),false,true)}" />
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-6">
+					<div class="form-group">
+						<div class="col-xs-4 form-control-static text-right">
+								<apex:outputLabel for="Stage"
+									rendered="{!IF(ISBLANK(loanData.stage),false,true)}">{!$Label.LLC_BI__Stage}
+								</apex:outputLabel>
+						</div>
+
+						<div class="col-xs-6">
+							<apex:outputText value="{!loanData.stageLabel}" styleClass="renewalFont"
+								rendered="{!IF(ISBLANK(loanData.stage),false,true)}" />
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-6">
+					<div class="form-group">
+						<div class="col-xs-4 form-control-static text-right">
+							<apex:outputLabel for="amount"
+								rendered="{!IF(ISBLANK(loanData.amount),false,true)}">{!$Label.LLC_BI__Amount}
+							</apex:outputLabel>
+						</div>
+
+						<div class="col-xs-6">
+							<span class="currency-value">
+								<apex:outputText value="{!loanData.currencyIsoCode} {!loanData.amount}"
+									styleClass="renewalFont"
+									rendered="{!IF(ISBLANK(loanData.amount),false,true)}">
+								</apex:outputText>
+							</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-6">
+					<div class="form-group">
+						<div class="col-xs-4 form-control-static text-right">
+							<apex:outputLabel for="maturityDate"
+								rendered="{!IF(ISBLANK(loanData.maturityDate),false,true)}">{!$Label.LLC_BI__Maturity_Date}
+							</apex:outputLabel>
+						</div>
+
+						<div class="col-xs-6">
+							<apex:outputText value="{0,date,MM/dd/yyyy}"
+									styleClass="renewalFont"
+									rendered="{!IF(ISBLANK(loanData.maturityDate),false,true)}">
+								<apex:param value="{!loanData.maturityDate}" />
+							</apex:outputText>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-6">
+					<div class="form-group">
+						<div class="col-xs-4 form-control-static text-right">
+							<apex:outputLabel for="closeDate"
+								rendered="{!IF(ISBLANK(loanData.closeDate),false,true)}">{!$Label.LLC_BI__Close_Date}
+							</apex:outputLabel>
+						</div>
+
+						<div class="col-xs-6">
+							<apex:outputText value="{0,date,MM/dd/yyyy}"
+								styleClass="renewalFont"
+								rendered="{!IF(ISBLANK(loanData.closeDate),false,true)}">
+								<apex:param value="{!loanData.closeDate}" />
+							</apex:outputText>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-6">
+					<div class="form-group">
+						<div class="col-xs-4 form-control-static text-right">
+							<apex:outputLabel for="nextPaymentDate"
+								rendered="{!IF(ISBLANK(loanData.nextPaymentDate),false,true)}">{!$Label.LLC_BI__Payment_Date}
+							</apex:outputLabel>
+						</div>
+
+						<div class="col-xs-6">
+							<apex:outputText value="{0,date,MM/dd/yyyy}"
+								styleClass="renewalFont"
+								rendered="{!IF(ISBLANK(loanData.nextPaymentDate),false,true)}">
+								<apex:param value="{!loanData.nextPaymentDate}" />
+							</apex:outputText>
+						</div>
+					</div>
+				</div>
+			</div>
+	</apex:outputPanel>
+</apex:page>

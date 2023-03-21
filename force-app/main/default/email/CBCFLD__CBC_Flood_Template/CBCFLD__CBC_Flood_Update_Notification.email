@@ -1,0 +1,9 @@
+Dear {!User.Contact},
+
+Your CBC Flood Certification request for the following address is complete.
+
+{!CBCFLD__CBC_Flood_Determination__c.CBCFLD__Collateral_Street_Address__c}
+{!CBCFLD__CBC_Flood_Determination__c.CBCFLD__Collateral_City__c}, {!CBCFLD__CBC_Flood_Determination__c.CBCFLD__Collateral_State__c} {!CBCFLD__CBC_Flood_Determination__c.CBCFLD__Collateral_Postal_Code__c}
+
+You can  view your certificate here: 
+{!$Page.flood}?app=cbc-flood-certificate&id={!LLC_BI__Loan_Collateral__c.Id}&certificate-id={!CBCFLD__CBC_Flood_Determination__c.Id}

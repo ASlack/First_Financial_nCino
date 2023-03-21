@@ -1,0 +1,48 @@
+&nbsp<!-- This is a fix for LLCBI-2332 (IE 8 Error) -->
+<!-- ko if: screenResources()['{!NS}.RelatedLoanListFScreenResource_{!NS}__Loan__c'].children().length== 0 -->
+<p>There are currently no loans for relationships involved with this loan.</p>
+<!-- /ko -->
+<!-- ko if: screenResources()['{!NS}.RelatedLoanListFScreenResource_{!NS}__Loan__c'].children().length > 0 -->
+<table
+  class="table table-bordered table-striped"
+  data-bind="with: screenResources()['{!NS}.RelatedLoanListFScreenResource_{!NS}__Loan__c']"
+>
+  <thead>
+    <tr>
+      <th colspan="11">Loans</th>
+    </tr>
+    <tr data-bind="with: children()[0]">
+      <th data-bind="text: children()[0].propertyBag.Account_Name.fieldLabel" />
+      <th> <span data-bind="text: propertyBag.{!NS}__Loan__c_Name.fieldLabel" /> (<span data-bind="text: propertyBag.{!NS}__Loan__c_{!NS}__lookupKey__c.fieldLabel" />)
+      </th>
+      <th><span data-bind="text: propertyBag.{!NS}__Loan__c_{!NS}__Product__c.fieldLabel" /> </th>
+      <th data-bind="text: propertyBag.{!NS}__Loan__c_{!NS}__CloseDate__c.fieldLabel" />
+      <th data-bind="text: propertyBag.{!NS}__Loan__c_{!NS}__Amount__c.fieldLabel" />
+      <th data-bind="text: propertyBag.{!NS}__Loan__c_{!NS}__Principal_Balance__c.fieldLabel" />
+      <th data-bind="text: propertyBag.{!NS}__Loan__c_{!NS}__InterestRate__c.fieldLabel" />
+      <th data-bind="text: propertyBag.{!NS}__Loan__c_{!NS}__Monthly_Payment__c.fieldLabel" />
+      <th data-bind="text: propertyBag.{!NS}__Loan__c_{!NS}__Past_Due_Days__c.fieldLabel" />
+      <th data-bind="text: propertyBag.{!NS}__Loan__c_{!NS}__Maturity_Date__c.fieldLabel" />
+      <th class="hidden-print">&nbsp;</th>
+    </tr>
+  </thead>
+  <tbody data-bind="foreach: children()">
+    <tr>
+      <td data-bind="text: children()[0].propertyBag.Account_Name.value" />
+      <td> <span data-bind="html: propertyBag.{!NS}__Loan__c_Name.value" /> <br /><span data-bind="text: propertyBag.{!NS}__Loan__c_{!NS}__lookupKey__c.value" />
+      </td>
+      <td><span data-bind="text: propertyBag.{!NS}__Loan__c_{!NS}__Product_Line__c.value" /> - <span data-bind="text: propertyBag.{!NS}__Loan__c_{!NS}__Product_Type__c.value" />
+        - <span data-bind="text: propertyBag.{!NS}__Loan__c_{!NS}__Product__c.value" /> </td>
+      <td data-bind="dateText: propertyBag.{!NS}__Loan__c_{!NS}__CloseDate__c.value" />
+      <td data-bind="currencyElement: propertyBag.{!NS}__Loan__c_{!NS}__Amount__c.value,scale:propertyBag.{!NS}__Loan__c_{!NS}__Amount__c.scale,currencyIsoCode:propertyBag.{!NS}__Loan__c_CurrencyIsoCode.value" />
+      <td data-bind="currencyElement: propertyBag.{!NS}__Loan__c_{!NS}__Principal_Balance__c.value,scale:propertyBag.{!NS}__Loan__c_{!NS}__Principal_Balance__c.scale,currencyIsoCode:propertyBag.{!NS}__Loan__c_CurrencyIsoCode.value" />
+      <td data-bind="maskText: propertyBag.{!NS}__Loan__c_{!NS}__InterestRate__c.value, maskOptions: {groups: [{delimiter: '%', length: 20}, {length:0}]}" />
+      <td data-bind="currencyElement: propertyBag.{!NS}__Loan__c_{!NS}__Monthly_Payment__c.value,scale:propertyBag.{!NS}__Loan__c_{!NS}__Monthly_Payment__c.scale,currencyIsoCode:propertyBag.{!NS}__Loan__c_CurrencyIsoCode.value" />
+      <td data-bind="text: propertyBag.{!NS}__Loan__c_{!NS}__Past_Due_Days__c.value" />
+      <td data-bind="dateText: propertyBag.{!NS}__Loan__c_{!NS}__Maturity_Date__c.value" />
+      <td class="hidden-print"><a data-bind="attr: { href: '/'+ propertyBag.{!NS}__Loan__c_Id.value()+'/e' }">Edit <i
+            class="glyphicon glyphicon-edit"></i></a></td>
+    </tr>
+  </tbody>
+</table>
+<!-- /ko -->

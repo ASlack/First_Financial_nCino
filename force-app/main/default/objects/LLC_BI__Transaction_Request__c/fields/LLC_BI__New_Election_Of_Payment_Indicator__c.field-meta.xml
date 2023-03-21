@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__New_Election_Of_Payment_Indicator__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is optional. If true, the beneficiary is making a new election of payment. In the case of a formally established beneficiary IRA, it is the owner making a new election of payment.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If true the beneficiary is making a new election of payment. In the case of a formally established beneficiary IRA it is the owner making a new election of payment.</inlineHelpText>
+    <label>New Election of Payment Indicator</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

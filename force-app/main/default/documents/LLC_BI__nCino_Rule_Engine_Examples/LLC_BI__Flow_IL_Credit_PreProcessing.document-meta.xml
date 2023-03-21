@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Determines parameters for credit pulls performed for applicants in an Indirect Lending Credit Application.</description>
+    <internalUseOnly>true</internalUseOnly>
+    <name>Indirect Lending Credit Pre-Processing</name>
+    <public>false</public>
+</Document>

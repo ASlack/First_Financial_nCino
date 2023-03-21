@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Competitor_Balance_Required__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is populated automatically via formula. It stores the value of the competitor&apos;s minimum required balance for a bill point.</description>
+    <externalId>false</externalId>
+    <formula>(LLC_BI__Competitor_Price__c *  LLC_BI__Volumes__c) / ( LLC_BI__Scenario__r.LLC_BI__Competitor_Earnings_Credit_Allowance__c / 12)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Competitor Balance Required</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

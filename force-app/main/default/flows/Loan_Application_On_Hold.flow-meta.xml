@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <apiVersion>57.0</apiVersion>
+    <assignments>
+        <name>Reset_Decision_Resume_Date</name>
+        <label>Reset Decision Resume Date</label>
+        <locationX>176</locationX>
+        <locationY>758</locationY>
+        <assignmentItems>
+            <assignToReference>Get_Loan_Record.Decision_Resume_Date__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>NullDate</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Loan_Application</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Application_on_Hold</name>
+        <label>Set Application on Hold</label>
+        <locationX>176</locationX>
+        <locationY>638</locationY>
+        <assignmentItems>
+            <assignToReference>Get_Loan_Record.LLC_BI__Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Hold</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Reset_Decision_Resume_Date</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Decision_Hold_Date</name>
+        <label>Set Decision Hold Date</label>
+        <locationX>176</locationX>
+        <locationY>518</locationY>
+        <assignmentItems>
+            <assignToReference>Get_Loan_Record.Decision_Hold_Date__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Set_Application_on_Hold</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Decision_Reason</name>
+        <label>Set Decision Reason</label>
+        <locationX>176</locationX>
+        <locationY>398</locationY>
+        <assignmentItems>
+            <assignToReference>Get_Loan_Record.Decision_Hold_Reason__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>DecisionHoldReasonPicklist</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Set_Decision_Hold_Date</targetReference>
+        </connector>
+    </assignments>
+    <dynamicChoiceSets>
+        <name>Decision_Hold_Reason</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Decision_Hold_Reason__c</picklistField>
+        <picklistObject>LLC_BI__Loan__c</picklistObject>
+    </dynamicChoiceSets>
+    <environments>Default</environments>
+    <formulas>
+        <name>NullDate</name>
+        <dataType>Date</dataType>
+        <expression>NULL</expression>
+    </formulas>
+    <interviewLabel>Loan - Application On Hold {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Loan - Application On Hold</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordLookups>
+        <name>Get_Loan_Record</name>
+        <label>Get Loan Record</label>
+        <locationX>176</locationX>
+        <locationY>158</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Application_On_Hold</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>LLC_BI__Loan__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Loan_Application</name>
+        <label>Update Loan Application</label>
+        <locationX>176</locationX>
+        <locationY>878</locationY>
+        <inputReference>Get_Loan_Record</inputReference>
+    </recordUpdates>
+    <screens>
+        <name>Application_On_Hold</name>
+        <label>Application On Hold</label>
+        <locationX>176</locationX>
+        <locationY>278</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Set_Decision_Reason</targetReference>
+        </connector>
+        <fields>
+            <name>DecisionHoldReasonPicklist</name>
+            <choiceReferences>Decision_Hold_Reason</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Decision Hold Reason</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <helpText>&lt;p&gt;Must select a reason for the application to put on hold.&lt;/p&gt;</helpText>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <fieldType>ObjectProvided</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>false</isRequired>
+            <objectFieldReference>Get_Loan_Record.Decision_Hold_Comments__c</objectFieldReference>
+        </fields>
+        <nextOrFinishButtonLabel>Hold</nextOrFinishButtonLabel>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Loan_Record</targetReference>
+        </connector>
+    </start>
+    <status>Draft</status>
+    <variables>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

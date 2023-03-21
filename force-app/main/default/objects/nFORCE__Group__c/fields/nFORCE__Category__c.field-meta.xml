@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Category__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Use this picklist field to indicate the category to which the group belongs. The picklist values describe different types of workflows.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicate the category to which this group belongs.</inlineHelpText>
+    <label>Category</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Customer Dashboard</fullName>
+                <default>false</default>
+                <label>Customer Dashboard</label>
+            </value>
+            <value>
+                <fullName>Online Application</fullName>
+                <default>false</default>
+                <label>Online Application</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

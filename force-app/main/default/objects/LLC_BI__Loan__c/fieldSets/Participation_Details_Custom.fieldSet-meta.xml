@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Participation_Details_Custom</fullName>
+    <description>Custom Participation Details field set for capturing participation details in the loan UI</description>
+    <displayedFields>
+        <field>LLC_BI__Is_Participation__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>LLC_BI__Participation_Type__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Participation Details Custom</label>
+</FieldSet>

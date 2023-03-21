@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Loan__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is required. This field associates this record to a loan.</description>
+    <externalId>false</externalId>
+    <label>Loan</label>
+    <referenceTo>LLC_BI__Loan__c</referenceTo>
+    <relationshipName>LLC_LoanDocuments</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

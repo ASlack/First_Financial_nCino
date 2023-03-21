@@ -1,0 +1,32 @@
+<apex:page docType="html-5.0" sidebar="false" showHeader="false" controller="LLC_BI.RelationshipMaintFinishAppController">
+	<div>
+		<apex:composition template="nFORCE__Template_View_1_Column">
+			<apex:define name="column-content">
+				<apex:composition template="nFORCE__Template_View_Container">
+					<apex:define name="content">
+						<div class="container-fluid">
+							<div class="row">
+								<message></message>
+								<div class="col-xs-12">
+									<h3>{!$Label.Relationship_Maintenance_Success_Header}</h3>
+									<p>{!$Label.Relationship_Maintenance_Success_Body_Text}</p>
+									<form class="form-vertical">
+										<div class="form-group">
+											<p>
+												<a onclick="exitMaintenance('{!HTMLENCODE(relationshipId)}', '{!HTMLENCODE(sessionId)}')"
+													class="btn btn-secondary">
+													{!$Label.Finish}
+												</a>
+											</p>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+						<c:RelationshipMaintenanceApp />
+					</apex:define>
+				</apex:composition>
+			</apex:define>
+		</apex:composition>
+	</div>
+</apex:page>

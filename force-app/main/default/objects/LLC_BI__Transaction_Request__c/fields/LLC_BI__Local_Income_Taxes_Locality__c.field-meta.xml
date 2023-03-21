@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Local_Income_Taxes_Locality__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. Specifies the locality (for example, city) applicable to any additional dollar amount or percentage of local income taxes to be withheld from the distribution subtotal.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Specifies the locality (e.g., city) applicable to any additional dollar amount or percentage of local income taxes to be withheld from the distribution subtotal.</inlineHelpText>
+    <label>Local Income Taxes Locality</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

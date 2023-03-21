@@ -1,0 +1,16 @@
+/*
+This file is generated and isn't the actual source code for this
+managed global class.
+This read-only file shows the class's global constructors,
+methods, variables, and properties.
+To enable code to compile, all methods return null.
+*/
+global interface IVendorNotificationNormalizer_v1 {
+    String getClassName();
+    String getVendorPackageId();
+    List<SESOC.EventNotification_v1> normalize();
+    void registerDataModel(SESOC.LightPackage_v1 param0);
+    void registerRequest(System.RestRequest param0, String param1);
+    Boolean requiresDataModel();
+    void setLoggingProvider(EFPIO.ILoggingProvider_v1 param0);
+}

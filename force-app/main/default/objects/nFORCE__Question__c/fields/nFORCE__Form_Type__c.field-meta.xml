@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Form_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is required. The admin manually sets it in the Questionnaire Admin. It describes the type of question.</description>
+    <externalId>false</externalId>
+    <label>Form Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Picklist</fullName>
+                <default>false</default>
+                <label>Picklist</label>
+            </value>
+            <value>
+                <fullName>Text</fullName>
+                <default>false</default>
+                <label>Text</label>
+            </value>
+            <value>
+                <fullName>Textarea</fullName>
+                <default>false</default>
+                <label>Textarea</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

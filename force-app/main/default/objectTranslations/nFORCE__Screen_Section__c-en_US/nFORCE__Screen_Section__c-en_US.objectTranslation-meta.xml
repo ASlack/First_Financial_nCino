@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label></label>
+        <name>nFORCE__Conditional_Screen_Section</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>nFORCE__UI_Config_Builder</name>
+    </fieldSets>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>nFORCE__Mandatory</name>
+    </validationRules>
+    <webLinks>
+        <label></label>
+        <name>nFORCE__Build_Layout</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label></label>
+        <name>LLC_BI__Upgradeable_Fields</name>
+    </fieldSets>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>LLC_BI__Cannot_calculate_period_over_period_val</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>LLC_BI__Cannot_link_to_Record_and_a_Total_Group</name>
+    </validationRules>
+</CustomObjectTranslation>

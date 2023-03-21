@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Log_Level_To_Capture__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Select the appropriate log level to capture for this process. - NONE, ERROR, WARN, INFO, DEBUG, FINE, FINER, FINEST.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Using this optional field, Administrators can select a log level to capture for the process to communicate what occurred during the execution. The options available are NONE, ERROR, WARN, INFO, DEBUG, FINE, FINER, FINEST.</inlineHelpText>
+    <label>Log Level To Capture</label>
+    <length>6</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

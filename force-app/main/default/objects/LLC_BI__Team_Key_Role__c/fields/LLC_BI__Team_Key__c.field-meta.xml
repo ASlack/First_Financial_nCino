@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Team_Key__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field is required. It is manually populated. It identifies the selected Team Alert that should be sent.</description>
+    <externalId>false</externalId>
+    <label>Team Key</label>
+    <referenceTo>LLC_BI__Team_Keys__c</referenceTo>
+    <relationshipLabel>Team Key Roles</relationshipLabel>
+    <relationshipName>Team_Key_Roles</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

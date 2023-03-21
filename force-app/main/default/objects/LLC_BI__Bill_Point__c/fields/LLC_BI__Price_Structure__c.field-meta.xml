@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Price_Structure__c</fullName>
+    <defaultValue>&quot;Single&quot;</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This is a required field. This allows the user to specify if the price of the bill point is a single price, tiered or progress tiered price structure. The default value is &quot;Single.&quot;</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field is used to specify if the price of the bill point is a single price, tiered, or progressive tiered price structure. The default value is Single.</inlineHelpText>
+    <label>Price Structure</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Single</fullName>
+                <default>true</default>
+                <label>Single</label>
+            </value>
+            <value>
+                <fullName>Tiered</fullName>
+                <default>false</default>
+                <label>Tiered</label>
+            </value>
+            <value>
+                <fullName>Progressive Tiered</fullName>
+                <default>false</default>
+                <label>Progressive Tiered</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

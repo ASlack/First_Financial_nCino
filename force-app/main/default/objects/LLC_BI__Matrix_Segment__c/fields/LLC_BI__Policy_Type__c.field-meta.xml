@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Policy_Type__c</fullName>
+    <deleteConstraint>Cascade</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this required lookup field with the matrix policy type.</description>
+    <externalId>false</externalId>
+    <label>Policy Type</label>
+    <referenceTo>LLC_BI__Policy_Type__c</referenceTo>
+    <relationshipLabel>Policy Types</relationshipLabel>
+    <relationshipName>Policy_Types</relationshipName>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

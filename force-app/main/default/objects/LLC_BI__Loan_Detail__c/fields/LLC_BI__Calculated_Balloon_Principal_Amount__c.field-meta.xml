@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Calculated_Balloon_Principal_Amount__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this optional currency field to specify the principal portion of a calculated balloon amount. By default, it is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field will populate after a user enters a rate and payment stream and an amortization term greater than the loan term. This results in a calculated balloon payment.</inlineHelpText>
+    <label>Calculated Balloon Principal Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

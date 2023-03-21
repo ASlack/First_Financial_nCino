@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Monthly_Payment__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. This field is manually populated. This currency field is used to specify the monthly payment amount required to service this loan.</description>
+    <externalId>false</externalId>
+    <label>Monthly Payment</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

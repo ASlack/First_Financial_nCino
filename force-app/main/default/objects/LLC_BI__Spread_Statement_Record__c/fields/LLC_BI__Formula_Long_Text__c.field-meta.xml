@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Formula_Long_Text__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Users populate this optional text field with a formula that defines the values in the Spreads row. By default, it is blank.</description>
+    <externalId>false</externalId>
+    <label>Formula</label>
+    <length>32768</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

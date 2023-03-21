@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Initial_Fees_Text__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field indicates the initial fees related to the loan</description>
+    <externalId>false</externalId>
+    <formula>TEXT( ROUND( LLC_BI__Initial_Fees__c * 100,2)) &amp; &quot;% + &quot; &amp;
+
+			&quot;$&quot; &amp;
+			IF(
+			LLC_BI__Initial_Fees_Currency__c &gt;= 1000000,
+			TEXT(FLOOR( LLC_BI__Initial_Fees_Currency__c / 1000000)) &amp; &quot;,&quot;,
+			&quot;&quot;) &amp;
+			IF(
+			LLC_BI__Initial_Fees_Currency__c &gt;= 1000,
+			RIGHT(TEXT(FLOOR(LLC_BI__Initial_Fees_Currency__c/ 1000)), 3) &amp; &quot;,&quot;,
+			&quot;&quot;) &amp;
+			RIGHT(TEXT(FLOOR(LLC_BI__Initial_Fees_Currency__c)), 3)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Initial Fees</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

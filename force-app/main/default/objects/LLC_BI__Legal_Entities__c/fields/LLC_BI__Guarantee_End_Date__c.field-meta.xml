@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Guarantee_End_Date__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. The user manually populates this field. It is the date which a guarantee ends. By default, this should be when repayment of a facility is satisfied.</description>
+    <externalId>false</externalId>
+    <label>Guarantee End Date</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

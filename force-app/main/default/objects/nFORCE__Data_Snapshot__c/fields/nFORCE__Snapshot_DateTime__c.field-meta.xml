@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Snapshot_DateTime__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this required field when the invocable method is called. This field stores the date and time in which the snapshot was requested.</description>
+    <externalId>false</externalId>
+    <label>Snapshot DateTime</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

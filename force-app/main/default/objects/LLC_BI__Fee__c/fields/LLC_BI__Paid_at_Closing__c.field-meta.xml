@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Paid_at_Closing__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is a picklist that allows the user to specify whether the fees being applied to the loan are to be paid &quot;At Closing&quot; or &quot;Outside of Closing&quot;. This value will determine if the &quot;is Paid at Closing&quot; checkbox is populated.</description>
+    <externalId>false</externalId>
+    <label>Paid at Closing</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>At Closing</fullName>
+                <default>false</default>
+                <label>At Closing</label>
+            </value>
+            <value>
+                <fullName>Outside of Closing</fullName>
+                <default>false</default>
+                <label>Outside of Closing</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

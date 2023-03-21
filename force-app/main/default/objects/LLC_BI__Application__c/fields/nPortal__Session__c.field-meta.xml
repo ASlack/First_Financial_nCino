@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nPortal__Session__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>--DEPRECATED-- The Session saved for the Application. This field has been moved to a junction object called Context which maps applications to Users and Sessions along with a particular Context Type name.</description>
+    <externalId>false</externalId>
+    <label>-D Session</label>
+    <referenceTo>nFORCE__Session__c</referenceTo>
+    <relationshipLabel>Applications</relationshipLabel>
+    <relationshipName>Applications</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

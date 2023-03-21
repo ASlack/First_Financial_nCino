@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Account Verification Settings contains custom settings that help control the information for the Instant Account Verification vendor.</description>
+    <enableFeeds>false</enableFeeds>
+    <label>Account Verification Settings</label>
+    <visibility>Public</visibility>
+</CustomObject>

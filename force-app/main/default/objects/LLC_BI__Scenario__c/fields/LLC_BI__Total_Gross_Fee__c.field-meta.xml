@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Total_Gross_Fee__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is automatically calculated via a sum roll-up. It is the sum of the LLC_BI__Gross_Fee__c for all children LLC_BI__Scenario_Item__c. It stores the value of the gross fees associated to all bill points in the scenario.</description>
+    <externalId>false</externalId>
+    <label>Total Gross Fee</label>
+    <summarizedField>LLC_BI__Scenario_Item__c.LLC_BI__Gross_Fee__c</summarizedField>
+    <summaryForeignKey>LLC_BI__Scenario_Item__c.LLC_BI__Scenario__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

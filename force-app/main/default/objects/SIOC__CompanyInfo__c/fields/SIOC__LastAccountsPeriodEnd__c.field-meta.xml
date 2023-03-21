@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SIOC__LastAccountsPeriodEnd__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The last day of the most recently filed accounting period.</description>
+    <externalId>false</externalId>
+    <label>Last Accounts Period End On</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

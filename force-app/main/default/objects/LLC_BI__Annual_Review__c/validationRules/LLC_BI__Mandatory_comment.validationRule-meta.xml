@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Mandatory_comment</fullName>
+    <active>true</active>
+    <description>the comment is mandatory if the risk grade value has been overridden</description>
+    <errorConditionFormula>LEN(LLC_BI__Comments__c) == 0 &amp;&amp; LLC_BI__Overridden_Risk_Grade_Value__c &gt; 0</errorConditionFormula>
+    <errorDisplayField>LLC_BI__Overridden_Risk_Grade_Value__c</errorDisplayField>
+    <errorMessage>Please add a comment before overriding the computed risk grade value.</errorMessage>
+</ValidationRule>

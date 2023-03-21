@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Spread_Statement_Record__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Administrators populate this optional Lookup field to associate a Schedule Section to a Spread Statement Record so the Total of the section will populate the Record’s Record Values. By default, it is blank.</description>
+    <externalId>false</externalId>
+    <label>Record</label>
+    <referenceTo>LLC_BI__Spread_Statement_Record__c</referenceTo>
+    <relationshipLabel>Schedule Sections</relationshipLabel>
+    <relationshipName>Schedule_Sections</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

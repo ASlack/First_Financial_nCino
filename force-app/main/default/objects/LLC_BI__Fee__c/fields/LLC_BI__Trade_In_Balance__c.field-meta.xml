@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Trade_In_Balance__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this currency field to indicate the amount owed on the collateral the applicant wants to trade in for their purchase. By default, this field is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field displays the amount owed on the applicant&apos;s trade-in collateral.</inlineHelpText>
+    <label>Trade-In Balance</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

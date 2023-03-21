@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Other_Property_Features__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Users or an integration manually populate this multi-select picklist to identify a property’s included features for a real estate property record.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the extra features included with the property from the picklist. You can select more than one.</inlineHelpText>
+    <label>Other Property Features</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Basement</fullName>
+                <default>false</default>
+                <label>Basement</label>
+            </value>
+            <value>
+                <fullName>Chimney</fullName>
+                <default>false</default>
+                <label>Chimney</label>
+            </value>
+            <value>
+                <fullName>Swimming Pool</fullName>
+                <default>false</default>
+                <label>Swimming Pool</label>
+            </value>
+            <value>
+                <fullName>Elevator/Lift</fullName>
+                <default>false</default>
+                <label>Elevator/Lift</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

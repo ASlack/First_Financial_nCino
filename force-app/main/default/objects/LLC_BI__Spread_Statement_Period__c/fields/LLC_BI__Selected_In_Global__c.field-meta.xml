@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Selected_In_Global__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is required. It is driven by user selection within the global analysis app. This field indicates whether the spread statement period is displayed in global anaysis. When true, the spread statement period is displayed in global analysis. When false, the spread statement period is not displayed. By default, it is enabled if the period has &quot;Is_Fiscal_Year__c&quot; checked and no other other periods for the same year exist that also have &quot;LLC_BI__Is_Fiscal_Year__c&quot; checked. If another period does exist, the period with the highest priority source will be enabled. Otherwise, this field is disabled. Priority source is as follows: CPA Audit, CPA Compiled, CPA Reviewed, Tax Return, Comp. Prep, Projected, and Other</description>
+    <externalId>false</externalId>
+    <label>Selected In Global</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

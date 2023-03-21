@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__MemoCategoryInformation</fullName>
+    <description>The fields set that determines the fields that are displayed in the information section of the change memo.</description>
+    <label>MemoCategoryInformation</label>
+</FieldSet>

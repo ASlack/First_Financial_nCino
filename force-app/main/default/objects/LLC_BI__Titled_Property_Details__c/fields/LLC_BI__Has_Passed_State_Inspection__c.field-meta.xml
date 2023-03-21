@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Has_Passed_State_Inspection__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Users select this checkbox if the piece of collateral has passed the applicable state or province inspection. By default, it is false.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select this checkbox if the piece of collateral has passed the applicable state or province inspection.</inlineHelpText>
+    <label>Has Passed State Inspection</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

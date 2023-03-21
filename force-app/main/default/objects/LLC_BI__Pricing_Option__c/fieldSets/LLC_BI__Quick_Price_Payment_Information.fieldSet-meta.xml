@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Quick_Price_Payment_Information</fullName>
+    <description>This field set displays in the Rate Summary panel in Quick Pricing.</description>
+    <displayedFields>
+        <field>LLC_BI__Payment_Type__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Quick Price Payment Information</label>
+</FieldSet>

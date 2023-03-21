@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__deleteLoan</fullName>
+    <availability>online</availability>
+    <description>This is the renewal specific loan delete functionality</description>
+    <displayType>button</displayType>
+    <height>600</height>
+    <linkType>page</linkType>
+    <masterLabel>Delete Loan</masterLabel>
+    <openType>sidebar</openType>
+    <page>LLC_BI__LoanButtonDelete</page>
+    <protected>false</protected>
+</WebLink>

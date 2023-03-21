@@ -1,0 +1,9 @@
+<div id="spread_print_main" />
+
+<div data-bind="stopBinding: true" style="display: none;">  
+	<div id="debt_schedule_container">
+		<div data-bind="foreach: { data: debtSchedules, as: 'debtSchedule' }" >
+			<div data-bind="template: {name: 'debtschedule-template', data: debtSchedule}" />  
+		</div>
+	</div>
+</div>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This optional picklist field displays to an administrator when selecting an action to take on the product package.</description>
+    <externalId>false</externalId>
+    <label>Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Bulk Update</fullName>
+                <default>false</default>
+                <label>Bulk Update</label>
+            </value>
+            <value>
+                <fullName>Bulk Update Field Grid</fullName>
+                <default>false</default>
+                <label>Bulk Update Field Grid</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

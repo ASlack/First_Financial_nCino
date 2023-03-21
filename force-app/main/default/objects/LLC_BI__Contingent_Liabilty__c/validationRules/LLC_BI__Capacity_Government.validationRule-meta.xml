@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Capacity_Government</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+            AND(
+                IF(ISBLANK(LLC_BI__Authorized_Account__c),
+                    IF(ISBLANK(LLC_BI__Authorized_Signer__c),
+                        AND(
+                            AND(
+                                TEXT(LLC_BI__Entity__r.LLC_BI__Account__r.Type) == &apos;Government&apos;,
+                                TEXT(LLC_BI__Role__c) != &apos;Official&apos;
+                            ),
+                            AND(
+                                TEXT(LLC_BI__Entity__r.LLC_BI__Account__r.Type) == &apos;Government&apos;,
+                                TEXT(LLC_BI__Role__c) != &apos;Agent&apos;
+                            )
+                        ),
+                        FALSE
+                    ),
+                    AND(
+                        AND(
+                            TEXT(LLC_BI__Authorized_Account__r.LLC_BI__Account__r.Type) == &apos;Government&apos;,
+                            TEXT(LLC_BI__Role__c) != &apos;Official&apos;
+                        ),
+                        AND(
+                            TEXT(LLC_BI__Authorized_Account__r.LLC_BI__Account__r.Type) == &apos;Government&apos;,
+                            TEXT(LLC_BI__Role__c) != &apos;Agent&apos;
+                        )
+                    )
+                )
+            ),
+            NOT(ISBLANK(TEXT(LLC_BI__Role__c)))
+        )</errorConditionFormula>
+    <errorDisplayField>LLC_BI__Role__c</errorDisplayField>
+    <errorMessage>The valid capacity options for this entity&apos;s account type (Government) are &quot;Official&quot; and &quot;Agent&quot;</errorMessage>
+</ValidationRule>

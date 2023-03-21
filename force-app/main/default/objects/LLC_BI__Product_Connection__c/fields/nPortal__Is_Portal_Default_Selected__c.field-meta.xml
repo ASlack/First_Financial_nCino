@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nPortal__Is_Portal_Default_Selected__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Select this checkbox if, for this product, this ancillary service should be selected by default. If this checkbox is selected, the user filling out the online application in Customer Portal sees that this ancillary service has been automatically selected.</description>
+    <externalId>false</externalId>
+    <label>Is Portal Default Selected</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Grants a user access to permissions needed to run auto decision.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Retail Pricing - Run Auto Decision Permissions</label>
+</PermissionSet>

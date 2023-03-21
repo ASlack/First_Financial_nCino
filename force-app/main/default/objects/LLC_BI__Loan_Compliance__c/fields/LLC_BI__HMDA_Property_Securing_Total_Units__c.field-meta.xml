@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__HMDA_Property_Securing_Total_Units__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This is a required field.  This field indicates the number of individual dwelling units related to the property securing the covered loan or, in the case of an application, proposed to secure the covered loan.</description>
+    <externalId>false</externalId>
+    <label>Property Securing Total Units</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

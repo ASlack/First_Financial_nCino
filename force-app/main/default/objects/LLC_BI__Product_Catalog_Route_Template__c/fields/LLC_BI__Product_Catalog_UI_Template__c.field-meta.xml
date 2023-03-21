@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Product_Catalog_UI_Template__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Maps this route template to its parent template record</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Which Product Catalog UI Template is this Route Template associated with?</inlineHelpText>
+    <label>Product Catalog UI Template</label>
+    <referenceTo>LLC_BI__Product_Catalog_UI_Template__c</referenceTo>
+    <relationshipLabel>Product Catalog Route Templates</relationshipLabel>
+    <relationshipName>Product_Catalog_Route_Templates</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

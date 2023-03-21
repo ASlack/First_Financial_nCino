@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__UI_Budget_Details</fullName>
+    <description>This field set is used in the Construction Loan Administration workflow for the budget route.</description>
+    <displayedFields>
+        <field>LLC_BI__Budget__r.Name</field>
+        <isFieldManaged>true</isFieldManaged>
+        <isRequired>true</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>LLC_BI__Budget__r.LLC_BI__Total_Budget_Amount__c</field>
+        <isFieldManaged>true</isFieldManaged>
+        <isRequired>true</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>LLC_BI__Budget__r.LLC_BI__Description__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>UI Budget Details</label>
+</FieldSet>

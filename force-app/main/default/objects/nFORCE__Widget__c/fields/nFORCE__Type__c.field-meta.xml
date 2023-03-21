@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is required. It is manually populated. It determines what logic should be used when loading the widget. The values are Narrative (no longer used), Knockout, and Angular.</description>
+    <externalId>false</externalId>
+    <label>Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Narrative</fullName>
+                <default>false</default>
+                <label>Narrative</label>
+            </value>
+            <value>
+                <fullName>Knockout</fullName>
+                <default>false</default>
+                <label>Knockout</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

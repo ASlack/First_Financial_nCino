@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Disable_Id_Document_Save__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Administrators populate this checkbox to prevent an ID Document from saving to its placeholder in Document Manager after an ID validates through ID Scan.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select this checkbox to prevent an ID Document from saving into Document Manager.</inlineHelpText>
+    <label>Disable ID Document Save</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Is_Authorized_Signer__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Administrators select this optional boolean field to indicate if an individual relationship with this Ownership Structure role is authorized to transact on a particular product on behalf of a legal entity. By default, it is false.</description>
+    <externalId>false</externalId>
+    <label>Is Authorized Individual</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

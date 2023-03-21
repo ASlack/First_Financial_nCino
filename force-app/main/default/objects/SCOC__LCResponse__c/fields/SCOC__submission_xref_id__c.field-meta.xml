@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCOC__submission_xref_id__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field contains the submission cross-reference id for the LiquidCredit Request.</description>
+    <externalId>false</externalId>
+    <label>Submission XRef ID</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

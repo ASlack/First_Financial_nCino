@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Period_Over_Prior_Fiscal_Year__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This defaults to false. User updated. This field indicates whether the record values should show the period over fiscal year change of the linked record.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check this field to calculate the period over prior fiscal year.</inlineHelpText>
+    <label>Period Over Prior Fiscal Year</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

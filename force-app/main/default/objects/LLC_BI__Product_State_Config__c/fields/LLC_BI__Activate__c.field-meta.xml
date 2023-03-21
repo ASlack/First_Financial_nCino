@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Activate__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field indicates if Product State Config is used to determine if a record is active (checked) or inactive (unchecked).  Used in connection with a feature specific (e.g. Covenant) setting is active.  Default is unchecked (inactive).</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field indicates if Product State Config is used to determine if a record is active (checked) or inactive (unchecked).  Used in connection with a feature specific (e.g. Covenant) setting is active.  Default is unchecked (inactive).</inlineHelpText>
+    <label>Activate</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

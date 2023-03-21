@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NDOC__Is_Imported__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is not required. This field auto-populates when a document has been imported to a loan from either a relationship record or a collateral record. This field can be used by downstream archiving processes to prevent duplication of archived records.</description>
+    <externalId>false</externalId>
+    <label>Is Imported</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

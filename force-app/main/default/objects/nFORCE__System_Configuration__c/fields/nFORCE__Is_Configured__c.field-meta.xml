@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Is_Configured__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The field indicates if the configuration associated with the System Configuration record has been done. If the field is set to TRUE the the user will not have the option in the nCino Administration interface to configure the data unless the &apos;Allows Reconfiguration&apos; field is set to to TRUE.</description>
+    <externalId>false</externalId>
+    <label>Is Configured</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

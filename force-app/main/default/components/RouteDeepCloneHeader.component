@@ -1,0 +1,21 @@
+<apex:component allowDML="true" layout="none" controller="RouteDeepClone">
+
+    <apex:sectionHeader title="UI Management" subtitle="Clone Route" />
+
+    <!-- <apex:attribute name="groupId" type="Id" description="Id" assignTo="{!RecordId}" /> -->
+    <apex:attribute name="routeSFID" description="route id" type="string"/>
+    <apex:attribute name="routeName" description="route name" type="string"/>
+    <apex:attribute name="routeApp" description="route app" type="string"/>  
+    <apex:attribute name="routeLookupkey" description="route lookupkey" type="string"/>    
+    
+    <apex:pageBlock id="pgbk2" mode="detail">
+        <apex:pageBlockSection id="pgbk1_1" title="Original Route Information" columns="2">     
+            <apex:outputLabel value="Name: " style="font-weight:800;" /><apex:outputText value="{!routeName}" />
+            <apex:outputLabel value="App: " style="font-weight:800;" /><apex:outputText value="{!routeApp}" />
+            <apex:outputLabel value="lookupKey: " style="font-weight:800;" /><apex:outputText value="{!routeLookupkey}" />
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+    
+    <apex:pageMessages /> 
+
+</apex:component>

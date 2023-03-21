@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCOC__CreateJointPairs__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>If checked, this provider will combine applicants into joint request pairs to streamline billing/charges.</description>
+    <externalId>false</externalId>
+    <label>Create Joint Pairs</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

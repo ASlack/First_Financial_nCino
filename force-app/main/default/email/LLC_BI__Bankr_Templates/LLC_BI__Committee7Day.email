@@ -1,0 +1,3 @@
+{!LLC_BI__Loan__c.Name} is set to go to committee on the {!LLC_BI__Loan__c.Committee_Date__c}. If this is no longer accurate, please update the committee date to reflect its no expected committee time.
+
+View Loan: {!LLC_BI__Loan__c.Link}

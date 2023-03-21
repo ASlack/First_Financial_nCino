@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__All</fullName>
+    <columns>NAME</columns>
+    <columns>LLC_BI__Type__c</columns>
+    <columns>LLC_BI__Total_Row_Name__c</columns>
+    <columns>LLC_BI__Interaction__c</columns>
+    <columns>LLC_BI__Entity_Type__c</columns>
+    <columns>LLC_BI__Borrower_Type__c</columns>
+    <columns>LLC_BI__Is_Balance_Sheet__c</columns>
+    <columns>LLC_BI__Is_Cash_Flow_Statement__c</columns>
+    <columns>LLC_BI__Is_Income_Statement__c</columns>
+    <columns>LLC_BI__Is_Personal_Financial_Statement__c</columns>
+    <columns>LLC_BI__Is_Budget__c</columns>
+    <columns>LLC_BI__Product_Line__c</columns>
+    <columns>LLC_BI__Product_Type__c</columns>
+    <columns>LLC_BI__Product__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>LLC_BI__Is_Template__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>All</label>
+</ListView>

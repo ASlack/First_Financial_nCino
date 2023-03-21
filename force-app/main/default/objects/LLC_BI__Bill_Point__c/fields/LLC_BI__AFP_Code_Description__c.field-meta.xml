@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__AFP_Code_Description__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This is an optional field.  It is used to provide a description of the AFP Code of the bill point.</description>
+    <externalId>true</externalId>
+    <inlineHelpText>This field is used to provide a description of the AFP Code of the bill point.</inlineHelpText>
+    <label>AFP Code Description</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

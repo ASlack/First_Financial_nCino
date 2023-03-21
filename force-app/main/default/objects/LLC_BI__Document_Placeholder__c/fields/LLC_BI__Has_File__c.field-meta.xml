@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Has_File__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is not required but is automatically populated. The formula returns true if there is a document attached to the placeholder.</description>
+    <externalId>false</externalId>
+    <formula>!ISBLANK(LLC_BI__Document_Store_Index__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Has File</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

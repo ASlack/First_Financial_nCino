@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Structure__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional and specifies the structure of the loan. Default values can be adjusted per customer preference. The structure specifies whether the loan can be a multitiered facility or just one level. It is manually populated.</description>
+    <externalId>false</externalId>
+    <label>Structure</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ELOC</fullName>
+                <default>false</default>
+                <label>ELOC</label>
+            </value>
+            <value>
+                <fullName>Letter of Credit</fullName>
+                <default>false</default>
+                <label>Letter of Credit</label>
+            </value>
+            <value>
+                <fullName>Multi Level Future</fullName>
+                <default>false</default>
+                <label>Multi Level Future</label>
+            </value>
+            <value>
+                <fullName>Regular Future</fullName>
+                <default>false</default>
+                <label>Regular Future</label>
+            </value>
+            <value>
+                <fullName>Term Loan/Current</fullName>
+                <default>false</default>
+                <label>Term Loan/Current</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

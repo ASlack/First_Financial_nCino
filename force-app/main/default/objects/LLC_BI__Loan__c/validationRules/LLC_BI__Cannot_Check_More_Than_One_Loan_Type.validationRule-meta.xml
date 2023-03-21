@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Cannot_Check_More_Than_One_Loan_Type</fullName>
+    <active>true</active>
+    <description>This validation rule will enforce that no more than 1 loan type is checked.  The only fields that affect loan type are isRenewal__c and Is_Modification__c.</description>
+    <errorConditionFormula>AND(LLC_BI__isRenewal__c = true,LLC_BI__Is_Modification__c = true)</errorConditionFormula>
+    <errorMessage>A loan can be a renewal OR a modification.  It cannot be both.</errorMessage>
+</ValidationRule>

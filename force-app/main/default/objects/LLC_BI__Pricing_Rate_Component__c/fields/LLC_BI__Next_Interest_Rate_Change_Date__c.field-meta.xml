@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Next_Interest_Rate_Change_Date__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this optional field with the date of the first interest rate adjustment on the loan.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The system auto-populates this field with the date of the first interest rate adjustment on the loan.</inlineHelpText>
+    <label>Next Interest Rate Change Date</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Budget_Line_Item__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>A link to the budget line item associated with this budget transaction request.</description>
+    <externalId>false</externalId>
+    <label>Budget Line Item</label>
+    <referenceTo>LLC_BI__Budget_Line_Item__c</referenceTo>
+    <relationshipLabel>Budget Transaction Requests</relationshipLabel>
+    <relationshipName>Budget_Transaction_Requests</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

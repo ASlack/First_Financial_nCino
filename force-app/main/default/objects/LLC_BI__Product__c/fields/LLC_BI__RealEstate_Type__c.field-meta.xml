@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__RealEstate_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is no longer in use. Previously, it was used to specify what type of real estate is involved with this product.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If this product has real estate involved, what type of real estate. Note: If anything besides &quot;None&quot; is checked, then a hidden &quot;Real Estate&quot; checkbox field will be set to true.</inlineHelpText>
+    <label>Real Estate Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Single Family Home</fullName>
+                <default>false</default>
+                <label>Single Family Home</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

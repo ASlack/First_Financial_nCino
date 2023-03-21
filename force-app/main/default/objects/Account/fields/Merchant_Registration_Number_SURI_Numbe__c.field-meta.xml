@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Merchant_Registration_Number_SURI_Numbe__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>This should match your Merchant Registration Certification Number that is provided by the Unified System of Internal Revenue (SURI) of the government of Puerto Rico.</inlineHelpText>
+    <label>Merchant Registration Number-SURI Number</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__HMDA_Race_Desc_Code_1__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field specifies in text description of the borrower’s or co-borrower’s enrolled or principal tribe(s) if 1 (American Indian or Alaska Native) is entered.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If American Indian or Alaska Native is selected as a Race, this text field allows you to specify the enrolled or principal tribe. You may enter up to 50 characters.</inlineHelpText>
+    <label>American Indian or Alaska Native tribe</label>
+    <length>50</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

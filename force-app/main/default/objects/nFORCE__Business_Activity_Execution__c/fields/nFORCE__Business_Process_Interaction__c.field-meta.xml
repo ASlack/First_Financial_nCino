@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Business_Process_Interaction__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this field with the Business Process Interaction record to which this business activity execution is associated. By default, it is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This automatically populated field displays the Business Process Interaction record to which this business activity is associated.</inlineHelpText>
+    <label>Business Process Interaction</label>
+    <referenceTo>nFORCE__Business_Process_Interaction__c</referenceTo>
+    <relationshipLabel>Business Process Interactions</relationshipLabel>
+    <relationshipName>Linked_Business_Process_Interaction</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

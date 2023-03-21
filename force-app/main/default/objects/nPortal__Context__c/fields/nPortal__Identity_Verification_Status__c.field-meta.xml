@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nPortal__Identity_Verification_Status__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This picklist field automatically populates. It indicates the identity verification status of the applicant.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This picklist field automatically populates. It indicates the identity verification status of the applicant.</inlineHelpText>
+    <label>Identity Verification Status</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pass</fullName>
+                <default>false</default>
+                <label>Pass</label>
+            </value>
+            <value>
+                <fullName>ID Verification Failure</fullName>
+                <default>false</default>
+                <label>ID Verification Failure</label>
+            </value>
+            <value>
+                <fullName>Communication Error</fullName>
+                <default>false</default>
+                <label>Communication Error</label>
+            </value>
+            <value>
+                <fullName>Unable to Generate Questions</fullName>
+                <default>false</default>
+                <label>Unable to Generate Questions</label>
+            </value>
+            <value>
+                <fullName>Not Eligible for Questions</fullName>
+                <default>false</default>
+                <label>Not Eligible for Questions</label>
+            </value>
+            <value>
+                <fullName>Questions Failed - No Questions Available</fullName>
+                <default>false</default>
+                <label>Questions Failed - No Questions Available</label>
+            </value>
+            <value>
+                <fullName>Retry Limit Exceeded</fullName>
+                <default>false</default>
+                <label>Retry Limit Exceeded</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

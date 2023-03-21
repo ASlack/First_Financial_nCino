@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Index__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field indicates the Index Name for Floating and Adjustable Rate loans (e.g. Prime, 1M LIBOR, etc.)</description>
+    <externalId>false</externalId>
+    <label>Index</label>
+    <length>50</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

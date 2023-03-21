@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Collateral_Full_Address__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional and user input. This is the full address for the Collateral being looked up to. The field should not be used when Platform Encryption has been enabled for the nCino Platform.</description>
+    <externalId>false</externalId>
+    <formula>LLC_BI__Collateral__r.LLC_BI__Full_Address__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Collateral Address</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

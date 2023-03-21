@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Is_Related__c</fullName>
+    <defaultValue>0</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this required number field with 0 or 1 based on the field type the system snapshots. By default, the field value is 0. If the captured field is a related field, the system populates the field with 1.</description>
+    <externalId>false</externalId>
+    <label>Is Related</label>
+    <precision>1</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

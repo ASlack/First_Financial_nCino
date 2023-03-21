@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLCLP__Is_Excluded_From_LaserPro_Extract__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Excluded Collateral Type from LaserPro extract</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Excluded Collateral Type from LaserPro extract</inlineHelpText>
+    <label>Exclude From LaserPro Extract</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

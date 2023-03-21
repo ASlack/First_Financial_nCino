@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Is_Synced__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this boolean field to indicate whether a user has selected a pricing scenario to associate to a loan.</description>
+    <externalId>false</externalId>
+    <label>Is Synced</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

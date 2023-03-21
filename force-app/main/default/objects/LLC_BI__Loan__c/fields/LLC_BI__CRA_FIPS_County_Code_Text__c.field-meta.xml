@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__CRA_FIPS_County_Code_Text__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is manually populated. This field indicates the property&apos;s three-digit Federal Information Processing Standards (FIPS) County Code.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>FIPS County Code</inlineHelpText>
+    <label>Three Digit County Code</label>
+    <length>3</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

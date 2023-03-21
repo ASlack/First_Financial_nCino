@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__New_Rate__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This percent field is used to specify a new interest rate. It is an optional and manually entered.  If applicable, it is the new rate that is being proposed by the loan modification.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If applicable, please enter new proposed rate</inlineHelpText>
+    <label>New Rate</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

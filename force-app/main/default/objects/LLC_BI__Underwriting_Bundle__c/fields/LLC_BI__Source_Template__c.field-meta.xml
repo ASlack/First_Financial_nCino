@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Source_Template__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The system populates this lookup field with the Underwriting Bundle template.</description>
+    <externalId>false</externalId>
+    <label>Source Template</label>
+    <referenceTo>LLC_BI__Underwriting_Bundle__c</referenceTo>
+    <relationshipLabel>Cloned Bundles</relationshipLabel>
+    <relationshipName>Cloned_Bundles</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

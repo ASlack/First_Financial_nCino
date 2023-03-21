@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCOC__BankruptcyIndicator__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Bankruptcy Indicator</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Bankruptcy Indicator</inlineHelpText>
+    <label>Bankruptcy Indicator</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

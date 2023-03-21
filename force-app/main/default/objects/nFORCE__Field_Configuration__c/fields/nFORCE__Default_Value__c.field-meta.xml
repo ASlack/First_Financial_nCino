@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Default_Value__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Default Value ensures that the value inserted in this field is stored when no value is manually input by the user.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Allows configuration of a default value that a field is populated with on initial loading of a form.</inlineHelpText>
+    <label>Default Value</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

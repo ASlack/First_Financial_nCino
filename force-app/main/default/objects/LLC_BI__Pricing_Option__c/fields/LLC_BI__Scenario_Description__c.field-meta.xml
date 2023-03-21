@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Scenario_Description__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system populates this field with the scenario description. By default, it is blank.</description>
+    <externalId>false</externalId>
+    <label>Scenario Description</label>
+    <length>32768</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

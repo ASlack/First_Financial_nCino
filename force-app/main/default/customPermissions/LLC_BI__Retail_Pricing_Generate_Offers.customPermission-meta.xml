@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Grants a user the ability to create, update, or delete existing offers in context of the Offers Generation process.</description>
+    <isLicensed>false</isLicensed>
+    <label>Retail Pricing - Generate Offers</label>
+</CustomPermission>

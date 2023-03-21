@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__APR__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This percent field is optional and is populated once an offer is selected during the Retail Loan Workflow. It populates with the Annual Percentage Rate.</description>
+    <externalId>false</externalId>
+    <label>APR</label>
+    <precision>6</precision>
+    <required>false</required>
+    <scale>3</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Percent</type>
+</CustomField>

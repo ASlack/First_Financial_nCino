@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__IRA_Distribution_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is a picklist that specifies the type of distribution for a Traditional Beneficiary or Roth Beneficiary IRA.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Specifies the type of distribution for a Traditional Beneficiary or Roth Beneficiary IRA.</inlineHelpText>
+    <label>IRA Distribution Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Death</fullName>
+                <default>false</default>
+                <label>Death</label>
+            </value>
+            <value>
+                <fullName>Transfer</fullName>
+                <default>false</default>
+                <label>Transfer</label>
+            </value>
+            <value>
+                <fullName>IRS Levy</fullName>
+                <default>false</default>
+                <label>IRS Levy</label>
+            </value>
+            <value>
+                <fullName>Revocation</fullName>
+                <default>false</default>
+                <label>Revocation</label>
+            </value>
+            <value>
+                <fullName>Prohibited Transaction</fullName>
+                <default>false</default>
+                <label>Prohibited Transaction</label>
+            </value>
+            <value>
+                <fullName>Correction of Excess Contribution - On or before my tax-filing due date in the same year as excess contribution</fullName>
+                <default>false</default>
+                <label>Correction of Excess Contribution - On or before my tax-filing due date in the same year as excess contribution</label>
+            </value>
+            <value>
+                <fullName>Correction of Excess Contribution - On or before my tax-filing due date in the year after excess contribution</fullName>
+                <default>false</default>
+                <label>Correction of Excess Contribution - On or before my tax-filing due date in the year after excess contribution</label>
+            </value>
+            <value>
+                <fullName>Correction of Excess Contribution - After my tax-filing due date</fullName>
+                <default>false</default>
+                <label>Correction of Excess Contribution - After my tax-filing due date</label>
+            </value>
+            <value>
+                <fullName>Recharacterization (Roth Beneficiary only)</fullName>
+                <default>false</default>
+                <label>Recharacterization (Roth Beneficiary only)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

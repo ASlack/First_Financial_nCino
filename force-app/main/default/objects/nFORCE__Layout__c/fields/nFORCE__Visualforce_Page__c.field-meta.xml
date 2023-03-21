@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Visualforce_Page__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Use this text field to enter the fully qualified (includes namespace if applicable) Visualforce page that implements the layout.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the name of the Visualforce page (including namespace if applicable) that implements the layout.</inlineHelpText>
+    <label>Visualforce Page</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

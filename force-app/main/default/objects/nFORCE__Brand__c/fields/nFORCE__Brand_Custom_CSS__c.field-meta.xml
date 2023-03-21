@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Brand_Custom_CSS__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Use this text field to store the custom CSS associated with the brand.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Use this text field to store the custom CSS associated with the brand.</inlineHelpText>
+    <label>Brand Custom CSS</label>
+    <length>130000</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

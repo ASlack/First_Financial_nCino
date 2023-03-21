@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Schedule_Entry__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this required text field to associate a Schedule Section to a field on the Schedule Entry. By default, it is populated with its associated Schedule Entry Field API name.</description>
+    <externalId>false</externalId>
+    <label>Schedule Entry</label>
+    <length>255</length>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

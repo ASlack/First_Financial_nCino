@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingGuestRules>
+        <fullName>Share_Product_Line_Records_With_Guest_User_A</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Share Product Line Records With Guest User (A)</label>
+        <sharedTo>
+            <guestUser>Customer_Portal</guestUser>
+        </sharedTo>
+        <criteriaItems>
+            <field>LLC_BI__Product_Object__c</field>
+            <operation>equals</operation>
+            <value>Loan__c,Deposit__c</value>
+        </criteriaItems>
+        <includeHVUOwnedRecords>false</includeHVUOwnedRecords>
+    </sharingGuestRules>
+</SharingRules>

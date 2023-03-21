@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Balance_Required__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is automatically populated via a trigger. It is calculated by adding the LLC_BI__Minimum_Required_Balance__c value together for each LLC_BI__Scenario_Item__c associated with the Scenario. This field represents the minimum dollar amount that a customer must have in an account in order to receive all services on the proforma.</description>
+    <externalId>false</externalId>
+    <label>Less Balance Required</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

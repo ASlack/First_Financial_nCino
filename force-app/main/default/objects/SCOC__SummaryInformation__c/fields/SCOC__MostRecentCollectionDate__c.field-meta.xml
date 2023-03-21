@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCOC__MostRecentCollectionDate__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Most recent collection date on file.</description>
+    <externalId>false</externalId>
+    <label>Most Recent Collection Date</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Contingent_Percentage__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field specifies the percentage of the loan that is represented by this contingency. A percentage can only be specified if the contingency type is &apos;Assign Specific&apos; or &apos;Pro Rata&apos;</description>
+    <externalId>false</externalId>
+    <label>Ownership Percentage</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>3</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

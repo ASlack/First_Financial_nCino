@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Closing_Disclosure_Delivery_Method__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Users populate this optional picklist field to indicate the delivery method the financial institution uses to provide the closing disclosure to the applicant. By default, this field is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the closing disclosure delivery method for the loan.</inlineHelpText>
+    <label>Closing Disclosure Delivery Method</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Electronic</fullName>
+                <default>false</default>
+                <label>Electronic</label>
+            </value>
+            <value>
+                <fullName>In-person</fullName>
+                <default>false</default>
+                <label>In-person</label>
+            </value>
+            <value>
+                <fullName>Mail</fullName>
+                <default>false</default>
+                <label>Mail</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

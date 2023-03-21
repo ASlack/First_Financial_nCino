@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Maximum_Balance_Tiered_Account__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field will be used for Expere Doc Prep, which has not yet been implemented. This field is not required. It is manually populated. It designates the amount of the maximum tier balance that may be in the account in order to earn the disclosed rate for that tier. This is the high end dollar amount for a given tier.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The amount of the maximum tier balance that may be in the account in order to earn the disclosed rate for that tier. This is the high end dollar amount for a given tier.</inlineHelpText>
+    <label>Maximum Balance Tiered Account</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

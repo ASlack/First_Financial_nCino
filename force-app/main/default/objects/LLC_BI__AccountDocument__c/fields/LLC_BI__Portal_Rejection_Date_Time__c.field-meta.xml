@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Portal_Rejection_Date_Time__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this optional date/time field when a user rejects a Customer Portal document.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This system-populated field automatically displays the Customer Portal document rejection date and time.</inlineHelpText>
+    <label>Portal Rejection Date Time</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

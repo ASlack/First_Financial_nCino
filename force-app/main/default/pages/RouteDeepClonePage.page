@@ -1,0 +1,30 @@
+<apex:page id="thepage" standardController="nFORCE__Route__c">
+<apex:form >
+    
+    <c:RouteDeepCloneHeader routeName="{!nFORCE__Route__c.Name}" 
+        routeApp="{!nFORCE__Route__c.nFORCE__App__c}" 
+        routeLookupkey="{!nFORCE__Route__c.nFORCE__lookupKey__c}" 
+        routeSFID="{!nFORCE__Route__c.Id}"
+    />
+
+    <apex:tabPanel switchType="client" selectedTab="name2" id="theTabPanel"> 
+
+    <!-- CLONE ENTIRE ROUTE COMPONENT TAB -->
+    <apex:tab label="Clone Route" name="name2" id="tabOne">
+        <c:RouteDeepCloneComponent />
+    </apex:tab>
+
+    <!-- LOOKUPKEY COMPONENT TAB -->
+    <!-- <apex:tab label="lookupKey Validation" name="name3" id="tabThree">
+        <c:UILookupKeyUtilityComponent />
+    </apex:tab> -->
+
+    <!-- RECORD OWNER COMPONENT TAB -->
+    <!-- <apex:tab label="Record Owner Validation" name="name5" id="tabFour">
+        <c:UIRecordOwnerUtilityComponent />
+    </apex:tab> -->
+           
+    </apex:tabPanel>
+        
+</apex:form>
+</apex:page>

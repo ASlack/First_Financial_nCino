@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SecuritySettings xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canUsersGrantLoginAccess>true</canUsersGrantLoginAccess>
+    <enableAdminLoginAsAnyUser>true</enableAdminLoginAsAnyUser>
+    <enableAuditFieldsInactiveOwner>false</enableAuditFieldsInactiveOwner>
+    <enableAuraSecureEvalPref>true</enableAuraSecureEvalPref>
+    <enableCoepHeader>false</enableCoepHeader>
+    <enableCoopHeader>false</enableCoopHeader>
+    <enableRequireHttpsConnection>true</enableRequireHttpsConnection>
+    <networkAccess>
+        <ipRanges>
+            <description>nCino Community</description>
+            <end>204.14.239.254</end>
+            <start>204.14.232.0</start>
+        </ipRanges>
+        <ipRanges>
+            <description>Gainsight</description>
+            <end>198.37.159.181</end>
+            <start>198.37.159.181</start>
+        </ipRanges>
+        <ipRanges>
+            <description>nCino London Office</description>
+            <end>185.52.147.78</end>
+            <start>185.52.147.78</start>
+        </ipRanges>
+        <ipRanges>
+            <description>nCino Salt Lake City Office</description>
+            <end>173.224.176.227</end>
+            <start>173.224.176.226</start>
+        </ipRanges>
+        <ipRanges>
+            <description>nCino Headquarters (HQ)</description>
+            <end>173.95.77.134</end>
+            <start>173.95.77.129</start>
+        </ipRanges>
+        <ipRanges>
+            <description>nCino Mayfaire 4/6 Office</description>
+            <end>165.166.118.46</end>
+            <start>165.166.118.42</start>
+        </ipRanges>
+        <ipRanges>
+            <description>Pardot</description>
+            <end>136.147.176.144</end>
+            <start>136.147.176.144</start>
+        </ipRanges>
+        <ipRanges>
+            <description>nCino Community</description>
+            <end>136.147.255.254</end>
+            <start>136.146.0.0</start>
+        </ipRanges>
+        <ipRanges>
+            <description>nCino Community</description>
+            <end>96.43.159.254</end>
+            <start>96.43.144.0</start>
+        </ipRanges>
+        <ipRanges>
+            <description>nCino Salt Lake City Office</description>
+            <end>70.103.242.30</end>
+            <start>70.103.242.28</start>
+        </ipRanges>
+        <ipRanges>
+            <description>nCino Sydney Office</description>
+            <end>58.171.82.228</end>
+            <start>58.171.82.228</start>
+        </ipRanges>
+        <ipRanges>
+            <description>Docebo</description>
+            <end>54.235.5.25</end>
+            <start>54.235.5.25</start>
+        </ipRanges>
+        <ipRanges>
+            <description>nCino Automatic Upgrades</description>
+            <end>54.198.222.116</end>
+            <start>54.198.222.116</start>
+        </ipRanges>
+        <ipRanges>
+            <description>nCino Automatic Upgrades</description>
+            <end>54.146.43.164</end>
+            <start>54.146.43.164</start>
+        </ipRanges>
+        <ipRanges>
+            <description>Docebo</description>
+            <end>52.212.136.234</end>
+            <start>52.212.136.234</start>
+        </ipRanges>
+        <ipRanges>
+            <description>nCino Automatic Upgrades</description>
+            <end>52.203.122.87</end>
+            <start>52.203.122.87</start>
+        </ipRanges>
+        <ipRanges>
+            <description>Docebo</description>
+            <end>52.29.0.250</end>
+            <start>52.29.0.250</start>
+        </ipRanges>
+        <ipRanges>
+            <description>Dan Price (Jax)</description>
+            <end>45.31.64.242</end>
+            <start>45.31.64.242</start>
+        </ipRanges>
+        <ipRanges>
+            <description>nCino UK VPN</description>
+            <end>35.179.4.213</end>
+            <start>35.179.4.213</start>
+        </ipRanges>
+        <ipRanges>
+            <description>nCino US East VPN</description>
+            <end>18.206.27.82</end>
+            <start>18.206.27.82</start>
+        </ipRanges>
+        <ipRanges>
+            <description>nCino Melbourne Office</description>
+            <end>14.201.125.170</end>
+            <start>14.201.125.170</start>
+        </ipRanges>
+        <ipRanges>
+            <description>Docebo</description>
+            <end>13.239.142.232</end>
+            <start>13.239.142.232</start>
+        </ipRanges>
+        <ipRanges>
+            <description>nCino Community</description>
+            <end>13.111.255.254</end>
+            <start>13.108.0.0</start>
+        </ipRanges>
+        <ipRanges>
+            <description>nCino Headquarters (HQ)</description>
+            <end>12.216.76.78</end>
+            <start>12.216.76.73</start>
+        </ipRanges>
+        <ipRanges>
+            <description>nCino Mayfaire 4/6 Office</description>
+            <end>12.1.242.110</end>
+            <start>12.1.242.106</start>
+        </ipRanges>
+        <ipRanges>
+            <description>nCino Community</description>
+            <end>10.241.16.100</end>
+            <start>10.241.16.0</start>
+        </ipRanges>
+        <ipRanges>
+            <description>nCino Community</description>
+            <end>10.226.89.100</end>
+            <start>10.226.89.0</start>
+        </ipRanges>
+        <ipRanges>
+            <description>nCino Automatic Upgrades</description>
+            <end>3.227.61.76</end>
+            <start>3.227.61.76</start>
+        </ipRanges>
+    </networkAccess>
+    <passwordPolicies>
+        <complexity>AlphaNumeric</complexity>
+        <expiration>NinetyDays</expiration>
+        <historyRestriction>3</historyRestriction>
+        <lockoutInterval>FifteenMinutes</lockoutInterval>
+        <maxLoginAttempts>TenAttempts</maxLoginAttempts>
+        <minimumPasswordLength>8</minimumPasswordLength>
+        <minimumPasswordLifetime>false</minimumPasswordLifetime>
+        <obscureSecretAnswer>false</obscureSecretAnswer>
+        <questionRestriction>DoesNotContainPassword</questionRestriction>
+    </passwordPolicies>
+    <redirectBlockModeEnabled>false</redirectBlockModeEnabled>
+    <sessionSettings>
+        <allowUserAuthenticationByCertificate>false</allowUserAuthenticationByCertificate>
+        <allowUserCertBasedAuthenticationWithOcspValidation>false</allowUserCertBasedAuthenticationWithOcspValidation>
+        <canConfirmEmailChangeInLightningCommunities>true</canConfirmEmailChangeInLightningCommunities>
+        <canConfirmIdentityBySmsOnly>true</canConfirmIdentityBySmsOnly>
+        <disableTimeoutWarning>false</disableTimeoutWarning>
+        <enableBuiltInAuthenticator>false</enableBuiltInAuthenticator>
+        <enableCSPOnEmail>true</enableCSPOnEmail>
+        <enableCSRFOnGet>true</enableCSRFOnGet>
+        <enableCSRFOnPost>true</enableCSRFOnPost>
+        <enableCacheAndAutocomplete>true</enableCacheAndAutocomplete>
+        <enableClickjackNonsetupSFDC>true</enableClickjackNonsetupSFDC>
+        <enableClickjackNonsetupUser>false</enableClickjackNonsetupUser>
+        <enableClickjackNonsetupUserHeaderless>false</enableClickjackNonsetupUserHeaderless>
+        <enableClickjackSetup>true</enableClickjackSetup>
+        <enableCoepHeader>false</enableCoepHeader>
+        <enableContentSniffingProtection>true</enableContentSniffingProtection>
+        <enableCoopHeader>false</enableCoopHeader>
+        <enableLightningLogin>true</enableLightningLogin>
+        <enableLightningLoginOnlyWithUserPerm>false</enableLightningLoginOnlyWithUserPerm>
+        <enableMFADirectUILoginOptIn>false</enableMFADirectUILoginOptIn>
+        <enableOauthCorsPolicy>false</enableOauthCorsPolicy>
+        <enablePostForSessions>false</enablePostForSessions>
+        <enableSMSIdentity>true</enableSMSIdentity>
+        <enableU2F>false</enableU2F>
+        <enableXssProtection>true</enableXssProtection>
+        <enforceIpRangesEveryRequest>false</enforceIpRangesEveryRequest>
+        <enforceUserDeviceRevoked>false</enforceUserDeviceRevoked>
+        <forceLogoutOnSessionTimeout>true</forceLogoutOnSessionTimeout>
+        <forceRelogin>false</forceRelogin>
+        <hasRetainedLoginHints>false</hasRetainedLoginHints>
+        <hasUserSwitching>true</hasUserSwitching>
+        <identityConfirmationOnEmailChange>false</identityConfirmationOnEmailChange>
+        <identityConfirmationOnTwoFactorRegistrationEnabled>true</identityConfirmationOnTwoFactorRegistrationEnabled>
+        <lockSessionsToDomain>true</lockSessionsToDomain>
+        <lockSessionsToIp>false</lockSessionsToIp>
+        <lockerServiceCSP>false</lockerServiceCSP>
+        <lockerServiceNext>true</lockerServiceNext>
+        <lockerServiceNextControl>false</lockerServiceNextControl>
+        <redirectBlockModeEnabled>false</redirectBlockModeEnabled>
+        <redirectionWarning>true</redirectionWarning>
+        <referrerPolicy>true</referrerPolicy>
+        <requireHttpOnly>false</requireHttpOnly>
+        <sessionTimeout>TwoHours</sessionTimeout>
+        <sidToken3rdPartyAuraApp>false</sidToken3rdPartyAuraApp>
+        <useLocalStorageForLogoutUrl>false</useLocalStorageForLogoutUrl>
+    </sessionSettings>
+    <singleSignOnSettings>
+        <enableCaseInsensitiveFederationID>false</enableCaseInsensitiveFederationID>
+        <enableMultipleSamlConfigs>true</enableMultipleSamlConfigs>
+        <enableSamlJitProvisioning>false</enableSamlJitProvisioning>
+        <enableSamlLogin>true</enableSamlLogin>
+        <isLoginWithSalesforceCredentialsDisabled>false</isLoginWithSalesforceCredentialsDisabled>
+    </singleSignOnSettings>
+</SecuritySettings>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__CD_Term__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field will be used for Expere Doc Prep, which has not yet been implemented. This field is not required. It is manually populated. It designates the length of time from the opening date of the time deposit to the maturity date (for example, 91 days 18 months).</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The length of time from the opening date of the time deposit to the maturity date (e.g. 91 days 18 months).</inlineHelpText>
+    <label>CD Term</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

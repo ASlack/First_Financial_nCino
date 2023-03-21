@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SIOC__Context_Id__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this text field with the ID of the Salesforce record with which the user or system interacted.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This system-populated field displays the ID of the Salesforce record with which the user or system interacted.</inlineHelpText>
+    <label>Context ID</label>
+    <length>40</length>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

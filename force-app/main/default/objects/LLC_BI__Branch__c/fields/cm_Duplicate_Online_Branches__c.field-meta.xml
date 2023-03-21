@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cm_Duplicate_Online_Branches__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This flag is used to fire a validation rule if multiple online branches are found.  Do not manually change this field value.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This flag is used to fire a validation rule if multiple online branches are found.  Do not manually change this field value.</inlineHelpText>
+    <label>Duplicate Online Branches</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

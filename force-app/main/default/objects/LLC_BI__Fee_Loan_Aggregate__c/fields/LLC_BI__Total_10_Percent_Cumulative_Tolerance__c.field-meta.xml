@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Total_10_Percent_Cumulative_Tolerance__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this optional field to indicate the cumulative sum of all fees in the 10% tolerance category. By default, this field is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field displays the total of all fees in the 10% tolerance category.</inlineHelpText>
+    <label>Total 10% Cumulative Tolerance</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

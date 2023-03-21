@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Additional_Income_Category__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Users populate this picklist field with any additional income in the deal an FI originates outside of nCino. By default, it is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Populate this field with any additional income.</inlineHelpText>
+    <label>Additional Income Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Wealth</fullName>
+                <default>false</default>
+                <label>Wealth</label>
+            </value>
+            <value>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+                <label>Insurance</label>
+            </value>
+            <value>
+                <fullName>Swap</fullName>
+                <default>false</default>
+                <label>Swap</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

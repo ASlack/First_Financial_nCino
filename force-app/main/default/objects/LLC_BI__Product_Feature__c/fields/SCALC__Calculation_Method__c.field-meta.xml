@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCALC__Calculation_Method__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Administrators populate this optional picklist to indicate the calculation method for a specific product. By default, it is set to General Lending.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Populate this picklist with the calculation method for a specific product.</inlineHelpText>
+    <label>Calculation Method</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>LOAN_BUILDER</fullName>
+                <default>true</default>
+                <label>General Lending</label>
+            </value>
+            <value>
+                <fullName>ARM</fullName>
+                <default>false</default>
+                <label>Home Lending</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

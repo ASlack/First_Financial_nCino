@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Funding_Method_Type__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field is automatically set when the user selects a funding method during the New Deposit Workflow. It indicates which Funding Method Type is related to the Funding Method of a deposit account.</description>
+    <externalId>false</externalId>
+    <label>Funding Method Type</label>
+    <referenceTo>LLC_BI__Funding_Method_Type__c</referenceTo>
+    <relationshipLabel>Funding Methods</relationshipLabel>
+    <relationshipName>Funding_Methods</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

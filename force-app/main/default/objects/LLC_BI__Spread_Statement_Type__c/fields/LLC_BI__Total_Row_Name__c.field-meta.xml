@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Total_Row_Name__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is populated through the Salesforce layout. This field allows you to specify the spread statement record total (group total) that &quot;LLC_BI__Balance_Total__c&quot; should be used with.</description>
+    <externalId>false</externalId>
+    <label>Total Row Name</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

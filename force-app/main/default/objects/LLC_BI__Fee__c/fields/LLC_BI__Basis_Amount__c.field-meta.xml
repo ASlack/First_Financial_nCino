@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Basis_Amount__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Administrators populate this field with the basis amount. The system uses this field for percentage fees calculations. By default, it is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the basis amount. The system uses this field for percentage fees calculations.</inlineHelpText>
+    <label>Basis Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

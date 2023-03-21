@@ -1,0 +1,197 @@
+<style>
+
+<!--
+
+ /* Font Definitions */
+
+ @font-face
+
+	{font-family:"Cambria Math";
+
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+
+@font-face
+
+	{font-family:Calibri;
+
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+
+ /* Style Definitions */
+
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+
+	{margin-top:0in;
+
+	margin-right:0in;
+
+	margin-bottom:10.0pt;
+
+	margin-left:0in;
+
+	line-height:115%;
+
+	font-size:11.0pt;
+
+	font-family:"Calibri","sans-serif";}
+
+.MsoChpDefault
+
+	{font-family:"Calibri","sans-serif";}
+
+.MsoPapDefault
+
+	{margin-bottom:10.0pt;
+
+	line-height:115%;}
+
+@page WordSection1
+
+	{size:11.0in 8.5in;
+
+	margin:1.0in 1.0in 1.0in 1.0in;}
+
+div.WordSection1
+
+	{page:WordSection1;}
+
+	table.styled tr { height:14.75pt; }
+	
+	td.head { width:1.95in;border:solid white 1.0pt; border-bottom:solid white 3.0pt;background:#4F81BD;padding:0in 5.4pt 0in 5.4pt; height:14.75pt; color: #FFF; }
+	
+	td.headi { width:1.95in;border:solid white 1.0pt; border-bottom:solid white 3.0pt;background:#4F81BD;padding:0in 5.4pt 0in 20.4pt; height:14.75pt; color: #FFF; }
+	
+	td.row1 { width:130.5pt;border-top:none;border-left:none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt; background:#D3DFEE;padding:0in 5.4pt 0in 5.4pt;height:14.75pt; }
+	
+	td.row2 { width:130.5pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  background:#A7BFDE;padding:0in 5.4pt 0in 5.4pt;height:14.75pt; }
+-->
+
+</style>
+
+<table cellpadding="0" cellspacing="0" border="0" class="styled">
+
+<tr>
+	<td width=187 class="head">Loan Name: </td>
+	<td colspan="2" class="row1">{!Account.LLC_BI__Loan_Name__c} - {!Account.Industry} - {!Account.BillingCity__c}, {!Account.BillingState}</td>
+	<td class="row1">{!Account.LLC_BI__Loan_Numbers__c}</td>
+</tr>
+<tr>
+	<td class="head">Statement Date:</td>
+	<td class="row2">{!LLC_BI__Financial_Report__c.LLC_BI__Statement_Date__c}</td>
+	<td class="head">Reviewed By</td>
+	<td class="row2">{!LLC_BI__Financial_Report__c.LLC_BI__Reviewer__c}</td>
+</tr>
+</table>
+
+<h3>Income Statement Analysis for <i>{!LLC_BI__Financial_Report__c.LLC_BI__Financials_Period__c} months</i></h3>
+<table cellpadding="0" cellspacing="0" border="0" class="styled">
+<tr>
+	<td class="head">Revenue</td>
+	<td class="row1">{!LLC_BI__Financial_Report__c.LLC_BI__Revenue__c}</td>
+</tr>
+<tr>
+		<td class="headi">COGS</td>
+		<td class="row2">{!LLC_BI__Financial_Report__c.LLC_BI__COGS__c}</td>
+</tr>
+<tr>
+		<td class="headi">Staff Labor & Payroll</td>
+		<td class="row1">{!LLC_BI__Financial_Report__c.LLC_BI__Staff_Labor_Payroll__c}</td>
+</tr>
+<tr>
+		<td class="headi">Third Party Rent</td>
+		<td class="row2">{!LLC_BI__Financial_Report__c.LLC_BI__Third_Party_Rent__c}</td>
+</tr>
+<tr>
+		<td class="headi">Other Extraordinary Exp.</td>
+		<td class="row1">{!LLC_BI__Financial_Report__c.LLC_BI__Other_Extraordinary_Expenses__c}</td>
+</tr>
+<tr>
+		<td class="headi">Operating Exp.</td>
+		<td class="row2" class="row1">{!Financial_Report__c.Other_Expenses__c}</td>
+</tr>
+
+<tr>
+	<td class="head">Total Expenses</td>
+	<td class="row1">{!LLC_BI__Financial_Report__c.LLC_BI__Expenses__c}</td>
+</tr>
+
+<tr>
+	<td class="head">Net Income</td>
+	<td class="row2">{!LLC_BI__Financial_Report__c.LLC_BI__Net_Income__c}</td>
+</tr>
+
+</table>
+
+<h3>Addbacks</h3>
+<table cellpadding="0" cellspacing="0" border="0" class="styled">
+<tr>
+	<td class="head">Amortization</td>
+	<td class="row1">{!LLC_BI__Financial_Report__c.LLC_BI__Amortization__c}</td>
+</tr>
+<tr>
+	<td class="head">Depreciation</td>
+	<td class="row2">{!LLC_BI__Financial_Report__c.LLC_BI__Depreciation__c}</td>
+</tr>
+<tr>
+	<td class="head">Interest</td>
+	<td class="row1">{!LLC_BI__Financial_Report__c.LLC_BI__Interest__c}</td>
+</tr>
+<tr>
+	<td class="head">Rent</td>
+	<td class="row2">{!LLC_BI__Financial_Report__c.LLC_BI__Rent__c}</td>
+</tr>
+<tr>
+	<td class="head">Req. Officer Comp</td>
+	<td class="row1">{!LLC_BI__Financial_Report__c.LLC_BI__Officer_Comp__c}</td>
+</tr>
+<tr>
+	<td class="head">Officer Comp. Adj.</td>
+	<td class="row2">{!Financial_Report__c.Officer_Cash_Adjustment__c}</td>
+</tr>
+<tr>
+	<td class="head">Other Non-Cash</td>
+	<td class="row1">{!LLC_BI__Financial_Report__c.LLC_BI__Other_Non_Cash_Charge__c}</td>
+</tr>
+<tr>
+	<td class="head">Comments</td>
+	<td class="row2">{!LLC_BI__Financial_Report__c.LLC_BI__Addback_Comments__c}</td>
+</tr>
+</table>
+
+<h3>Net Operating Income: <span style="font-size: 15px;"><i>{!LLC_BI__Financial_Report__c.LLC_BI__Net_Operating_Income__c} ({!LLC_BI__Financial_Report__c.LLC_BI__Net_Operating_Margin__c}%)</i></span></h3>
+
+<h3>Debt</h3>
+<table cellpadding="0" cellspacing="0" border="0" class="styled">
+<tr>
+	<td class="head">Annual Debt Service</td>
+	<td class="row1">{!LLC_BI__Financial_Report__c.LLC_BI__Annual_Debt_Service__c}</td>
+</tr>
+<tr>
+	<td class="head">Monthly Debt Service</td>
+	<td class="row2">{!LLC_BI__Financial_Report__c.LLC_BI__Monthly_Debt_Service__c}</td>
+</tr>
+<tr>
+	<td class="head">Seller Debt Service</td>
+	<td class="row1">{!LLC_BI__Financial_Report__c.LLC_BI__Seller_Debt_Service__c}</td>
+</tr>
+<tr>
+	<td class="head">DSC (Post OC)</td>
+	<td class="row2">{!LLC_BI__Financial_Report__c.LLC_BI__DSC_Ratio_Post_OC__c}</td>
+</tr>
+</table>
+
+<h3>Balance Detail</h3>
+<table cellpadding="0" cellspacing="0" border="0" class="styled">
+<tr>
+	<td class="head">Cash Balance</td>
+	<td class="row1">{!LLC_BI__Financial_Report__c.LLC_BI__Cash_Balance__c}</td>
+</tr>
+<tr>
+	<td class="head">Accounts Payable Balance</td>
+	<td class="row2">{!LLC_BI__Financial_Report__c.LLC_BI__Current_AP__c}</td>
+</tr>
+</table>
+
+<h3>Comments</h3>
+{!LLC_BI__Financial_Report__c.LLC_BI__Comments__c}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Raw_Valuation_Details__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this required long text field with vehicle detail IDs received from the corresponding vehicle valuations integration.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The system auto-populates this field with vehicle detail IDs received from the corresponding vehicle valuations integration.</inlineHelpText>
+    <label>Raw Valuation Details</label>
+    <length>4000</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>4</visibleLines>
+</CustomField>

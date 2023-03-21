@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__docType__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field is not required, but auto-populates if the placeholder was created from a closing checklist record. This field is equivalent to a category name for groups of placeholder records.</description>
+    <externalId>false</externalId>
+    <label>Category</label>
+    <referenceTo>LLC_BI__DocType__c</referenceTo>
+    <relationshipName>LLC_LoanDocuments</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

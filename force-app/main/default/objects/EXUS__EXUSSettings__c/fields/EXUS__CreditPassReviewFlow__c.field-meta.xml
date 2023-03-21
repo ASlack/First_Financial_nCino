@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EXUS__CreditPassReviewFlow__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This system property contains the name of the Credit Pass Review flow. On installation, administrators enter the API name of the credit pass review flow that they want to use.</description>
+    <externalId>false</externalId>
+    <label>Credit Pass Review Flow</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

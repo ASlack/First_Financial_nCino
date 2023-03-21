@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__HMDA_Combined_LTV__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This is a required field.  This field indicates the percentage, the ratio of the total amount of debt secured by the property to the value of the property relied on in making the credit decision.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Use decimal places only if the ratio relied upon uses decimal places.</inlineHelpText>
+    <label>Combined Loan-to-Value Ratio</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

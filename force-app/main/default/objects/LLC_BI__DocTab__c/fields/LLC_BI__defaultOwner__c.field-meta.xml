@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__defaultOwner__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field allows the user to set a default owner for all documents within this tab in classic Document Manager. This field is optional.</description>
+    <externalId>false</externalId>
+    <label>defaultOwner</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Closer</fullName>
+                <default>false</default>
+                <label>Closer</label>
+            </value>
+            <value>
+                <fullName>Compliance</fullName>
+                <default>false</default>
+                <label>Compliance</label>
+            </value>
+            <value>
+                <fullName>Attorney</fullName>
+                <default>false</default>
+                <label>Attorney</label>
+            </value>
+            <value>
+                <fullName>Construction</fullName>
+                <default>false</default>
+                <label>Construction</label>
+            </value>
+            <value>
+                <fullName>Loan Ops</fullName>
+                <default>false</default>
+                <label>Loan Ops</label>
+            </value>
+            <value>
+                <fullName>Servicing</fullName>
+                <default>false</default>
+                <label>Servicing</label>
+            </value>
+            <value>
+                <fullName>Special Assets</fullName>
+                <default>false</default>
+                <label>Special Assets</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

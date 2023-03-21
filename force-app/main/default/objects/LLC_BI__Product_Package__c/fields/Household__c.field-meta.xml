@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Household__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>This field is a lookup field to pull Household information in and used in forms</description>
+    <externalId>false</externalId>
+    <label>Household</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Product Packages (Household)</relationshipLabel>
+    <relationshipName>Product_Packages</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

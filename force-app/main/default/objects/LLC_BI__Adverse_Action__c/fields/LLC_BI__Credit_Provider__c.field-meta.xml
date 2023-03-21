@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Credit_Provider__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Picklist of option available to the financial institution for the user to select where the credit information for the loan was obtained from.</description>
+    <externalId>false</externalId>
+    <label>Credit Provider</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Equifax</fullName>
+                <default>false</default>
+                <label>Equifax</label>
+            </value>
+            <value>
+                <fullName>Experian</fullName>
+                <default>false</default>
+                <label>Experian</label>
+            </value>
+            <value>
+                <fullName>TransUnion</fullName>
+                <default>false</default>
+                <label>TransUnion</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

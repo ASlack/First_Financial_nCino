@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Is_Header__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This optional field is a manually populated checkbox on the Field Configuration object. By default, it is not selected. When selected, it will display the field&apos;s value next to the object name in the snapshot.</description>
+    <externalId>false</externalId>
+    <label>Is Header</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

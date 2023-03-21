@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>A Lightning Message Service Message Channel intended for communication with the nCino UI built with Lightning Web Components.</description>
+    <isExposed>true</isExposed>
+    <masterLabel>nCino UI Framework Message Channel</masterLabel>
+</LightningMessageChannel>

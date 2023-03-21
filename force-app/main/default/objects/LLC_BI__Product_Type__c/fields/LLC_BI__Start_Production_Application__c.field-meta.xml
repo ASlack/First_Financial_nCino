@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Start_Production_Application__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Administrators populate this optional text field to define the group or route to which the system directs the user after the user selects a product type. The system only uses the app or route defined in this field on the initial creation of the new loan or product. By default, it is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>When the user selects a product type, the system redirects them to the app or route name entered here.</inlineHelpText>
+    <label>Start Product Application</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Question__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field is not required and is automatically populated when answering a question in the questionnaire. This field associates the selected answer to the question in the questionnaire.</description>
+    <externalId>false</externalId>
+    <label>Question</label>
+    <referenceTo>nFORCE__Question__c</referenceTo>
+    <relationshipLabel>Answers</relationshipLabel>
+    <relationshipName>Answers</relationshipName>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

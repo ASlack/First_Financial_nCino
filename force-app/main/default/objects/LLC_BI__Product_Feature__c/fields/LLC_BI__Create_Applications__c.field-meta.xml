@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Create_Applications__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is manually selected. When enabled an application record will be created for products which have this product feature. When disabled, an application record will not be created for products with this feature. By default, it is disabled.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check to enable application record creation for products.</inlineHelpText>
+    <label>Create Applications</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

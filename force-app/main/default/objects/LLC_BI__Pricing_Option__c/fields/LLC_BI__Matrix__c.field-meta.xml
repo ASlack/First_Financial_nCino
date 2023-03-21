@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Matrix__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this lookup field that references the Matrix field in context. This field acts as an audit for the Matrix that determines the Pricing Option offers for the borrower.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The system automatically enters the audit lookup.</inlineHelpText>
+    <label>Matrix</label>
+    <referenceTo>LLC_BI__Matrix__c</referenceTo>
+    <relationshipLabel>Pricing Options</relationshipLabel>
+    <relationshipName>Pricing_Options</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

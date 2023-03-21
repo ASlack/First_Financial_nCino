@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCOC__StandardDisclosure__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Standard Disclosure for credit bureau</description>
+    <externalId>false</externalId>
+    <label>Standard Disclosure</label>
+    <length>2000</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

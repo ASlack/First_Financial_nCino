@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Cost_of_Deposit_Capital__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The approximate annual cost of capital represented as a percentage of the dollar amount kept in reserves for a deposit product.</description>
+    <externalId>false</externalId>
+    <label>Cost of Deposit Capital</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>8</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

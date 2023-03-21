@@ -1,0 +1,17 @@
+<apex:page controller="NDOC.StaticResourceRegistryController"
+	showHeader="false" sidebar="false">
+	
+	<c:UniversalDocManDataService includeProductPackageDocMan="true"/>
+	<c:UniversalDocManIncludes />
+	<c:UniversalDocManRoutes />
+	<c:UniversalDocMan />
+	
+	<apex:repeat value="{!staticResourceScripts}" var="script">
+		<apex:includeScript value="{!script}" />
+	</apex:repeat>
+
+	<script>
+		var app = angular.module('app');
+		app.requires.push('docman.decorators');
+	</script>
+</apex:page>

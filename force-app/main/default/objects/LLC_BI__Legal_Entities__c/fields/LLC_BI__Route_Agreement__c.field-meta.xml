@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Route_Agreement__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this optional lookup field with the route agreement id associated with the legal entity.</description>
+    <externalId>false</externalId>
+    <label>Route Agreement</label>
+    <referenceTo>nFORCE__Route_Agreement__c</referenceTo>
+    <relationshipLabel>Entity Involvements</relationshipLabel>
+    <relationshipName>Legal_Entities</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

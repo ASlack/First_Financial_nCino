@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__MemoCategoryMaturityDate</fullName>
+    <description>The field set determines the fields that display on the Memo when you select the Maturity Date Change field.</description>
+    <displayedFields>
+        <field>LLC_BI__Maturity_Date__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>MemoCategoryMaturityDate</label>
+</FieldSet>

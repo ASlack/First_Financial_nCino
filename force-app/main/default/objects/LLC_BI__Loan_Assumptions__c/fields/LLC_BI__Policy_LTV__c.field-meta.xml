@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Policy_LTV__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The value entered in this input field is linked to a row on the NOI statement that is used in a group to calculate the maximum loan amount.</description>
+    <externalId>false</externalId>
+    <label>Policy LTV (%)</label>
+    <precision>16</precision>
+    <required>false</required>
+    <scale>8</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

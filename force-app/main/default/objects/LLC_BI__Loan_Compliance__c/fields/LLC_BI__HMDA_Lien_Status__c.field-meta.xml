@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__HMDA_Lien_Status__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This is a required field.  This field indicates whether the property is a first or subordinate lien.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>For every originated loan or application, report whether the loan is secured by a first or subordinate lien on a dwelling or is not secured by a dwelling.</inlineHelpText>
+    <label>Lien Status</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1</fullName>
+                <default>false</default>
+                <label>1</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>2</label>
+            </value>
+            <value>
+                <fullName>3</fullName>
+                <default>false</default>
+                <label>3</label>
+            </value>
+            <value>
+                <fullName>4</fullName>
+                <default>false</default>
+                <label>4</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

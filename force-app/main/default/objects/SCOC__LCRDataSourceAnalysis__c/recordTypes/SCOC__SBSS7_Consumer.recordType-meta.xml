@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCOC__SBSS7_Consumer</fullName>
+    <active>true</active>
+    <description>Choose SBSS7 - Consumer if you want this record to represent a consumer entity.</description>
+    <label>SBSS7 - Consumer</label>
+    <picklistValues>
+        <picklist>SCOC__Code__c</picklist>
+        <values>
+            <fullName>EFU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>XPN</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

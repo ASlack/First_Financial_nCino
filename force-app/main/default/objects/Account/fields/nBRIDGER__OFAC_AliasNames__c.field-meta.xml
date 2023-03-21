@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nBRIDGER__OFAC_AliasNames__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Contains a list of alternative names for the OFAC search.  May include, DBA names or Alias.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter Aliases, DBA Names, etc.  One per line.</inlineHelpText>
+    <label>Alias or DBA Names</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>LongTextArea</type>
+    <visibleLines>5</visibleLines>
+</CustomField>

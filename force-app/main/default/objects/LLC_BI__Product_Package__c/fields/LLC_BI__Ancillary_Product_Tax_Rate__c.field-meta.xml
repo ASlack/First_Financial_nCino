@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Ancillary_Product_Tax_Rate__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The approximate tax rate to apply to the revenue of new deposits in the deal an FI originates outside of nCino. By default, it is 21.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The approximate tax rate to apply to the revenue of new deposits in the deal an FI originates outside of nCino.</inlineHelpText>
+    <label>Deposit Tax Rate</label>
+    <precision>11</precision>
+    <required>false</required>
+    <scale>8</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

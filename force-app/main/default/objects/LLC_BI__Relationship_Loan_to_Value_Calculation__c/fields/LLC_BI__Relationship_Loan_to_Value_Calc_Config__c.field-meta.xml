@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Relationship_Loan_to_Value_Calc_Config__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this optional lookup field with the name of the configuration record where the calculation data is entered. By default, it is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This system-populated field displays the name of the configuration record where the calculation data is entered.</inlineHelpText>
+    <label>Relationship Loan to Value Calc Config</label>
+    <referenceTo>LLC_BI__Relationship_Loan_to_Value_Calc_Config__c</referenceTo>
+    <relationshipLabel>Relationship Loan to Value Calculations</relationshipLabel>
+    <relationshipName>Relationship_Loan_to_Value_Calculations</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

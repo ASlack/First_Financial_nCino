@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Data_Source__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Data Source will be &quot;Salesforce Org&quot; for analytics as all data comes from child orgs.  The Data Store object, however, is generic enough to hold data from additional sources such as the FDIC.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Data Source will be &quot;Salesforce Org&quot; for analytics as all data comes from child orgs.  The Data Store object, however, is generic enough to hold data from additional sources such as the FDIC.</inlineHelpText>
+    <label>Data Source</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Salesforce Org</fullName>
+                <default>true</default>
+                <label>Salesforce Org</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCOC__StartBalanceSuppressed__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Start Balance Suppressed</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Start BalanceSuppressed</inlineHelpText>
+    <label>Start Balance Suppressed</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

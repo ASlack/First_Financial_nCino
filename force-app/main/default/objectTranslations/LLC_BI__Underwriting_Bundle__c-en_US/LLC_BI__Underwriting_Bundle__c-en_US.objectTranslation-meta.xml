@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label></label>
+        <name>LLC_BI__Bundle_ID</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>LLC_BI__Upgradeable_Fields</name>
+    </fieldSets>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>LLC_BI__Date_Range_Must_Be_Valid</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>LLC_BI__Template_Cannot_Have_Relationship</name>
+    </validationRules>
+    <webLinks>
+        <label></label>
+        <name>nCRED__ConvertBundleToTemplate</name>
+    </webLinks>
+</CustomObjectTranslation>

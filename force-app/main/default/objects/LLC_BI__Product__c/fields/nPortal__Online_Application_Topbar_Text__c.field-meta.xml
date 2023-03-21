@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nPortal__Online_Application_Topbar_Text__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Populate this field with header text that appears in the topbar for online applications for this product. This field is optional but recommended. If left blank, the default topbar text is displayed instead.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the text you would like to display in the topbar in Online Applications for this product. If left blank, the default topbar text will be displayed.</inlineHelpText>
+    <label>Online Application Topbar Text</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

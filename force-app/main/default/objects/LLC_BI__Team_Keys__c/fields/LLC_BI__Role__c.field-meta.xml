@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Role__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field is deprecated.  Role__c has been replaced with the Team_Key_Role__c object.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field is deprecated.  Role has been replaced with Team Key Roles.</inlineHelpText>
+    <label>-D Role</label>
+    <referenceTo>LLC_BI__Role__c</referenceTo>
+    <relationshipLabel>-D Team Keys</relationshipLabel>
+    <relationshipName>Team_Key</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

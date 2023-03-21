@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label></label>
+        <name>SIOC__Financial_Account_Information_Load_Test</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>SIOC__Verified_Accounts_Picklist</name>
+    </fieldSets>
+</CustomObjectTranslation>

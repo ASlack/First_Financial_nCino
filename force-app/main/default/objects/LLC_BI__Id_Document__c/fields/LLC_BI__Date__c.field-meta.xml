@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Date__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. The user manually populates this field. It represents the date of the Id document. The date that it represents is open to interpretation by the financial institution. Note that there is already an issue date and expiration date field, so this field can be used for another type of date.</description>
+    <externalId>false</externalId>
+    <label>Date</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

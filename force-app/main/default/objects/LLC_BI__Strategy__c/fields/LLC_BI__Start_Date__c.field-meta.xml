@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Start_Date__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Users populate this required field with the date on which this pricing strategy becomes active. If there is an active strategy for the selected products, the system automatically populates this field with the end date of the active strategy.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the date on which this pricing strategy becomes active. If an active strategy exists for the selected products, you must use the end date of the active strategy.</inlineHelpText>
+    <label>Start Date</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

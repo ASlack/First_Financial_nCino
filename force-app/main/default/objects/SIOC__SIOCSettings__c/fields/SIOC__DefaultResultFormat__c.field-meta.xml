@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SIOC__DefaultResultFormat__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The Administrator populates this optional text field with the format string used to display the list of company search results. This is used only for the SIOC Default provider.</description>
+    <externalId>false</externalId>
+    <label>Default Result List Format</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

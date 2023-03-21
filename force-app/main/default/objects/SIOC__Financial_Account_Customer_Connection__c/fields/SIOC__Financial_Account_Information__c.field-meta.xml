@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SIOC__Financial_Account_Information__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this lookup field with the Financial Account Information record ID.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The system-populated field displays the Financial Account Information.</inlineHelpText>
+    <label>Financial Account Information</label>
+    <referenceTo>SIOC__Financial_Account_Information__c</referenceTo>
+    <relationshipLabel>Financial Account Customer Connections</relationshipLabel>
+    <relationshipName>Financial_Account_Customer_Connections</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

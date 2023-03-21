@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Approved_By__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field is optional and only used in classic Doc Man. It is a lookup to the user who approved this document in classic Relationship Document Manager.</description>
+    <externalId>false</externalId>
+    <label>approvedBy</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Documents</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

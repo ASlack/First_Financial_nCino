@@ -1,0 +1,34 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" applyHtmlTag="false" standardStylesheets="false"  standardController="Account">
+	<head>
+		<meta charset="utf-8" />
+		<title>Customer Information</title>
+		<base href="/" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<nFORCE:Include_Design_System components="true" />
+		<nFORCE:Includes enableLifeCycleApp="true" enableBS3Namespace="true" />
+		<apex:stylesheet value="{!URLFOR($Resource.LLC_BI__customer_information, 'styles.css')}" />
+		<apex:slds />
+
+		<c:Include_AngularJS />
+
+		<!-- nFORCE Dependencies -->
+		<nFORCE:Include_Navigator />
+		<nFORCE:ncDataProvidersIncludes />
+		<nFORCE:ncScreenSectionFormBuilderIncludes />
+		<nFORCE:MessageHandler messageConfig="LifeCycle.MessageHandler.Configurations.ErrorMessage" />
+	</head>
+	<body>
+		<div class="force slds slds-scope">
+			<customer-information-app></customer-information-app>
+		</div>
+
+		<script defer="defer" type="application/javascript" src="{!URLFOR($Resource.nforce__navigator, 'lib/navigator-visualforce.js')}"></script>
+
+		<c:CustomerInformationConfiguration />
+		<!-- Customer Information angular App -->
+		<script type="application/javascript" src="{!URLFOR($Resource.customer_information, 'runtime.js')}"></script>
+		<script type="application/javascript" src="{!URLFOR($Resource.customer_information, 'polyfills.js')}"></script>
+		<script type="application/javascript" src="{!URLFOR($Resource.customer_information, 'main.js')}"></script>
+	</body>
+</apex:page>

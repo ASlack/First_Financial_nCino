@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nPortal__Online_Application_Topbar_Fieldset__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Use this field to manually populate the name of the field set used to display a summary of information about this product in the Online Application topbar. This field set must be created during implementation time. This replaces the default field set with a field set specifically for that product&apos;s online application.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the name of the existing field set that should be used to render a summary of this product in the Online Applications topbar. If one is not entered, the default field set will be used.</inlineHelpText>
+    <label>Online Application Topbar Fieldset</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

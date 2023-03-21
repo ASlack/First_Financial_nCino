@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__HMDA_Property_Securing_State__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This is a required field.  This field indicates the State of the property securing the loan (or proposed to secure a loan)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If the address of the property is unknown, please enter &apos;NA&apos;.</inlineHelpText>
+    <label>Property Securing State</label>
+    <length>2</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

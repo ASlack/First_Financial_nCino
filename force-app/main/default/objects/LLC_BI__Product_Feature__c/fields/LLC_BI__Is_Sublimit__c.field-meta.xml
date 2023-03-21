@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Is_Sublimit__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is manually selected. When enabled, it specifies a product feature that specifies a product as a Sublimit (the 3rd level in a multi-tier loan structure, under Limit). This information is used to determine how to display product hierarchies visually. When disabled, it is not used. By default, it is disabled.</description>
+    <externalId>false</externalId>
+    <label>Is Sub Limit</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

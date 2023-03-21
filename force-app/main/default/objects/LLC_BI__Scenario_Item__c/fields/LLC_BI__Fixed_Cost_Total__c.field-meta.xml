@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Fixed_Cost_Total__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is automatically calculated via formula. It stores the total fixed unit cost value by volume number for a bill point.</description>
+    <externalId>false</externalId>
+    <formula>IF(LLC_BI__Volumes__c &gt;0, LLC_BI__Volumes__c * LLC_BI__Bill_Point__r.LLC_BI__Fixed_Unit_Cost__c, 0)</formula>
+    <label>Fixed Cost</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

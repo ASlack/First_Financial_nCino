@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__New_Amount__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This currency field is used to specify a new amount. It is an optional and manually entered field. If applicable, it is the amount that is being proposed by the loan modification.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If applicable, please enter newly proposed amount</inlineHelpText>
+    <label>New Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

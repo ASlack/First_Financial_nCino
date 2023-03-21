@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__CreateCollateralTypeScreen</fullName>
+    <availability>online</availability>
+    <description>Create duplicate of default collateral type screen and associate it with the Collateral Type record.</description>
+    <displayType>button</displayType>
+    <height>600</height>
+    <linkType>page</linkType>
+    <masterLabel>Create Collateral Type Screen</masterLabel>
+    <openType>sidebar</openType>
+    <page>LLC_BI__CreateCollateralTypeScreen</page>
+    <protected>false</protected>
+</WebLink>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Risk_Grade_Template__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is required. It is populated automatically when creating a grisk grade group from a risk grade template.  This field specifies the risk grade template associated with the risk grade group.</description>
+    <externalId>false</externalId>
+    <label>Risk Grade Template</label>
+    <referenceTo>LLC_BI__Risk_Grade_Template__c</referenceTo>
+    <relationshipLabel>Risk Grade Groups</relationshipLabel>
+    <relationshipName>Risk_Grade_Groups</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

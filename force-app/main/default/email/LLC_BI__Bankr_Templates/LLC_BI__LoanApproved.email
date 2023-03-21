@@ -1,0 +1,9 @@
+This loan has been approved and is now in the Processing stage. 
+
+Click here for full loan details: {!LLC_BI__Loan__c.Link} 
+
+Approved by: {!ApprovalRequest.Process_Approver} 
+
+Comments: 
+
+{!ApprovalRequest.Comments}

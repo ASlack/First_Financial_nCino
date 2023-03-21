@@ -1,0 +1,7 @@
+<apex:page controller="nFORCE.RouteController" standardStylesheets="false" showHeader="false" sideBar="false">
+	<apex:composition template="nFORCE__BodyContainerTemplate">
+		<apex:define name="body">
+			<apex:include id="route-body" pageName="{!route.Body__c}" />
+		</apex:define>
+	</apex:composition>
+</apex:page>

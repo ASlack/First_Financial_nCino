@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Outstanding__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This currency field is an option and manually entered field. It is used to show the amount of money&quot; in use&quot;  for the Product Package. This field can also be configured to be populated with field mapping from the customers core.</description>
+    <externalId>false</externalId>
+    <label>Outstanding</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

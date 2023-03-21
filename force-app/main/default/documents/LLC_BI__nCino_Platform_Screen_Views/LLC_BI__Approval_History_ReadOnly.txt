@@ -1,0 +1,24 @@
+<table class="table">
+    <tr>
+        <th>Date</th>
+        <th>Assigned To</th>
+        <th>Actual Approver</th>
+        <th>Status</th>
+        <th>Comments</th>
+    </tr>
+    <!-- ko foreach: approvalHistory -->
+    	<!-- ko foreach: steps -->
+    		<tr>
+		        <td data-bind="dateText: theDate" />
+		        <td>
+					<span data-bind="text: originalActor.name" />
+		        </td>
+		        <td>
+					<span data-bind="text: assignedActor.name" /> 
+		        </td>
+		        <td data-bind="text: status" />
+		        <td data-bind="text: comments" />
+		    </tr>
+    	<!-- /ko -->
+    <!-- /ko -->
+</table>

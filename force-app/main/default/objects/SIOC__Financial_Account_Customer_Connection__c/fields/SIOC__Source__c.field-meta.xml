@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SIOC__Source__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this picklist field with the account verification method or vendor.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The system-populated field displays the method or vendor for account verification.</inlineHelpText>
+    <label>Source</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Unspecified</fullName>
+                <default>false</default>
+                <label>Unspecified</label>
+            </value>
+            <value>
+                <fullName>Data Load</fullName>
+                <default>false</default>
+                <label>Data Load</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

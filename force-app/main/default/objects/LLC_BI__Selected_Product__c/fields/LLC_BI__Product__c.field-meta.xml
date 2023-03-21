@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Product__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This associates an object to a product if that product was selected for a conversion</description>
+    <externalId>false</externalId>
+    <label>Product</label>
+    <referenceTo>LLC_BI__Product__c</referenceTo>
+    <relationshipLabel>Selected_Product</relationshipLabel>
+    <relationshipName>Selected_Product</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

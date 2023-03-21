@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Financial_Indicator_Value__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is manually populated. The value that&apos;s being confirmed with the financial indicator covenant. IE: DSC of  at least 1.25</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The value that&apos;s being confirmed with the financial indicator covenant. IE: DSC of  at least 1.25</inlineHelpText>
+    <label>Financial Indicator Value</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>3</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

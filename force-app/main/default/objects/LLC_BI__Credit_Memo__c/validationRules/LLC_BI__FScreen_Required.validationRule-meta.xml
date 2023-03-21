@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__FScreen_Required</fullName>
+    <active>false</active>
+    <description>FScreen is required.</description>
+    <errorConditionFormula>ISBLANK( LLC_BI__FScreen__c )</errorConditionFormula>
+    <errorMessage>FScreen is required.</errorMessage>
+</ValidationRule>

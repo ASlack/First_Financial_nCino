@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reg_W</fullName>
+    <description>Reg W Compliance info</description>
+    <displayedFields>
+        <field>Reg_W_Reportable__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Reg W</label>
+</FieldSet>

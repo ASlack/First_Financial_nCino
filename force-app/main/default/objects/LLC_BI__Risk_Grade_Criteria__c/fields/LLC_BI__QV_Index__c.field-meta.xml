@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__QV_Index__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is set by an administrator. The qualitative value for qualitative records or NULL if the criteria is quantitative. Enhances performance when selecting out criteria.</description>
+    <externalId>true</externalId>
+    <label>QV_Index</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

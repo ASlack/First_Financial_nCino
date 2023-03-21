@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Controlling_Feature_Name__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is conditionally required. Either the controlling feature name or the controlling feature lookup field must be specified. The field contains the name of the controlling feature. It is recommend that this field is used instead of the controlling feature field.</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Controlling Feature Name</label>
+    <length>40</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

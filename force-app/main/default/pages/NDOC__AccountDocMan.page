@@ -1,0 +1,5 @@
+<apex:page standardController="Account">
+	<div data-taxonomy-id="AccountDocMan">
+		<apex:include pageName="NDOC__UniversalDocMan"/>
+	</div>
+</apex:page>

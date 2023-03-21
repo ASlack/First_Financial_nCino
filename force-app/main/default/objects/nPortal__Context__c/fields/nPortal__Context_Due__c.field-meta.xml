@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nPortal__Context_Due__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field tracks the date and time by which a user must complete their application requirements to avoid expiration.</description>
+    <externalId>false</externalId>
+    <label>Context Due</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Fee_Type_Description__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field only appears when the fee type of &quot;other&quot; is selected. It is a free form text box that allows the user to enter in a description for the fee being applied to the loan.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>When the fee type is other this field is a describes the fee type.</inlineHelpText>
+    <label>Fee Type Description</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

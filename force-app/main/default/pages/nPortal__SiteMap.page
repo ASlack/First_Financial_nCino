@@ -1,0 +1,41 @@
+<apex:page docType="html-5.0"
+	showHeader="false"
+	sidebar="false"
+	standardStylesheets="false"
+	applyHtmlTag="false"
+	applyBodyTag="false">
+
+	<html class="portal-html" lang="en">
+		<head>
+			<title>{!$Label.Site_Map_Title} | {!$Label.Financial_Institution_Name_Title}</title>
+			<meta charset="utf-8" />
+			<meta name="viewport" content="width=device-width, initial-scale=1" />
+			<apex:include pageName="nPortal__PortalIncludes" />
+			<c:PasswordDataService />
+			<c:LanguageDataService />
+			<c:PortalUserService />
+			<c:PortalConfiguration />
+		</head>
+		<body class="portal-body slds has-nstyle" ng-app="customerPortalApp">
+			<portal-loader slds-path="{!URLFOR($Resource.nFORCE__SLDS0102)}"></portal-loader>
+			<portal-message slds-path="{!URLFOR($Resource.nFORCE__SLDS0102)}"></portal-message>
+			<div class="portal-wrapper-full portal-inline">
+				<div class="slds-grid slds-wrap">
+					<div class="portal-wrapper slds-size--1-of-1">
+						<c:PortalHeader />
+					</div>
+				</div>
+				<div id="main-content"
+					tabindex="-1"
+					class="portal-center-column slds-size--1-of-1
+					slds-medium-size--3-of-4 slds-large-size--2-of-4"
+					role="main">
+					<c:ltngSiteMap /> 
+					<security-badges></security-badges>
+					<c:SecurityBadgeDataService />
+				</div>
+			</div>
+			<c:PortalFooter />
+		</body>
+	</html>
+</apex:page>

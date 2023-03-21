@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Email_Template_Purpose__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The data installer autopopulates this picklist field with the action or purpose the email template accomplishes. This enables the system to send the email template at the correct time. Best practice is to avoid manual edits to the field value.</description>
+    <externalId>false</externalId>
+    <label>Email Template Purpose</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Account Document Assigned - Bulk</fullName>
+                <default>false</default>
+                <label>Account Document Assigned - Bulk</label>
+            </value>
+            <value>
+                <fullName>Account Document Rejected</fullName>
+                <default>false</default>
+                <label>Account Document Rejected</label>
+            </value>
+            <value>
+                <fullName>Borrower Added (Existing)</fullName>
+                <default>false</default>
+                <label>Borrower Added (Existing)</label>
+            </value>
+            <value>
+                <fullName>Borrower Added (New)</fullName>
+                <default>false</default>
+                <label>Borrower Added (New)</label>
+            </value>
+            <value>
+                <fullName>Co-Owner Added (Existing)</fullName>
+                <default>false</default>
+                <label>Co-Owner Added (Existing)</label>
+            </value>
+            <value>
+                <fullName>Co-Owner Added (New)</fullName>
+                <default>false</default>
+                <label>Co-Owner Added (New)</label>
+            </value>
+            <value>
+                <fullName>Deposit Documents Assigned</fullName>
+                <default>false</default>
+                <label>Deposit Documents Assigned</label>
+            </value>
+            <value>
+                <fullName>Deposit Document Rejected</fullName>
+                <default>false</default>
+                <label>Deposit Document Rejected</label>
+            </value>
+            <value>
+                <fullName>Guarantor Added (Existing)</fullName>
+                <default>false</default>
+                <label>Guarantor Added (Existing)</label>
+            </value>
+            <value>
+                <fullName>Guarantor Added (New)</fullName>
+                <default>false</default>
+                <label>Guarantor Added (New)</label>
+            </value>
+            <value>
+                <fullName>Loan Document Assigned Email - Bulk</fullName>
+                <default>false</default>
+                <label>Loan Document Assigned Email - Bulk</label>
+            </value>
+            <value>
+                <fullName>Loan Document Rejected Email</fullName>
+                <default>false</default>
+                <label>Loan Document Rejected Email</label>
+            </value>
+            <value>
+                <fullName>Save and Continue</fullName>
+                <default>false</default>
+                <label>Save and Continue</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

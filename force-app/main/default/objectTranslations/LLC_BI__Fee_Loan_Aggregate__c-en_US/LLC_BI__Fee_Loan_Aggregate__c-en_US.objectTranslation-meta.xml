@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label></label>
+        <name>LLC_BI__Enhanced_Fee_Loan_Aggregate_Summary</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>LLC_BI__Pricing_Option_Fee_Aggregate_Summary</name>
+    </fieldSets>
+</CustomObjectTranslation>

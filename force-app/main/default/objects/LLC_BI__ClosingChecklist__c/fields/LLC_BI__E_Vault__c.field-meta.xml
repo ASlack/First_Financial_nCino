@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__E_Vault__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Administrators select this optional boolean field to send a specific document manager closing checklist placeholder for e-vault. By default, it is false. This field only displays when the OneSpan or E-Signature plugin is active.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select this field to flag the e-vault placeholder as to-send.</inlineHelpText>
+    <label>E-Vault Placeholder</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

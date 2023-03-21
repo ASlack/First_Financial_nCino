@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Held_By__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional and manually populated. Use this field to specify who holds ownership of the Collateral being used to secure a loan.</description>
+    <externalId>false</externalId>
+    <label>Held By</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>Lender</fullName>
+                <default>false</default>
+                <label>Lender</label>
+            </value>
+            <value>
+                <fullName>Other Holder</fullName>
+                <default>false</default>
+                <label>Other Holder</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

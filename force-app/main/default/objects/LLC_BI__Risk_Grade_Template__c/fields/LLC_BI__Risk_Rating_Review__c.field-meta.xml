@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Risk_Rating_Review__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field is optional. This field is populated automatically whenever the user creates a risk rating review from the loan or relationship. This field specifies the Annual Review (Risk Rating Review) associated with the Risk Grade Template. If this field is blank, then the Risk Grade Template is treated as a template by the system, and can be used to create future risk rating reviews.</description>
+    <externalId>false</externalId>
+    <label>Risk Rating Review</label>
+    <referenceTo>LLC_BI__Annual_Review__c</referenceTo>
+    <relationshipLabel>Risk Grade Template</relationshipLabel>
+    <relationshipName>Risk_Grade_Template</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

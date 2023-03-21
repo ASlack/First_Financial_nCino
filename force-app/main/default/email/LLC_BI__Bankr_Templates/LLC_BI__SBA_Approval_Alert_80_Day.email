@@ -1,0 +1,9 @@
+SBA Authorization Expiring in 10 Days for {!LLC_BI__Loan__c.Name}
+Loan Name:
+{!LLC_BI__Loan__c.Name}
+Account Name (dba):
+{!LLC_BI__Loan__c.LLC_BI__Account__c}
+SBA Auth Date:
+{!LLC_BI__Loan__c.LLC_BI__Authorization_Date__c}
+Senior Loan Officer:
+{!LLC_BI__Loan__c.OwnerFullName}

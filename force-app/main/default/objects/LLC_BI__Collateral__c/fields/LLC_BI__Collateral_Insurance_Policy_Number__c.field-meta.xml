@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Collateral_Insurance_Policy_Number__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional and manually populated. Use this field to specify the insurance policy number for the collateral.</description>
+    <externalId>false</externalId>
+    <label>Collateral Insurance Policy Number</label>
+    <length>80</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

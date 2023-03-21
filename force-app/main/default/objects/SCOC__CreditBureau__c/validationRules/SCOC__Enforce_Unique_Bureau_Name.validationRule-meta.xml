@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCOC__Enforce_Unique_Bureau_Name</fullName>
+    <active>true</active>
+    <description>Enforces unique names for the bureaus</description>
+    <errorConditionFormula>Id != VLOOKUP($ObjectType.SCOC__CreditBureau__c.Fields.Id, $ObjectType.SCOC__CreditBureau__c.Fields.Name, Name)</errorConditionFormula>
+    <errorMessage>A record already exists with the name you attempted to add.</errorMessage>
+</ValidationRule>

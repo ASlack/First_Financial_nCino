@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Failure_Message__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Administrators populate this rich text field with a &apos;failure&apos; message to display to a user upon failure funding of this funding method type.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter a failure message for users that unsuccessfully fund their account.</inlineHelpText>
+    <label>Failure Message</label>
+    <length>131072</length>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

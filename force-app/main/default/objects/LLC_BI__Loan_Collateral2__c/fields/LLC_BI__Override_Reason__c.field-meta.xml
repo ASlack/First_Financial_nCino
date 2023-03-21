@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Override_Reason__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional and user input. The reason for overriding the Advance Rate. This is required if the Advance Rate has been overridden. User updated.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The reason for overriding the Advance Rate. This is required if the Advance Rate has been overridden.</inlineHelpText>
+    <label>Override Reason</label>
+    <length>32768</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>4</visibleLines>
+</CustomField>

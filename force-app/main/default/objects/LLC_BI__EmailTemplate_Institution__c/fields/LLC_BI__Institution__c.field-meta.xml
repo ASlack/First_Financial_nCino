@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Institution__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Use this lookup field to select the institution for which you are selecting email templates.</description>
+    <externalId>false</externalId>
+    <label>Institution</label>
+    <referenceTo>LLC_BI__Institution__c</referenceTo>
+    <relationshipLabel>Institutions</relationshipLabel>
+    <relationshipName>Institutions</relationshipName>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

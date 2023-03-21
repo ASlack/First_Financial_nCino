@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Days_Until_Next_Evaluation__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is automatically calculated. Number of days until the Next Evaluation Date. If Today is not before the next evaluation date, then this returns 0.</description>
+    <externalId>false</externalId>
+    <formula>IF( ISNULL(LLC_BI__Next_Evaluation_Date__c) || (LLC_BI__Next_Evaluation_Date__c - Today() &lt; 0) , Null, (LLC_BI__Next_Evaluation_Date__c - Today()))</formula>
+    <inlineHelpText>Number of days until the Next Evaluation Date.</inlineHelpText>
+    <label>Days Until Next Evaluation</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

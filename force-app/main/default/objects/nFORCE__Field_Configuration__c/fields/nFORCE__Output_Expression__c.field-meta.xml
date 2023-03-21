@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Output_Expression__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Use Output Expression to provide an expression that specifies the format of text displayed in a read-only view.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter a formatting expression for displaying the value of this field as text.</inlineHelpText>
+    <label>Output Expression</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

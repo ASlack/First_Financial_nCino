@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Adjustment_Reason__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Users populate this required field with the reason for the rate adjustment. By default, it is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the reason for the rate adjustment.</inlineHelpText>
+    <label>Adjustment Reason</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Competitive Adjustment</fullName>
+                <default>false</default>
+                <label>Competitive Adjustment</label>
+            </value>
+            <value>
+                <fullName>Additional Cross Product Sell</fullName>
+                <default>false</default>
+                <label>Additional Cross Product Sell</label>
+            </value>
+            <value>
+                <fullName>Customer Loyalty</fullName>
+                <default>false</default>
+                <label>Customer Loyalty</label>
+            </value>
+            <value>
+                <fullName>Market Adjustment</fullName>
+                <default>false</default>
+                <label>Market Adjustment</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

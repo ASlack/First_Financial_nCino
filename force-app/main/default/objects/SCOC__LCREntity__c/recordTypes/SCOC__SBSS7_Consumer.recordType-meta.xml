@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCOC__SBSS7_Consumer</fullName>
+    <active>true</active>
+    <description>Choose SBSS7 - Consumer if you want this record to represent a consumer entity.</description>
+    <label>SBSS7 - Consumer</label>
+    <picklistValues>
+        <picklist>SCOC__PrincipalReportId__c</picklist>
+        <values>
+            <fullName>RPTID01</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RPTID02</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RPTID03</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RPTID04</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RPTID05</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RPTID06</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

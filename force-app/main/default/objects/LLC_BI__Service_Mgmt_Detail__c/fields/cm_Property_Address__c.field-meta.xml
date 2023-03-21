@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cm_Property_Address__c</fullName>
+    <description>This field is optional and specifies the subject property&apos;s address. It is automatically populated with the Property Address populated on the Collateral Mgmt record associated to the Service Mgmt.</description>
+    <externalId>false</externalId>
+    <formula>LLC_BI__Service_Mgmt__r.LLC_BI__Collateral__r.LLC_BI__Street_Address__c&amp;&apos; &apos;&amp; LLC_BI__Service_Mgmt__r.LLC_BI__Collateral__r.LLC_BI__City__c&amp;&quot;, &quot;&amp;TEXT(LLC_BI__Service_Mgmt__r.LLC_BI__Collateral__r.LLC_BI__State__c)&amp;&apos; &apos;&amp;LLC_BI__Service_Mgmt__r.LLC_BI__Collateral__r.LLC_BI__Zip_Code__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>This field is optional and specifies the subject property&apos;s address. It is automatically populated with the Property Address populated on the Collateral Mgmt record associated to the Service Mgmt.</inlineHelpText>
+    <label>Property Address</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

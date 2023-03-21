@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCOC__RevolvingAvailablePartialFlag__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field evaluates to false if all tradelines are included in monthly payment amount.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field evaluates to false if all tradelines are included in monthly payment amount.</inlineHelpText>
+    <label>Revolving Available Partial Flag</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

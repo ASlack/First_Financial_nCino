@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>nCino Integration Dashboard</description>
+    <flexiPage>EFPIO__nCino_Integration_Dashboard</flexiPage>
+    <label>nCino Integration Dashboard</label>
+    <motif>Custom67: Gears</motif>
+</CustomTab>

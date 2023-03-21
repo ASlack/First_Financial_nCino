@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cm_Method_of_Doc_Prep__c</fullName>
+    <description>Tracks method of document preparation. Added for the commercial accelerate project.</description>
+    <externalId>false</externalId>
+    <label>Method of Doc Prep</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Attorney Prepared</fullName>
+                <default>false</default>
+                <label>Attorney Prepared</label>
+            </value>
+            <value>
+                <fullName>Internally Prepared</fullName>
+                <default>false</default>
+                <label>Internally Prepared</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

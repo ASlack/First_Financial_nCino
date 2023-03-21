@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Section_Resource__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is required. It is manually populated. This field specifies how the screen section obtains the data to be displayed. The values SObjectScreenResource and ConfiguredSObjectScreenResource use coded screen resources to display data. The values MappedSObjectScreenResource, MappedSObjectHierarchyScreenResource, MappedSObjectListScreenResource, and ReferenceFilteredHierarchyScreenResource use the Layout Builder tool to determine what data to display.</description>
+    <externalId>false</externalId>
+    <label>Section Resource</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>SObjectScreenResource</fullName>
+                <default>false</default>
+                <label>SObjectScreenResource</label>
+            </value>
+            <value>
+                <fullName>ConfiguredSObjectScreenResource</fullName>
+                <default>false</default>
+                <label>ConfiguredSObjectScreenResource</label>
+            </value>
+            <value>
+                <fullName>MappedSObjectScreenResource</fullName>
+                <default>false</default>
+                <label>MappedSObjectScreenResource</label>
+            </value>
+            <value>
+                <fullName>MappedSObjectHierarchyScreenResource</fullName>
+                <default>false</default>
+                <label>MappedSObjectHierarchyScreenResource</label>
+            </value>
+            <value>
+                <fullName>GrandchildScreenResource</fullName>
+                <default>false</default>
+                <label>GrandchildScreenResource</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

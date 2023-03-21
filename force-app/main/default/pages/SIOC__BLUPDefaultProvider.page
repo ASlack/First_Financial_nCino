@@ -1,0 +1,8 @@
+<apex:page docType="html-5.0"
+    sidebar="false"
+    showHeader="false"
+    standardStylesheets="false"
+    applyHtmlTag="false"
+	applyBodyTag="false">
+    <c:BLUPPortal providerName="SIOCDEFAULT_V2"/>
+</apex:page>

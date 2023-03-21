@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cm_Order_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Order Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>As Is</fullName>
+                <default>false</default>
+                <label>As Is</label>
+            </value>
+            <value>
+                <fullName>As Built</fullName>
+                <default>false</default>
+                <label>As Built</label>
+            </value>
+            <value>
+                <fullName>As Constructed</fullName>
+                <default>false</default>
+                <label>As Constructed</label>
+            </value>
+            <value>
+                <fullName>EPA Assessment</fullName>
+                <default>false</default>
+                <label>EPA Assessment</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

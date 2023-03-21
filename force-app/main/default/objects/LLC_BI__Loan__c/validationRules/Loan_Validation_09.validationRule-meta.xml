@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Loan_Validation_09</fullName>
+    <active>false</active>
+    <description>Renewed Loans with a Status of &apos;Superseded&apos; cannot be edited</description>
+    <errorConditionFormula>AND(
+NOT(ISNEW()),
+NOT(ISCHANGED(LLC_BI__Status__c)),
+ISPICKVAL(LLC_BI__Status__c , &apos;Superseded&apos;),
+$User.No_Validation__c = False)</errorConditionFormula>
+    <errorMessage>This Loan has been Superseded and cannot be edited.  Please review the most recent Renewal or contact your Administrator for more information. - LV09</errorMessage>
+</ValidationRule>

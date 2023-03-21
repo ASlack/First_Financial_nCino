@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Negative_Cost_to_Cure</fullName>
+    <active>true</active>
+    <description>User must enter a positive amount for the Cost to Cure.</description>
+    <errorConditionFormula>OR (
+				AND(
+					LLC_BI__Amount__c &lt; 0,
+					ISPICKVAL(LLC_BI__Fee_Type__c, &apos;Cost to Cure&apos;)
+				),
+				AND(
+					ISNULL(LLC_BI__Amount__c),
+					ISPICKVAL(LLC_BI__Fee_Type__c, &apos;Cost to Cure&apos;)
+				)
+			)</errorConditionFormula>
+    <errorMessage>Error: Invalid Cost to Cure fee. Enter one fee with a positive amount.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Total Collateral Value</label>
+    <name>LLC_BI__Total_Real_Estate_Collateral__c</name>
+</CustomFieldTranslation>

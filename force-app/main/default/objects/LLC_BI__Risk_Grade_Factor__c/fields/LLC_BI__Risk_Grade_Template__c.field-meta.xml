@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Risk_Grade_Template__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field is required. It is only populated automatically if the user is creating the risk grade factor from the risk grade template.  This field specifies the risk grade template associated with the risk grade factor.</description>
+    <externalId>false</externalId>
+    <label>Risk Grade Template</label>
+    <referenceTo>LLC_BI__Risk_Grade_Template__c</referenceTo>
+    <relationshipLabel>Risk Grade Factors</relationshipLabel>
+    <relationshipName>Risk_Grade_Factors</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

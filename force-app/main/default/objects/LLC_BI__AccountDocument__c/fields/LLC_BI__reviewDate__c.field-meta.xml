@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__reviewDate__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional and represents the date when a document was reviewed by a user. This field does not auto-populate when a user changes the Status field to Reviewed.</description>
+    <externalId>false</externalId>
+    <label>Review Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

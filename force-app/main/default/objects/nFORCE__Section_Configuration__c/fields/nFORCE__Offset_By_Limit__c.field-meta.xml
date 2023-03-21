@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Offset_By_Limit__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is optional and is populated by an administrator. The default value is false, which denotes that the value of nFORCE__Limit__c is a hard set limit. When updated to true, the field enables returning offset records with appropriate section resource.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field is optional and is populated by an administrator. The default value is false, which denotes that the value of Limit is a hard set limit. When updated to true, the field enables returning offset records with appropriate section resource.</inlineHelpText>
+    <label>Offset By Limit</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

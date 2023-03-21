@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Migration_Target__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this optional lookup field to signify bundles that need to migrate and the destination of the bundle. By default, it is blank.</description>
+    <externalId>false</externalId>
+    <label>Migration Target</label>
+    <referenceTo>LLC_BI__Underwriting_Bundle__c</referenceTo>
+    <relationshipLabel>Migration Target Bundles</relationshipLabel>
+    <relationshipName>Migration_Target_Bundles</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

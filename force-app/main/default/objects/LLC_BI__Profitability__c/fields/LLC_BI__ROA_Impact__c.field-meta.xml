@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__ROA_Impact__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system autopopulates this field to represent the scenario or loan ROA percent impact on the overall relationship profitability if it moves to a stage considered closed.</description>
+    <externalId>false</externalId>
+    <label>ROA Impact</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

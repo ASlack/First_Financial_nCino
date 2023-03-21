@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Color__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Administrators select a color for each Spreads group for Automated Spreading. By default, it is transparent.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>In Automated Spreading, every Spreads group has a color to assist the user in identifying which group each category belongs to.</inlineHelpText>
+    <label>Group Color</label>
+    <length>16</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

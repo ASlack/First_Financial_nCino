@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>53.0</apiVersion>
+    <assignments>
+        <description>Sets a success message in the State Store and Output Store indicating that testInput matched the expected value.</description>
+        <name>Approved</name>
+        <label>Approved</label>
+        <locationX>615</locationX>
+        <locationY>553</locationY>
+        <assignmentItems>
+            <assignToReference>testStateStoreValue</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>General Kenobi</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>testOutputStoreValue</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>General Kenobi</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>testExcludedValue</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Still Excluded</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>Sets an internal-only message in the State Store indicating that the input value did not match the expected value.</description>
+        <name>Declined</name>
+        <label>Declined</label>
+        <locationX>859</locationX>
+        <locationY>356</locationY>
+        <assignmentItems>
+            <assignToReference>testStateStoreValue</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Unexpected value provided in testInput.</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>Assigns the variable names that the system writes to the State Store and the Output Store once the Flow Completes.</description>
+        <name>Define_State_Store_Outputs</name>
+        <label>Define State Store Outputs</label>
+        <locationX>614</locationX>
+        <locationY>195</locationY>
+        <assignmentItems>
+            <assignToReference>variablesForWorkflow</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>testStateStoreValue</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>variablesForWorkflowResults</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>testOutputStoreValue</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Is_Approved</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Sets an output message indicating that expected inputs were not provided.</description>
+        <name>No_Input_Provided</name>
+        <label>No Input Provided</label>
+        <locationX>369</locationX>
+        <locationY>356</locationY>
+        <assignmentItems>
+            <assignToReference>testStateStoreValue</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>No value for testInput found.</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>testOutputStoreValue</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>No value for testInput found.</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <description>Checks if the testInput state variable was set with the expected approved value as part of a prior step.</description>
+        <name>Is_Approved</name>
+        <label>Is Approved?</label>
+        <locationX>607</locationX>
+        <locationY>358</locationY>
+        <defaultConnector>
+            <targetReference>Declined</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Declined Input</defaultConnectorLabel>
+        <rules>
+            <name>Approved_Input</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>testInput</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Hello there</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Approved</targetReference>
+            </connector>
+            <label>Approved Input</label>
+        </rules>
+        <rules>
+            <name>Empty_Input</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>testInput</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>No_Input_Provided</targetReference>
+            </connector>
+            <label>Empty Input</label>
+        </rules>
+    </decisions>
+    <description>A simple Flow template driven by Orchestration state for use in testing.</description>
+    <interviewLabel>Orchestration Framework Basic Flow Example {!$Flow.CurrentDateTime}</interviewLabel>
+    <isTemplate>true</isTemplate>
+    <label>Orchestration Framework Basic Test Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>488</locationX>
+        <locationY>46</locationY>
+        <connector>
+            <targetReference>Define_State_Store_Outputs</targetReference>
+        </connector>
+    </start>
+    <status>Draft</status>
+    <variables>
+        <description>An output variable not added to the State Store or Output Store automatically</description>
+        <name>testExcludedValue</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <stringValue>Excluded</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Example input provided to drive a decision in this example Flow.</description>
+        <name>testInput</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Example output value stored in the Output Store. The system automatically includes it in the Workflow results.</description>
+        <name>testOutputStoreValue</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>Example output value stored in the State Store. It is not automatically included in the Workflow results.</description>
+        <name>testStateStoreValue</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>Contains a list of API names of output variables that the system writes to the State Store once the Flow completes.</description>
+        <name>variablesForWorkflow</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>Contains a list of API names of output variables that the system writes to the Output Store once the Flow completes. These variables should not contain sensitive data since values in the Output Store are returned to the end user.</description>
+        <name>variablesForWorkflowResults</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

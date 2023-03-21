@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cm_Credit_Analyst_Underwriter__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Used to capture the assigned Credit Analyst / Underwriter. Added for the Commercial Accelerate project.</description>
+    <externalId>false</externalId>
+    <label>Credit Underwriter</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Loans2</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

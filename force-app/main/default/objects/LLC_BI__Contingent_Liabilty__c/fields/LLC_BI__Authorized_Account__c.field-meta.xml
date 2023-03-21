@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Authorized_Account__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this optional lookup field to capture the authorized business for which the current authorized signer is acting.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The system-populated field associates the authorized signer to an authorized business.</inlineHelpText>
+    <label>Authorized Account</label>
+    <referenceTo>LLC_BI__Authorized_Account__c</referenceTo>
+    <relationshipLabel>Authorized Signers</relationshipLabel>
+    <relationshipName>Authorized_Signers</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

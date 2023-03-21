@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NDOC__TEST_DOC_PLACEHOLDER_ADDITIONAL_FIELDS</fullName>
+    <description>Used for unit test.  Do not delete.</description>
+    <displayedFields>
+        <field>NDOC__version__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>LLC_BI__Description__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>TEST_DOC_PLACEHOLDER_ADDITIONAL_FIELDS</label>
+</FieldSet>

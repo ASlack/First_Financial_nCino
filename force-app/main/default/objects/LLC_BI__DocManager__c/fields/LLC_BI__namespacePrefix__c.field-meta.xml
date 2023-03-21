@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__namespacePrefix__c</fullName>
+    <defaultValue>&quot;LLC_BI&quot;</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It has a default value of LLC_BI. It should not be changed.</description>
+    <externalId>false</externalId>
+    <label>Namespace Prefix</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

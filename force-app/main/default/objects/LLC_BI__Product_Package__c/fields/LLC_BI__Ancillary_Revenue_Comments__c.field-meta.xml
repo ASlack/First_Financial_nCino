@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Ancillary_Revenue_Comments__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Users populate this text field with any details associated with ancillary revenue summarized in the deal. By default, it is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Use this field for any details associated with the ancillary revenue being summarized in the deal but originated outside of nCino.</inlineHelpText>
+    <label>Ancillary Revenue Comments</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

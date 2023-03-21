@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Ten_Pct_Federal_Withholding_Indicator__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is optional. If true, the IRA owner elects to have 10% federal income tax withheld from the IRA distribution.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If true the IRA owner elects to have 10% Federal income tax withheld from the IRA distribution.</inlineHelpText>
+    <label>10% Federal Withholding Indicator</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

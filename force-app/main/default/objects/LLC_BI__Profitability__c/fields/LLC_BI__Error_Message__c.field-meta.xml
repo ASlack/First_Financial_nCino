@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Error_Message__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system populates this field with the most recent error message for a context object&apos;s pricing or profitability execution if an execution fails, and clears it upon a subsequent successful calculation. By default, it is blank.</description>
+    <externalId>false</externalId>
+    <label>Error Message</label>
+    <length>65536</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>2</visibleLines>
+</CustomField>

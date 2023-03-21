@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__LE_CD_Date_Required</fullName>
+    <active>true</active>
+    <description>User must populate loan estimate or closing disclosure date.</description>
+    <errorConditionFormula>OR( AND( NOT( ISBLANK( LLC_BI__Redisclosed_Closing_Disclosure_Date__c ) ), ISBLANK( LLC_BI__Initial_Closing_Disclosure_Date__c ) ), AND( OR( NOT( ISBLANK(LLC_BI__Initial_Closing_Disclosure_Date__c ) ), NOT( ISBLANK(LLC_BI__Redisclosed_Loan_Estimate_Date__c ) ), NOT( ISBLANK( LLC_BI__Redisclosed_Closing_Disclosure_Date__c ) ) ), ISBLANK( LLC_BI__Initial_Loan_Estimate_Date__c ) ) )</errorConditionFormula>
+    <errorMessage>One or more required date fields are empty. Enter the initial loan estimate date or the initial closing disclosure date to continue.</errorMessage>
+</ValidationRule>

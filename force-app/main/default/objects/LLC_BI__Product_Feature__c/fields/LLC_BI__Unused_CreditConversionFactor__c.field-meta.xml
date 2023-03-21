@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Unused_CreditConversionFactor__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is used to calculate the unused amount of the loan for Exposure At Default calculations.</description>
+    <externalId>false</externalId>
+    <label>Unused Credit Conversion Factor</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Edit_Booked_Loans_Permission__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This box should be checked if the user has permissions to edit booked loans</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This box should be checked if the user has permissions to edit booked loans</inlineHelpText>
+    <label>Edit Booked Loans Permission</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

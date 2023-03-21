@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EFPIO__Parent_EventLog__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Reference to the Parent Orchestration Event Log object. If this is set, this is a child event.</description>
+    <externalId>false</externalId>
+    <label>Parent Event Log</label>
+    <referenceTo>EFPIO__EventLog__c</referenceTo>
+    <relationshipLabel>Parent Orchestration Event Log</relationshipLabel>
+    <relationshipName>EventLog</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

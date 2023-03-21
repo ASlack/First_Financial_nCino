@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Treasury_Annual_Operating_Cost__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Users populate this field with the approximate annual operating cost of originating and servicing any new treasury services an FI originates in the deal. By default, it is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The approximate annual operating cost in dollars for new treasury service products an FI originates in the deal outside of nCino.</inlineHelpText>
+    <label>Treasury Annual Operating Cost</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

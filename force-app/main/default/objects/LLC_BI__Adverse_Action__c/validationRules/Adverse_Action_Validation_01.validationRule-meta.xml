@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Adverse_Action_Validation_01</fullName>
+    <active>true</active>
+    <description>You must select at least (2) reasons for loan declination when declining a loan</description>
+    <errorConditionFormula>AND( 
+OR( 
+
+AND( 
+NOT(ISPICKVAL(LLC_BI__Decline_Reason_1__c , &apos;None&apos;)), 
+ISPICKVAL(LLC_BI__Decline_Reason_2__c , &apos;None&apos;), 
+ISPICKVAL(LLC_BI__Decline_Reason_3__c , &apos;None&apos;), 
+ISPICKVAL(LLC_BI__Decline_Reason_4__c , &apos;None&apos;)), 
+
+AND( 
+NOT(ISPICKVAL(LLC_BI__Decline_Reason_2__c , &apos;None&apos;)), 
+ISPICKVAL(LLC_BI__Decline_Reason_1__c , &apos;None&apos;), 
+ISPICKVAL(LLC_BI__Decline_Reason_3__c , &apos;None&apos;), 
+ISPICKVAL(LLC_BI__Decline_Reason_4__c , &apos;None&apos;)), 
+
+AND( 
+NOT(ISPICKVAL(LLC_BI__Decline_Reason_3__c , &apos;None&apos;)), 
+ISPICKVAL(LLC_BI__Decline_Reason_1__c , &apos;None&apos;), 
+ISPICKVAL(LLC_BI__Decline_Reason_2__c , &apos;None&apos;), 
+ISPICKVAL(LLC_BI__Decline_Reason_4__c , &apos;None&apos;)), 
+
+AND( 
+NOT(ISPICKVAL(LLC_BI__Decline_Reason_4__c , &apos;None&apos;)), 
+ISPICKVAL(LLC_BI__Decline_Reason_1__c , &apos;None&apos;), 
+ISPICKVAL(LLC_BI__Decline_Reason_2__c , &apos;None&apos;), 
+ISPICKVAL(LLC_BI__Decline_Reason_3__c , &apos;None&apos;))))</errorConditionFormula>
+    <errorMessage>You must select at least (2) reasons for loan declination when declining a loan - AA01</errorMessage>
+</ValidationRule>

@@ -1,0 +1,103 @@
+<messaging:emailTemplate subject="Fund Your Account to Complete Your Application" renderUsingSystemContextWithoutSharing="True" recipientType="User" relatedToType="LLC_BI__Application__c">
+   <messaging:htmlEmailBody >
+      <html>
+         <body>
+            <table role="presentation" style="width: 100%;">
+               <tr>
+                  <td align="center">
+                     <table role="presentation">
+                        <tr>
+                           <td align="center">
+                              <apex:image alt=""
+                                 url="{!$Label.nPortal__Email_No_Reply_Logo}"
+                                 style="height: 70px; max-height: 70px;"/>
+                           </td>
+                        </tr>
+                     </table>
+                     <div style="width: 400px; font-family: 'Salesforce Sans', Arial, sans-serif; text-align: left;">
+                        <div style="background-color: #f2f5f8; color: #162c52; padding: 20px 30px 20px 30px;">
+                           <h1>
+                              <strong style="font-weight: 300; color: #162c52;">
+                                 Hello,
+                              </strong>
+                           </h1>
+                           <p style="color: #162c52;">
+                              Your account is ready to fund! To complete your application, we need account funding information from you.
+                           </p>
+                           <p style="color: #162c52;">
+                              Click the link to fund your account:
+                           </p>
+                           <table role="presentation">
+                                <tr>
+                                    <td align="center">
+                                        <c:ApplicationLink appId="{!relatedTo.Id}"
+                                          linkText="Continue My Application"
+                                          linkStyle="width: 100%; background-color: #0070d2; color: #FFFFFF; padding-left: 16px; padding-right: 16px; border: 1px solid #0070d2; border-radius: 4px; line-height: 34px; display: inline-block; text-decoration: none;"
+                                        />
+                                    </td>
+                                </tr>
+                            </table>
+                            <p style="color: #162c52;">
+                               If you have trouble with the button, use this link:
+                            </p>
+                            <p style="color: #162c52;">
+                               <c:ApplicationLink appId="{!relatedTo.Id}"
+                                 linkAsText="true"
+                               />
+                            </p>
+                            <p style="color: #162c52;">
+                              Thank you,
+                            </p>
+                            <p style="color: #162c52;">
+                              {!$Organization.Name}
+                            </p>
+                        </div>
+                        <table role="presentation" style="width: 400px; background-color: #dce1eb; color: #424567; padding: 20px; font-size: 8pt;">
+                            <tr>
+                              <td>
+                                 {!$Organization.Name}
+                              </td>
+                              <td align="right">
+                                 {!$Label.Email_No_Reply_From}
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                 {!$Organization.Street}
+                              </td>
+                              <td align="right">
+                                 {!$Organization.Phone}
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                 {!$Organization.City}, {!$Organization.State} {!$Organization.PostalCode}
+                              </td>
+                              <td align="right">
+                                 &nbsp;
+                              </td>
+                            </tr>
+                        </table>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+         </body>
+      </html>
+   </messaging:htmlEmailBody>
+   <messaging:plainTextEmailBody >
+      Congratulations!
+      
+      Your account is ready to fund! To complete your application, we need account funding information from you.
+      
+      Click the link to fund your account:
+      <c:ApplicationLinkPlainText appId="{!relatedTo.Id}" />
+
+      Thank you,
+      {!$Organization.Name}
+      {!$Organization.Street}
+      {!$Organization.City}, {!$Organization.State} {!$Organization.PostalCode}
+      {!$Label.nPortal__Email_No_Reply_From}
+      {!$Organization.Phone}
+   </messaging:plainTextEmailBody>
+</messaging:emailTemplate>

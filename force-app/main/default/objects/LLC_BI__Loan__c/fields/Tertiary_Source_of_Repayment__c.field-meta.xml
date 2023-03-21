@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tertiary_Source_of_Repayment__c</fullName>
+    <description>This was a custom field requested to be added to the baseline configuration.</description>
+    <externalId>false</externalId>
+    <label>Tertiary Source of Repayment</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cash flow from Operations</fullName>
+                <default>false</default>
+                <label>Cash flow from Operations</label>
+            </value>
+            <value>
+                <fullName>Lease Income</fullName>
+                <default>false</default>
+                <label>Lease Income</label>
+            </value>
+            <value>
+                <fullName>Liquidation of Collateral</fullName>
+                <default>false</default>
+                <label>Liquidation of Collateral</label>
+            </value>
+            <value>
+                <fullName>Receivables</fullName>
+                <default>false</default>
+                <label>Receivables</label>
+            </value>
+            <value>
+                <fullName>Reliance on Guarantors</fullName>
+                <default>false</default>
+                <label>Reliance on Guarantors</label>
+            </value>
+            <value>
+                <fullName>Working Capital Turnover</fullName>
+                <default>false</default>
+                <label>Working Capital Turnover</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

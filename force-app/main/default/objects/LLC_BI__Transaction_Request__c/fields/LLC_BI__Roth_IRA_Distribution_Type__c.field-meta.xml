@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Roth_IRA_Distribution_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is a picklist that specifies the type of distribution for a Roth IRA.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Specifies the type of distribution for a Roth IRA.</inlineHelpText>
+    <label>Roth IRA Distribution Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Early Distribution from a Roth IRA</fullName>
+                <default>false</default>
+                <label>Early Distribution from a Roth IRA</label>
+            </value>
+            <value>
+                <fullName>Age 59 1/2 or Older</fullName>
+                <default>false</default>
+                <label>Age 59 1/2 or Older</label>
+            </value>
+            <value>
+                <fullName>Death</fullName>
+                <default>false</default>
+                <label>Death</label>
+            </value>
+            <value>
+                <fullName>Transfer to my Roth IRA</fullName>
+                <default>false</default>
+                <label>Transfer to my Roth IRA</label>
+            </value>
+            <value>
+                <fullName>Transfer to spouse&apos;s Roth IRA due to death</fullName>
+                <default>false</default>
+                <label>Transfer to spouse&apos;s Roth IRA due to death</label>
+            </value>
+            <value>
+                <fullName>Transfer to former spouse&apos;s Roth IRA due to divorce or legal separation</fullName>
+                <default>false</default>
+                <label>Transfer to former spouse&apos;s Roth IRA due to divorce or legal separation</label>
+            </value>
+            <value>
+                <fullName>Recharacterization of prior tax year regular contribution/conversion in the current year</fullName>
+                <default>false</default>
+                <label>Recharacterization of prior tax year regular contribution/conversion in the current year</label>
+            </value>
+            <value>
+                <fullName>Recharacterization of current tax year regular contribution/conversion in the current year</fullName>
+                <default>false</default>
+                <label>Recharacterization of current tax year regular contribution/conversion in the current year</label>
+            </value>
+            <value>
+                <fullName>Prohibited Transaction</fullName>
+                <default>false</default>
+                <label>Prohibited Transaction</label>
+            </value>
+            <value>
+                <fullName>Qualified Health Savings Account Funding Distribution (QHSAAFD)</fullName>
+                <default>false</default>
+                <label>Qualified Health Savings Account Funding Distribution (QHSAAFD)</label>
+            </value>
+            <value>
+                <fullName>IRS Levy</fullName>
+                <default>false</default>
+                <label>IRS Levy</label>
+            </value>
+            <value>
+                <fullName>Disability</fullName>
+                <default>false</default>
+                <label>Disability</label>
+            </value>
+            <value>
+                <fullName>Revocation</fullName>
+                <default>false</default>
+                <label>Revocation</label>
+            </value>
+            <value>
+                <fullName>Correction of Excess Contribution in same year as excess contribution</fullName>
+                <default>false</default>
+                <label>Correction of Excess Contribution in same year as excess contribution</label>
+            </value>
+            <value>
+                <fullName>Correction of Excess Contribution in year after excess contribution, but by my tax-filing due date</fullName>
+                <default>false</default>
+                <label>Correction of Excess Contribution in year after excess contribution, but by my tax-filing due date</label>
+            </value>
+            <value>
+                <fullName>Correction of Excess Contribution after my tax-filing due date</fullName>
+                <default>false</default>
+                <label>Correction of Excess Contribution after my tax-filing due date</label>
+            </value>
+            <value>
+                <fullName>Transfer to beneficiary&apos;s Roth Beneficiary IRA</fullName>
+                <default>false</default>
+                <label>Transfer to beneficiary&apos;s Roth Beneficiary IRA</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

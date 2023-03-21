@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Loan_Lookup_Key__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is a formula field, that is automatically populated when starting a loan modification and is the modification&apos;s unique external ID, used in associating the modification to the original loan record. Loan modifications in general are not required but are optionally created based on financial institution business process.</description>
+    <externalId>false</externalId>
+    <formula>LLC_BI__Loan__r.LLC_BI__lookupKey__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Loan Number</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

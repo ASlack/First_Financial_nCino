@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Custom_Identity__c</fullName>
+    <caseSensitive>true</caseSensitive>
+    <deprecated>false</deprecated>
+    <description>This is an optional custom record identity used to assign unique identity within the Execution Context before persistence to the data layer.</description>
+    <externalId>true</externalId>
+    <inlineHelpText>This is an optional custom record identity used to assign unique identity within the Execution Context before persistence to the data layer.</inlineHelpText>
+    <label>Custom Identity</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

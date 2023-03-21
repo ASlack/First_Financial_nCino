@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Is_Lease__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This formula checkbox field auto-populates and indicates if the loan facility is a lease.</description>
+    <externalId>false</externalId>
+    <formula>IF(LLC_BI__Product_Reference__r.LLC_BI__Product_Feature__c != null &amp;&amp; LLC_BI__Product_Reference__r.LLC_BI__Product_Feature__r.LLC_BI__Is_Lease__c == true, true, false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Is Lease</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

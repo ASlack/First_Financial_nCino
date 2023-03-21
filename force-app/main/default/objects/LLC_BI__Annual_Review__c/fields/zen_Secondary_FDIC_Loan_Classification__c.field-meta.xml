@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>zen_Secondary_FDIC_Loan_Classification__c</fullName>
+    <description>Secondary picklist to be utilized when zen_FDIC_Loan_Classification = Split</description>
+    <externalId>false</externalId>
+    <label>Secondary FDIC Loan Classification</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Doubtful</fullName>
+                <default>false</default>
+                <label>Doubtful</label>
+            </value>
+            <value>
+                <fullName>Pass</fullName>
+                <default>false</default>
+                <label>Pass</label>
+            </value>
+            <value>
+                <fullName>Special Mention</fullName>
+                <default>false</default>
+                <label>Special Mention</label>
+            </value>
+            <value>
+                <fullName>Split</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Split</label>
+            </value>
+            <value>
+                <fullName>Substandard</fullName>
+                <default>false</default>
+                <label>Substandard</label>
+            </value>
+            <value>
+                <fullName>Watch list</fullName>
+                <default>false</default>
+                <label>Watch list</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

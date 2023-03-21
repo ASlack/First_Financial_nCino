@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Partner_Spread_Over_Base__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is manually populated. This percent field is used when the loan is participated. Use this field to specify the interest rate required by the partner.</description>
+    <externalId>false</externalId>
+    <label>Partner Spread Over Base</label>
+    <precision>5</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Percent</type>
+</CustomField>

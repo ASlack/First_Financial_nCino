@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Text_Field_1__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field specifies the template record&apos;s creation detail, which is dependent on the chosen category. Text field 1 is used in conjunction with the countercount__c field to specify the unique identifier for the template record. In fee management, Text field 1 =&quot; Fee&quot;and the counter would specify the number of that fee record Fee-001.</description>
+    <externalId>false</externalId>
+    <label>Text Field 1</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

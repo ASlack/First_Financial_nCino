@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Book_Entry__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is optional and manually populated. It is a checkbox to specify that the collateral has been entered on the books. This field is typically used with Possessory Collateral types.</description>
+    <externalId>false</externalId>
+    <label>Book Entry</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

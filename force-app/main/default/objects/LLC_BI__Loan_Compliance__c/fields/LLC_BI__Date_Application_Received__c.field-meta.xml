@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Date_Application_Received__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This is a required field.  This field indicates the date the application was received or the date on the application form.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If the date the application was received does not apply to the loan, please do not select a date.</inlineHelpText>
+    <label>Date Application Received</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Object_Name__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is conditionally required and must be specified if the LLC_BI__Post_to_Parent_Object__c field is set to TRUE. It is manually populated. The field indicates the object type that contains the field (specified by LLC_BI__Field_Name__c) that will be updated with the value of the calculated statistic when the LLC_BI__Post_to_Parent_Object__c field is set to TRUE.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Name of the underlying object where the output will be placed.</inlineHelpText>
+    <label>Object Name</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

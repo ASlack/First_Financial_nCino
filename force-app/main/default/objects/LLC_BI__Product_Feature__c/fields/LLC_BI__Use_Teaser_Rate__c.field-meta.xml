@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Use_Teaser_Rate__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The user manually selects this checkbox field to indicate that the system should calculate the loan using the value entered in the Teaser Rate field and Teaser Term field for an initial draw period and calculate the loan with the Interest Rate for the remaining term. By default, this field is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select this checkbox to use the Teaser Rate and Teaser Term in loan calculations.</inlineHelpText>
+    <label>Calculate with Teaser Rate</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

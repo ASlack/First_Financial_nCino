@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__TRID_Disclosure_Category__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Users manually populate this optional picklist to indicate the TRID disclosure category for a fee. By default, the picklist value is null.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the TRID disclosure category for the fee.</inlineHelpText>
+    <label>TRID Disclosure Category</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Origination Charges</fullName>
+                <default>false</default>
+                <label>Origination Charges</label>
+            </value>
+            <value>
+                <fullName>Services You Cannot Shop For</fullName>
+                <default>false</default>
+                <label>Services You Cannot Shop For</label>
+            </value>
+            <value>
+                <fullName>Services You Can Shop For</fullName>
+                <default>false</default>
+                <label>Services You Can Shop For</label>
+            </value>
+            <value>
+                <fullName>Taxes and Other Government Fees</fullName>
+                <default>false</default>
+                <label>Taxes and Other Government Fees</label>
+            </value>
+            <value>
+                <fullName>Prepaids</fullName>
+                <default>false</default>
+                <label>Prepaids</label>
+            </value>
+            <value>
+                <fullName>Initial Escrow Payment at Closing</fullName>
+                <default>false</default>
+                <label>Initial Escrow Payment at Closing</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

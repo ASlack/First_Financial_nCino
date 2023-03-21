@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Correlation_Id__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this required string field with an ID that refers to all business activities in the scope of this transaction.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Displays an ID that refers to all business activities in the scope of this transaction.</inlineHelpText>
+    <label>Correlation Id</label>
+    <length>40</length>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

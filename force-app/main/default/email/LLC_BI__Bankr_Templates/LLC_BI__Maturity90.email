@@ -1,0 +1,3 @@
+{!LLC_BI__Loan__c.Name} is going to mature in 90 days, on {!LLC_BI__Loan__c.LLC_BI__Maturity_Date__c}.
+
+View more information about the loan: {!LLC_BI__Loan__c.Link}

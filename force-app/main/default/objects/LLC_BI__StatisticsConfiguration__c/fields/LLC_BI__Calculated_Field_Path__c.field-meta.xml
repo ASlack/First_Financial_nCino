@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Calculated_Field_Path__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Administrators manually populate this optional field. If Original Amount or Principal Balance are not in use for the statistic calculation, this field is used to specify the API path of the field being used. The path is written in the following format when the object is a parent of entity involvement: Object_API_Name_r.Field_API_Namec&quot;. If the field is on entity involvement, it is written in the following format: &quot;Field_API_Name_c.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Calculated Field Path</inlineHelpText>
+    <label>Calculated Field Path</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

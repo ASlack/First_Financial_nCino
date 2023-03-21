@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Total_Hide_Currency_Symbol__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This defaults to false. Controls display of the currency symbol on the Total Record Group that is automatically created for this Spread Statement Template.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Controls display of the currency symbol on the Total Record Group that is automatically created for this Spread Statement Template</inlineHelpText>
+    <label>Total Hide Currency Symbol</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

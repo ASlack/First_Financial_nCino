@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Advanced_Criteria__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional and must be manually populated. It stores the Forms syntax that determines if a requirement will be created. If a user has criteria configured for an object and creates an object that meets the criteria, then Smart Checklist will populate the associated tasks on the object. If an object does not meet the criteria defined, then the requirement will not be created.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This optional field stores the Forms syntax that determines if a requirement will be created.</inlineHelpText>
+    <label>Advanced Criteria</label>
+    <length>1000</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

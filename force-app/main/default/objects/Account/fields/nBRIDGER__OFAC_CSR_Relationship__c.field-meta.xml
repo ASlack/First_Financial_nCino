@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nBRIDGER__OFAC_CSR_Relationship__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Indicates that this relationship has a CSR OFAC Match.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates that this relationship has a CSR OFAC Match.</inlineHelpText>
+    <label>OFAC CSR Relationship</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Underwriting_Summary__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field is a reference or lookup field to the spread statements/underwriting summary associated to the loan. It auto-populates when spreading is done within nCino.</description>
+    <externalId>false</externalId>
+    <label>Underwriting Summary</label>
+    <referenceTo>LLC_BI__Underwriting_Summary__c</referenceTo>
+    <relationshipLabel>Loans</relationshipLabel>
+    <relationshipName>Loans</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

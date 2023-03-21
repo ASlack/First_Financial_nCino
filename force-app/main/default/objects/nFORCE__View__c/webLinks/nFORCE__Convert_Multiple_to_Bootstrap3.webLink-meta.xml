@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Convert_Multiple_to_Bootstrap3</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <height>600</height>
+    <linkType>page</linkType>
+    <masterLabel>Convert to Bootstrap3</masterLabel>
+    <openType>sidebar</openType>
+    <page>nFORCE__Bootstrap3_Views_Converter</page>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+</WebLink>

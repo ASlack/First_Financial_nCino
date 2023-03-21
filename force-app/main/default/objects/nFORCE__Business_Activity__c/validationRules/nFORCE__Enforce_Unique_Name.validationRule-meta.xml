@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Enforce_Unique_Name</fullName>
+    <active>true</active>
+    <description>This validation rule enforces that the business activities field name is unique.</description>
+    <errorConditionFormula>AND (
+			IF($Setup.nFORCE__Business_Process_Settings__c.nFORCE__Disable_Validation_Rules__c,
+				FALSE,
+				((ISNEW() || ISCHANGED(Name))
+				&amp;&amp; VLOOKUP( $ObjectType.nFORCE__Business_Activity__c.Fields.Name, $ObjectType.nFORCE__Business_Activity__c.Fields.Name , Name) = Name)
+			)
+		)</errorConditionFormula>
+    <errorMessage>The business activity name must be unique. Check the name and try again.</errorMessage>
+</ValidationRule>

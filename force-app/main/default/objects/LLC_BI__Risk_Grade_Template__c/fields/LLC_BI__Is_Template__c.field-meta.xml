@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Is_Template__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Users populate this optional checkbox field to indicate if a Risk Grade Template record should be an available template option when creating a risk rating review. When enabled, a Risk Grade Template can be used as the basis of a Risk Rating Review. When disabled, that Risk Grade Template cannot be used as the template when creating a new Risk Rating Review.</description>
+    <externalId>false</externalId>
+    <label>Is Template</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

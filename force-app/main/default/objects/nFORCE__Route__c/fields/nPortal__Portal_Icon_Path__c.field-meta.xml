@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nPortal__Portal_Icon_Path__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The path to the SLDS Icon (Custom, Standard, or Utility) that appears at the top of a form in a route during the application process in Customer Portal.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the path to an SLDS Icon (Custom, Standard, or Utility) starting after &apos;...icons/&apos;. For example, the account standard icon path would be &apos;standard-sprite/svg/symbols.svg#account&apos;.</inlineHelpText>
+    <label>Portal Icon Path</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

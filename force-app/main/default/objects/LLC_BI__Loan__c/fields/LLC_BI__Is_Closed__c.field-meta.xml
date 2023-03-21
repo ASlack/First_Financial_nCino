@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Is_Closed__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is automatically selected via formula. When selected it indicates a loan has met the state and status requirements that a financial institution considers to be closed funded. This allows insight into how many loans have closed, without having to check the actual loan stage. When disabled, a loan has not been closed funded. By default, it is unselected.</description>
+    <externalId>false</externalId>
+    <formula>CONTAINS(LLC_BI__Product_Reference__r.LLC_BI__Product_Type__r.LLC_BI__Closed__r.LLC_BI__All_Values__c, LLC_BI__Stage_And_Status__c)</formula>
+    <label>Is Closed</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Is_ELOC__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field identifies an ELOC type loan. Depending on configuration, this field is used to specify the structure associated to ELOC loans, and whether that structure is multi-tiered or a single loan. Automatically populated when an ELOC product is selected</description>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(LLC_BI__Structure__c, &apos;ELOC&apos;), true, false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Is ELOC</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

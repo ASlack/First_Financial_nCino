@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Property_Design_Style__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The user populates this picklist field to indicate the design style for the property. By default, it is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the property’s design style.</inlineHelpText>
+    <label>Property Design Style</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>One Story</fullName>
+                <default>false</default>
+                <label>One Story</label>
+            </value>
+            <value>
+                <fullName>Bi-Level</fullName>
+                <default>false</default>
+                <label>Bi-Level</label>
+            </value>
+            <value>
+                <fullName>Two Story</fullName>
+                <default>false</default>
+                <label>Two Story</label>
+            </value>
+            <value>
+                <fullName>Split Level</fullName>
+                <default>false</default>
+                <label>Split Level</label>
+            </value>
+            <value>
+                <fullName>One and a Half Story</fullName>
+                <default>false</default>
+                <label>One and a Half Story</label>
+            </value>
+            <value>
+                <fullName>Three Story</fullName>
+                <default>false</default>
+                <label>Three Story</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

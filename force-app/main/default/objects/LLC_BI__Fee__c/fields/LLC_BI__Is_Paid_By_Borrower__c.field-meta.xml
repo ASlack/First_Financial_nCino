@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Is_Paid_By_Borrower__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This checkbox is populated automatically if &quot;Borrower&quot; is selected from the &quot;Paid By&quot; picklist. This field is generally not made visible to the users and is used behind the scenes for reporting and workflow logic configuration needs.</description>
+    <externalId>false</externalId>
+    <formula>ISPICKVAL(  LLC_BI__Paid_By__c , &apos;Borrower&apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Is Paid By Borrower</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

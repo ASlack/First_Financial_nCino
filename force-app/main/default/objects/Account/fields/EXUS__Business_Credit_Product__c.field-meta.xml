@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EXUS__Business_Credit_Product__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Users populate this picklist field with the product required to pull Experian business credit. Financial Institutions can set a default value if desired.</description>
+    <externalId>false</externalId>
+    <label>Experian Business Credit Product</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Intelliscore</fullName>
+                <default>false</default>
+                <label>Intelliscore</label>
+            </value>
+            <value>
+                <fullName>PremierProfile</fullName>
+                <default>false</default>
+                <label>Premier Profile</label>
+            </value>
+            <value>
+                <fullName>SBCS</fullName>
+                <default>false</default>
+                <label>SBCS</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

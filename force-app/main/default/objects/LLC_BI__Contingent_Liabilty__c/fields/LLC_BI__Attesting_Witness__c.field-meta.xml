@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Attesting_Witness__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Users select this optional boolean field to indicate the authorized signer is only acting as an attesting witness rather than the authorizing signer. By default, it is false.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select this checkbox to indicate that the authorized signer is only acting as an attesting witness rather than the authorizing signer.</inlineHelpText>
+    <label>Attesting Witness</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

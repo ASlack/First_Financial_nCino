@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Analyst__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field is required and user updated. The user that is analyzing this period.</description>
+    <externalId>false</externalId>
+    <label>Analyst</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Spread_Statement_Period</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

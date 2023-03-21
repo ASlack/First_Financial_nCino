@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Is_New_Construction__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Users select this checkbox field to indicate if the property is a new construction.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the checkbox if the property is a new construction.</inlineHelpText>
+    <label>Is New Construction</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

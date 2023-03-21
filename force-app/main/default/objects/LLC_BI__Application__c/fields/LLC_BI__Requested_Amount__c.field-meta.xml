@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Requested_Amount__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this field to display the borrower’s requested loan amount value at the time of their credit application. The amount displayed in this field remains static throughout the lifecycle of the loan.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field displays the requested amount for the loan when the borrower begins the credit application.</inlineHelpText>
+    <label>Requested Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

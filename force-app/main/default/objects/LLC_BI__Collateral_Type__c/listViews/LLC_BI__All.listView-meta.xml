@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__All</fullName>
+    <columns>LLC_BI__Type__c</columns>
+    <columns>LLC_BI__Subtype__c</columns>
+    <columns>LLC_BI__lookupKey__c</columns>
+    <columns>LLC_BI__Collateral_Code__c</columns>
+    <columns>LLC_BI__Advance_Rate__c</columns>
+    <columns>LLC_BI__Icon_Type__c</columns>
+    <columns>LLC_BI__Icon_Background_Color__c</columns>
+    <columns>LLC_BI__Icon_Color__c</columns>
+    <columns>NAME</columns>
+    <columns>LLC_BI__Screen__c</columns>
+    <columns>LLC_BI__Group_Type__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

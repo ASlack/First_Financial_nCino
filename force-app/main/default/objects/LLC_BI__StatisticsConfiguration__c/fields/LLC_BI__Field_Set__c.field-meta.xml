@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Field_Set__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Admins use this text field to control the field set that displays in the columns on that statistic’s table. The field defaults to that exposure type’s default field set, but admins can change it to the API name of the field set that they wish to use instead.</description>
+    <externalId>false</externalId>
+    <label>Field Set</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

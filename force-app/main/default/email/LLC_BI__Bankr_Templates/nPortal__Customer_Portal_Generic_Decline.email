@@ -1,0 +1,78 @@
+<messaging:emailTemplate subject="Unable to Process Application" renderUsingSystemContextWithoutSharing="True" recipientType="User" relatedToType="LLC_BI__Application__c">
+    <messaging:htmlEmailBody >
+        <html>
+            <body>
+                <table role="presentation" style="width: 100%;">
+                <tr>
+                    <td align="center">
+                        <table role="presentation">
+                            <tr>
+                                <td align="center">
+                                    <apex:image alt=""
+                                        url="{!$Label.nPortal__Email_No_Reply_Logo}"
+                                        style="height: 70px; max-height: 70px;"/>
+                                </td>
+                            </tr>
+                        </table>
+                        <div style="width: 400px; font-family: 'Salesforce Sans', Arial, sans-serif; text-align: left;">
+                            <div style="background-color: #f2f5f8; color: #162c52; padding: 20px 30px 20px 30px;">
+                                <h1>
+                                    <strong style="font-weight: 300; color: #162c52;">
+                                        Hello,
+                                    </strong>
+                                </h1>
+                                <p style="color: #162c52;">
+                                    Thank you for applying to open an account with {Bank}.
+                                </p>
+                                <p style="color: #162c52;">
+                                    Unfortunately, we are unable to open your account at this time. Please come into a branch near you or contact {Name} phone, email, address, etc. {email signature}.
+                                </p>
+                                <p style="color: #162c52;">
+                                    Thank you,
+                                </p>
+                                <p style="color: #162c52;">
+                                    {!$Organization.Name}
+                                </p>
+                            </div>
+                            <table role="presentation" style="width: 400px; background-color: #dce1eb; color: #424567; padding: 20px; font-size: 8pt;">
+                                <tr>
+                                  <td>
+                                     {!$Organization.Name}
+                                  </td>
+                                  <td align="right">
+                                     {!$Label.Email_No_Reply_From}
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                     {!$Organization.Street}
+                                  </td>
+                                  <td align="right">
+                                     {!$Organization.Phone}
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                     {!$Organization.City}, {!$Organization.State} {!$Organization.PostalCode}
+                                  </td>
+                                  <td align="right">
+                                     &nbsp;
+                                  </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+                </table>
+            </body>
+        </html>
+    </messaging:htmlEmailBody>
+    <messaging:plainTextEmailBody >
+        Hello,
+
+        Thank you for applying to open an account with {Bank}. Unfortunately, we are unable to open your account at this time. Please come into a branch near you or contact {Name} phone, email, address, etc. {email signature}.
+
+        Thank you,
+        {!$Organization.Name}
+    </messaging:plainTextEmailBody>
+</messaging:emailTemplate>

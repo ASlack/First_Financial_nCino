@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Taxonomy_Id__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this required string field with an identifier for the part of the nCino product taxonomy a group belongs to. By default, the value for a group and its clones is the standard app name of the group.</description>
+    <externalId>true</externalId>
+    <label>Taxonomy ID</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

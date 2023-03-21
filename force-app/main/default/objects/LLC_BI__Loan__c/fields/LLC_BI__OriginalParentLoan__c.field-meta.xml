@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__OriginalParentLoan__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field is automatically populated. It stores a loan&apos;s original parent loan Id for use in visually representing superseded loan&apos;s hierarchy in the facility hierarchy visualforce page.</description>
+    <externalId>false</externalId>
+    <label>Original Parent Loan</label>
+    <referenceTo>LLC_BI__Loan__c</referenceTo>
+    <relationshipLabel>Original Parent Loans</relationshipLabel>
+    <relationshipName>Original_Parent_Loans</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

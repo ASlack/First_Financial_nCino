@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Maximum_Amount_For_Auto_Approval__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The user populates this currency field to indicate the maximum dollar amount a loan can be for the system to auto-approve the loan. By default, this field is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the maximum dollar amount a loan can have to qualify for auto-approval.</inlineHelpText>
+    <label>Maximum Amount for Auto-Approval</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Category__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is required. It is manually populated. It indicates the category of the configuration value. The combination of the category and the key is used to uniquely identify the configuration value.</description>
+    <externalId>false</externalId>
+    <label>Category</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Change Memo</fullName>
+                <default>false</default>
+                <label>Change Memo</label>
+            </value>
+            <value>
+                <fullName>Change Product</fullName>
+                <default>false</default>
+                <label>Change Product</label>
+            </value>
+            <value>
+                <fullName>Delete_Feature_Enabled</fullName>
+                <default>false</default>
+                <label>Delete_Feature_Enabled</label>
+            </value>
+            <value>
+                <fullName>Delete_Versions_Allowed</fullName>
+                <default>false</default>
+                <label>Delete_Versions_Allowed</label>
+            </value>
+            <value>
+                <fullName>Deposit Stage</fullName>
+                <default>false</default>
+                <label>Deposit Stage</label>
+            </value>
+            <value>
+                <fullName>Deposit Status</fullName>
+                <default>false</default>
+                <label>Deposit Status</label>
+            </value>
+            <value>
+                <fullName>Document Manager</fullName>
+                <default>false</default>
+                <label>Document Manager</label>
+            </value>
+            <value>
+                <fullName>Entity_Check_Enabled</fullName>
+                <default>false</default>
+                <label>Entity_Check_Enabled</label>
+            </value>
+            <value>
+                <fullName>General</fullName>
+                <default>false</default>
+                <label>General</label>
+            </value>
+            <value>
+                <fullName>Label</fullName>
+                <default>false</default>
+                <label>Label</label>
+            </value>
+            <value>
+                <fullName>Loan Stage</fullName>
+                <default>true</default>
+                <label>Loan Stage</label>
+            </value>
+            <value>
+                <fullName>Loan Status</fullName>
+                <default>false</default>
+                <label>Loan Status</label>
+            </value>
+            <value>
+                <fullName>Modification_Name_Format</fullName>
+                <default>false</default>
+                <label>Modification_Name_Format</label>
+            </value>
+            <value>
+                <fullName>Original_Name_Format</fullName>
+                <default>false</default>
+                <label>Original_Name_Format</label>
+            </value>
+            <value>
+                <fullName>Relatives_To_Clone</fullName>
+                <default>false</default>
+                <label>Relatives_To_Clone</label>
+            </value>
+            <value>
+                <fullName>Renewal_Feature_Enabled</fullName>
+                <default>false</default>
+                <label>Renewal_Feature_Enabled</label>
+            </value>
+            <value>
+                <fullName>Renewal_Fields_To_Clone</fullName>
+                <default>false</default>
+                <label>Renewal_Fields_To_Clone</label>
+            </value>
+            <value>
+                <fullName>Renewal_History_Available_String</fullName>
+                <default>false</default>
+                <label>Renewal_History_Available_String</label>
+            </value>
+            <value>
+                <fullName>Renewal_History_In_Progress_String</fullName>
+                <default>false</default>
+                <label>Renewal_History_In_Progress_String</label>
+            </value>
+            <value>
+                <fullName>Renewal_History_Superceded_String</fullName>
+                <default>false</default>
+                <label>Renewal_History_Superceded_String</label>
+            </value>
+            <value>
+                <fullName>Renewal_Name_Format</fullName>
+                <default>false</default>
+                <label>Renewal_Name_Format</label>
+            </value>
+            <value>
+                <fullName>Renewal_Stage_Superceded_String</fullName>
+                <default>false</default>
+                <label>Renewal_Stage_Superceded_String</label>
+            </value>
+            <value>
+                <fullName>Renewal_Starting_Stage</fullName>
+                <default>false</default>
+                <label>Renewal_Starting_Stage</label>
+            </value>
+            <value>
+                <fullName>Renewal_Starting_Status</fullName>
+                <default>false</default>
+                <label>Renewal_Starting_Status</label>
+            </value>
+            <value>
+                <fullName>Renewal_Status_Deleted_String</fullName>
+                <default>false</default>
+                <label>Renewal_Status_Deleted_String</label>
+            </value>
+            <value>
+                <fullName>Renewal_Status_Superceded_String</fullName>
+                <default>false</default>
+                <label>Renewal_Status_Superceded_String</label>
+            </value>
+            <value>
+                <fullName>Renewal_Supported</fullName>
+                <default>false</default>
+                <label>Renewal_Supported</label>
+            </value>
+            <value>
+                <fullName>Roles_For_Loan_Deletion</fullName>
+                <default>false</default>
+                <label>Roles_For_Loan_Deletion</label>
+            </value>
+            <value>
+                <fullName>Roles_For_Loan_Renewal</fullName>
+                <default>false</default>
+                <label>Roles_For_Loan_Renewal</label>
+            </value>
+            <value>
+                <fullName>Roles_For_Multi-Renewal_Delete</fullName>
+                <default>false</default>
+                <label>Roles_For_Multi-Renewal_Delete</label>
+            </value>
+            <value>
+                <fullName>Stages_Deletion_Allowed</fullName>
+                <default>false</default>
+                <label>Stages_Deletion_Allowed</label>
+            </value>
+            <value>
+                <fullName>Stages_Renewal_Allowed</fullName>
+                <default>false</default>
+                <label>Stages_Renewal_Allowed</label>
+            </value>
+            <value>
+                <fullName>Status_Deletion_Allowed</fullName>
+                <default>false</default>
+                <label>Status_Deletion_Allowed</label>
+            </value>
+            <value>
+                <fullName>Status_Renewal_Allowed</fullName>
+                <default>false</default>
+                <label>Status_Renewal_Allowed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

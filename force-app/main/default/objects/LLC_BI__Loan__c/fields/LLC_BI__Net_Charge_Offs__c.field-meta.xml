@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Net_Charge_Offs__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is automatically populated via formula. It is used to specify the net calculation of charge offs on the loan. Should the loan default, this field specifically indicates the bank&apos;s calculated loss.</description>
+    <externalId>false</externalId>
+    <formula>LLC_BI__Total_Charge_Offs__c -  LLC_BI__Total_Recovery__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Net Charge Offs</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

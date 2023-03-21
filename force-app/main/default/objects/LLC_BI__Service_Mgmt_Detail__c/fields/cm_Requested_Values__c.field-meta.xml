@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cm_Requested_Values__c</fullName>
+    <externalId>false</externalId>
+    <label>Requested Values</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Market Value As Is</fullName>
+                <default>false</default>
+                <label>Market Value As Is</label>
+            </value>
+            <value>
+                <fullName>Market Value At Stabilization</fullName>
+                <default>false</default>
+                <label>Market Value At Stabilization</label>
+            </value>
+            <value>
+                <fullName>Market Value At Completion</fullName>
+                <default>false</default>
+                <label>Market Value At Completion</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

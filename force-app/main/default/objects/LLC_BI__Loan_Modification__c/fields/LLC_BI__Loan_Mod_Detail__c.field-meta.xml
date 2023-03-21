@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Loan_Mod_Detail__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is a free text area that is manually entered and optional. The field  is used to specify details of the loan modification.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please enter the specific details of the Loan Modification.</inlineHelpText>
+    <label>Loan Mod Detail</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

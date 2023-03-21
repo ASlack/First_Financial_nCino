@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Cost_Of_New_Deposit_Capital_Percent__c</fullName>
+    <defaultValue>0.1</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Use this field to represent the cost of deposit capital for new deposits in the deal an FI originates outside of nCino. By default, it is 10.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The cost of deposit capital for new deposits in the deal an FI originates outside of nCino.</inlineHelpText>
+    <label>Cost of New Deposit Capital</label>
+    <precision>11</precision>
+    <required>false</required>
+    <scale>8</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

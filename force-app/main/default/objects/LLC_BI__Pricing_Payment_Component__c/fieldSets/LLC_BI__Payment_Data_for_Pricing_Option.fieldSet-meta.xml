@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Payment_Data_for_Pricing_Option</fullName>
+    <description>This field set stores all of the fields related to payment specifications.</description>
+    <displayedFields>
+        <field>LLC_BI__Frequency__c</field>
+        <isFieldManaged>true</isFieldManaged>
+        <isRequired>true</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>LLC_BI__Payment_Type__c</field>
+        <isFieldManaged>true</isFieldManaged>
+        <isRequired>true</isRequired>
+    </displayedFields>
+    <label>Payment Data for Pricing Option</label>
+</FieldSet>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Is_Financial_Indicator__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Users manually select this optional checkbox field. This field is used to define Covenant Types as Financial Indicators. When users select this field, it allows for Financial Indicators to have a custom category. By default, this field is not selected.</description>
+    <externalId>false</externalId>
+    <label>Financial Indicator</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

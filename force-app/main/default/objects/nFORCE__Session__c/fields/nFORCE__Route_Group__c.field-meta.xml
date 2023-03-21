@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Route_Group__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field is not required. It populates automatically. This field shows the route group associated to the session.</description>
+    <externalId>false</externalId>
+    <label>Route Group</label>
+    <referenceTo>nFORCE__Route_Group__c</referenceTo>
+    <relationshipLabel>Sessions</relationshipLabel>
+    <relationshipName>Sessions</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

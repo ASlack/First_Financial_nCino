@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Related_entity_involvement__c</fullName>
+    <description>Counts the number of related entity involvement records with a record type = &quot;Deposit Involvement&quot; to help validate if the loan&apos;s corresponding account has an open deposit account.</description>
+    <externalId>false</externalId>
+    <label>Related entity involvement</label>
+    <summaryFilterItems>
+        <field>LLC_BI__Legal_Entities__c.RecordTypeId</field>
+        <operation>equals</operation>
+        <value>Deposit Involvement</value>
+    </summaryFilterItems>
+    <summaryForeignKey>LLC_BI__Legal_Entities__c.LLC_BI__Account__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <type>Summary</type>
+</CustomField>

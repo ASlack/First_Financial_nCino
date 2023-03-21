@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional and manually populated. Use this picklist field to define the basic type information about the collateral being used to secure the loan. This field controls the subtype picklist options once a collateral type is selected.</description>
+    <externalId>false</externalId>
+    <label>Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Titled</fullName>
+                <default>false</default>
+                <label>Titled</label>
+            </value>
+            <value>
+                <fullName>Possessory</fullName>
+                <default>false</default>
+                <label>Possessory</label>
+            </value>
+            <value>
+                <fullName>UCC</fullName>
+                <default>false</default>
+                <label>UCC</label>
+            </value>
+            <value>
+                <fullName>Real Estate</fullName>
+                <default>false</default>
+                <label>Real Estate</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

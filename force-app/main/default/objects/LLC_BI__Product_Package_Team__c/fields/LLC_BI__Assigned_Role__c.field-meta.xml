@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Assigned_Role__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field is not currently used, as the Product Package Team is not currently leveraged within product package. Instead, Functionality for Team Members is built into the Visual Force related list view for Product Package Loan Team Members.</description>
+    <externalId>false</externalId>
+    <label>Role</label>
+    <referenceTo>LLC_BI__Role__c</referenceTo>
+    <relationshipLabel>Product Package Team Members</relationshipLabel>
+    <relationshipName>Product_Package_Team_Members</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

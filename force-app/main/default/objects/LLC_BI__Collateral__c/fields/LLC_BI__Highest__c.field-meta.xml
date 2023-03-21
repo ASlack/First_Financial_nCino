@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Highest__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This lookup field is used to select the highest level parent record in a hierarchy for the Collateral Management record.</description>
+    <externalId>false</externalId>
+    <label>Highest</label>
+    <referenceTo>LLC_BI__Collateral__c</referenceTo>
+    <relationshipLabel>Collaterals (Highest)</relationshipLabel>
+    <relationshipName>HighestCollaterals</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Cannot_calculate_period_over_period_val</fullName>
+    <active>false</active>
+    <description>Validation to ensure that we do not try to calculate period over period values for none linked records</description>
+    <errorConditionFormula>AND(NOT(LLC_BI__Is_Linked__c), LLC_BI__Period_Over_Period_Change__c)</errorConditionFormula>
+    <errorDisplayField>LLC_BI__Period_Over_Period_Change__c</errorDisplayField>
+    <errorMessage>Cannot calculate period over period values for none linked records</errorMessage>
+</ValidationRule>

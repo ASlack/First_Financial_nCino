@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nPortal__User__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field populates with the name of the user with whom the context is associated.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is the name of the user with whom this context is associated.</inlineHelpText>
+    <label>User</label>
+    <referenceTo>User</referenceTo>
+    <relationshipLabel>Contexts</relationshipLabel>
+    <relationshipName>Contexts</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

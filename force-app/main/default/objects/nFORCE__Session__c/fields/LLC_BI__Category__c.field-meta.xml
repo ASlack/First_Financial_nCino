@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Category__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is used to indicate the context of an existing session. It is automatically set during the New Customer Onboarding, Deposit Origination, Deposit Maintenance workflows, Online Applications, Consumer Loans and Online Deposit Origination workflows.</description>
+    <externalId>false</externalId>
+    <label>Category</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Deposit Origination</fullName>
+                <default>false</default>
+                <label>Deposit Origination</label>
+            </value>
+            <value>
+                <fullName>Commercial Loan</fullName>
+                <default>false</default>
+                <label>Commercial Loan</label>
+            </value>
+            <value>
+                <fullName>Consumer Loan</fullName>
+                <default>false</default>
+                <label>Consumer Loan</label>
+            </value>
+            <value>
+                <fullName>Online Deposit Application</fullName>
+                <default>false</default>
+                <label>Online Deposit Application</label>
+            </value>
+            <value>
+                <fullName>Online Consumer Loan Application</fullName>
+                <default>false</default>
+                <label>Online Consumer Loan Application</label>
+            </value>
+            <value>
+                <fullName>Online Commercial Loan Application</fullName>
+                <default>false</default>
+                <label>Online Commercial Loan Application</label>
+            </value>
+            <value>
+                <fullName>Deposit Maintenance</fullName>
+                <default>false</default>
+                <label>Deposit Maintenance</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

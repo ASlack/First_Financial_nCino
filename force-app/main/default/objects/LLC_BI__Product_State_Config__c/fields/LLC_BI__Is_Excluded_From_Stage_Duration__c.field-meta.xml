@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Is_Excluded_From_Stage_Duration__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is optional and is manually populated. It is used with opportunity history. When true, a loan in the stage and status denoted on the record with the product type this record is associated to will not be used in opportunity history calculations.</description>
+    <externalId>false</externalId>
+    <label>Is Excluded From Stage Duration</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

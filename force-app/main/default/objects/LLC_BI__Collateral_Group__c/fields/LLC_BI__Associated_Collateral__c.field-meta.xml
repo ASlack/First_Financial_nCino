@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Associated_Collateral__c</fullName>
+    <deleteConstraint>Cascade</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this required lookup to indicate the collateral management record that is a part of the group.</description>
+    <externalId>false</externalId>
+    <label>Associated Collateral</label>
+    <referenceTo>LLC_BI__Collateral__c</referenceTo>
+    <relationshipLabel>Collateral Groups</relationshipLabel>
+    <relationshipName>Collateral_Groups</relationshipName>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

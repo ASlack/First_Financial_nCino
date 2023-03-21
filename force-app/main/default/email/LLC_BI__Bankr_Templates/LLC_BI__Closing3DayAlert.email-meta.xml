@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>Alert used when a loan has been in the closing stage for too long</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>UNUSED - Loan in Closing - 3 Days Alert</name>
+    <style>none</style>
+    <subject>* {!LLC_BI__Loan__c.Name} has been in Closing for 3 days *</subject>
+    <textOnly>Loan &quot;{!LLC_BI__Loan__c.Name}&quot; has been in the Closing stage for 3 days. 
+
+Please take the appropriate action.  Click here for additional loan information: {!LLC_BI__Loan__c.Link}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

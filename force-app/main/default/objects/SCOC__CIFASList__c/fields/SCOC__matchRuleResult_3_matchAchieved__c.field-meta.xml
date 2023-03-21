@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCOC__matchRuleResult_3_matchAchieved__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Match Rule Result 3 Match Achieved</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Match Rule Result 3 Match Achieved</inlineHelpText>
+    <label>Match Rule Result 3 Match Achieved</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

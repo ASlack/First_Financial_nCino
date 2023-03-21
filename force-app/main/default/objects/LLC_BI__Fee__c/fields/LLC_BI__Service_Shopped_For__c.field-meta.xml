@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Service_Shopped_For__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Users populate this optional picklist to indicate whether or not the borrower shopped for the service. This field only applies to services the borrower can shop for. By default, this field is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select Did Shop For if the borrower shopped for the service. Select Did Not Shop For if the borrower did not shop for the service.</inlineHelpText>
+    <label>Service Shopped For</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Did Not Shop For</fullName>
+                <default>false</default>
+                <label>Did Not Shop For</label>
+            </value>
+            <value>
+                <fullName>Did Shop For</fullName>
+                <default>false</default>
+                <label>Did Shop For</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Wait_For_External_Update__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The user populates this checkbox to indicate that the business activity should remain in progress until an external process updates the status to continue. By default, it is false.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This checkbox indicates that the business activity should remain in progress until an external process updates the status to continue.</inlineHelpText>
+    <label>Wait For External Update</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

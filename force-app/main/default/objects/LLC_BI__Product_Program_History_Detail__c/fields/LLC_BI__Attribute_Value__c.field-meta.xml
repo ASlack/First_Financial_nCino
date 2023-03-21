@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Attribute_Value__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is currently not used because the product program selector feature is not being used. Logs the attribute value that was used with this history record.</description>
+    <externalId>false</externalId>
+    <label>Attribute Value</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

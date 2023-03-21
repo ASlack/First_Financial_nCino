@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Gross_Collateral1_Value__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is automatically populated via roll-up. It stores the gross value of all Loan_Collateral__c records.</description>
+    <externalId>false</externalId>
+    <label>Gross Collateral Value</label>
+    <summarizedField>LLC_BI__Loan_Collateral__c.LLC_BI__Collateral_Value__c</summarizedField>
+    <summaryForeignKey>LLC_BI__Loan_Collateral__c.LLC_BI__Loan__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

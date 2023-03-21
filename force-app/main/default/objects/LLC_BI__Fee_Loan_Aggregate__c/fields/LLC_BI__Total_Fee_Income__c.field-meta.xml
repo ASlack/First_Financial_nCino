@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Total_Fee_Income__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system populates this field to indicate the total fees paid to the FI factored into profitability.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Total fees paid to the financial institution that nIQ factors into profitability.</inlineHelpText>
+    <label>Total Fee Income</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

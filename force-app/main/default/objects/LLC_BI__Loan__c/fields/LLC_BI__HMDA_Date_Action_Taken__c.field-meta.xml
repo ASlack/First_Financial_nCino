@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__HMDA_Date_Action_Taken__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional unless the loan requires HMDA, then it is required. It is manually populated. Settlement or closing date for originations. For applications that did not result in an origination, the date when the action was taken or when the notice was sent to the applicant is entered. For an application that was expressly withdrawn by the applicant, either the date shown on the applicant&apos;s letter or the date you received the letter or notice is reported. For loans that an institution purchased, the date of purchase is entered.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the settlement or closing date for originations.</inlineHelpText>
+    <label>Date Action Taken</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

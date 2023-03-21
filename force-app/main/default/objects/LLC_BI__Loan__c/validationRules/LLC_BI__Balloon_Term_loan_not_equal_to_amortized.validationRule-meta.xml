@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Balloon_Term_loan_not_equal_to_amortized</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(LLC_BI__Balloon__c = true, ISPICKVAL(LLC_BI__Balloon_Product_Structure__c, &apos;Balloon Term&apos;), LLC_BI__Amortized_Term_Months__c = LLC_BI__Term_Months__c)</errorConditionFormula>
+    <errorMessage>Loan Term and Amortized Term cannot be equal.</errorMessage>
+</ValidationRule>

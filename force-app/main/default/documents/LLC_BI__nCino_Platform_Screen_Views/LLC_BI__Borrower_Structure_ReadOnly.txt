@@ -1,0 +1,28 @@
+<!-- ko if: screenResources()['{!NS}.InvolvementsScreenResource_{!NS}__Loan__c'].children().length == 0 -->
+<p>There is currently no Borrowing Structure defined for this loan.</p>
+<!-- /ko -->
+<!-- ko if: screenResources()['{!NS}.InvolvementsScreenResource_{!NS}__Loan__c'].children().length > 0 -->
+<table class="table table-bordered table-striped" data-bind="with: screenResources()['{!NS}.InvolvementsScreenResource_{!NS}__Loan__c']">
+<thead>
+<tr>
+<th>Borrowing Structure</th>
+</tr>
+<tr data-bind="with: children()[0]">
+<th data-bind="text: children()[0].propertyBag.Account_Name.fieldLabel"/>
+<th data-bind="text: propertyBag.{!NS}__Legal_Entities__c_{!NS}__Borrower_Type__c.fieldLabel" />
+<th data-bind="text: children()[0].propertyBag.Account_Type.fieldLabel"/>
+<th>Address</th>
+<th>EIN/SSN</th>
+</tr>
+</thead>
+<tbody data-bind="foreach: children()">
+<tr>
+<td><span data-bind="text: children()[0].propertyBag.Account_Name.value" /><br/><a class="no-print" data-bind="attr: { href: '/'+children()[0].propertyBag.Account_Id.value() }">Edit <i class="icon-edit"></i></a></td>
+<td><span data-bind="text: propertyBag.{!NS}__Legal_Entities__c_{!NS}__Borrower_Type__c.value" /><br/><a class="no-print" data-bind="attr: { href: '/'+propertyBag.{!NS}__Legal_Entities__c_Id.value() }">Edit <i class="icon-edit"></i></a></td>
+<td data-bind="text: children()[0].propertyBag.Account_Type.value" />
+<td><span data-bind="text: children()[0].propertyBag.Account_BillingStreet.value" /><br/><span data-bind="text: children()[0].propertyBag.Account_BillingCity.value" /><span data-bind="visible: children()[0].propertyBag.Account_BillingCity.value">,&nbsp;</span><span data-bind="text: children()[0].propertyBag.Account_BillingState.value" />&nbsp;<span data-bind="text: children()[0].propertyBag.Account_BillingPostalCode.value" /><br/><span data-bind="text: children()[0].propertyBag.Account_BillingCountry.value" /><br/><abbr title="Phone">Ph:</abbr> <span data-bind="if: children()[0].children().length == 0"><span data-bind="text: children()[0].propertyBag.Account_Phone.value" /></span><span data-bind="if: children()[0].children().length > 0"><span data-bind="text: children()[0].children()[0].propertyBag.Contact_Phone.value" /></span></td>
+<td><span data-bind="if: children()[0].propertyBag.Account_{!NS}__Tax_Identification_Number__c.value"><span data-bind="tinText: children()[0].propertyBag.Account_{!NS}__Tax_Identification_Number__c.value" /></span><span data-bind="if: children()[0].children().length > 0 && children()[0].children()[0].propertyBag.Contact_{!NS}__SS__c.value"><span data-bind="ssnText: children()[0].children()[0].propertyBag.Contact_{!NS}__SS__c.value" /></span></td>
+</tr>
+</tbody>
+</table>
+<!-- /ko -->

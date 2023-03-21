@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Final_Risk_Grade__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is populated automatically by using the risk rating worksheet. This field should not be edited directly. This field stores the final risk grade value, which is the value that should be used as the relationship&apos;s risk grade. It is set by the overidden risk grade if one exists, and the calculated risk grade if it does not. It will be rounded if that field is enabled.</description>
+    <externalId>false</externalId>
+    <formula>IF( LLC_BI__Risk_Grade_Template__r.LLC_BI__Round_Final_Risk_Grade__c,
+  ROUND(IF(ISNULL(LLC_BI__Overridden_Risk_Grade_Value__c) , LLC_BI__Computed_Risk_Grade_Value__c, LLC_BI__Overridden_Risk_Grade_Value__c),0),
+  IF(ISNULL(LLC_BI__Overridden_Risk_Grade_Value__c) , LLC_BI__Computed_Risk_Grade_Value__c, LLC_BI__Overridden_Risk_Grade_Value__c)
+)</formula>
+    <label>Final Risk Grade</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,4 @@
+<apex:page standardController="LLC_BI__Product_Package__c"
+	showHeader="false" sidebar="false">
+	<apex:include pageName="NDOC__ProductPackageIncludedDocMan" />
+</apex:page>

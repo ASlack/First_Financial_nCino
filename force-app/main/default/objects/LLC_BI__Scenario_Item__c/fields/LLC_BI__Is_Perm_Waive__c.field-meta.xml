@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Is_Perm_Waive__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is not required. It is manually populated. Currently, this field is a data point which indicates whether the scenario item is for a permanently waived fee.</description>
+    <externalId>false</externalId>
+    <label>Is Perm Waive</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

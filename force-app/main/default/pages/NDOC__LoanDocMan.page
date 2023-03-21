@@ -1,0 +1,5 @@
+<apex:page standardController="LLC_BI__Loan__c">
+	<div data-taxonomy-id="LoanDocMan">
+		<apex:include pageName="NDOC__UniversalDocMan"/>
+	</div>
+</apex:page>

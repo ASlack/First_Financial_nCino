@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Key__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <deprecated>false</deprecated>
+    <description>The user populates this required unique text field to provide an identifier for business process identification purposes. By default, it is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This text field identifies a business process.</inlineHelpText>
+    <label>Key</label>
+    <length>255</length>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

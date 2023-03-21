@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Heating_Expenses__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The user populates this text field to capture average monthly heating cost. By default, this field is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the price of the average monthly heating cost. Must be a numerical value.</inlineHelpText>
+    <label>Heating Expenses</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

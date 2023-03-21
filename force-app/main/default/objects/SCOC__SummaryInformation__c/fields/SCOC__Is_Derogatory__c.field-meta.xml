@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCOC__Is_Derogatory__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this optional checkbox to show if the customer included derogatory remarks as indicated from the integration response. There is no default. If not included in the response the field remains blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This system-populated field displays a checkbox to show if the customer included derogatory remarks as indicated from the integration response.</inlineHelpText>
+    <label>Derogatory Flag</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

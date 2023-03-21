@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Prevent_Invalid_Access__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Administrators select this optional checkbox field to prevent invalid access for nCino Access Auditing. The default value is not selected.  nCino recommends that administrators select this checkbox.</description>
+    <externalId>false</externalId>
+    <label>Prevent Invalid Access</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

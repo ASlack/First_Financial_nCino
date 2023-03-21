@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Additional_Charges__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this optional currency field to indicate the aggregate total of all additional fees not associated with the 12 Other fees listed as line items. By default, this field is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This system-populated field indicates the aggregate total of all fees not associated with the 12 listed line items.</inlineHelpText>
+    <label>Additional Charges</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

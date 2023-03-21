@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Amount__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is required. It is manually populated. It contains the full original amount of the Loan; this is the amount of the Loan at the time it was booked. This value should not change over time and is consistent over installment and line of credit products. This is used to calculate exposure for Line of Credit Products.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field is the &quot;Original Amount&quot; of the loan at the time of underwriting. This is different than the &quot;Principal Balance&quot; of the loan, which is the balance of the loan today.</inlineHelpText>
+    <label>Original Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

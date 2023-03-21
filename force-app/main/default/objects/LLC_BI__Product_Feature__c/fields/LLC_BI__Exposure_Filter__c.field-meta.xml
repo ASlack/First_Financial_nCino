@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Exposure_Filter__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Administrators manually populate this optional picklist field. When this field is populated, then the only loans that should be used in the exposure calculation are loans with a matching value in the Product Feature Filter field on the Statistic Configuration object. For example, if “Tier 1” is the value of the Exposure Filter field on the Product Feature object, then the only loans that will be used to calculate exposure are those with a value of “Tier 1&quot; in the Product Feature Filter field on the Statistic Configuration object.</description>
+    <externalId>false</externalId>
+    <label>Exposure Filter</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Tier 1</fullName>
+                <default>false</default>
+                <label>Tier 1</label>
+            </value>
+            <value>
+                <fullName>Tier 2</fullName>
+                <default>false</default>
+                <label>Tier 2</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

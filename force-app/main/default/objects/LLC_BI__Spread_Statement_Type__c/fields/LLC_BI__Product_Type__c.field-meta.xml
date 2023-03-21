@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Product_Type__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field is currently not being used</description>
+    <externalId>false</externalId>
+    <label>Product Type</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>$Source.LLC_BI__Product_Line__c</field>
+            <operation>equals</operation>
+            <valueField>LLC_BI__Product_Type__c.LLC_BI__Product_Line__c</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>LLC_BI__Product_Type__c</referenceTo>
+    <relationshipLabel>Spread Statement Templates</relationshipLabel>
+    <relationshipName>Spread_Statement_Templates</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

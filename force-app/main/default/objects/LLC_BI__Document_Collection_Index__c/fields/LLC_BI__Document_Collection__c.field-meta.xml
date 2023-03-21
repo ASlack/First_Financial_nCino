@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Document_Collection__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>--DEPRECATED-- Use Document_Collection_Reference__c.</description>
+    <externalId>false</externalId>
+    <label>-D Document Collection</label>
+    <referenceTo>LLC_BI__Document_Store__c</referenceTo>
+    <relationshipLabel>Document Collection Indices</relationshipLabel>
+    <relationshipName>Document_Collection_Indices</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

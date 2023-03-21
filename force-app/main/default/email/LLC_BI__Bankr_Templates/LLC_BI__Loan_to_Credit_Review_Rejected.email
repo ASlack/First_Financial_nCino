@@ -1,0 +1,6 @@
+The loan "{!LLC_BI__Loan__c.Name}" has been rejected and will not go to loan committee. 
+
+Click here for loan details: {!LLC_BI__Loan__c.Link}
+
+Rejection Comments:
+{!ApprovalRequest.Comments}

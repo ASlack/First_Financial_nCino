@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Auto_Applied_Advance_Rate__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this percentage field to set the advance rate for this collateral, based on transactional detail.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Auto-populated value based on the system administrator’s configuration through matrix manager.</inlineHelpText>
+    <label>Auto-Applied Advance Rate</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>Role_cm__c</name>
+    <picklistValues>
+        <masterLabel>Authorized Signer</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Beneficial Owner</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nPortal__Search_Object_Filter__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Manually populate this field with a Where clause to filter inappropriate search results.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter an optional Where clause to filter the results of the search on this sObject. An example on the Account object would be &quot;Type != &apos;Individual&apos;&quot;.</inlineHelpText>
+    <label>OA Search Object Filter</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Net_New_Funds__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is automatically populated. This field is used to store the difference of the lending amount between the prior version of a renewed or modified loan and the current version.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field is used to store the difference of the lending amount between the prior version of a renewed or modified loan and the current version.</inlineHelpText>
+    <label>Net New Funds</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Currency</type>
+</CustomField>

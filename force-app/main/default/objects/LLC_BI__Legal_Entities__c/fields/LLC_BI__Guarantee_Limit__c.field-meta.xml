@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Guarantee_Limit__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. The user manually populates this field. It is the fixed dollar amount of a limited guarantee.</description>
+    <externalId>false</externalId>
+    <label>Limited Guarantee Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

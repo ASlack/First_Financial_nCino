@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label></label>
+        <name>LLC_BI__Upgradeable_Fields</name>
+    </fieldSets>
+    <webLinks>
+        <label></label>
+        <name>LLC_BI__Clone_Template</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>LLC_BI__Print</name>
+    </webLinks>
+</CustomObjectTranslation>

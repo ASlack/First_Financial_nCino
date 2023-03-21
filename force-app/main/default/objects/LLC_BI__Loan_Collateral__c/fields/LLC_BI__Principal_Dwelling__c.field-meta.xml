@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Principal_Dwelling__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is optional and manually populated. It is a checkbox used to specify that the real estate property being used to secure the loan is the primary or principal residence of the owner.</description>
+    <externalId>false</externalId>
+    <label>Principal Dwelling</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCOC__Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this picklist to indicate the Industry Type from the vendor response. By default, it is blank.</description>
+    <externalId>false</externalId>
+    <label>Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>NAICS</fullName>
+                <default>false</default>
+                <label>NAICS</label>
+            </value>
+            <value>
+                <fullName>SIC</fullName>
+                <default>false</default>
+                <label>SIC</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

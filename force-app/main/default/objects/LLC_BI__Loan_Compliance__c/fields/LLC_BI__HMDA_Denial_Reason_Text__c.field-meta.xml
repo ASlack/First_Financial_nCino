@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__HMDA_Denial_Reason_Text__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field specifies in text the specific other reason(s) for denial if Code 9 (Other) is selected in any Reason for Denial field.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>You may enter up to 50 characters to list the other denial reason.</inlineHelpText>
+    <label>Other Denial Reason Details</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

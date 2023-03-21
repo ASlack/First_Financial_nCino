@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Collateral__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is populated automatically whenever Collateral is selected for CRE analysis in Spreads. This field specifies the Collateral associated with the Bundle.</description>
+    <externalId>false</externalId>
+    <label>Collateral</label>
+    <referenceTo>LLC_BI__Collateral__c</referenceTo>
+    <relationshipLabel>Underwriting Bundle</relationshipLabel>
+    <relationshipName>Underwriting_Bundle</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

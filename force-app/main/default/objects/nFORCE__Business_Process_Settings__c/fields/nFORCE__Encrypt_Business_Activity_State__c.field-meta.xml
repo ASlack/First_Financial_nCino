@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Encrypt_Business_Activity_State__c</fullName>
+    <defaultValue>true</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Administrators populate this optional checkbox field that, when set to true, encrypts the state data of the business activities. The default is true.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select to encrypt the state data of the business activities.</inlineHelpText>
+    <label>Encrypt Business Activity State</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

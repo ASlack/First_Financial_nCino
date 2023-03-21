@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORMS__Page_Dimension_Unit__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Admins populate this optional picklist field to define the unit of measurement for the page width. By default, the value is inches.</description>
+    <externalId>false</externalId>
+    <label>Page Dimension Unit</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Centimeters</fullName>
+                <default>false</default>
+                <label>Centimeters</label>
+            </value>
+            <value>
+                <fullName>Inches</fullName>
+                <default>true</default>
+                <label>Inches</label>
+            </value>
+            <value>
+                <fullName>Millimeters</fullName>
+                <default>false</default>
+                <label>Millimeters</label>
+            </value>
+            <value>
+                <fullName>Pixels</fullName>
+                <default>false</default>
+                <label>Pixels</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

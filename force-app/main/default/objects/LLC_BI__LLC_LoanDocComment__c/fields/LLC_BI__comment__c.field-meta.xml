@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__comment__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. This field is where a comment can be stored.</description>
+    <externalId>false</externalId>
+    <label>comment</label>
+    <length>16000</length>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

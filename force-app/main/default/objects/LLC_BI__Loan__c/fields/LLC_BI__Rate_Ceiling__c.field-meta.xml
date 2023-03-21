@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Rate_Ceiling__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is manually populated. This field is a percentage field, used to specify the maximum threshold of an interest rate, for a set period of time, on a loan.</description>
+    <externalId>false</externalId>
+    <label>Rate Ceiling</label>
+    <precision>11</precision>
+    <required>false</required>
+    <scale>8</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Percent</type>
+</CustomField>

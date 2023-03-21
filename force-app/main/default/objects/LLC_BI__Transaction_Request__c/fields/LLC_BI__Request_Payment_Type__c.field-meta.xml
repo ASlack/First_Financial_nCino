@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Request_Payment_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is a picklist that specifies the investment payment schedule and type.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Specifies the investment payment schedule and type.</inlineHelpText>
+    <label>Request Payment Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Immediately liquidate investments and send cash</fullName>
+                <default>false</default>
+                <label>Immediately liquidate investments and send cash</label>
+            </value>
+            <value>
+                <fullName>Liquidate specified investments</fullName>
+                <default>false</default>
+                <label>Liquidate specified investments</label>
+            </value>
+            <value>
+                <fullName>Send all investments in kind</fullName>
+                <default>false</default>
+                <label>Send all investments in kind</label>
+            </value>
+            <value>
+                <fullName>Send assets at maturity</fullName>
+                <default>false</default>
+                <label>Send assets at maturity</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Policy_Exception_Template__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The field is a Master-Detail field to the policy exception template record that this mitigation reason is associated to. This field is required and allows the appropriate mitigation reasons to be displayed when the policy exception is cited.</description>
+    <externalId>false</externalId>
+    <label>Policy Exception Template</label>
+    <referenceTo>LLC_BI__Policy_Exception_Template__c</referenceTo>
+    <relationshipLabel>Policy Exception Mitigation Reasons</relationshipLabel>
+    <relationshipName>Policy_Exception_Mitigation_Reasons</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

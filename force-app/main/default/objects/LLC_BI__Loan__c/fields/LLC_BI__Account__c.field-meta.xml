@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Account__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field is required. It is automatically populated during loan creation. This field is a lookup to a relationship/account that the loan is associated to and denotes the primary borrower for the loan.</description>
+    <externalId>false</externalId>
+    <label>Relationship</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Loans</relationshipLabel>
+    <relationshipName>Loans</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

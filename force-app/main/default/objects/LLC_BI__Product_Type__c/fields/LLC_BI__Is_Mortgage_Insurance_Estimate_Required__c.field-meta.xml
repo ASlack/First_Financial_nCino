@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Is_Mortgage_Insurance_Estimate_Required__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Administrators populate this checkbox to indicate a loan requires mortgage insurance estimation.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select this checkbox to indicate the loan requires mortgage insurance estimation.</inlineHelpText>
+    <label>Is Mortgage Insurance Estimate Required</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

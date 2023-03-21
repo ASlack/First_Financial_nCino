@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MTRNS__CompiledInstructions__c</fullName>
+    <deprecated>false</deprecated>
+    <description>JSON Serialized representation of the Compiled array of MTRNS MapInstruction_v1</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Compiled Instructions</label>
+    <length>131072</length>
+    <type>LongTextArea</type>
+    <visibleLines>50</visibleLines>
+</CustomField>

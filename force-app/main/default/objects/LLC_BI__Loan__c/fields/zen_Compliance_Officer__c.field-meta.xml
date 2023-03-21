@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>zen_Compliance_Officer__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>User lookup field for Compliance Officers  only. Needed to create custom field because nCino packaged Compliance Officer text field would not meet requirements of solution.</description>
+    <externalId>false</externalId>
+    <label>Compliance Officer</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>User.UserRole.DeveloperName</field>
+            <operation>equals</operation>
+            <value>Chief_Compliance_Officer</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Loans6</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

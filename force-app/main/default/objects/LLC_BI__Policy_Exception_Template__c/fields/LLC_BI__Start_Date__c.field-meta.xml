@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Start_Date__c</fullName>
+    <defaultValue>TODAY()</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is required and is used to specify the start date of the existing policy exception templates.  Setting when the template will become &quot;active&quot; and can be used.. Before this date the template will be considered as inactive and the user cannot create a new policy exception using the template.</description>
+    <externalId>false</externalId>
+    <label>Start Date</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

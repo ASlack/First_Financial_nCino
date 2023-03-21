@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Rule_Engine_Context__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is preset as part of the nCino system and is required. This field specifies the context associated with the rule, including where the rule will be initiated or used. For example, loan auto decision is used for auto decisioning purposes, policy exceptions is used for automating policy exceptions. If creating new contexts to link logic to, this field is manually entered and required.</description>
+    <externalId>false</externalId>
+    <label>Rule Engine Context</label>
+    <referenceTo>nFORCE__Rule_Engine_Context__c</referenceTo>
+    <relationshipLabel>Rule Engine Context Rules</relationshipLabel>
+    <relationshipName>Rule_Engine_Context_Rules</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>true</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

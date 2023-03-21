@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Is_Manually_Edited__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The user manually selects this optional checkbox field to indicate that manual edits have been made to the loan compliance record on the Loan Compliance route. By default, it is deselected.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field indicates if a user has manually edited the loan compliance record. When selected, the system does not automatically populate fields on the loan compliance record with values entered in the workflow.</inlineHelpText>
+    <label>Is Manually Edited</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

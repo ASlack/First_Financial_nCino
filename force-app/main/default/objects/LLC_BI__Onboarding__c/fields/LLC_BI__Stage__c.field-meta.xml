@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Stage__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This picklist field indicates progress of the case through the onboarding process. The workflow automatically populates it, or a user can manually set it.</description>
+    <externalId>false</externalId>
+    <label>Stage</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CustomerEngagement</fullName>
+                <default>true</default>
+                <label>Customer Engagement</label>
+            </value>
+            <value>
+                <fullName>DueDiligence</fullName>
+                <default>false</default>
+                <label>Due Diligence</label>
+            </value>
+            <value>
+                <fullName>Validation</fullName>
+                <default>false</default>
+                <label>Validation</label>
+            </value>
+            <value>
+                <fullName>Complete</fullName>
+                <default>false</default>
+                <label>Complete</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

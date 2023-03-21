@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nBRIDGER__OFAC_Match__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>OFAC_Match</label>
+    <referenceTo>nBRIDGER__OFAC_Match__c</referenceTo>
+    <relationshipLabel>OFAC_Addresses</relationshipLabel>
+    <relationshipName>OFAC_Addresses</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

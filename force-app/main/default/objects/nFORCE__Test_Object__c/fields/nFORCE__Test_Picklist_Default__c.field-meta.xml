@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Test_Picklist_Default__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Test default picklist settings</description>
+    <externalId>false</externalId>
+    <label>Test Picklist Default</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Selection1</fullName>
+                <default>true</default>
+                <label>Selection1</label>
+            </value>
+            <value>
+                <fullName>Selection2</fullName>
+                <default>false</default>
+                <label>Selection2</label>
+            </value>
+            <value>
+                <fullName>Selection3</fullName>
+                <default>false</default>
+                <label>Selection3</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

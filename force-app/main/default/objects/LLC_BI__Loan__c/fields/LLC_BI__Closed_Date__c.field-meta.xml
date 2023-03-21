@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Closed_Date__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is automatically populated. This field is a calculated date that represents when the loan is considered &apos;Closed&apos; as defined by the Product State Configuration. This date should not be edited.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Closed Date is a calculated date that represents when the Loan is considered &apos;Closed&apos; as defined by the Product State Configuration. This date should not be edited.</inlineHelpText>
+    <label>Closed Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

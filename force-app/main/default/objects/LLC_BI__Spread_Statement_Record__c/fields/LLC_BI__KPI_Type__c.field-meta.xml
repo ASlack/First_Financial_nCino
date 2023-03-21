@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__KPI_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is driven by user selections within the spreading application. When &quot;Standard Highlight&quot; is selected, the spread statement record (chart of account) is treated as a highlight that cannot be deselected by a user. When &quot;User Highlight&quot; is selected, the spread statement record can be deselected by a user. If neither are selected, the spread statement record is not treated as a highlight. By default, this picklist does not have either selected. None</description>
+    <externalId>false</externalId>
+    <label>Highlights Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Standard Highlight</fullName>
+                <default>false</default>
+                <label>Standard Highlight</label>
+            </value>
+            <value>
+                <fullName>User Highlight</fullName>
+                <default>false</default>
+                <label>User Highlight</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

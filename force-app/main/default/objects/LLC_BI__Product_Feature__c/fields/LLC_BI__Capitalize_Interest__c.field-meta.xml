@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Capitalize_Interest__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The user populates this optional picklist to determine if the interest on a loan is capitalized for the specified product. By default, it is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field determines if the interest on your loan is capitalized for the product feature.</inlineHelpText>
+    <label>Capitalize Interest</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Yes</fullName>
+                <default>false</default>
+                <label>Yes</label>
+            </value>
+            <value>
+                <fullName>No</fullName>
+                <default>false</default>
+                <label>No</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

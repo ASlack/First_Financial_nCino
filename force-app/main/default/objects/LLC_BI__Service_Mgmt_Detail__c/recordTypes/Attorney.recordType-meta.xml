@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Attorney</fullName>
+    <active>true</active>
+    <description>Record Type to specify Attorney Service Mgmt Details</description>
+    <label>Attorney</label>
+    <picklistValues>
+        <picklist>LLC_BI__Status__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ordered%2FIn Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recalled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submitted</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LLC_BI__Sub_Type__c</picklist>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Desktop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Update</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LLC_BI__Type__c</picklist>
+        <values>
+            <fullName>Attorney</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MarketValueInterest__c</picklist>
+        <values>
+            <fullName>Fee simple</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leased fee</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Zen_Insurance_Company__c</picklist>
+        <values>
+            <fullName>AIG Insurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chubb Insurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Guardian Insurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Liberty Mutual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lloyd%27s of London</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mapfre Praico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multinational Insurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>One Alliance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Optima Seguros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Travelers Indemnity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Triple S</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>United Surety</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Universal Insurance</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cm_EPA_Assessment_Type__c</picklist>
+        <values>
+            <fullName>Phase 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phase 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RSRA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transaction Screen</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cm_EPA_Vendor__c</picklist>
+        <values>
+            <fullName>AEI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PES</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cm_Evaluation_Type__c</picklist>
+        <values>
+            <fullName>Exterior</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interior</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cm_Licensed_Appraiser_Allowed__c</picklist>
+        <values>
+            <fullName>General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Residential</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cm_Order_Appraisal__c</picklist>
+        <values>
+            <fullName>Bid Only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cm_Order_Type__c</picklist>
+        <values>
+            <fullName>As Built</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>As Constructed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>As Is</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EPA Assessment</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cm_Property_Status__c</picklist>
+        <values>
+            <fullName>Improved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Land Only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Under Construction</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cm_Property_Type__c</picklist>
+        <values>
+            <fullName>Land and Building</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Raw Land</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cm_Report_Type__c</picklist>
+        <values>
+            <fullName>Business Valuation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CRE Appraisal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Equipment Appraisal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Residential Property Appraisal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Self-Contained</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tax Verification</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cm_Requested_Approaches__c</picklist>
+        <values>
+            <fullName>Cost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Income</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Market Value</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cm_Requested_Property_Rights__c</picklist>
+        <values>
+            <fullName>Fee Simple</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leased Fee</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cm_Requested_Values__c</picklist>
+        <values>
+            <fullName>Market Value As Is</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Market Value At Completion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Market Value At Stabilization</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cm_Zoning__c</picklist>
+        <values>
+            <fullName>Agriculture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Residential</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

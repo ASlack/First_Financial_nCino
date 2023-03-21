@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Period_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this picklist field based on field mappings for rate and payment structure. By default, this picklist is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This system-populated field displays a value based on field mappings for rate and payment structure.</inlineHelpText>
+    <label>Period Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Teaser</fullName>
+                <default>false</default>
+                <label>Teaser</label>
+            </value>
+            <value>
+                <fullName>Draw</fullName>
+                <default>false</default>
+                <label>Draw</label>
+            </value>
+            <value>
+                <fullName>Repayment</fullName>
+                <default>false</default>
+                <label>Repayment</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

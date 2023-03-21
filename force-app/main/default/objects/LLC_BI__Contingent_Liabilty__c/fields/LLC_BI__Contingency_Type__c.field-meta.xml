@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Contingency_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field has been deprecated and replaced by Contingent Type on the Entity Involvement record</description>
+    <externalId>false</externalId>
+    <label>-D Contingency Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Joint &amp; Several</fullName>
+                <default>true</default>
+                <label>Joint &amp; Several</label>
+            </value>
+            <value>
+                <fullName>Pro Rata</fullName>
+                <default>false</default>
+                <label>Pro Rata</label>
+            </value>
+            <value>
+                <fullName>Assign Specific</fullName>
+                <default>false</default>
+                <label>Assign Specific</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

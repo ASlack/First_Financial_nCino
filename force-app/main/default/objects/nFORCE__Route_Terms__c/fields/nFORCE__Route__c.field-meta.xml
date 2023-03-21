@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Route__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field maps to a UI route in the retail loan workflow. The selected Salesforce disclosure document is displayed on this route to the user.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is the UI route which displays the Salesforce disclosure document.</inlineHelpText>
+    <label>Route</label>
+    <referenceTo>nFORCE__Route__c</referenceTo>
+    <relationshipLabel>Route Terms</relationshipLabel>
+    <relationshipName>Route_Terms</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

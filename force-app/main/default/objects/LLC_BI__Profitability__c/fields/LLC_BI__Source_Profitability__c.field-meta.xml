@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Source_Profitability__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field is a lookup field that connects a Proforma Profitability to the Actual Profitability record of a singular product.</description>
+    <externalId>false</externalId>
+    <label>Source Profitability</label>
+    <referenceTo>LLC_BI__Profitability__c</referenceTo>
+    <relationshipLabel>Profitabilities (Source Profitability)</relationshipLabel>
+    <relationshipName>Profitabilities</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

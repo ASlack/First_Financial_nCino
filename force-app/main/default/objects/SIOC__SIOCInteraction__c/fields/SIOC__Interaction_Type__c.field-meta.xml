@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SIOC__Interaction_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this picklist with the interaction type.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This system-populated picklist displays the interaction type.</inlineHelpText>
+    <label>Interaction Type</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Business Verification</fullName>
+                <default>false</default>
+                <label>Business Verification</label>
+            </value>
+            <value>
+                <fullName>Business Lookup</fullName>
+                <default>false</default>
+                <label>Business Lookup</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

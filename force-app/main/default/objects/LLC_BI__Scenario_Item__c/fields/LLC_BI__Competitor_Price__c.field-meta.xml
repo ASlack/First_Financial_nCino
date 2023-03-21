@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Competitor_Price__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is populated manually in the proforma. It stores the value of a competitor&apos;s price for a bill point.</description>
+    <externalId>false</externalId>
+    <label>Competitor Price</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>6</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

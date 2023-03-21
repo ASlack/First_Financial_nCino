@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCOC__LCResponseMessage__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This required master-detail field contains the lookup key to the associated Liquid Credit Response Message.</description>
+    <externalId>false</externalId>
+    <label>Liquid Credit Response Message</label>
+    <referenceTo>SCOC__LCResponseMessage__c</referenceTo>
+    <relationshipLabel>Liquid Credit Response Message Details</relationshipLabel>
+    <relationshipName>LCResponseMessageDetail</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCOC__RevolvingAvailablePercent__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Whole percentage amount from 0-100</description>
+    <externalId>false</externalId>
+    <label>Revolving Available Percent</label>
+    <precision>9</precision>
+    <required>false</required>
+    <scale>3</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Break_Page_Before__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is optional and is used by Credit Memo framework. The default value is false. When the value is set to true, the credit memo export PDF breaks before the section. This field is not accessible to the user and can be set by an administrator to set required page breaks.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Forces a page break before the section when printing.</inlineHelpText>
+    <label>Break Page Before</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

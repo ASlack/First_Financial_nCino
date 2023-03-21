@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Maximum_Availability__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is automatically populated via formula. It is used to calculate the maximum availability for the loan if it is part of a multi-level facility.</description>
+    <externalId>false</externalId>
+    <formula>IF(LLC_BI__Highest__r.LLC_BI__Amount_Available__c &lt; LLC_BI__Amount_Available__c, LLC_BI__Highest__r.LLC_BI__Amount_Available__c, LLC_BI__Amount_Available__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Maximum Availability</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

@@ -1,0 +1,27 @@
+&nbsp<!-- This is a fix for LLCBI-2332 (IE 8 Error) -->
+<!-- ko if: screenResources()['{!NS}.CovenantScreenResource_{!NS}__Loan__c'].children().length == 0 -->
+<p>There are currently no Covenants for this loan.</p>
+<!-- /ko -->
+<!-- ko foreach: screenResources()['{!NS}.CovenantScreenResource_{!NS}__Loan__c'].children() -->
+<table class="table table-bordered table-striped">
+<tbody>
+<tr>
+<th>Covenant Type</th>
+<td><span data-bind="if: children()[0]"><span data-bind="text: children()[0].propertyBag.{!NS}__Covenant_Type__c_Name.value" /></span></td>
+<th>Category</th>
+<td><span data-bind="if: children()[0]"><span data-bind="text: children()[0].propertyBag.{!NS}__Covenant_Type__c_{!NS}__Category__c.value" /></span></td>
+</tr>
+<tr>
+<th data-bind="text: propertyBag.{!NS}__Covenant__c_{!NS}__Frequency__c.fieldLabel" />
+<td data-bind="text: propertyBag.{!NS}__Covenant__c_{!NS}__Frequency__c.value" />
+<td colspan="2">&nbsp;</td>
+</tr>
+<tr data-bind="visible: propertyBag.{!NS}__Covenant__c_{!NS}__Notes__c.value">
+<td colspan="4" data-bind="html: propertyBag.{!NS}__Covenant__c_{!NS}__Notes__c.value" />
+</tr>
+<tr class="hidden-print">
+<td colspan="4"><a data-bind="attr: { href: '/'+propertyBag.{!NS}__Covenant__c_Id.value() }">Edit <i class="glyphicon glyphicon-edit"></i></a></td>
+</tr>
+</tbody>
+</table>
+<!-- /ko -->

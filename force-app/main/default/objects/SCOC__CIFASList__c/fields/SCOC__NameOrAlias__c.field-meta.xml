@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCOC__NameOrAlias__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Name Or Alias Lookup</description>
+    <externalId>false</externalId>
+    <label>Name Or Alias Lookup</label>
+    <referenceTo>SCOC__NameOrAliasList__c</referenceTo>
+    <relationshipLabel>Related Name Or Alias</relationshipLabel>
+    <relationshipName>CIFASList</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

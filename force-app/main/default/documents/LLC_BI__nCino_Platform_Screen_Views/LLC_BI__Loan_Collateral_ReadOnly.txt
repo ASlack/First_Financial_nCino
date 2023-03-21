@@ -1,0 +1,29 @@
+<!-- ko if: screenResources()['{!NS}.CollateralScreenResource_{!NS}__Loan__c'].children().length == 0 -->
+<p>There is currently no Collateral for this loan.</p>
+<!-- /ko -->
+<!-- ko if: screenResources()['{!NS}.CollateralScreenResource_{!NS}__Loan__c'].children().length > 0 --> 
+<table class="table table-bordered table-striped" data-bind="with: screenResources()['{!NS}.CollateralScreenResource_{!NS}__Loan__c']">
+<thead>
+<tr data-bind="with: children()[0]">
+<th data-bind="text: propertyBag.{!NS}__Loan_Collateral__c_{!NS}__Type__c.fieldLabel" />
+<th data-bind="text: propertyBag.{!NS}__Loan_Collateral__c_{!NS}__Collateral_Address__c.fieldLabel" />
+<th data-bind="text: propertyBag.{!NS}__Loan_Collateral__c_{!NS}__Collateral_Value__c.fieldLabel" />
+<th data-bind="text: propertyBag.{!NS}__Loan_Collateral__c_{!NS}__Appraisal_Date__c.fieldLabel" />
+<th data-bind="text: propertyBag.{!NS}__Loan_Collateral__c_{!NS}__Prior_Lien_Holder__c.fieldLabel" />
+<th data-bind="text: propertyBag.{!NS}__Loan_Collateral__c_{!NS}__Prior_Lien_Amount__c.fieldLabel" />
+<th class="no-print">&nbsp;</th>
+</tr>
+</thead>
+<tbody data-bind="foreach: children()">
+<tr>
+<td data-bind="text: propertyBag.{!NS}__Loan_Collateral__c_{!NS}__Type__c.value" />
+<td><span data-bind="text: propertyBag.{!NS}__Loan_Collateral__c_{!NS}__Collateral_Address__c.value" /><br/><span data-bind="text: propertyBag.{!NS}__Loan_Collateral__c_{!NS}__Collateral_City__c.value" /><span data-bind="visible: propertyBag.{!NS}__Loan_Collateral__c_{!NS}__Collateral_City__c.value">,&nbsp;</span><span data-bind="text: propertyBag.{!NS}__Loan_Collateral__c_{!NS}__Collateral_State__c.value" />&nbsp;<span data-bind="text: propertyBag.{!NS}__Loan_Collateral__c_{!NS}__Collateral_Zip_Code__c.value" /></td>
+<td data-bind="currencyText: propertyBag.{!NS}__Loan_Collateral__c_{!NS}__Collateral_Value__c.value" />
+<td data-bind="dateText: propertyBag.{!NS}__Loan_Collateral__c_{!NS}__Appraisal_Date__c.value" />
+<td data-bind="text: propertyBag.{!NS}__Loan_Collateral__c_{!NS}__Prior_Lien_Holder__c.value" />
+<td data-bind="currencyText: propertyBag.{!NS}__Loan_Collateral__c_{!NS}__Prior_Lien_Amount__c.value" />
+<td class="no-print"><a data-bind="attr: { href: '/'+propertyBag.{!NS}__Loan_Collateral__c_Id.value() }">Edit <i class="icon-edit"></i></a></td>
+</tr>
+</tbody>
+</table>
+<!-- /ko -->

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nPortal__Maximum_Number_of_Records__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Administrators populate this number field to set the maximum number of records a user can add.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the maximum number of records that users can add.</inlineHelpText>
+    <label>Maximum Number of Records</label>
+    <precision>3</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

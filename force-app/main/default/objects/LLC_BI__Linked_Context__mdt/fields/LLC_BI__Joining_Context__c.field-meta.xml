@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Joining_Context__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This optional field contains a reference to a context object that is intended to be joined to the Context_Node.</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>This field contains a context object to be joined to the object in Context_Node</inlineHelpText>
+    <label>Joining Context</label>
+    <referenceTo>LLC_BI__Context__mdt</referenceTo>
+    <relationshipLabel>Linked Contexts (Joining Context)</relationshipLabel>
+    <relationshipName>Joining_Contexts</relationshipName>
+    <required>false</required>
+    <type>MetadataRelationship</type>
+    <unique>false</unique>
+</CustomField>

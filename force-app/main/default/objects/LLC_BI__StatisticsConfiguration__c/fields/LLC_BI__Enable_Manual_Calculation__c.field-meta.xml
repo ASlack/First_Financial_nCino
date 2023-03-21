@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Enable_Manual_Calculation__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This optional field is manually selected. It is used to determine if the statistic is manually updated via a batch job. A manually updated statistic allows a user to initiate the recalculation. When enabled, the statistic is updated manually; when disabled the statistic does not update manually. It is disabled by default.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enables manual calculation of the statistic. A manually updated statistic allows a user to initiate the recalculation.</inlineHelpText>
+    <label>Enable Manual Calculation</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

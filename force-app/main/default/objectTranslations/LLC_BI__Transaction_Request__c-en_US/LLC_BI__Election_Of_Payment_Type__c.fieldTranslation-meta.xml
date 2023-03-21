@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help></help>
+    <label></label>
+    <name>LLC_BI__Election_Of_Payment_Type__c</name>
+    <picklistValues>
+        <masterLabel>Five Year Rule</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Single Life Expectancy</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Treat As Own</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

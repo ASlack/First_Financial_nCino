@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cm_In_Flood_Zone__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Used to illustrate when a piece of collateral is in a flood zone</description>
+    <externalId>false</externalId>
+    <label>In Flood Zone</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

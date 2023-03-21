@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>nPortal__Online_Application_Type__c</name>
+    <picklistValues>
+        <masterLabel>Online Deposit Application</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Online Loan Application</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

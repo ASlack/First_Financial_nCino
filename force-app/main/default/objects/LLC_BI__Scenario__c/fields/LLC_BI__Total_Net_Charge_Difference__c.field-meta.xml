@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Total_Net_Charge_Difference__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is populated automatically via formula. It stores the difference between a competitor&apos;s net charge and the net amount for this proforma.</description>
+    <externalId>false</externalId>
+    <formula>LLC_BI__Competitor_Net_Charge__c -  LLC_BI__Net_Amount_Due__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Total Net Charge Difference</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

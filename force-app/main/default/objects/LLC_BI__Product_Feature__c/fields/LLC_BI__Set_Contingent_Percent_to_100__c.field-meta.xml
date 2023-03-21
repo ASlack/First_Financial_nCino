@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Set_Contingent_Percent_to_100__c</fullName>
+    <defaultValue>true</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Administrators select this optional boolean field to tell the system that the Set Contingent Percentage to 100% system property should fire for the specific Product Feature. By default, it is true.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select this checkbox to tell the system that the Set Contingent Percentage to 100% system property should fire for the specific Product Feature.</inlineHelpText>
+    <label>Set Contingent Percentage to 100%</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Decision_Hold_Comments__c</fullName>
+    <description>If there is a hold, please elaborate on the hold reason.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If there is a hold, please elaborate on the hold reason.</inlineHelpText>
+    <label>Decision Hold Comments</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>5</visibleLines>
+</CustomField>

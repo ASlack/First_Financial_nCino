@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Percent_Hard_Costs__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this field to calculate the percentage of the total budget amount categorized as hard costs.</description>
+    <externalId>false</externalId>
+    <formula>LLC_BI__Total_Hard_Costs__c  /  LLC_BI__Total_Budget_Amount__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Percent Hard Costs</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>4</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

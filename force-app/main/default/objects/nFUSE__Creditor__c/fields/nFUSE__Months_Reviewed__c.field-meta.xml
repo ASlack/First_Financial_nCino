@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFUSE__Months_Reviewed__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system populates this optional field with the number of months the borrower&apos;s payment history was reviewed.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The system populates this optional field with the number of months the borrower&apos;s payment history was reviewed.</inlineHelpText>
+    <label>Months Reviewed</label>
+    <precision>5</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

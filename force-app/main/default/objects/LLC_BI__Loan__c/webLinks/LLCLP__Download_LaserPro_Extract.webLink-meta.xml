@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLCLP__Download_LaserPro_Extract</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <height>600</height>
+    <linkType>page</linkType>
+    <masterLabel>Download LaserPro Extract</masterLabel>
+    <openType>sidebar</openType>
+    <page>LLCLP__LaserPro_Review</page>
+    <protected>false</protected>
+</WebLink>

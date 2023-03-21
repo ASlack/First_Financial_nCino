@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__HMDA_Purpose__c</fullName>
+    <deprecated>false</deprecated>
+    <description>--DEPRECATED--This field is optional unless the loan requires HMDA, then it is required. It is manually populated. This field indicates whether the transaction is for home purchase, home improvement, refinancing, cash-out refinancing, or another purpose.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>HMDA Loan Purpose</inlineHelpText>
+    <label>-D Purpose of Loan</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Code 1—Home purchase</fullName>
+                <default>false</default>
+                <label>Code 1—Home purchase</label>
+            </value>
+            <value>
+                <fullName>Code 2—Home improvement</fullName>
+                <default>false</default>
+                <label>Code 2—Home improvement</label>
+            </value>
+            <value>
+                <fullName>Code 3—Refinancing</fullName>
+                <default>false</default>
+                <label>Code 3—Refinancing</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

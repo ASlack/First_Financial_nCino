@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Change_of_Circumstance_Date__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this optional field to indicate the date of the acceptable change of circumstance that causes a tolerance breach. By default, this field is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the date for the change of circumstance.</inlineHelpText>
+    <label>Change of Circumstance Date</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

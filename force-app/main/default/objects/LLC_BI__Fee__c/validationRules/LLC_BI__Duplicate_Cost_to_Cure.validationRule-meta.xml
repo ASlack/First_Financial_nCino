@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Duplicate_Cost_to_Cure</fullName>
+    <active>true</active>
+    <description>User cannot add multiple fees with a fee type of Cost to Cure to a loan.</description>
+    <errorConditionFormula>OR(
+			AND(
+				ISPICKVAL(LLC_BI__Fee_Type__c, &apos;Cost to Cure&apos;),
+				ISCHANGED(LLC_BI__Fee_Type__c),
+				LLC_BI__Fee_Loan_Aggregate__r.LLC_BI__Cost_To_Cure__c != 0
+			)
+			,
+			AND(
+				ISPICKVAL(LLC_BI__Fee_Type__c, &apos;Cost to Cure&apos;),
+				ISCHANGED(LLC_BI__Fee_Loan_Aggregate__c),
+				LLC_BI__Fee_Loan_Aggregate__r.LLC_BI__Cost_To_Cure__c != 0
+			)
+		)</errorConditionFormula>
+    <errorMessage>The cost to cure already exists for the loan. Click Edit to update the cost to cure.</errorMessage>
+</ValidationRule>

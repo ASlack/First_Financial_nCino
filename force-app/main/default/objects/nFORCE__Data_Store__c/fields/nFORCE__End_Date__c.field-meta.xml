@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__End_Date__c</fullName>
+    <deprecated>false</deprecated>
+    <description>End of the timeframe for the captured data.  If the aggregate data is captured daily, the start and end dates will be the same date.  If the aggregate data is for one week, the start and end date would be a week apart.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>End of the timeframe for the captured data.  If the aggregate data is captured daily, the start and end dates will be the same date.  If the aggregate data is for one week, the start and end date would be a week apart.</inlineHelpText>
+    <label>End Date</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

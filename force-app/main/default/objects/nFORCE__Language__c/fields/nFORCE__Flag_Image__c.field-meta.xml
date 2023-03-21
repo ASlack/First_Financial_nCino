@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Flag_Image__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field contains the URL for the hosted image that appears next to the language in the language selection tool of the Customer Engagement Solution.</description>
+    <externalId>false</externalId>
+    <label>Flag Image</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

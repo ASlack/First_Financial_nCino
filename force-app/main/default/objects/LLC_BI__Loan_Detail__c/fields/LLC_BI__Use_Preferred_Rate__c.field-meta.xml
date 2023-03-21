@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Use_Preferred_Rate__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The user manually selects this checkbox field to indicate that the system should calculate the loan using the value entered in the Preferred Interest Rate field. By default, this field is unchecked.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select this checkbox to use the Preferred Rate in loan calculations.</inlineHelpText>
+    <label>Calculate with Preferred Rate</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

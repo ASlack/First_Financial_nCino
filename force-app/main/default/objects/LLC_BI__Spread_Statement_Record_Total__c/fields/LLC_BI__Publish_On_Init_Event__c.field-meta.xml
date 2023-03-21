@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Publish_On_Init_Event__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional If set, SpreadStatement will trigger an event of this type when its first rendered with its period total values.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Set this value to allow other applications to execute when a total is initialized.</inlineHelpText>
+    <label>Publish On Init Event</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

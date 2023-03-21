@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Is_Approved__c</fullName>
+    <deprecated>false</deprecated>
+    <description>--DEPRECATED-- Determines if the status of the request is approved.</description>
+    <externalId>false</externalId>
+    <formula>ISPICKVAL(LLC_BI__Status__c, &quot;Approved&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>-D Is Approved</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

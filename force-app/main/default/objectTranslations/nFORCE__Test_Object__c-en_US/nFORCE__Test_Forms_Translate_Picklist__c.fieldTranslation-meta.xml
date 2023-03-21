@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>nFORCE__Test_Forms_Translate_Picklist__c</name>
+    <picklistValues>
+        <masterLabel>apple</masterLabel>
+        <translation>tomato</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>banana</masterLabel>
+        <translation>cucumber</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>orange</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

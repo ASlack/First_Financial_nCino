@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Loan_Collateral_Aggregate__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional and user input. The aggregate object that connects Collateral to a Loan</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The aggregate object that connects Collateral to a Loan</inlineHelpText>
+    <label>Loan Collateral Aggregate</label>
+    <referenceTo>LLC_BI__Loan_Collateral_Aggregate__c</referenceTo>
+    <relationshipName>Loan_Collateral</relationshipName>
+    <relationshipOrder>1</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

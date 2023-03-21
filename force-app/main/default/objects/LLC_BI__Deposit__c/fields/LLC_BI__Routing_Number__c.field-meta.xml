@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Routing_Number__c</fullName>
+    <deprecated>false</deprecated>
+    <description>--DEPRECATED-- (Replacing with Routing_Transit_Number__c) -- Populate this number (9-digit) field with the 9 Digit ABA Number for the deposit account. If creating new accounts via a core integration, this field is automatically populated. Otherwise, the field is manually populated during the deposit account opening workflow.</description>
+    <externalId>false</externalId>
+    <label>-D Routing Number</label>
+    <precision>9</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

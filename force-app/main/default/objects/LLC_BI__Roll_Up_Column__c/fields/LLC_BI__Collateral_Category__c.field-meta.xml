@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Collateral_Category__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field notates what Collateral Category this column relates to. For example, if the Collateral Category is set to Real Estate and the Roll-Up table is filtering by Collateral Category = Real Estate, this column will be displayed.</description>
+    <externalId>false</externalId>
+    <label>Collateral Category</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>LLC_BI__Collateral_Category_Type</valueSetName>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Stage_Duration_Hours__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is automatically populated with a formula. This field holds the Stage Duration Hours for each stage entry, for a single loan.</description>
+    <externalId>false</externalId>
+    <formula>IF(ISNULL(LLC_BI__End_Time__c), null, 24 * LLC_BI__Stage_Duration__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Set in Code - Holds the Stage Duration Hours for each Stage entry, for a single loan.</inlineHelpText>
+    <label>Record Duration Hours</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

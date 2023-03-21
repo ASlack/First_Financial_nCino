@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Net_Interest_Income__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system autopopulates this field using the profitability model in the context of a loan. In the context of a relationship, this field is an aggregated value of the Net Income of all loan products associated to it.</description>
+    <externalId>false</externalId>
+    <label>Net Income</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

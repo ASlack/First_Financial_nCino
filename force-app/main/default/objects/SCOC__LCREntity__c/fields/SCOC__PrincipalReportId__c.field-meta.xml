@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCOC__PrincipalReportId__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. When the record type is set to SBSS7 - Consumer, it should be populated with the expected picklist value.</description>
+    <externalId>false</externalId>
+    <label>Principal Report Id</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>NOTAPPLICABLE</fullName>
+                <default>false</default>
+                <label>Not Applicable</label>
+            </value>
+            <value>
+                <fullName>RPTID01</fullName>
+                <default>false</default>
+                <label>RPTID01</label>
+            </value>
+            <value>
+                <fullName>RPTID02</fullName>
+                <default>false</default>
+                <label>RPTID02</label>
+            </value>
+            <value>
+                <fullName>RPTID03</fullName>
+                <default>false</default>
+                <label>RPTID03</label>
+            </value>
+            <value>
+                <fullName>RPTID04</fullName>
+                <default>false</default>
+                <label>RPTID04</label>
+            </value>
+            <value>
+                <fullName>RPTID05</fullName>
+                <default>false</default>
+                <label>RPTID05</label>
+            </value>
+            <value>
+                <fullName>RPTID06</fullName>
+                <default>false</default>
+                <label>RPTID06</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

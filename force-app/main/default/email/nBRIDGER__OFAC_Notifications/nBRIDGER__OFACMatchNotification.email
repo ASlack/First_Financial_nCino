@@ -1,0 +1,7 @@
+<messaging:emailTemplate subject="OFAC Match Found" recipientType="User" relatedToType="nBRIDGER__OFAC_Disposition__c">
+<messaging:htmlEmailBody >
+A match has been found for {!relatedTo.OFAC_Match__r.OFAC_Request__r.Name}'s OFAC check. 
+
+See {!relatedTo.Id}
+</messaging:htmlEmailBody>
+</messaging:emailTemplate>

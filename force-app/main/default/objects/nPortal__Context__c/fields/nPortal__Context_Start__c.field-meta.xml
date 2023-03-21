@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nPortal__Context_Start__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field tracks the date and time when the user began filling out their online application.</description>
+    <externalId>false</externalId>
+    <label>Context Start</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

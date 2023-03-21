@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Field_Set__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is manually populated. Determines the field set that is used for this Collateral Type on the Manage Collateral Page</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Determines the field set that is used for this Collateral Type on the Manage Collateral Page</inlineHelpText>
+    <label>Field Set</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

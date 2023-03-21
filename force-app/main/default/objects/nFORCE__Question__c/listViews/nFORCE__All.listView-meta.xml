@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__All</fullName>
+    <columns>NAME</columns>
+    <columns>nFORCE__Label__c</columns>
+    <columns>nFORCE__Is_Archived__c</columns>
+    <columns>nFORCE__Form_Type__c</columns>
+    <columns>nFORCE__Group__c</columns>
+    <columns>nFORCE__Is_Required__c</columns>
+    <columns>nFORCE__Order__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

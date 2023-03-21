@@ -1,0 +1,34 @@
+<apex:page standardController="LLC_BI__Product_Package__c"
+	extensions="LLC_BI.TotalExposureProdPkgController"
+	sidebar="false">
+	<nFORCE:Include_Design_System flavor="bs3"/>
+	<nFORCE:Include_Messenger />
+
+	<div class="force slds" id="TotalExposureProductPackage">
+		<c:ncTotalExposure providers="{!providers}"
+			summarySectionId="{!summarySectionId}"
+			addDebtModalSectionId="{!addDebtModalSectionId}"
+			excludeDebtModalEnableSectionId="{!excludeDebtModalEnableSectionId}"
+			excludeDebtModalDisableSectionId="{!excludeDebtModalDisableSectionId}"
+			expandLoanSectionId="{!expandLoanProductPackageSectionId}"
+			expandDebtSectionId="{!expandDebtProductPackageSectionId}"
+			isHouseholdMember="{!isHouseholdMember}"
+			isRecalculateEnabled="{!isRecalculateEnabled}"
+			productPackageId="{!productPackageId}"
+			isReadOnly="{!isReadOnly}"
+			ns="{!namespace}" />
+	</div>
+	<apex:outputText rendered="{!$CurrentPage.parameters.isReadOnly == 'true'}">
+		<script>
+			(function(){
+				var div = document.querySelector('#TotalExposureProductPackage');
+				var config = { attributes: true, childList: true, subtree: true };
+
+				var observer = new MutationObserver(function() {
+					Messenger.publish('Content:Resize', document.body.scrollHeight);
+				});
+				observer.observe(div, config);
+			})();
+		</script>
+	</apex:outputText>
+</apex:page>

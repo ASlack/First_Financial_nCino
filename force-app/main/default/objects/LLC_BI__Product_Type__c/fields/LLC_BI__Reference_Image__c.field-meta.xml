@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Reference_Image__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this image field to display the image associated with each product type. By default, the system displays either the designated product image or the default image.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Click an image to begin the process associated with the product type.</inlineHelpText>
+    <label>Reference Image</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Screen_Section__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field is optional and can be manually configured to display a field set while collecting ID documents during New Customer Onboarding. It indicates the screen section for the document type.</description>
+    <externalId>false</externalId>
+    <label>Screen Section</label>
+    <referenceTo>nFORCE__Screen_Section__c</referenceTo>
+    <relationshipName>Identification_Document_Types</relationshipName>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

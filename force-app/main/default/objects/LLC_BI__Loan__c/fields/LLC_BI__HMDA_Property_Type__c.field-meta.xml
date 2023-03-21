@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__HMDA_Property_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>--DEPRECATED-- This field is optional unless the loan requires HMDA, then it is required. It is manually populated. This field indicates whether the loan or application was for manufactured housing, a multifamily dwelling, or a one- to-four-family dwelling other than manufactured housing.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Report whether the loan or application was for manufactured housing, a multifamily dwelling, or a one- to-four-family dwelling other than manufactured housing.</inlineHelpText>
+    <label>-D Property Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Code 1—One- to four-family dwelling (other than manufactured housing)</fullName>
+                <default>false</default>
+                <label>Code 1—One- to four-family dwelling (other than manufactured housing)</label>
+            </value>
+            <value>
+                <fullName>Code 2—Manufactured housing</fullName>
+                <default>false</default>
+                <label>Code 2—Manufactured housing</label>
+            </value>
+            <value>
+                <fullName>Code 3—Multifamily dwelling</fullName>
+                <default>false</default>
+                <label>Code 3—Multifamily dwelling</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

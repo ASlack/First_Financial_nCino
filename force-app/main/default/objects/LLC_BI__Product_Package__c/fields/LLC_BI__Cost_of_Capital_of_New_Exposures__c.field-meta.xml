@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Cost_of_Capital_of_New_Exposures__c</fullName>
+    <defaultValue>0.10</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Users populate this field with the approximate cost of capital for all new treasury exposure an FI originates in the deal outside of nCino. nCino recommends using the same cost of capital rate used in for loans. By default, it is 10%.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The approximate cost of capital percentage for all new treasury exposure being originated in the deal outside of nCino. nCino recommends using the same cost of capital rate used in for loans.</inlineHelpText>
+    <label>Cost of Capital of New Exposures</label>
+    <precision>11</precision>
+    <required>false</required>
+    <scale>8</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

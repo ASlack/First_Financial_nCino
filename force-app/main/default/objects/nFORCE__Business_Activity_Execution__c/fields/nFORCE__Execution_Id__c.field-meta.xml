@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Execution_Id__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this optional field with the Apex Batch Job ID or the Business Activity Event UUID. If synchronously executed and using Apex Batch, this field is blank. By default, it is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This automatically populated field displays the Apex Batch Job ID or the Business Activity Event UUID.</inlineHelpText>
+    <label>Execution Id</label>
+    <length>36</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

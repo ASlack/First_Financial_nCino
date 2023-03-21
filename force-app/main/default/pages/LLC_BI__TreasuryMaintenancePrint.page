@@ -1,0 +1,21 @@
+<apex:page id="TreasuryMaintenancePrint"
+	showHeader="false"
+	sidebar="false"
+	controller="LLC_BI.TreasuryMaintenancePrintController">
+
+	<apex:outputPanel rendered="{!version == 1}">
+		<c:ncTreasuryMaintenancePrint />
+	</apex:outputPanel>
+	
+	<!-- Enhanced Maintenance -->
+	<apex:outputPanel rendered="{!version == 2}">
+		<c:ncTreasuryMaintenancePrint_v2 />
+	</apex:outputPanel>
+	
+	<!-- Mass Actions -->
+	<apex:outputPanel rendered="{!version == 3}">
+		<c:ncTreasuryMaintenancePrint_v3 contextId="{!contextId}"
+			checklistId="{!checklistId}"
+		/>
+	</apex:outputPanel>
+</apex:page>

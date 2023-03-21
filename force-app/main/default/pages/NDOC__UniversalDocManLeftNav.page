@@ -1,0 +1,219 @@
+<apex:page showHeader="false" sidebar="false" controller="NDOC.UniversalDocManController" extensions="NDOC.PlaceholderDataController">
+	<c:LeftNavConfiguration />
+	<div class="col-md-2 col-sm-3 col-xs-12 leftNav no-gutter leftNavSize" style="position: relative;">
+		<div ng-controller='LeftNavController as leftNavController'>
+			<div ng-if="leftNavController.filters.length > 0" >
+				<div ng-repeat="filter in leftNavController.filters">
+					<div
+						ng-if="filter.uniHasPermissions"
+						class="clickFocus headers truncate {{filter.cssClass}}"
+						title="{{filter.displayLabel}}"
+						uni-has-permission="{{filter.uniHasPermissions}}"
+						ng-class="{'bold': filter.isActive, 'hidden': !filter.isVisible }"
+						ng-click="controller.isCategoriesOpen = false; filter.onClick(filter.id, controller.deactivateLegacyFilters);">
+							<div
+								class="countCircle"
+								ng-bind="(controller.placeholderService.placeholders 
+									| filter: filter.filterLogic
+									| placeholderViewerRolesFilter : controller.enhancedPlaceholderViewerPermissionsEnabled
+									).length">
+							</div>
+							{{filter.displayLabel}}
+					</div>
+
+					<div
+						ng-if="!filter.uniHasPermissions"
+						class="clickFocus headers truncate {{filter.cssClass}}"
+						title="{{filter.displayLabel}}"
+						ng-class="{'bold': filter.isActive, 'hidden': !filter.isVisible }"
+						ng-click="controller.isCategoriesOpen = false; filter.onClick(filter.id, controller.deactivateLegacyFilters);">
+							<div
+								class="countCircle"
+								ng-bind="(controller.placeholderService.placeholders 
+									| filter: filter.filterLogic
+									| placeholderViewerRolesFilter : controller.enhancedPlaceholderViewerPermissionsEnabled
+									).length">
+							</div>
+							{{filter.displayLabel}}
+					</div>
+				</div>
+			</div>
+			<hr class="leftNavSeparator"/>
+			<div
+				class="clickFocus headers noCircleHorizontalAlign truncate"
+				title="{!$Label.Relationships}"
+				uni-has-permission="UNI_EDIT_DETAILS"
+				ng-class="{'bold': vm.rightNavDisplay === vm.relationship && vm.isLoaded }"
+				ng-if="controller.showRelationshipLink && controller.permissionService.hasRelationshipImport()"
+				ng-click="vm.toggleRightNav(vm.relationship)">
+					{!$Label.Relationships}
+			</div>
+			<div
+				class="clickFocus headers noCircleHorizontalAlign truncate"
+				title="{!$Label.Collateral}"
+				uni-has-permission="UNI_EDIT_DETAILS"
+				ng-class="{'bold': vm.rightNavDisplay === vm.collateral && vm.isLoaded }"
+				ng-if="controller.showCollateralLink && controller.permissionService.hasCollateralImport()"
+				ng-click="vm.toggleRightNav(vm.collateral)">
+					{!$Label.Collateral}
+			</div>
+			<div
+				class="headers clickFocus truncate"
+				title="{!$Label.File_Staging}"
+				uni-has-permission="UNI_EDIT_DETAILS"
+				ng-click="vm.toggleRightNav(vm.fileStaging)"
+				ng-class="{'bold': vm.rightNavDisplay === vm.fileStaging && vm.isLoaded }">
+				<div
+					class="countCircle"
+					ng-bind="vm.fileStagingService.stagedFiles.length">
+				</div>
+					{!$Label.File_Staging}
+			</div>
+			<div
+				ng-if="leftNavController.showArchiveLink"
+				class="headers clickFocus truncate"
+				title="{!$Label.Archive}"
+				uni-has-permission="UNI_EDIT_DETAILS"
+				ng-click="vm.toggleRightNav(vm.archive)"
+				ng-class="{'bold': vm.rightNavDisplay === vm.archive && vm.isLoaded }">
+				<div
+					class="countCircle"
+					ng-bind="archivedFiles.length">
+				</div>
+				{!$Label.Archive}
+			</div>
+
+			<div ng-if="leftNavController.buttons.length > 0">
+				<hr class="leftNavSeparator"/>
+				<div
+					ng-repeat="button in leftNavController.buttons | orderBy: ['displayOrder', 'displayLabel']"
+					class="button-container">
+					<div
+						data-content="{{::button.hoverText}}"
+						data-toggle="popover"
+						data-placement="top"
+						rel="popover"
+						class="tool-tip-div"
+						>
+						<button
+							class="slds-button slds-button--neutral slds-p-vertical--xx-small slds-text-align--center leftNavButton {{button.cssClass}}"
+							name="{{::button.displayLabel}}"
+							title="{{::button.displayLabel}}"
+							ng-if="!button.isHidden"
+							ng-disabled="button.isDisabled"
+							ng-click="button.onClick('{!JSENCODE($CurrentPage.parameters.id)}')">
+							<div class="button-text-containter">
+								<svg-icon
+									ng-repeat="iconDefinition in button.leftIcons"
+									icon="{{::iconDefinition.icon}}"
+									path="{{::iconDefinition.path}}"
+									containerClass="{{iconDefinition.containerClass}}"
+									svg-class="slds-button__icon slds-button__icon--left {{iconDefinition.svgClass}}"
+									background-color="{{::iconDefinition.backgroundColor}}"
+									fill-color="{{::iconDefinition.fillColor}}">
+								</svg-icon>
+								<span class="button-text">{{::button.displayLabel}}</span>
+								<svg-icon
+									ng-repeat="iconDefinition in button.rightIcons"
+									icon="{{::iconDefinition.icon}}"
+									path="{{::iconDefinition.path}}"
+									containerClass="{{iconDefinition.containerClass}}"
+									svg-class="slds-button__icon slds-button__icon--right {{iconDefinition.svgClass}}"
+									background-color="{{::iconDefinition.backgroundColor}}"
+									fill-color="{{::iconDefinition.fillColor}}">
+								</svg-icon>
+							</div>
+						</button>
+					</div>
+				</div>
+			</div>
+
+
+			<div ng-if="leftNavController.customLinks.length > 0">
+				<hr class="leftNavSeparator"/>
+				<div
+					class="clickFocus headers truncate"
+					title="{{::customLink.elementCaption}}"
+					ng-repeat="customLink in leftNavController.customLinks"
+					ng-if="customLink.showElement"
+					ng-click="customLink.onClick('{!JSENCODE($CurrentPage.parameters.id)}')">
+					{{::customLink.elementCaption}}
+				</div>
+			</div>
+			<hr class="leftNavSeparator"/>
+			<div
+				class="clickFocus headers truncate"
+				ng-click="controller.isCategoriesOpen = !controller.isCategoriesOpen">
+				{!UPPER($Label.Filter_By_Categories)}
+				<img width="12" height="12"
+					alt="{!$Label.Open}"
+					class="pull-right clickFocus"
+					ng-show="!controller.isCategoriesOpen"
+					src="{!URLFOR($Resource.nFORCE__SLDS0102, 'assets/icons/utility/chevronright_60.png')}"/>
+				<img width="12" height="12"
+					alt="{!$Label.Close}"
+					class="pull-right clickFocus"
+					ng-show="controller.isCategoriesOpen"
+					src="{!URLFOR($Resource.nFORCE__SLDS0102, 'assets/icons/utility/chevrondown_60.png')}"/>
+			</div>
+			<div class="slds-scrollable--y" ng-if="controller.isCategoriesOpen">
+				<div class="headers clickFocus truncate slds-checkbox"
+					ng-repeat="docType in controller.docTypeOptions">
+					<label class="slds-checkbox__label">
+						<input
+								type="checkbox"
+								ng-checked="{{controller.selectedCategories.includes(docType.name)}}"
+								ng-click="controller.filterByCategories(docType.name)">
+						</input>
+						<span class="slds-checkbox--faux"></span>
+						{{::docType.name}}
+					</label>
+				</div>
+			</div>
+			<div class="headers truncate clickFocus"
+				  ng-show="!controller.isCategoriesOpen && controller.isFilterByCategories"
+				  ng-repeat="categoryName in controller.selectedCategories">
+				<span class="slds-pill slds-pill_link">
+					<a href="" class="slds-pill__action">
+						<span class="slds-pill__label">{{categoryName}}</span>
+					</a>
+					<button class="slds-button slds-button_icon slds-button_icon slds-button--x-small slds-pill__remove"
+							  ng-click="controller.selectCategory(categoryName)"
+							  title="Remove">
+						<svg class="slds-button__icon" aria-hidden="true">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#close')}" />
+						</svg>
+						<span class="slds-assistive-text">Remove</span>
+					</button>
+				</span>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		jQuery(document).ready(function() {
+			jQuery('[data-toggle="popover"]')
+				.popover({
+					trigger: "manual",
+					html: true,
+					animation: false,
+					sanitize:false
+				})
+				.on("mouseenter", function () {
+					var ctrl = this;
+					setTimeout(function () {
+						if(jQuery(ctrl).is(':hover')) {
+							jQuery(ctrl).popover("show");
+						}
+					}, 400);
+				}).on("mouseleave", function () {
+					var ctrl = this;
+					setTimeout(function () {
+						if (!jQuery(".popover:hover").length) {
+							jQuery(ctrl).popover("hide");
+						}
+					}, 100);
+				});
+		});
+	</script>
+</apex:page>

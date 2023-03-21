@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Average__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Use this field if the underlying analytic data reports on average.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Average is an Arithmetic mean of values. Use this field if the underlying analytic reports on average.</inlineHelpText>
+    <label>Average</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>3</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Publish__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this optional field to indicate that this Business Activity execution has been published or not. By default, it is false.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This automatically populated field indicates that this Business Activity execution has been published or not.</inlineHelpText>
+    <label>Publish</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Is_Booked__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is optional and is manually populated. A loan is booked after the customer has been funded. When true, it denotes whether the stage and status referenced on this record represents the &quot;Booked&quot; stage for a loan. This field is used to determine whether the &quot;LLC_BI__Is_Booked__c&quot; field on loan is automatically checked.</description>
+    <externalId>false</externalId>
+    <label>Is Booked</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

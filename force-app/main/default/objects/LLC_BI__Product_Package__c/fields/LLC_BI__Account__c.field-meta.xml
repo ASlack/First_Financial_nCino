@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Account__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The Account field is a lookup to the Account/ Relationship object in nCino and used to specify the main account the product package is associated with. The relationship is required to create a new loan facility from the product package page.</description>
+    <externalId>false</externalId>
+    <label>Relationship</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Product Packages</relationshipLabel>
+    <relationshipName>Product_Packages</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

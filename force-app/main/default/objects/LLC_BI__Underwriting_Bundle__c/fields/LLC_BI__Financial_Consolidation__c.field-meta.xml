@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Financial_Consolidation__c</fullName>
+    <deleteConstraint>Cascade</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this optional lookup field to specify the financial consolidation associated to the underwriting bundle. By default, it is blank.</description>
+    <externalId>false</externalId>
+    <label>Financial Consolidation</label>
+    <referenceTo>LLC_BI__Financial_Consolidation__c</referenceTo>
+    <relationshipLabel>Underwriting Bundle</relationshipLabel>
+    <relationshipName>Underwriting_Bundle</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

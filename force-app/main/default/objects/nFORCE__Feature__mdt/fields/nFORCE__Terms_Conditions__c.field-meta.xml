@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Terms_Conditions__c</fullName>
+    <deprecated>false</deprecated>
+    <description>For your custom feature, enter specific terms &amp; conditions that users must accept to continue.</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Custom Terms &amp; Conditions</label>
+    <length>10000</length>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

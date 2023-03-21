@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Highest__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This reference field indicates the highest level loan in a multitiered facility. It is one of the components that determines the hierarchical tree structure used for navigation and visual representation of the multi-tiered facility. When importing existing loans into a hierarchal structure, the highest loan in the hierarchy must be specified to accurately depict the structure.</description>
+    <externalId>false</externalId>
+    <label>Highest</label>
+    <referenceTo>LLC_BI__Loan__c</referenceTo>
+    <relationshipLabel>Loans (Highest)</relationshipLabel>
+    <relationshipName>HighestLoans</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

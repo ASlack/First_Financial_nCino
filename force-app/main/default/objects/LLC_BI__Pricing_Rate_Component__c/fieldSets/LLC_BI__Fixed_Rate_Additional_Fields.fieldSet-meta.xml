@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Fixed_Rate_Additional_Fields</fullName>
+    <description>Rate Stream Fixed Rate Additional Fields</description>
+    <displayedFields>
+        <field>LLC_BI__Comments__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>LLC_BI__Is_Swap__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Fixed Rate Additional Fields</label>
+</FieldSet>

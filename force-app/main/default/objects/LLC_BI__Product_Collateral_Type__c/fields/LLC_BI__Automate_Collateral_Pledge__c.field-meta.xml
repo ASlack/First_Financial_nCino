@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Automate_Collateral_Pledge__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The administrator sets this optional checkbox to true to bypass the pledge process. This automatically sets the pledge to the lesser of the loan value or the available lendable value. By default, it is false.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check this box if you wish to automate the pledge process for this product and collateral type combination.</inlineHelpText>
+    <label>Automate Collateral Pledge</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

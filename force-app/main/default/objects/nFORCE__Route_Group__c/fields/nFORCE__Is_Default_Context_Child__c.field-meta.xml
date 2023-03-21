@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Is_Default_Context_Child__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is manually populated. If enabled, the route this is associated with will be displayed as the default subroute for its parent route—unless its parent route has a self-referencing subroute, in which case the self-referencing subroute is always used as the default. If disabled, the route is not set as the default.</description>
+    <externalId>false</externalId>
+    <label>Is Default Context</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

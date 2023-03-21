@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__exceptionDate__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is a date field used to specify a date at which a document has been or will be placed in Exception status. If the Exception Date is in the future, when that date is reached the status will automatically change to Exception.</description>
+    <externalId>false</externalId>
+    <label>Exception Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

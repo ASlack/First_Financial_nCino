@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Approval_Status__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The approval status field is used to specify where the Product Package is in an approval process. This field is used in conjunction with reverse propagation functionality to alert the user when all loans have met their approvals and the product package is ready to move forward in its approval path. This field should not be used when the propagate down approval process functionality is implemented.</description>
+    <externalId>false</externalId>
+    <label>Approval Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Not Submitted</fullName>
+                <default>true</default>
+                <label>Not Submitted</label>
+            </value>
+            <value>
+                <fullName>Pending</fullName>
+                <default>false</default>
+                <label>Pending</label>
+            </value>
+            <value>
+                <fullName>Ready</fullName>
+                <default>false</default>
+                <label>Ready</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

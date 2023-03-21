@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Is_Approved__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is automatically selected. This field is utilized for trigger approval process actions that add loan team members to the loan for the user to view. Loan team members are populated from queues and users chosen to approve items.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field is utilized for trigger approval process actions that add loan team members
+            to the loan for the user to view. Loan Team Members are populated from queues and users
+            chosen to approve items.</inlineHelpText>
+    <label>ApprovalTriggerField</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

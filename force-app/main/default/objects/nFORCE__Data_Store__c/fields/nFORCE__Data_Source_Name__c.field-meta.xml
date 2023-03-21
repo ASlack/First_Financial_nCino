@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Data_Source_Name__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Data Source Name is the name of the child org as specified in Setup-&gt;Company Profile-&gt;Company Information-&gt;Organization Name.</description>
+    <externalId>true</externalId>
+    <inlineHelpText>A string that has an associated data structure used to describe a connection to a data source.</inlineHelpText>
+    <label>Data Source Name</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

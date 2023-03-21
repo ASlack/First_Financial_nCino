@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Product_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is automatically populated if creating the record from the product type. It is used to set which product type this product stage config should be used for.</description>
+    <externalId>false</externalId>
+    <label>Product Type</label>
+    <referenceTo>LLC_BI__Product_Type__c</referenceTo>
+    <relationshipLabel>Product State Config</relationshipLabel>
+    <relationshipName>Product_Type_Config</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

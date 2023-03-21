@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>LLC_BI__HMDA_HOEPA_Status__c</name>
+    <picklistValues>
+        <masterLabel>Code 1 - For a loan that you originated or purchased that is subject to the Home Ownership and Equity Protection Act of 1994 (HOEPA), because the APR or the points and fees on the loan exceed the HOEPA triggers</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Code 2 - all other cases</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

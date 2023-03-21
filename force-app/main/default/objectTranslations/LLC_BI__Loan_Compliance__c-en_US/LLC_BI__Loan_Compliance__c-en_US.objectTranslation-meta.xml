@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label></label>
+        <name>LLC_BI__UI_HMDA_Loan_Compliance_2017</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>LLC_BI__UI_HMDA_Loan_Compliance_2018</name>
+    </fieldSets>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>LLC_BI__HMDA_Effective_2017</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>LLC_BI__HMDA_Effective_2018</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>LLC_BI__LE_CD_Date_Required</name>
+    </validationRules>
+</CustomObjectTranslation>

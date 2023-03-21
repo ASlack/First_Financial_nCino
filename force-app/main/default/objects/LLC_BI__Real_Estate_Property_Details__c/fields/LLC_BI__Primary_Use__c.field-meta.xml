@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Primary_Use__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Users or an integration manually populate this field to determine the real estate collateral’s primary use for a real estate collateral record.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the property’s primary use from the picklist.</inlineHelpText>
+    <label>Primary Use</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Primary Residence</fullName>
+                <default>false</default>
+                <label>Primary Residence</label>
+            </value>
+            <value>
+                <fullName>Second Home</fullName>
+                <default>false</default>
+                <label>Second Home</label>
+            </value>
+            <value>
+                <fullName>Holiday Home</fullName>
+                <default>false</default>
+                <label>Holiday Home</label>
+            </value>
+            <value>
+                <fullName>Sitting Tenant</fullName>
+                <default>false</default>
+                <label>Sitting Tenant</label>
+            </value>
+            <value>
+                <fullName>Live Work Unit</fullName>
+                <default>false</default>
+                <label>Live Work Unit</label>
+            </value>
+            <value>
+                <fullName>Holiday Let</fullName>
+                <default>false</default>
+                <label>Holiday Let</label>
+            </value>
+            <value>
+                <fullName>To Let</fullName>
+                <default>false</default>
+                <label>To Let</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

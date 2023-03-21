@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Debt_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is required and denotes the type of debt.</description>
+    <externalId>false</externalId>
+    <label>Debt Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Monthly Auto/Lease Payments</fullName>
+                <default>false</default>
+                <label>Monthly Auto/Lease Payments</label>
+            </value>
+            <value>
+                <fullName>Monthly Child Support Payments</fullName>
+                <default>false</default>
+                <label>Monthly Child Support Payments</label>
+            </value>
+            <value>
+                <fullName>Monthly Credit Card Payments</fullName>
+                <default>false</default>
+                <label>Monthly Credit Card Payments</label>
+            </value>
+            <value>
+                <fullName>Monthly Student Loan Payments</fullName>
+                <default>false</default>
+                <label>Monthly Student Loan Payments</label>
+            </value>
+            <value>
+                <fullName>Other Monthly Installment</fullName>
+                <default>false</default>
+                <label>Other Monthly Installment</label>
+            </value>
+            <value>
+                <fullName>Proposed Loan</fullName>
+                <default>false</default>
+                <label>Proposed Loan</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

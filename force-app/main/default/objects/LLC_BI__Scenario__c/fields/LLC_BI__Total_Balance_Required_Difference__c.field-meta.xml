@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Total_Balance_Required_Difference__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is automatically populated via trigger. It stores the difference between LLC_BI__Total_Balance_Required__c and Total_Competitor_Balance_Required__c.</description>
+    <externalId>false</externalId>
+    <label>Total Balance Required Difference</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nPortal__OA_Offers_Accepted_Next_Steps__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Administrators populate this rich text field to display the offers accepted message after offers are generated and accepted in an Online Application.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter an offers accepted message.</inlineHelpText>
+    <label>OA Offers Accepted Next Steps</label>
+    <length>131072</length>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Calc_Common_Sizing_Record__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field is optional and automatically updated. The Spread_Statement_Record__c used as the divisor when calculating common sizing.</description>
+    <externalId>false</externalId>
+    <label>Calc Common Sizing Record</label>
+    <referenceTo>LLC_BI__Spread_Statement_Record__c</referenceTo>
+    <relationshipLabel>Spread Statement Templates</relationshipLabel>
+    <relationshipName>Spread_Statement_Templates</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

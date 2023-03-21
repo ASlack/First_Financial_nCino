@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CBCFLD__Flood_Determination</fullName>
+    <availability>online</availability>
+    <description>CBC Flood Determination Certificates.</description>
+    <displayType>button</displayType>
+    <height>600</height>
+    <linkType>page</linkType>
+    <masterLabel>Flood Determination</masterLabel>
+    <openType>sidebar</openType>
+    <page>CBCFLD__flood</page>
+    <protected>false</protected>
+</WebLink>

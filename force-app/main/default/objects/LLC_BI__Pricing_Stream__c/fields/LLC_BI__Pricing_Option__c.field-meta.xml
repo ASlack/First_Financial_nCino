@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Pricing_Option__c</fullName>
+    <deleteConstraint>Cascade</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this lookup field with the Pricing Option record. The pricing stream fields refer to this lookup field. By default, this field is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This system-populated field displays the unique identifier for the Pricing Option record.</inlineHelpText>
+    <label>Pricing Option</label>
+    <referenceTo>LLC_BI__Pricing_Option__c</referenceTo>
+    <relationshipLabel>Pricing Streams</relationshipLabel>
+    <relationshipName>Pricing_Streams</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

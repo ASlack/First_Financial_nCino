@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Is_Lease__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This checkbox field is manually selected. When enabled, it is used as a flag for the product feature to specify a product as a Lease. This information is used to display the asset route on loan and product package navigation. When disabled, a loan with that product feature does not show the asset route. By default, it is disabled.</description>
+    <externalId>false</externalId>
+    <label>Is Lease</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

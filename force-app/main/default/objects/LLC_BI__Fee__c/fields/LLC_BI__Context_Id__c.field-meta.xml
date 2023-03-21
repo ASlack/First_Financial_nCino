@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Context_Id__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Users or the system populate this text field to capture the identity of the related record associated to the fee.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field indicates any associated records related to the fee.</inlineHelpText>
+    <label>Context Identity</label>
+    <length>18</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

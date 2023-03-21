@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Sort_Order__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The user populates this optional number field to indicate what order within the business process this business activity should run. By default, it is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This number field indicates the order in which the business activity should run.</inlineHelpText>
+    <label>Sort Order</label>
+    <precision>4</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

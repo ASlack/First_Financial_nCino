@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Policy_Type_Id__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The administrator populates this optional lookup field to associate the Product Collateral Type to the policy type for Auto Advance Rate Configuration.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Set this field to the applicable auto advance rate policy that is run in matrix manager.</inlineHelpText>
+    <label>Policy Type ID</label>
+    <referenceTo>LLC_BI__Policy_Type__c</referenceTo>
+    <relationshipLabel>Product Collateral Types</relationshipLabel>
+    <relationshipName>Product_Collateral_Types</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

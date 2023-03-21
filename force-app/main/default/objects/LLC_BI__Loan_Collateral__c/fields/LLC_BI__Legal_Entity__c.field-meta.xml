@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Legal_Entity__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field is optional and manually populated. Use this field to look up a relationship to specify the name of the collateral owner.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>What Legal Entity is the Collateral owned by?</inlineHelpText>
+    <label>Collateral Owner 1</label>
+    <referenceTo>LLC_BI__Legal_Entities__c</referenceTo>
+    <relationshipLabel>Collateral (Collateral Owner (Legal Entity))</relationshipLabel>
+    <relationshipName>Loan_Collaterals</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

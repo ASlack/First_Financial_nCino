@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Risk_Grade_Factor_Name__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is required. It is populated automatically when the record is created by user input on the worksheet. This field is a lookup relationship to the relevant risk grade factor and should not be altered.</description>
+    <externalId>false</externalId>
+    <formula>LLC_BI__Risk_Grade_Factor__r.Name</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Risk Grade Factor Name</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

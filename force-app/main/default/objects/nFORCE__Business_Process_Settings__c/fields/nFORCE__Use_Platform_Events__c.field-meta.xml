@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Use_Platform_Events__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Administrators populate this required checkbox field that, when set to true, enables the use of platform events. By default, it is false.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select to use platform events. If this reaches daily platform event limits, an admin needs to disable this field.</inlineHelpText>
+    <label>Use Platform Events</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

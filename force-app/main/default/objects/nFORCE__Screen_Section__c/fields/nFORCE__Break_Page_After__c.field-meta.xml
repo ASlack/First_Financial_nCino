@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Break_Page_After__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is optional and is used by Credit Memo framework. The default value is false. When the value is set to true, the credit memo export PDF breaks after this section. This field is accessible to the user from credit memo view and the value is updated when user clicks on Insert Page Break or Remove Page Break.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Forces a page break after the section when printing.</inlineHelpText>
+    <label>Break Page After</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

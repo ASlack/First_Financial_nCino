@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SESOC__Document__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this lookup field to track the association with an E-Signature document.</description>
+    <externalId>false</externalId>
+    <label>Document</label>
+    <referenceTo>SESOC__Document__c</referenceTo>
+    <relationshipLabel>Document Recipients</relationshipLabel>
+    <relationshipName>Document_Recipients</relationshipName>
+    <relationshipOrder>1</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

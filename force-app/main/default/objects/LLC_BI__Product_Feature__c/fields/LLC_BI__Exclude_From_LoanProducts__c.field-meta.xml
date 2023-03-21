@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Exclude_From_LoanProducts__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Administrators select this optional boolean field to exclude the products with this product feature from the relevant product selection page. By default, it is false.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field excludes all associated Product__c records from the Choose Product Picklist on the LoanProducts VisualForce page.</inlineHelpText>
+    <label>Exclude from Products</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

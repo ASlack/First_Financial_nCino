@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Comments__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is only required if an overriden risk grade value is entered. Otherwise, it is not required. This field is used to specify the reason a different risk grade should be used than what is automatically calculated via the risk grade worksheet.</description>
+    <externalId>false</externalId>
+    <label>Comments</label>
+    <length>32000</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

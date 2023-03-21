@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Code__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is automatically populated based on the &quot;code&quot; field set in the policy exception template record for this policy exception. It specifies the code assigned to the policy exception. When the policy exception is selected based on the predefined template this field will be populated.</description>
+    <externalId>false</externalId>
+    <label>Code</label>
+    <length>50</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

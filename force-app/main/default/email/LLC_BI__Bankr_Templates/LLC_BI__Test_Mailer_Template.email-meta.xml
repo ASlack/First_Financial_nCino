@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>This template is used to satisfy unit coverage and is included in the deploy able package</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>UNUSED - Test Mailer Template</name>
+    <style>none</style>
+    <subject>Testing our UtilTeamMailer class/triggers</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

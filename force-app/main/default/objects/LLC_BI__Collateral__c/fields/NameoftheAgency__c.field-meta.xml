@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NameoftheAgency__c</fullName>
+    <externalId>false</externalId>
+    <label>Name of the Agency</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Transportation Authority (DTOP)</fullName>
+                <default>false</default>
+                <label>Transportation Authority (DTOP)</label>
+            </value>
+            <value>
+                <fullName>Port Authority</fullName>
+                <default>false</default>
+                <label>Port Authority</label>
+            </value>
+            <value>
+                <fullName>Department of Education</fullName>
+                <default>false</default>
+                <label>Department of Education</label>
+            </value>
+            <value>
+                <fullName>PREPA</fullName>
+                <default>false</default>
+                <label>PREPA</label>
+            </value>
+            <value>
+                <fullName>PRASA</fullName>
+                <default>false</default>
+                <label>PRASA</label>
+            </value>
+            <value>
+                <fullName>LUMA</fullName>
+                <default>false</default>
+                <label>LUMA</label>
+            </value>
+            <value>
+                <fullName>Treasury Department</fullName>
+                <default>false</default>
+                <label>Treasury Department</label>
+            </value>
+            <value>
+                <fullName>Department of Economic Development (DDEC)</fullName>
+                <default>false</default>
+                <label>Department of Economic Development (DDEC)</label>
+            </value>
+            <value>
+                <fullName>University of Puerto Rico (UPR)</fullName>
+                <default>false</default>
+                <label>University of Puerto Rico (UPR)</label>
+            </value>
+            <value>
+                <fullName>Public Building Authority</fullName>
+                <default>false</default>
+                <label>Public Building Authority</label>
+            </value>
+            <value>
+                <fullName>Department of Justice</fullName>
+                <default>false</default>
+                <label>Department of Justice</label>
+            </value>
+            <value>
+                <fullName>Department of Housing</fullName>
+                <default>false</default>
+                <label>Department of Housing</label>
+            </value>
+            <value>
+                <fullName>AAFAF</fullName>
+                <default>false</default>
+                <label>AAFAF</label>
+            </value>
+            <value>
+                <fullName>Department of Health</fullName>
+                <default>false</default>
+                <label>Department of Health</label>
+            </value>
+            <value>
+                <fullName>Department of Corrections and Rehabilitation</fullName>
+                <default>false</default>
+                <label>Department of Corrections and Rehabilitation</label>
+            </value>
+            <value>
+                <fullName>Department of Public Safety</fullName>
+                <default>false</default>
+                <label>Department of Public Safety</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__External_Id__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this required string field with an ID that refers to this Business Process Interaction.</description>
+    <externalId>true</externalId>
+    <inlineHelpText>Displays an ID that refers to this Business Process Interaction.</inlineHelpText>
+    <label>External Id</label>
+    <length>40</length>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

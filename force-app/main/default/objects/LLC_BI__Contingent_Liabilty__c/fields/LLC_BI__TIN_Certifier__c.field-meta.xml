@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__TIN_Certifier__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Users select this optional boolean field to indicate that the signer is qualified to sign TIN certifications or other tax-related documents for the business or entity account holder. By default, it is false.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Click this checkbox if the signer is qualified to sign TIN certifications or other tax-related documents for the business or entity account holder.</inlineHelpText>
+    <label>TIN Certifier</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCOC__RiskBasedPricingPercentageMin__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Score risk based pricing percentage minimum</description>
+    <externalId>false</externalId>
+    <label>Risk Based Pricing Percentage Minimum</label>
+    <precision>10</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Property_Size__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The user populates this number field to indicate the property’s size. By default, it is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the property’s size in your local unit of measurement.</inlineHelpText>
+    <label>Property Size</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

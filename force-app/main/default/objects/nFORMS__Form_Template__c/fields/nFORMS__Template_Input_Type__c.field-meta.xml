@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORMS__Template_Input_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The administrators populate this picklist field to define the type of the input file used to generate a document.  By default, it is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select Word or HTML format as a document template input.</inlineHelpText>
+    <label>Template Input Type</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Word</fullName>
+                <default>false</default>
+                <label>Word</label>
+            </value>
+            <value>
+                <fullName>HTML</fullName>
+                <default>false</default>
+                <label>HTML</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

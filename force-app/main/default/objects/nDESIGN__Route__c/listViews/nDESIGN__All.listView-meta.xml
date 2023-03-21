@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nDESIGN__All</fullName>
+    <columns>nDESIGN__Group__c</columns>
+    <columns>NAME</columns>
+    <columns>nDESIGN__App__c</columns>
+    <columns>nDESIGN__Order__c</columns>
+    <columns>OBJECT_ID</columns>
+    <columns>nDESIGN__Banner__c</columns>
+    <columns>nDESIGN__Body__c</columns>
+    <columns>nDESIGN__Icon_Class__c</columns>
+    <columns>nDESIGN__Is_Hidden__c</columns>
+    <columns>nDESIGN__Parent_App__c</columns>
+    <columns>nDESIGN__Side_Bar__c</columns>
+    <columns>nDESIGN__Top_Bar__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Ready_For_Esignature__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is optional. This field indicates that a file is E-Signature ready.</description>
+    <externalId>false</externalId>
+    <label>E-Signature Ready</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Deal_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Users select a deal type from this optional picklist. This determines behaviours and layouts for the record. By default it is blank.</description>
+    <externalId>false</externalId>
+    <label>Deal Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Loan Onboarding</fullName>
+                <default>false</default>
+                <label>Loan Onboarding</label>
+            </value>
+            <value>
+                <fullName>Handover Loans</fullName>
+                <default>false</default>
+                <label>Handover Loans</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

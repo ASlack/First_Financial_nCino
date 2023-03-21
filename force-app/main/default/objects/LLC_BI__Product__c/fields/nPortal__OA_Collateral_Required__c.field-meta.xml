@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nPortal__OA_Collateral_Required__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>If selected, this checkbox field indicates that collateral is required for this product during an online application workflow.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select this checkbox if the user must add collateral during an online application for this product.</inlineHelpText>
+    <label>OA Collateral Required</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

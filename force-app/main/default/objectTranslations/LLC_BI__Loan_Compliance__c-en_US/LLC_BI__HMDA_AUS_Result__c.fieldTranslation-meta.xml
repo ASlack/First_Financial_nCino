@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help></help>
+    <label></label>
+    <name>LLC_BI__HMDA_AUS_Result__c</name>
+    <picklistValues>
+        <masterLabel>1</masterLabel>
+        <translation>Approve/Eligible</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>10</masterLabel>
+        <translation>Ineligible</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>11</masterLabel>
+        <translation>Incomplete</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>12</masterLabel>
+        <translation>Invalid</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>13</masterLabel>
+        <translation>Refer</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>14</masterLabel>
+        <translation>Eligible</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>15</masterLabel>
+        <translation>Unable to Determine</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>16</masterLabel>
+        <translation>Other</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>17</masterLabel>
+        <translation>Not applicable</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2</masterLabel>
+        <translation>Approve/Ineligible</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3</masterLabel>
+        <translation>Refer/Eligible</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>4</masterLabel>
+        <translation>Refer/Ineligible</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>5</masterLabel>
+        <translation>Refer with Caution</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>6</masterLabel>
+        <translation>Out of Scope</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>7</masterLabel>
+        <translation>Error</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>8</masterLabel>
+        <translation>Accept</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>9</masterLabel>
+        <translation>Caution</translation>
+    </picklistValues>
+</CustomFieldTranslation>

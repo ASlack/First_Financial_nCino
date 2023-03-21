@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Operation__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is driven by user selection within the spreading application. It indicates what type of mathematical operation should be performed on the spread statement record (chart of account) this spread statement record represents.</description>
+    <externalId>false</externalId>
+    <label>Operation</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ADD</fullName>
+                <default>true</default>
+                <label>ADD</label>
+            </value>
+            <value>
+                <fullName>SUBTRACT</fullName>
+                <default>false</default>
+                <label>SUBTRACT</label>
+            </value>
+            <value>
+                <fullName>MULTIPLY</fullName>
+                <default>false</default>
+                <label>MULTIPLY</label>
+            </value>
+            <value>
+                <fullName>DIVIDE</fullName>
+                <default>false</default>
+                <label>DIVIDE</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

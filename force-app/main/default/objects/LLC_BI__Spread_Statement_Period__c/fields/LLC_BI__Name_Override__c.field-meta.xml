@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Name_Override__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Users populate this optional text field to capture information related to the current Spreads Period, NOI Period, or Rent Roll. By default, the system includes the field in the Rent Roll Details, Add Rent Roll, and Edit Rent Roll modals.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The name override of the column. If this value is set the application will display it instead of the month &amp; year.</inlineHelpText>
+    <label>Description</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Interest_Rate_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Users populate this optional picklist field to apply the selected interest rate type to a rate stream. By default, it is fixed.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select an interest rate type to apply to the rate stream.</inlineHelpText>
+    <label>Interest Rate Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Fixed</fullName>
+                <default>true</default>
+                <label>Fixed</label>
+            </value>
+            <value>
+                <fullName>Fixed with Index</fullName>
+                <default>false</default>
+                <label>Fixed with Index</label>
+            </value>
+            <value>
+                <fullName>Floating with Index</fullName>
+                <default>false</default>
+                <label>Floating with Index</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

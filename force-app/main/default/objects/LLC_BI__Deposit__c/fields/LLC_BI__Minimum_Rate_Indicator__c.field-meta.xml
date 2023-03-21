@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Minimum_Rate_Indicator__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is optional and can be collected as part of a workflow. If true, a rate floor applies to the account.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If true a rate floor applies to the account.</inlineHelpText>
+    <label>Minimum Rate Indicator</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

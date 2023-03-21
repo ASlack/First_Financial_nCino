@@ -1,0 +1,95 @@
+<messaging:emailTemplate subject="* Loan Closing: {!relatedTo.Name} *" recipientType="User" relatedToType="LLC_BI__Loan__c">
+
+<messaging:htmlEmailBody >
+<html>
+<body>
+
+<table border="0">
+    <tr>
+        <td valign="top" colspan="2" style="color: #FFF; width:545pt ;border:solid white 1.0pt; border-right:solid white 3.0pt; background:#4F81BD; padding: 0px 10px 0px 10px; height:14.55pt"><p style="margin: 5px;"><b>Loan Name:</b> {!relatedTo.Name}</p></td>
+    </tr>
+    <tr>
+        <td width="263" valign="top" style="color: #FFF; width:196.9pt; border:solid white 1pt; border-right:solid white 3pt; background:#4F81BD; padding: 0px 10px 0px 10px; height:14.55pt;"><p style="margin: 5px;"><b>Account Name</b></p></td>
+        <td style="color: #000; width:196.9pt;border:solid white 1pt; border-right:solid white 3pt; padding: 0px 10px 0px 10px; height:14.55px; background:#a7bfde;"><p style="margin: 5px;">{!relatedTo.Account__r.Name}</p></td>
+    </tr>
+    <tr>
+        <td width="263" valign="top" style="color: #FFF; width:196.9pt; border:solid white 1pt; border-right:solid white 3pt; background:#4F81BD; padding: 0px 10px 0px 10px; height:14.55pt;"><p style="margin: 5px;"><b>Location</b></p></td>
+        <td style="color: #000; width:196.9pt;border:solid white 1pt; border-right:solid white 3pt; padding: 0px 10px 0px 10px; height:14.55px; background:#a7bfde;"><p style="margin: 5px;">{!relatedTo.Borrower_City__c},{!relatedTo.Borrower_State__c}</p></td>
+    </tr>
+    <tr>
+        <td width="263" valign="top" style="color: #FFF; width:196.9pt; border:solid white 1pt; border-right:solid white 3pt; background:#4F81BD; padding: 0px 10px 0px 10px; height:14.55pt;"><p style="margin: 5px;"><b>SBA #</b></p></td>
+        <td style="color: #000; width:196.9pt;border:solid white 1pt; border-right:solid white 3pt; padding: 0px 10px 0px 10px; height:14.55px; background:#a7bfde;"><p style="margin: 5px;">{!relatedTo.SBA__c}</p></td>
+    </tr>
+    <tr>
+        <td width="263" valign="top" style="color: #FFF; width:196.9pt; border:solid white 1pt; border-right:solid white 3pt; background:#4F81BD; padding: 0px 10px 0px 10px; height:14.55pt;"><p style="margin: 5px;"><b>Close Date</b></p></td>
+        <td style="color: #000; width:196.9pt;border:solid white 1pt; border-right:solid white 3pt; padding: 0px 10px 0px 10px; height:14.55px; background:#a7bfde;"><p style="margin: 5px;">
+        <apex:outputText value="{0,date, MM/dd/yyyy}">
+            <apex:param value="{!relatedTo.LLC_BI__CloseDate__c}" />
+        </apex:outputText>
+        </p></td>
+    </tr>
+    <tr>
+        <td width="263" valign="top" style="color: #FFF; width:196.9pt; border:solid white 1pt; border-right:solid white 3pt; background:#4F81BD; padding: 0px 10px 0px 10px; height:14.55pt;"><p style="margin: 5px;"><b>Loan Amount</b></p></td>
+        <td style="color: #000; width:196.9pt;border:solid white 1pt; border-right:solid white 3pt; padding: 0px 10px 0px 10px; height:14.55px; background:#a7bfde;"><p style="margin: 5px;">
+        <apex:outputText value="{0,Number,$###,###.00}">
+            <apex:param value="{!relatedTo.LLC_BI__Amount__c}" />
+        </apex:outputText>
+        </p></td>
+    </tr>
+    <tr>
+        <td width="263" valign="top" style="color: #FFF; width:196.9pt; border:solid white 1pt; border-right:solid white 3pt; background:#4F81BD; padding: 0px 10px 0px 10px; height:14.55pt;"><p style="margin: 5px;"><b>Funding At Close</b></p></td>
+        <td style="color: #000; width:196.9pt;border:solid white 1pt; border-right:solid white 3pt; padding: 0px 10px 0px 10px; height:14.55px; background:#a7bfde;"><p style="margin: 5px;">
+        <apex:outputText value="{0,Number,$###,###.00}">
+            <apex:param value="{!relatedTo.LLC_BI__Funding_at_Close__c}" />
+        </apex:outputText>
+        </p></td>
+    </tr>
+    <tr>
+        <td width="263" valign="top" style="color: #FFF; width:196.9pt; border:solid white 1pt; border-right:solid white 3pt; background:#4F81BD; padding: 0px 10px 0px 10px; height:14.55pt;"><p style="margin: 5px;"><b>Real Estate Value (if applicable)</b></p></td>
+        <td style="color: #000; width:196.9pt;border:solid white 1pt; border-right:solid white 3pt; padding: 0px 10px 0px 10px; height:14.55px; background:#a7bfde;"><p style="margin: 5px;">
+        <apex:outputText value="{0,Number,$###,###.00}">
+            <apex:param value="{!relatedTo.LLC_BI__Real_Estate_Value__c}" />
+        </apex:outputText>
+        </p></td>
+    </tr>
+    <tr>
+        <td width="263" valign="top" style="color: #FFF; width:196.9pt; border:solid white 1pt; border-right:solid white 3pt; background:#4F81BD; padding: 0px 10px 0px 10px; height:14.55pt;"><p style="margin: 5px;"><b>Wire Date</b></p></td>
+        <td style="color: #000; width:196.9pt;border:solid white 1pt; border-right:solid white 3pt; padding: 0px 10px 0px 10px; height:14.55px; background:#a7bfde;"><p style="margin: 5px;">
+        <apex:outputText value="{0,date, MM/dd/yyyy}">
+            <apex:param value="{!relatedTo.LLC_BI__Wire_Date__c}" />
+        </apex:outputText>
+        </p></td>
+    </tr>
+    <tr>
+        <td width="263" valign="top" style="color: #FFF; width:196.9pt; border:solid white 1pt; border-right:solid white 3pt; background:#4F81BD; padding: 0px 10px 0px 10px; height:14.55pt;"><p style="margin: 5px;"><b>SBA Auth Date</b></p></td>
+        <td style="color: #000; width:196.9pt;border:solid white 1pt; border-right:solid white 3pt; padding: 0px 10px 0px 10px; height:14.55px; background:#a7bfde;"><p style="margin: 5px;">
+        <apex:outputText value="{0,date, MM/dd/yyyy}">
+            <apex:param value="{!relatedTo.LLC_BI__Authorization_Date__c}" />
+        </apex:outputText>
+        </p></td>
+    </tr>
+    <tr>
+        <td width="263" valign="top" style="color: #FFF; width:196.9pt; border:solid white 1pt; border-right:solid white 3pt; background:#4F81BD; padding: 0px 10px 0px 10px; height:14.55pt;"><p style="margin: 5px;"><b>Post Closing Items</b></p></td>
+        <td style="color: #000; width:196.9pt;border:solid white 1pt; border-right:solid white 3pt; padding: 0px 10px 0px 10px; height:14.55px; background:#a7bfde;"><p style="margin: 5px;">{!relatedTo.Post_Closing_Items__c}</p></td>
+    </tr>
+    <tr>
+        <td width="263" valign="top" style="color: #FFF; width:196.9pt; border:solid white 1pt; border-right:solid white 3pt; background:#4F81BD; padding: 0px 10px 0px 10px; height:14.55pt;"><p style="margin: 5px;"><b>Senior Loan Officer</b></p></td>
+        <td style="color: #000; width:196.9pt;border:solid white 1pt; border-right:solid white 3pt; padding: 0px 10px 0px 10px; height:14.55px; background:#a7bfde;"><p style="margin: 5px;">{!relatedTo.Owner.Name}</p></td>
+    </tr>
+</table>
+
+<table border="0">
+    <tr>
+        <td colspan="2" style="color: #FFF; width:545pt ;border:solid white 1.0pt; border-right:solid white 3.0pt; background:#4F81BD; padding: 0px 10px 0px 10px; height:14.55pt"><p style="margin: 5px;"><b>Legal Entities (Borrowers/Guarantors)</b></p></td>
+    </tr>
+    <apex:repeat var="cx" value="{!relatedTo.Legal_Entities__r}">
+       <tr>
+           <td style="color: #000; width:196.9pt;border:solid white 1pt; border-right:solid white 3pt; padding: 0px 10px 0px 10px; height:14.55px; background:#a7bfde;" width="263"><p style="margin: 5px;">{!cx.Name}</p></td>
+           <td style="color: #000; width:196.9pt;border:solid white 1pt; border-right:solid white 3pt; padding: 0px 10px 0px 10px; height:14.55px; background:#a7bfde;"><p style="margin: 5px;">{!cx.Entity_Type__c}, {!cx.Borrower_Type__c}</p></td>
+       </tr>
+    </apex:repeat>     
+</table>
+</body>
+</html>
+</messaging:htmlEmailBody> 
+</messaging:emailTemplate>

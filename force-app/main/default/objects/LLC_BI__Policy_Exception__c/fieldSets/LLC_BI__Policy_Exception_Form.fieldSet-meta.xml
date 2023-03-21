@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Policy_Exception_Form</fullName>
+    <availableFields>
+        <field>LLC_BI__Severity_Value__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <description>Used to append fields to the policy exception form in the new UI.</description>
+    <displayedFields>
+        <field>LLC_BI__Severity__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Policy Exception Form</label>
+</FieldSet>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Beneficiary_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The user populates this picklist to indicate the type of the beneficiary</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the Beneficiary Type.</inlineHelpText>
+    <label>Beneficiary Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Primary</fullName>
+                <default>true</default>
+                <label>Primary</label>
+            </value>
+            <value>
+                <fullName>Contingent</fullName>
+                <default>false</default>
+                <label>Contingent</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

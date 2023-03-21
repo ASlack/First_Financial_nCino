@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__IRA_Recharacterization_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional and can be collected as part of a workflow. It specifies the type of recharacterization.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Specifies the type of recharacterization.</inlineHelpText>
+    <label>IRA Recharacterization Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Traditional to Roth</fullName>
+                <default>false</default>
+                <label>Traditional to Roth</label>
+            </value>
+            <value>
+                <fullName>Roth to Traditional</fullName>
+                <default>false</default>
+                <label>Roth to Traditional</label>
+            </value>
+            <value>
+                <fullName>Roth conversion back to Traditional or SIMPLE</fullName>
+                <default>false</default>
+                <label>Roth conversion back to Traditional or SIMPLE</label>
+            </value>
+            <value>
+                <fullName>Erroneous rollover or transfer from Traditional to SIMPLE and back to Traditional</fullName>
+                <default>false</default>
+                <label>Erroneous rollover or transfer from Traditional to SIMPLE and back to Traditional</label>
+            </value>
+            <value>
+                <fullName>Roth rollover or direct rollover from an ERP to Traditional</fullName>
+                <default>false</default>
+                <label>Roth rollover or direct rollover from an ERP to Traditional</label>
+            </value>
+            <value>
+                <fullName>Roth beneficiary direct rollover from an ERP to traditional beneficiary</fullName>
+                <default>false</default>
+                <label>Roth beneficiary direct rollover from an ERP to traditional beneficiary</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

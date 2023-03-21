@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NDOC__Collateral_Mgmt__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field is not required but is automatically populated. It is used to help facilitate reporting on Collateral objects tied to Document Placeholder.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Facilitate reporting on Collateral objects tied to Document_Placeholder</inlineHelpText>
+    <label>Collateral Mgmt</label>
+    <referenceTo>LLC_BI__Collateral__c</referenceTo>
+    <relationshipLabel>Document Placeholders</relationshipLabel>
+    <relationshipName>Document_Placeholders</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Debt_Filter_Syntax__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Administrators manually populate this optional long text field to determine which debts appear within a specific debt schedule. By default, it is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Populate this field with the syntax for the debts you want to include within the debt schedule.</inlineHelpText>
+    <label>Debt Filter Syntax</label>
+    <length>131072</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

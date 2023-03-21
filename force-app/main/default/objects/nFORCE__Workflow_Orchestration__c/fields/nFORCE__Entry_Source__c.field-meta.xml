@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Entry_Source__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This is an optional field populated by the system with a value that displays the application that added this record.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is an optional field populated by the system with a value that displays the application that added this record.</inlineHelpText>
+    <label>Entry Source</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

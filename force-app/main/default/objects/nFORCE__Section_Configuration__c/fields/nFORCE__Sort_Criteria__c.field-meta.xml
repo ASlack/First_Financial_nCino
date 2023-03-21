@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Sort_Criteria__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional and is populated by the Section Builder tool. The field denotes whether a section configuration should return records in a specified sorted order. The value should use appropriate syntax for the ORDER BY clause of a SOQL query. The default value is empty and returns records in no specific order.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field is optional and is populated by the Section Builder tool. The field denotes whether a tier should return records in a specified sorted order. The value should use appropriate syntax for the ORDER BY clause of a SOQL query.</inlineHelpText>
+    <label>Sort Criteria</label>
+    <length>32768</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

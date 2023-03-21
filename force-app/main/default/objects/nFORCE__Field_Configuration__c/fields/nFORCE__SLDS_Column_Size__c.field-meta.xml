@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__SLDS_Column_Size__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The size of the column used for this field in the SLDS Grid. This number is the denominator of the fraction 1/x that gives the percentage of the row the field&apos;s column will span.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Specify the size of the SLDS Grid column this field should span. This number will be divided into 1 to give the percentage of the row the field will span. For example, a value of 3 will equate to 33.333% of the row.</inlineHelpText>
+    <label>SLDS Grid Column Size</label>
+    <precision>3</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

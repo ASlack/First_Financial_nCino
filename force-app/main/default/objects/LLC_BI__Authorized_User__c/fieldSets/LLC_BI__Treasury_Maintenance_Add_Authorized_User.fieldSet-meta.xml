@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Treasury_Maintenance_Add_Authorized_User</fullName>
+    <description>Used in the Treasury Maintenance Order UI to add new authorized users.</description>
+    <displayedFields>
+        <field>LLC_BI__Treasury_Service__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>LLC_BI__Contact_Reference__c</field>
+        <isFieldManaged>true</isFieldManaged>
+        <isRequired>true</isRequired>
+    </displayedFields>
+    <label>Treasury Maintenance Add Authorized User</label>
+</FieldSet>

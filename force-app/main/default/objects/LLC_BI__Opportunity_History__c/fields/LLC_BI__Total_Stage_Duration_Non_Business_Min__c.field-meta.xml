@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Total_Stage_Duration_Non_Business_Min__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is automatically populated with a formula. It contains the total non-business hours stage duration in minutes.</description>
+    <externalId>false</externalId>
+    <formula>IF(ISNULL(LLC_BI__Previous_Stage_Duration_Non_Business_Min__c), LLC_BI__Stage_Duration_Non_Business_Minutes__c, LLC_BI__Stage_Duration_Non_Business_Minutes__c + LLC_BI__Previous_Stage_Duration_Non_Business_Min__c)</formula>
+    <label>Total Stage Duration Non-Business Mins</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

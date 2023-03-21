@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Parent__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Booking Status that was used in creating this Booking Status.</description>
+    <externalId>false</externalId>
+    <label>Parent Booking Status</label>
+    <referenceTo>LLC_BI__Automated_Booking_Status__c</referenceTo>
+    <relationshipLabel>Child Statuses</relationshipLabel>
+    <relationshipName>Child_Statuses</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

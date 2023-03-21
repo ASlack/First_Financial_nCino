@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__HMDA_AUS_Other_Result_Text__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field indicates in text the specific other AUS result(s) if Code 16 (Other) is selected in an Automated Underwriting System Result field.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If &quot;Other&quot; is selected as one of the Automated Underwriting Systems Results, this field allows you to specify the results from the system.</inlineHelpText>
+    <label>Other AUS Result Details</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

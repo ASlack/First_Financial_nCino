@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Description__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this optional picklist field based on the template’s created route indicating the template’s use. If the picklist is undefined, the system recognizes the value as Projection. By default, the field value is Projection.</description>
+    <externalId>false</externalId>
+    <label>Description</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

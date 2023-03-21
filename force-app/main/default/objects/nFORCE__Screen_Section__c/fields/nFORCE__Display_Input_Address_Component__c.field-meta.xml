@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Display_Input_Address_Component__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>When true, this field will display the input address component to autocomplete addresses.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select this box to use autocomplete address component.</inlineHelpText>
+    <label>Display Input Address Component</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

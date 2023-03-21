@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>LLC_BI__HMDA_Purchaser_Type__c</name>
+    <picklistValues>
+        <masterLabel>Code 0—Loan was not originated or was not sold in calendar year covered by register</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Code 1—Fannie Mae (FNMA)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Code 2—Ginnie Mae (GNMA)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Code 3—Freddie Mac (FHLMC)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Code 4—Farmer Mac (FAMC)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Code 5—Private securitization</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Code 6—Commercial bank, savings bank, or savings association</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Code 7—Life insurance company, credit union, mortgage bank, or finance company</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Code 8—Affiliate institution</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Code 9—Other type of purchaser</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

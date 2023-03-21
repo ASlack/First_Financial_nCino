@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__SObject_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is manually entered and required when utilizing the related list copy configuration option. This field specifies the sObject Type to which the lists apply.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>SObject Type to which the lists apply</inlineHelpText>
+    <label>SObject Type</label>
+    <length>255</length>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

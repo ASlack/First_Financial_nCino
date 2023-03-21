@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NDOC__Document_Placeholder_Bulk_Update_Fields</fullName>
+    <description>The system automatically displays the fields in this field set when a user bulk updates the Document Manager placeholders on the Collateral, Deposit, Treasury Service, Product Package, and Product Package Document Views objects.</description>
+    <displayedFields>
+        <field>LLC_BI__Year__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>LLC_BI__Review_Status__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>LLC_BI__Exception_Date__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Document Placeholder Bulk Update Fields</label>
+</FieldSet>

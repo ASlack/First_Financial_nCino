@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The user populates this picklist field to indicate the type of address for the contact record. By default, this field is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the type of address from the picklist.</inlineHelpText>
+    <label>Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Mailing</fullName>
+                <default>false</default>
+                <label>Mailing</label>
+            </value>
+            <value>
+                <fullName>Physical</fullName>
+                <default>false</default>
+                <label>Physical</label>
+            </value>
+            <value>
+                <fullName>PO Box</fullName>
+                <default>false</default>
+                <label>PO Box</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Is_Archived__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is manually set. When enabled, it archives an answer so it is no longer available to a user. When disabled, the answer is available to a user to select. By default, it is disabled.</description>
+    <externalId>false</externalId>
+    <label>Is Archived</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

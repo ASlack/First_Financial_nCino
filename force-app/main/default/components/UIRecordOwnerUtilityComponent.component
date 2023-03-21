@@ -1,0 +1,98 @@
+<apex:component allowDML="true" layout="none" controller="UserInterfaceRecordOwnerUtility">
+    
+    <style type="text/css">
+    .rich-tabpanel-content { background-color: white; }
+    .bPageBlock { background-color: white; }
+    .pbBody { background-color: white; }
+    .colStyle { width:16% }
+    .activeTab {background-color: #236FBD; color:white; background-image:none; font-size:20px; letter-spacing:-1px; line-height: 40px;}
+    .inactiveTab { background-color: lightgrey; color:black; background-image:none}
+    .inactiveOwners { color: red; }
+    .noinactiveOwners { color: green; }
+    </style>   
+    
+    <apex:pageBlock id="pgbk1" mode="detail">
+        <apex:pageBlockSection id="pgbk1_1" title="Analyze" columns="1">
+            <apex:outputText value="When cloning a Group, an error may be encountered if the source records have inactive Owners.  Click the button below
+            to analyze Owners on objects for which lookupKeys are required." label="Note:" /> 
+            <apex:commandButton id="mainbutton" value="Analyze Record Owners" style="colStyle4" action="{!analyzeOwners}" />
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+    
+    <apex:pageBlock id="pgbk3" mode="maindetail" rendered="{!showRequiredObjects}">
+        <apex:pageBlockSection id="pgbk1_3" title="Record Owner Analysis" columns="1">
+            <apex:panelGrid columns="3" width="100%" styleClass="table table-bordered">
+                <apex:outputLabel value="OBJECT" style="font-weight:800;" />
+                <apex:outputLabel value="INACTIVE OWNERS" style="font-weight:800;" />
+                <apex:outputLabel value="OUT OF" style="font-weight:800;" />           
+                
+                <apex:outputLabel value="Screen" />
+                <apex:outputText title="Screen" value="{!inactiveOwnersScreens}" styleClass="inactiveOwners" rendered="{!IF(inactiveOwnersScreens > 0, true, false)}" />
+                <apex:outputText title="Screen" value="{!inactiveOwnersScreens}" styleClass="noinactiveOwners" rendered="{!IF(inactiveOwnersScreens = 0, true, false)}" />
+                <apex:outputText title="Screen" value="{!totalNumberScreens}" />
+                
+                <!--
+                <apex:outputLabel value="Screen Section" />
+                <apex:outputText title="Screen Section" value="{!inactiveOwnersScreenSections}" styleClass="inactiveOwners" rendered="{!IF(inactiveOwnersScreenSections > 0, true, false)}" />
+                <apex:outputText title="Screen Section" value="{!inactiveOwnersScreenSections}" styleClass="noinactiveOwners" rendered="{!IF(inactiveOwnersScreenSections = 0, true, false)}" />
+                <apex:outputText title="Screen Section" value="{!totalNumberScreenSections}" />
+
+                <apex:outputLabel value="Section Configuration" />
+                <apex:outputText title="Section Configuration" value="{!inactiveOwnersSectionConfigs}" styleClass="inactiveOwners" rendered="{!IF(inactiveOwnersSectionConfigs > 0, true, false)}" />
+                <apex:outputText title="Section Configuration" value="{!inactiveOwnersSectionConfigs}" styleClass="noinactiveOwners" rendered="{!IF(inactiveOwnersSectionConfigs = 0, true, false)}" />
+                <apex:outputText title="Section Configuration" value="{!totalNumberKeysSectionConfigs}" />
+                -->
+                
+                <apex:outputLabel value="Screen View" />
+                <apex:outputText title="Screen View" value="{!inactiveOwnersScreenViews}" styleClass="inactiveOwners" rendered="{!IF(inactiveOwnersScreenViews > 0, true, false)}" />
+                <apex:outputText title="Screen View" value="{!inactiveOwnersScreenViews}" styleClass="noinactiveOwners" rendered="{!IF(inactiveOwnersScreenViews = 0, true, false)}" />
+                <apex:outputText title="Screen View" value="{!totalNumberScreenViews}" />
+                
+                <apex:outputLabel value="Layout" />
+                <apex:outputText title="Layout" value="{!inactiveOwnersLayouts}" styleClass="inactiveOwners" rendered="{!IF(inactiveOwnersLayouts > 0, true, false)}" />
+                <apex:outputText title="Layout" value="{!inactiveOwnersLayouts}" styleClass="noinactiveOwners" rendered="{!IF(inactiveOwnersLayouts = 0, true, false)}" />
+                <apex:outputText title="Layout" value="{!totalNumberLayouts}" />
+                
+                <apex:outputLabel value="Group" />
+                <apex:outputText title="Group" value="{!inactiveOwnersGroups}" styleClass="inactiveOwners" rendered="{!IF(inactiveOwnersGroups > 0, true, false)}" />
+                <apex:outputText title="Group" value="{!inactiveOwnersGroups}" styleClass="noinactiveOwners" rendered="{!IF(inactiveOwnersGroups = 0, true, false)}" />
+                <apex:outputText title="Group" value="{!totalNumberGroups}" />
+                
+                <apex:outputLabel value="Route" />
+                <!-- <apex:outputText title="Route" value="{!inactiveOwnersRoutes}" /> -->
+                <apex:outputText title="Route" value="{!inactiveOwnersRoutes}" styleClass="inactiveOwners" rendered="{!IF(inactiveOwnersRoutes > 0, true, false)}" />
+                <apex:outputText title="Route" value="{!inactiveOwnersRoutes}" styleClass="noinactiveOwners" rendered="{!IF(inactiveOwnersRoutes = 0, true, false)}" />
+                <apex:outputText title="Route" value="{!totalNumberRoutes}" />
+
+                <apex:outputLabel value="Route Group" />
+                <apex:outputText title="Route Group" value="{!inactiveOwnersRouteGroups}" styleClass="inactiveOwners" rendered="{!IF(inactiveOwnersRouteGroups > 0, true, false)}" />
+                <apex:outputText title="Route Group" value="{!inactiveOwnersRouteGroups}" styleClass="noinactiveOwners" rendered="{!IF(inactiveOwnersRouteGroups = 0, true, false)}" />
+                <apex:outputText title="Route Group" value="{!totalNumberRouteGroups}" />
+                
+                <apex:outputLabel value="Field Configuration" />
+                <apex:outputText title="Field Configuration" value="{!inactiveOwnersFieldConfigs}" styleClass="inactiveOwners" rendered="{!IF(inactiveOwnersFieldConfigs > 0, true, false)}" />
+                <apex:outputText title="Field Configuration" value="{!inactiveOwnersFieldConfigs}" styleClass="noinactiveOwners" rendered="{!IF(inactiveOwnersFieldConfigs = 0, true, false)}" />
+                <apex:outputText title="Field Configuration" value="{!totalNumberFieldConfigs}" />
+                
+                <apex:outputLabel value="Route Tile" />
+                <apex:outputText title="Route Tile" value="{!inactiveOwnersRouteTiles}" styleClass="inactiveOwners" rendered="{!IF(inactiveOwnersRouteTiles > 0, true, false)}" />
+                <apex:outputText title="Route Tile" value="{!inactiveOwnersRouteTiles}" styleClass="noinactiveOwners" rendered="{!IF(inactiveOwnersRouteTiles = 0, true, false)}" />
+                <apex:outputText title="Route Tile" value="{!totalNumberRouteTiles}" />
+                
+                <apex:outputLabel value="Route Term" />
+                <apex:outputText title="Route Term" value="{!inactiveOwnersRouteTerms}" styleClass="inactiveOwners" rendered="{!IF(inactiveOwnersRouteTerms > 0, true, false)}" />
+                <apex:outputText title="Route Term" value="{!inactiveOwnersRouteTerms}" styleClass="noinactiveOwners" rendered="{!IF(inactiveOwnersRouteTerms = 0, true, false)}" />
+                <apex:outputText title="Route Term" value="{!totalNumberRouteTerms}" />
+            </apex:panelGrid>
+        </apex:pageBlockSection>
+    </apex:pageBlock>     
+    
+    <apex:pageBlock id="pgbk5" mode="maindetail" rendered="{!inactiveOwners}">
+        <apex:pageBlockSection id="pgbk1_5" columns="1">
+            <apex:outputLabel value="It is required to assign an active Owner to all records.  Select an Owner from the lookup and use the button below to assign the Owner to UI records." /> 
+            <apex:inputField id="source_group" value="{!source_group.OwnerId}"></apex:inputField>
+            <apex:commandButton id="mainbutton" value="Assign Record Owners" style="colStyle4" action="{!assignOwners}" />
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+
+</apex:component>

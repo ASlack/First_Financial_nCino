@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Reason_For_Handover__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Users select the reason for loan hand over from this optional picklist. By default it is blank.</description>
+    <externalId>false</externalId>
+    <label>Reason for Handover</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Covenant Breach</fullName>
+                <default>false</default>
+                <label>Covenant Breach</label>
+            </value>
+            <value>
+                <fullName>Declining Industry Sector</fullName>
+                <default>false</default>
+                <label>Declining Industry Sector</label>
+            </value>
+            <value>
+                <fullName>Financial Distress</fullName>
+                <default>false</default>
+                <label>Financial Distress</label>
+            </value>
+            <value>
+                <fullName>Management Issue</fullName>
+                <default>false</default>
+                <label>Management Issue</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>LLC_BI__Advance_Rate_should_not_be_null</name>
+    </validationRules>
+    <webLinks>
+        <label></label>
+        <name>LLC_BI__CreateCollateralTypeScreen</name>
+    </webLinks>
+</CustomObjectTranslation>

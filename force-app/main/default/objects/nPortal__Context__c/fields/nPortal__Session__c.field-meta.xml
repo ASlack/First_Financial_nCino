@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nPortal__Session__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Every context record is associated with a session record.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The session ID with which this application&apos;s user context is associated.</inlineHelpText>
+    <label>Session</label>
+    <referenceTo>nFORCE__Session__c</referenceTo>
+    <relationshipLabel>Contexts</relationshipLabel>
+    <relationshipName>Contexts</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

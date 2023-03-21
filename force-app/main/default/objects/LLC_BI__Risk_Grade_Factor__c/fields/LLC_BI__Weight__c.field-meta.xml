@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Weight__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is required. It must be manually populated with a percentage number lower than 1 (ex: .25). It is used to determine how much a particular risk grade factor contributes to a risk grade group (if the factor is associated to a group) or the calculated risk grade (if it does not). The weight across all risk grade factors for a group (if associated) or a risk grade template (if no group) should not exceed 1.</description>
+    <externalId>false</externalId>
+    <label>Weight</label>
+    <precision>18</precision>
+    <required>true</required>
+    <scale>5</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

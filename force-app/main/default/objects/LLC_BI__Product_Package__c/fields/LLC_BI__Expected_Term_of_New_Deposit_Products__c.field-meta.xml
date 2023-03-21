@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Expected_Term_of_New_Deposit_Products__c</fullName>
+    <defaultValue>12</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Use this field for the expected term in months for new deposit products an FI originates in the deal outside of nCino. By default, it is 12.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The expected term in months for new deposit products an FI originates in the deal outside of nCino.</inlineHelpText>
+    <label>Expected Term of New Deposit Products</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

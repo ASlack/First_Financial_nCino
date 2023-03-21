@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Payment_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is manually populated. This picklist field is used to specify the type of payment the loan is subject to. *Do not change these picklist values.*</description>
+    <externalId>false</externalId>
+    <label>Payment Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Installment</fullName>
+                <default>false</default>
+                <label>Installment</label>
+            </value>
+            <value>
+                <fullName>Balloon</fullName>
+                <default>false</default>
+                <label>Balloon</label>
+            </value>
+            <value>
+                <fullName>Draw Down Line Of Credit</fullName>
+                <default>false</default>
+                <label>Draw Down Line Of Credit</label>
+            </value>
+            <value>
+                <fullName>Principal+Interest</fullName>
+                <default>false</default>
+                <label>Principal+Interest</label>
+            </value>
+            <value>
+                <fullName>Irregular</fullName>
+                <default>false</default>
+                <label>Irregular</label>
+            </value>
+            <value>
+                <fullName>Generic Non-Disclosable</fullName>
+                <default>false</default>
+                <label>Generic Non-Disclosable</label>
+            </value>
+            <value>
+                <fullName>Construction Permanent</fullName>
+                <default>false</default>
+                <label>Construction Permanent</label>
+            </value>
+            <value>
+                <fullName>Revolving Line Of Credit</fullName>
+                <default>false</default>
+                <label>Revolving Line Of Credit</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Does_Not_Require_Approval</fullName>
+    <availableFields>
+        <field>LLC_BI__Maturity_Date_Change__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <description>Field set that appears in third section of Memo Detail</description>
+    <displayedFields>
+        <field>LLC_BI__Use_of_Proceeds_Change__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>LLC_BI__Guarantor_Added__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Does Not Require Approval</label>
+</FieldSet>

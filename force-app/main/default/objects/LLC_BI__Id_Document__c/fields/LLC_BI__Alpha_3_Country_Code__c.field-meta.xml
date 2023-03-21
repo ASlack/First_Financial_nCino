@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Alpha_3_Country_Code__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Administrators populate this picklist to choose the alpha-3 code for the country of issuance for the identity document.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the alpha-3 code for the country of issuance for your identification</inlineHelpText>
+    <label>Alpha-3 Country Code</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>USA</fullName>
+                <default>false</default>
+                <label>United States</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

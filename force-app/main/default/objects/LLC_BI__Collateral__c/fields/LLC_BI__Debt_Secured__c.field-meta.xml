@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Debt_Secured__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The user manually populates this field to indicate the debt secured by the collateral. This field links the collateral to the debt it secures.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicate the debt secured by the collateral.</inlineHelpText>
+    <label>Debt Secured</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Guarantor&apos;s debt</fullName>
+                <default>false</default>
+                <label>Guarantor&apos;s debt</label>
+            </value>
+            <value>
+                <fullName>Only this debt for the applicant</fullName>
+                <default>false</default>
+                <label>Only this debt for the applicant</label>
+            </value>
+            <value>
+                <fullName>This debt and all associated debts for the applicant with this organization</fullName>
+                <default>false</default>
+                <label>This debt and all associated debts for the applicant with this organization</label>
+            </value>
+            <value>
+                <fullName>This debt and any future debts for the applicant with this organization</fullName>
+                <default>false</default>
+                <label>This debt and any future debts for the applicant with this organization</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

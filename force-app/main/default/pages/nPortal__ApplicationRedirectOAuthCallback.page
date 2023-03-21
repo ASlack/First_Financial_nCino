@@ -1,0 +1,13 @@
+<apex:page sidebar="false"
+	showHeader="false"
+	standardStylesheets="false"
+	applyHtmlTag="false"
+	applyBodyTag="false"
+>
+	<head>
+		<script type="module" src="{!URLFOR($Resource.ApplicationRedirectOAuthCallback, 'ApplicationRedirectOAuthCallback.js')}"></script>
+	</head>
+	<body>
+		<c:PortalRedirectLoader message="{!$Label.nPortal__OAuth_Application_Redirect_Message}"/>
+	</body>
+</apex:page>

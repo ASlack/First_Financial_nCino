@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Interest_Only_Months__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is manually populated. It is used to specify the number of monthly interest-only payments for this loan.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Number of payment months that are interest only. Don&apos;t include these months in the total month terms field above.</inlineHelpText>
+    <label>Interest Only Months</label>
+    <precision>10</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

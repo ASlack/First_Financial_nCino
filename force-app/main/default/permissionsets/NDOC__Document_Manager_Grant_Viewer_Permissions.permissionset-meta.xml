@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>NDOC__Document_Manager_Grant_Viewer_Permissions</name>
+    </customPermissions>
+    <description>Allows users to access the Viewer Permissions link in all Document Manager Views. Without this permission, the Viewer Permissions link is not visible on the placeholder details or when right clicking a placeholder.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Document Manager Grant Viewer Permissions</label>
+</PermissionSet>

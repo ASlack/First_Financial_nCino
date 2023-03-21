@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Enable_Telemetry__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Administrators populate this optional checkbox field that, when set to true, enables the use of telemetry. The default is false.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select to enable telemetry.</inlineHelpText>
+    <label>Enable Telemetry</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

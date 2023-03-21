@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Comments_Deal_Impact</fullName>
+    <description>This field set contains the Comments field.</description>
+    <displayedFields>
+        <field>LLC_BI__Product_Package__r.LLC_BI__Ancillary_Revenue_Comments__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Comments Deal Impact</label>
+</FieldSet>

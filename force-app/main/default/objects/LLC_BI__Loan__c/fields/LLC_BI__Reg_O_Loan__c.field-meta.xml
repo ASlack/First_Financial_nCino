@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Reg_O_Loan__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is manually selected. If enabled, it indicates that a loan falls under the financial institution&apos;s Reg-O standards. When disabled, the loan does not meet the Reg-O standards. By default, this is disabled.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This checkbox is used to specify when a loan falls under the financial institutions Reg-O standards.</inlineHelpText>
+    <label>Reg O Loan</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

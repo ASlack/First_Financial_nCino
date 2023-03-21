@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Prior_Lien_Holder__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional and manually populated. If there was a prior lien, use this field to specify its holder.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If there is an existing lien, enter the name of that financial institution.</inlineHelpText>
+    <label>Prior Lien Holder</label>
+    <length>80</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

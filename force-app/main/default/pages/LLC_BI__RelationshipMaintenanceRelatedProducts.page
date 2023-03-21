@@ -1,0 +1,38 @@
+<apex:page docType="html-5.0" 
+	sidebar="false" 
+	showHeader="false" 
+	controller="nFORCE.TemplateController" 
+	extensions="nFORCE.RemoteActionController">
+
+	<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	
+		<head>
+			<meta charset="utf-8" />
+			<title>Related Products</title>
+			<base href="/" />
+			<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+			<nFORCE:Include_Design_System components="true" />
+			<nFORCE:Includes enableBS3Namespace="true" />
+			<apex:slds />
+	
+			<!-- nFORCE Dependencies -->
+			<apex:stylesheet value="{!URLFOR($Resource.LLC_BI__related_products, 'styles.css')}" />
+			<nFORCE:MessageHandler messageConfig="LifeCycle.MessageHandler.Configurations.ErrorMessage" />
+		</head>
+	
+		<body>
+			<div class="slds slds-scope">
+				<related-products></related-products>
+				<c:RelatedProductsConfiguration />
+			</div>
+
+			<!-- Related Products Angular App -->
+			<script defer="defer" type="application/javascript" src="{!URLFOR($Resource.nforce__navigator, 'lib/navigator-visualforce.js')}"></script>
+			<script type="application/javascript" src="{!URLFOR($Resource.related_products, 'runtime.js')}"></script>
+			<script type="application/javascript" src="{!URLFOR($Resource.related_products, 'polyfills.js')}"></script>
+			<script type="application/javascript" src="{!URLFOR($Resource.related_products, 'main.js')}"></script>
+		</body>
+	
+	</html>
+</apex:page>

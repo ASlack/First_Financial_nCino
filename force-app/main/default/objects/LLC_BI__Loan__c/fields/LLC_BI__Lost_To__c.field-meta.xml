@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Lost_To__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is manually populated. It specifies the competitor to which the loan was lost. If provided, the value must match one of the values in the Lost To picklist established for this financial institution.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If Loan Stage is moved to Withdrawn, please identify why/how the business was lost.</inlineHelpText>
+    <label>Lost To</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Bank of America</fullName>
+                <default>false</default>
+                <label>Bank of America</label>
+            </value>
+            <value>
+                <fullName>BB&amp;T</fullName>
+                <default>false</default>
+                <label>BB&amp;T</label>
+            </value>
+            <value>
+                <fullName>Capital One</fullName>
+                <default>false</default>
+                <label>Capital One</label>
+            </value>
+            <value>
+                <fullName>Citi</fullName>
+                <default>false</default>
+                <label>Citi</label>
+            </value>
+            <value>
+                <fullName>Fifth Third Bank</fullName>
+                <default>false</default>
+                <label>Fifth Third Bank</label>
+            </value>
+            <value>
+                <fullName>JP Morgan Chase</fullName>
+                <default>false</default>
+                <label>JP Morgan Chase</label>
+            </value>
+            <value>
+                <fullName>PNC Bank</fullName>
+                <default>false</default>
+                <label>PNC Bank</label>
+            </value>
+            <value>
+                <fullName>Regions Financial</fullName>
+                <default>false</default>
+                <label>Regions Financial</label>
+            </value>
+            <value>
+                <fullName>Suntrust</fullName>
+                <default>false</default>
+                <label>Suntrust</label>
+            </value>
+            <value>
+                <fullName>US Bank</fullName>
+                <default>false</default>
+                <label>US Bank</label>
+            </value>
+            <value>
+                <fullName>Wells Fargo</fullName>
+                <default>false</default>
+                <label>Wells Fargo</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

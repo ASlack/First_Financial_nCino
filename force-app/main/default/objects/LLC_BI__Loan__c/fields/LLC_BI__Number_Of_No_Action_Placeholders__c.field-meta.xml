@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Number_Of_No_Action_Placeholders__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This numeric field is automatically calculated by the system. It represents the number of LoanRenewal records where Is_No_Action_Placeholder equals true. Its default value is blank.</description>
+    <externalId>false</externalId>
+    <label>Number Of No Action Placeholders</label>
+    <summaryFilterItems>
+        <field>LLC_BI__LoanRenewal__c.LLC_BI__Is_No_Action_Placeholder__c</field>
+        <operation>equals</operation>
+        <value>True</value>
+    </summaryFilterItems>
+    <summaryForeignKey>LLC_BI__LoanRenewal__c.LLC_BI__ParentLoanId__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

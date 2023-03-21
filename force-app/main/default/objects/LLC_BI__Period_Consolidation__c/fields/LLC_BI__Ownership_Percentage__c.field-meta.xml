@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Ownership_Percentage__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The user populates this required field to denote the percent of ownership a parent company has in a child company. The percent of ownership determines how much of the child company’s value to calculate in the parent company’s Financial Consolidation. By default, it is blank.</description>
+    <externalId>false</externalId>
+    <label>Ownership Percentage</label>
+    <precision>16</precision>
+    <required>false</required>
+    <scale>8</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

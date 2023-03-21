@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Template_Record__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field is specific to Standard Fees, and it links the Template Record that the fee was created from with the fee that is being applied to the loan.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The Template Record that the fee was created from.</inlineHelpText>
+    <label>Template Record</label>
+    <referenceTo>LLC_BI__Template_Records__c</referenceTo>
+    <relationshipLabel>Fees</relationshipLabel>
+    <relationshipName>Fees</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

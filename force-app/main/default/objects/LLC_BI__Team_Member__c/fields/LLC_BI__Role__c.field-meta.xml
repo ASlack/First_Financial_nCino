@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Role__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field is required. It is manually populated. It identifies the role that has been assigned to a user when adding them to the loan team.</description>
+    <externalId>false</externalId>
+    <label>Role</label>
+    <referenceTo>LLC_BI__Role__c</referenceTo>
+    <relationshipLabel>Team Members</relationshipLabel>
+    <relationshipName>Team_Members</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

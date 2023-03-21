@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Mortgage_Insurance__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this currency field to display the borrower’s monthly mortgage insurance rate. By default, this field is based on a calculated value.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field displays the borrower’s monthly mortgage insurance rate.</inlineHelpText>
+    <label>Mortgage Insurance</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

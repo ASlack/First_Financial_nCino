@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__HCM_APOR__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this field with the Average Prime Offer Rate percentage when compliance calculations are completed for High-Cost Mortgage. By default, this field is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field displays the APOR for an offer when HCM compliance calculations are completed.</inlineHelpText>
+    <label>HCM APOR</label>
+    <precision>6</precision>
+    <required>false</required>
+    <scale>3</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

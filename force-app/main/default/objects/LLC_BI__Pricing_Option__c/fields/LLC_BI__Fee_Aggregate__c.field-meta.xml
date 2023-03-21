@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Fee_Aggregate__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The system autopopulates this lookup field with the fee loan aggregate.</description>
+    <externalId>false</externalId>
+    <label>Fee Aggregate</label>
+    <referenceTo>LLC_BI__Fee_Loan_Aggregate__c</referenceTo>
+    <relationshipLabel>Pricing Option</relationshipLabel>
+    <relationshipName>Pricing_Option</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

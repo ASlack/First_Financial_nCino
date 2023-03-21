@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Current_Gross_Lendable_Value_Collateral1__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is automatically populated via a roll-up. It stores the current gross lendable value of all collateral based on advance rate. This field is used with old collateral structure only, not Collateral Management.</description>
+    <externalId>false</externalId>
+    <label>Current Gross Lendable Value</label>
+    <summarizedField>LLC_BI__Loan_Collateral__c.LLC_BI__Gross_Lendable_Value__c</summarizedField>
+    <summaryForeignKey>LLC_BI__Loan_Collateral__c.LLC_BI__Loan__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

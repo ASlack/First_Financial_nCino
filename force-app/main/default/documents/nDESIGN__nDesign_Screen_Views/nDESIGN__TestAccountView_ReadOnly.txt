@@ -1,0 +1,1 @@
+<div data-bind="with: screenResources()['{!NS}.SObjectScreenResource_Account']">This account name is: <span data-bind="text: propertyBag.Account_Name.value" /></div>

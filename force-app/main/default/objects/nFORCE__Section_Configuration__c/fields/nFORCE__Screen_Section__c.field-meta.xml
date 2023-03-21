@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Screen_Section__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is required. It is populated automatically by the Layout Builder tool on the parent screen section. This field specifies the screen section associated with the section configuration. It provides the screen section with the fields to be used.</description>
+    <externalId>false</externalId>
+    <label>Screen Section</label>
+    <referenceTo>nFORCE__Screen_Section__c</referenceTo>
+    <relationshipLabel>Section Configurations</relationshipLabel>
+    <relationshipName>Section_Configurations</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>true</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

@@ -1,0 +1,4 @@
+Thirdparty Report has not been received for Loan {!LLC_BI__Loan__c.Name}
+
+Report: {!LLC_BI__third_party_report__c.LLC_BI__Report_Type__c} 
+Due Date: {!LLC_BI__third_party_report__c.LLC_BI__Report_Due_Date__c}

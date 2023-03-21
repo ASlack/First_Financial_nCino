@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>The workflow orchestration step triggers this flow and generates a proposed pricing option for the loan.</description>
+    <internalUseOnly>true</internalUseOnly>
+    <name>Generate Proposed Pricing Option</name>
+    <public>false</public>
+</Document>

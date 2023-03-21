@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>The workflow orchestration step triggers this flow and performs a sherman calculation to update the relevant pricing object and creates a debt record.</description>
+    <internalUseOnly>true</internalUseOnly>
+    <name>Sherman Calculation And Create Proposed Debt</name>
+    <public>false</public>
+</Document>

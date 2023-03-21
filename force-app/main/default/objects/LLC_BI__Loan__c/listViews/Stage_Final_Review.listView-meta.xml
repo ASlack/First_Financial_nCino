@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stage_Final_Review</fullName>
+    <columns>NAME</columns>
+    <columns>LLC_BI__lookupKey__c</columns>
+    <columns>LLC_BI__Amount__c</columns>
+    <columns>LLC_BI__Account__c</columns>
+    <columns>LLC_BI__Product_Line__c</columns>
+    <columns>LLC_BI__Product_Type__c</columns>
+    <columns>LLC_BI__Product__c</columns>
+    <columns>LLC_BI__InterestRate__c</columns>
+    <columns>LLC_BI__Risk_Grade__c</columns>
+    <columns>LLC_BI__Stage__c</columns>
+    <columns>LLC_BI__Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>LLC_BI__Stage__c</field>
+        <operation>equals</operation>
+        <value>Final Review</value>
+    </filters>
+    <label>Stage = Final Review</label>
+    <language>en_US</language>
+</ListView>

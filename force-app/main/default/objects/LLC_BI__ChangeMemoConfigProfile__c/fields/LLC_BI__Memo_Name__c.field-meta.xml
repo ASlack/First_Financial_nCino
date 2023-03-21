@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Memo_Name__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field indicates the Change Memo&apos;s forced name value.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The name value that the change memo&apos;s names will be forced to. IE: &quot;Change Memo&quot;</inlineHelpText>
+    <label>Memo Name</label>
+    <length>100</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

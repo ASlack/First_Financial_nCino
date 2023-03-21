@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Product_Feature_Filter__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Administrators manually populate this optional text field. When this field is populated, then the only loans that should be used in the exposure calculation are loans whose product’s Product Feature have a matching value in the Exposure Filter field. For example, if “Tier 1” is the value of the Product Feature Filter field on the Statistic Configuration object, then the only loans that will be used to calculate exposure are those whose product’s Product Feature have a value of “Tier 1&quot; in the Exposure Filter field.</description>
+    <externalId>false</externalId>
+    <label>Product Feature Filter</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Additional_Information_Requested__c</fullName>
+    <description>This will be set when credit underwriter requests additional information to complete an application review.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This will be set when credit underwriter requests additional information to complete an application review.</inlineHelpText>
+    <label>Additional Information Requested</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

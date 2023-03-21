@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Product__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is required. It is manually populated. This field is used to specify the product for this loan. Any picklist values in this field must exactly match the name of a LLC_BI__Product__c record.</description>
+    <externalId>false</externalId>
+    <label>Product</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>LLC_BI__Product_Type__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Construction</fullName>
+                <default>false</default>
+                <label>Construction</label>
+            </value>
+            <value>
+                <fullName>Equipment</fullName>
+                <default>false</default>
+                <label>Equipment</label>
+            </value>
+            <value>
+                <fullName>Line of Credit</fullName>
+                <default>false</default>
+                <label>Line of Credit</label>
+            </value>
+            <value>
+                <fullName>HELOC</fullName>
+                <default>false</default>
+                <label>HELOC</label>
+            </value>
+            <value>
+                <fullName>Purchase</fullName>
+                <default>false</default>
+                <label>Purchase</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Real Estate</controllingFieldValue>
+            <valueName>Construction</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Real Estate</controllingFieldValue>
+            <controllingFieldValue>Non-Real Estate</controllingFieldValue>
+            <valueName>Line of Credit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Real Estate</controllingFieldValue>
+            <valueName>Purchase</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-Real Estate</controllingFieldValue>
+            <valueName>Equipment</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

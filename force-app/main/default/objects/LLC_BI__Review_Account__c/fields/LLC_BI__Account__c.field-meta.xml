@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Account__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field is used to lookup to the account records that should be included in the review. This is automatically populated when the review is initiated, loans are selected for review based on the entity involvement of those loans. This field are not editable on the review record however are used in populating the &quot;Loans&quot; and &quot;Relationship&quot; list sections of the review record.</description>
+    <externalId>false</externalId>
+    <label>Account</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Review Accounts</relationshipLabel>
+    <relationshipName>Review_Accounts</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

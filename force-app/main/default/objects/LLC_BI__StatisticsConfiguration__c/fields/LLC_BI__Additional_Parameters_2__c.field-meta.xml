@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Additional_Parameters_2__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional and manually populated by administrators. This field allows for overflow of the Additional Parameters 2 field and concatenates to form one long parameter if needed. This field is used to specify additional parameters that influence the performance of statistic calculations. The specified parameters are dependent on the business logic class.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field allows for overflow of the Additional Parameters 2 field and concatenates to form one long parameter if needed.</inlineHelpText>
+    <label>Additional Parameters 3</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

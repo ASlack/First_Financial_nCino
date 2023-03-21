@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCOC__scoreReason_2_dataSourceCode__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field contains the Score Reason 2 Data Source Code returned in the Liquid Credit Request for this entity Data Source Score..</description>
+    <externalId>false</externalId>
+    <label>Score Reason 2 Data Source Code</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>EFU</fullName>
+                <default>false</default>
+                <label>EFU</label>
+            </value>
+            <value>
+                <fullName>EFX</fullName>
+                <default>false</default>
+                <label>EFX</label>
+            </value>
+            <value>
+                <fullName>TU</fullName>
+                <default>false</default>
+                <label>TU</label>
+            </value>
+            <value>
+                <fullName>TUC</fullName>
+                <default>false</default>
+                <label>TUC</label>
+            </value>
+            <value>
+                <fullName>XPN</fullName>
+                <default>false</default>
+                <label>XPN</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Relationship_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is required and must be set during configuration of Ownership Structure Roles. This field is used to indicate the role a relationship plays for a deposit account. It is also used to set the Ownership Type field on the Entity Involvement record, linking the deposit to the relationship.</description>
+    <externalId>false</externalId>
+    <label>Ownership Type</label>
+    <length>255</length>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Index__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This system automatically populates this optional picklist with information from the Pricing Matrix to specify the index the lending rate follows.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This system-populated field displays the index the lending rate follows.</inlineHelpText>
+    <label>Index</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>None</fullName>
+                <default>true</default>
+                <label></label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

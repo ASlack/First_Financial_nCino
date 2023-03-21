@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCOC__Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Public record type</description>
+    <externalId>false</externalId>
+    <label>Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Bankruptcies</fullName>
+                <default>false</default>
+                <label>Bankruptcies</label>
+            </value>
+            <value>
+                <fullName>Judgements</fullName>
+                <default>false</default>
+                <label>Judgements</label>
+            </value>
+            <value>
+                <fullName>Liens</fullName>
+                <default>false</default>
+                <label>Liens</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

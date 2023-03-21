@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Source_Formula__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Administrators manually populate this optional field with a formula. The system evaluates the formula to determine the value to map. By default, this field is blank.</description>
+    <externalId>false</externalId>
+    <label>Source Formula</label>
+    <length>20000</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>8</visibleLines>
+</CustomField>

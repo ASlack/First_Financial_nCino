@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nPortal__Document_ID__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Administrators populate this text field with the Salesforce ID of the Document record that holds the security badge image.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the Salesforce ID from the Document record of the security badge.</inlineHelpText>
+    <label>Document ID</label>
+    <length>255</length>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

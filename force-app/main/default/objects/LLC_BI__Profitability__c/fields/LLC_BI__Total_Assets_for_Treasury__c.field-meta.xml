@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Total_Assets_for_Treasury__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Users manually populate this field to represent the Total Assets for Treasury for all treasury services.</description>
+    <externalId>false</externalId>
+    <label>Total Assets for Treasury</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Payment_Schedule__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is manually populated. This field is a picklist used to specify the frequency of payments on the loan.</description>
+    <externalId>false</externalId>
+    <label>Payment Schedule</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Weekly</fullName>
+                <default>false</default>
+                <label>Weekly</label>
+            </value>
+            <value>
+                <fullName>Bi-Monthly</fullName>
+                <default>false</default>
+                <label>Bi-Monthly</label>
+            </value>
+            <value>
+                <fullName>Monthly</fullName>
+                <default>false</default>
+                <label>Monthly</label>
+            </value>
+            <value>
+                <fullName>Quarterly</fullName>
+                <default>false</default>
+                <label>Quarterly</label>
+            </value>
+            <value>
+                <fullName>Semi-Annual</fullName>
+                <default>false</default>
+                <label>Semi-Annual</label>
+            </value>
+            <value>
+                <fullName>Annual</fullName>
+                <default>false</default>
+                <label>Annual</label>
+            </value>
+            <value>
+                <fullName>Single Pay</fullName>
+                <default>false</default>
+                <label>Single Pay</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

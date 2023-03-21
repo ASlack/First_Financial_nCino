@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Funding_Status__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This picklist field autopopulates with the current funding status, used to track the progress of deposit account funding.</description>
+    <externalId>false</externalId>
+    <label>Funding Status</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>In-Progress</fullName>
+                <default>false</default>
+                <label>In-Progress</label>
+            </value>
+            <value>
+                <fullName>Awaiting Trial Deposits</fullName>
+                <default>false</default>
+                <label>Awaiting Trial Deposits</label>
+            </value>
+            <value>
+                <fullName>Trial Deposit Failure</fullName>
+                <default>false</default>
+                <label>Trial Deposit Failure</label>
+            </value>
+            <value>
+                <fullName>Trial Deposit Success</fullName>
+                <default>false</default>
+                <label>Trial Deposit Success</label>
+            </value>
+            <value>
+                <fullName>Trial Deposit Reject</fullName>
+                <default>false</default>
+                <label>Trial Deposit Reject</label>
+            </value>
+            <value>
+                <fullName>Funding Success</fullName>
+                <default>false</default>
+                <label>Funding Success</label>
+            </value>
+            <value>
+                <fullName>Funding Failure</fullName>
+                <default>false</default>
+                <label>Funding Failure</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

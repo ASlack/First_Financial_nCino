@@ -1,0 +1,26 @@
+<!-- ko if: screenResources()['{!NS}.CovenantScreenResource_{!NS}__Loan__c'].children().length == 0 -->
+<p>There are currently no Covenants for this loan.</p>
+<!-- /ko -->
+<!-- ko foreach: screenResources()['{!NS}.CovenantScreenResource_{!NS}__Loan__c'].children() -->
+<table class="table table-bordered table-striped">
+<tbody>
+<tr>
+<th data-bind="text: propertyBag.{!NS}__Covenant__c_{!NS}__Covenant_Type__c.fieldLabel" />
+<td data-bind="text: propertyBag.{!NS}__Covenant__c_{!NS}__Covenant_Type__c.value" />
+<th data-bind="text: propertyBag.{!NS}__Covenant__c_{!NS}__Frequency__c.fieldLabel" />
+<td data-bind="text: propertyBag.{!NS}__Covenant__c_{!NS}__Frequency__c.value" />
+</tr>
+<tr>
+<th data-bind="text: propertyBag.{!NS}__Covenant__c_{!NS}__Covenant_Sub_Type__c.fieldLabel" />
+<td data-bind="text: propertyBag.{!NS}__Covenant__c_{!NS}__Covenant_Sub_Type__c.value" />
+<td colspan="2">&nbsp;</td>
+</tr>
+<tr data-bind="visible: propertyBag.{!NS}__Covenant__c_{!NS}__Notes__c.value">
+<td colspan="4" data-bind="text: propertyBag.{!NS}__Covenant__c_{!NS}__Notes__c.value" />
+</tr>
+<tr class="no-print">
+<td colspan="4"><a data-bind="attr: { href: '/'+propertyBag.{!NS}__Covenant__c_Id.value() }">Edit <i class="icon-edit"></i></a></td>
+</tr>
+</tbody>
+</table>
+<!-- /ko -->

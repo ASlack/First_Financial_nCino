@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Structure_Hierarchy__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is manually populated, but can be set up to automatically populate with workflows. It indicates which level this loan appears in the structure hierarchy when using product package functionality (e.g., Main, Limit, Sub-Limit, Takedown).</description>
+    <externalId>false</externalId>
+    <label>Structure Hierarchy</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>LLC_BI__Structure__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Main</fullName>
+                <default>false</default>
+                <label>Main</label>
+            </value>
+            <value>
+                <fullName>Limit</fullName>
+                <default>false</default>
+                <label>Limit</label>
+            </value>
+            <value>
+                <fullName>Sub Limit</fullName>
+                <default>false</default>
+                <label>Sub Limit</label>
+            </value>
+            <value>
+                <fullName>Takedown</fullName>
+                <default>false</default>
+                <label>Takedown</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Multi Level Future</controllingFieldValue>
+            <valueName>Main</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Multi Level Future</controllingFieldValue>
+            <valueName>Limit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Multi Level Future</controllingFieldValue>
+            <valueName>Sub Limit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Multi Level Future</controllingFieldValue>
+            <controllingFieldValue>Regular Future</controllingFieldValue>
+            <valueName>Takedown</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

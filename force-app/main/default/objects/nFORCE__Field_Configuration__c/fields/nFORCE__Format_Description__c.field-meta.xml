@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Format_Description__c</fullName>
+    <deprecated>false</deprecated>
+    <description>A description of the logic applied in the format expression to aid in understanding what input is accepted.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Describe the format expression used to indicate what types of inputs are acceptable.</inlineHelpText>
+    <label>Format Rule Description</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

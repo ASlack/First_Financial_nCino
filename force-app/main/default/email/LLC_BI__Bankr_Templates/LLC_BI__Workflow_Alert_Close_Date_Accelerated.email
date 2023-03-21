@@ -1,0 +1,1 @@
+Close Date  changed (either further out or moved closer in) within the 10-day alert window range.  The new Close Date is:  {!LLC_BI__Loan__c.LLC_BI__CloseDate__c}

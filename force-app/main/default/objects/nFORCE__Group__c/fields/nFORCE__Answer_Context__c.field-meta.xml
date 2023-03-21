@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Answer_Context__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Administrators populate this picklist to associate this questionnaire with a record. By default, there is no value.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select a record to associate with this questionnaire.</inlineHelpText>
+    <label>Answer Context</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Business Account</fullName>
+                <default>false</default>
+                <label>Business Account</label>
+            </value>
+            <value>
+                <fullName>Individual Account</fullName>
+                <default>false</default>
+                <label>Individual Account</label>
+            </value>
+            <value>
+                <fullName>Loan</fullName>
+                <default>false</default>
+                <label>Loan</label>
+            </value>
+            <value>
+                <fullName>Deposit</fullName>
+                <default>false</default>
+                <label>Deposit</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

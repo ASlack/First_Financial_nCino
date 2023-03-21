@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Percent_Funded__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Percentage of the requested amount that was approved funded.</description>
+    <externalId>false</externalId>
+    <formula>LLC_BI__Amount_Funded__c  /  LLC_BI__Amount_Requested__c</formula>
+    <label>Percent Funded</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>4</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

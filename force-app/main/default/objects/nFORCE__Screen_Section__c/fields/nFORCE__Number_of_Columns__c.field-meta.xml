@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Number_of_Columns__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is manually set. If the screen section is displaying a table, this field will specify the number of columns that will be displayed in the table.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If the screen section is displaying a table, this is the number of columns that will be displayed in the table.</inlineHelpText>
+    <label>Number of Columns</label>
+    <precision>2</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

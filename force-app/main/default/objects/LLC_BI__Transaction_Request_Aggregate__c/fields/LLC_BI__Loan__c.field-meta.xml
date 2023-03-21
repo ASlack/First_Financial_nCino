@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Loan__c</fullName>
+    <deleteConstraint>Cascade</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this optional field to indicate the loan associated with the transaction request aggregate. By default this field is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This system-populated field indicates the loan associated with the transaction request aggregate.</inlineHelpText>
+    <label>Loan</label>
+    <referenceTo>LLC_BI__Loan__c</referenceTo>
+    <relationshipLabel>Transaction Request Aggregates</relationshipLabel>
+    <relationshipName>Transaction_Request_Aggregates</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

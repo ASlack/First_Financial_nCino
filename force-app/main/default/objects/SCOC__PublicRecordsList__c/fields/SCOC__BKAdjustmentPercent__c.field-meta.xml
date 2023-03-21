@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCOC__BKAdjustmentPercent__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Public record bankruptcy adjustment percent.</description>
+    <externalId>false</externalId>
+    <label>Bankruptcy Adjustment Percent</label>
+    <precision>9</precision>
+    <required>false</required>
+    <scale>3</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

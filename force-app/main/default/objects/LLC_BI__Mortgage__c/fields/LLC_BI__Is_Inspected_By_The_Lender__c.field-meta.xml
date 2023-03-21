@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Is_Inspected_By_The_Lender__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The user manually populates this checkbox field to indicate if the lender will inspect the property.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select this checkbox if the lender will inspect the property.</inlineHelpText>
+    <label>Is Inspected By The Lender?</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

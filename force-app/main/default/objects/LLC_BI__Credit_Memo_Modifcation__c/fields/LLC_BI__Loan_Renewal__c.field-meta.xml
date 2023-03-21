@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Loan_Renewal__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates when a user creates a non-material modification. This lookup field associates the Memo to the appropriate LoanRenewal record.</description>
+    <externalId>false</externalId>
+    <label>Loan Renewal</label>
+    <referenceTo>LLC_BI__LoanRenewal__c</referenceTo>
+    <relationshipLabel>Loan Renewal</relationshipLabel>
+    <relationshipName>LoanRenewal</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

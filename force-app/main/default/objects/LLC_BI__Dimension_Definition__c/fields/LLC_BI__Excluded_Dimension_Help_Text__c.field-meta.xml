@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Excluded_Dimension_Help_Text__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Administrators populate this required text field with information about what types of values the matrix analyst should enter into this dimension; for example, the desired unit type. Shows as a subheader in the Matrix Builder for this dimension.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter information to help the matrix analyst populate values into this dimension; for example, the desired unit type.</inlineHelpText>
+    <label>Excluded Dimension Help Text</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

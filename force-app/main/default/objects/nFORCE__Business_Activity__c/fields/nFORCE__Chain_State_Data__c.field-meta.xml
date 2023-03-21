@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Chain_State_Data__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The user populates this optional checkbox field to indicate if the state data from this business activity should be passed to the next business activity. By default, it is false.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>When set to true, this checkbox indicates that state data from this business activity should be passed to the next business activity.</inlineHelpText>
+    <label>Chain State Data</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

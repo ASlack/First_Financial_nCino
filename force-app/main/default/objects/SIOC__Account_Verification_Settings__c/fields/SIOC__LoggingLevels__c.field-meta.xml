@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SIOC__LoggingLevels__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Administrators populate this optional text field to determine the level of detail the transaction log captures.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter NONE if you are configuring a production org. For a test org, enter FINEST to capture all available logs, or enter ERROR to capture error logs only.</inlineHelpText>
+    <label>Logging Levels</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

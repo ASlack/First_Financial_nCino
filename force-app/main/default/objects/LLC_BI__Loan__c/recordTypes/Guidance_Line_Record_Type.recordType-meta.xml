@@ -1,0 +1,1179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Guidance_Line_Record_Type</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>Loan_Layout</compactLayoutAssignment>
+    <description>This Record Type will Apply to Guidance Lines of Credit</description>
+    <label>Guidance Line Record Type</label>
+    <picklistValues>
+        <picklist>Auto_Pay_Account_Type__c</picklist>
+        <values>
+            <fullName>Checking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Savings</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Commercial_Purpose__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Commercial_RE_Debt__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Community_Development_Type__c</picklist>
+        <values>
+            <fullName>Affordable Housing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Community Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction or rehab of community facilities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Economic Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financial intermediaries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Local%2C State or Tribal governments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nonprofit organizations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Revitalization or Stabilization</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Decision_Hold_Reason__c</picklist>
+        <values>
+            <fullName>Additional Borrower Information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Additional Guarantor Information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Appraisal or Evaluation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Third Party Report</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Do_you_own_the_property_that_is_going_to__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Is_this_a_Test__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LLC_BI__Balloon_Product_Structure__c</picklist>
+        <values>
+            <fullName>Balloon Amount</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Balloon Term</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LLC_BI__Borrower_State__c</picklist>
+        <values>
+            <fullName>AK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ID</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ND</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NJ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WY</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LLC_BI__Financed_Fee_Calculations__c</picklist>
+        <values>
+            <fullName>Add to Loan Amount</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manual Calculation</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Subtract From Loan Amount</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LLC_BI__Index__c</picklist>
+        <values>
+            <fullName>ARM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fixed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LIBOR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Treasury Constant Maturity - 1 Year %252B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Treasury Constant Maturity - 1 Year %2B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Treasury Constant Maturity - 10 Year %2B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Treasury Constant Maturity - 2 Year %2B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Treasury Constant Maturity - 3 Year %2B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Treasury Constant Maturity - 5 Year %2B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Treasury Constant Maturity - 7 Year %2B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WSJ Prime</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LLC_BI__Interest_Accrual_Method__c</picklist>
+        <values>
+            <fullName>30_360</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Actual_360</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Actual_365</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Actual_Actual</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LLC_BI__Interest_Rate_Adjustment_Frequency__c</picklist>
+        <values>
+            <fullName>Annual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Biannual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Daily</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Every Five Years</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Every Three Years</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Every Two Years</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monthly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quarterly</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LLC_BI__LeadSource__c</picklist>
+        <values>
+            <fullName>Advertisement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Association</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Broker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Current Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Direct Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email Campaign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employee Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industry Professional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Magazine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prior Origination</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade Show</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wholesaler</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Word of Mouth</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LLC_BI__Lead_Specifics__c</picklist>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LLC_BI__Legal_Firm__c</picklist>
+        <values>
+            <fullName>Sample Firm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sample Firm 2</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LLC_BI__Lost_To__c</picklist>
+        <values>
+            <fullName>BB%26T</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bank of America</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Capital One</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Citi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fifth Third Bank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JP Morgan Chase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PNC Bank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Regions Financial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suntrust</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>US Bank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wells Fargo</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LLC_BI__Participation_Type__c</picklist>
+        <values>
+            <fullName>Participation agreement agented</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Participation bought</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Participation sold</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LLC_BI__Payment_Schedule__c</picklist>
+        <values>
+            <fullName>Annual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bi-Monthly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monthly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quarterly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Semi-Annual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Single Pay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Weekly</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LLC_BI__Payment_Type__c</picklist>
+        <values>
+            <fullName>Balloon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction Permanent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Draw Down Line Of Credit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Generic Non-Disclosable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Irregular</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Principal%2BInterest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Revolving Line Of Credit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LLC_BI__Pricing_Basis__c</picklist>
+        <values>
+            <fullName>Fixed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preferred Fixed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preferred Variable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Variable</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LLC_BI__Product_Line__c</picklist>
+        <values>
+            <fullName>Commercial</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LLC_BI__Product_Type__c</picklist>
+        <values>
+            <fullName>Non-Real Estate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Real Estate</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LLC_BI__Product__c</picklist>
+        <values>
+            <fullName>Construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Line of Credit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Purchase</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LLC_BI__Referred_To__c</picklist>
+        <values>
+            <fullName>BB%26T</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bank of America</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Capital One</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Citi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fifth Third Bank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JP Morgan Chase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PNC Bank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Regions Financial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suntrust</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>US Bank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wells Fargo</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LLC_BI__Risk_Grade__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>13</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>14</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>15</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LLC_BI__SNC_Type__c</picklist>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SNC agent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SNC non-agent</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LLC_BI__Secondary_Mkt_Sold__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LLC_BI__Stage__c</picklist>
+        <values>
+            <fullName>Approval %2F Loan Committee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Booked</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit Underwriting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Doc Prep</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Final Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Processing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proposal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Qualification</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LLC_BI__Status__c</picklist>
+        <values>
+            <fullName>Charge-Off</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Declined</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Paid Out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Withdrawn</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LLC_BI__Syndication_Type__c</picklist>
+        <values>
+            <fullName>Syndication agented</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Syndication purchased</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Syndication title role</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Lost_Reason__c</picklist>
+        <values>
+            <fullName>Competitor- Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitor- Price</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitor- Product%2FService Set Gap%2C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitor-Product%2FService Functionality Gap</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Does not need services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lost Loan Relationship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lost to Another Bank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product%2FService Functionality Gap</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product%2FService Gap</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Primary_Source_of_Repayment__c</picklist>
+        <values>
+            <fullName>Cash flow from Operations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lease Income</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Liquidation of Collateral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Receivables</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reliance on Guarantors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working Capital Turnover</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Property_Subtype__c</picklist>
+        <values>
+            <fullName>Commercial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Property_Type__c</picklist>
+        <values>
+            <fullName>Non-owner occupied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Owner occupied</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Request_Additional_Funds__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Secondary_Source_of_Repayment__c</picklist>
+        <values>
+            <fullName>Cash flow from Operations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lease Income</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Liquidation of Collateral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Receivables</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reliance on Guarantors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working Capital Turnover</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tertiary_Source_of_Repayment__c</picklist>
+        <values>
+            <fullName>Cash flow from Operations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lease Income</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Liquidation of Collateral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Receivables</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reliance on Guarantors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working Capital Turnover</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>What_is_the_purpose_of_the_loan__c</picklist>
+        <values>
+            <fullName>Construction for commercial property</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction for residential development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Equipment purchase or repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Expansion or remodel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inventory purchase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other purpose</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other short term assets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Real estate purchase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refinance debt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working Capital</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cm_Method_of_Doc_Prep__c</picklist>
+        <values>
+            <fullName>Attorney Prepared</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internally Prepared</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>zen_Will_you_provide_collateral__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

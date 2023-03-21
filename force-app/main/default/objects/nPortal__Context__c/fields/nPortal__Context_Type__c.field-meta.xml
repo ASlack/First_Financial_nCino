@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nPortal__Context_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Depending on whether the user is a primary applicant, business co-owner, co-borrower or guarantor, or other involved entity, their context record populates with a Context Type. Context Type determines the UI workflow the user experiences in the online application.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The context type indicates whether the user is a primary applicant (Applicant), a business co-owner (Owner), or a co-borrower or guarantor (Other Involved [Individual].)</inlineHelpText>
+    <label>Context Type</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

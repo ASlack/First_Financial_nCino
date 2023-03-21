@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Description__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this field to identify the intent of this Business Activity execution.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This automatically populated field displays the intent of this Business Activity execution.</inlineHelpText>
+    <label>Description</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

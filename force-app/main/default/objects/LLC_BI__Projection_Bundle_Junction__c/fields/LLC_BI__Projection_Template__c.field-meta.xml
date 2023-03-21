@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Projection_Template__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this required lookup field with the associated Projections Template.</description>
+    <externalId>false</externalId>
+    <label>Projection Template</label>
+    <referenceTo>LLC_BI__Spread_Projections_Template__c</referenceTo>
+    <relationshipLabel>Projection Bundle Junctions</relationshipLabel>
+    <relationshipName>Projection_Bundle_Junctions</relationshipName>
+    <relationshipOrder>1</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

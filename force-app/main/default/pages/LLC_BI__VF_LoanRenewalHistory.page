@@ -1,0 +1,148 @@
+<apex:page standardController="LLC_BI__Loan__c" extensions="LLC_BI.VF_LoanRenewalHistoryController">
+	<nFORCE:Include_Navigator />
+	<nFORCE:Internationalize />
+	<apex:Messages />
+
+	<script>
+		function formatCurrency(number, isoCode) {
+		  return LifeCycle.Internationalize.format(
+			number,
+			LifeCycle.Internationalize.formats.numeric.CURRENCY,
+			isoCode
+		  );
+		};
+
+		function parseCurrency(elem) {
+			let spaceSplit = elem.innerHTML.trim().split(' ');
+			let isoCode = spaceSplit[0];
+			spaceSplit.shift();
+			let value = parseFloat(spaceSplit.join(''));
+
+			return {
+				isoCode: isoCode,
+				value: value
+			};
+		}
+
+		function formatCurrencies() {
+			let currencyResults = document.querySelectorAll('.currency-value > span');
+
+			if (currencyResults && currencyResults.length) {
+				currencyResults.forEach((currencyResult) => {
+					let parseResults = parseCurrency(currencyResult);
+					currencyResult.innerHTML = parseResults.value !== undefined && !Number.isNaN(parseResults.value) ? 
+						formatCurrency(parseResults.value, parseResults.isoCode) :
+						currencyResult.innerHTML;
+				});
+			}
+		}
+
+		window.addEventListener('load', function () {
+			formatCurrencies();
+		});
+	</script>
+	
+	<apex:pageBlock mode="{!IF(ISNULL($CurrentPage.parameters.app),'','main')}detail">
+		<apex:pageBlockTable value="{!renewalHistoryResults}" var="h" rendered="{!IF(resultsFlag,true,false)}">
+			<apex:column rendered="{!h.isDeleted == true}">
+				<apex:facet name="header">{!$Label.LLC_BI__Loan_Name}</apex:facet>
+				<span style="font-weight:{!IF(h.currentRevision,'bold','normal')}">{!h.renewalLoanName}</span>
+			</apex:column>
+			<apex:column rendered="{!NOT(h.isDeleted == true)}">
+				<apex:facet name="header">{!$Label.LLC_BI__Loan_Name}</apex:facet>
+				<span style="font-weight:{!IF(h.currentRevision,'bold','normal')}">
+				<apex:outputLink value="#" onclick="handleRedirect('{!h.renewalLoanId}');">{!h.renewalLoanName}</apex:outputLink>	<!-- NOPMD - variables outside of script tags are escaped via salesforce -->
+				</span>
+			</apex:column>
+
+			<apex:column >
+				<apex:facet name="header">{!$Label.LLC_BI__Loan_Number}</apex:facet>
+				<span style="font-weight:{!IF(h.currentRevision,'bold','normal')}">{!h.loanNumber}</span>
+			</apex:column>
+
+			<apex:column >
+				<apex:facet name="header">{!$Label.LLC_BI__Loan_Type}</apex:facet>
+				<span style="font-weight:{!IF(h.currentRevision,'bold','normal')}">{!h.loanType}</span>
+			</apex:column>
+
+				<!-- does this include status and stage of the revision loan? -->
+			<apex:column >
+				<apex:facet name="header">{!$Label.LLC_BI__Loan_Status}</apex:facet>
+				<span style="font-weight:{!IF(h.currentRevision,'bold','normal')}">{!h.revisionStatusTranslated}</span>
+			</apex:column>
+
+			<apex:column rendered="{!NOT(h.isDeleted == true)}">
+				<apex:facet name="header">{!$Label.LLC_BI__Amount}</apex:facet>
+				<span class="currency-value">
+					<apex:outputText value="{!h.currencyIsoCode} {0,number,###.00}"
+						style="font-weight:{!IF(h.currentRevision,'bold','normal')}"
+						rendered="{!IF(ISBLANK(h.inaccessibleAmount),true,false)}">
+						<apex:param value="{!h.amount}" />
+					</apex:outputText>
+				</span>
+				<apex:outputText value="{!h.inaccessibleAmount}"
+					style="font-weight:{!IF(h.currentRevision,'bold','normal')}"
+					rendered="{!IF(ISBLANK(h.inaccessibleAmount),false,true)}">
+				</apex:outputText>
+			</apex:column>
+
+			<apex:column rendered="{!h.isDeleted == true}">
+				<apex:facet name="header">{!$Label.LLC_BI__Amount}</apex:facet>
+				<apex:outputText style="font-weight:{!IF(h.currentRevision,'bold','normal')}" value="{0}">
+					<apex:param value="{!$Label.LLC_BI__Field_Not_Available}" />
+				</apex:outputText>
+			</apex:column>
+
+			<apex:column rendered="{!NOT(h.isDeleted == true)}">
+				<apex:facet name="header">{!$Label.LLC_BI__Close_Date}</apex:facet>
+				<apex:outputText style="font-weight:{!IF(h.currentRevision,'bold','normal')}" value="{0}">
+					<apex:param value="{!h.closeDate}" />
+				</apex:outputText>
+			</apex:column>
+
+			<apex:column rendered="{!h.isDeleted == true}">
+				<apex:facet name="header">{!$Label.LLC_BI__Close_Date}</apex:facet>
+				<apex:outputText style="font-weight:{!IF(h.currentRevision,'bold','normal')}" value="{0}">
+					<apex:param value="{!$Label.LLC_BI__Field_Not_Available}" />
+				</apex:outputText>
+			</apex:column>
+
+			<apex:column rendered="{!NOT(h.isDeleted == true)}">
+				<apex:facet name="header">{!$Label.LLC_BI__Maturity_Date}</apex:facet>
+				<apex:outputText style="font-weight:{!IF(h.currentRevision,'bold','normal')}" value="{0}">
+					<apex:param value="{!h.maturityDate}" />
+				</apex:outputText>
+			</apex:column>
+
+			<apex:column rendered="{!h.isDeleted == true}">
+				<apex:facet name="header">{!$Label.LLC_BI__Maturity_Date}</apex:facet>
+				<apex:outputText style="font-weight:{!IF(h.currentRevision,'bold','normal')}" value="{0}">
+					<apex:param value="{!$Label.LLC_BI__Field_Not_Available}" />
+				</apex:outputText>
+			</apex:column>
+		</apex:pageBlockTable>
+
+	<apex:outputPanel layout="none" rendered="{!IF(resultsFlag==false,true,false)}">
+		<apex:outputText value="{!$Label.LLC_BI__No_Renewals_Or_Modifications}" />
+		<apex:outputText value="{!loanName}" style="font-style:italic" />
+		<apex:outputPanel layout="none" rendered="{!ISNULL($CurrentPage.parameters.app)}">&nbsp;
+			<apex:outputLink value="{!newRenewalUrl}" target="_top">
+				<apex:outputText value="{!$Label.LLC_BI__Start_Renewal_Modification}" />
+			</apex:outputLink>&nbsp;
+			<apex:outputText value="{!$Label.LLC_BI__For_This_Loan}" />
+		</apex:outputPanel>
+	</apex:outputPanel>
+
+	</apex:pageBlock>
+
+	<script type="text/javascript">
+		function handleRedirect(ret, retUrl) {
+			if (ret !== null && ret !== '') {
+				LifeCycle.Navigator.navigateToSObject(ret);
+			} else if (retUrl !== null && retUrl !== '' ) {
+				LifeCycle.Navigator.navigateToURL(retUrl);
+			}
+		}
+	</script>
+
+</apex:page>

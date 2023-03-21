@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Maximum_Points__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is used to display the maximum number of points that can be assigned to the criteria being evaluated. It is displayed in the key scoring criteria section of the scorecard if the financial institution is utilizing points when evaluating loans. It is populated automatically when a score card is generated and is configurable through the Visual Flow logic, where a financial institution can adjust the values and decide whether or not they want to use points.</description>
+    <externalId>false</externalId>
+    <label>Maximum Points</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

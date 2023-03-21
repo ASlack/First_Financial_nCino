@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Line_Of_Credit__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is manually selected. When enabled, this product feature specifies that a product is a line of credit. This flag is used to override the relationship stats criteria &quot;UsePrincipalBalance=true&quot;, so that a line of credit product always uses &quot;Original Amount&quot; for exposure calculations. Additionally, the LLC_BI__Current_LTV__c on Loan uses Original Amount for its calculation. When disabled, the relationship stats criteria is not overwritten, and an exposure calculation with &quot;UsePrincipalBalance=true&quot; criteria will use the principal balance. Similarly, LLC_BI__Current_LTV__c will use principal balance for its calculation. By default, this is disabled.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>After changing this field, go to the nCino Administration tab then run Install Updates and Install Batch Updates if this feature is related to products which are related to existing loans.</inlineHelpText>
+    <label>Line Of Credit</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

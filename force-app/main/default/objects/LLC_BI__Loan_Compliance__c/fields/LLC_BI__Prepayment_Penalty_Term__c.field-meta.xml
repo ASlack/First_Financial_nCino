@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Prepayment_Penalty_Term__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This is a required field.  This field indicates the term, in months, of any prepayment penalty.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter &quot;NA&quot; if the requirement to report prepayment penalty term does not apply to the covered loan or application that your institution is reporting.</inlineHelpText>
+    <label>Prepayment Penalty Term</label>
+    <length>3</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

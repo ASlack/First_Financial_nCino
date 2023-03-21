@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Disbursement_Payment_Method__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Users manually populate this optional picklist to indicate the payment method for the disbursement. By default, this field is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the payment method for the disbursement.</inlineHelpText>
+    <label>Disbursement Payment Method</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Credit Card</fullName>
+                <default>false</default>
+                <label>Credit Card</label>
+            </value>
+            <value>
+                <fullName>Retail Account</fullName>
+                <default>false</default>
+                <label>Retail Account</label>
+            </value>
+            <value>
+                <fullName>Draft/Check</fullName>
+                <default>false</default>
+                <label>Draft/Check</label>
+            </value>
+            <value>
+                <fullName>Wire Transfer</fullName>
+                <default>false</default>
+                <label>Wire Transfer</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

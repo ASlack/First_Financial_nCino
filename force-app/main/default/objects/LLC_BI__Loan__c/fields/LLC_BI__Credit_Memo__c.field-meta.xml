@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Credit_Memo__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field is automatically populated when a credit memo template is selected. This field is a lookup field that specifies the credit memo associated to the loan.</description>
+    <externalId>false</externalId>
+    <label>Credit Memo</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>LLC_BI__Credit_Memo__c.LLC_BI__Is_Template__c</field>
+            <operation>notEqual</operation>
+            <value>True</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>LLC_BI__Credit_Memo__c</referenceTo>
+    <relationshipLabel>Loans</relationshipLabel>
+    <relationshipName>Loans</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFUSE__Action__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Required text that indicates the business process for which this Transaction Log was created.</description>
+    <externalId>false</externalId>
+    <label>Action</label>
+    <length>50</length>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

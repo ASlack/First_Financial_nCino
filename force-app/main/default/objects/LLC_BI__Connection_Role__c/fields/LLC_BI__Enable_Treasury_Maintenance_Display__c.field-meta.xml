@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Enable_Treasury_Maintenance_Display__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Administrators populate this optional checkbox field. When selected, contacts and deposits for connected relationships display as authorized users and analyzed accounts on the Treasury Maintenance page. By default, the field is not selected, and the contacts and deposits do not display.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Contacts and deposits for connected relationships display as authorized users and analyzed accounts.</inlineHelpText>
+    <label>Enable Treasury Maintenance Display</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

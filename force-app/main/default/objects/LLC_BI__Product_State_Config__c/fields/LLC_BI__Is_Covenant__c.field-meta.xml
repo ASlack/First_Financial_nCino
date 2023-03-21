@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Is_Covenant__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field indicates if a Covenant related Product State Config (checked). Default is unchecked.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field indicates if a Covenant related Product State Config (checked). Default is unchecked.</inlineHelpText>
+    <label>Is Covenant</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

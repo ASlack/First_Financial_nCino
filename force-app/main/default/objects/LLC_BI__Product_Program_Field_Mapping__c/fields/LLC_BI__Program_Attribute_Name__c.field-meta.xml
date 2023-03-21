@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Program_Attribute_Name__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is currently not used because the product program selector feature is not being used. Defines an attribute name that associates the product program with field mapping.</description>
+    <externalId>false</externalId>
+    <label>Program Attribute Name</label>
+    <length>255</length>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

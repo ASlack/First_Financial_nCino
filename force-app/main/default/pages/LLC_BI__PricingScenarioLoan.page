@@ -1,0 +1,20 @@
+<apex:page docType="html-5.0"
+	showHeader="false"
+	sidebar="false"
+	applyHtmlTag="false"
+	standardStylesheets="false">
+	<apex:includeLightning />
+	<div id="pricingScenarioGroupLwc" />
+	<script>
+		$Lightning.use("LLC_BI:pricingScenarioGroupAura", function() {
+			$Lightning.createComponent(
+				"LLC_BI:pricingScenarioGroup", 
+				{
+					"recordId": "{!$CurrentPage.parameters.id}"
+				}, 
+				"pricingScenarioGroupLwc", 
+				function(cmp) { }
+			);
+		});
+	</script>
+</apex:page>

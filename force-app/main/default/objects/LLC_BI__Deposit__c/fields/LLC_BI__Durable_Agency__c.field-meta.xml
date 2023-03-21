@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Durable_Agency__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is optional and can be collected as part of a workflow. A durable agency grants a continuing power of attorney after legal incapacitation of an individual which terminiates only upon the individual&apos;s death.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The authority granted to the deputy/agent on the safe deposit box lease is a durable power continuing after legal incapacity and terminating only at death of the appointing renter.</inlineHelpText>
+    <label>Durable Agency</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

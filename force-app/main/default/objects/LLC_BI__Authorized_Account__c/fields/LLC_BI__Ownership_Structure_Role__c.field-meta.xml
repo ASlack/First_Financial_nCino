@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Ownership_Structure_Role__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this lookup field during the deposit account opening workflow to associate an authorized business to a specific ownership structure role.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This system-populated field associates the authorized business to a specific ownership structure role.</inlineHelpText>
+    <label>Ownership Structure Role</label>
+    <referenceTo>LLC_BI__Ownership_Structure_Role__c</referenceTo>
+    <relationshipLabel>Authorized Accounts</relationshipLabel>
+    <relationshipName>Authorized_Accounts</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

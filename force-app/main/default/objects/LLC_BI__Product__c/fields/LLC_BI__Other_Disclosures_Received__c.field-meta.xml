@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Other_Disclosures_Received__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The Administrators populate this optional boolean field to acknowledge receipt of a disclosure other than the disclosures predefined on the signature card. By default, it is false.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select this field to acknowledge receipt of a disclosure other than the disclosures predefined on the signature card.</inlineHelpText>
+    <label>Other Disclosures Received</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

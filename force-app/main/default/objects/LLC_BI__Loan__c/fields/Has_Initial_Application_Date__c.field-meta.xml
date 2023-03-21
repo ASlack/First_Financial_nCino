@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Has_Initial_Application_Date__c</fullName>
+    <externalId>false</externalId>
+    <formula>(IF(ISBLANK(Initial_Application_Date__c), False, True))</formula>
+    <label>Has Initial Application Date</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

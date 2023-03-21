@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Roth_Rollover_Source_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is a picklist that specifies the source of funds for a direct rollover to a Roth IRA.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Specifies the source of funds for a direct rollover to a Roth IRA.</inlineHelpText>
+    <label>Roth Rollover Source Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Designated Roth Account</fullName>
+                <default>false</default>
+                <label>Designated Roth Account</label>
+            </value>
+            <value>
+                <fullName>Eligible Retirement Plan (other than a Designated Roth Account)</fullName>
+                <default>false</default>
+                <label>Eligible Retirement Plan (other than a Designated Roth Account)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

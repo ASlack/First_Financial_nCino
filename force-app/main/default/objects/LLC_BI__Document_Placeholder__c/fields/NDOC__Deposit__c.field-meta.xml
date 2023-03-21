@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NDOC__Deposit__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field is not required but is automatically populated. It is used to help facilitate reporting on Deposit objects tied to Document Placeholder.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Facilitate reporting on Deposit objects tied to Document_Placeholder</inlineHelpText>
+    <label>Deposit_Account_Reporting_Helper</label>
+    <referenceTo>LLC_BI__Deposit__c</referenceTo>
+    <relationshipLabel>Document Placeholders</relationshipLabel>
+    <relationshipName>Document_Placeholders1</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

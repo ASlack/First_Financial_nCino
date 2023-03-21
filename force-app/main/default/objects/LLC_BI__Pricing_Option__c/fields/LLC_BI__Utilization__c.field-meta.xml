@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Utilization__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Users populate this field to manipulate what the expected utilization is for a Line of Credit product. By default, it is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Populate this field with the percentage of a line of credit that a borrower is expected to draw down.</inlineHelpText>
+    <label>Utilization</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>8</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

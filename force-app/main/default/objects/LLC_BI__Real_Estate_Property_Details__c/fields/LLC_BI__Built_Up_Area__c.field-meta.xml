@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Built_Up_Area__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Users or an integration manually populate this text field to include a brief description of the property’s built-up area.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter a brief description of the built-up area.</inlineHelpText>
+    <label>Built-Up Area</label>
+    <length>100</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

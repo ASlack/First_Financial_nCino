@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Traditional_Benficiary_IRA_Contribution__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is a picklist that specifies the type of contribution for a Traditional Beneficiary IRA.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Specifies the type of contribution for a Traditional Beneficiary IRA.</inlineHelpText>
+    <label>Trad Benficiary IRA Contribution Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Transfer from an IRA</fullName>
+                <default>false</default>
+                <label>Transfer from an IRA</label>
+            </value>
+            <value>
+                <fullName>Direct Rollover from an Eligible Retirement Plan</fullName>
+                <default>false</default>
+                <label>Direct Rollover from an Eligible Retirement Plan</label>
+            </value>
+            <value>
+                <fullName>Recharacterization</fullName>
+                <default>false</default>
+                <label>Recharacterization</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nPortal__Is_Portal_Enabled__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>When this manually-populated field is selected, this Funding Method Type is displayed as a funding option for Online Deposit Account Opening in Customer Portal.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check this field to display this Funding Method Type in Customer Portal.</inlineHelpText>
+    <label>Is Portal Enabled</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

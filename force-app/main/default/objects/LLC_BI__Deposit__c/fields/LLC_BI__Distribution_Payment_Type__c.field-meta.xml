@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Distribution_Payment_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional and can be collected as part of a workflow. It specifies the manner in which the distribution should be made. (The &apos;periodic RMD as calculated&apos; option should only be selected for plans and circumstances where the required minimum distribution calculation applies, subject to financial institution policy.)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Specifies the manner in which the distribution should be made.</inlineHelpText>
+    <label>Distribution Payment Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Immediate</fullName>
+                <default>false</default>
+                <label>Immediate</label>
+            </value>
+            <value>
+                <fullName>Periodic</fullName>
+                <default>false</default>
+                <label>Periodic</label>
+            </value>
+            <value>
+                <fullName>Total</fullName>
+                <default>false</default>
+                <label>Total</label>
+            </value>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>Periodic RMD as calculated (Traditional or SIMPLE only)</fullName>
+                <default>false</default>
+                <label>Periodic RMD as calculated (Traditional or SIMPLE only)</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

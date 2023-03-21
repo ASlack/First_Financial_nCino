@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Previous_Property_Use_s__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field specifies the text value used to document previous use(s) of subject property. Value can have impact on report findings (e.g. Subject property was previously a Gas Station, thus ground water contamination is likely).</description>
+    <externalId>false</externalId>
+    <label>Previous Property Use(s)</label>
+    <length>100</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

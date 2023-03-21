@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NDOC__Invalid_Year_Syntax</fullName>
+    <active>true</active>
+    <description>Ensure that Year is in valid format.</description>
+    <errorConditionFormula>AND(
+	NOT(REGEX(NDOC__Year__c,&quot;^\\d{4}$&quot;)),
+	NOT(ISBLANK(NDOC__Year__c))
+)</errorConditionFormula>
+    <errorDisplayField>NDOC__Year__c</errorDisplayField>
+    <errorMessage>The year was not entered using 4 digits. Please enter the year in the following 4 digit format to continue: 2021.</errorMessage>
+</ValidationRule>

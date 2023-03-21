@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Disable_Auto_Updates__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Users populate this optional checkbox field for manually edited fee records. The system uses this to determine if the fee record can be updated automatically. By default, it is deselected.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select this if the fee record should be locked and not updated automatically based on criteria changes.</inlineHelpText>
+    <label>Disable Auto Updates</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

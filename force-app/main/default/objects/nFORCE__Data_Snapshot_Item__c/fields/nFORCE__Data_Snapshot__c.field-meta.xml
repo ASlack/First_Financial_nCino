@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Data_Snapshot__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this required field with the lookup to the snapshot record.</description>
+    <externalId>false</externalId>
+    <label>Snapshot</label>
+    <referenceTo>nFORCE__Data_Snapshot__c</referenceTo>
+    <relationshipLabel>Data Snapshot Items</relationshipLabel>
+    <relationshipName>Data_Snapshot_Items</relationshipName>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

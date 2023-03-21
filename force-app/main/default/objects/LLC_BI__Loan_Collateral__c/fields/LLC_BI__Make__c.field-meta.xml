@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Make__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional and manually populated. Use this field to specify the make of a titled piece of collateral.</description>
+    <externalId>false</externalId>
+    <label>Make</label>
+    <length>150</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

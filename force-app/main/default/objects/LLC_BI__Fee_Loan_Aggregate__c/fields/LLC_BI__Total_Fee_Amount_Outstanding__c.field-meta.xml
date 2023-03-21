@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Total_Fee_Amount_Outstanding__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is automatically populated when fees are added to the loan. This field represents the total fee amount minus the total fee amount paid.</description>
+    <externalId>false</externalId>
+    <formula>LLC_BI__Total_Fee_Amount__c - LLC_BI__Total_Fee_Amount_Paid__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>The total fee amount minus the total fee amount paid.</inlineHelpText>
+    <label>Total Fee Amount Outstanding</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

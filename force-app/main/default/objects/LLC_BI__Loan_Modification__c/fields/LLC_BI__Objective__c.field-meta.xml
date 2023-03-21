@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Objective__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is a free text field used to specify what the modification hopes to accomplish. This field is manually entered and optional.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please identify what this modification hopes to accomplish</inlineHelpText>
+    <label>Objective</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

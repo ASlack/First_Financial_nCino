@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nPortal__Online_Application_AS_Screen__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This lookup field is manually populated. Use it to define the screen that is displayed for the specific ancillary service in an online application.</description>
+    <externalId>false</externalId>
+    <label>OA Ancillary Service Screen</label>
+    <referenceTo>nFORCE__Screen__c</referenceTo>
+    <relationshipLabel>Products</relationshipLabel>
+    <relationshipName>Products</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Role__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is deprecated.  Replaced by Team_Role__c.</description>
+    <externalId>false</externalId>
+    <label>-D Role</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Closer</fullName>
+                <default>false</default>
+                <label>Closer</label>
+            </value>
+            <value>
+                <fullName>Credit Analyst / Underwriter</fullName>
+                <default>false</default>
+                <label>Credit Analyst / Underwriter</label>
+            </value>
+            <value>
+                <fullName>Loan Officer</fullName>
+                <default>false</default>
+                <label>Loan Officer</label>
+            </value>
+            <value>
+                <fullName>Loan Ops</fullName>
+                <default>false</default>
+                <label>Loan Ops</label>
+            </value>
+            <value>
+                <fullName>Portfolio Manager</fullName>
+                <default>false</default>
+                <label>Portfolio Manager</label>
+            </value>
+            <value>
+                <fullName>Special Assets</fullName>
+                <default>false</default>
+                <label>Special Assets</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

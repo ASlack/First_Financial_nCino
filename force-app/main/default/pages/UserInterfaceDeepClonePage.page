@@ -1,0 +1,35 @@
+<apex:page id="thepage" standardController="nFORCE__Group__c">
+<apex:form >
+    
+    <c:UIDeepCloneHeader groupName="{!nFORCE__Group__c.Name}" 
+        groupApp="{!nFORCE__Group__c.nFORCE__App__c}" 
+        groupLookupkey="{!nFORCE__Group__c.nFORCE__lookupKey__c}" 
+        groupSFID="{!nFORCE__Group__c.Id}"
+    />
+    
+    <apex:tabPanel switchType="client" selectedTab="name2" id="theTabPanel"> 
+
+    <!-- CLONE ENTIRE GROUP COMPONENT TAB -->
+    <apex:tab label="Clone Entire Group" name="name2" id="tabOne">
+        <c:UIDeepCloneAllComponent />
+    </apex:tab>
+            
+    <!-- CLONE SPECIFIC ROUTE GROUPS COMPONENT TAB -->
+    <apex:tab label="Clone Partial Group" name="name4" id="tabTwo">
+        <c:UIDeepCloneSelectComponent />
+    </apex:tab>
+
+    <!-- LOOKUPKEY COMPONENT TAB -->
+    <apex:tab label="lookupKey Validation" name="name3" id="tabThree">
+        <c:UILookupKeyUtilityComponent />
+    </apex:tab>
+
+    <!-- RECORD OWNER COMPONENT TAB -->
+    <apex:tab label="Record Owner Validation" name="name5" id="tabFour">
+        <c:UIRecordOwnerUtilityComponent />
+    </apex:tab>
+           
+    </apex:tabPanel>
+        
+</apex:form>
+</apex:page>

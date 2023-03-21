@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Document_Store__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field auto-populates and is required. This field associates the Document Store record where the file is held.</description>
+    <externalId>false</externalId>
+    <label>Document Store</label>
+    <referenceTo>LLC_BI__Document_Store__c</referenceTo>
+    <relationshipLabel>Document Versions</relationshipLabel>
+    <relationshipName>Document_Version_Store_Indices</relationshipName>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

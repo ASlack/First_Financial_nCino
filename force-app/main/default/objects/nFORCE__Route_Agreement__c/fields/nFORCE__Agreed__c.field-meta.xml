@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Agreed__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This optional, admin-facing field stores whether the user has accepted the Terms and Conditions displayed on a particular route. The value is true if the user accepted the terms. The value is false if the user did not accept the terms.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select this checkbox if you accept the terms outlined in the document.</inlineHelpText>
+    <label>Agreed</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

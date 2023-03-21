@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__HMDA_Record_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is used to determine which HMDA route/field set (2017 or 2018) will be presented to the user for this loan when collecting HMDA Loan and Entity Compliance information.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>HMDA Loan Purpose</inlineHelpText>
+    <label>HMDA Record Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>HMDA-Effective-2017</fullName>
+                <default>true</default>
+                <label>HMDA-Effective-2017</label>
+            </value>
+            <value>
+                <fullName>HMDA-Effective-2018</fullName>
+                <default>false</default>
+                <label>HMDA-Effective-2018</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>UNUSED - Financial Report Reveiwed Template</name>
+    <style>none</style>
+    <subject>* New Financial Report - {!Account.LLC_BI__Loan_Name__c} *</subject>
+    <textOnly>Loan Name: 
+	{!Account.LLC_BI__Loan_Name__c} - {!Account.Industry__c} - {!Account.BillingCity__c}, {!Account.BillingState__c}
+	{!Account.LLC_BI__Loan_Numbers__c}
+
+
+	Statement Date:
+	{!LLC_BI__Financial_Report__c.LLC_BI__Statement_Date__c}
+	Reviewed By
+	{!LLC_BI__Financial_Report__c.LLC_BI__Reviewer__c}
+
+
+
+Income Statement Analysis for {!LLC_BI__Financial_Report__c.LLC_BI__Financials_Period__c} months
+
+
+	Revenue
+	{!LLC_BI__Financial_Report__c.LLC_BI__Revenue__c}
+
+
+	COGS
+	{!LLC_BI__Financial_Report__c.LLC_BI__COGS__c}
+
+
+	Staff Labor &amp; Payroll
+	{!LLC_BI__Financial_Report__c.LLC_BI__Staff_Labor_Payroll__c}
+
+
+	Third Party Rent
+	{!LLC_BI__Financial_Report__c.LLC_BI__Third_Party_Rent__c}
+
+
+	Other Extraordinary Exp.
+	{!LLC_BI__Financial_Report__c.LLC_BI__Other_Extraordinary_Expenses__c}
+
+
+	Operating Exp.
+	{!Financial_Report__c.Other_Expenses__c}
+
+
+
+	Total Expenses
+	{!LLC_BI__Financial_Report__c.LLC_BI__Expenses__c}
+
+
+
+	Net Income
+	{!LLC_BI__Financial_Report__c.LLC_BI__Net_Income__c}
+
+
+
+
+Addbacks
+
+
+	Amortization
+	{!LLC_BI__Financial_Report__c.LLC_BI__Amortization__c}
+
+
+	Depreciation
+	{!LLC_BI__Financial_Report__c.LLC_BI__Depreciation__c}
+
+
+	Interest
+	{!LLC_BI__Financial_Report__c.LLC_BI__Interest__c}
+
+
+	Rent
+	{!LLC_BI__Financial_Report__c.LLC_BI__Rent__c}
+
+
+	Req. Officer Comp
+	{!LLC_BI__Financial_Report__c.LLC_BI__Officer_Comp__c}
+
+
+	Officer Comp. Adj.
+	{!Financial_Report__c.Officer_Cash_Adjustment__c}
+
+
+	Other Non-Cash
+	{!LLC_BI__Financial_Report__c.LLC_BI__Other_Non_Cash_Charge__c}
+
+
+	Comments
+	{!LLC_BI__Financial_Report__c.LLC_BI__Addback_Comments__c}
+
+
+
+Net Operating Income: {!LLC_BI__Financial_Report__c.LLC_BI__Net_Operating_Income__c} ({!LLC_BI__Financial_Report__c.LLC_BI__Net_Operating_Margin__c}%)
+
+Debt
+
+
+	Annual Debt Service
+	{!LLC_BI__Financial_Report__c.LLC_BI__Annual_Debt_Service__c}
+
+
+	Monthly Debt Service
+	{!LLC_BI__Financial_Report__c.LLC_BI__Monthly_Debt_Service__c}
+
+
+	Seller Debt Service
+	{!LLC_BI__Financial_Report__c.LLC_BI__Seller_Debt_Service__c}
+
+
+	DSC (Post OC)
+	{!LLC_BI__Financial_Report__c.LLC_BI__DSC_Ratio_Post_OC__c}
+
+
+
+Balance Detail
+
+
+	Cash Balance
+	{!LLC_BI__Financial_Report__c.LLC_BI__Cash_Balance__c}
+
+
+	Accounts Payable Balance
+	{!LLC_BI__Financial_Report__c.LLC_BI__Current_AP__c}
+
+
+
+Comments
+{!LLC_BI__Financial_Report__c.LLC_BI__Comments__c}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

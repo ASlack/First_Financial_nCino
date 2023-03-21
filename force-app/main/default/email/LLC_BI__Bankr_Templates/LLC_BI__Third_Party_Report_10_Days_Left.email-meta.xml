@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>UNUSED - Third Party Report - 10 Days Left</name>
+    <style>none</style>
+    <subject>* Third Party Report - Only 10 Days Left! *</subject>
+    <textOnly>Thirdparty Report has not been received for Loan {!LLC_BI__Loan__c.Name}
+
+Report: {!LLC_BI__third_party_report__c.LLC_BI__Report_Type__c} 
+Due Date: {!LLC_BI__third_party_report__c.LLC_BI__Report_Due_Date__c}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help></help>
+    <label></label>
+    <name>LLC_BI__Debt_Secured__c</name>
+    <picklistValues>
+        <masterLabel>Guarantor&apos;s debt</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Only this debt for the applicant</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>This debt and all associated debts for the applicant with this organization</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>This debt and any future debts for the applicant with this organization</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

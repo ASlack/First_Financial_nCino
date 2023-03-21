@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nPortal__DEP_Co_Owners_Ownership_Percent</fullName>
+    <description>For selecting an individual&apos;s ownership percentage of the business in the Co Owners section of Customer Portal Deposit Online Applications</description>
+    <displayedFields>
+        <field>LLC_BI__Ownership_Percent__c</field>
+        <isFieldManaged>true</isFieldManaged>
+        <isRequired>true</isRequired>
+    </displayedFields>
+    <label>Owners Connection Information MRF</label>
+</FieldSet>

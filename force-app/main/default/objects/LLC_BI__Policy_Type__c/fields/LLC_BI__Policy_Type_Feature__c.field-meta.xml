@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Policy_Type_Feature__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Administrators populate this optional multi-select picklist field with the name of the feature(s) associated to the policy type. By default, it is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the name of the feature(s) associated to the policy type.</inlineHelpText>
+    <label>Policy Type Feature</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Fee Management</fullName>
+                <default>false</default>
+                <label>Fee Management</label>
+            </value>
+            <value>
+                <fullName>Indirect Automotive Lending</fullName>
+                <default>false</default>
+                <label>Indirect Automotive Lending</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

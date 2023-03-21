@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EFPIO__PlatformEventDefinition__c</fullName>
+    <deprecated>false</deprecated>
+    <description>If the concrete class for IEventRepository_v1 in use is leveraging Platform Events, enter the platform event definition name here to use (Can be a standard or high volume org partition.).</description>
+    <externalId>false</externalId>
+    <label>Platform Event Object Name</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

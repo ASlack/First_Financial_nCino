@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Doing_Business_As__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this lookup field on Entity Involvements to associate Sole Proprietorship Accounts to Sole Proprietorships. The system only populates this field on Entity Involvements for Individuals that apply for loans or deposits as a Sole Proprietorship.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter a Sole Proprietorship Account to associate to a Sole Proprietorship.</inlineHelpText>
+    <label>Doing Business As</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Entity Involvements (Sole Proprietorship)</relationshipLabel>
+    <relationshipName>Sole_Prop_Legal_Entities</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

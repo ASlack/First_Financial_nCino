@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__HMDA_Applicant_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The HMDA applicant type.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The HMDA applicant type.</inlineHelpText>
+    <label>HMDA Applicant</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Applicant</fullName>
+                <default>false</default>
+                <label>Applicant</label>
+            </value>
+            <value>
+                <fullName>Co-Applicant</fullName>
+                <default>false</default>
+                <label>Co-Applicant</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

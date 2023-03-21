@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Interest_Accrual_Method__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is manually selected. This field sets the interest accrual methodology for determining the amount of interest owed per period. It is used for Rate &amp; Payment streams. This field defaults to 30_360.</description>
+    <externalId>false</externalId>
+    <label>Interest Accrual Method</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>30_360</fullName>
+                <default>true</default>
+                <label>30_360</label>
+            </value>
+            <value>
+                <fullName>Actual_360</fullName>
+                <default>false</default>
+                <label>Actual_360</label>
+            </value>
+            <value>
+                <fullName>Actual_365</fullName>
+                <default>false</default>
+                <label>Actual_365</label>
+            </value>
+            <value>
+                <fullName>Actual_Actual</fullName>
+                <default>false</default>
+                <label>Actual_Actual</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Financed_Fee_Calculations__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The nCino Administrator populates this picklist field to indicate the initial state of the Financed Fee Calculations picklist on new loans created. At install, this field defaults to null for existing product features and Manual Calculation for new product features.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select value from this picklist to add or subtract financed fees from loan amount, or manually calculate.</inlineHelpText>
+    <label>Financed Fee Calculations</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Manual Calculation</fullName>
+                <default>true</default>
+                <label>Manual Calculation</label>
+            </value>
+            <value>
+                <fullName>Add to Loan Amount</fullName>
+                <default>false</default>
+                <label>Add to Loan Amount</label>
+            </value>
+            <value>
+                <fullName>Subtract From Loan Amount</fullName>
+                <default>false</default>
+                <label>Subtract From Loan Amount</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label></label>
+        <name>LLC_BI__Maintenance_Request_Orders</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>LLC_BI__Smart_Checklist_Account_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>LLC_BI__Smart_Checklist_Collateral_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>LLC_BI__Smart_Checklist_Loan_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>LLC_BI__Smart_Checklist_Product_Package_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>LLC_BI__Smart_Checklist_Treasury_Service_Fields</name>
+    </fieldSets>
+</CustomObjectTranslation>

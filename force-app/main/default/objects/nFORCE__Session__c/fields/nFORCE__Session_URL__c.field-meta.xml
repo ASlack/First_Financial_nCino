@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Session_URL__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is not required. It populates automatically. This field stores the link to allow a user to return to an existing session.</description>
+    <externalId>false</externalId>
+    <formula>HYPERLINK(&quot;/apex/&quot; &amp;  nFORCE__Context_Page__c &amp; &quot;?sid=&quot; &amp; Id, &quot;Click here to open Session&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Session URL</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__HMDA_Property_Securing_Affordable_Units__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This is a required field.  This field indicates the number of individual dwelling units related to any multifamily dwelling property securing the covered loan or, in the case of an application, proposed to secure the covered loan, that are income-restricted pursuant to Federal, State, or local affordable housing programs.</description>
+    <externalId>false</externalId>
+    <label>Multifamily Affordable Units</label>
+    <length>6</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

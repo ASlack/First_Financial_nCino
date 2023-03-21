@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Help_Text__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Users populate this field with the desired help text for a field in Questionnaires. By default, it is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter your desired help text for the associated field in Questionnaires.</inlineHelpText>
+    <label>Help Text</label>
+    <length>10000</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

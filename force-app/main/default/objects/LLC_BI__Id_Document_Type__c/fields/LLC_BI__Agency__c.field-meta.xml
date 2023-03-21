@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Agency__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This picklist field is manually populated when configuring ID Document Types. The picklist values are the names of the state or national agency which issued the identification (driver’s license, passport) presented to the financial institution by the natural person associated with the transaction. This data is used for the financial institution’s Customer Identification Program.</description>
+    <externalId>false</externalId>
+    <label>Agency</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>DMV</fullName>
+                <default>false</default>
+                <label>DMV</label>
+            </value>
+            <value>
+                <fullName>Government</fullName>
+                <default>false</default>
+                <label>Government</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

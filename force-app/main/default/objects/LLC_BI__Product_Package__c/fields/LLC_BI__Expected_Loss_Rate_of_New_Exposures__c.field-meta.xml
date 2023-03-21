@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Expected_Loss_Rate_of_New_Exposures__c</fullName>
+    <defaultValue>0.02</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Users populate this field with the approximate expected loss rate for any new treasury exposures an FI originates in the deal outside of nCino. Represents an average blended rate of PD &amp; LGD. By default, it is 2%.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The approximate expected loss rate for any new treasury exposures an FI originates in the deal outside of nCino. This value should represent an average blended rate of PD &amp; LGD.</inlineHelpText>
+    <label>Expected Loss Rate of New Exposures</label>
+    <precision>11</precision>
+    <required>false</required>
+    <scale>8</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

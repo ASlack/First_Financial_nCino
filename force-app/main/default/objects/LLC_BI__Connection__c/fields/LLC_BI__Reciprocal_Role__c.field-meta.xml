@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Reciprocal_Role__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Deprecated Field. no longer in use</description>
+    <externalId>false</externalId>
+    <label>-D Reciprocal Role</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>LLC_BI__Role__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Connection</fullName>
+                <default>true</default>
+                <label>Connection</label>
+            </value>
+            <value>
+                <fullName>Child</fullName>
+                <default>false</default>
+                <label>Child</label>
+            </value>
+            <value>
+                <fullName>Parent</fullName>
+                <default>false</default>
+                <label>Parent</label>
+            </value>
+            <value>
+                <fullName>Sibling</fullName>
+                <default>false</default>
+                <label>Sibling</label>
+            </value>
+            <value>
+                <fullName>Spouse/Life Partner</fullName>
+                <default>false</default>
+                <label>Spouse/Life Partner</label>
+            </value>
+            <value>
+                <fullName>Employer</fullName>
+                <default>false</default>
+                <label>Employer</label>
+            </value>
+            <value>
+                <fullName>Employee</fullName>
+                <default>false</default>
+                <label>Employee</label>
+            </value>
+            <value>
+                <fullName>Partner</fullName>
+                <default>false</default>
+                <label>Partner</label>
+            </value>
+            <value>
+                <fullName>Colleague</fullName>
+                <default>false</default>
+                <label>Colleague</label>
+            </value>
+            <value>
+                <fullName>Business Partner</fullName>
+                <default>false</default>
+                <label>Business Partner</label>
+            </value>
+            <value>
+                <fullName>Subsidiary</fullName>
+                <default>false</default>
+                <label>Subsidiary</label>
+            </value>
+            <value>
+                <fullName>Client</fullName>
+                <default>false</default>
+                <label>Client</label>
+            </value>
+            <value>
+                <fullName>Service Provider</fullName>
+                <default>false</default>
+                <label>Service Provider</label>
+            </value>
+            <value>
+                <fullName>Competitor</fullName>
+                <default>false</default>
+                <label>Competitor</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Related</fullName>
+                <default>false</default>
+                <label>Related</label>
+            </value>
+            <value>
+                <fullName>Affiliated Company</fullName>
+                <default>false</default>
+                <label>Affiliated Company</label>
+            </value>
+            <value>
+                <fullName>Company</fullName>
+                <default>false</default>
+                <label>Company</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Service Provider</controllingFieldValue>
+            <valueName>Client</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Client</controllingFieldValue>
+            <valueName>Service Provider</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Co-Owner</controllingFieldValue>
+            <controllingFieldValue>Officer</controllingFieldValue>
+            <valueName>Company</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Competitor</controllingFieldValue>
+            <valueName>Competitor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Related</controllingFieldValue>
+            <valueName>Related</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Affiliated Company</controllingFieldValue>
+            <valueName>Affiliated Company</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Connection</controllingFieldValue>
+            <valueName>Connection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Parent</controllingFieldValue>
+            <valueName>Child</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Child</controllingFieldValue>
+            <valueName>Parent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sibling</controllingFieldValue>
+            <valueName>Sibling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Spouse/Life Partner</controllingFieldValue>
+            <valueName>Spouse/Life Partner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Employee</controllingFieldValue>
+            <valueName>Employer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Employer</controllingFieldValue>
+            <valueName>Employee</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Partner</controllingFieldValue>
+            <valueName>Partner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Colleague</controllingFieldValue>
+            <valueName>Colleague</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business Partner</controllingFieldValue>
+            <valueName>Business Partner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Subsidiary</controllingFieldValue>
+            <valueName>Subsidiary</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

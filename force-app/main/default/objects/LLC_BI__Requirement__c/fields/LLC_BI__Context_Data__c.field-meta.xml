@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Context_Data__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this optional text field to include lookupKeys to Snapshot data. By default, the value is blank.</description>
+    <externalId>false</externalId>
+    <label>Context Data</label>
+    <length>32768</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>6</visibleLines>
+</CustomField>

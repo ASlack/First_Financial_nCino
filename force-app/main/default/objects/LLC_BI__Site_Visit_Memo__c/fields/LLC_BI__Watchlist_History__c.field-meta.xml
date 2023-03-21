@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Watchlist_History__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional and is for user narrative that provides background of the loan. It is manually populated.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>How did we get here?  What is the history of this loan?</inlineHelpText>
+    <label>Watchlist History</label>
+    <length>32000</length>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

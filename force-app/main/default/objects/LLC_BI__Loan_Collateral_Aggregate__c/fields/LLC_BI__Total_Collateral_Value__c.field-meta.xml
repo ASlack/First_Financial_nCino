@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Total_Collateral_Value__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Automatically calculated. The combined value of all collateral on the loan.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The combined value of all collateral on the loan</inlineHelpText>
+    <label>Total Collateral Value</label>
+    <summarizedField>LLC_BI__Loan_Collateral2__c.LLC_BI__Collateral_Value__c</summarizedField>
+    <summaryForeignKey>LLC_BI__Loan_Collateral2__c.LLC_BI__Loan_Collateral_Aggregate__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

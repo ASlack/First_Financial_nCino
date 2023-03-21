@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Interest_Rate_Margin_Indicator__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field will be used for Expere Doc Prep, which has not yet been implemented. This field is not required. If enabled, a margin is used in determining the interest rate for a variable rate account. If disabled, this field is not used. By default, it is disabled.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If true a margin is used in determining the interest rate for a variable rate account.</inlineHelpText>
+    <label>Interest Rate Margin Indicator</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

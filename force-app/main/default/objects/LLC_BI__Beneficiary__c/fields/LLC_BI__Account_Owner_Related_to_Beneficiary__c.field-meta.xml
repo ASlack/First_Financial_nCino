@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Account_Owner_Related_to_Beneficiary__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Related Account Owner</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This indicates the account owner related to this beneficiary.</inlineHelpText>
+    <label>Account Owner Related to Beneficiary</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Beneficiaries</relationshipLabel>
+    <relationshipName>Beneficiaries</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

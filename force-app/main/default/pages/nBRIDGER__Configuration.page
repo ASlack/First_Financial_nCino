@@ -1,0 +1,259 @@
+<apex:page controller="nBRIDGER.BridgerConfigurationController">
+	<nDESIGN:Includes enableLifeCycleApp="false" enableBS3Namespace="true"/>
+	<style type="text/css">
+		.force .row {padding-bottom: 10px}
+	</style>
+	<div class="force">
+		<div style="padding:20px">
+			<h4 style="padding-right:20px">{!$Label.nBRIDGER__Bridger_Configuration}</h4>
+		</div>
+		<apex:form id="configuration">
+			<div>
+				<apex:outputPanel layout="none" styleClass="messages">
+					<div><apex:messages /></div>
+				</apex:outputPanel>
+			</div>
+			<apex:pageBlock >
+					<div class="container-fluid" style="padding:10px">
+						<div>
+							<b>{!$Label.nBRIDGER__Config_Bridger_H1}</b>
+						</div>
+						<div class="row">
+							<div class="col-lg-3">{!$Label.nBRIDGER__Username}</div>
+							<div class="col-lg-9">
+								<apex:inputText size="75" value="{!configuration.username}"/>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-3">{!$Label.nBRIDGER__Password}</div>
+							<div class="col-lg-9">
+								<apex:inputSecret size="75" value="{!configuration.password}" redisplay="true"/>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-3">{!$Label.nBRIDGER__Client_ID}</div>
+							<div class="col-lg-9">
+								<apex:inputText size="75" value="{!configuration.clientId}"/>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-3">{!$Label.nBRIDGER__Endpoint_Url}</div>
+							<div class="col-lg-9">
+								<apex:inputText size="75" value="{!configuration.endpoint}"/>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-3">{!$Label.nBRIDGER__Cert_Name}</div>
+							<div class="col-lg-9">
+								<apex:inputText size="75" value="{!configuration.certificate}"/>
+							</div>
+						</div>
+						<hr/>
+						<div>
+							<b>{!$Label.nBRIDGER__Config_Bridger_H1_5}</b>
+						</div>
+						<br/>
+						<div>
+							{!$Label.nBRIDGER__Config_Bridger_v11_Help}
+						</div>
+						<br/>
+						<div class="row">
+							<div class="col-lg-3">{!$Label.nBRIDGER__Use_V11}</div>
+							<div class="col-lg-9">
+								<apex:inputCheckbox value="{!configuration.usev11}"/>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-3">{!$Label.nBRIDGER__Update_Endpoint_Url}</div>
+							<div class="col-lg-9">
+								<apex:inputText size="75" value="{!configuration.updateendpoint}"/>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-3">{!$Label.nBRIDGER__AccountType}</div>
+							<div class="col-lg-9">
+								<apex:inputText size="75" value="{!configuration.accounttype}"/>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-3">{!$Label.nBRIDGER__AltWatchlist_Name}</div>
+							<div class="col-lg-9">
+								<apex:inputText size="75" value="{!configuration.altwatchlist}"/>
+							</div>
+						</div>
+						<hr/>
+						<div>
+							<b>{!$Label.nBRIDGER__Config_Bridger_H2}</b>
+						</div>
+ 
+						<div class="row">
+							<div class="col-lg-3">{!$Label.nBRIDGER__Division_Name}</div>
+							<div class="col-lg-9">
+								<apex:inputText size="75" value="{!configuration.division}"/>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-3">{!$Label.nBRIDGER__Email_Notification}</div>
+							<div class="col-lg-9">
+								<apex:inputCheckbox value="{!configuration.emailnotice}"/>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-3">{!$Label.nBRIDGER__Watchlist_Name}</div>
+							<div class="col-lg-9">
+								<apex:inputText size="75" value="{!configuration.watchlist}"/>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-3">{!$Label.nBRIDGER__Store_Bridger_Match}</div>
+							<div class="col-lg-9">
+								<apex:inputCheckbox value="{!configuration.saveresults}"/>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-3">{!$Label.nBRIDGER__Notify_Role_List}</div>
+							<div class="col-lg-9">
+								<apex:inputText size="75" value="{!configuration.rolelist}"/>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-3">{!$Label.nBRIDGER__Send_Id}</div>
+							<div class="col-lg-9">
+								<apex:inputCheckbox value="{!configuration.sendid}"/>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-3">{!$Label.nBRIDGER__Send_Address}</div>
+							<div class="col-lg-9">
+								<apex:inputCheckbox value="{!configuration.sendaddress}"/>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-3">{!$Label.nBRIDGER__Send_DOB}</div>
+							<div class="col-lg-9">
+								<apex:inputCheckbox value="{!configuration.senddob}"/>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-lg-3">{!$Label.nBRIDGER__Send_Names}</div>
+							<div class="col-lg-9">
+								<apex:inputCheckbox value="{!configuration.sendnames}"/>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-3">{!$Label.nBRIDGER__Send_Middle_Name}</div>
+							<div class="col-lg-9">
+								<apex:inputCheckbox value="{!configuration.sendmiddlename}"/>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-3">{!$Label.nBRIDGER__Send_Nationality}</div>
+							<div class="col-lg-9">
+								<apex:inputCheckbox value="{!configuration.sendnationality}"/>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-3">{!$Label.nBRIDGER__Send_Gender}</div>
+							<div class="col-lg-9">
+								<apex:inputCheckbox value="{!configuration.sendgender}"/>
+							</div>
+						</div>
+						<hr/>
+						<div>
+							<b>{!$Label.nBRIDGER__Config_Bridger_H3}</b>
+						</div>
+						<div class="row">
+							<div class="col-lg-3">{!$Label.nBRIDGER__Account_Type_List}</div>
+							<div class="col-lg-9">
+								<apex:inputText size="75" value="{!configuration.filter}"/>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-3">{!$Label.nBRIDGER__Deal_Team}</div>
+							<div class="col-lg-9">
+								<apex:inputText size="75" value="{!configuration.dealteam}"/>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-3">{!$Label.nBRIDGER__Compliance_Team}</div>
+							<div class="col-lg-9">
+								<apex:inputText size="75" value="{!configuration.complianceteam}"/>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-3">{!$Label.nBRIDGER__Send_Disposition_Alert}</div>
+							<div class="col-lg-9">
+								<apex:inputCheckbox value="{!configuration.dispositionalert}"/>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-3">{!$Label.nBRIDGER__Apply_Requests_to_All}</div>
+							<div class="col-lg-9">
+								<apex:inputCheckbox value="{!configuration.limitresults}"/>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-3">{!$Label.nBRIDGER__Expiration_Days}</div>
+							<div class="col-lg-9">
+								<apex:inputText size="10" value="{!configuration.expirationdays}"/>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-3">{!$Label.nBRIDGER__Validate_on_Loan}</div>
+							<div class="col-lg-9">
+								<apex:inputCheckbox value="{!configuration.validateonloan}"/>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-3">{!$Label.nBRIDGER__Validate_On_Stage_List}</div>
+							<div class="col-lg-9">
+								<apex:inputText size="75" value="{!configuration.validationstages}"/>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-lg-3">{!$Label.nBRIDGER__RECORD_AFPS}</div>
+							<div class="col-lg-9">
+								<apex:inputCheckbox value="{!configuration.recordafp}"/>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-3">{!$Label.nBRIDGER__MATCH_STATUSES}</div>
+							<div class="col-lg-9">
+								<apex:inputText size="75" value="{!configuration.matchstatuses}"/>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-3">{!$Label.nBRIDGER__MATCH_OVERRIDE_STATUSES}</div>
+							<div class="col-lg-9">
+								<apex:inputText size="75" value="{!configuration.matchoverridestatuses}"/>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-3">{!$Label.nBRIDGER__NOMATCH_STATUSES}</div>
+							<div class="col-lg-9">
+								<apex:inputText size="75" value="{!configuration.nomatchstatuses}"/>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-3">{!$Label.nBRIDGER__ORDER_RELATIONSHIPS}</div>
+							<div class="col-lg-9">
+								<apex:inputCheckbox value="{!configuration.orderrelationships}"/>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-3">{!$Label.nBRIDGER__Automated_Loan_Screen_Stages}</div>
+							<div class="col-lg-9">
+								<apex:inputText size="75" value="{!configuration.automatedLoanScreenStages}"/>
+							</div>
+						</div>						
+					</div>
+				<apex:pageBlockButtons location="bottom">
+					<apex:commandButton styleClass="btn btn-primary"
+						value="{!$Label.nBRIDGER__Save_Configuration}" action="{!save}"/>
+				</apex:pageBlockButtons>
+			</apex:pageBlock>
+		</apex:form>
+	</div>
+</apex:page>

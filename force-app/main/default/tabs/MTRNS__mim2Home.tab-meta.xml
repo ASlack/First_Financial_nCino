@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Build and Maintain Mapping Instructions.</description>
+    <label>Magellan</label>
+    <lwcComponent>MTRNS__mim2Home</lwcComponent>
+    <motif>Custom78: Map</motif>
+</CustomTab>

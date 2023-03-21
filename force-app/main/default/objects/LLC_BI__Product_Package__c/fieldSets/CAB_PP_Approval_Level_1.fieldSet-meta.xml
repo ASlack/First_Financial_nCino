@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CAB_PP_Approval_Level_1</fullName>
+    <description>Used for Product Package approval process. Added for the Commercial Accelerate project.</description>
+    <displayedFields>
+        <field>Approver_1__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>cm_Send_to_Level_1__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>PP - Approval Level 1</label>
+</FieldSet>

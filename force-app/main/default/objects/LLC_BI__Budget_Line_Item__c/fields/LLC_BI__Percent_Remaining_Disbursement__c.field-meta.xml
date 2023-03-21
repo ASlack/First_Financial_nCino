@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Percent_Remaining_Disbursement__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The percentage of budget that remains for a specific line item.</description>
+    <externalId>false</externalId>
+    <formula>IF(LLC_BI__Amount_Budgeted__c == 0, 0, LLC_BI__Remaining_Disbursement__c / LLC_BI__Amount_Budgeted__c)</formula>
+    <label>Percent Remaining Disbursement</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>4</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

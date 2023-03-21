@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help></help>
+    <label></label>
+    <name>LLC_BI__IRA_Recharacterization_Type__c</name>
+    <picklistValues>
+        <masterLabel>Erroneous rollover or transfer from Traditional to SIMPLE and back to Traditional</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Roth beneficiary direct rollover from an ERP to traditional beneficiary</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Roth conversion back to Traditional or SIMPLE</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Roth rollover or direct rollover from an ERP to Traditional</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Roth to Traditional</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Traditional to Roth</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

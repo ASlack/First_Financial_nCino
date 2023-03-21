@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Is_Disabled__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This defaults to false. Disabled templates are not visible in the underwriting start application.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Disabled templates are not visible in the underwriting start application.</inlineHelpText>
+    <label>Is Disabled</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,30 @@
+<apex:page >
+	<html>
+		<head>
+			<meta charset="utf-8" />
+			<title></title>
+			<base href="/" />
+			<meta name="viewport" content="width=device-width, initial-scale=1" />
+			<apex:slds />
+			<Include_Design_System components="true" />
+			<apex:stylesheet value="{!URLFOR($Resource.nFORCE__nds, 'nds.bundle.css')}" />
+		</head>
+		<body class="slds-scope">
+			<c:FormsSyntaxBuilderConfiguration />
+
+			<div class="slds-scope">
+				<app-root></app-root>
+			</div>
+
+			<script defer="defer" type="application/javascript" src="{!URLFOR($Resource.nforms, 'nforms.min.js')}"></script>
+			<script defer="defer" src="{!URLFOR($Resource.ncFormsSyntaxBuilder, "runtime-es2015.js")}" type="module"></script>
+			<script defer="defer" src="{!URLFOR($Resource.ncFormsSyntaxBuilder, "polyfills-es2015.js")}" type="module"></script>
+			<script defer="defer" src="{!URLFOR($Resource.ncFormsSyntaxBuilder, "runtime-es5.js")}" nomodule="nomodule"></script>
+			<script defer="defer" src="{!URLFOR($Resource.ncFormsSyntaxBuilder, "polyfills-es5.js")}" nomodule="nomodule"></script>
+			<script defer="defer" src="{!URLFOR($Resource.ncFormsSyntaxBuilder, "styles-es5.js")}" nomodule="nomodule"></script>
+			<script defer="defer" src="{!URLFOR($Resource.ncFormsSyntaxBuilder, "main-es2015.js")}" type="module"></script>
+			<script defer="defer" src="{!URLFOR($Resource.ncFormsSyntaxBuilder, "vendor-es5.js")}" nomodule="nomodule"></script>
+			<script defer="defer" src="{!URLFOR($Resource.ncFormsSyntaxBuilder, "main-es5.js")}" nomodule="nomodule"></script>
+		</body>
+	</html>
+</apex:page>

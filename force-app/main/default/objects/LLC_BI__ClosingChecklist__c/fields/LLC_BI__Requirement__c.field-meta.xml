@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Requirement__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this optional field. It is a lookup that links the Closing Checklist to a Requirement template.</description>
+    <externalId>false</externalId>
+    <label>Requirement</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>LLC_BI__Requirement__c.LLC_BI__Is_Template__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>LLC_BI__Requirement__c</referenceTo>
+    <relationshipLabel>Closing Checklists</relationshipLabel>
+    <relationshipName>Closing_Checklists</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

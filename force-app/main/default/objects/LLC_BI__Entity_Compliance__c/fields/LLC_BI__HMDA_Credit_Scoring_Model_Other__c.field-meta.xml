@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__HMDA_Credit_Scoring_Model_Other__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field specifies in text the other credit scoring model if Code 8 (Other credit scoring model) is selected in the Name and Version of Credit Scoring Model Field.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If Other Credit Scoring Model is selected as the Credit Scoring Model, this field allows you to enter a description of the model.</inlineHelpText>
+    <label>Other Credit Scoring Model Description</label>
+    <length>50</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

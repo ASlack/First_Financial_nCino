@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Requirement__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This required field contains a reference to the Requirement to which this entry pertains.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This required field contains a reference to the Requirement to which this entry pertains.</inlineHelpText>
+    <label>Requirement</label>
+    <referenceTo>LLC_BI__Requirement__c</referenceTo>
+    <relationshipLabel>Requirement History</relationshipLabel>
+    <relationshipName>Requirement_History</relationshipName>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

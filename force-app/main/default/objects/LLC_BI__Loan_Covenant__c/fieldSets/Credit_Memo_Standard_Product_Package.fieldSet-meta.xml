@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Credit_Memo_Standard_Product_Package</fullName>
+    <description>Credit Memo: Standard Product Package Credit Memo
+Screen Section: Covenant Summary
+Object: Loan Covenant</description>
+    <displayedFields>
+        <field>LLC_BI__Loan__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Credit Memo Standard Product Package</label>
+</FieldSet>

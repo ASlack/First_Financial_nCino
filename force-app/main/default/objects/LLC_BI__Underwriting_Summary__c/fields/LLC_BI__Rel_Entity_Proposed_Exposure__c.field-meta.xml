@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Rel_Entity_Proposed_Exposure__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is required and automatically updated. The sum of the principal balance from Credit Facilities + items that are in the system in the Contingent Liability section + proposed loans - payoff - participation.</description>
+    <externalId>false</externalId>
+    <label>Related Entity Proposed Exposure</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

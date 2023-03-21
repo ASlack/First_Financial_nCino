@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Is_Questionnaire__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is manually populated. When enabled, it identifes a group as a questionnaire group rather than a standard UI group. When disabled, a gorup is not identified as a questionnaire. This field is disabled by default.</description>
+    <externalId>false</externalId>
+    <label>Is Questionnaire</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

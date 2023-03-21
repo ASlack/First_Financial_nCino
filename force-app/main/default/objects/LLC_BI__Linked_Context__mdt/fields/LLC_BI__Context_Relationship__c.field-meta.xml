@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Context_Relationship__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Relationship field on joining context object that references next context</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>Relationship field on joining context object that references next context</inlineHelpText>
+    <label>Context Relationship</label>
+    <length>45</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

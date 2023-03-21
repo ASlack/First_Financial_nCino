@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Broker_Fee__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is manually set. This field holds the referral fee if the Loan was referred through a referral source, broker, or other intermediary.</description>
+    <externalId>false</externalId>
+    <label>Referral Fee</label>
+    <precision>17</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

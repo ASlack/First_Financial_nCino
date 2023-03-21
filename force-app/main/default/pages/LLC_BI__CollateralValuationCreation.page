@@ -1,0 +1,56 @@
+<apex:page id="CollateralValuationCreation" standardController="LLC_BI__Collateral__c" extensions="LLC_BI.CollateralValuationCreationController,nFORCE.RemoteActionController">
+	<nFORCE:Internationalize />
+	<nFORCE:Include_Analytics />
+	
+	<html>
+		<head>
+			<meta charset="utf-8" />
+			<title>Collateral Valuation Creation</title>
+			<base href="/" />
+			<meta name="viewport" content="width=device-width, initial-scale=1" />
+			<apex:slds />
+			<nFORCE:Include_Design_System components="true" />
+			<apex:stylesheet value="{!URLFOR($Resource.nFORCE__nds, 'nds.bundle.css')}" />
+		</head>
+		<body class="slds-scope">
+			<collateral-valuation-creation></collateral-valuation-creation>
+
+			<script type="application/javascript">
+				(function() {
+					'use strict';
+					window.LifeCycle = window.LifeCycle ? window.LifeCycle : {};
+					window.LifeCycle.CollateralValuationCreation = {};
+		
+					window.LifeCycle.CollateralValuationCreation.ConfigData = {
+						contextId: '{!JSENCODE(collateralId)}',
+						collateralTypeId: '{!JSENCODE(collateralTypeId)}',
+						allowEditPrimary: '{!$Permission.LLC_BI__Edit_Primary_Valuation}', <!-- NOPMD - This is a Boolean -->
+						endpoints: {
+							remotingApiEndpoint: 'nFORCE.RemotingApi_v1'
+						},
+						labels: {
+							warningMessage: '{!$Label.Admin_Settings_Change_Notice}',
+							primaryCollateralValuation: '{!$Label.Primary_Collateral_Valuation}',
+							addCollateralValuationHeader: '{!$Label.Add_Collateral_Valuation}',
+							save: '{!$Label.Save}',
+							saveNew: '{!$Label.Button_Save_And_New}',
+							cancel: '{!$Label.Cancel}'
+						}
+					};
+					window.LifeCycle.CollateralValuationCreation.ConfigData.isReadOnly =
+						(window.LifeCycle.CollateralValuationCreation.ConfigData.isReadOnly &&
+							window.LifeCycle.CollateralValuationCreation.ConfigData.isReadOnly == 'true') ?
+						JSON.parse(window.LifeCycle.CollateralValuationCreation.ConfigData.isReadOnly) : false;
+				})();
+			</script>
+			
+			<script defer="defer" type="application/javascript" src="{!URLFOR($Resource.nforce__ie11_polyfills, 'svgxuse.min.js')}"></script>
+			<script defer="defer" type="application/javascript" src="{!URLFOR($Resource.nforce__navigator, 'lib/navigator-visualforce.js')}"></script>
+			<script src="{!URLFOR($Resource.LLC_BI__collateral_valuation_creation, 'main.js')}"></script>
+			<script src="{!URLFOR($Resource.LLC_BI__collateral_valuation_creation, 'polyfills.js')}"></script>
+			<script src="{!URLFOR($Resource.LLC_BI__collateral_valuation_creation, 'runtime.js')}"></script>
+			<script src="{!URLFOR($Resource.LLC_BI__collateral_valuation_creation, 'styles.js')}"></script>
+			<script src="{!URLFOR($Resource.LLC_BI__collateral_valuation_creation, 'vendor.js')}"></script>
+		</body>
+	</html>
+</apex:page>

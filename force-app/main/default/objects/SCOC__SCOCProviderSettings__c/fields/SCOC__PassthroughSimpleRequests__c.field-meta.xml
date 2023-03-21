@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCOC__PassthroughSimpleRequests__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>If checked, this provider will bypass all on-platform mapping activity and push a simple unmapped request as to the endpoint specified.</description>
+    <externalId>false</externalId>
+    <label>-D Pass-through Simple Requests</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

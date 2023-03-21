@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__start_date_cannot_be_after_end_date</fullName>
+    <active>true</active>
+    <description>--DEPRECATED--</description>
+    <errorConditionFormula>false</errorConditionFormula>
+    <errorDisplayField>LLC_BI__Start_Date__c</errorDisplayField>
+    <errorMessage>--DEPRECATED-- The beginning date cannot be after the end date.</errorMessage>
+</ValidationRule>

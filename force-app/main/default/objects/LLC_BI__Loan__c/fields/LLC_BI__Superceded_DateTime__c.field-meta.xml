@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Superceded_DateTime__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is automatically populated. This field is a calculated date that represents when the Loan is considered &apos;Superceded&apos; as defined by the Product State Configuration. This date should not be edited.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Booked Date is a calculated date that represents when the Loan is considered &apos;Booked&apos; as defined by the Product State Configuration. This date should not be edited.</inlineHelpText>
+    <label>Superceded Date Time</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

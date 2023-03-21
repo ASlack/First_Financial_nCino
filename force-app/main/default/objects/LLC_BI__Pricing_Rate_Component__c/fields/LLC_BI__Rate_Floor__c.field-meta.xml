@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Rate_Floor__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this optional percentage field to specify the minimum threshold of a loan&apos;s interest rate for a set period of time.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The system-populated field displays the minimum possible percentage of a loan&apos;s interest rate for a set period of time.</inlineHelpText>
+    <label>Rate Floor</label>
+    <precision>11</precision>
+    <required>false</required>
+    <scale>8</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Source_Period__c</fullName>
+    <deleteConstraint>Cascade</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field is required. The system automatically populates this required lookup field to reference the source period in the consolidation bundle.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field is required. The system automatically populates this required lookup field to reference the source period in the consolidation bundle.</inlineHelpText>
+    <label>Source Period</label>
+    <referenceTo>LLC_BI__Spread_Statement_Period__c</referenceTo>
+    <relationshipLabel>Source Period Consolidations</relationshipLabel>
+    <relationshipName>Source_Period_Consolidations</relationshipName>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

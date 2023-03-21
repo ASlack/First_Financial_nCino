@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Category__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is required and is manually populated. It identifies the category of the associated covenant record (such as Financial Requirements or Insurance Requirements). Finanical Statement Requirement and Financial Indicator covenants can be automatically tested using Spreads.</description>
+    <externalId>false</externalId>
+    <label>Category</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Financial Statement Requirements</fullName>
+                <default>false</default>
+                <label>Financial Statement Requirements</label>
+            </value>
+            <value>
+                <fullName>Financial Indicators</fullName>
+                <default>false</default>
+                <label>Financial Indicators</label>
+            </value>
+            <value>
+                <fullName>Term Covenants</fullName>
+                <default>false</default>
+                <label>Term Covenants</label>
+            </value>
+            <value>
+                <fullName>Default Covenants</fullName>
+                <default>false</default>
+                <label>Default Covenants</label>
+            </value>
+            <value>
+                <fullName>Collateral</fullName>
+                <default>false</default>
+                <label>Collateral</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

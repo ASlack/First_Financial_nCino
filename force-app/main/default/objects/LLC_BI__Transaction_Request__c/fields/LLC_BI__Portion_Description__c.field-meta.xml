@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Portion_Description__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It describes the portion of the account balance to be converted, transferred, or directly rolled over. In the case of a recharacterization, it is the contribution amount plus earnings attributable to be recharacterized.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Describes the portion of the account balance to be converted transferred or directly rolled over or in the case of a recharacterization the contribution amount plus earnings attributable to be recharacterized.</inlineHelpText>
+    <label>Portion Description</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

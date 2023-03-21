@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help></help>
+    <label></label>
+    <name>LLC_BI__Form_W8_FFI_Documentation_Type__c</name>
+    <picklistValues>
+        <masterLabel>Auditor&apos;s Letter</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reporting Statement on Individual Primaries</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

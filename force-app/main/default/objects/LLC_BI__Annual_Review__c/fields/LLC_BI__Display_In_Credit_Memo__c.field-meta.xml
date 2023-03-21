@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Display_In_Credit_Memo__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It populated manually by the user. When enabled, the risk grade worksheet is displayed in the credit memo for this loan. When disabled, the risk grade worksheet is not displayed in the credit memo. Only one risk grade review may have this enabled per loan. A trigger automatically deselects this field on any other risk rating review for the loan whenever it is enabled.</description>
+    <externalId>false</externalId>
+    <label>Display In Credit Memo</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

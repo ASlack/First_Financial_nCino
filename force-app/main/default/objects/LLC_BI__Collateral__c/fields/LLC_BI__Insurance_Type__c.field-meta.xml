@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Insurance_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional and manually populated. It is the type of insurance policy.</description>
+    <externalId>false</externalId>
+    <label>Insurance Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Workman&apos;s Comp</fullName>
+                <default>false</default>
+                <label>Workman&apos;s Comp</label>
+            </value>
+            <value>
+                <fullName>Business Personal Property</fullName>
+                <default>false</default>
+                <label>Business Personal Property</label>
+            </value>
+            <value>
+                <fullName>Comprehensive/Collision</fullName>
+                <default>false</default>
+                <label>Comprehensive/Collision</label>
+            </value>
+            <value>
+                <fullName>Condo Master</fullName>
+                <default>false</default>
+                <label>Condo Master</label>
+            </value>
+            <value>
+                <fullName>Earthquake</fullName>
+                <default>false</default>
+                <label>Earthquake</label>
+            </value>
+            <value>
+                <fullName>Fire</fullName>
+                <default>false</default>
+                <label>Fire</label>
+            </value>
+            <value>
+                <fullName>Flood - Building</fullName>
+                <default>false</default>
+                <label>Flood - Building</label>
+            </value>
+            <value>
+                <fullName>Flood - Contents</fullName>
+                <default>false</default>
+                <label>Flood - Contents</label>
+            </value>
+            <value>
+                <fullName>General Liability</fullName>
+                <default>false</default>
+                <label>General Liability</label>
+            </value>
+            <value>
+                <fullName>Homeowners</fullName>
+                <default>false</default>
+                <label>Homeowners</label>
+            </value>
+            <value>
+                <fullName>Hurricane</fullName>
+                <default>false</default>
+                <label>Hurricane</label>
+            </value>
+            <value>
+                <fullName>Other (Boat, Airplane, etc.)</fullName>
+                <default>false</default>
+                <label>Other (Boat, Airplane, etc.)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

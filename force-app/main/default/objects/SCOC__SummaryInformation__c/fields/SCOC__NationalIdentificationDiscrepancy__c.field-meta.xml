@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCOC__NationalIdentificationDiscrepancy__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The system populates this optional boolean field to display if there is a national identification discrepancy. By default, it is null.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>National Identification Discrepancy</inlineHelpText>
+    <label>National Identification Discrepancy</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

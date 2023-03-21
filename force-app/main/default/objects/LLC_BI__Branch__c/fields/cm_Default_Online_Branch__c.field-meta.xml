@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cm_Default_Online_Branch__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Mark this as true for the branch that should be used as the default option for online applications.  ENSURE THAT ONLY ONE BRANCH RECORD HAS THIS FLAG SET TO TRUE.z</description>
+    <externalId>false</externalId>
+    <label>Default Online Branch</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

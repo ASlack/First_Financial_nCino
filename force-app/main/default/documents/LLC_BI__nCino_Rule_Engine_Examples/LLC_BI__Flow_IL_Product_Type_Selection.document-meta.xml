@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Determines the product type that applies to each loan scenario based on the Applicant Type and Collateral Type</description>
+    <internalUseOnly>true</internalUseOnly>
+    <name>Indirect Lending Product Type Selection</name>
+    <public>false</public>
+</Document>

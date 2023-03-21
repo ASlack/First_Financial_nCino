@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Reg_Capital_Allocation_CET__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is a percent of loan amount that is to be held by the Financial Institution in common equity tier 1.</description>
+    <externalId>false</externalId>
+    <label>Regulatory Capital Allocation (CET1)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

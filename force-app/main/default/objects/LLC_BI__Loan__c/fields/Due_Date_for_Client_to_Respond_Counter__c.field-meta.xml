@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Due_Date_for_Client_to_Respond_Counter__c</fullName>
+    <description>This field sets the due date for client to respond counter, which is 60 days after notice is sent.</description>
+    <externalId>false</externalId>
+    <formula>IF(ISBLANK( Date_of_Adverse_Action_and_Counter__c), 
+null,
+Date_of_Adverse_Action_and_Counter__c + 60 
+
+)</formula>
+    <inlineHelpText>Due date for client to respond to counteroffer made.</inlineHelpText>
+    <label>Due Date for Client to Respond Counter</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

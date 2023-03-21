@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Imported__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field should not be altered. This field is used by the nCino Data Administrator to indicate loans that were created prior to nCino.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The Imported flag represents legacy loans that were created, processed and booked prior to the adoption of nCino.</inlineHelpText>
+    <label>Imported</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

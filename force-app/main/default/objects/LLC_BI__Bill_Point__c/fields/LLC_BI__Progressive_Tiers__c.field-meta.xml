@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Progressive_Tiers__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>-DEPRECATED- This is an optional, boolean field. When value is set to true, the bill point contains progressive tiered experience on the Quantity and Pricing page (by default, the value is false).</description>
+    <externalId>false</externalId>
+    <label>-D Progressive Tiers</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

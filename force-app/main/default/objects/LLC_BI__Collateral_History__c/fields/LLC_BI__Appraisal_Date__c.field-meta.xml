@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Appraisal_Date__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is manually populated. This field is a date field, used to specify the date at which an appraisal on the collateral had taken place.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Historical Appraisal date that corresponds to the real estate value</inlineHelpText>
+    <label>Appraisal Date</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

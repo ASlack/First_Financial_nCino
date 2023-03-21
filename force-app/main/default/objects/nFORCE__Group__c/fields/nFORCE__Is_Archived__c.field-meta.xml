@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Is_Archived__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is manually populated. When enabled, It allows a questionnaire group to no longer be in use while retaining the questionnaire data. When disabled, the questionnaire group remains active. By default, this is disabled.</description>
+    <externalId>false</externalId>
+    <label>Is Archived</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

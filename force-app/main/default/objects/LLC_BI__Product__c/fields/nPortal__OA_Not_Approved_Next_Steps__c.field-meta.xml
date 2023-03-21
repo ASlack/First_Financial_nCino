@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nPortal__OA_Not_Approved_Next_Steps__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Use this rich text field to configure the message displayed for auto decision when the system declines online application or manual review is required.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Use this rich text field to configure the message displayed when auto decision declines the online application or the application requires manual review.</inlineHelpText>
+    <label>OA Not Approved Next Steps</label>
+    <length>131072</length>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

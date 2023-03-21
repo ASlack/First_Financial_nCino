@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>UI_Loan_Collateral_Pledged</fullName>
+    <description>Loan Collateral Pledged Description.</description>
+    <label>UI Loan Collateral Pledged</label>
+</FieldSet>

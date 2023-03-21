@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Supplemental_Number_of_Periods__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Users populate this optional number field as a reference with a supplemental number of periods that differs from the original Number of Periods field.</description>
+    <externalId>false</externalId>
+    <label>Supplemental Number of Periods</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Locale_Key__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field stores the optional LocaleSidKey to map selection of the language to a particular locale (ex. en_US).</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter an optional locale key to map selection of this language to a specific locale.</inlineHelpText>
+    <label>Locale Key</label>
+    <length>255</length>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

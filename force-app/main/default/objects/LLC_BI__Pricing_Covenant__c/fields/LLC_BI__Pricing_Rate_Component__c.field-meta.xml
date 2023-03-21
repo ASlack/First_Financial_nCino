@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Pricing_Rate_Component__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is required. It is automatically populated. It identifies the Pricing Rate Component record associated to the Pricing Covenant record.</description>
+    <externalId>false</externalId>
+    <label>Pricing Rate Component</label>
+    <referenceTo>LLC_BI__Pricing_Rate_Component__c</referenceTo>
+    <relationshipLabel>Pricing Covenants</relationshipLabel>
+    <relationshipName>Pricing_Covenants</relationshipName>
+    <relationshipOrder>1</relationshipOrder>
+    <reparentableMasterDetail>true</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

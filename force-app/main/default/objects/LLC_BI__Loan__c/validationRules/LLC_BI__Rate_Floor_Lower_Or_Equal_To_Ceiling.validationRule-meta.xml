@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Rate_Floor_Lower_Or_Equal_To_Ceiling</fullName>
+    <active>false</active>
+    <description>Ensure that the floor rate is lower or equal to the ceiling rate</description>
+    <errorConditionFormula>AND (
+   !ISNULL(LLC_BI__Rate_Ceiling__c),
+   !ISNULL(LLC_BI__Rate_Floor__c),
+   (LLC_BI__Rate_Floor__c &gt; LLC_BI__Rate_Ceiling__c)
+)</errorConditionFormula>
+    <errorDisplayField>LLC_BI__Rate_Floor__c</errorDisplayField>
+    <errorMessage>Ensure that the floor rate is lower or equal to the ceiling rate</errorMessage>
+</ValidationRule>

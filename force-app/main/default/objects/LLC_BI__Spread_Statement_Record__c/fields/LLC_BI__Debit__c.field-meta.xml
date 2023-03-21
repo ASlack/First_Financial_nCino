@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Debit__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is driven by user selection within the spreading application. When enabled, the spread statement record (chart of account) is treated as a debit. When disabled, the spread statement record is treated as a credit. By default, it is disabled.</description>
+    <externalId>false</externalId>
+    <label>Debit</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

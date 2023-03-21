@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Layout__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is populated automatically by the Layout Builder tool on the parent screen section. This field specifies the layout associated with the section configuration. It specifies the layout of the fields in the credit memo for the field set associated with this record.</description>
+    <externalId>false</externalId>
+    <label>Layout</label>
+    <referenceTo>nFORCE__Layout__c</referenceTo>
+    <relationshipLabel>Section Configurations</relationshipLabel>
+    <relationshipName>Section_Configurations</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

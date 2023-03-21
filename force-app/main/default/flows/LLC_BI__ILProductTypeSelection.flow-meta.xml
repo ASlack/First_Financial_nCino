@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Converts serialized data provided to the Flow into a credit application variable that can be used to drive decisions in the Flow.</description>
+        <name>Load_Application_Data</name>
+        <label>Load Application Data</label>
+        <locationX>176</locationX>
+        <locationY>212</locationY>
+        <actionName>LLC_BI__ILCreditApplicationFlowTransformer</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>For_Each_Applicant</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>jsonData</name>
+            <value>
+                <elementReference>ApplicationData</elementReference>
+            </value>
+        </inputParameters>
+        <outputParameters>
+            <assignToReference>Applicants</assignToReference>
+            <name>applicants</name>
+        </outputParameters>
+        <outputParameters>
+            <assignToReference>Collaterals</assignToReference>
+            <name>collaterals</name>
+        </outputParameters>
+        <outputParameters>
+            <assignToReference>CreditProduct</assignToReference>
+            <name>creditProduct</name>
+        </outputParameters>
+    </actionCalls>
+    <apiVersion>49.0</apiVersion>
+    <assignments>
+        <description>Sets null return values for Product information to indicate no valid Product could be found</description>
+        <name>Return_Null_Product_Values</name>
+        <label>Return Null Product Values</label>
+        <locationX>819</locationX>
+        <locationY>492</locationY>
+        <assignmentItems>
+            <assignToReference>ProductTypeID</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ProductTypeName</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ProductTypeLookupKey</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ProductID</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ProductName</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ProductLookupKey</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>Sets the selected Product name to Indirect Business Auto</description>
+        <name>Use_Indirect_Business_Auto_Product</name>
+        <label>Use Indirect Business Auto Product</label>
+        <locationX>1079</locationX>
+        <locationY>483</locationY>
+        <assignmentItems>
+            <assignToReference>ProductName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>ProductBusinessAuto</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Load_Product</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Sets the selected Product name to Indirect Consumer Auto</description>
+        <name>Use_Indirect_Consumer_Auto_Product</name>
+        <label>Use Indirect Consumer Auto Product</label>
+        <locationX>1292</locationX>
+        <locationY>218</locationY>
+        <assignmentItems>
+            <assignToReference>ProductName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>ProductConsumerAuto</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Load_Product</targetReference>
+        </connector>
+    </assignments>
+    <constants>
+        <description>Expected external type value for an Auto Collateral Type</description>
+        <name>CollateralTypeAuto</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Auto</stringValue>
+        </value>
+    </constants>
+    <constants>
+        <description>Defines the value for Applicant Type which indicates they are the primary borrower and an Individual</description>
+        <name>IndividualPrimaryApplicantType</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Primary</stringValue>
+        </value>
+    </constants>
+    <constants>
+        <name>ProductBusinessAuto</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Indirect Business Auto</stringValue>
+        </value>
+    </constants>
+    <constants>
+        <name>ProductConsumerAuto</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Indirect Consumer Auto</stringValue>
+        </value>
+    </constants>
+    <constants>
+        <description>The Product Type name used by default for an automotive loan application for individuals</description>
+        <name>ProductTypePurchaseAuto</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Purchase Auto</stringValue>
+        </value>
+    </constants>
+    <constants>
+        <description>The Product Type name used by default for an automotive loan application for businesses</description>
+        <name>ProductTypeVehicle</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Vehicle</stringValue>
+        </value>
+    </constants>
+    <decisions>
+        <description>Checks the first Collateral provided to determine if the external type value is &quot;Auto&quot;, indicating a an Automotive loan</description>
+        <name>Collateral_Type_Is_Auto</name>
+        <label>Collateral Type Is Auto?</label>
+        <locationX>810</locationX>
+        <locationY>222</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Auto_Collateral_Type</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>For_Each_Collateral.externalType</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>CollateralTypeAuto</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Individual_Primary_Applicant</targetReference>
+            </connector>
+            <label>Auto Collateral Type</label>
+        </rules>
+        <rules>
+            <name>Other_Collateral_Type</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>For_Each_Collateral.externalType</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>CollateralTypeAuto</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Return_Null_Product_Values</targetReference>
+            </connector>
+            <label>Other Collateral Type</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Determines if the first, primary applicant in the credit application is an individual</description>
+        <name>Individual_Primary_Applicant</name>
+        <label>Primary Applicant Is Individual?</label>
+        <locationX>1072</locationX>
+        <locationY>219</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_Individual</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Applicant.applicantType</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>IndividualPrimaryApplicantType</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Use_Indirect_Consumer_Auto_Product</targetReference>
+            </connector>
+            <label>Is Individual</label>
+        </rules>
+        <rules>
+            <name>Is_Not_Individual</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Applicant.applicantType</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>IndividualPrimaryApplicantType</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Use_Indirect_Business_Auto_Product</targetReference>
+            </connector>
+            <label>Is Not Individual</label>
+        </rules>
+    </decisions>
+    <description>Determines the Product Type that should apply to a particular credit application in Indirect Lending</description>
+    <interviewLabel>ILProductTypeSelection {!$Flow.CurrentDateTime}</interviewLabel>
+    <isTemplate>true</isTemplate>
+    <label>ILProductTypeSelection</label>
+    <loops>
+        <description>Performs additional processing for each applicant included in the credit application</description>
+        <name>For_Each_Applicant</name>
+        <label>For Each Applicant</label>
+        <locationX>333</locationX>
+        <locationY>212</locationY>
+        <assignNextValueToReference>Applicant</assignNextValueToReference>
+        <collectionReference>Applicants</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>For_Each_Collateral</targetReference>
+        </nextValueConnector>
+    </loops>
+    <loops>
+        <description>Evaluates Collateral to determine if the &quot;Auto&quot; Collateral Type is used</description>
+        <name>For_Each_Collateral</name>
+        <label>For Each Collateral</label>
+        <locationX>562</locationX>
+        <locationY>207</locationY>
+        <collectionReference>Collaterals</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Collateral_Type_Is_Auto</targetReference>
+        </nextValueConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Load_Product</name>
+        <label>Load Product</label>
+        <locationX>1292</locationX>
+        <locationY>483</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Load_Product_Type</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>ProductName</elementReference>
+            </value>
+        </filters>
+        <object>LLC_BI__Product__c</object>
+        <outputAssignments>
+            <assignToReference>ProductID</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+        <outputAssignments>
+            <assignToReference>ProductTypeID</assignToReference>
+            <field>LLC_BI__Product_Type__c</field>
+        </outputAssignments>
+        <outputAssignments>
+            <assignToReference>ProductLookupKey</assignToReference>
+            <field>LLC_BI__lookupKey__c</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <description>Loads the associated Product Type for the Product selected</description>
+        <name>Load_Product_Type</name>
+        <label>Load Product Type</label>
+        <locationX>1292</locationX>
+        <locationY>688</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>ProductTypeID</elementReference>
+            </value>
+        </filters>
+        <object>LLC_BI__Product_Type__c</object>
+        <outputAssignments>
+            <assignToReference>ProductTypeLookupKey</assignToReference>
+            <field>LLC_BI__lookupKey__c</field>
+        </outputAssignments>
+        <outputAssignments>
+            <assignToReference>ProductTypeName</assignToReference>
+            <field>Name</field>
+        </outputAssignments>
+    </recordLookups>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Load_Application_Data</targetReference>
+        </connector>
+    </start>
+    <status>Draft</status>
+    <variables>
+        <description>Current applicant being evaluated</description>
+        <name>Applicant</name>
+        <apexClass>LLC_BI__ILApplicantFlowVar_v1</apexClass>
+        <dataType>Apex</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Contains information about the applicants included in the credit application.</description>
+        <name>Applicants</name>
+        <apexClass>LLC_BI__ILApplicantFlowVar_v1</apexClass>
+        <dataType>Apex</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>JSON-serialized String containing data from the credit application used in the Flow.</description>
+        <name>ApplicationData</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>One or more collateral provided as part of the inbound credit application</description>
+        <name>Collaterals</name>
+        <apexClass>LLC_BI__ILCollateralFlowVar_v1</apexClass>
+        <dataType>Apex</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Stores loan information provided as part of the overall credit application</description>
+        <name>CreditProduct</name>
+        <apexClass>LLC_BI__ILCreditProductFlowVar_v1</apexClass>
+        <dataType>Apex</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>ID of the Product which should be used for this Credit Application</description>
+        <name>ProductID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>Lookup Key of the Product which should be used for this Credit Application</description>
+        <name>ProductLookupKey</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>Descriptive Name of the Product which should be used for this Credit Application</description>
+        <name>ProductName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>ID of the Product Type which should be used for this Credit Application</description>
+        <name>ProductTypeID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>Lookup Key of the Product Type which should be used for this Credit Application</description>
+        <name>ProductTypeLookupKey</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>Descriptive Name of the Product Type which should be used for this Credit Application</description>
+        <name>ProductTypeName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

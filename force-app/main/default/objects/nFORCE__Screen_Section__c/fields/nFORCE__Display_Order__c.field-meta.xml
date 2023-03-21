@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Display_Order__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional, but should be filled out. It is manually populated by the admin. This field determines the display order of screen sections inside of a screen using ascending order. It is recommended to use multiples of 10, so that screen sections can be inserted at a later date without having to reset all of the screen sections.</description>
+    <externalId>false</externalId>
+    <label>Display Order</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

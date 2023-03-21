@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Connection_Ownership_Percentage_Min__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Administrators manually populate this optional number field. This field specifies the bottom range of the Connection Ownership Percentage that should be used to determine whether or not an account&apos;s loans should be used in exposure. This field should be used when Connection Role is also being used. Default is null.</description>
+    <externalId>false</externalId>
+    <label>Connection Ownership Percentage Min</label>
+    <precision>6</precision>
+    <required>false</required>
+    <scale>3</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

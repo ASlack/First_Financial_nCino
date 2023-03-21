@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__renew_loan</fullName>
+    <availability>online</availability>
+    <description>Loan renewal button</description>
+    <displayType>button</displayType>
+    <height>600</height>
+    <linkType>page</linkType>
+    <masterLabel>Credit Action</masterLabel>
+    <openType>sidebar</openType>
+    <page>LLC_BI__PackageLoanRenewal</page>
+    <protected>false</protected>
+</WebLink>

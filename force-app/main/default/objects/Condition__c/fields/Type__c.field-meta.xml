@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Type</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Category__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Appraisal Acknowledgment - Bank</fullName>
+                <default>false</default>
+                <label>Appraisal Acknowledgment - Bank</label>
+            </value>
+            <value>
+                <fullName>Appraisal Acknowledgment - Bank - CRE Non Owner Occupied</fullName>
+                <default>false</default>
+                <label>Appraisal Acknowledgment - Bank - CRE Non Owner Occupied</label>
+            </value>
+            <value>
+                <fullName>Appraisal Acknowledgment - Client</fullName>
+                <default>false</default>
+                <label>Appraisal Acknowledgment - Client</label>
+            </value>
+            <value>
+                <fullName>Beneficial Ownership/Customer Due Diligence</fullName>
+                <default>false</default>
+                <label>Beneficial Ownership/Customer Due Diligence</label>
+            </value>
+            <value>
+                <fullName>Borrowing Entities are in Good Standing</fullName>
+                <default>false</default>
+                <label>Borrowing Entities are in Good Standing</label>
+            </value>
+            <value>
+                <fullName>Certified Rent Roll/Lease Submitted</fullName>
+                <default>false</default>
+                <label>Certified Rent Roll/Lease Submitted</label>
+            </value>
+            <value>
+                <fullName>Closing Loan Package Approved (Pre-Closing Review)</fullName>
+                <default>false</default>
+                <label>Closing Loan Package Approved (Pre-Closing Review)</label>
+            </value>
+            <value>
+                <fullName>Collateral Title Submitted</fullName>
+                <default>false</default>
+                <label>Collateral Title Submitted</label>
+            </value>
+            <value>
+                <fullName>Collection(s) Paid and Explanation Provided</fullName>
+                <default>false</default>
+                <label>Collection(s) Paid and Explanation Provided</label>
+            </value>
+            <value>
+                <fullName>Debt Schedule Submitted</fullName>
+                <default>false</default>
+                <label>Debt Schedule Submitted</label>
+            </value>
+            <value>
+                <fullName>HMDA Data Collected</fullName>
+                <default>false</default>
+                <label>HMDA Data Collected</label>
+            </value>
+            <value>
+                <fullName>Judgment or Lien Paid and Explanation Provided</fullName>
+                <default>false</default>
+                <label>Judgment or Lien Paid and Explanation Provided</label>
+            </value>
+            <value>
+                <fullName>Proof of Insurance (Equipment, Vehicle, etc.) Provided</fullName>
+                <default>false</default>
+                <label>Proof of Insurance (Equipment, Vehicle, etc.) Provided</label>
+            </value>
+            <value>
+                <fullName>Proof of Sufficient Cash Down</fullName>
+                <default>false</default>
+                <label>Proof of Sufficient Cash Down</label>
+            </value>
+            <value>
+                <fullName>Satisfactory Appraisal and Review</fullName>
+                <default>false</default>
+                <label>Satisfactory Appraisal and Review</label>
+            </value>
+            <value>
+                <fullName>Satisfactory Environmental Report</fullName>
+                <default>false</default>
+                <label>Satisfactory Environmental Report</label>
+            </value>
+            <value>
+                <fullName>Satisfactory Flood Insurance Coverage</fullName>
+                <default>false</default>
+                <label>Satisfactory Flood Insurance Coverage</label>
+            </value>
+            <value>
+                <fullName>Satisfactory Hazard Insurance</fullName>
+                <default>false</default>
+                <label>Satisfactory Hazard Insurance</label>
+            </value>
+            <value>
+                <fullName>Satisfactory Internal Evaluation and Review</fullName>
+                <default>false</default>
+                <label>Satisfactory Internal Evaluation and Review</label>
+            </value>
+            <value>
+                <fullName>Satisfactory Title Commitment</fullName>
+                <default>false</default>
+                <label>Satisfactory Title Commitment</label>
+            </value>
+            <value>
+                <fullName>Property Tax (CRIM)</fullName>
+                <default>false</default>
+                <label>Property Tax (CRIM)</label>
+            </value>
+            <value>
+                <fullName>Other Legal Documents</fullName>
+                <default>false</default>
+                <label>Other Legal Documents</label>
+            </value>
+            <value>
+                <fullName>Pledge (Leases, Accounts Receivables, Inventory, etc.)</fullName>
+                <default>false</default>
+                <label>Pledge (Leases, Accounts Receivables, Inventory, etc.)</label>
+            </value>
+            <value>
+                <fullName>Key Man Insurance</fullName>
+                <default>false</default>
+                <label>Key Man Insurance</label>
+            </value>
+            <value>
+                <fullName>Open Nave Checking Account</fullName>
+                <default>false</default>
+                <label>Open Nave Checking Account</label>
+            </value>
+            <value>
+                <fullName>Open Nave Savings Account</fullName>
+                <default>false</default>
+                <label>Open Nave Savings Account</label>
+            </value>
+            <value>
+                <fullName>AOC Income Assignment</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AOC Income Assignment</label>
+            </value>
+            <value>
+                <fullName>AOC PCA Mortgage</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AOC PCA Mortgage</label>
+            </value>
+            <value>
+                <fullName>AgriBank Prior Approval</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AgriBank Prior Approval</label>
+            </value>
+            <value>
+                <fullName>Assignment of Life Insurance</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Assignment of Life Insurance</label>
+            </value>
+            <value>
+                <fullName>Business Interruption Insurance</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Business Interruption Insurance</label>
+            </value>
+            <value>
+                <fullName>CNS-1 Filing</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CNS-1 Filing</label>
+            </value>
+            <value>
+                <fullName>Crop Insurance AOI</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Crop Insurance AOI</label>
+            </value>
+            <value>
+                <fullName>Crop Insurance Verification</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Crop Insurance Verification</label>
+            </value>
+            <value>
+                <fullName>Cross Default Agreement</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cross Default Agreement</label>
+            </value>
+            <value>
+                <fullName>Debt Verification</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Debt Verification</label>
+            </value>
+            <value>
+                <fullName>Existing MCA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Existing MCA</label>
+            </value>
+            <value>
+                <fullName>Existing PCA Mortgage</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Existing PCA Mortgage</label>
+            </value>
+            <value>
+                <fullName>FSA Conditional Commitment</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>FSA Conditional Commitment</label>
+            </value>
+            <value>
+                <fullName>Hedge Account (Known Account Number)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Hedge Account (Known Account Number)</label>
+            </value>
+            <value>
+                <fullName>Hedge Account (Unknown Account Number)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Hedge Account (Unknown Account Number)</label>
+            </value>
+            <value>
+                <fullName>Manure Easements</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Manure Easements</label>
+            </value>
+            <value>
+                <fullName>Minimum Appraised Value</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Minimum Appraised Value</label>
+            </value>
+            <value>
+                <fullName>Miscellaneous</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Miscellaneous</label>
+            </value>
+            <value>
+                <fullName>New MCA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>New MCA</label>
+            </value>
+            <value>
+                <fullName>Notice of Change</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Notice of Change</label>
+            </value>
+            <value>
+                <fullName>Open Deposit Account</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Open Deposit Account</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>PCA Mortgage</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>PCA Mortgage</label>
+            </value>
+            <value>
+                <fullName>Participant</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Participant</label>
+            </value>
+            <value>
+                <fullName>Payoff Loans</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Payoff Loans</label>
+            </value>
+            <value>
+                <fullName>Perfected Income Assignment</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Perfected Income Assignment</label>
+            </value>
+            <value>
+                <fullName>RFA Approval</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>RFA Approval</label>
+            </value>
+            <value>
+                <fullName>Subordination Needed</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Subordination Needed</label>
+            </value>
+            <value>
+                <fullName>Territorial Concurrence</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Territorial Concurrence</label>
+            </value>
+            <value>
+                <fullName>UCC Filing</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>UCC Filing</label>
+            </value>
+            <value>
+                <fullName>UCC Termination Needed</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>UCC Termination Needed</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Appraisal</controllingFieldValue>
+            <valueName>Appraisal Acknowledgment - Bank</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Appraisal</controllingFieldValue>
+            <valueName>Appraisal Acknowledgment - Bank - CRE Non Owner Occupied</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Appraisal</controllingFieldValue>
+            <valueName>Appraisal Acknowledgment - Client</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Appraisal</controllingFieldValue>
+            <valueName>Satisfactory Appraisal and Review</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Appraisal</controllingFieldValue>
+            <valueName>Satisfactory Internal Evaluation and Review</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Approval Required</controllingFieldValue>
+            <valueName>Closing Loan Package Approved (Pre-Closing Review)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Approval Required</controllingFieldValue>
+            <valueName>Collateral Title Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Approval Required</controllingFieldValue>
+            <valueName>Pledge (Leases, Accounts Receivables, Inventory, etc.)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Insurance</controllingFieldValue>
+            <valueName>Proof of Insurance (Equipment, Vehicle, etc.) Provided</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Insurance</controllingFieldValue>
+            <valueName>Key Man Insurance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Security</controllingFieldValue>
+            <valueName>HMDA Data Collected</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Security</controllingFieldValue>
+            <valueName>Satisfactory Environmental Report</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Security</controllingFieldValue>
+            <valueName>Satisfactory Flood Insurance Coverage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Security</controllingFieldValue>
+            <valueName>Satisfactory Hazard Insurance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Security</controllingFieldValue>
+            <valueName>Satisfactory Title Commitment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Security</controllingFieldValue>
+            <valueName>Property Tax (CRIM)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Verification</controllingFieldValue>
+            <valueName>Open Nave Checking Account</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Verification</controllingFieldValue>
+            <valueName>Open Nave Savings Account</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Miscellaneous</controllingFieldValue>
+            <valueName>Collection(s) Paid and Explanation Provided</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Miscellaneous</controllingFieldValue>
+            <valueName>Debt Schedule Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Miscellaneous</controllingFieldValue>
+            <valueName>Judgment or Lien Paid and Explanation Provided</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Miscellaneous</controllingFieldValue>
+            <valueName>Proof of Sufficient Cash Down</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Miscellaneous</controllingFieldValue>
+            <valueName>Other Legal Documents</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

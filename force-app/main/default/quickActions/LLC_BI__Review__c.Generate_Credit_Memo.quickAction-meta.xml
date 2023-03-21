@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Generates a Review Credit Memo. Added for the Commercial Accelerate project.</description>
+    <height>400</height>
+    <label>Generate Credit Memo</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <page>ReviewCreditMemo</page>
+    <type>VisualforcePage</type>
+    <width>-100</width>
+</QuickAction>

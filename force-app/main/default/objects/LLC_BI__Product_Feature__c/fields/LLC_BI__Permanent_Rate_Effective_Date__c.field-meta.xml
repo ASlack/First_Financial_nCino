@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Permanent_Rate_Effective_Date__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field will be used for Expere Doc Prep, which has not yet been implemented. This field is not required. It is manually populated. It is the day on which the regular interest rate takes effect on a variable rate account having a different/special initial or promotional rate (for example, the date corresponding to the day after expiration of initial rate period for the specified account).</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The day on which the regular interest rate takes effect on a variable rate account having a different/special initial or promotional rate (i.e. the date corresponding to the day after expiration of initial rate period for the specified account).</inlineHelpText>
+    <label>Permanent Rate Effective Date</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

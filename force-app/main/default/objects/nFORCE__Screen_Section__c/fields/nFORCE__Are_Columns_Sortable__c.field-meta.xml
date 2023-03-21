@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Are_Columns_Sortable__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Administrators select this optional boolean field to allow users to sort columns on screen sections. By default, it is false.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select this checkbox to allow users to sort columns on screen sections.</inlineHelpText>
+    <label>Are Columns Sortable</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

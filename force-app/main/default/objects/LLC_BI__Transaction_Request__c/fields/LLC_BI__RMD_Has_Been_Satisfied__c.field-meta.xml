@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__RMD_Has_Been_Satisfied__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is optional. If true, the required minimum distribution (RMD) has been satisfied for the distribution year.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If true the required minimum distribution (RMD) has been satisfied for the distribution year.</inlineHelpText>
+    <label>RMD Has Been Satisfied</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

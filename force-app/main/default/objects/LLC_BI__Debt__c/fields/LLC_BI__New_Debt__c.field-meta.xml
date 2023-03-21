@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__New_Debt__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This optional, admin-facing field auto-populates when a debt is created from a selected pricing option. It is used primarily for auditing purposes.</description>
+    <externalId>false</externalId>
+    <label>New Debt</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

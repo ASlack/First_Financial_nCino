@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__HMDA_Rate_Spread__c</fullName>
+    <deprecated>false</deprecated>
+    <description>--DEPRECATED--This field is optional unless the loan requires HMDA, then it is required. It is manually populated. This field indicates the rate spread which is the difference between the annual percentage rate and average prime offer. The price data takes the form of a &quot;rate spread.&quot; Lenders must report the spread (difference) between the annual percentage rate (APR) on a loan and the rate on treasury securities of comparable maturity—but only for loans with spreads above designated thresholds. So rate spreads are reported for some, but not all, reported home loans. The rate spread, along with Lien Status and HOEPA, help interpret the pricing data.</description>
+    <externalId>false</externalId>
+    <label>-D Rate Spread (##.## format)</label>
+    <precision>4</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

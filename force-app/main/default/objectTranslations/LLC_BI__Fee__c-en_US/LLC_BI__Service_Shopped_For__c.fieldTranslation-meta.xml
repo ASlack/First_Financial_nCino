@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help></help>
+    <label></label>
+    <name>LLC_BI__Service_Shopped_For__c</name>
+    <picklistValues>
+        <masterLabel>Did Not Shop For</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Did Shop For</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

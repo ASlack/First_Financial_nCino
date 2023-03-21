@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Record_Duration_Excluded_Minutes__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is automatically populated via formula. It identifies the number of minutes that have been excluded from the total amount of time spent in a specificed stage due to product state config settings.</description>
+    <externalId>false</externalId>
+    <formula>IF(ISNULL(LLC_BI__End_Time__c),null,IF(LLC_BI__Is_Excluded_From_Stage_Duration__c, LLC_BI__Stage_Duration_Minutes__c - LLC_BI__Stage_Duration_Non_Business_Minutes__c, 0))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Record Duration Excluded Minutes</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

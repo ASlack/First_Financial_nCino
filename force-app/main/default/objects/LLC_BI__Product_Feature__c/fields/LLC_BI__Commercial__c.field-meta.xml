@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Commercial__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field has been deprecated in favor of Is Commercial. It was used as a flag and never had code written around it.</description>
+    <externalId>false</externalId>
+    <label>Commercial</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

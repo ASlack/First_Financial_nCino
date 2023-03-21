@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Payoff_With_Proceeds__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The user manually selects this field to indicate the loan proceeds are used to pay off the debt. By default, it is unchecked.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicate if the loan proceeds are used to pay off the debt.</inlineHelpText>
+    <label>Payoff with Proceeds</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

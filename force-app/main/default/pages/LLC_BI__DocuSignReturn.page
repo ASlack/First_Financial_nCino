@@ -1,0 +1,11 @@
+<apex:page controller="LLC_BI.DocuSignController" 
+	showHeader="false" 
+	sidebar="false"
+	action="{!downloadAndSaveDocs}"> <!-- NOPMD - can not move to constructor - to be resolved in future ticket -->
+	<apex:outputPanel >
+		<p>{!$Label.DocuSign_Request_Completed_Documents}</p>
+    	<script>
+    		window.parent.location='{!JSENCODE(returnUrl)}';
+    	</script>
+    </apex:outputPanel>
+</apex:page>

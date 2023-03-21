@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Pricing_Option_Risk_Assumptions</fullName>
+    <description>This field set contains fields relative to the riskiness of an individual Pricing Option record.</description>
+    <displayedFields>
+        <field>LLC_BI__Risk_Grade__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Pricing Option Risk Assumptions</label>
+</FieldSet>

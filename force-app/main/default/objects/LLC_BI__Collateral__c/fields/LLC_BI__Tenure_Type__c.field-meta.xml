@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Tenure_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The user populates this picklist field to indicate which legal status the applicant uses to occupy the property. By default, it is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field indicates the applicant’s ownership status of the collateral property.</inlineHelpText>
+    <label>Tenure Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Freehold</fullName>
+                <default>false</default>
+                <label>Freehold</label>
+            </value>
+            <value>
+                <fullName>Leasehold</fullName>
+                <default>false</default>
+                <label>Leasehold</label>
+            </value>
+            <value>
+                <fullName>Strata</fullName>
+                <default>false</default>
+                <label>Strata (Condominium)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

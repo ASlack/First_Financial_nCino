@@ -1,0 +1,3 @@
+<apex:page controller="SCOC.CreditReportViewController_v1" sidebar="false" showHeader="false">
+    <iframe type="application/pdf" src="data:application/pdf;base64,{!base64PDF}" title="Credit Report" name="Credit Report" style="width: 100%; height: 100vh; display: inline-block" id="CreditReport"/>
+</apex:page>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Placeholder_Viewer_Groups__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is an optional, semicolon-delimited list that limits the accessibility of a specific document to the public groups added. Access includes the ability to view, download, copy the URL, and track the version history of the document. When left blank, no viewer restrictions are applied based on public groups. This field works in tandem with Placeholder Viewer Roles and Placeholder Viewer Profiles to determine which users can access a document.</description>
+    <externalId>false</externalId>
+    <label>Placeholder Viewer Groups</label>
+    <length>32768</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

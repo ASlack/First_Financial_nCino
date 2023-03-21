@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCOC__DatePaidOut__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The date the account was paid out.</description>
+    <externalId>false</externalId>
+    <label>Date Paid Out</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

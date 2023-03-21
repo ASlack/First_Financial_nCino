@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Description__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It must be manually populated. It is only populated if its associated Risk Grade Factor&apos;s &quot;LLC_BI__Type__c&quot; is &quot;Qualitative&quot;.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field is used when configuring a qualitative criteria.</inlineHelpText>
+    <label>Qualitative Value</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

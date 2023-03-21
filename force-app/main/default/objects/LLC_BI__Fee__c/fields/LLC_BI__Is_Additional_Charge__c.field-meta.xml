@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Is_Additional_Charge__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this optional checkbox field to indicate the fee is included in the additional charge aggregate total. By default, this field is deselected.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This system-populated field indicates the fee is included in the additional charge aggregate total.</inlineHelpText>
+    <label>Is Additional Charge</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

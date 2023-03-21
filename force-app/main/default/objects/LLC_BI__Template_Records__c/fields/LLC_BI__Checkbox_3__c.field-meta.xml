@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Checkbox_3__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The check box option is required and helps to establish a yes/no attribute of the template record. This option is dependent on the category used. In the fee management feature, checkboxes are used to specify if this is a multiple fee (can be applied more than once per loan) as well as whether is it included in APR (No additional functionality built into the APR field yet). It is manually populated.</description>
+    <externalId>false</externalId>
+    <label>Checkbox 3</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

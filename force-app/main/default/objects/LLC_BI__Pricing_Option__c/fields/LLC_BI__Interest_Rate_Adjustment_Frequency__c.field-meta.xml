@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Interest_Rate_Adjustment_Frequency__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this optional field. It is used to specify how often an interest rate will be updated.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The system automatically populates this field. It is used to specify how often an interest rate will be updated.</inlineHelpText>
+    <label>Interest Rate Adjustment Frequency</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Daily</fullName>
+                <default>false</default>
+                <label>Daily</label>
+            </value>
+            <value>
+                <fullName>Every Other Week</fullName>
+                <default>false</default>
+                <label>Every Other Week</label>
+            </value>
+            <value>
+                <fullName>Monthly</fullName>
+                <default>false</default>
+                <label>Monthly</label>
+            </value>
+            <value>
+                <fullName>Payment</fullName>
+                <default>false</default>
+                <label>Payment</label>
+            </value>
+            <value>
+                <fullName>Quarterly</fullName>
+                <default>false</default>
+                <label>Quarterly</label>
+            </value>
+            <value>
+                <fullName>Semiannually</fullName>
+                <default>false</default>
+                <label>Semiannually</label>
+            </value>
+            <value>
+                <fullName>Semimonthly</fullName>
+                <default>false</default>
+                <label>Semimonthly</label>
+            </value>
+            <value>
+                <fullName>Weekly</fullName>
+                <default>false</default>
+                <label>Weekly</label>
+            </value>
+            <value>
+                <fullName>Years</fullName>
+                <default>false</default>
+                <label>Years</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

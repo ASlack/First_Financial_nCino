@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Limit__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional and is populated by an administrator. When used with the appropriate section resources, the numeric value is used to limit the returned records. It may also be used to return offset records when the value of nFORCE__Offset_By_Limit__c field is set to true. The default value is 0 to return all records.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field is optional and is populated by an administrator. When used with the appropriate section resources, the numeric value is used to limit the returned records. The default value is 0 to return all records.</inlineHelpText>
+    <label>Limit</label>
+    <precision>4</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

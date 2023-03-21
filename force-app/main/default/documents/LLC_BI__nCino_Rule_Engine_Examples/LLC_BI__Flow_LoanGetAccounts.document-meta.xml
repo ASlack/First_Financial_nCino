@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>An example implementation that retrieves accounts of a specific type associated with a loan. The flow must be called &apos;LoanGetAccounts&apos; when imported using the Import Tool that is part of the nCino Administration page.</description>
+    <internalUseOnly>true</internalUseOnly>
+    <name>Loan Auto-Decision: 1 - Get Accounts</name>
+    <public>false</public>
+</Document>

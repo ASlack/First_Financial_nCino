@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__State_Income_Withholdings_Indicator__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It indicates if the account holder elects at the time of a specific IRA or other tax-deferred plan distribution to have state income tax withheld.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The account holder elects at the time of a specific IRA or other tax-deferred plan distribution to have state income tax withheld.</inlineHelpText>
+    <label>State Income Withholdings Indicator</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

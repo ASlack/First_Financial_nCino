@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Selected_Scale__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is used to determine to what degree of accuracy should record values be printed or displayed.</description>
+    <externalId>false</externalId>
+    <label>Selected Scale</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>$</fullName>
+                <default>true</default>
+                <label>$</label>
+            </value>
+            <value>
+                <fullName>m</fullName>
+                <default>false</default>
+                <label>m</label>
+            </value>
+            <value>
+                <fullName>mm</fullName>
+                <default>false</default>
+                <label>mm</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

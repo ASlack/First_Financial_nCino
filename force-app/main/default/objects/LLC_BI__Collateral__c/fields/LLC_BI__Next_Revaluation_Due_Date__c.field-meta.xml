@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Next_Revaluation_Due_Date__c</fullName>
+    <deprecated>false</deprecated>
+    <description>A date field used to capture the date the next collateral revaluation is due. This would be entered by the user when a new valuation is entered. No default value.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Next collateral revaluation due date</inlineHelpText>
+    <label>Next Revaluation Due Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

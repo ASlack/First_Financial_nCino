@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Additional_Income_Type_Fields__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The user populates this text field to specify the fieldset name that contains the fields to be collected for this income type.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the name of the fieldset with all necessary fields to be collected for this income type.</inlineHelpText>
+    <label>Additional Income Type Fields</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

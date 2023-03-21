@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Service_Shopped_For</fullName>
+    <active>true</active>
+    <description>User incorrectly populated Service Shopped For picklist.</description>
+    <errorConditionFormula>AND(NOT(ISBLANK(TEXT(LLC_BI__Service_Shopped_For__c))),  NOT(ISPICKVAL(LLC_BI__TRID_Disclosure_Category__c, &apos;Services You Can Shop For&apos;)))</errorConditionFormula>
+    <errorMessage>The Service Shopped For picklist only applies to fees where the TRID Disclosure Category value is Services You Can Shop For.</errorMessage>
+</ValidationRule>

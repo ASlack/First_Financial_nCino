@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Returns the most recent existing valid credit report</description>
+    <internalUseOnly>true</internalUseOnly>
+    <name>Indirect Lending Find Existing Valid Credit Report</name>
+    <public>false</public>
+</Document>

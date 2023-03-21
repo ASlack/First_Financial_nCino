@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Collateral_Affixed_to_a_Permanent_Site__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is optional and manually populated. It is a checkbox used to specify if the piece of collateral in question is affixed to a permanent site.</description>
+    <externalId>false</externalId>
+    <label>Collateral Affixed to a Permanent Site</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

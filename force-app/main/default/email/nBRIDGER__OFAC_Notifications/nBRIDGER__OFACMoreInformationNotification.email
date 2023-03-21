@@ -1,0 +1,7 @@
+<messaging:emailTemplate subject="More Information Needed for OFAC Dispositioning" recipientType="User" relatedToType="nBRIDGER__OFAC_Disposition__c">
+<messaging:htmlEmailBody >
+More information is needed in the OFAC Dispositioning of {!relatedTo.OFAC_Match__r.OFAC_Request__r.Name}. 
+
+See {!relatedTo}
+</messaging:htmlEmailBody>
+</messaging:emailTemplate>

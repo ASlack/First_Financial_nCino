@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Seller_Paid_Fee_Types</fullName>
+    <active>true</active>
+    <description>Users can only add the General Seller Credit as Paid By Seller.</description>
+    <errorConditionFormula>AND (
+					NOT(ISBLANK(TEXT(LLC_BI__Paid_By__c))),
+					NOT(ISPICKVAL(LLC_BI__Paid_By__c, &apos;Seller&apos;)),
+					ISPICKVAL(LLC_BI__Fee_Type__c, &apos;Seller Credit&apos;)
+			)</errorConditionFormula>
+    <errorMessage>The General Seller Credit cannot be paid by the Borrower or Lender. Select Paid By Seller or leave this field blank.</errorMessage>
+</ValidationRule>

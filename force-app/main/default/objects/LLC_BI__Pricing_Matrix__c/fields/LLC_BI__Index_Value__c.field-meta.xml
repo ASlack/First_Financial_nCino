@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Index_Value__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this optional percentage field with information from the Pricing Matrix.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This system-populated field displays the current index value percentage.</inlineHelpText>
+    <label>Index Value</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>4</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

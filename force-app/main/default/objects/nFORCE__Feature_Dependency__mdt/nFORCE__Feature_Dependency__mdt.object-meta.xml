@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>The object defines dependencies that exists between features.</description>
+    <label>Feature Dependency</label>
+    <pluralLabel>Feature Dependencies</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Is_Household_Member__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Administrators manually select this optional field. When enabled, it denotes a connection role as a household member. When disabled, it denotes that the connection role is not a household member. By default, it is disabled.</description>
+    <externalId>false</externalId>
+    <label>Is Household Member</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

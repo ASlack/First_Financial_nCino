@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SIOC__LoggingProvider__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Administrators populate this optional text field with the fully qualified class name that implements the EFPIO.ILoggingProvider_v1 interface. By default, it is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Optional: enter the fully qualified class name that implements the EFPIO.ILoggingProvider_v1 interface. By default, this field is blank.</inlineHelpText>
+    <label>Logging Provider</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

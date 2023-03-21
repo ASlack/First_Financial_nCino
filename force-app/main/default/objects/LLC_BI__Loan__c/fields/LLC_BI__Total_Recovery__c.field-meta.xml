@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Total_Recovery__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is manually populated. This field is used for loans that have been charged off. This field contains the total value of the monies recovered after the charge-off occurred. Used when a loan does not fund fully at closing; the value of this field typically changes as the loan’s funds are incrementally disbursed.</description>
+    <externalId>false</externalId>
+    <label>Total Recoveries</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

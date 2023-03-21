@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Overdraft_Consent_Indicator__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is optional and can be collected as part of a workflow. If true, consent to pay overdrafts out of the account is given.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If true consent to pay overdrafts out of the account is being given.</inlineHelpText>
+    <label>Overdraft Consent Indicator</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

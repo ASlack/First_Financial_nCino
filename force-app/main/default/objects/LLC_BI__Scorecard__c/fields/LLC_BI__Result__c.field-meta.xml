@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Result__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The overall result of the decision. This field is automatically displayed and conditionally rendered based on the configuration set in the Visual Flow Logic. This result will also populate to the loan wall, for additional workflow and configuration options. The results are configurable and controlled through the Visual Flow Logic.</description>
+    <externalId>false</externalId>
+    <label>Result</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Recommend Approval</fullName>
+                <default>false</default>
+                <label>Recommend Approval</label>
+            </value>
+            <value>
+                <fullName>Recommend Decline</fullName>
+                <default>false</default>
+                <label>Recommend Decline</label>
+            </value>
+            <value>
+                <fullName>Manual Review Required</fullName>
+                <default>false</default>
+                <label>Manual Review Required</label>
+            </value>
+            <value>
+                <fullName>Information Required</fullName>
+                <default>false</default>
+                <label>Information Required</label>
+            </value>
+            <value>
+                <fullName>Approved</fullName>
+                <default>false</default>
+                <label>Approved</label>
+            </value>
+            <value>
+                <fullName>Declined</fullName>
+                <default>false</default>
+                <label>Declined</label>
+            </value>
+            <value>
+                <fullName>Error</fullName>
+                <default>false</default>
+                <label>Error</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

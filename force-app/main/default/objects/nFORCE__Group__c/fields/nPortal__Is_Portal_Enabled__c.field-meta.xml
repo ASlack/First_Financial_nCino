@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nPortal__Is_Portal_Enabled__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Indicates if the Group represents a UI for an Online Application in Customer Portal. When this field is marked as true, the associated UI records will be automatically shared with Customer Portal Users.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check this field to allow access to this Group and related records for UI in Customer Portal.</inlineHelpText>
+    <label>Is Portal Enabled</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

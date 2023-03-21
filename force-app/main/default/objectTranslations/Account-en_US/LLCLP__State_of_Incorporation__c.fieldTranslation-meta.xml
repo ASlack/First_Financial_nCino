@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>LLCLP__State_of_Incorporation__c</name>
+    <picklistValues>
+        <masterLabel>AL</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

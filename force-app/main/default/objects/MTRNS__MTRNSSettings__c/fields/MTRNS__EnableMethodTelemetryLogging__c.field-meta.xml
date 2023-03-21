@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MTRNS__EnableMethodTelemetryLogging__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field indicates if method entry and exit telemetry logging is included in the logs. The Org Default should be false. To grant this ability, add a custom setting per user or profile.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field indicates if method entry and exit telemetry logging is included in the logs. The Org Default should be false. To grant this ability, add a custom setting per user or profile.</inlineHelpText>
+    <label>Enable Method Telemetry Logging</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

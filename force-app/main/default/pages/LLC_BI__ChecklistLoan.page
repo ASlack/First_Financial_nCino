@@ -1,0 +1,9 @@
+<apex:page docType="html-5.0"
+	showHeader="false"
+	sidebar="false"
+	applyHtmlTag="false"
+	standardStylesheets="false"
+	standardController="LLC_BI__Loan__c"
+	extensions="LLC_BI.ChecklistRouter">
+	<apex:include pageName="{!pageName}"/> 
+</apex:page>

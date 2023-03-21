@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Category__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional, but required for deposit product types. It is manually populated. This field is used to specify the type of account that this product type relates to.</description>
+    <externalId>false</externalId>
+    <label>Category</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Checking</fullName>
+                <default>false</default>
+                <label>Checking</label>
+            </value>
+            <value>
+                <fullName>Savings</fullName>
+                <default>false</default>
+                <label>Savings</label>
+            </value>
+            <value>
+                <fullName>Certificate of Deposit</fullName>
+                <default>false</default>
+                <label>Certificate of Deposit</label>
+            </value>
+            <value>
+                <fullName>CESA</fullName>
+                <default>false</default>
+                <label>CESA</label>
+            </value>
+            <value>
+                <fullName>HSA</fullName>
+                <default>false</default>
+                <label>HSA</label>
+            </value>
+            <value>
+                <fullName>IRA</fullName>
+                <default>false</default>
+                <label>IRA</label>
+            </value>
+            <value>
+                <fullName>Money Market</fullName>
+                <default>false</default>
+                <label>Money Market</label>
+            </value>
+            <value>
+                <fullName>HELOC</fullName>
+                <default>false</default>
+                <label>HELOC</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

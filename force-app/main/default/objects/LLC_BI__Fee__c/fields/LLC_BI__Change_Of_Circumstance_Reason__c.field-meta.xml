@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Change_Of_Circumstance_Reason__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Users populate this optional picklist field to indicate the change of circumstance reason for the fee. By default, this field is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the change of circumstance reason for the fee.</inlineHelpText>
+    <label>Change of Circumstance Reason</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Changed Circumstance Affecting Settlement Costs</fullName>
+                <default>false</default>
+                <label>Changed Circumstance Affecting Settlement Costs</label>
+            </value>
+            <value>
+                <fullName>Changed Circumstance Affecting Eligibility</fullName>
+                <default>false</default>
+                <label>Changed Circumstance Affecting Eligibility</label>
+            </value>
+            <value>
+                <fullName>Borrower Requested Revisions</fullName>
+                <default>false</default>
+                <label>Borrower Requested Revisions</label>
+            </value>
+            <value>
+                <fullName>Loan Estimate Expiration</fullName>
+                <default>false</default>
+                <label>Loan Estimate Expiration</label>
+            </value>
+            <value>
+                <fullName>Interest Rate Locked</fullName>
+                <default>false</default>
+                <label>Interest Rate Locked</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

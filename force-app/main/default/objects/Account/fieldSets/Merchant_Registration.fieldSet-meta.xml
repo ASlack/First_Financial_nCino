@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Merchant_Registration</fullName>
+    <description>Merchant Registration Number - for use in online application when address is in PR</description>
+    <displayedFields>
+        <field>Merchant_Registration_Number_SURI_Numbe__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>true</isRequired>
+    </displayedFields>
+    <label>Merchant Registration</label>
+</FieldSet>

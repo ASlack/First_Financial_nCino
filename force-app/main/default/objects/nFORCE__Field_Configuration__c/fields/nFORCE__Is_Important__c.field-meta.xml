@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Is_Important__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This optional field is a manually populated checkbox on the Field Configuration object. When selected, an icon will display beside the associated field on the Snapshot report.</description>
+    <externalId>false</externalId>
+    <label>Is Important</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

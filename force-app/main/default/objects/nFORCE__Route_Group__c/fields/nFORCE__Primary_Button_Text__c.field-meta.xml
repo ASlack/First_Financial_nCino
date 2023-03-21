@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Primary_Button_Text__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Administrators populate this text field to use custom text on the Continue button in Online Application.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter a label for the Continue button.</inlineHelpText>
+    <label>Primary Button Text</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

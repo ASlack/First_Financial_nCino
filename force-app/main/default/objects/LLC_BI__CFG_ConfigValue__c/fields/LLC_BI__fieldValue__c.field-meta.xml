@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__fieldValue__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This is a deprecated value due to it being too short. We added keyValue for longer values.</description>
+    <externalId>false</externalId>
+    <label>fieldValue</label>
+    <length>32768</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>2</visibleLines>
+</CustomField>

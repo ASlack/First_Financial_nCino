@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Grants a user the ability to view and use Bulk Field Updates if configured.</description>
+    <isLicensed>false</isLicensed>
+    <label>Bulk Field Updates User Access</label>
+</CustomPermission>

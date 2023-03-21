@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Encrypt_Dynamic_Configuration__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Administrators populate this optional checkbox field that, when set to true, encrypts the dynamic configuration provided at runtime for the business process interaction. The default is false.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select to encrypt the dynamic configuration provided at runtime for the business process interaction.</inlineHelpText>
+    <label>Encrypt Dynamic Configuration</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Initial_Interest_Rate_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field will be used for Expere Doc Prep, which has not yet been implemented. This field is not required. It is manually populated. It specifies what kind of rate is used to determine the initial rate of interest on the account.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Specifies what kind of rate is used to determine the initial rate of interest on the account.</inlineHelpText>
+    <label>Initial Interest Rate Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Fixed</fullName>
+                <default>false</default>
+                <label>Fixed</label>
+            </value>
+            <value>
+                <fullName>Variable</fullName>
+                <default>false</default>
+                <label>Variable</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

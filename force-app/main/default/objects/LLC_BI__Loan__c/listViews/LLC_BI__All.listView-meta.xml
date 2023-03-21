@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__All</fullName>
+    <columns>NAME</columns>
+    <columns>LLC_BI__lookupKey__c</columns>
+    <columns>LLC_BI__Amount__c</columns>
+    <columns>LLC_BI__Account__c</columns>
+    <columns>LLC_BI__Product_Line__c</columns>
+    <columns>LLC_BI__Product_Type__c</columns>
+    <columns>LLC_BI__Product__c</columns>
+    <columns>LLC_BI__InterestRate__c</columns>
+    <columns>LLC_BI__Risk_Grade__c</columns>
+    <columns>LLC_BI__Stage__c</columns>
+    <columns>LLC_BI__Status__c</columns>
+    <columns>LLC_BI__CloseDate__c</columns>
+    <columns>LLC_BI__Is_Booked__c</columns>
+    <columns>LLC_BI__Default_App__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

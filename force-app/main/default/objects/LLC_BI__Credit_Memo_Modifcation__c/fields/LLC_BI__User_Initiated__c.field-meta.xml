@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__User_Initiated__c</fullName>
+    <defaultValue>true</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is automatically set and is used to indicate if the Memo was initiated by a user. If the Memo was initiated via an automated process, then the value will be set to false and the record will be excluded from user initiated Memo restrictions.</description>
+    <externalId>false</externalId>
+    <label>User_Initiated</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

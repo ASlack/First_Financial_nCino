@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help></help>
+    <label></label>
+    <name>LLC_BI__CRA_Affiliate__c</name>
+    <picklistValues>
+        <masterLabel>1 - Action taken at this institution</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2 - Action taken at an affiliate</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

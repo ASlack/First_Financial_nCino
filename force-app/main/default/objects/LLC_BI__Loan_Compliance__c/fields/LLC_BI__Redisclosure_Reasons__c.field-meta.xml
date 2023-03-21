@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Redisclosure_Reasons__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this optional multi-select picklist to indicate the reason the loan may require redisclosure. By default, the picklist value is null.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This system-populated multi-select picklist indicates the reason the loan may require redisclosure.</inlineHelpText>
+    <label>Redisclosure Reasons</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Rate Lock</fullName>
+                <default>false</default>
+                <label>Rate Lock</label>
+            </value>
+            <value>
+                <fullName>Tolerance Violation</fullName>
+                <default>false</default>
+                <label>Tolerance Violation</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

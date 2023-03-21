@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EXUS__StoreRequests__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The administrator toggles this optional textbox to configure whether or not the request is stored.</description>
+    <externalId>false</externalId>
+    <label>Store Requests</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

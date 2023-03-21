@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Cost_Of_Equity_Kd__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is derived by a Financial Institution&apos;s internal models. It is the cost that represents the compensation the market demands in exchange for owning the asset before taking taxes into account.</description>
+    <externalId>false</externalId>
+    <label>Cost of Debt (Kd)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

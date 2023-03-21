@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__UI_HMDA_Action_Taken</fullName>
+    <description>This fields set is used in the HMDA Loan Information section of the new UI.</description>
+    <displayedFields>
+        <field>LLC_BI__HMDA_Action_Taken__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>LLC_BI__HMDA_Date_Action_Taken__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>UI HMDA Action Taken</label>
+</FieldSet>

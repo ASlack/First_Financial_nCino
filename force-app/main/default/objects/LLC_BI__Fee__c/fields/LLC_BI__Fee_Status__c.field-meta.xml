@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Fee_Status__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system autopopulates this formula field to indicate whether the user has edited the amount of the the pricing option fee relative to the loan or if the user added a fee. By default, it is blank</description>
+    <externalId>false</externalId>
+    <formula>IF(AND(ISPICKVAL(LLC_BI__Status__c ,&apos;Inactive&apos;), NOT ISBLANK(LLC_BI__Pricing_Option__c)), IF(ISBLANK(LLC_BI__Fee__c), $Label.LLC_BI__Fee_Added, IF(LLC_BI__Amount__c=LLC_BI__Fee__r.LLC_BI__Amount__c, NULL, $Label.LLC_BI__Fee_Edited)), NULL)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Fee Status</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

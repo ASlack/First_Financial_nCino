@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Selected__c</fullName>
+    <defaultValue>true</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this required boolean field to determine which entities display in the Financial Consolidation. When the value is true, the entity displays.</description>
+    <externalId>false</externalId>
+    <label>Selected</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,1 @@
+{!LLC_BI__Loan__c.Name} has had its stage changed to {!LLC_BI__Loan__c.LLC_BI__Stage__c} and its status to {!LLC_BI__Loan__c.LLC_BI__Status__c} for Loan Officer: {!LLC_BI__Loan__c.LLC_BI__Loan_Officer__c}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Original_LTV__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is automatically populated via trigger. It stores the LLC_BI__Current_LTV__c value at the time the loan is booked.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The value comes from the Current LTV at the time the loan hits booked. This value is populated by the system.</inlineHelpText>
+    <label>Original LTV</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Percent</type>
+</CustomField>

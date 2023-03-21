@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Edit_Rent_Roll_Modal</fullName>
+    <availableFields>
+        <field>LLC_BI__Selected__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <availableFields>
+        <field>LLC_BI__Type__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <description>The system displays the fields in this field set when users edit an existing Rent Roll.</description>
+    <displayedFields>
+        <field>LLC_BI__Name_Override__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Edit Rent Roll Modal</label>
+</FieldSet>

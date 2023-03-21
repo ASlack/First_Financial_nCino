@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Participation_Date__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is manually populated. It is specific to SBA or participated loans. It contains the date that the loan was participated out to an additional lending institution. (Participation means that multiple lending institutions are involved. The participation date is the day that the other lending institution’s participation was effective. This could be at closing or it could be later.)</description>
+    <externalId>false</externalId>
+    <label>Participation Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

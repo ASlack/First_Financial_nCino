@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Balloon_Loan_terms_cannot_be_blank</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(LLC_BI__Balloon__c = true, NOT(ISPICKVAL(LLC_BI__Balloon_Product_Structure__c, &apos;&apos;)),
+            OR(ISCHANGED(LLC_BI__Amortized_Term_Months__c), ISCHANGED(LLC_BI__Term_Months__c)),
+            OR(ISBLANK(LLC_BI__Amortized_Term_Months__c), ISBLANK(LLC_BI__Term_Months__c)))</errorConditionFormula>
+    <errorMessage>You must input values for Loan Term and Amortized Term.</errorMessage>
+</ValidationRule>

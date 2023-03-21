@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nPortal__OA_Account_Funding_Subheader__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Administrators populate this string field with the subheader text for the Account Funding route.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter subheader text for the Account Funding route.</inlineHelpText>
+    <label>OA Account Funding Subheader</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Reciprocal_Role__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field is used to specify the role associated directly to a connection role. When a connection role is chosen, the reciprocal role will auto-populate to establish the capacity in which the two relationships are connected.</description>
+    <externalId>false</externalId>
+    <label>Reciprocal Role</label>
+    <referenceTo>LLC_BI__Connection_Role__c</referenceTo>
+    <relationshipLabel>Reciprocated Roles</relationshipLabel>
+    <relationshipName>Reciprocated_Roles</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

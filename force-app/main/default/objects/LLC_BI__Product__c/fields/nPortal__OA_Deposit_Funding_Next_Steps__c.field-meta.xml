@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nPortal__OA_Deposit_Funding_Next_Steps__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Use this rich text field to configure the deposit funding next steps message when trial deposits have been initiated.</description>
+    <externalId>false</externalId>
+    <label>OA Deposit Funding Next Steps</label>
+    <length>131072</length>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

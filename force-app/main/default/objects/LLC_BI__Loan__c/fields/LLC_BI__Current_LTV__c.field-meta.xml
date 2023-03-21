@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Current_LTV__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is automatically populated via a formula. It stores the current LTV of the loan based on its Collateral Mgmt records. If the Product Feature is NOT a Line of Credit, or if the Product Feature does not exist, this is the formula: (Principal Balance + Total Prior Lien Amount from all Collateral)/ Collateral Value from all Collateral. If the Product Feature is a Line of Credit, this is the formula: Original Loan Amount / (Collateral Value from all Collateral - Total Prior Lien Amount from all Collateral)</description>
+    <externalId>false</externalId>
+    <formula>IF(LLC_BI__Total_Collateral_Value__c - LLC_BI__Total_Superior_Lien_Amount__c == 0, 0, IF( (LLC_BI__Product_Reference__r.LLC_BI__Product_Feature__c != null &amp;&amp; LLC_BI__Product_Reference__r.LLC_BI__Product_Feature__r.LLC_BI__Line_Of_Credit__c == true) || NOT(LLC_BI__Is_Booked__c) ,(LLC_BI__Amount__c + LLC_BI__Total_Superior_Lien_Amount__c) / LLC_BI__Total_Collateral_Value__c, (LLC_BI__Principal_Balance__c + LLC_BI__Total_Superior_Lien_Amount__c) / LLC_BI__Total_Collateral_Value__c))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Principal Balance or Loan Amount / (Collateral Value from all Collateral - Total Prior Lien Amount from all Collateral)</inlineHelpText>
+    <label>Current LTV</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Percent</type>
+</CustomField>

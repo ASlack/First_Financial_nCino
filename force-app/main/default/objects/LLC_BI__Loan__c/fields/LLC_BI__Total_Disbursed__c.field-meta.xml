@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Total_Disbursed__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is manually populated. This field contains the total amount of funds that have been disbursed for this loan. This field is used when a loan does not fund fully at closing; the value in this field typically changes as the loan’s funds are incrementally disbursed.</description>
+    <externalId>false</externalId>
+    <label>Total Disbursed</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

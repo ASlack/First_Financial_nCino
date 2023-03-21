@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Default_Rendered__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is optional and is used by Credit Memo framework. The default value is false. When this value is set to true, the section is rendered by default. When this value is set to false, the section is show as minimized with header only and the user must click on View More link to render the entire section.</description>
+    <externalId>false</externalId>
+    <label>Default Rendered</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

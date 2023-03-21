@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Current_Debt_Service__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is populated automatically via the debt schedule in the spreading app. This field stores the annualized monthly payment amount for current loans for all entity involvements on the loan.</description>
+    <externalId>false</externalId>
+    <formula>LLC_BI__Primary_Current_Debt_Service__c+LLC_BI__Guarantor_Current_Debt_Service__c+LLC_BI__Rel_Entity_Current_Debt_Service__c+LLC_BI__CoBorrower_Current_Debt_Service__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Total Current Debt Service</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

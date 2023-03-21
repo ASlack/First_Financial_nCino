@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCOC__ScoreSign__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Score Sign</description>
+    <externalId>false</externalId>
+    <label>Score Sign</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

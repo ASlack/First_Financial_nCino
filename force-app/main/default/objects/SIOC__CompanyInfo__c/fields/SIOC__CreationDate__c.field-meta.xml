@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SIOC__CreationDate__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Date company was created, e.g. Incorporation date.</description>
+    <externalId>false</externalId>
+    <label>Creation Date</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

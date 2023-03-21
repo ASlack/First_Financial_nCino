@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cm_Conversion_Complete__c</fullName>
+    <description>Used to indicate when an Opportunity has been successfully converted. Added for the Commercial Accelerate project.</description>
+    <externalId>false</externalId>
+    <formula>IF(NOT(ISBLANK(LLC_BI__Converted_Date__c)),
+True,
+False)</formula>
+    <label>Conversion Complete</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

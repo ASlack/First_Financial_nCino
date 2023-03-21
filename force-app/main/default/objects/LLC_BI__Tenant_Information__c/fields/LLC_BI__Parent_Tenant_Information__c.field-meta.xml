@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Parent_Tenant_Information__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Recursive lookup to signify non-primary scenario</description>
+    <externalId>false</externalId>
+    <label>Parent Tenant Information</label>
+    <referenceTo>LLC_BI__Tenant_Information__c</referenceTo>
+    <relationshipLabel>Tenant Information</relationshipLabel>
+    <relationshipName>Child_Tenant_Information</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Instructions_Text__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional and is used by Credit Memo framework. The default value is empty. The administrator may use this field to display instructions on credit memo view. These instructions will not be included in PDF export.</description>
+    <externalId>false</externalId>
+    <label>Instructions</label>
+    <length>32768</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>20</visibleLines>
+</CustomField>

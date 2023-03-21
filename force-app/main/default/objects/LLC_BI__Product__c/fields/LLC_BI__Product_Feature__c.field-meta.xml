@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Product_Feature__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field is optional and is manually populated. This field is a lookup used to associate a product feature to the product. A product feature is used to attach attributes to the product.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>After changing this field, go to the nCino Administration tab then run Install Updates and Install Batch Updates if this product is related to existing loans.</inlineHelpText>
+    <label>Product Feature</label>
+    <referenceTo>LLC_BI__Product_Feature__c</referenceTo>
+    <relationshipLabel>Products</relationshipLabel>
+    <relationshipName>Products</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

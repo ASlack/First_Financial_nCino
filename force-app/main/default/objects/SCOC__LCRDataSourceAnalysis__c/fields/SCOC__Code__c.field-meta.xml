@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCOC__Code__c</fullName>
+    <deprecated>false</deprecated>
+    <description>DataSourceAnalysis Code.</description>
+    <externalId>false</externalId>
+    <label>DataSource Code</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>DB</fullName>
+                <default>false</default>
+                <label>Dunn &amp; BradStreet</label>
+            </value>
+            <value>
+                <fullName>EFU</fullName>
+                <default>false</default>
+                <label>Equifax</label>
+            </value>
+            <value>
+                <fullName>XPN</fullName>
+                <default>false</default>
+                <label>Experian</label>
+            </value>
+            <value>
+                <fullName>XPB</fullName>
+                <default>false</default>
+                <label>Experian (Business)</label>
+            </value>
+            <value>
+                <fullName>TU</fullName>
+                <default>false</default>
+                <label>TransUnion</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

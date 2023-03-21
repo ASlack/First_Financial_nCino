@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Portal</fullName>
+    <columns>NAME</columns>
+    <columns>nFORCE__Category_Name__c</columns>
+    <columns>nFORCE__Key__c</columns>
+    <columns>nFORCE__Value__c</columns>
+    <columns>nFORCE__Description__c</columns>
+    <columns>nFORCE__Is_Active__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>nFORCE__Category_Name__c</field>
+        <operation>equals</operation>
+        <value>CUSTOMER_PORTAL</value>
+    </filters>
+    <label>Customer Portal</label>
+    <language>en_US</language>
+</ListView>

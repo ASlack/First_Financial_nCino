@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Cost_To_Cure__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this currency field to indicate the refund of fees paid in excess of the actual amount. By default, this field is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field indicates the refund of fees paid in excess of the actual amount.</inlineHelpText>
+    <label>Cost to Cure</label>
+    <precision>16</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Floor_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Users or an integration manually populate this picklist field to identify a property’s floor type for the real estate collateral record.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the property’s floor type from the picklist.</inlineHelpText>
+    <label>Floor Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ceramic Tile</fullName>
+                <default>false</default>
+                <label>Ceramic Tile</label>
+            </value>
+            <value>
+                <fullName>Porcelain Tile</fullName>
+                <default>false</default>
+                <label>Porcelain Tile</label>
+            </value>
+            <value>
+                <fullName>Floating Wood Tile</fullName>
+                <default>false</default>
+                <label>Floating Wood Tile</label>
+            </value>
+            <value>
+                <fullName>Carpet</fullName>
+                <default>false</default>
+                <label>Carpet</label>
+            </value>
+            <value>
+                <fullName>Hardwood</fullName>
+                <default>false</default>
+                <label>Hardwood</label>
+            </value>
+            <value>
+                <fullName>Engineered Wood</fullName>
+                <default>false</default>
+                <label>Engineered Wood</label>
+            </value>
+            <value>
+                <fullName>Bamboo</fullName>
+                <default>false</default>
+                <label>Bamboo</label>
+            </value>
+            <value>
+                <fullName>Cork</fullName>
+                <default>false</default>
+                <label>Cork</label>
+            </value>
+            <value>
+                <fullName>Stone</fullName>
+                <default>false</default>
+                <label>Stone</label>
+            </value>
+            <value>
+                <fullName>Vinyl</fullName>
+                <default>false</default>
+                <label>Vinyl</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

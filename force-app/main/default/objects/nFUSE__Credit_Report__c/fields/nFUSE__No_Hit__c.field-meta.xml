@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFUSE__No_Hit__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The system automatically selects this checkbox field to indicate that the vendor database was not able to retrieve credit bureau information for an applicant. By default, this field is deselected.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field indicates if the vendor database retrieved an applicant&apos;s Credit Bureau information successfully.</inlineHelpText>
+    <label>No Hit</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

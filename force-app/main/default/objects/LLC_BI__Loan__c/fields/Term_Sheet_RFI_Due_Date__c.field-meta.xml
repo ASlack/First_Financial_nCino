@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Term_Sheet_RFI_Due_Date__c</fullName>
+    <description>This field tracks when term sheet/RFI is due.</description>
+    <externalId>false</externalId>
+    <formula>Term_Sheet_RFI_Date__c + 14</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Deadline for the client to submit the requested information and documentation</inlineHelpText>
+    <label>Term Sheet/RFI Due Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

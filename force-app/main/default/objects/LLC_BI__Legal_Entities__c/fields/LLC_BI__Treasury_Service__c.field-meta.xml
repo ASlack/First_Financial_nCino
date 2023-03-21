@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Treasury_Service__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It automatically populates when a user creates an entity involvement from a treasury service. It is also populated when a user creates a new treasury service from a relationship. This field specifies the treasury service associated with the entity involvement. By also associating the entity involvement to a relationship, it allows a user to associate a treasury service and relationship together.</description>
+    <externalId>false</externalId>
+    <label>Treasury Service</label>
+    <referenceTo>LLC_BI__Treasury_Service__c</referenceTo>
+    <relationshipLabel>Entity Involvements</relationshipLabel>
+    <relationshipName>Entity_Involvements</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

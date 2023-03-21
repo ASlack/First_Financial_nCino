@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SESOC__Datetime_of_Completion__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this datetime field to track the time the recipient completed the E-Signature ceremony. By default, it is blank.</description>
+    <externalId>false</externalId>
+    <label>Date/Time of Completion</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

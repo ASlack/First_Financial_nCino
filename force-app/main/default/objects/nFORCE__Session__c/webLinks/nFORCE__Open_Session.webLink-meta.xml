@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Open_Session</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Open Session</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>/apex/{!nFORCE__Session__c.nFORCE__Context_Page__c}?sid={!nFORCE__Session__c.Id}</url>
+</WebLink>

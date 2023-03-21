@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__sObject_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is required. The admin manually populates it. This field specifies the object the screen section displays information on. Additional child or parent objects of the object can also be used to display data by using the Layout Builder tool.</description>
+    <externalId>false</externalId>
+    <label>sObject Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Account</fullName>
+                <default>false</default>
+                <label>Account</label>
+            </value>
+            <value>
+                <fullName>LLC_BI__Loan__c</fullName>
+                <default>false</default>
+                <label>LLC_BI__Loan__c</label>
+            </value>
+            <value>
+                <fullName>LLC_BI__Review__c</fullName>
+                <default>false</default>
+                <label>LLC_BI__Review__c</label>
+            </value>
+            <value>
+                <fullName>LLC_BI__Product_Package__c</fullName>
+                <default>false</default>
+                <label>LLC_BI__Product_Package__c</label>
+            </value>
+            <value>
+                <fullName>LLC_BI__Loan_Collateral2__c</fullName>
+                <default>false</default>
+                <label>LLC_BI__Loan_Collateral2__c</label>
+            </value>
+            <value>
+                <fullName>Contact</fullName>
+                <default>false</default>
+                <label>Contact</label>
+            </value>
+            <value>
+                <fullName>LLC_BI__Fee__c</fullName>
+                <default>false</default>
+                <label>LLC_BI__Fee__c</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

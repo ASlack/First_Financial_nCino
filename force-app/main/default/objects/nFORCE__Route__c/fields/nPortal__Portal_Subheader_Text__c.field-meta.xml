@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nPortal__Portal_Subheader_Text__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Subheader text that appears beneath the external header for a route in Customer Portal when displaying a Route to external users.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter a textual description of this route which will be displayed beneath the external header message to users in Customer Portal.</inlineHelpText>
+    <label>Portal Subheader Text</label>
+    <length>32000</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

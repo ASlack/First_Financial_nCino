@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__HMDA_Denial_Reasons__c</fullName>
+    <deprecated>false</deprecated>
+    <description>--DEPRECATED-- This field is optional unless the loan requires HMDA, then it is required. It is manually populated. This field indicates the principal reason, or reasons, for denial.  You may enter up to three (3) applicable codes.</description>
+    <externalId>false</externalId>
+    <label>-D Denial Reasons (Select up to three)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Code 1—Debt-to-income ratio</fullName>
+                <default>false</default>
+                <label>Code 1—Debt-to-income ratio</label>
+            </value>
+            <value>
+                <fullName>Code 2—Employment history</fullName>
+                <default>false</default>
+                <label>Code 2—Employment history</label>
+            </value>
+            <value>
+                <fullName>Code 3—Credit history</fullName>
+                <default>false</default>
+                <label>Code 3—Credit history</label>
+            </value>
+            <value>
+                <fullName>Code 4—Collateral</fullName>
+                <default>false</default>
+                <label>Code 4—Collateral</label>
+            </value>
+            <value>
+                <fullName>Code 5—Insufficient cash</fullName>
+                <default>false</default>
+                <label>Code 5—Insufficient cash</label>
+            </value>
+            <value>
+                <fullName>Code 6—Unverifiable information</fullName>
+                <default>false</default>
+                <label>Code 6—Unverifiable information</label>
+            </value>
+            <value>
+                <fullName>Code 7—Credit application incomplete</fullName>
+                <default>false</default>
+                <label>Code 7—Credit application incomplete</label>
+            </value>
+            <value>
+                <fullName>Code 8—Mortgage insurance denied</fullName>
+                <default>false</default>
+                <label>Code 8—Mortgage insurance denied</label>
+            </value>
+            <value>
+                <fullName>Code 9—Other</fullName>
+                <default>false</default>
+                <label>Code 9—Other</label>
+            </value>
+            <value>
+                <fullName>Withdrawn or closed for incompleteness</fullName>
+                <default>false</default>
+                <label>Withdrawn or closed for incompleteness</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

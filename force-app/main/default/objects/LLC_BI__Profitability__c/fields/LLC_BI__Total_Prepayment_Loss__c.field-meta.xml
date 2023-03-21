@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Total_Prepayment_Loss__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this optional field that represents the amount of money that a lender could potentially lose based on the potential interest income lost and the potential loss recovered from an incurred prepayment penalty.</description>
+    <externalId>false</externalId>
+    <label>Total Prepayment Loss</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

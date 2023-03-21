@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Is_External__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional and auto-populates. This field indicates that the file associated with this document store is not stored in Salesforce and is stored in an external system.</description>
+    <externalId>false</externalId>
+    <formula>AND(IF(ISPICKVAL(LLC_BI__Type__c, &apos;Salesforce Attachment&apos;),false,true),NOT(ISPICKVAL(LLC_BI__Type__c, &quot;&quot;)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Is External</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

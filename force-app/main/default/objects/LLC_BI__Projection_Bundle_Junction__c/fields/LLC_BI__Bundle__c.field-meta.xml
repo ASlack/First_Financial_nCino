@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Bundle__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this required lookup field with the Underwriting Bundle associated with the Projections Template.</description>
+    <externalId>false</externalId>
+    <label>Bundle</label>
+    <referenceTo>LLC_BI__Underwriting_Bundle__c</referenceTo>
+    <relationshipLabel>Projection Bundle Junctions</relationshipLabel>
+    <relationshipName>Projection_Bundle_Junctions</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help></help>
+    <label></label>
+    <name>nFORCE__Orchestration_Type__c</name>
+    <picklistValues>
+        <masterLabel>Multiple Transactions (Queued)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Multiple Transactions (UI Orchestrated)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Single Transaction</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,188 @@
+<apex:page controller="NDOC.UniversalDocManController" extensions="NDOC.PlaceholderDataController">
+	<div class="row expandedPlaceholderContainer">
+		<div class="col-sm-3 no-gutter">
+			<div
+				class="file-dropzone"
+				rightnavcontroller="vm"
+				has-permission="controller.hasEditAccess(placeholder)">
+				<img
+					alt="{!$Label.Preview}"
+					ng-src="{{placeholder.file.previewLink}}"
+					ng-show="placeholder.file.previewLink != '' && placeholder.file.previewLoaded
+						&& !controller.selectedPlaceholder.file.previewUnavailable
+						&& controller.permissionService.hasRequiredViewerAccess(placeholder)"
+					class="image-on-load imagePreview"
+					placeholder="placeholder"
+					has-permission="controller.permissionService.hasEditAfterApprovalPermission('UNI_EDIT_DETAILS', placeholder.status)"
+					has-view-permission="controller.permissionService.hasRequiredViewerAccess(placeholder)"
+					ng-class="{'clickFocus' : !controller.selectedPlaceholder.file.previewUnavailable &&
+					!controller.selectedPlaceholder.isDocumentExternal}"
+					id="ext-gen7" />
+				<div class="previewUnavailableBox"
+					  ng-show="placeholder.file.previewLink != '' && (controller.selectedPlaceholder.file.previewUnavailable
+							|| (!controller.selectedPlaceholder.file.previewUnavailable
+								&& !controller.permissionService.hasRequiredViewerAccess(placeholder)))">
+					<div class="slds-p-around--xxx-small slds-text-align--center previewUnavailableText">
+						<span ng-if="controller.permissionService.hasRequiredViewerAccess(placeholder)">
+							{{::controller.labels.PREVIEW_UNAVAILABLE}}
+						</span>
+						<span ng-if="!controller.permissionService.hasRequiredViewerAccess(placeholder)">
+							{{::controller.labels.VIEW_DENIED}}
+						</span>
+					</div>
+				</div>
+			</div>
+			<div
+				ng-if="placeholder.file.previewLink == ''"
+				class="col-sm-12 placeholderDropAndBrowse file-dropzone"
+				has-permission="controller.permissionService.hasEditAfterApprovalPermission('UNI_EDIT_DETAILS', placeholder.status)">
+				<span>
+					<span class="slds-text-heading--small">
+						{!$Label.Drag_And_Drop}
+					</span>
+					<br/><br/>
+					{!$Label.Drop_File}
+					<span id="upload_link{{::$index}}-container">
+						<a
+							href="#"
+							class="uniBrowse"
+							uni-has-permission="UNI_EDIT_DETAILS"
+							placeholder="placeholder"
+							id="upload_link{{::$index}}"
+							role="button">
+							{!$Label.Browse}
+						</a>​
+						<input
+							type="file"
+							name="files"
+							id="upload_link{{::$index}}-input"
+							class="disabledAction"
+							/>
+					</span>
+				</span>
+			</div>
+			<div
+				ng-if="!placeholder.file.previewLoaded"
+				loading-spinner="3"
+				class="center-block">
+				<div class="vumeter">
+					<div class="rect1"></div>
+					<div class="rect2"></div>
+					<div class="rect3"></div>
+					<div class="rect4"></div>
+				</div>
+			</div>
+			<div
+				class="paddingTop10 truncate"
+				ng-bind="placeholder.file.Title + ' ' + controller.formatContentSize(placeholder.file.Size)"/>
+		</div>
+		
+		<div class="col-sm-9">
+			<div class="slds-grid">
+				<div class="slds-col slds-size--10-of-12 ssfbContainer">
+					<message></message>
+					<div ng-repeat="section in controller.screenSections">
+						<div
+							ng-if="controller.shouldShowHeader(section.Id)"
+							class="slds-m-bottom--medium"
+						>
+							<span class="slds-text-heading--small">{{section.Name}}</span>
+						</div>
+						<nc-screen-section-form-builder
+							section-id="{{::section.Id}}"
+							guid="{{::section.Id}}-{!guid}"
+							context-id="{{controller.selectedPlaceholder.recordId}}"
+							is-preview="false"
+							custom-fields="controller.getCustomFields()"
+							post-load="controller.postLoad()"
+						>
+						</nc-screen-section-form-builder>
+						
+						<br ng-show="controller.selectedPlaceholder.isEditing" />
+						<br ng-show="controller.selectedPlaceholder.isEditing" />
+					</div> 
+				</div>
+
+				<div class="slds-col slds-size--2-of-12">
+					<div class="slds-float--right" ng-if="controller.isEditVisible">
+						<button
+							type="button"
+							class="slds-button slds-button--neutral"
+							ng-click="controller.showEditDetails(controller.selectedPlaceholder)"
+							ng-disabled="!controller.hasEditAccess(placeholder, true)" >
+							{!$Label.Edit_Details}
+						</button>
+					</div>
+					<div class="slds-float--right" ng-if="controller.isCancelVisible || controller.isSaveVisible">
+						<button
+							type="button"
+							class="slds-button slds-m-right--small"
+							ng-click="controller.cancelEditDetails()"
+							ng-if="controller.isCancelVisible" >
+							{!$Label.Cancel}
+						</button>
+						<button
+							type="button"
+							class="slds-button slds-button--brand"
+							ng-click="controller.ssfbSave(controller.selectedPlaceholder)"
+							ng-if="controller.isSaveVisible" >
+							{!$Label.Save}
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<div
+		class="row"
+		ng-show="!controller.selectedPlaceholder.isEditing">
+		<div class="col-sm-12">
+			<button
+				ng-if="controller.permissionService.hasRequiredViewerAccess(placeholder) &&
+					controller.placeholderService.placeholderHasFileOrExternal(placeholder)"
+				class="slds-button clickFocus slds-float--left slds-p-horizontal--x-small"
+				ng-click="controller.downloadFile(placeholder)">
+				{!$Label.Download_File}
+			</button>
+			<button
+				tabindex="0"
+				ng-if="controller.hasEditAccess(placeholder)"
+				class="slds-button clickFocus uniAddFile ng-isolate-scope slds-float--left slds-p-horizontal--x-small"
+				id="rightClickAddFile-placeholderForm">
+				{!$Label.Upload_File}
+			</button>
+			<input
+				type="file"
+				name="files"
+				id="rightClickAddFile-input-placeholderForm"
+				class="disabledAction"/>
+			<button
+				ng-if="controller.permissionService.hasPermission(controller.contextObjectType, 'UNI_PORTAL_ADMIN')"
+				class="slds-button clickFocus slds-float--left slds-p-horizontal--x-small"
+				ng-click="controller.showPortalOptions()"
+				data-ncino-element-id="LifeCycle.ElementIdentifierUtility.generateLinkId('Portal Options')"
+				>
+				{!$Label.Portal_Options}
+			</button>
+			<button
+				id="show-viewer-permissions-button"
+				ng-if="controller.permissionService.hasPermission(null, PERMISSIONS.UNI_GRANT_VIEWER_PERMISSIONS)"
+				class="slds-button clickFocus slds-float--left slds-p-horizontal--x-small"
+				ng-click="controller.showViewerPermissions(controller.rightClickedPlaceholder, 'show-viewer-permissions-button')"
+				data-ncino-element-id="LifeCycle.ElementIdentifierUtility.generateLinkId('Viewer Access')"
+				>
+				{!$Label.Viewer_Permissions}
+			</button>
+			<button
+				id="show-version-modal-button"
+				ng-if="controller.versioningEnabled && (placeholder.file.Id || placeholder.file.isExternalReference)
+					&& controller.permissionService.hasRequiredViewerAccess(placeholder)"
+				class="slds-button clickFocus slds-float--left slds-p-horizontal--x-small"
+				ng-click="controller.showVersionModal('show-version-modal-button')">
+				{!$Label.Versions}
+			</button>
+			
+		</div>
+	</div>
+</apex:page>

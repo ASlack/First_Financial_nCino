@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Post_to_Parent_Object__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is optional and is manually populated. This field indicates if the statistic should also be stored on the parent object in addition to being stored in the LLC_BI__Statistic__c object. If the field is not specified, it defaults to FALSE.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Determines if the value should be posted to the owning object or just posted to the statistics table.</inlineHelpText>
+    <label>Post to Parent Object</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

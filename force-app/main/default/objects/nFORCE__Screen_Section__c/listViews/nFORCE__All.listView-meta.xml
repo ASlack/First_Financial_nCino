@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__All</fullName>
+    <columns>NAME</columns>
+    <columns>nFORCE__Screen__c</columns>
+    <columns>nFORCE__Headless__c</columns>
+    <columns>nFORCE__Display_Order__c</columns>
+    <columns>nFORCE__Instructions_Text__c</columns>
+    <columns>nFORCE__Screen_View__c</columns>
+    <columns>nFORCE__Section_Resource__c</columns>
+    <columns>nFORCE__sObject_Type__c</columns>
+    <columns>nFORCE__Layout__c</columns>
+    <columns>nFORCE__Widget__c</columns>
+    <columns>nFORCE__Is_Editable__c</columns>
+    <columns>OBJECT_ID</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

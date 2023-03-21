@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Residence_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This picklist is populated to indicate the applicant&apos;s ownership status of their current residence. By default, this field is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field indicates the applicant&apos;s ownership status of their current residence.</inlineHelpText>
+    <label>Residence Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Home Owner</fullName>
+                <default>false</default>
+                <label>Home Owner</label>
+            </value>
+            <value>
+                <fullName>Home Buyer</fullName>
+                <default>false</default>
+                <label>Home Buyer</label>
+            </value>
+            <value>
+                <fullName>Lives with relatives or others</fullName>
+                <default>false</default>
+                <label>Lives with relatives or others</label>
+            </value>
+            <value>
+                <fullName>Renter</fullName>
+                <default>false</default>
+                <label>Renter</label>
+            </value>
+            <value>
+                <fullName>Home Owner (Mobile Home)</fullName>
+                <default>false</default>
+                <label>Home Owner (Mobile Home)</label>
+            </value>
+            <value>
+                <fullName>Home Buyer (Mobile Home)</fullName>
+                <default>false</default>
+                <label>Home Buyer (Mobile Home)</label>
+            </value>
+            <value>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+                <label>Unknown</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

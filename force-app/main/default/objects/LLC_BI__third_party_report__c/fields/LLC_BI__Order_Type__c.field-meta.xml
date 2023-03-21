@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Order_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field specifies the Type of Third Party Report. Field values can be used to trigger workflow which updates the Record Type and corresponding Page Layout.</description>
+    <externalId>false</externalId>
+    <label>Order Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>As Is</fullName>
+                <default>false</default>
+                <label>As Is</label>
+            </value>
+            <value>
+                <fullName>As Built</fullName>
+                <default>false</default>
+                <label>As Built</label>
+            </value>
+            <value>
+                <fullName>As Constructed</fullName>
+                <default>false</default>
+                <label>As Constructed</label>
+            </value>
+            <value>
+                <fullName>EPA Assessment</fullName>
+                <default>false</default>
+                <label>EPA Assessment</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Business_Activity_Execution__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this lookup field with the associated business activity execution. By default, this value is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>A lookup field that specifies the associated business activity execution.</inlineHelpText>
+    <label>Business Activity Execution</label>
+    <referenceTo>nFORCE__Business_Activity_Execution__c</referenceTo>
+    <relationshipLabel>Business Activity Execution</relationshipLabel>
+    <relationshipName>Business_Activity_Execution</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,57 @@
+<apex:page controller="nPortal.CustomNavigationController"
+	docType="html-5.0"
+	sidebar="false"
+	showHeader="false"
+	standardStylesheets="false"
+	applyHtmlTag="false"
+	applyBodyTag="false"
+	>
+
+	<div class="portal-wrapper-full" n-style="pso-wrapper">
+		<div class="slds-grid slds-wrap">
+			<div class="portal-wrapper slds-size--1-of-1">
+				<c:PortalHeader />
+			</div>
+			<div class="slds-size--1-of-1 slds-medium-size--4-of-6 slds-large-size--5-of-6
+				portal-content-section slds-order--2">
+				<div class="slds-grid slds-wrap slds-medium-show">
+					<div class="slds-size--1-of-1 slds-p-left--x-large" n-style="pso-application-hero">
+						<page-include bind-to="topbar"></page-include>
+					</div>
+				</div>
+				<div id="main-content"
+					 tabindex="-1"
+					 class="slds-grid"
+					 resizer="true"
+					 role="main"
+					 ng-class="{'slds-wrap': !isLarge,
+						'slds-grid--align-center': isLarge}">
+					<div class="slds-size--1-of-1 slds-large-size--4-of-6 slds-shrink-none
+						slds-p-horizontal--large">
+						<page-include bind-to="body"></page-include>
+					</div>
+				</div>
+				<div ng-class="{'portal-center-bottom-tile': isLarge,
+						'slds-m-horizontal--large': !isLarge}">
+					<tile-component display="horizontal"></tile-component>
+				</div>
+				<security-badges></security-badges>
+			</div>
+			<div class="slds-size--1-of-1 slds-medium-size--2-of-6 slds-large-size--1-of-6
+				portal-nav-section slds-p-horizontal--large slds-order--1">
+				<page-include
+					bind-to="navigation"
+					ng-if="{!customNavEnabled}">
+				</page-include>
+				<application-navigation
+					display="vertical"
+					ng-hide="{!customNavEnabled} || {!isProgressBarEnabled}">
+				</application-navigation>
+				<div ng-show="{!!customNavEnabled} && {!isProgressBarEnabled}">
+					<c:ltngProgressBar navDisplay="VERTICAL"/>
+				</div>
+			</div>
+		</div>
+		<div class="push"></div>
+	</div>
+</apex:page>

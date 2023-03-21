@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Loan_Validation_10</fullName>
+    <active>true</active>
+    <description>Prevents users from marking Is Review Ready to True in a post-approval loan stage.</description>
+    <errorConditionFormula>AND(
+OR(
+ISPICKVAL(LLC_BI__Stage__c, &apos;Processing&apos;),
+ISPICKVAL(LLC_BI__Stage__c, &apos;Doc Prep&apos;),
+ISPICKVAL(LLC_BI__Stage__c, &apos;Closing&apos;),
+ISPICKVAL(LLC_BI__Stage__c, &apos;Boarding&apos;),
+ISPICKVAL(LLC_BI__Stage__c, &apos;Booked&apos;)
+),
+LLC_BI__Is_Review_Ready__c = True,
+$User.No_Workflow__c = False
+)</errorConditionFormula>
+    <errorMessage>Is Review Ready cannot be marked True in a post-approval loan stage.</errorMessage>
+</ValidationRule>

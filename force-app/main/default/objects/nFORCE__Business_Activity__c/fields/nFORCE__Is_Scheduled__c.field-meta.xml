@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Is_Scheduled__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The user populates this optional checkbox field to indicate if the system should schedule to run the business activity at a particular time. By default, it is false.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This checkbox field indicates if the system should schedule the business activity to run at a particular time.</inlineHelpText>
+    <label>Is Scheduled</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

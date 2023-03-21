@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Birthdate__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this date field to indicate the birthdate of the borrower or co-borrower for HMDA reportable loans. By default, this field is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This fields indicates the birthdate of the borrower or co-borrower for HMDA reportable loans.</inlineHelpText>
+    <label>Birthdate</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

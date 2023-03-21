@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Loan_Flag__c</fullName>
+    <deprecated>false</deprecated>
+    <description>When set, this triggers apex that updates the stage of the loan.
+flag: 1 = update</description>
+    <externalId>false</externalId>
+    <label>Loan Flag</label>
+    <precision>1</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Lead_Specifics__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is manually populated, but can be set up to populate when converting a lead. This field is a picklist used to indifcate the specifics regarding the lead. If provided, the value must match one of the values in the Lead Specifics picklist established for this financial institution.</description>
+    <externalId>false</externalId>
+    <label>Lead Specifics</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>LLC_BI__LeadSource__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Broker</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

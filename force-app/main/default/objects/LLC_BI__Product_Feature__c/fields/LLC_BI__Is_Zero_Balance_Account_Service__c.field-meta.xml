@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Is_Zero_Balance_Account_Service__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is not required and is manually populated. When true, it denotes whether a product is a zero balance account clearing house treasury service.</description>
+    <externalId>false</externalId>
+    <label>Is Zero Balance Account Service</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

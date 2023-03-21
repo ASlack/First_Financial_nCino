@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Show_Competitor_Pricing__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This is an optional field. It is populated based on the user selecting to show or hide the Competitor Pricing column on a scenario.</description>
+    <externalId>false</externalId>
+    <label>Show Competitor Pricing</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Loan_Term__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This is a required field. This field indicates the number of months after which the legal obligation will mature or terminate, or would have matured or terminated.</description>
+    <externalId>false</externalId>
+    <label>Loan Term</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

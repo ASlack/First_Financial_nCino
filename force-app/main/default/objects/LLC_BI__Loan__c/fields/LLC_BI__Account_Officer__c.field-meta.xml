@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Account_Officer__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is manually populated. The Account Officer field is typically used to identify the employee responsible for servicing the account (if different from the Loan Officer).</description>
+    <externalId>false</externalId>
+    <label>Account Officer</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

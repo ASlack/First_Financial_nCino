@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Is_Filter_Active__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Administrators populate this optional field to make a Field Configuration available for use with Conditional Lookups. By default, it is unchecked.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select this checkbox to make this Field Configuration available for use with Conditional Lookups.</inlineHelpText>
+    <label>Is Filter Active</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Account__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field is available on the Account review record page. This is a Lookup that is automatically populated to the Account that the review was started from. It links the review record to the account. This is NOT available or needed on the Product Package review record page, because that review could be more multiple relationships and loans associated to the Product Package</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Lookup to the Account that is involved in the review.</inlineHelpText>
+    <label>Account</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Reviews</relationshipLabel>
+    <relationshipName>Reviews</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

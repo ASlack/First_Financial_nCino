@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__HMDA_Reportable__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field can be manually selected, or can be set to be automatically set via the questionnaire. When selected, it indicates that this the loan falls under a category that makes it HMDA reportable. When unselected the loan is not HMDA reportable. By default, this field is unselected</description>
+    <externalId>false</externalId>
+    <label>HMDA Reportable</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

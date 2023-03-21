@@ -1,0 +1,8 @@
+<apex:page id="CollateralGroupMgmt" showHeader="false" sidebar="false" standardController="LLC_BI__Collateral__c">
+	<section>
+		<apex:include pageName="LLC_BI__GroupMembers"/>
+	</section>
+	<section class="slds-m-top_large">
+		<apex:include pageName="LLC_BI__CollateralGroup"/>
+	</section>
+</apex:page>

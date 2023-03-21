@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Service_Provider_Contact__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The system uses this lookup fields to determine which Contact is providing the service. By default, this field is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the Contact lookup providing the service in this field.</inlineHelpText>
+    <label>Service Provider Contact</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Service Mgmt Provided</relationshipLabel>
+    <relationshipName>Service_Mgmt_Provided</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Final_Payment_Amount__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this currency field to capture the final payment amount at the end of the loan term. By default, this field does not populate until Sherman calculates the total monthly payment.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field displays the final payment amount at the end of the loan term.</inlineHelpText>
+    <label>Final Payment Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

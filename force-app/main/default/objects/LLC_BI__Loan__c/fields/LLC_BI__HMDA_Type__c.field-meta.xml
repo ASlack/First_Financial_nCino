@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__HMDA_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>--DEPRECATED-- This field is optional unless the loan requires HMDA, then it is required. It is manually populated. This field indicates whether the loan or application is insured by the Federal Housing Administration, guaranteed by the Veterans Administration, Rural Housing Service, or Farm Service Agency.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>HMDA Loan Type</inlineHelpText>
+    <label>-D Type of Loan</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Code 1—Conventional (any loan other than FHA, VA, FSA, or RHS loans)</fullName>
+                <default>false</default>
+                <label>Code 1—Conventional (any loan other than FHA, VA, FSA, or RHS loans)</label>
+            </value>
+            <value>
+                <fullName>Code 2—FHA-insured (Federal Housing Administration)</fullName>
+                <default>false</default>
+                <label>Code 2—FHA-insured (Federal Housing Administration)</label>
+            </value>
+            <value>
+                <fullName>Code 3—VA-guaranteed (Veterans Administration)</fullName>
+                <default>false</default>
+                <label>Code 3—VA-guaranteed (Veterans Administration)</label>
+            </value>
+            <value>
+                <fullName>Code 4—FSA/RHS-guaranteed (Farm Service Agency or Rural Housing Service)</fullName>
+                <default>false</default>
+                <label>Code 4—FSA/RHS-guaranteed (Farm Service Agency or Rural Housing Service)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

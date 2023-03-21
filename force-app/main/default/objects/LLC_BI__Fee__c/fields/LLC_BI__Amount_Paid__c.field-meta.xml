@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Amount_Paid__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is manually entered and allows the user to specify the amount that has been paid on the fee.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The amount paid on the fee.</inlineHelpText>
+    <label>Amount Paid</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Usage_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is manually populated. This field determines the availability of its products as they relate to Doc Man and Product VF Pages.</description>
+    <externalId>false</externalId>
+    <label>Usage Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Loan</fullName>
+                <default>true</default>
+                <label>Loan</label>
+            </value>
+            <value>
+                <fullName>Global</fullName>
+                <default>false</default>
+                <label>Global</label>
+            </value>
+            <value>
+                <fullName>Business</fullName>
+                <default>false</default>
+                <label>Business</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

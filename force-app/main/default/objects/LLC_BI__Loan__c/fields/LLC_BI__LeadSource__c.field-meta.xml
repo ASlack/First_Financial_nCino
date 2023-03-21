@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__LeadSource__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is manually populated, but can be set up to be populated when converting a lead. This field is a picklist used to specify the source of the lead. If provided, the value must match one of the values in the Lead Source picklist established for this financial institution.</description>
+    <externalId>false</externalId>
+    <label>Lead Source</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Advertisement</fullName>
+                <default>false</default>
+                <label>Advertisement</label>
+            </value>
+            <value>
+                <fullName>Association</fullName>
+                <default>false</default>
+                <label>Association</label>
+            </value>
+            <value>
+                <fullName>Broker</fullName>
+                <default>false</default>
+                <label>Broker</label>
+            </value>
+            <value>
+                <fullName>Current Customer</fullName>
+                <default>false</default>
+                <label>Current Customer</label>
+            </value>
+            <value>
+                <fullName>Direct Call</fullName>
+                <default>false</default>
+                <label>Direct Call</label>
+            </value>
+            <value>
+                <fullName>Email Campaign</fullName>
+                <default>false</default>
+                <label>Email Campaign</label>
+            </value>
+            <value>
+                <fullName>Employee Referral</fullName>
+                <default>false</default>
+                <label>Employee Referral</label>
+            </value>
+            <value>
+                <fullName>Industry Professional</fullName>
+                <default>false</default>
+                <label>Industry Professional</label>
+            </value>
+            <value>
+                <fullName>Magazine</fullName>
+                <default>false</default>
+                <label>Magazine</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Prior Origination</fullName>
+                <default>false</default>
+                <label>Prior Origination</label>
+            </value>
+            <value>
+                <fullName>Trade Show</fullName>
+                <default>false</default>
+                <label>Trade Show</label>
+            </value>
+            <value>
+                <fullName>Web</fullName>
+                <default>false</default>
+                <label>Web</label>
+            </value>
+            <value>
+                <fullName>Wholesaler</fullName>
+                <default>false</default>
+                <label>Wholesaler</label>
+            </value>
+            <value>
+                <fullName>Word of Mouth</fullName>
+                <default>false</default>
+                <label>Word of Mouth</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

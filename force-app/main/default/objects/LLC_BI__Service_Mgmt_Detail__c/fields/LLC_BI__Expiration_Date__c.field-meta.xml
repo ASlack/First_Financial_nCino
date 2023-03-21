@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Expiration_Date__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The user populates this optional Date field to determine when the service is no longer in effect. By default, this field is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Use this field to determine when the service is no longer in effect.</inlineHelpText>
+    <label>Expiration Date</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

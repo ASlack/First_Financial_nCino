@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Election_Of_Payment_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is a picklist that specifies the type of payment elected by the beneficiary or, in the case of a beneficiary IRA, the type of payment elected by the owner.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Specifies the type of payment elected by the beneficiary or in the case of a beneficiary IRA the type of payment elected by the owner.</inlineHelpText>
+    <label>Election of Payment Type</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Treat As Own</fullName>
+                <default>false</default>
+                <label>Treat As Own</label>
+            </value>
+            <value>
+                <fullName>Five Year Rule</fullName>
+                <default>false</default>
+                <label>Five Year Rule</label>
+            </value>
+            <value>
+                <fullName>Single Life Expectancy</fullName>
+                <default>false</default>
+                <label>Single Life Expectancy</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

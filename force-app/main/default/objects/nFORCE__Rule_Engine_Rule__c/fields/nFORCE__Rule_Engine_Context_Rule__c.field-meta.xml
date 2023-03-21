@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Rule_Engine_Context_Rule__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is manually selected and required. This picklist will smart filter the options based on the context selected. This field is used to specify the rule/decision which the Rule Engine  implements. This is used with Rule Engine Rule Name to link the action with nCino to the logic built in Salesforce Flow.</description>
+    <externalId>false</externalId>
+    <label>Rule Engine Context Rule</label>
+    <referenceTo>nFORCE__Rule_Engine_Context_Rule__c</referenceTo>
+    <relationshipLabel>Rule Engine Rules</relationshipLabel>
+    <relationshipName>Rule_Engine_Rules</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>true</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

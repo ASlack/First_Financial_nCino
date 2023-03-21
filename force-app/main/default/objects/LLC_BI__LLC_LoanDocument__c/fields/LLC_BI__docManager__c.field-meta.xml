@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__docManager__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field is not required, but an admin must populate it for the placeholder to appear in Document Manager. This field associates a placeholder with a specific DocManager record.</description>
+    <externalId>false</externalId>
+    <label>DocManager</label>
+    <referenceTo>LLC_BI__DocManager__c</referenceTo>
+    <relationshipName>LLC_LoanDocuments</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

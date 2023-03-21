@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Collect_Odd_Days_Interest__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Administrators and users populate this optional picklist field to determine if a loan applies odd days interest and when that interest applies to the loan.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select an option to collect odd days interest.</inlineHelpText>
+    <label>Collect Odd Days Interest</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Add to First Payment</fullName>
+                <default>false</default>
+                <label>Add to First Payment</label>
+            </value>
+            <value>
+                <fullName>Collect When Due</fullName>
+                <default>false</default>
+                <label>Collect When Due</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

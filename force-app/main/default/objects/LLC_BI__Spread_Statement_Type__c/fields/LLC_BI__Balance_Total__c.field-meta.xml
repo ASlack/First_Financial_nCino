@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Balance_Total__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is populated through the Salesforce layout. When enabled, the system will determine whether each period&apos;s specified spread statement record total (group total) is equal to 0. It will display &quot;balanced&quot; if it is, and &quot;unbalanced!&quot; if not. When disabled, nothing occurs. It is disabled by default.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Determines whether or not to balance the  total columns. If columns are grouped then the grouped columns will be balanced otherwise the columns themselves will be balanced. If the total is equal to zero it is considered balanced.</inlineHelpText>
+    <label>Balance Total</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

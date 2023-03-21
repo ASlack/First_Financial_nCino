@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Owner_Deceased_Indicator__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is optional and can be collected as part of a workflow. If true, the party passed as the Owner of the IRA is deceased. It is typically used in situations where the IRA owner has died but a formal beneficiary IRA has not been created.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If true the party passed as the Owner of the IRA is deceased. Typically used in connection with situations where the IRA Owner has died but a formal Beneficiary IRA has not been created.</inlineHelpText>
+    <label>Owner Deceased Indicator</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Percent_Disbursed__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The total percentage of the budget line item that has been disbursed.</description>
+    <externalId>false</externalId>
+    <formula>IF(LLC_BI__Amount_Budgeted__c == 0, 0, LLC_BI__Total_Disbursed_Amount__c / LLC_BI__Amount_Budgeted__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Percent Disbursed</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>4</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

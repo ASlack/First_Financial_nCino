@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCOC__LCREntity__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This required master-detail field contains the lookup key to the associated LiquidCredit Response Entity.</description>
+    <externalId>false</externalId>
+    <label>LiquidCredit Response Entity</label>
+    <referenceTo>SCOC__LCREntity__c</referenceTo>
+    <relationshipLabel>LiquidCredit Response Entity Data Sources</relationshipLabel>
+    <relationshipName>LCRDataSource</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

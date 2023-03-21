@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__UNGTD_Participated_Percent__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is automatically populated via formula. It specifies the unguaranteed percentage of a sold/participated loan.</description>
+    <externalId>false</externalId>
+    <formula>IF(LLC_BI__Principal_Balance__c&lt;&gt;0, LLC_BI__UNGTD_Participated_Balance__c / LLC_BI__Principal_Balance__c, 0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>UNGTD Participated %</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Percent</type>
+</CustomField>

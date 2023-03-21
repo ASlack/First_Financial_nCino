@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Allow_Record_Filtering__c</fullName>
+    <defaultValue>true</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is populated through the Salesforce layout. When enabled, spread statement records (chart of accounts) can be filtered when a group header is clicked on. When disabled, the filter does not appear. By default, this is disabled.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If checked, a search box is showed for every grid allowing row contents to be filtered.</inlineHelpText>
+    <label>Allow Record Filtering</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

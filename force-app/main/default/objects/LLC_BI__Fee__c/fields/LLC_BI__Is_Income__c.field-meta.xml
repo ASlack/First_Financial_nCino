@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Is_Income__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The user populates this field to indicate if the fee is an income fee. If the fee has a template, the system autopopulates the field. By default, it is not selected.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select this field if the fee is an income fee.</inlineHelpText>
+    <label>Is Income</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

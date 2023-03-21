@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Global_Analysis_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is driven by user selection during creation of the spread statement record total (group total). When &quot;Cash Flow&quot; or &quot;Debt Service&quot; is selected, the value(s) for this spread statement record total (group total) will be used in global analysis for a relationship using the underwriting bundle this spread statement record total is associated with. By default, this picklist is set to None. After initial creation, this cannot be edited within the spreading application, it must be edited through the Salesforce interface.</description>
+    <externalId>false</externalId>
+    <label>Global Analysis Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cash Flow</fullName>
+                <default>false</default>
+                <label>Cash Flow</label>
+            </value>
+            <value>
+                <fullName>Debt Service</fullName>
+                <default>false</default>
+                <label>Debt Service</label>
+            </value>
+            <value>
+                <fullName>Total Assets</fullName>
+                <default>false</default>
+                <label>Total Assets</label>
+            </value>
+            <value>
+                <fullName>Total Liabilities</fullName>
+                <default>false</default>
+                <label>Total Liabilities</label>
+            </value>
+            <value>
+                <fullName>Total Equity</fullName>
+                <default>false</default>
+                <label>Total Equity</label>
+            </value>
+            <value>
+                <fullName>Adjusted Total Assets</fullName>
+                <default>false</default>
+                <label>Adjusted Total Assets</label>
+            </value>
+            <value>
+                <fullName>Adjusted Total Liabilities</fullName>
+                <default>false</default>
+                <label>Adjusted Total Liabilities</label>
+            </value>
+            <value>
+                <fullName>Adjusted Total Equity</fullName>
+                <default>false</default>
+                <label>Adjusted Total Equity</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

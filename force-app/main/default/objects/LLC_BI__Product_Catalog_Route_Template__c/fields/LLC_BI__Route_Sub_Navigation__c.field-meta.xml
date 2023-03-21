@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Route_Sub_Navigation__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Determines what sub navigation component will be used for the route</description>
+    <externalId>false</externalId>
+    <inlineHelpText>What sub navigation component will be used?</inlineHelpText>
+    <label>Route Sub Navigation</label>
+    <length>50</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

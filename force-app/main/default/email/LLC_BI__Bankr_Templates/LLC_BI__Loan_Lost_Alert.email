@@ -1,0 +1,4 @@
+{!LLC_BI__Loan__c.Name} has been lost to {!LLC_BI__Loan__c.LLC_BI__Lost_To__c}. 
+
+Additional details:
+{!LLC_BI__Loan__c.LLC_BI__Lost_Detail__c}

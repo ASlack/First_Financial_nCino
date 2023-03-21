@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Lead_Source__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this text field to capture the name of the third-party source of origination within the context of an external system.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field contains an external application&apos;s system name.</inlineHelpText>
+    <label>Lead Source</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

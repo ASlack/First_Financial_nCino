@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Crediting_Frequency_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This data indicates how frequently accrued earnings will be paid for the account. Crediting frequency is used with compounding frequency and payment method to disclose Compounding and Crediting as required by Regulation DD. For example, &quot;Earnings will be compounded daily and will be credited to the account monthly.&quot;</description>
+    <externalId>false</externalId>
+    <label>Crediting Frequency Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Daily</fullName>
+                <default>false</default>
+                <label>Daily</label>
+            </value>
+            <value>
+                <fullName>Weekly</fullName>
+                <default>false</default>
+                <label>Weekly</label>
+            </value>
+            <value>
+                <fullName>Monthly</fullName>
+                <default>false</default>
+                <label>Monthly</label>
+            </value>
+            <value>
+                <fullName>Quarterly</fullName>
+                <default>false</default>
+                <label>Quarterly</label>
+            </value>
+            <value>
+                <fullName>Annually</fullName>
+                <default>false</default>
+                <label>Annually</label>
+            </value>
+            <value>
+                <fullName>Bi-monthly</fullName>
+                <default>false</default>
+                <label>Bi-monthly</label>
+            </value>
+            <value>
+                <fullName>Semi-annually</fullName>
+                <default>false</default>
+                <label>Semi-annually</label>
+            </value>
+            <value>
+                <fullName>At maturity</fullName>
+                <default>false</default>
+                <label>At maturity</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

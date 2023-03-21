@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Template_Object_Field_Name__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is manually populated. This field is used to automatically select which risk grade template should be used as the template for a risk rating review during creation. To use this field, you can set the field name from the object you selected in LLC_BI__Template_Object_Type__c.  You must use &quot;Template_Object_Field_Value__c&quot; field as well for this field to work appropriately.</description>
+    <externalId>false</externalId>
+    <label>Template Object Field Name</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

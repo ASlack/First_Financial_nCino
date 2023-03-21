@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Collateral_Column_Title__c</fullName>
+    <deprecated>false</deprecated>
+    <description>When a user creates a new NOI statement in the CRE Analysis application, they will see these picklist values in the “Collateral Column Title” field picklist. The value selected in this field is displayed in the collateral column header.</description>
+    <externalId>false</externalId>
+    <label>Collateral Column Title</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Current</fullName>
+                <default>false</default>
+                <label>Current</label>
+            </value>
+            <value>
+                <fullName>Appraisal</fullName>
+                <default>false</default>
+                <label>Appraisal</label>
+            </value>
+            <value>
+                <fullName>Underwriting</fullName>
+                <default>false</default>
+                <label>Underwriting</label>
+            </value>
+            <value>
+                <fullName>At Stabilization</fullName>
+                <default>false</default>
+                <label>At Stabilization</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Total_Charge_Difference__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is populated automatically via formula. It holds the value of expenses on a company&apos;s income statement that is either releated to debt that is deemed uncollectible.</description>
+    <externalId>false</externalId>
+    <formula>LLC_BI__Competitor_Total_Charge__c -  LLC_BI__Svc_Total__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Total Charge Difference</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

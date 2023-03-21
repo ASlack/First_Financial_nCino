@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFUSE__Add_Date_To_Placeholder_Name__c</fullName>
+    <defaultValue>true</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Specifies creating new placeholder each time with date added to name for uniqueness</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <label>Add Date To Placeholder</label>
+    <type>Checkbox</type>
+</CustomField>

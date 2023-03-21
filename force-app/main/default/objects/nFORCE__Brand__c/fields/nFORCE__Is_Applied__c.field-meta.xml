@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Is_Applied__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>When selected, applies this brand to the entire Customer Engagement Solution when the custom setting &quot;Multiple Institutions Enabled&quot; is disabled. If “Multiple Institutions Enabled” is enabled, the brand specified for each institution overrides this flag.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>When selected, applies this brand to the entire Customer Engagement Solution when the custom setting &quot;Multiple Institutions Enabled&quot; is disabled. If “Multiple Institutions Enabled” is enabled, the brand specified for each institution overrides this flag.</inlineHelpText>
+    <label>Is Applied</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

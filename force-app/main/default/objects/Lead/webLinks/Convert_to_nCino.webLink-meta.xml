@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Convert_to_nCino</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Convert to nCino</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <url>/apex/LLC_BI__LifeCycleConverter?id={!Lead.Id}&amp;relationshipAPIName=Company&amp;productApiName=LLC_BI__Product__c&amp;productTypeApiName=LLC_BI__Product_Type__c&amp;productLineApiName=LLC_BI__Product_Line__c&amp;isCreateContact=y&amp;setDestinationField=isConvert__c&amp;setDestinationFieldValue=1&amp;setDestinationFieldHidden=true</url>
+</WebLink>

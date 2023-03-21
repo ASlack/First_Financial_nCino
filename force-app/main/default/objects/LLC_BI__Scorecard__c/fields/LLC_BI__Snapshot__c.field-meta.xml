@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Snapshot__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The snapshot of the information at the point the scorecard was created. The snapshot is a field behind the scenes that stores the point in time details of the loan and the relationship for the fields being used on the scorecard, when the scorecard was generated. These details are then displayed in the appropriate sections of the score card data, to show point in time data capture, and the score that was assigned it that value.</description>
+    <externalId>false</externalId>
+    <label>Snapshot</label>
+    <length>131072</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>2</visibleLines>
+</CustomField>

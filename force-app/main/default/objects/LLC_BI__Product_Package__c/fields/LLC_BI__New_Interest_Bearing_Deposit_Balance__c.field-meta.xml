@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__New_Interest_Bearing_Deposit_Balance__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Users populate this field with the sum of any additional interest-bearing deposit account balances for all new deposit products an FI originates in the deal outside of nCino. By default, it is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Use this field to indicate any additional interest-bearing deposit account balance for all new deposit products an FI originates in the deal outside of nCino.</inlineHelpText>
+    <label>New Interest Bearing Deposit Balance</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

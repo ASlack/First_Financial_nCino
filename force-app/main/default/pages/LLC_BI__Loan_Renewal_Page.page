@@ -1,0 +1,3 @@
+<apex:page standardController="LLC_BI__Loan__c">
+	<c:LoanRenewal ></c:LoanRenewal>
+</apex:page>

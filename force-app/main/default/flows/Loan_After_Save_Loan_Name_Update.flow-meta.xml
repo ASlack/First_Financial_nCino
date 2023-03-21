@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <decisions>
+        <description>Checks if individual or business relationship for in process loans</description>
+        <name>Individual_or_Business_In_Process</name>
+        <label>Individual or Business In Process</label>
+        <locationX>710</locationX>
+        <locationY>455</locationY>
+        <defaultConnector>
+            <targetReference>loanNameUpdateBusinessInProcess</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Business or non-individual In Process</defaultConnectorLabel>
+        <rules>
+            <name>Individual_In_Process</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.LLC_BI__Account__r.Type</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Individual</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>loanNameUpdateIndividualInProcess</targetReference>
+            </connector>
+            <label>Individual In Process</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks if individual or business relationship for in process loans</description>
+        <name>Individual_or_Business_Not_In_Process</name>
+        <label>Individual or Business Not In Process</label>
+        <locationX>182</locationX>
+        <locationY>455</locationY>
+        <defaultConnector>
+            <targetReference>loanNameUpdateBusinessNotInProcess</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Business or non-individual Not In Process</defaultConnectorLabel>
+        <rules>
+            <name>Individual_Not_In_Process</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.LLC_BI__Account__r.Type</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Individual</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>loanNameUpdateIndividualNotInProcess</targetReference>
+            </connector>
+            <label>Individual Not In Process</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks to see if the loan stage is booked/complete or in-process</description>
+        <name>What_is_the_loan_stage</name>
+        <label>What is the loan stage</label>
+        <locationX>446</locationX>
+        <locationY>335</locationY>
+        <defaultConnector>
+            <targetReference>Individual_or_Business_In_Process</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>In Process</defaultConnectorLabel>
+        <rules>
+            <name>notInProcess</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.LLC_BI__Stage__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Booked</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.LLC_BI__Stage__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Complete</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Individual_or_Business_Not_In_Process</targetReference>
+            </connector>
+            <label>notInProcess</label>
+        </rules>
+    </decisions>
+    <description>Updates the loan name depending on the stage of the loan.  NAVEBANK-412</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>Updates loan name for business relationship on booked loans</description>
+        <name>loanNameFormulaBusinessBooked</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.LLC_BI__Account__r.Name} &amp; &apos; - &apos; &amp; TEXT({!$Record.LLC_BI__Product__c}) &amp; &apos; - &apos; &amp; {!$Record.LLC_BI__lookupKey__c}</expression>
+    </formulas>
+    <formulas>
+        <description>Loan name formula for in process loans for business relationships</description>
+        <name>loanNameFormulaBusinessInProcess</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.LLC_BI__Account__r.Name} &amp; &apos; - &apos; &amp; TEXT({!$Record.LLC_BI__Product__c}) &amp; &apos; - &apos; &amp; &apos;$&apos; &amp; TEXT({!$Record.LLC_BI__Amount__c})</expression>
+    </formulas>
+    <formulas>
+        <description>Loan name formula for non-booked/complete loans for individuals</description>
+        <name>loanNameFormulaIndividualBooked</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.LLC_BI__Account__r.FirstName} &amp; &apos; &apos; &amp; {!$Record.LLC_BI__Account__r.LastName} &amp; &apos; - &apos; &amp; TEXT({!$Record.LLC_BI__Product__c}) &amp; &apos; - &apos; &amp; {!$Record.LLC_BI__lookupKey__c}</expression>
+    </formulas>
+    <formulas>
+        <description>Formula for loan name update for in process loans for individuals</description>
+        <name>loanNameFormulaIndividualInProcess</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.LLC_BI__Account__r.FirstName} &amp; &apos; &apos; &amp;{!$Record.LLC_BI__Account__r.LastName} &amp; &apos; - &apos; &amp; TEXT({!$Record.LLC_BI__Product__c}) &amp; &apos; - &apos; &amp; &apos;$&apos; &amp; TEXT({!$Record.LLC_BI__Amount__c})</expression>
+    </formulas>
+    <interviewLabel>Loan - After Save - Loan Name Update {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Loan - After Save - Loan Name Update</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <description>Updates the loan name for in process loans for business relationships</description>
+        <name>loanNameUpdateBusinessInProcess</name>
+        <label>loanNameUpdateBusinessInProcess</label>
+        <locationX>842</locationX>
+        <locationY>575</locationY>
+        <inputAssignments>
+            <field>Name</field>
+            <value>
+                <elementReference>loanNameFormulaBusinessInProcess</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Updates loan name for booked or complete, not in process loans for business relationships</description>
+        <name>loanNameUpdateBusinessNotInProcess</name>
+        <label>loanNameUpdateBusinessNotInProcess</label>
+        <locationX>314</locationX>
+        <locationY>575</locationY>
+        <inputAssignments>
+            <field>Name</field>
+            <value>
+                <elementReference>loanNameFormulaBusinessBooked</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Updates the loan name for in process loans for individuals</description>
+        <name>loanNameUpdateIndividualInProcess</name>
+        <label>loanNameUpdateIndividualInProcess</label>
+        <locationX>578</locationX>
+        <locationY>575</locationY>
+        <inputAssignments>
+            <field>Name</field>
+            <value>
+                <elementReference>loanNameFormulaIndividualInProcess</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Updates the loan name when the loan is not in process for individuals</description>
+        <name>loanNameUpdateIndividualNotInProcess</name>
+        <label>loanNameUpdateIndividualNotInProcess</label>
+        <locationX>50</locationX>
+        <locationY>575</locationY>
+        <inputAssignments>
+            <field>Name</field>
+            <value>
+                <elementReference>loanNameFormulaIndividualBooked</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>320</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>What_is_the_loan_stage</targetReference>
+        </connector>
+        <object>LLC_BI__Loan__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

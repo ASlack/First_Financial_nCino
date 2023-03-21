@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Product_State_Booked_Config_Count</fullName>
+    <active>true</active>
+    <errorConditionFormula>LLC_BI__Product_State_Booked_Config_Count__c &gt; 10</errorConditionFormula>
+    <errorMessage>A maximum of 10 booked config records per product type is currently supported.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HVCRE</fullName>
+    <description>HVCRE Compliance Information</description>
+    <displayedFields>
+        <field>HVCRE_Reportable__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>HVCRE</label>
+</FieldSet>

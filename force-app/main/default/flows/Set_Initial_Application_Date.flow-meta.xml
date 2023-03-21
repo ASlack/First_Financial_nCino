@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <assignments>
+        <name>Assign_Application_Date_0</name>
+        <label>Assign Application Date And Update Stage</label>
+        <locationX>314</locationX>
+        <locationY>518</locationY>
+        <assignmentItems>
+            <assignToReference>Get_Loan_Record.Initial_Application_Date__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>TodaysDate</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Get_Loan_Record.LLC_BI__Stage__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Credit Underwriting</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Initial_Application_Date</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Update_Stage</name>
+        <label>Update Stage</label>
+        <locationX>50</locationX>
+        <locationY>518</locationY>
+        <assignmentItems>
+            <assignToReference>Get_Loan_Record.LLC_BI__Stage__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Credit Underwriting</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Initial_Application_Date</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Is_Initial_Application_Date_Set</name>
+        <label>Is Initial Application Date Set</label>
+        <locationX>182</locationX>
+        <locationY>398</locationY>
+        <defaultConnector>
+            <targetReference>Assign_Application_Date_0</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_Date_Set</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Loan_Record.Initial_Application_Date__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Stage</targetReference>
+            </connector>
+            <label>Is Date Set</label>
+        </rules>
+    </decisions>
+    <description>This flow sets the initial application date of a loan and updates the loan stage to credit underwriting once an application is confirmed.</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>TodaysDate</name>
+        <dataType>Date</dataType>
+        <expression>TODAY()</expression>
+    </formulas>
+    <interviewLabel>Set Initial Application Date {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Set Initial Application Date</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordLookups>
+        <name>Get_Loan_Record</name>
+        <label>Get Loan Record</label>
+        <locationX>182</locationX>
+        <locationY>278</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Is_Initial_Application_Date_Set</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>LLC_BI__Loan__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Initial_Application_Date</name>
+        <label>Update Initial Application Date</label>
+        <locationX>182</locationX>
+        <locationY>734</locationY>
+        <inputReference>Get_Loan_Record</inputReference>
+    </recordUpdates>
+    <screens>
+        <name>Completed_Application_Screen_Flow</name>
+        <label>Completed Application</label>
+        <locationX>182</locationX>
+        <locationY>158</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <backButtonLabel>Cancel</backButtonLabel>
+        <connector>
+            <targetReference>Get_Loan_Record</targetReference>
+        </connector>
+        <fields>
+            <name>Completed_Application_Screen_Flow_Text</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-size: 14px; font-family: -apple-system, &amp;quot;system-ui&amp;quot;, &amp;quot;Segoe UI&amp;quot;, Roboto, Oxygen, Ubuntu, &amp;quot;Fira Sans&amp;quot;, &amp;quot;Droid Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, sans-serif; color: rgb(23, 43, 77);&quot;&gt;I confirm the client has submitted a completed application.&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <nextOrFinishButtonLabel>Confirm</nextOrFinishButtonLabel>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Completed_Application_Screen_Flow</targetReference>
+        </connector>
+    </start>
+    <status>Draft</status>
+    <variables>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Decision_Hold_Reason__c</fullName>
+    <description>Please select the reason why the application was put on hold.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please select the reason why the application was put on hold.</inlineHelpText>
+    <label>Decision Hold Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Appraisal or Evaluation</fullName>
+                <default>false</default>
+                <label>Appraisal or Evaluation</label>
+            </value>
+            <value>
+                <fullName>Other Third Party Report</fullName>
+                <default>false</default>
+                <label>Other Third Party Report</label>
+            </value>
+            <value>
+                <fullName>Additional Borrower Information</fullName>
+                <default>false</default>
+                <label>Additional Borrower Information</label>
+            </value>
+            <value>
+                <fullName>Additional Guarantor Information</fullName>
+                <default>false</default>
+                <label>Additional Guarantor Information</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

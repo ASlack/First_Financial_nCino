@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Aggregate_Adjustment__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this currency field to indicate the aggregate adjustment or the change in the total escrow payment due at closing. The aggregate adjustment value may be zero or negative. By default, this field is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This system-populated field indicates the aggregate adjustment or the change in the total escrow payment due at closing.</inlineHelpText>
+    <label>Aggregate Adjustment</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

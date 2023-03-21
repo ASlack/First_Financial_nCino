@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__docTab__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field is not required, but an admin must populate it for the category to appear under a tab in Classic DocMan. This field associates a DocType (category) with a specific DocTab record.</description>
+    <externalId>false</externalId>
+    <label>DocTab</label>
+    <referenceTo>LLC_BI__DocTab__c</referenceTo>
+    <relationshipLabel>DocTypes</relationshipLabel>
+    <relationshipName>DocTypes</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

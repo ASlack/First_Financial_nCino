@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Loan_Validation_02</fullName>
+    <active>true</active>
+    <description>Ensure that Interest rate is not above the ceiling rate.</description>
+    <errorConditionFormula>AND (
+LLC_BI__Rate_Ceiling__c &gt;= 0,
+(LLC_BI__InterestRate__c &gt;  LLC_BI__Rate_Ceiling__c),
+$User.No_Validation__c = False
+)</errorConditionFormula>
+    <errorDisplayField>LLC_BI__InterestRate__c</errorDisplayField>
+    <errorMessage>Please ensure that the interest rate for this loan is not above the ceiling rate - LV02</errorMessage>
+</ValidationRule>

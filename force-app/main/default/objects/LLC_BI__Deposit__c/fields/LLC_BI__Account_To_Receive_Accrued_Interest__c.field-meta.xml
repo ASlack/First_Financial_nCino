@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Account_To_Receive_Accrued_Interest__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Administrators populate this lookup field with the Account that receives the accrued interest from a time-based Deposit Account.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the Account that receives the accrued interest.</inlineHelpText>
+    <label>Account to Receive Accrued Interest</label>
+    <referenceTo>LLC_BI__Deposit__c</referenceTo>
+    <relationshipLabel>Accrued Interest Deposit Accounts</relationshipLabel>
+    <relationshipName>Accrued_Interest_Deposit_Accounts</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Loan_Collateral_Aggregate__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field is automatically populated when creating Collateral Mgmt. It is used to store aggregate information for all collateral management records on the loan.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Aggregate object that links all collateral to the loan</inlineHelpText>
+    <label>Loan Collateral Aggregate</label>
+    <referenceTo>LLC_BI__Loan_Collateral_Aggregate__c</referenceTo>
+    <relationshipLabel>Loans</relationshipLabel>
+    <relationshipName>Loans</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Download_As_PDF__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It should be marked to true if a compatible file should be downloaded as a PDF.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Field should be marked to true if a compatible file should be downloaded as a PDF.</inlineHelpText>
+    <label>Download As PDF</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

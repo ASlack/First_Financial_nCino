@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Is_Standard__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field determines if the fee is part of the standard set of fees (pre-configured using the fee management templates) for this product. This field is automatically set if the fee was selected from the standard fee list to apply to this loan.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Determines If the fee is part of the standard set of fees for this product.</inlineHelpText>
+    <label>Is Standard</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

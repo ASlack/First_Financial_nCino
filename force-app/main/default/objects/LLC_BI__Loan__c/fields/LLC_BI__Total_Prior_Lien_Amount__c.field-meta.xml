@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Total_Prior_Lien_Amount__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is automatically populated via trigger. It stores the LLC_BI__Total_Current_Lien_Amount__c value at the time the loan is booked. Prior Lien Amount stores the sum of all liens associated with the loan.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>All liens held against the loan except the liens associated to the loan. Populated when the loan hits booked</inlineHelpText>
+    <label>Total Prior Lien Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

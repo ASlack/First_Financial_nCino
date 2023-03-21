@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Shoppable_Category__c</fullName>
+    <deprecated>false</deprecated>
+    <description>--DEPRECATED-- Replaced by TRID_Disclosure_Category__c. 
+        Users or system populates this optional picklist field with if the customer can shop for the referenced service associated with fees, costs, or adjustments for a loan. By default, it is false.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select Cannot Shop Service if your customer cannot shop for this service. Select Shoppable Service if your customer can shop for this service.</inlineHelpText>
+    <label>-D Shoppable Category</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Service You Can Shop For</fullName>
+                <default>false</default>
+                <label>Service You Can Shop For</label>
+            </value>
+            <value>
+                <fullName>Service You Cannot Shop For</fullName>
+                <default>true</default>
+                <label>Service You Cannot Shop For</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Description__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The creator of the Credit Memo template manually populates this optional text field. It can be used to describe the contents and layout of the Credit Memo template.</description>
+    <externalId>false</externalId>
+    <label>Description</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Credit_Memo__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The Credit Memo field is a look up to the credit memo record associated to the Product Package. This will automatically populate when a credit memo is generated for the Product Package. This will link the user from the Product Package directly to the credit memo associated with it.</description>
+    <externalId>false</externalId>
+    <label>Credit Memo</label>
+    <referenceTo>LLC_BI__Credit_Memo__c</referenceTo>
+    <relationshipLabel>Product Packages</relationshipLabel>
+    <relationshipName>Product_Packages</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

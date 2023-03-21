@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Perform_Async__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The user populates this optional checkbox field to indicate if the business activity should run asynchronously. By default, it is false.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This optional checkbox field indicates if the business activity should run asynchronously.</inlineHelpText>
+    <label>Perform Async</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Current_Volume__c</fullName>
+    <defaultValue>NULL</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Financial institutions automatically populate this Number field with information using their own system to track current bill point volumes on any given treasury service. By default, the value is null.</description>
+    <externalId>false</externalId>
+    <label>Current Volume</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

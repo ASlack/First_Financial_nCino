@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__columns__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field defines which columns are shown in classic Document Manager. An admin should specify, at a minimum, the Name column. This field is a semi-colon delimited list.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>exists;name;docType;firstReview;exceptionDate;status;comment;owner</inlineHelpText>
+    <label>columns</label>
+    <length>1024</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

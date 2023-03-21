@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help></help>
+    <label></label>
+    <name>LLC_BI__HMDA_Purchaser_Type__c</name>
+    <picklistValues>
+        <masterLabel>0</masterLabel>
+        <translation>Not applicable</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1</masterLabel>
+        <translation>Fannie Mae</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2</masterLabel>
+        <translation>Ginnie Mae</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3</masterLabel>
+        <translation>Freddie Mac</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>4</masterLabel>
+        <translation>Farmer Mac</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>5</masterLabel>
+        <translation>Private securitizer</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>6</masterLabel>
+        <translation>Commercial bank, savings bank, or savings association</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>7</masterLabel>
+        <translation>Life insurance company, credit union, mortgage bank, or finance company</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>71</masterLabel>
+        <translation>Credit union, mortgage company, or finance company</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>72</masterLabel>
+        <translation>Life insurance company</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>8</masterLabel>
+        <translation>Affiliate institution</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>9</masterLabel>
+        <translation>Other type of purchaser</translation>
+    </picklistValues>
+</CustomFieldTranslation>

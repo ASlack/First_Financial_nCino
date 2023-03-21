@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Disable_Print__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is optional. The admin manually populates this field. It controls whether export to PDF or the brower&apos;s print option is used. When enabled, export to PDF is used when printing a credit memo. When disabled, the browser&apos;s print is used when printing a credit memo. By default, this is disabled. It is recommended that this be enabled.</description>
+    <externalId>false</externalId>
+    <label>Disable Print</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

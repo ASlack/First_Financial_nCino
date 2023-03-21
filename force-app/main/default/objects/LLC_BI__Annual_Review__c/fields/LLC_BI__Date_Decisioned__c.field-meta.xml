@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Date_Decisioned__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is automatically populated by trigger when the risk rating review is approved or declined.</description>
+    <externalId>false</externalId>
+    <label>Date Decisioned</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

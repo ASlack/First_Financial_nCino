@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Construction_Note_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This picklist is used to indicate a product feature that specifies the construction note type.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Specifies the construction note type.</inlineHelpText>
+    <label>Construction Note Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Construction Only</fullName>
+                <default>false</default>
+                <label>Construction Only</label>
+            </value>
+            <value>
+                <fullName>Construction and Permanent Note</fullName>
+                <default>false</default>
+                <label>Construction and Permanent Note</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

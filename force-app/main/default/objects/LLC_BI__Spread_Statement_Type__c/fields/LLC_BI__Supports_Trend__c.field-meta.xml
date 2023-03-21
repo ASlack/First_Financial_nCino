@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Supports_Trend__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This defaults to false. Does this statement type support trend.</description>
+    <externalId>false</externalId>
+    <formula>OR(ISPICKVAL(LLC_BI__Type__c, &apos;Income Statement&apos;),ISPICKVAL(LLC_BI__Type__c, &apos;Balance Sheet&apos;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Does this statement type support trend.</inlineHelpText>
+    <label>Supports_Trend</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

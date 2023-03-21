@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Related_List_Name__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is manually entered and required when utilizing the related list copy configuration option. This field specifies the name of a related list of data to copy.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Name of a related list of data to copy</inlineHelpText>
+    <label>Related List Name</label>
+    <length>255</length>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

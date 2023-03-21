@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Additional_Income_Deal_Impact</fullName>
+    <description>This field set contains additional income fields that may impact deal profitability.</description>
+    <displayedFields>
+        <field>LLC_BI__Product_Package__r.LLC_BI__Additional_Income_Category__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>LLC_BI__Product_Package__r.LLC_BI__Additional_One_Time_Income__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>LLC_BI__Additional_Risk_Adjusted_Income__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Additional Income Deal Impact</label>
+</FieldSet>

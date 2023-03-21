@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Conditional_From__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The user populates this required lookup field with the business activity parent record that this business activity is associated with.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This lookup field indicates the parent business activity associated with the business activity.</inlineHelpText>
+    <label>Conditional From</label>
+    <referenceTo>nFORCE__Business_Activity__c</referenceTo>
+    <relationshipLabel>Conditional To</relationshipLabel>
+    <relationshipName>Conditional_From</relationshipName>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

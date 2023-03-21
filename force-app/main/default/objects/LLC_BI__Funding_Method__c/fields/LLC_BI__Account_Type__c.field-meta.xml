@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Account_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Populate this picklist field to indicate the deposit account type. This field is manually populated during the deposit account opening workflow.</description>
+    <externalId>false</externalId>
+    <label>Account Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Savings</fullName>
+                <default>false</default>
+                <label>Savings</label>
+            </value>
+            <value>
+                <fullName>Checking</fullName>
+                <default>false</default>
+                <label>Checking</label>
+            </value>
+            <value>
+                <fullName>MMA Savings</fullName>
+                <default>false</default>
+                <label>MMA Savings</label>
+            </value>
+            <value>
+                <fullName>MMA Checking</fullName>
+                <default>false</default>
+                <label>MMA Checking</label>
+            </value>
+            <value>
+                <fullName>Business Savings</fullName>
+                <default>false</default>
+                <label>Business Savings</label>
+            </value>
+            <value>
+                <fullName>Business Checking</fullName>
+                <default>false</default>
+                <label>Business Checking</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

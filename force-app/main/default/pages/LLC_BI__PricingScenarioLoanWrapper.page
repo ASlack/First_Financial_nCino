@@ -1,0 +1,16 @@
+<apex:page >
+    <script>
+        var timer = setInterval(() => {
+            hasContentLoaded();
+         }, 1000);
+
+         function hasContentLoaded() {
+            var myIframe = document.getElementById('pricingScenarioLoanIframe');
+            if (myIframe.contentWindow.document.body.scrollHeight > 100) {
+                myIframe.height = myIframe.contentWindow.document.body.scrollHeight + 200;
+                clearInterval(timer);
+            }
+         }
+       </script>
+       <iframe id="pricingScenarioLoanIframe" scrolling="yes" width="100%" height="400" frameborder="no" src="PricingScenarioLoan?id={!$CurrentPage.parameters.id}" />
+</apex:page>

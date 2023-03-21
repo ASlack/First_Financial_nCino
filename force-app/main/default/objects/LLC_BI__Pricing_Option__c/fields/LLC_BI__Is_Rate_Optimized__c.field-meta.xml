@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Is_Rate_Optimized__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Users select this checkbox to indicate to the system that it must determine the optimized rate based on the other loan inputs on the record upon calculating/recalculating profitability.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The system uses a profitability calculator to determine the rate that will maximize the return of this scenario.</inlineHelpText>
+    <label>nIQ Rate Optimization</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

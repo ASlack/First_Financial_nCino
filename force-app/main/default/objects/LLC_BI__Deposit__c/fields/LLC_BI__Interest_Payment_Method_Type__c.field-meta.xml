@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Interest_Payment_Method_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This picklist field is populated during the deposit account opening process. The picklist values are the methods of payment (to the account owner) of the earned interest or dividends on an interest bearing or dividend earning certificate account. The frequency of payment is separately indicated. When applicable, the account number to be credited and the ABA number of the receiving financial institution is required.</description>
+    <externalId>false</externalId>
+    <label>Interest Payment Method Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Add to Principal</fullName>
+                <default>false</default>
+                <label>Add to Principal</label>
+            </value>
+            <value>
+                <fullName>Receive Periodic Check</fullName>
+                <default>false</default>
+                <label>Receive Periodic Check</label>
+            </value>
+            <value>
+                <fullName>Credit Account</fullName>
+                <default>false</default>
+                <label>Credit Account</label>
+            </value>
+            <value>
+                <fullName>Credit Account at other financial institution</fullName>
+                <default>false</default>
+                <label>Credit Account at other financial institution</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

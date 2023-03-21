@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__DocManager__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field is optional and is automatically populated. It is a lookup to which Relationship Document Manager the placeholder is located on. It is applicable to both classic Doc Man and Doc Man.</description>
+    <externalId>false</externalId>
+    <label>DocManager</label>
+    <referenceTo>LLC_BI__DocManager__c</referenceTo>
+    <relationshipLabel>Document Placeholders</relationshipLabel>
+    <relationshipName>Document_Placeholders</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

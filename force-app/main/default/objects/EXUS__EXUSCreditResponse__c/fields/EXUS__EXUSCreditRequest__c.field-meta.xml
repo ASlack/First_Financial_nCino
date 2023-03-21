@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EXUS__EXUSCreditRequest__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this optional lookup field with the path to the associated credit request.</description>
+    <externalId>false</externalId>
+    <label>Credit Request</label>
+    <referenceTo>EXUS__EXUSCreditRequest__c</referenceTo>
+    <relationshipLabel>Experian (US) Credit Responses</relationshipLabel>
+    <relationshipName>EXUSCreditResponses</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

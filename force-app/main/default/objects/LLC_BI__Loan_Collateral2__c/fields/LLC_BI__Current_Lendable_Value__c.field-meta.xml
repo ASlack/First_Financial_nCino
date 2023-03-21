@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Current_Lendable_Value__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional and user input. Current Lendable Value of the collateral based on the Advance Rate.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Current Lendable Value of the collateral based on the Advance Rate.</inlineHelpText>
+    <label>Current Lendable Value</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

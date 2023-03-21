@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>cm_Counter_Offer_Status__c</name>
+    <picklistValues>
+        <masterLabel>Counter Offer Accepted</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Counter Offer Expired</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Counter Offer Pending Customer</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Counter Offer Ready to Discuss with Client</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Counter Offer Rejected - Submit for Declination</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,17 @@
+<apex:page standardController="Account" recordSetVar="accounts">
+  <apex:includeLightning />
+  <div id="container">
+  </div>
+  <script>
+    $Lightning.use("c:BLUPAuraWrapper", function() {
+      $Lightning.createComponent(
+        "c:blupContainer",
+        {},
+        "container",
+        function(cmp) {
+          console.log('BLUPAuraWrapper created');
+        }
+      );
+    });
+  </script>
+</apex:page>

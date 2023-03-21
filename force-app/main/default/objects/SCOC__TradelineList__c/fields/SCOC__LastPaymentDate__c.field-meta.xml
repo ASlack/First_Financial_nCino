@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCOC__LastPaymentDate__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this optional date field to indicate the Last Payment Date from the vendor response. By default, it is blank.</description>
+    <externalId>false</externalId>
+    <label>Last Payment Date</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

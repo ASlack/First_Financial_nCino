@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Participation_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This optional picklist field is manually populated. This field specifies the type of participation for the loan.</description>
+    <externalId>false</externalId>
+    <label>Participation Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Participation agreement agented</fullName>
+                <default>false</default>
+                <label>Participation agreement agented</label>
+            </value>
+            <value>
+                <fullName>Participation bought</fullName>
+                <default>false</default>
+                <label>Participation bought</label>
+            </value>
+            <value>
+                <fullName>Participation sold</fullName>
+                <default>false</default>
+                <label>Participation sold</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

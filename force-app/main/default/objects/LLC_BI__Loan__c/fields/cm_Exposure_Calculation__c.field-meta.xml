@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cm_Exposure_Calculation__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+ISPICKVAL(LLC_BI__Product__c, &quot;Revolving Line of Credit&quot;), LLC_BI__Amount__c,
+IF(
+ISPICKVAL(LLC_BI__Product__c, &quot;Non-Revolving Line of Credit&quot;), ( LLC_BI__Principal_Balance__c +  LLC_BI__Amount_Available__c ),
+IF(
+(LLC_BI__Is_Modification__c ||  LLC_BI__isRenewal__c) &amp;&amp; NOT(ISPICKVAL(LLC_BI__Stage__c, &quot;Booked&quot;)),  LLC_BI__Net_New_Funds__c,
+IF(
+ISPICKVAL(LLC_BI__Stage__c, &quot;Booked&quot;),  (LLC_BI__Principal_Balance__c - cm_Participation_Amount__c) + (LLC_BI__Availability_From_Core__c - cm_Available_Amount__c), 
+LLC_BI__Amount__c -  LLC_BI__Allocated_Facility_Amount__c))))
+
+/* 
+This formula uses an else/if structure to derive the exposure value and works as follows:
+
+Zen-0. If Product is Revolving Line of Credit, the exposure is the loan amount. If Product is Non-Revolving Line of Credit, exposure is principal balance plus available amount.
+
+1. The first if statement determines if the loan is a renewal or a modification and that it is not booked. If this is true, we use net new funds as the value of exposure until the loan books and supersedes the original loan. If false we move on to step 2.
+
+2. Determines if the loan is just a standard booked loan. If true, the standard calculation is principal balance minus availability from core unless there are participations, which is also handled in the calculation. If there are no participations on the loan, the values of cm_Participation_Amount__c and cm_Available_Amount__c (both participation roll up fields on loan) will be 0, which then just leaves us with (LLC_BI__Principal_Balance__c - 0) + (LLC_BI__Availability_From_Core__c - 0) . If the loan does have participations, the correct values will be aggregated and subtracted from the exposure calculation. If the loan is not a booked loan, we move to step 3.
+
+3. If the loan is not a renewal or modification, and is not booked, we use loan amount as the exposure value, since this is either a proposed or committed loan that has not been booked. If there is an originated participation as a part of this non-booked loan, we subtract this for an accurate proposed/committed exposure.
+
+*/</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Exposure Calculation</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

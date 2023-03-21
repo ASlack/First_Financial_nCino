@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Deposit__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field is optional. This field is populated as part of the new deposit workflow. This field specifies the deposit associated with the entity involvement. By also associating the entity involvement to a relationship, it allows a user to associate a deposit and relationship together.</description>
+    <externalId>false</externalId>
+    <label>Deposit</label>
+    <referenceTo>LLC_BI__Deposit__c</referenceTo>
+    <relationshipLabel>Entity Involvements</relationshipLabel>
+    <relationshipName>Legal_Entities</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

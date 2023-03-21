@@ -1,0 +1,108 @@
+<messaging:emailTemplate subject="Unable to Process Application" renderUsingSystemContextWithoutSharing="True" recipientType="User" relatedToType="LLC_BI__Application__c">
+    <messaging:htmlEmailBody >
+        <html>
+            <body>
+                <table role="presentation" style="width: 100%;">
+                <tr>
+                    <td align="center">
+                        <table role="presentation">
+                            <tr>
+                                <td align="center">
+                                    <apex:image alt=""
+                                        url="{!$Label.nPortal__Email_No_Reply_Logo}"
+                                        style="height: 70px; max-height: 70px;"/>
+                                </td>
+                            </tr>
+                        </table>
+                        <div style="width: 400px; font-family: 'Salesforce Sans', Arial, sans-serif; text-align: left;">
+                            <div style="background-color: #f2f5f8; color: #162c52; padding: 20px 30px 20px 30px;">
+                                <h1>
+                                    <strong style="font-weight: 300; color: #162c52;">
+                                        Hello,
+                                    </strong>
+                                </h1>
+                                <p style="color: #162c52;">
+                                    We are sorry, but we are unable to accommodate your request to open a deposit account with our financial institution at this time. Our decision was based in whole, or in part,
+                                    on information obtained in a report from the consumer reporting agency listed below.
+                                    You have a right under the Fair Credit Reporting Act to know the information contained in your file at the consumer reporting agency.
+                                </p>
+                                <p style="color: #162c52;">
+                                    The reporting agency played no part in our decision and is unable to supply specific reasons why we have denied your request to open a deposit account in our institution.
+                                    You also have a right to a free copy of your report from the reporting agency, if you request it no later than 60 days after you receive this notice.
+                                    In addition, if you find that any information contained in the report you receive is inaccurate or incomplete, you have the right to dispute the matter with the reporting agency.
+                                </p>
+                                <p style="color: #162c52; text-align: center;">
+                                    Chex Systems, Inc. <br/>
+                                    Attn: Consumer Relations <br/>
+                                    7805 Hudson Road, Suite 100 <br/>
+                                    Woodbury, MN 55125 <br/>
+                                    Telephone: 800-428-9623 <br/>
+                                    Fax: 602-659-2197 <br/>
+                                    Web: www.chexsystems.com
+                                </p>
+                                <p style="color: #162c52;">
+                                    If you have any questions regarding your consumer report, you should contact the consumer reporting agency using the contact information above.
+                                </p>
+                                <p style="color: #162c52;">
+                                    Thank you,
+                                </p>
+                                <p style="color: #162c52;">
+                                    {!$Organization.Name}
+                                </p>
+                            </div>
+                            <table role="presentation" style="width: 400px; background-color: #dce1eb; color: #424567; padding: 20px; font-size: 8pt;">
+                                <tr>
+                                  <td>
+                                     {!$Organization.Name}
+                                  </td>
+                                  <td align="right">
+                                     {!$Label.Email_No_Reply_From}
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                     {!$Organization.Street}
+                                  </td>
+                                  <td align="right">
+                                     {!$Organization.Phone}
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                     {!$Organization.City}, {!$Organization.State} {!$Organization.PostalCode}
+                                  </td>
+                                  <td align="right">
+                                     &nbsp;
+                                  </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+                </table>
+            </body>
+        </html>
+    </messaging:htmlEmailBody>
+    <messaging:plainTextEmailBody >
+        Hello,
+
+        We are sorry, but we are unable to accommodate your request to open a deposit account with our financial institution at this time. Our decision was based in whole, or in part, on information obtained in a report from the consumer reporting agency listed below.
+        You have a right under the Fair Credit Reporting Act to know the information contained in your file at the consumer reporting agency.
+        The reporting agency played no part in our decision and is unable to supply specific reasons why we have denied your request to open a deposit account in our institution.
+        You also have a right to a free copy of your report from the reporting agency, if you request it no later than 60 days after you receive this notice.
+        In addition, if you find that any information contained in the report you receive is inaccurate or incomplete, you have the right to dispute the matter with the reporting agency.
+
+        Chex Systems, Inc.
+        Attn: Consumer Relations
+        7805 Hudson Road, Suite 100
+        Woodbury, MN 55125
+        Telephone: 800-428-9623
+        Fax: 602-659-2197
+        Web: www.chexsystems.com
+
+        If you have any questions regarding your consumer report, you should contact the consumer reporting agency using the contact information above.
+
+        Thank you,
+        {!$Organization.Name}
+    </messaging:plainTextEmailBody>
+</messaging:emailTemplate>

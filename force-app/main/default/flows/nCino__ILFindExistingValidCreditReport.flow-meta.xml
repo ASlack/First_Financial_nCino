@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+    <assignments>
+        <description>If a valid credit report exists, store the associated Credit Report and Transaction Log Ids.</description>
+        <name>Set_Valid_Report_and_Transaction_Log_Ids</name>
+        <label>Set Valid Report and Transaction Log Ids</label>
+        <locationX>1126</locationX>
+        <locationY>523</locationY>
+        <assignmentItems>
+            <assignToReference>ValidReportId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>CreditReport.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ValidTransactionLogId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>TransactionLog.Id</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <constants>
+        <description>References the type of Credit Score calculation that is used in the Credit Report</description>
+        <name>CreditReportModel</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>V</stringValue>
+        </value>
+    </constants>
+    <constants>
+        <description>Represents the &apos;IN FILE&apos; status of the Credit Report record.</description>
+        <name>InFile</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>IN FILE</stringValue>
+        </value>
+    </constants>
+    <constants>
+        <description>Represents the &apos;NEEDS REVIEW&apos; status of the Credit Report record.</description>
+        <name>NeedsReview</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>NEEDS REVIEW</stringValue>
+        </value>
+    </constants>
+    <constants>
+        <description>Represents the &apos;PASS&apos; status of the Credit Report record.</description>
+        <name>Pass</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>PASS</stringValue>
+        </value>
+    </constants>
+    <constants>
+        <description>Defines the credit report pull type to filter on.</description>
+        <name>ReportType</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Hard</stringValue>
+        </value>
+    </constants>
+    <decisions>
+        <description>Determines if the current credit report is valid for use. Decisioning is based on the status and model.</description>
+        <name>Check_Valid_Status</name>
+        <label>Check Valid Status</label>
+        <locationX>756</locationX>
+        <locationY>527</locationY>
+        <defaultConnector>
+            <targetReference>Check_For_Valid_Credit_Report</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Report Not Valid</defaultConnectorLabel>
+        <rules>
+            <name>Report_Valid</name>
+            <conditionLogic>(1 OR 2 OR 3)</conditionLogic>
+            <conditions>
+                <leftValueReference>CreditReport.nFUSE__Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>Pass</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>CreditReport.nFUSE__Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>InFile</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>CreditReport.nFUSE__Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>NeedsReview</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Transaction_Log</targetReference>
+            </connector>
+            <label>Report Valid</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Will load credit reports by Account ID if Contact ID is not provided</description>
+        <name>Search_By_Contact_Or_Account</name>
+        <label>Search by Account or Contact</label>
+        <locationX>390</locationX>
+        <locationY>52</locationY>
+        <defaultConnector>
+            <targetReference>Get_Credit_Reports_By_Contact</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Search By Contact</defaultConnectorLabel>
+        <rules>
+            <name>Search_By_Account</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>AccountId</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue></stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Credit_Reports_By_Account</targetReference>
+            </connector>
+            <label>Search By Account</label>
+        </rules>
+    </decisions>
+    <description>Returns Ids for the transaction log and credit report record if an existing valid credit report is found.</description>
+    <interviewLabel>ILGetValidCreditReport {!$Flow.CurrentDateTime}</interviewLabel>
+    <isTemplate>true</isTemplate>
+    <label>ILFindExistingValidCreditReport</label>
+    <loops>
+        <description>Loops through each returned Credit Report to determine and return a valid report.</description>
+        <name>Check_For_Valid_Credit_Report</name>
+        <label>Check For Valid Credit Report</label>
+        <locationX>487</locationX>
+        <locationY>526</locationY>
+        <assignNextValueToReference>CreditReport</assignNextValueToReference>
+        <collectionReference>CreditReports</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Check_Valid_Status</targetReference>
+        </nextValueConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Load Credit Report records associated with the inputted Account Id.</description>
+        <name>Get_Credit_Reports_By_Account</name>
+        <label>Get Credit Reports By Account</label>
+        <locationX>398</locationX>
+        <locationY>284</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_For_Valid_Credit_Report</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>nFUSE__Account__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>AccountId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>nFUSE__Report_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>ReportType</elementReference>
+            </value>
+        </filters>
+        <object>nFUSE__Credit_Report__c</object>
+        <outputReference>CreditReports</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>nFUSE__Status__c</queriedFields>
+        <queriedFields>nFUSE__Transaction_Log__c</queriedFields>
+        <sortField>CreatedDate</sortField>
+        <sortOrder>Desc</sortOrder>
+    </recordLookups>
+    <recordLookups>
+        <description>Load Credit Report records associated with the inputted Contact Id.</description>
+        <name>Get_Credit_Reports_By_Contact</name>
+        <label>Get Credit Reports By Contact</label>
+        <locationX>574</locationX>
+        <locationY>290</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_For_Valid_Credit_Report</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>nFUSE__Contact__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>ContactId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>nFUSE__Report_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>ReportType</elementReference>
+            </value>
+        </filters>
+        <object>nFUSE__Credit_Report__c</object>
+        <outputReference>CreditReports</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>nFUSE__Status__c</queriedFields>
+        <queriedFields>nFUSE__Transaction_Log__c</queriedFields>
+        <sortField>CreatedDate</sortField>
+        <sortOrder>Desc</sortOrder>
+    </recordLookups>
+    <recordLookups>
+        <description>Load the Transaction Log record associated with the Credit Report.</description>
+        <name>Get_Transaction_Log</name>
+        <label>Get Transaction Log</label>
+        <locationX>948</locationX>
+        <locationY>523</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Set_Valid_Report_and_Transaction_Log_Ids</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>CreditReport.nFUSE__Transaction_Log__c</elementReference>
+            </value>
+        </filters>
+        <object>nFUSE__Transaction_Log__c</object>
+        <outputReference>TransactionLog</outputReference>
+        <queriedFields>Id</queriedFields>
+    </recordLookups>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Search_By_Contact_Or_Account</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>The account Id to be used to search for existing credit reports.</description>
+        <name>AccountId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>The contact Id to be used in searching for existing credit reports.</description>
+        <name>ContactId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Holds the credit report record.</description>
+        <name>CreditReport</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>nFUSE__Credit_Report__c</objectType>
+    </variables>
+    <variables>
+        <name>CreditReports</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>nFUSE__Credit_Report__c</objectType>
+    </variables>
+    <variables>
+        <description>Holds the transaction log record</description>
+        <name>TransactionLog</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>nFUSE__Transaction_Log__c</objectType>
+    </variables>
+    <variables>
+        <description>The record Id of the existing valid credit report.</description>
+        <name>ValidReportId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>The Transaction Log Id of the existing valid credit report.</description>
+        <name>ValidTransactionLogId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

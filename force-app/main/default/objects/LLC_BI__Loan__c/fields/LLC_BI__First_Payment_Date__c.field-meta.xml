@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__First_Payment_Date__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional, but required when using payment structure. It is manually populated. It sets the first payment date of a loan repayment schedule. When used with payment structure, this field is used to determine amortization and complex payments.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>First Payment date is the expected date the first loan payment will be made. This field is used to determine amortization and complex payments.</inlineHelpText>
+    <label>First Payment Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

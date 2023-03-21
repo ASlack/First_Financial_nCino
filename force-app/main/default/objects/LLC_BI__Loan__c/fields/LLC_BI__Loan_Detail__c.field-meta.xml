@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Loan_Detail__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this lookup field to link a Loan record to its corresponding Loan Details record.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This lookup field contains the associated Loan Detail record&apos;s Id.</inlineHelpText>
+    <label>Loan Detail</label>
+    <referenceTo>LLC_BI__Loan_Detail__c</referenceTo>
+    <relationshipLabel>Loans</relationshipLabel>
+    <relationshipName>Loans</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

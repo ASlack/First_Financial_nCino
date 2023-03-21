@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Period_Over_Period_Change__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This defaults to false. User updated. This field indicates whether the record values should show as a period over period change.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check this field to calculate period over period change</inlineHelpText>
+    <label>Period Over Period Change</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

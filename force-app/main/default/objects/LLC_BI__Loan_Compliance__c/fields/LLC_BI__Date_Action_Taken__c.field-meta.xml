@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Date_Action_Taken__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This is a required field.  This field indicates the settlement or closing date for originations. For applications that did not result in an origination, the date when the action was taken or when the notice was sent to the applicant is entered. For an application that was expressly withdrawn by the applicant, either the date shown on the applicant&apos;s letter or the date you received the letter or notice is reported. For loans that an institution purchased, the date of purchase is entered.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the date that the action was taken. For example the date the loan was originated, Application denied, Purchased Loan, etc.</inlineHelpText>
+    <label>Date Action Taken</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Partner_UNGTD_Left_to_Fund__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is manually populated. This currency field is used when the loan is participated, to specify the amount that is unguaranteed left to fund that is owned by a partner.</description>
+    <externalId>false</externalId>
+    <label>Partner UNGTD Left to Fund</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

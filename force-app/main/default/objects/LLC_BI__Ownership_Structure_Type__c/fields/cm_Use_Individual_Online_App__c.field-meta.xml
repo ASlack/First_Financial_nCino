@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cm_Use_Individual_Online_App__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Set this flag to TRUE to use the ownership structure type for individual online consumer deposit applications.  This should only be set to true for one ownership structure type record.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Set this flag to TRUE to use the ownership structure type for individual online consumer deposit applications.  This should only be set to true for one ownership structure type record.</inlineHelpText>
+    <label>Use Individual Online App</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

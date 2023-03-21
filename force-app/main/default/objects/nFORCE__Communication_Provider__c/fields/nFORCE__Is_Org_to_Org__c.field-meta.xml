@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Is_Org_to_Org__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Indicates this provider transmits data from this Salesforce org to another one.</description>
+    <externalId>false</externalId>
+    <label>Is Org to Org Provider</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

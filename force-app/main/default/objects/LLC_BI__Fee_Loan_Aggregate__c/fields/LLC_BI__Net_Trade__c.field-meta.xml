@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Net_Trade__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this currency field to indicate the total amount applied towards a transaction. The system calculates this total by subtracting the trade-in balance from the trade-in allowance. By default, this field is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field displays the total amount applied towards the transaction.</inlineHelpText>
+    <label>Net Trade</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

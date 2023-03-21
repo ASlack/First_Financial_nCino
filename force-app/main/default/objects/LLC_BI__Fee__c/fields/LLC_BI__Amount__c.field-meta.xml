@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Amount__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field allows the user to specify the total amount charged for the fee. This could be preset for standard fees using fee management templates, or added as a user is applying a non standard fee.</description>
+    <externalId>false</externalId>
+    <label>Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

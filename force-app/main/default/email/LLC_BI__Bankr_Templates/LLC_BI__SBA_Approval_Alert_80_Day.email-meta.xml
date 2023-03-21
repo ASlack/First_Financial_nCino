@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>UNUSED - SBA Approval Alert (80 Day)</name>
+    <style>none</style>
+    <subject>SBA Authorization Expiring in 10 Days for {!LLC_BI__Loan__c.Name}</subject>
+    <textOnly>SBA Authorization Expiring in 10 Days for {!LLC_BI__Loan__c.Name}
+Loan Name:
+{!LLC_BI__Loan__c.Name}
+Account Name (dba):
+{!LLC_BI__Loan__c.LLC_BI__Account__c}
+SBA Auth Date:
+{!LLC_BI__Loan__c.LLC_BI__Authorization_Date__c}
+Senior Loan Officer:
+{!LLC_BI__Loan__c.OwnerFullName}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

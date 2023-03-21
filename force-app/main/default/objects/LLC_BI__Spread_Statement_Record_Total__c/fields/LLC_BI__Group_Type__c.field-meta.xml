@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Group_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is driven by user selection during creation of the spread statement record total (group total). This field controls the display of the value(s) for the spread statement record total (group total). &quot;Financial&quot; dispalys the value with a currency sign. &quot;Percentage&quot; displays the value with the decimal moved two two places to the right and with a percentage sign. &quot;Decimal&quot; displays the value with no signs. By default, this field is set to Financial. After initial creation, this cannot be edited within the spreading application, it must be edited through the Salesforce interface.</description>
+    <externalId>false</externalId>
+    <label>Group Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Financial</fullName>
+                <default>true</default>
+                <label>Financial</label>
+            </value>
+            <value>
+                <fullName>Percentage</fullName>
+                <default>false</default>
+                <label>Percentage</label>
+            </value>
+            <value>
+                <fullName>Decimal</fullName>
+                <default>false</default>
+                <label>Decimal</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

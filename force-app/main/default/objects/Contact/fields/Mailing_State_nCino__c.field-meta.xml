@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mailing_State_nCino__c</fullName>
+    <description>Custom field to store the Mailing State of the Contact</description>
+    <externalId>false</externalId>
+    <label>Mailing State nCino</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>LLC_BI__US_States_Abbreviated</valueSetName>
+    </valueSet>
+</CustomField>

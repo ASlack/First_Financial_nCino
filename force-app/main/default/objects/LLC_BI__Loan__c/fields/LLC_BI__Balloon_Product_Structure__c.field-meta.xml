@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Balloon_Product_Structure__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Administrators manually select Ballon Amount or Balloon Term from this picklist, which populates dependently on the Balloon__c field. Balloon Amount and Balloon Term determine how the Balloon calculation is performed, whether based on the total amount of the loan or the total duration of the loan.</description>
+    <externalId>false</externalId>
+    <label>Balloon Product Structure</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Balloon Amount</fullName>
+                <default>false</default>
+                <label>Balloon Amount</label>
+            </value>
+            <value>
+                <fullName>Balloon Term</fullName>
+                <default>false</default>
+                <label>Balloon Term</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

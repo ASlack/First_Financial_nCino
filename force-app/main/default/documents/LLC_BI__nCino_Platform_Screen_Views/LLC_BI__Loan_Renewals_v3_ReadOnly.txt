@@ -1,0 +1,33 @@
+&nbsp<!-- This is a fix for LLCBI-2332 (IE 8 Error) -->
+<!-- ko if: screenResources()['{!NS}.LoanRenewalScreenResource_{!NS}__Loan__c'].children().length > 0 -->
+<table class="table table-bordered table-striped" data-bind="with: screenResources()['{!NS}.LoanRenewalScreenResource_{!NS}__Loan__c']" >
+<thead>
+<tr>
+<th colspan="9">Loan Renewals</th>
+</tr>
+<tr data-bind="with: children()[0]">
+<th data-bind="text: children()[0].propertyBag.{!NS}__Loan__c_Name.fieldLabel" />
+<th>Loan Officer</th>
+<th data-bind="text: propertyBag.{!NS}__LoanRenewal__c_{!NS}__RevisionNumber__c.fieldLabel" />
+<th data-bind="text: children()[0].propertyBag.{!NS}__Loan__c_{!NS}__Amount__c.fieldLabel" />
+<th data-bind="text: children()[0].propertyBag.{!NS}__Loan__c_{!NS}__InterestRate__c.fieldLabel" />
+<th>Term</th>
+<th data-bind="text: children()[0].propertyBag.{!NS}__Loan__c_{!NS}__Stage__c.fieldLabel" />
+<th data-bind="text: children()[0].propertyBag.{!NS}__Loan__c_{!NS}__Status__c.fieldLabel" />
+<th data-bind="text: propertyBag.{!NS}__LoanRenewal__c_{!NS}__RevisionStatus__c.fieldLabel" />
+</tr>
+</thead>
+<tbody data-bind="foreach: children()">
+<tr data-bind="css: { info : $parent.propertyBag.{!NS}__Loan__c_Id.value() == children()[0].propertyBag.{!NS}__Loan__c_Id.value() }">
+<td data-bind="text: children()[0].propertyBag.{!NS}__Loan__c_Name.value" />
+<td data-bind="text: children()[0].children()[0].propertyBag.User_Name.value" />
+<td data-bind="text: propertyBag.{!NS}__LoanRenewal__c_{!NS}__RevisionNumber__c.value" />
+<td data-bind="text: children()[0].propertyBag.{!NS}__Loan__c_{!NS}__Amount__c.value" />
+<td data-bind="text: children()[0].propertyBag.{!NS}__Loan__c_{!NS}__InterestRate__c.value" />
+<td data-bind="text: children()[0].propertyBag.{!NS}__Loan__c_{!NS}__Term_Months__c.value" />
+<td data-bind="text: children()[0].propertyBag.{!NS}__Loan__c_{!NS}__Stage__c.value" />
+<td data-bind="text: children()[0].propertyBag.{!NS}__Loan__c_{!NS}__Status__c.value" />
+<td data-bind="text: propertyBag.{!NS}__LoanRenewal__c_{!NS}__RevisionStatus__c.value" /></tr>
+</tbody>
+</table>
+<!-- /ko -->

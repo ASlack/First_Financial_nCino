@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Category__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The administrator populates this required picklist field to determine Funding Method Type used. By default, it is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the type of funding for the account.</inlineHelpText>
+    <label>Category</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Credit</fullName>
+                <default>false</default>
+                <label>Credit</label>
+            </value>
+            <value>
+                <fullName>Debit</fullName>
+                <default>false</default>
+                <label>Debit</label>
+            </value>
+            <value>
+                <fullName>ACH</fullName>
+                <default>false</default>
+                <label>ACH</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

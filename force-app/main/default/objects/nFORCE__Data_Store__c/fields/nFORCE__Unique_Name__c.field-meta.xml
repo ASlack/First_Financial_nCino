@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Unique_Name__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Name of the analytic snapshot that captured the original data.  Examples may be something like &quot;Daily Login Count&quot;, &quot;Total Loan Count&quot;, etc...  You will use this unique name to filter down the data when reporting.</description>
+    <externalId>true</externalId>
+    <inlineHelpText>Unique name for the data store that is a name of the analytic snapshot that captured the original data.  Examples may be something like &quot;Daily Login Count&quot;, &quot;Total Loan Count&quot;, etc...  You will use this unique name to filter down the data when reporting.</inlineHelpText>
+    <label>Unique Name</label>
+    <length>255</length>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

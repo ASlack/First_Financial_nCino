@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Comp__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Comp. Adj. Source</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>BTR</fullName>
+                <default>false</default>
+                <label>BTR</label>
+            </value>
+            <value>
+                <fullName>PTR</fullName>
+                <default>false</default>
+                <label>PTR</label>
+            </value>
+            <value>
+                <fullName>Interim Financial</fullName>
+                <default>false</default>
+                <label>Interim Financial</label>
+            </value>
+            <value>
+                <fullName>PFS</fullName>
+                <default>false</default>
+                <label>PFS</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Description__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is manually populated. This is a free text field that can be used to describe the purpose of the loan.</description>
+    <externalId>false</externalId>
+    <label>Loan Purpose</label>
+    <length>32000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

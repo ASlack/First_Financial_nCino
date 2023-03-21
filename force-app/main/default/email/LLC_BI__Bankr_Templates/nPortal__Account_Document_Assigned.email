@@ -1,0 +1,90 @@
+<messaging:emailTemplate subject="You're pre-approved! Time to upload documents." recipientType="Contact" relatedToType="LLC_BI__AccountDocument__c">
+    <messaging:htmlEmailBody >
+        <html>
+            <body>
+                <table role="presentation" style="width: 100%;">
+                    <tr>
+                        <td align="center">
+                            <table role="presentation">
+                                <tr>
+                                    <td align="center">
+                                        <apex:image alt=""
+                                            url="{!$Label.nPortal__Email_No_Reply_Logo}"
+                                            style="height: 70px; max-height: 70px;"
+                                        />
+                                    </td>
+                                </tr>
+                            </table>
+                            <div style="width: 400px; font-family: 'Salesforce Sans', Arial, sans-serif; text-align: left;">
+                                <div style="background-color: #f2f5f8; color: #162c52; padding: 20px 30px 20px 30px;">
+                                    <h1>
+                                        <strong style="font-weight: 300; color: #162c52;">
+                                            Congrats, {!recipient.FirstName}!
+                                        </strong>
+                                    </h1>
+                                    <p style="color: #162c52;">
+                                        You have been pre-approved for a {!$Organization.Name} Loan. Now it's time to
+                                        <strong style="color: #162c52;">upload documents</strong>. To make you an official offer, we'll need to
+                                        review the following:
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <strong style="font-weight: 300; color: #162c52;">{!relatedTo.LLC_BI__Portal_Doc_Name__c}</strong>
+                                        </li>
+                                    </ul>
+                                    <c:PortalLink buttonText="Upload Documents" />
+                                    <p style="color: #162c52;">
+                                        If you have any problems, or you did not initiate this application, give us a call at {!$Organization.Phone}.
+                                    </p>
+                                    <p style="color: #162c52;">
+                                        - The Team at {!$Organization.Name}
+                                    </p>
+                                </div>
+                                <table role="presentation" style="width: 400px; background-color: #dce1eb; color: #424567; padding: 20px; font-size: 8pt;">
+                                    <tr>
+                                        <td>
+                                              {!$Organization.Name}
+                                        </td>
+                                        <td align="right">
+                                              {!$Label.Email_No_Reply_From}
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                              {!$Organization.Street}
+                                        </td>
+                                        <td align="right">
+                                              {!$Organization.Phone}
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            {!$Organization.City}, {!$Organization.State} {!$Organization.PostalCode}
+                                        </td>
+                                        <td align="right">
+                                            &nbsp;
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </body>
+        </html>
+    </messaging:htmlEmailBody>
+    <messaging:plainTextEmailBody >
+Congrats {!recipient.FirstName},
+
+You have been pre-approved for a {!$Organization.Name} Loan. Now it's time to upload documents. To make you an official offer, we'll need to review the following:
+
+- {!relatedTo.LLC_BI__Portal_Doc_Name__c}
+
+<c:CommunityURL />
+Having trouble viewing the link within this email? Enable HTML content within your email client.
+
+If you have any problems, or you did not initiate this application, give us a call at {!$Organization.Phone}.
+
+- The Team at {!$Organization.Name}
+    </messaging:plainTextEmailBody>
+</messaging:emailTemplate>

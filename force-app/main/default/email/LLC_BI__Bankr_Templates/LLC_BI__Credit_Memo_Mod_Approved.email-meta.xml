@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>Notification that credit memo mod has been approved</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>UNUSED - Credit Memo Mod Approved</name>
+    <style>none</style>
+    <subject>* Change Memo Approved - {!Credit_Memo_Modifcation__c.Loan_Master__c} *</subject>
+    <textOnly>The {!LLC_BI__Credit_Memo_Modifcation__c.Name} for loan {!Credit_Memo_Modifcation__c.Loan_Master__c} has been approved. 
+
+See Change Memo for more information {!LLC_BI__Credit_Memo_Modifcation__c.Link}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

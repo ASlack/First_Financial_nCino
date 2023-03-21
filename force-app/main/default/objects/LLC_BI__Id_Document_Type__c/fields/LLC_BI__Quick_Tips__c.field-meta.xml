@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Quick_Tips__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Administrators populate this rich text to control the guidance that customers receive when they upload ID Documents.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select this functionality to guide you through the upload process for ID Documents.</inlineHelpText>
+    <label>Quick Tips</label>
+    <length>32000</length>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Scorecard__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is a reference field that links the scorecard details to the appropriate score card. The field is not visible to users but is used behind the scenes to link the details with the scorecard they belong to. This field is automatically populated when a scorecard is generated</description>
+    <externalId>false</externalId>
+    <label>Scorecard</label>
+    <referenceTo>LLC_BI__Scorecard__c</referenceTo>
+    <relationshipLabel>Scorecard Details</relationshipLabel>
+    <relationshipName>Scorecard_Details</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

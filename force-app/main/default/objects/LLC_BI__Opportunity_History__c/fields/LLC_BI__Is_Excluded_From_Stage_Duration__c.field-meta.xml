@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Is_Excluded_From_Stage_Duration__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is automatically populated via formula. It automatically sets the value to true or false based on the stage and status of the loan. The value is set to true once a loan reaches the equivalent of a stage that is excluded from the stage duration history for a financial institution.</description>
+    <externalId>false</externalId>
+    <formula>IF(LLC_BI__Loan__c != null,CONTAINS(LLC_BI__Loan__r.LLC_BI__Product_Reference__r.LLC_BI__Product_Type__r.LLC_BI__Excluded__r.LLC_BI__All_Values__c, LLC_BI__Stage_And_Status__c),false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Is Excluded From Stage Duration</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Entity__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is a look up ( Master- Detail) to the entity involvement record of the contact that is to be an authorized signer.</description>
+    <externalId>false</externalId>
+    <label>Entity</label>
+    <referenceTo>LLC_BI__Legal_Entities__c</referenceTo>
+    <relationshipName>Contingent_Liabilties</relationshipName>
+    <relationshipOrder>1</relationshipOrder>
+    <reparentableMasterDetail>true</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

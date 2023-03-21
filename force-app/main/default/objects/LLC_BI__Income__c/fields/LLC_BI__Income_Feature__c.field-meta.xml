@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Income_Feature__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field is optional and is manually populated. This field is a lookup used to associate an income feature to the income. An income feature is used to attach attributes to the income.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field displays the Income Feature record to which the Income record refers.</inlineHelpText>
+    <label>Income Feature</label>
+    <referenceTo>LLC_BI__Income_Feature__c</referenceTo>
+    <relationshipLabel>Incomes</relationshipLabel>
+    <relationshipName>Incomes</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

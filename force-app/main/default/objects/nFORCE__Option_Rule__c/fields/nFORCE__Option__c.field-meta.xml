@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Option__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field is required. It is manually populated. This field looks up to the option. It is tested against the nForce__Condition__c to determine whether to display the linked conditional question.</description>
+    <externalId>false</externalId>
+    <label>Option</label>
+    <referenceTo>nFORCE__Option__c</referenceTo>
+    <relationshipLabel>Option Rules</relationshipLabel>
+    <relationshipName>Option_Rules</relationshipName>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Exposure_Exclusion_Disabled</fullName>
+    <description>This is used on the Exclude Debt modal on the total exposure account page.</description>
+    <displayedFields>
+        <field>LLC_BI__Exclude_Reason__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>LLC_BI__Comments__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Exposure Exclusion Disabled</label>
+</FieldSet>

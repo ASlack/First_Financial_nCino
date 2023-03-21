@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Annual_Rate_Increase__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this optional field using values from the Product Feature with how much the interest rate increases annually. The Annual Rate Increase is added to the Teaser Rate.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This system-populated field displays how much the interest rate increases annually.</inlineHelpText>
+    <label>Annual Rate Increase</label>
+    <precision>11</precision>
+    <required>false</required>
+    <scale>8</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Percent</type>
+</CustomField>

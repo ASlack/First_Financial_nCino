@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__CRA_Date_Action_Taken__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is manually populated. This field indicates the date that the loan was originated or purchased.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>CRA Date Action Taken</inlineHelpText>
+    <label>Date Action Taken</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

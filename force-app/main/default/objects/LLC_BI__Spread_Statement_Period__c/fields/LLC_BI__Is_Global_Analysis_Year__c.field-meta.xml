@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Is_Global_Analysis_Year__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This defaults to false. Manually update to change. This specifies which periods are available for selection in Global Analysis.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This specifies which periods are available for selection in Global Analysis</inlineHelpText>
+    <label>Is Global Analysis Year</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

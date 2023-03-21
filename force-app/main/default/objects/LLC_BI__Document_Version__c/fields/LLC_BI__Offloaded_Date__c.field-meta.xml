@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Offloaded_Date__c</fullName>
+    <deprecated>false</deprecated>
+    <description>An automatically populated time stamp on the document version record specifying the last time a document (and its associated metadata) was offloaded to external storage.</description>
+    <externalId>false</externalId>
+    <label>Offloaded Date</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

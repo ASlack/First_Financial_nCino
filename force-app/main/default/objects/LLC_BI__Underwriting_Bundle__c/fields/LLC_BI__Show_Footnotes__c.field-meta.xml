@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Show_Footnotes__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This defaults to false. User updated. Indicates whether Footnotes will be displayed for its statements.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates whether Footnotes will be displayed for its statements.</inlineHelpText>
+    <label>Show Footnotes</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

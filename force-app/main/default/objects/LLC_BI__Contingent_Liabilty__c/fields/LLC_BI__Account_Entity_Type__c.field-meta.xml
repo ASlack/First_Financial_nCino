@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Account_Entity_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is a formula field which specifies the entity involvement and account type of the contact associated to the entity involvement record on the loan, as an authorized signer.</description>
+    <externalId>false</externalId>
+    <formula>TEXT(LLC_BI__Entity__r.LLC_BI__Account__r.Type)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Account Entity Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

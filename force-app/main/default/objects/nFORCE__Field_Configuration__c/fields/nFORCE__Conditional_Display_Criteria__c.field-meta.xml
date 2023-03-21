@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Conditional_Display_Criteria__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Administrators manually populate this optional field to store the Forms syntax used to dictate whether the system should display a conditional field on the Field Configuration object.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field is optional and must be manually populated. It stores the Forms syntax that is used to dictate whether a conditional field set should be displayed.</inlineHelpText>
+    <label>Conditional Display Criteria</label>
+    <length>2048</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

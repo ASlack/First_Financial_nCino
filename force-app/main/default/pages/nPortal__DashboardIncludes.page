@@ -1,0 +1,24 @@
+<apex:page sidebar="false"
+	showHeader="false"
+	standardStylesheets="false"
+	applyHtmlTag="false"
+	applyBodyTag="false">
+
+	<apex:include pageName="nPortal__PortalIncludes" />
+	<c:DashboardIncludes />
+	<c:PortalConfiguration />
+	<c:DashboardLabelProvider />
+	<c:TileDataService />
+	<c:LoanTeamPanel />
+	<c:SecurityBadgeDataService />
+	<c:DashboardDataService />
+	<c:LoanStageNavDataService />
+	<c:DashboardNavDataService />
+	<c:DocumentDataService />
+	<c:PasswordDataService />
+	<c:PasswordConfiguration />
+	<c:PortalUserService />
+	<c:LanguageDataService />
+	<c:LoanTeamMembers />
+
+</apex:page>

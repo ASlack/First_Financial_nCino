@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Content__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Lookup to the content related to this section</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Content</label>
+    <referenceTo>nFORCE__Content__mdt</referenceTo>
+    <relationshipLabel>Sections</relationshipLabel>
+    <relationshipName>Sections</relationshipName>
+    <required>false</required>
+    <type>MetadataRelationship</type>
+    <unique>false</unique>
+</CustomField>

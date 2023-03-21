@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCOC__FraudList__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This required master-detail field contains the lookup key to the associated Fraud List item.</description>
+    <externalId>false</externalId>
+    <label>Fraud List</label>
+    <referenceTo>SCOC__FraudList__c</referenceTo>
+    <relationshipLabel>Fraud Identification Issued</relationshipLabel>
+    <relationshipName>FraudIdIssuedList</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

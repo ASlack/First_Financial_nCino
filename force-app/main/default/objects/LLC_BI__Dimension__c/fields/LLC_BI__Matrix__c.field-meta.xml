@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Matrix__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Administrators populate this required lookup field to associate this dimension to a matrix. By default, the value is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the associated matrix.</inlineHelpText>
+    <label>Matrix</label>
+    <referenceTo>LLC_BI__Matrix__c</referenceTo>
+    <relationshipLabel>Dimensions</relationshipLabel>
+    <relationshipName>Dimensions</relationshipName>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

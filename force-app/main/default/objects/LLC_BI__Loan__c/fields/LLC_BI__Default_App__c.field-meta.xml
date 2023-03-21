@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Default_App__c</fullName>
+    <defaultValue>&apos;loan.dashboard-loan&apos;</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is required. When using the nCino UI, this field should be set via a workflow. This field is used to determine the default landing page for this loan within the nCino User Interface.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field is used to determine the default landing page for this loan within the nCino User Interface.</inlineHelpText>
+    <label>Default App</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

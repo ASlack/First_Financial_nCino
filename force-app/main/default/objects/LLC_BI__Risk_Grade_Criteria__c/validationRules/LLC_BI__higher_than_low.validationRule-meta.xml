@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__higher_than_low</fullName>
+    <active>true</active>
+    <description>The high value needs to be higher than the low value.</description>
+    <errorConditionFormula>LLC_BI__High__c &lt;  LLC_BI__Low__c</errorConditionFormula>
+    <errorDisplayField>LLC_BI__High__c</errorDisplayField>
+    <errorMessage>The high value needs to be larger than the low value.</errorMessage>
+</ValidationRule>

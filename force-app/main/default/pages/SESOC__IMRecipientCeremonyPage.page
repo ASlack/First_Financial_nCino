@@ -1,0 +1,23 @@
+<apex:page sidebar="false" showHeader="false">
+	<apex:slds />
+	<script type="text/javascript">
+		function triggerSignerComplete() {
+
+			var context = "{!JSENCODE($CurrentPage.parameters.context)}";
+			switch (context) {
+				case "portal_v1":
+					window.parent.postMessage('CEREMONY_COMPLETE', '*');
+					break;
+
+				case null:
+				case "default":
+				case "none":
+				default:
+					console.log('Default Context: Do Nothing');
+					break;
+			}
+		}
+	</script>
+
+	<button onClick="triggerSignerComplete()" value="Sign" class="slds-button slds-button_brand slds-align_absolute-center">Sign</button>
+</apex:page>

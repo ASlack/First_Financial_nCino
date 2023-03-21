@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Is_Paid_Off__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is automatically populated via formula. When set to &quot;1&quot; it iindicates that the payoff date is in the past and that the loan has been paid off. When set to &quot;0,&quot; the loan has not been paid off. By default, it is set to &quot;0.&quot;</description>
+    <externalId>false</externalId>
+    <formula>IF(LLC_BI__Payoff_Date__c  &lt; DATEVALUE(NOW()), 1, 0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Is_Paid_Off</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

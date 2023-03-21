@@ -1,0 +1,3 @@
+The funding for loan " {!LLC_BI__Loan__c.Name} " was rejected. Please view the loan for rejection comments.
+
+Click here for loan details: {!LLC_BI__Loan__c.Link}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Severity__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is an optional field that allows the user to select the severity of the Policy Exception. The possible values the user can select are determined by the Policy Exception template. Only one can be selected when applying a policy exception to a loan. This field is optional and can be removed or edited from the modal or table view for policy exceptions.</description>
+    <externalId>false</externalId>
+    <label>Severity</label>
+    <length>50</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

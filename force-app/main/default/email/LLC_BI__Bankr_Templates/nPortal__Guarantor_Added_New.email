@@ -1,0 +1,96 @@
+<messaging:emailTemplate subject="You've been added as a Guarantor on an Online Application" recipientType="User">
+   <messaging:htmlEmailBody >
+      <html>
+         <body>
+            <table role="presentation" style="width: 100%;">
+               <tr>
+                  <td align="center">
+                     <table role="presentation">
+                        <tr>
+                           <td align="center">
+                              <apex:image alt=""
+                                 url="{!$Label.nPortal__Email_No_Reply_Logo}"
+                                 style="height: 70px; max-height: 70px;"
+                              />
+                           </td>
+                        </tr>
+                     </table>
+                     <div style="width: 400px; font-family: 'Salesforce Sans', Arial, sans-serif; text-align: left;">
+                        <div style="background-color: #f2f5f8; color: #162c52; padding: 20px 30px 20px 30px;">
+                           <h1>
+                              <strong style="font-weight: 300; color: #162c52;">
+                                 Hi,
+                              </strong>
+                           </h1>
+                           <p style="color: #162c52;">
+                              You have been added as a business guarantor on an online application.
+                           </p>
+                           <p style="color: #162c52;">
+                              To fully process the application, we need some information from you.
+                           </p>
+                           <p style="color: #162c52;">
+                              You will receive a Welcome Email with a link to set up a new account.
+                           </p>
+                           <p style="color: #162c52;">
+                              Please follow the link in that email to enter requested information.
+                           </p>
+                           <p style="color: #162c52;">
+                              If you believe you have received this email by mistake, or if you have any questions, give us a call at {!$Organization.Phone}.
+                           </p>
+                           <p style="color: #162c52;">
+                              Thanks!
+                           </p>
+                           <p style="color: #162c52;">
+                              - The Team at {!$Organization.Name}
+                           </p>
+                        </div>
+                        <table role="presentation" style="width: 400px; background-color: #dce1eb; color: #424567; padding: 20px; font-size: 8pt;">
+                           <tr>
+                              <td>
+                                 {!$Organization.Name}
+                              </td>
+                              <td align="right">
+                                 {!$Label.Email_No_Reply_From}
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 {!$Organization.Street}
+                              </td>
+                              <td align="right">
+                                 {!$Organization.Phone}
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 {!$Organization.City}, {!$Organization.State} {!$Organization.PostalCode}
+                              </td>
+                              <td align="right">
+                                 &nbsp;
+                              </td>
+                           </tr>
+                        </table>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+         </body>
+      </html>
+   </messaging:htmlEmailBody>
+   <messaging:plainTextEmailBody >
+      Hi,
+      You have been added as a business guarantor on an online application.
+      To fully process the application, we need some information from you.
+
+      You will receive a Welcome Email with a link to set up a new account.
+      Please follow the link in that email to enter requested information in the application.
+
+      If you believe you have received this email by mistake, or if you have any questions, give us a call at {!$Organization.Phone}.
+      - The Team at {!$Organization.Name}
+      {!$Organization.Name}
+      {!$Organization.Street}
+      {!$Organization.City}, {!$Organization.State} {!$Organization.PostalCode}
+      {!$Label.nPortal__Email_No_Reply_From}
+      {!$Organization.Phone}
+   </messaging:plainTextEmailBody>
+</messaging:emailTemplate>

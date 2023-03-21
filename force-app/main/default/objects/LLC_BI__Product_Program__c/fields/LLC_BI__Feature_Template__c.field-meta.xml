@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Feature_Template__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field is currently not used because the product program selector feature is not being used. Provides features that are offered by the program.</description>
+    <externalId>false</externalId>
+    <label>Feature Template</label>
+    <referenceTo>LLC_BI__Risk_Grade_Template__c</referenceTo>
+    <relationshipLabel>Product Programs (Feature Template)</relationshipLabel>
+    <relationshipName>Product_Programs1</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

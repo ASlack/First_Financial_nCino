@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Route_Body__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Defines the body contents of the route (VisualForce page name)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>What page will be displayed in the body of this route? Can be left blank.</inlineHelpText>
+    <label>Route Body</label>
+    <length>50</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

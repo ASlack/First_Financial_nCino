@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLCLP__Factors__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>Leave blank or enter each factor on a new line in | delimited format:
+
+Context Object API Name|Context Field API Name|The value to match
+Context Object API Name|Context Field API Name|Another value to match</inlineHelpText>
+    <label>Factors</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

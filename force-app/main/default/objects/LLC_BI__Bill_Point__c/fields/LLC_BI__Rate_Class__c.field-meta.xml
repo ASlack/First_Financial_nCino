@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Rate_Class__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This is an optional field. It indicates the rate classes that are defined for the bill point. This is used to display the correct pricing on the Quantity and Pricing page based on the rate classes configured by the financial institution.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field indicates the rate classes that are defined for the bill point. This is used to display the correct pricing on the Quantity &amp; Pricing page based on the rate classes configured by the financial institution.</inlineHelpText>
+    <label>Rate Class</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>N/A</fullName>
+                <default>true</default>
+                <label>N/A</label>
+            </value>
+            <value>
+                <fullName>Platinum</fullName>
+                <default>false</default>
+                <label>Platinum</label>
+            </value>
+            <value>
+                <fullName>Gold</fullName>
+                <default>false</default>
+                <label>Gold</label>
+            </value>
+            <value>
+                <fullName>Silver</fullName>
+                <default>false</default>
+                <label>Silver</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

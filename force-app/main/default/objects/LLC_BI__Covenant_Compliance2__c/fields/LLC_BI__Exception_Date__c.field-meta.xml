@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Exception_Date__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is automatically calculated. The date the Covenant Compliance record moves to exception.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If there was an exception, the date that the exception occurred.</inlineHelpText>
+    <label>Exception Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This object contains compiled mapping instructions for the MTRNS Mapping and Transformation package.</description>
+    <label>Mapping Instructions</label>
+    <pluralLabel>Mapping Instructions</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

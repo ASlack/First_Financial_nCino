@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cm_Is_Existing_Customer__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>To be populated during nightly sync for existing contacts</description>
+    <externalId>false</externalId>
+    <label>Existing Customer?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

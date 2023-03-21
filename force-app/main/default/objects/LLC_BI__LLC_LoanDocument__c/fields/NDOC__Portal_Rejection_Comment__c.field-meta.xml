@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NDOC__Portal_Rejection_Comment__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Portal Rejection Comment</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>LLC_BI__Portal_Rejection_Reason__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>The document you provided is missing a required signature. Please sign this document and upload again.</fullName>
+                <default>false</default>
+                <label>The document you provided is missing a required signature. Please sign this document and upload again.</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Missing Signature</controllingFieldValue>
+            <valueName>The document you provided is missing a required signature. Please sign this document and upload again.</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

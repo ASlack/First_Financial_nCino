@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__comments__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field retains the most recent comment on a placeholder in classic Document Manager. This field is not currently used in Document Manager.</description>
+    <externalId>false</externalId>
+    <label>Comments</label>
+    <length>12000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

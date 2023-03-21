@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nBIDC__Is_Dirty__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>OR(ISNULL(nBIDC__Send_Date_Time__c),DATEVALUE(LastModifiedDate) &gt; DATEVALUE(nBIDC__Send_Date_Time__c))</formula>
+    <label>Is Dirty</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

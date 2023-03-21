@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Class_Xpkg_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>-DEPRECATED- Deprecated field, no longer in use, replaced by Class_Type__c</description>
+    <externalId>false</externalId>
+    <inlineHelpText>-DEPRECATED-</inlineHelpText>
+    <label>-D Class/Xpkg Type</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>UNUSED - Loan Withdrawn / Declined Alert</name>
+    <style>none</style>
+    <subject>* Loan Withdrawn or Declined - Please Take Action *</subject>
+    <textOnly>The status of {!LLC_BI__Loan__c.Name} has been changed to {!LLC_BI__Loan__c.LLC_BI__Status__c} for account {!LLC_BI__Loan__c.LLC_BI__Account__c}. Please take the appropriate actions where necessary.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

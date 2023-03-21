@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Expanded_Offer_Card_Field_Set__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The user populates this text field to specify the field set that appears in the expanded offer cards for this product type.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the name of the field set with all necessary fields that appear in the expanded offer card for this product type.</inlineHelpText>
+    <label>Expanded Offer Card Field Set</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

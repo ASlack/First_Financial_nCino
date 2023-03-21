@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Is_Source_Debt__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field represents whether a debt is a source debt. If the output is &apos;True&apos; then debt is a source debt.</description>
+    <externalId>false</externalId>
+    <formula>IF( ISBLANK( LLC_BI__Source_Debt__c ) &amp;&amp; ISBLANK( LLC_BI__Internal_Debt__c ) &amp;&amp; LLC_BI__Is_Manual__c = FALSE &amp;&amp; LLC_BI__New_Debt__c = FALSE, True, False)</formula>
+    <label>Is Source Debt</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

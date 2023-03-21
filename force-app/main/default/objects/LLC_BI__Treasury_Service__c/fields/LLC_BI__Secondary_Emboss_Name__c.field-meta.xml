@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Secondary_Emboss_Name__c</fullName>
+    <deprecated>false</deprecated>
+    <description>An administrator or the system populates this text field to add a secondary embossed name to their debit card.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the secondary name that displays on the debit card.</inlineHelpText>
+    <label>Secondary Emboss Name</label>
+    <length>26</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

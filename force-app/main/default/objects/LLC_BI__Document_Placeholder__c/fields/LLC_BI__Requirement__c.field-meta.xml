@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Requirement__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this optional field. It is a lookup that links the Placeholder to a Requirement.</description>
+    <externalId>false</externalId>
+    <label>Requirement</label>
+    <referenceTo>LLC_BI__Requirement__c</referenceTo>
+    <relationshipLabel>Document Placeholders</relationshipLabel>
+    <relationshipName>Document_Placeholders</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Assigned_Points__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The number of points assigned to the product application. This field is optional to include on the scorecard and is automatically populated based on the visual flow logic configuration.</description>
+    <externalId>false</externalId>
+    <label>Assigned Points</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

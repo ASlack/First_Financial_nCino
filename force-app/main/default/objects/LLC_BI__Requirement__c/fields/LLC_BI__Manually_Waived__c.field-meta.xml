@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Manually_Waived__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The field is optional and indicates whether a Requirement record has been manually waived. The system automatically sets the Status field on a Requirement record that has not been manually waived if the record does not meet certain criteria. Manually waiving a Requirement record prevents the Status field from being automatically set. Users may manually waive a record by navigating to the checklist and selecting &apos;Waived&apos; in the user interface.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field indicates whether a Requirement record has been manually waived. The system sets this field automatically if the user sets a Requirement to &apos;Waived&apos; in the user interface.</inlineHelpText>
+    <label>Manually Waived</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

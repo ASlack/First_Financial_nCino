@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Teaser_Rate__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this optional field using values from the Pricing Matrix with the interest rate initially applied to the loan. The rate is in effect for a given number of payments.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This system-populated field displays the interest rate initially applied to the loan.</inlineHelpText>
+    <label>Teaser Rate</label>
+    <precision>11</precision>
+    <required>false</required>
+    <scale>8</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

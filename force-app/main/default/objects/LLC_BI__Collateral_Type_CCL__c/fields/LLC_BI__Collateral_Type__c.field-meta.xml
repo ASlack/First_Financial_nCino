@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Collateral_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional and only used in classic Doc Man. It is the Collateral Type that the Closing Checklist should be applied to.</description>
+    <externalId>false</externalId>
+    <label>Collateral Type</label>
+    <referenceTo>LLC_BI__Collateral_Type__c</referenceTo>
+    <relationshipLabel>Collateral Type CCLs</relationshipLabel>
+    <relationshipName>Collateral_Type_CCLs</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Preferred_Rate__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is automatically populated when a percentage value is entered into the Rate Discount field on Loan, and represents the discounted interest rate a customer will receive for their loan. This field is calculated as the loan’s Interest Rate minus the Rate Discount. By default, this field is blank.</description>
+    <externalId>false</externalId>
+    <formula>(LLC_BI__Loan__r.LLC_BI__InterestRate__c - LLC_BI__Loan__r.LLC_BI__Rate_Discount__c)</formula>
+    <inlineHelpText>This field automatically calculates a customer’s discounted interest rate for a loan.</inlineHelpText>
+    <label>Preferred Rate</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>3</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

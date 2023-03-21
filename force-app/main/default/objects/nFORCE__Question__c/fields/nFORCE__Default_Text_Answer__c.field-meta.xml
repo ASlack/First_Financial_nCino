@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Default_Text_Answer__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. The admin manually sets it in the Questionnaire Admin. If populated, when answering a question, the answer will be populated with this value for the Textbox.</description>
+    <externalId>false</externalId>
+    <label>Default Text Answer</label>
+    <length>32768</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

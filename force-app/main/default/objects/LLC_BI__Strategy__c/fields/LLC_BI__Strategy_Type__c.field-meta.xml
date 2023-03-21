@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Strategy_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The user populates this required picklist to set the type of strategy. The system uses this field to determine the appropriate matrix builder workflow.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the type of strategy you wish to create.</inlineHelpText>
+    <label>Strategy Type</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Affordability</fullName>
+                <default>false</default>
+                <label>Affordability</label>
+            </value>
+            <value>
+                <fullName>Pricing</fullName>
+                <default>false</default>
+                <label>Pricing</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

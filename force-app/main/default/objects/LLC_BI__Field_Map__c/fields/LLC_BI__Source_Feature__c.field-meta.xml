@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Source_Feature__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Administrators manually populate this optional field to indicate the feature associated with the data mapping (for example, HMDA2018). The key must match the documented key for the feature. By default, this field is blank.</description>
+    <externalId>false</externalId>
+    <label>Source Feature</label>
+    <length>100</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

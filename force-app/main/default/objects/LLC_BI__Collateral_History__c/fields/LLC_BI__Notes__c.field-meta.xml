@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Notes__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional and manually populated. This field is a free form text field used to add notes about the collateral history of a particular piece of collateral</description>
+    <externalId>false</externalId>
+    <label>Notes</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cm_EPA_Vendor__c</fullName>
+    <description>This picklist is optional and manually selected when entering third party report detail about an EPA Assessment. It is a list of vendors to have 3rd part reports ordered for when EPA Assessment Type is selected (helps run 3rd party reports ordering)</description>
+    <externalId>false</externalId>
+    <label>EPA Vendor</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>cm_EPA_Assessment_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AEI</fullName>
+                <default>false</default>
+                <label>AEI</label>
+            </value>
+            <value>
+                <fullName>PES</fullName>
+                <default>false</default>
+                <label>PES</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>RSRA</controllingFieldValue>
+            <controllingFieldValue>Phase 1</controllingFieldValue>
+            <controllingFieldValue>Phase 2</controllingFieldValue>
+            <controllingFieldValue>Transaction Screen</controllingFieldValue>
+            <valueName>AEI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RSRA</controllingFieldValue>
+            <controllingFieldValue>Phase 1</controllingFieldValue>
+            <controllingFieldValue>Phase 2</controllingFieldValue>
+            <controllingFieldValue>Transaction Screen</controllingFieldValue>
+            <valueName>PES</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

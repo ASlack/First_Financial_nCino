@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Stair_Step_Down__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this optional field using values from the Product Feature where a value of True indicates the interest rate is allowed to decrease below the teaser rate over the term of the loan and a value of False indicates the interest rate cannot decrease below the teaser rate, in which case the interest rate would remain at the teaser rate.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This system-populated field is checked when the interest rate is allowed to decrease below the teaser rate over the term of the loan and is unchecked when the interest rate cannot decrease below the teaser rate.</inlineHelpText>
+    <label>Stair Step Down</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

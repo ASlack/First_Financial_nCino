@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Restricted_Value__c</fullName>
+    <defaultValue>0</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The user populates this currency field with the value available to the group. By default, it is blank. The system respects the populated value when the Restricted field is set to true.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>To restrict the value available to the group, enter the value you want to allocate to the group.</inlineHelpText>
+    <label>Restricted Value</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

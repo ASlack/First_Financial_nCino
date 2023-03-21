@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nArchive__DocStatus__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The Document Status (Review Status) that you want to invoke the creation of a DES record.</description>
+    <externalId>false</externalId>
+    <label>Document Status</label>
+    <length>25</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

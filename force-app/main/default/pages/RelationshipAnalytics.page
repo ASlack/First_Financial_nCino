@@ -1,0 +1,5 @@
+<apex:page >
+    <!--<div data-taxonomy-id="GainsightAnalytics">-->
+        <nFORCE:Include_Analytics />
+   <!-- </div>-->
+</apex:page>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EXUS__ExperianExceptionNotice__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Users populate this picklist to indicate which type of Experian Exception Notice to request. This field is required if the Credit Score Exception Notice Add-on is enabled. By default, it is blank.</description>
+    <externalId>false</externalId>
+    <label>Experian Exception Notice</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Generic</fullName>
+                <default>false</default>
+                <label>Generic</label>
+            </value>
+            <value>
+                <fullName>Mortgage</fullName>
+                <default>false</default>
+                <label>Mortgage</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

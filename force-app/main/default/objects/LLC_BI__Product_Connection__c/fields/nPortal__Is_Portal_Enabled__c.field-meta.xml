@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nPortal__Is_Portal_Enabled__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Select this checkbox to enable this ancillary service for this product in Customer Portal. If selected, the ancillary service is offered as an option to a Customer Portal user who is filling out an online application for this product.</description>
+    <externalId>false</externalId>
+    <label>Is Portal Enabled</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

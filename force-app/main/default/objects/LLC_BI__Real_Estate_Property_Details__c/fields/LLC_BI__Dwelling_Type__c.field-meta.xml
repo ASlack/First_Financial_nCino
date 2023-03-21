@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Dwelling_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Users or an integration manually populate this picklist field to identify a property’s dwelling type for the real estate collateral record.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the property’s dwelling type from the picklist.</inlineHelpText>
+    <label>Dwelling Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Duplex</fullName>
+                <default>false</default>
+                <label>Duplex</label>
+            </value>
+            <value>
+                <fullName>High Rise Multiple Units</fullName>
+                <default>false</default>
+                <label>High Rise Multiple Units</label>
+            </value>
+            <value>
+                <fullName>Low Rise Multiple Units</fullName>
+                <default>false</default>
+                <label>Low Rise Multiple Units</label>
+            </value>
+            <value>
+                <fullName>Single Family Detached Four Square</fullName>
+                <default>false</default>
+                <label>Single Family Detached Four Square</label>
+            </value>
+            <value>
+                <fullName>Single Family Detached Ranch</fullName>
+                <default>false</default>
+                <label>Single Family Detached Ranch</label>
+            </value>
+            <value>
+                <fullName>Single Family Detached Row Home</fullName>
+                <default>false</default>
+                <label>Single Family Detached Row Home</label>
+            </value>
+            <value>
+                <fullName>Detached</fullName>
+                <default>false</default>
+                <label>Detached</label>
+            </value>
+            <value>
+                <fullName>Semi Detached</fullName>
+                <default>false</default>
+                <label>Semi Detached</label>
+            </value>
+            <value>
+                <fullName>Terraced</fullName>
+                <default>false</default>
+                <label>Terraced</label>
+            </value>
+            <value>
+                <fullName>Purpose Built</fullName>
+                <default>false</default>
+                <label>Purpose Built</label>
+            </value>
+            <value>
+                <fullName>Above Shop/Commercial</fullName>
+                <default>false</default>
+                <label>Above Shop/Commercial</label>
+            </value>
+            <value>
+                <fullName>Studio</fullName>
+                <default>false</default>
+                <label>Studio</label>
+            </value>
+            <value>
+                <fullName>Conversion</fullName>
+                <default>false</default>
+                <label>Conversion</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

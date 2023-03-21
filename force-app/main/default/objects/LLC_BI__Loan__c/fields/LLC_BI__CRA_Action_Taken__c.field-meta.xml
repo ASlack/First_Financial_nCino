@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__CRA_Action_Taken__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is manually populated. This field indicates the action taken on the loan.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>CRA Action Taken for Loan</inlineHelpText>
+    <label>Action Taken</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1 - Loan Originated</fullName>
+                <default>false</default>
+                <label>1 - Loan Originated</label>
+            </value>
+            <value>
+                <fullName>2 - Loan Purchased By Your Institution</fullName>
+                <default>false</default>
+                <label>2 - Loan Purchased By Your Institution</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

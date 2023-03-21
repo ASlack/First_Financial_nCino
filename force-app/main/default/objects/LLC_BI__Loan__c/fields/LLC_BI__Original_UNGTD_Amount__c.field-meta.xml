@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Original_UNGTD_Amount__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is automatically populated via formula. It is used to specify the original loan amount that is NOT guaranteed through SBA.</description>
+    <externalId>false</externalId>
+    <formula>LLC_BI__Amount__c -  LLC_BI__Original_Guaranteed_Amount__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Original Note Amount (Net)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

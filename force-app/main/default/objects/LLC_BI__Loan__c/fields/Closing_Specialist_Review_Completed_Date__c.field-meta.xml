@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Closing_Specialist_Review_Completed_Date__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the date that the closing review was completed</inlineHelpText>
+    <label>Closing Specialist Review Completed Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,9 @@
+<apex:page controller="nFORCE.RouteController" standardStylesheets="false" showHeader="false" sideBar="false">
+<!-- NOTE: This file also exists in other repos, it must stay in sync with nFORCE__BodyContainer.page. -->	
+	<apex:composition template="nFORCE__BodyContainerTemplate">
+		<apex:define name="body">
+			<apex:include id="route-body" pageName="{!route.nFORCE__Body__c}" />
+			<apex:include rendered="{!$CurrentPage.parameters.routeTerms='true'}" pageName="LLC_BI__TermsAndConditions" />
+		</apex:define>
+	</apex:composition>
+</apex:page>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Product__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This picklist field is manually selected and will filter based on product line and product type selections. This is a required field to be able to convert to nCino. The field is used to specify the opportunity&apos;s particular product  Use either the reference or the picklist field.</description>
+    <externalId>false</externalId>
+    <label>Product</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>LLC_BI__Product_Type__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Equipment</fullName>
+                <default>false</default>
+                <label>Equipment</label>
+            </value>
+            <value>
+                <fullName>Line of Credit</fullName>
+                <default>false</default>
+                <label>Line of Credit</label>
+            </value>
+            <value>
+                <fullName>Construction</fullName>
+                <default>false</default>
+                <label>Construction</label>
+            </value>
+            <value>
+                <fullName>HELOC</fullName>
+                <default>false</default>
+                <label>HELOC</label>
+            </value>
+            <value>
+                <fullName>Term Loan</fullName>
+                <default>false</default>
+                <label>Term Loan</label>
+            </value>
+            <value>
+                <fullName>Purchase</fullName>
+                <default>false</default>
+                <label>Purchase</label>
+            </value>
+            <value>
+                <fullName>Guidance Line - Revolving</fullName>
+                <default>false</default>
+                <label>Guidance Line - Revolving</label>
+            </value>
+            <value>
+                <fullName>Limit</fullName>
+                <default>false</default>
+                <label>Limit</label>
+            </value>
+            <value>
+                <fullName>Sub Limit</fullName>
+                <default>false</default>
+                <label>Sub Limit</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Real Estate</controllingFieldValue>
+            <controllingFieldValue>Non-Real Estate</controllingFieldValue>
+            <valueName>Line of Credit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Real Estate</controllingFieldValue>
+            <valueName>Construction</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Real Estate</controllingFieldValue>
+            <controllingFieldValue>Consumer Real Estate</controllingFieldValue>
+            <valueName>HELOC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Real Estate</controllingFieldValue>
+            <valueName>Term Loan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Real Estate</controllingFieldValue>
+            <valueName>Purchase</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Real Estate</controllingFieldValue>
+            <valueName>Guidance Line - Revolving</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Real Estate</controllingFieldValue>
+            <valueName>Limit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Real Estate</controllingFieldValue>
+            <valueName>Sub Limit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-Real Estate</controllingFieldValue>
+            <valueName>Equipment</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

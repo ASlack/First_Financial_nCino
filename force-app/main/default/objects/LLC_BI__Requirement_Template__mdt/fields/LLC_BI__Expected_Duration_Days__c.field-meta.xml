@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Expected_Duration_Days__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This optional field contains the number of days expected to complete Requirements based on this model.  It should be copied to the Expected Durations Days field on Requirement records created from this template.</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>This optional field contains the number of days expected to complete Requirements based on this model.  It should be copied to the Expected Durations Days field on Requirement records created from this template.</inlineHelpText>
+    <label>Expected Duration Days</label>
+    <precision>3</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

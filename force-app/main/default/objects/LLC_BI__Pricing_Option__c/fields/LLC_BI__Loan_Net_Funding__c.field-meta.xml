@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Loan_Net_Funding__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system populates the scenario financial statement Loan Net Funding. By default, it is blank.</description>
+    <externalId>false</externalId>
+    <label>Loan Net Funding</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

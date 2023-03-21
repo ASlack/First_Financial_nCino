@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Dependent_Structures__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The administrator manually populates this optional field. It specifies the structure hierarchy allowed for this product. If left blank, all structures configured in the org are allowed for the product.</description>
+    <externalId>false</externalId>
+    <label>Dependent Structures</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ELOC</fullName>
+                <default>false</default>
+                <label>ELOC</label>
+            </value>
+            <value>
+                <fullName>Letter of Credit</fullName>
+                <default>false</default>
+                <label>Letter of Credit</label>
+            </value>
+            <value>
+                <fullName>Multi Level Future</fullName>
+                <default>false</default>
+                <label>Multi Level Future</label>
+            </value>
+            <value>
+                <fullName>Regular Future</fullName>
+                <default>false</default>
+                <label>Regular Future</label>
+            </value>
+            <value>
+                <fullName>Term Loan/Current</fullName>
+                <default>false</default>
+                <label>Term Loan/Current</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

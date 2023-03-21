@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Tier_Deposit__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this lookup field to reference a Deposit record from the Tier object.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Allows a list of tiers to display on a deposit record.</inlineHelpText>
+    <label>Tier Deposit</label>
+    <referenceTo>LLC_BI__Deposit__c</referenceTo>
+    <relationshipLabel>Deposit Tiers</relationshipLabel>
+    <relationshipName>Tiers</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

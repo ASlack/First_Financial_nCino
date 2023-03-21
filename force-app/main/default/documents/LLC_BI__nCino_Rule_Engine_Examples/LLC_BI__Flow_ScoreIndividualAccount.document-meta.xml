@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>The flow example will score an individual account and is used in the Loan Auto Decision example. The flow must be called &apos;ScoreIndividualAccount&apos; when imported using the Import Tool that is part of the nCino Administration page.</description>
+    <internalUseOnly>true</internalUseOnly>
+    <name>Loan Auto-Decision: 2 - Score Individual Account</name>
+    <public>false</public>
+</Document>

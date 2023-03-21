@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Ownership_Percentage__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The percentage of the collateral that the relationship owns.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The percentage of the collateral that the account owns</inlineHelpText>
+    <label>Ownership Percentage</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

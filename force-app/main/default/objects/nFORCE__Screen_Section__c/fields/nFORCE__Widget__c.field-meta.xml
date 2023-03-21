@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Widget__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is manually populated.  This field specifies the widget associated with the screen section. It is used to store code for customizable components of the credit memo and UI, such as the ckEditor in Credit Memo.</description>
+    <externalId>false</externalId>
+    <label>Widget</label>
+    <referenceTo>nFORCE__Widget__c</referenceTo>
+    <relationshipLabel>Screen Sections</relationshipLabel>
+    <relationshipName>Screen_Sections</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

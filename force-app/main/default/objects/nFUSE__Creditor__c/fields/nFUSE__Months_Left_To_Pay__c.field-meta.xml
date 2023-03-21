@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFUSE__Months_Left_To_Pay__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this field with the number of months left to pay on the debt from information on the applicant&apos;s credit report.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field displays the number of months left to pay on the debt.</inlineHelpText>
+    <label>Months Left to Pay</label>
+    <precision>3</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

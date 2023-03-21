@@ -1,0 +1,4 @@
+<!-- Page: -->
+<apex:page docType="html-5.0">
+    <c:OauthComponent />
+</apex:page>

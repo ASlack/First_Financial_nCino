@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cm_Third_Party_Type_Text__c</fullName>
+    <description>Used to convert the third party type (multi-select picklist) to text which then is concatenated with the Vendor name via a Process Builder. Add &quot;IF ( INCLUDES ( LLC_BI__Third_Party__c , &quot;[INSERT FI VENDOR TYPE]&quot; ), &quot;[INSERT FI VENDOR TYPE]&quot;,null ) &amp;&quot; at the end of the formula field if new picklist values are needed.</description>
+    <externalId>false</externalId>
+    <formula>IF ( INCLUDES ( LLC_BI__Third_Party__c , &quot;Appraiser&quot; ), &quot;Appraiser &quot;,null ) &amp;
+IF ( INCLUDES ( LLC_BI__Third_Party__c , &quot;Attorney&quot; ), &quot;Attorney &quot;,null ) &amp;
+IF ( INCLUDES ( LLC_BI__Third_Party__c , &quot;Demolition&quot; ), &quot;Demolition &quot;,null ) &amp;
+IF ( INCLUDES ( LLC_BI__Third_Party__c , &quot;Demolition Contact&quot; ), &quot;Demolition Contact &quot;,null ) &amp;
+IF ( INCLUDES ( LLC_BI__Third_Party__c , &quot;Inactive&quot; ), &quot;Inactive &quot;,null ) &amp;
+IF ( INCLUDES ( LLC_BI__Third_Party__c , &quot;Inspector&quot; ), &quot;Inspector &quot;,null ) &amp;
+IF ( INCLUDES ( LLC_BI__Third_Party__c , &quot;Insurance Agency&quot; ), &quot;Insurance Agency &quot;,null ) &amp;
+IF ( INCLUDES ( LLC_BI__Third_Party__c , &quot;Mortgage Broker&quot; ), &quot;Mortgage Broker &quot;,null ) &amp;
+IF ( INCLUDES ( LLC_BI__Third_Party__c , &quot;Mortgage Broker Contact&quot; ), &quot;Mortgage Broker Contact &quot;,null ) &amp;
+IF ( INCLUDES ( LLC_BI__Third_Party__c , &quot;Real Estate Broker Buyer&quot; ), &quot;Real Estate Broker Buyer &quot;,null ) &amp;
+IF ( INCLUDES ( LLC_BI__Third_Party__c , &quot;Real Estate Broker Buyer Contact&quot; ), &quot;Real Estate Broker Buyer Contact &quot;,null ) &amp;
+IF ( INCLUDES ( LLC_BI__Third_Party__c , &quot;Real Estate Broker Seller&quot; ), &quot;Real Estate Broker Seller &quot;,null ) &amp;
+IF ( INCLUDES ( LLC_BI__Third_Party__c , &quot;Real Estate Broker Seller Contact&quot; ), &quot;Real Estate Broker Seller Contact &quot;,null ) &amp;
+IF ( INCLUDES ( LLC_BI__Third_Party__c , &quot;Settlement/Title Agent&quot; ), &quot;Settlement/Title Agent &quot;,null ) &amp;
+IF ( INCLUDES ( LLC_BI__Third_Party__c , &quot;Settlement/Title Agent Contact&quot; ), &quot;Settlement/Title Agent Contact &quot;,null ) &amp;
+IF ( INCLUDES ( LLC_BI__Third_Party__c , &quot;Survey&quot; ), &quot;Survey &quot;,null ) &amp;
+IF ( INCLUDES ( LLC_BI__Third_Party__c , &quot;Survey Contact&quot; ), &quot;Survey Contact &quot;,null ) &amp;
+IF ( INCLUDES ( LLC_BI__Third_Party__c , &quot;Third Party Reports&quot; ), &quot;Third Party Reports &quot;,null )</formula>
+    <label>Third Party Type Text</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Number_of_Borrower_Fees__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is automatically populated when fees are added to the loan. This field represents the total number of borrower fees associated to this object.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The total number of borrower fees associated to this object.</inlineHelpText>
+    <label>Number of Borrower Fees</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

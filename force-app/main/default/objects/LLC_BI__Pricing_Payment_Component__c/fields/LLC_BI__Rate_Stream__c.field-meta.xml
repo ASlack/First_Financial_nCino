@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Rate_Stream__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>--DEPRECATED-- The rate stream associated with this payment stream.</description>
+    <externalId>false</externalId>
+    <label>-D Rate Stream</label>
+    <referenceTo>LLC_BI__Pricing_Stream__c</referenceTo>
+    <relationshipLabel>-D Streams</relationshipLabel>
+    <relationshipName>Streams</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

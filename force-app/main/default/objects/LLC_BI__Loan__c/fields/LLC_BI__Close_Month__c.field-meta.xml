@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Close_Month__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is automatically populated. This formula field is used to specify the month in which the loan is projected to close (the month specified in Projected Closed Date).</description>
+    <externalId>false</externalId>
+    <formula>DATE(VALUE(LEFT(TEXT(LLC_BI__CloseDate__c),4)), VALUE(MID(TEXT(LLC_BI__CloseDate__c),6,2)), 01)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Close Month</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

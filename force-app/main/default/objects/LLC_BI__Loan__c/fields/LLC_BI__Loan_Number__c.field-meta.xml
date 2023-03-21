@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Loan_Number__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is not being used, it is depricated. The loan number that is &quot;LLC_BI__lookupKey__c&quot; field is the currently used Loan number field.</description>
+    <externalId>true</externalId>
+    <label>Loan Number - D</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>true</unique>
+</CustomField>

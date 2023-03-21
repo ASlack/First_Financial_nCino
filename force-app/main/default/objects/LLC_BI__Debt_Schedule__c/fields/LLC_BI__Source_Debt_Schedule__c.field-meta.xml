@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Source_Debt_Schedule__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this optional lookup field to the Debt Schedule it was cloned from. By default, it displays the associated Debt Schedule.</description>
+    <externalId>false</externalId>
+    <label>Source Debt Schedule</label>
+    <referenceTo>LLC_BI__Debt_Schedule__c</referenceTo>
+    <relationshipLabel>Cloned Debt Schedules</relationshipLabel>
+    <relationshipName>Cloned_Debt_Schedules</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

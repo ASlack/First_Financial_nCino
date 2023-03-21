@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Authorize__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This defaults to false. The user must check this box if they are attempting to pledge more than the current lendable value of a piece of collateral to a loan.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The user must check this box if they are attempting to pledge more than the current lendable value of a piece of collateral to a loan.</inlineHelpText>
+    <label>Authorize Pledge Amount</label>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

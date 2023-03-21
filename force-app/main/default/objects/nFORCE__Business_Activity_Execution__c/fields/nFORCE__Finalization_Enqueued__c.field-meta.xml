@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Finalization_Enqueued__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this field to indicate if a finalization process has been enqueued. By default, it is false.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This automatically populated field displays whether a finalization process has been enqueued.</inlineHelpText>
+    <label>Finalization Handler Is Enqueued</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

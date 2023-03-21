@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Linked_Spread_Statement_Record__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field is optional and manually updated. If set then this spread statement record is read-only and linked to the referenced spread statement record.</description>
+    <externalId>false</externalId>
+    <label>Linked Spread Statement Record</label>
+    <referenceTo>LLC_BI__Spread_Statement_Record__c</referenceTo>
+    <relationshipLabel>Spread Statement Records</relationshipLabel>
+    <relationshipName>Spread_Statement_Records</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

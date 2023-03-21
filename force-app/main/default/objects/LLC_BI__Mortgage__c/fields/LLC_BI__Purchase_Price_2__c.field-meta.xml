@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Purchase_Price_2__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The user populates this required text field to record the purchase price of the property. By default, this field is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the purchase price for the property. Must be a numerical value.</inlineHelpText>
+    <label>Purchase Price</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Advance_Rate__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional and sets that collateral type&apos;s advanced rate. It is manually populated.</description>
+    <externalId>false</externalId>
+    <label>Advance Rate</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

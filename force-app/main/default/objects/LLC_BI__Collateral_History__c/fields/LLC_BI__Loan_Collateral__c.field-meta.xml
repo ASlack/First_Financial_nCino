@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Loan_Collateral__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is automatically populated. This field is a Master- Detail field, used to look up the collateral that this collateral history is associated to.</description>
+    <externalId>false</externalId>
+    <label>Loan Collateral</label>
+    <referenceTo>LLC_BI__Loan_Collateral__c</referenceTo>
+    <relationshipLabel>Collateral History</relationshipLabel>
+    <relationshipName>Collateral_History</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

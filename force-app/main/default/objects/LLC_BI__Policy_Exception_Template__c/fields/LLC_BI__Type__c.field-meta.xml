@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is required and drives the filtering functionality for the user when they are applying policy exceptions. It specifies the type of the policy exception the user is applying. This is a picklist and the options can be edited to include all policy exception types pertinent to the financial institution&apos;s business practices.</description>
+    <externalId>false</externalId>
+    <label>Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Collateral</fullName>
+                <default>false</default>
+                <label>Collateral</label>
+            </value>
+            <value>
+                <fullName>Covenant</fullName>
+                <default>false</default>
+                <label>Covenant</label>
+            </value>
+            <value>
+                <fullName>Document</fullName>
+                <default>false</default>
+                <label>Document</label>
+            </value>
+            <value>
+                <fullName>Policy</fullName>
+                <default>false</default>
+                <label>Policy</label>
+            </value>
+            <value>
+                <fullName>Regulatory</fullName>
+                <default>false</default>
+                <label>Regulatory</label>
+            </value>
+            <value>
+                <fullName>Underwriting</fullName>
+                <default>false</default>
+                <label>Underwriting</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

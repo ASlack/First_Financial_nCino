@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Loan_Value_Minimum__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This currency field is optional. The user manually populates this field with the low end of the loan value range.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This currency field is optional. The user manually populates this field with the low end of the loan value range.</inlineHelpText>
+    <label>Minimum Loan Value</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

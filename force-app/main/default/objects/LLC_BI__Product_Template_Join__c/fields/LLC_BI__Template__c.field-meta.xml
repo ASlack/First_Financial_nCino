@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Template__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The LLC_BI__Template_Records__c object is is not currently used with the LLC_BI__Product__c object, so this field is currently not used.</description>
+    <externalId>false</externalId>
+    <label>Template</label>
+    <referenceTo>LLC_BI__Template_Records__c</referenceTo>
+    <relationshipLabel>Product Template Join</relationshipLabel>
+    <relationshipName>ProductTemplateJoins</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

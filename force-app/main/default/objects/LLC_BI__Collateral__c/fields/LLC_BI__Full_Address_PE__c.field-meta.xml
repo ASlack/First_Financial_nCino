@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Full_Address_PE__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional and a concatenated field for full collateral address. The field should be encrypted using Platform Encryption. The field will only be populated when Platform Encryption is enabled for the nCino Platform.</description>
+    <externalId>false</externalId>
+    <label>Address</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

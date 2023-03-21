@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Rate_Minimum_Indicator__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field will be used for Expere Doc Prep, which has not yet been implemented. This field is not required. If true, a rate floor applies to the account. If disabled, this field is not used. By default, it is disabled.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If true a rate floor applies to the account.</inlineHelpText>
+    <label>Rate Minimum Indicator</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

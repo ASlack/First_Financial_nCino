@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Caller_Source__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system populates this text field to indicate whether an nCino managed package or an external source initiated the call to resource exposure API. The default value is blank.</description>
+    <externalId>false</externalId>
+    <label>Caller Source</label>
+    <length>130000</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

@@ -1,0 +1,29 @@
+<apex:page sidebar="false"
+	showHeader="false"
+	standardStylesheets="false"
+	applyHtmlTag="false"
+	applyBodyTag="false"
+>
+	<head>
+		<script type="module" src="{!URLFOR($Resource.IavInMemoryProviderUi, 'IavInMemoryProviderUi.js')}"></script>
+	</head>
+	<body>
+		<div style="display:flex; flex-direction: column; margin-top: 20px">
+			<div style="display: flex; flex-direction: row; margin-bottom: 5px">
+				<button onclick="IavInMemoryProviderUi.simulateVendorSuccess()">
+					Simulate Vendor Success
+				</button>
+				<button onclick="IavInMemoryProviderUi.simulateVendorExited()">
+					Simulate Vendor Exit
+				</button>
+				<button onclick="IavInMemoryProviderUi.simulateVendorError()">
+					Simulate Vendor Error
+				</button>
+				<button onclick="IavInMemoryProviderUi.simulateVendorLoaded()">
+					Simulate Vendor Loaded
+				</button>
+			</div>
+			<textarea style="resize: none; width: 100%; height: 80px" id="log" readonly="true"></textarea>
+		</div>
+	</body>
+</apex:page>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Lost_Detail__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is manually populated. This field is a free form text area that contains details about why a loan opportunity was lost, including rate, covenants, etc.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>What rate, etc?</inlineHelpText>
+    <label>Lost Detail</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>TextArea</type>
+</CustomField>

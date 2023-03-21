@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Result__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The field contains the specific result of the transaction. The field typically contains more detail about the transaction result and what is conveyed by the Result Type field. For example it can indicate the reason for a failure in this field.</description>
+    <externalId>false</externalId>
+    <label>Result</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

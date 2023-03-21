@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Comments__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is a text field which allows users to enter additional notes or information related to the Covenant Compliance record.</description>
+    <externalId>false</externalId>
+    <label>Comments</label>
+    <length>32768</length>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

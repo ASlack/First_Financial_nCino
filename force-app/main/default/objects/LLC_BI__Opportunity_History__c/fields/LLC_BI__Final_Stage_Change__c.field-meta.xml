@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Final_Stage_Change__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is automatically populated with a trigger. This indicates the final entry for a single stage for a particular loan as a result of the stage changing.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Set in Code - indicates the final entry for a single stage for a particular loan.</inlineHelpText>
+    <label>Final Stage Change</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

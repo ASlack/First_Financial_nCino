@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SIOC__LastUpdate__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Last Update</label>
+    <summarizedField>SIOC__BusinessLookupHistory__c.CreatedDate</summarizedField>
+    <summaryForeignKey>SIOC__BusinessLookupHistory__c.SIOC__CompanyInfo__c</summaryForeignKey>
+    <summaryOperation>max</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

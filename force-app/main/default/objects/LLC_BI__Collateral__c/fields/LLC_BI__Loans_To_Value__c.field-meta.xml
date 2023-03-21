@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Loans_To_Value__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this field to display the Loans to Value calculation using the total loan amount divided by the collateral value.</description>
+    <externalId>false</externalId>
+    <formula>LLC_BI__Total_Active_Loans_Value__c / LLC_BI__Value__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Displays the Loans to Value calculation using the total loan amount divided by the collateral value.</inlineHelpText>
+    <label>Collateral Coverage</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

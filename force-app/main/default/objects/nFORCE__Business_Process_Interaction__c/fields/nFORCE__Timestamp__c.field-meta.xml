@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Timestamp__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this required field with the timestamp the business activity interaction was created.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Displays the timestamp the business activity interaction was created.</inlineHelpText>
+    <label>Timestamp</label>
+    <precision>18</precision>
+    <required>true</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NDOC__Columns__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional and is only used in classic Document Manager. This field stores the columns that the user configures to display in Document Manager.</description>
+    <externalId>false</externalId>
+    <label>Columns</label>
+    <length>32768</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

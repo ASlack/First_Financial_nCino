@@ -1,0 +1,8 @@
+Please review the Credit documentation for the following loan: 
+
+Loan Name: {!LLC_BI__Loan__c.Name}
+Relationship Name: {!LLC_BI__Loan__c.LLC_BI__Account__c}
+Loan Amount: {!LLC_BI__Loan__c.LLC_BI__Amount__c}
+Loan Officer: {!LLC_BI__Loan__c.LLC_BI__Loan_Officer__c}
+
+Click here for loan details: {!LLC_BI__Loan__c.Link}

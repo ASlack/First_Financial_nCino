@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nPortal__OA_Expanded_Offer_Summary_Card__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Administrators populate this field set to display the additional fields that appear on the expanded offers card in Online Application.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the API name for the expanded offer card field set.</inlineHelpText>
+    <label>OA Expanded Offers Summary Card</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

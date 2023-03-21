@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Use this custom permission to enable Renewal of CD Accounts without enforcing sharing in the Deposit Account Maintenance workflow.</description>
+    <isLicensed>false</isLicensed>
+    <label>Deposit Maintenance Renew CD Accounts</label>
+</CustomPermission>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Previous_Stage_Duration_Minutes__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is automatically populated with a trigger on insert. This field holds the previous sum of the Stage Duration Minutes for its stage of a single loan.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Set in Code - holds the previous Stage Duration Minutes for its stage of a single loan.</inlineHelpText>
+    <label>Previous Stage Duration Minutes</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

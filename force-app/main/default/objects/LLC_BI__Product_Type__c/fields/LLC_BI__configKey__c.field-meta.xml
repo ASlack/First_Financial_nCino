@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__configKey__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is automatically populated. The Config Key field is an auto-number and is used to apply a unique Name and Number to the product type allowing it to be used with the Config Key configuration.</description>
+    <displayFormat>KY_PT_{00000000}</displayFormat>
+    <externalId>false</externalId>
+    <label>Config Key</label>
+    <trackTrending>false</trackTrending>
+    <type>AutoNumber</type>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Is_In_Review__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is automatically selected via trigger. When enabled, it is used to indicate if the loan or package is in review. When disabled, it indicates the loan or package is not in review. By default, it is disabled.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicate if the loan or package is in review</inlineHelpText>
+    <label>In Review</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

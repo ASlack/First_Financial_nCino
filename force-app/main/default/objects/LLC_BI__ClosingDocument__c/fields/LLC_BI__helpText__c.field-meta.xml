@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__helpText__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field provides help text for the user and is optional.</description>
+    <externalId>false</externalId>
+    <label>Help Text</label>
+    <length>32000</length>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

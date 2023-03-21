@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Last_Evaluation_Date__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is automatically populated whenever covenant compliance records are updated to approved. It identifies the last date that a covenant record was reviewed.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Date is automatically populated whenever Covenant Compliance records are updated to approved. It identifies the last date that a covenant record was reviewed.</inlineHelpText>
+    <label>Last Evaluation Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

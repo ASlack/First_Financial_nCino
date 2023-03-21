@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SIOC__Is_Funding_Enabled__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this checkbox to indicate if funding is enabled.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The system-populated field indicates that funding is enabled for this account.</inlineHelpText>
+    <label>Is Funding Enabled</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

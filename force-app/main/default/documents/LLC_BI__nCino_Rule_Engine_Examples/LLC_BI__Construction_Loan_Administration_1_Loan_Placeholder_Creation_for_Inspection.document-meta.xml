@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>An example flow to create a Classic Document Manager placeholder for a given Valuation (Inspection) record.</description>
+    <internalUseOnly>true</internalUseOnly>
+    <name>Construction Loan Administration: 1 - Loan Placeholder Creation for Inspection</name>
+    <public>false</public>
+</Document>

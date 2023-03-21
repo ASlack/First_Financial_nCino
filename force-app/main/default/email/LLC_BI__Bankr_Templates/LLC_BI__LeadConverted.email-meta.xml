@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>UNUSED - Lead Converted</name>
+    <style>none</style>
+    <subject>* Loan &quot;{!LLC_BI__Loan__c.Name}&quot; has just been converted from a lead *</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

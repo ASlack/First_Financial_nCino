@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__File_Number__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is manually populated. This text field is used to specify a reference number used for attorney records.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Attorney&apos;s reference number</inlineHelpText>
+    <label>File Number</label>
+    <length>80</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

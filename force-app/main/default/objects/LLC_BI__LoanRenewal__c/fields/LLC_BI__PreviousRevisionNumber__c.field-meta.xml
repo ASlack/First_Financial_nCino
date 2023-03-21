@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__PreviousRevisionNumber__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This holds the previous revision number for the linked list of revisions. This field is automatically set by the system.  It is used behind the scenes to set the appropriate appendages during the renewal and modification process.</description>
+    <externalId>false</externalId>
+    <label>Previous Revision Number</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

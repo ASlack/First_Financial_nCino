@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Product_Program_History__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is currently not used because the product program selector feature is not being used. Logs the related product program history that was used with this history record.</description>
+    <externalId>false</externalId>
+    <label>Product Program History</label>
+    <referenceTo>LLC_BI__Product_Program_History__c</referenceTo>
+    <relationshipLabel>Product Program History Details</relationshipLabel>
+    <relationshipName>Product_Program_History_Details</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

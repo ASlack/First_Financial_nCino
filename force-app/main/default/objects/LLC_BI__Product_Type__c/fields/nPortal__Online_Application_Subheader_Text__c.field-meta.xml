@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nPortal__Online_Application_Subheader_Text__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Subheader text that appears beneath the Online Application Header Text on the Self Registration page for this product type.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter Subheader text to be displayed beneath the Header text on the Self Registration page for this product type.</inlineHelpText>
+    <label>Online Application Subheader Text</label>
+    <length>32000</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

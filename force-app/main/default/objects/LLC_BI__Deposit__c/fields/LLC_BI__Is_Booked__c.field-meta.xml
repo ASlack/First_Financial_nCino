@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Is_Booked__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The system selects this checkbox to indicate that the Deposit is booked. By default, this checkbox is deselected.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>When selected, this checkbox indicates that the Deposit is booked.</inlineHelpText>
+    <label>Is Booked</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

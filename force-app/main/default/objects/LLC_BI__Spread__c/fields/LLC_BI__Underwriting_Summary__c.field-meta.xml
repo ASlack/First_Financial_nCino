@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Underwriting_Summary__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field is required. It is populated automatically whenever spreading begins for a Relationship on the Loan. This field specifies the Underwriting Summary associated with the Spread.</description>
+    <externalId>false</externalId>
+    <label>Underwriting Summary</label>
+    <referenceTo>LLC_BI__Underwriting_Summary__c</referenceTo>
+    <relationshipLabel>Spreads</relationshipLabel>
+    <relationshipName>Spreads</relationshipName>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

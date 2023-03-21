@@ -1,0 +1,47 @@
+<apex:page showHeader="false" sidebar="false" docType="html-5.0" readOnly="false" applyBodyTag="false" applyHtmlTag="false" standardController="LLC_BI__Underwriting_Bundle__c" extensions="nCRED.PendingBundleUpdateController">
+	<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en">
+		<head>
+			<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+			<style>
+				body {
+					min-height: 1.5rem;
+				}
+				#reportLink {
+					color: rgb(0, 109, 204);
+				}
+			</style>
+		</head>
+		<body class="slds slds-scope">
+			<div>
+				<a class="slds-text-link" id="reportLink" target="_blank" rel="noreferrer noopener">{!JSENCODE(linkText)}</a>
+			</div>
+
+			<script type="text/javascript">
+				const isLightning = () => self.sforce && self.sforce.one;
+				const addStyling = () => {
+					if (isLightning()) {
+						reportLinkElement.style.fontSize = "0.875rem";
+					}
+				};
+	
+				const reportLinkElement = document.querySelector('#reportLink');
+				
+				if (!{! isTemplate } || !!!'{! bundleVersion }') {
+					reportLinkElement.style.display = "none";
+				} else {
+					addStyling();
+					const bundleName = "{!URLENCODE(bundleName)}";
+					const bundleVersion = "{!URLENCODE(bundleVersion)}";
+					const reportId = "{!URLENCODE(reportId)}";
+					
+					const reportLinkUrl =
+						isLightning() ?
+							`/lightning/r/Report/${reportId}/view?fv0=${bundleName}&fv1=${bundleVersion}` :
+							`/${reportId}?pv0=${bundleName}&pv1=${bundleVersion}`;
+	
+					reportLinkElement.href = reportLinkUrl;
+				}
+			</script>
+		</body>
+	</html>
+</apex:page>

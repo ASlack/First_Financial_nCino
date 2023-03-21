@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Date_Rate_Set__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This date field indicates the date used to determine the average prime offer rate for a comparable transaction. By default, this field is blank.</description>
+    <externalId>false</externalId>
+    <label>Date Interest Rate Set</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

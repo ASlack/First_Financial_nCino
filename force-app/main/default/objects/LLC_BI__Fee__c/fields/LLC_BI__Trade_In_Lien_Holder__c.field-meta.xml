@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Trade_In_Lien_Holder__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this text field to indicate the name of the financial institution that has an existing lien on an applicant&apos;s trade-in vehicle. By default, this field is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field displays the name of the financial institution that has an existing lien on the applicant&apos;s trade-in vehicle.</inlineHelpText>
+    <label>Trade-In Lien Holder</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

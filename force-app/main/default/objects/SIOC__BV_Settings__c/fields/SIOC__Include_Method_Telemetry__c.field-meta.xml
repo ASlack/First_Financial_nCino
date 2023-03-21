@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SIOC__Include_Method_Telemetry__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Administrators populate this optional boolean field to indicate to the logging system to include method telemetry. By default, it is false.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Optional: Tick this checkbox to include method telemetry in your captured log in the configured logging provider.</inlineHelpText>
+    <label>Include Method Telemetry</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

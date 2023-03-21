@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nArchive__LLC_LoanDocument__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Associated Loan Document Placeholder</description>
+    <externalId>false</externalId>
+    <label>Associated Loan Document Placeholder</label>
+    <referenceTo>LLC_BI__LLC_LoanDocument__c</referenceTo>
+    <relationshipLabel>Related Loan Document Placeholder</relationshipLabel>
+    <relationshipName>nArchive</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

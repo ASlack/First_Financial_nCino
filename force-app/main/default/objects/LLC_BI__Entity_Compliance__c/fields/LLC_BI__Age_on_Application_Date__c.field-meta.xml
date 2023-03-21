@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Age_on_Application_Date__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this formula field to indicate the applicant’s age on the application date for HMDA reportable Loans. By default, this field is blank.</description>
+    <externalId>false</externalId>
+    <formula>IF(MONTH(LLC_BI__HMDA_Application_Date__c)
+        &gt;MONTH(LLC_BI__Birthdate__c),YEAR(LLC_BI__HMDA_Application_Date__c)
+        -YEAR(LLC_BI__Birthdate__c),IF(AND(MONTH(LLC_BI__HMDA_Application_Date__c)
+        =MONTH(LLC_BI__Birthdate__c),DAY(LLC_BI__HMDA_Application_Date__c)
+        &gt;=DAY(LLC_BI__Birthdate__c)),YEAR(LLC_BI__HMDA_Application_Date__c)
+        -YEAR(LLC_BI__Birthdate__c),(YEAR(LLC_BI__HMDA_Application_Date__c)
+        -YEAR(LLC_BI__Birthdate__c))-1))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>This field indicates the applicant’s age on the application date for HMDA reportable Loans.</inlineHelpText>
+    <label>Age on Application Date</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

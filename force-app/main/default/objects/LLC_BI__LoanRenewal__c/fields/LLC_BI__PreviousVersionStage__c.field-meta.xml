@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__PreviousVersionStage__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The stage that the prior revision was in when this renewal was created. This field is automatically set by the system. It is used behind the scenes to set the appropriate appendages during the renewal and modification process.</description>
+    <externalId>false</externalId>
+    <label>Previous Version Stage</label>
+    <length>255</length>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

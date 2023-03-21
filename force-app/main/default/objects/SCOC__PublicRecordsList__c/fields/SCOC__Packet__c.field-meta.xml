@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCOC__Packet__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Lookup to packet.</description>
+    <externalId>false</externalId>
+    <label>Packet</label>
+    <referenceTo>SCOC__Packet__c</referenceTo>
+    <relationshipLabel>Public Records List</relationshipLabel>
+    <relationshipName>PublicRecordsList</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

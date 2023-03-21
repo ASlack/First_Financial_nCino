@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nFORCE__Brand_JSON__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Use this text field to store the JSON data that determines the branding style.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Use this text field to store the JSON data that determines the branding style.</inlineHelpText>
+    <label>Brand JSON</label>
+    <length>130000</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Is_Syndication_Agent__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is not required and is manually populated. When true, this field indicates that the product this feature is for is a syndicated loan (which is a bank facility that is offered by a group of lenders). Additionally, it indicates that the financial institution this product feature is for is the primary agent of the syndicated loan. The agent is a lead bank or underwriter of the loan, known as the arranger, the agent or the lead lender. This lender may put up a proportionally bigger share of the loan, or it may perform duties such as dispersing cash flows among the other syndicate members and administrative tasks.</description>
+    <externalId>false</externalId>
+    <label>Is Syndication Agent</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

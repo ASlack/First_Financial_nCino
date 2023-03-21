@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nDESIGN__Display_Toggle_Link__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>When Selected it allows the show/hide link to appear to the right and once clicked it will expand the section.</description>
+    <externalId>false</externalId>
+    <label>Display Toggle Link</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

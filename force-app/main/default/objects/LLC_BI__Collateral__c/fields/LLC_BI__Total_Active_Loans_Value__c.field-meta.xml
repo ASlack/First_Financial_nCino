@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Total_Active_Loans_Value__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The system automatically populates this field with the sum of all loan amounts actively pledged to this piece of collateral.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Displays the sum of all loan amounts actively pledged to this piece of collateral.</inlineHelpText>
+    <label>Total Active Loans Value</label>
+    <summarizedField>LLC_BI__Loan_Collateral2__c.LLC_BI__Original_Loan_Amount__c</summarizedField>
+    <summaryFilterItems>
+        <field>LLC_BI__Loan_Collateral2__c.LLC_BI__Is_Collateral_Value_Rollup_Eligible__c</field>
+        <operation>equals</operation>
+        <value>True</value>
+    </summaryFilterItems>
+    <summaryForeignKey>LLC_BI__Loan_Collateral2__c.LLC_BI__Collateral__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

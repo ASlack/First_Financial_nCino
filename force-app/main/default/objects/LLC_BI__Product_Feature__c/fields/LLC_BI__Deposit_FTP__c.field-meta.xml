@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Deposit_FTP__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The funds transfer pricing (FTP) the bank recognizes as revenue for a deposit product as a percentage.</description>
+    <externalId>false</externalId>
+    <label>Deposit Funds Transfer Pricing</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>8</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

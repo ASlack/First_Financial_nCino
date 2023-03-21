@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__AccountDocument__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional and is only used by classic Doc Man. This is a lookup to link the comment with the correct document placeholder in classic Relationship Document Manager. This field is automatically populated.</description>
+    <externalId>false</externalId>
+    <label>AccountDocument</label>
+    <referenceTo>LLC_BI__AccountDocument__c</referenceTo>
+    <relationshipLabel>AccountDocComments</relationshipLabel>
+    <relationshipName>AccountDocComments</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>true</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

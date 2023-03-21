@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type</fullName>
+    <inlineHelpText>Your selection in this field will determine the record type.  Individuals &amp; Sole Proprietors receive the &apos;Individual&apos; page layout, while all others will be assigned to the &apos;Business&apos; page layout.</inlineHelpText>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+</CustomField>

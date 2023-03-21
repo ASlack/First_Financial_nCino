@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Legal_Entity_2__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field is optional and manually populated. Use this field to look up a relationship to specify the name of a secondary collateral owner.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Eg: If there is a husband and wife pair that own the real estate, reference both entities.</inlineHelpText>
+    <label>Collateral Owner 2</label>
+    <referenceTo>LLC_BI__Legal_Entities__c</referenceTo>
+    <relationshipLabel>Collateral (Collateral Owner 2)</relationshipLabel>
+    <relationshipName>Collateral</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

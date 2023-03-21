@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Interest_Rate__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This percent field is optional. The user manually populates this field with the interest rate output for a loan with the identifying variables.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This percent field is optional. The user manually populates this field with the interest rate output for a loan with the identifying variables.</inlineHelpText>
+    <label>Interest Rate</label>
+    <precision>6</precision>
+    <required>false</required>
+    <scale>3</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

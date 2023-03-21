@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nDESIGN__All</fullName>
+    <columns>NAME</columns>
+    <columns>nDESIGN__Screen__c</columns>
+    <columns>nDESIGN__Headless__c</columns>
+    <columns>nDESIGN__Display_Order__c</columns>
+    <columns>nDESIGN__Instructions_Text__c</columns>
+    <columns>nDESIGN__Screen_View__c</columns>
+    <columns>nDESIGN__Section_Resource__c</columns>
+    <columns>nDESIGN__sObject_Type__c</columns>
+    <columns>nDESIGN__Layout__c</columns>
+    <columns>nDESIGN__Widget__c</columns>
+    <columns>nDESIGN__Is_Editable__c</columns>
+    <columns>OBJECT_ID</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

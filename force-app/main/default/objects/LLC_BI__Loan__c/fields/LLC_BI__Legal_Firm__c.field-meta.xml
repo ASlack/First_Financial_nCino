@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Legal_Firm__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is manually populated. It is used to specify the legal firm associated with loan closing. If provided, the value must match one of the values in the Legal Firm picklist established for this financial institution.</description>
+    <externalId>false</externalId>
+    <label>Legal Firm</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Sample Firm</fullName>
+                <default>false</default>
+                <label>Sample Firm</label>
+            </value>
+            <value>
+                <fullName>Sample Firm 2</fullName>
+                <default>false</default>
+                <label>Sample Firm 2</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

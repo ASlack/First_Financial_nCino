@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Handover_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Users select the type of a Handover Loan from this optional picklist. By default it is blank.</description>
+    <externalId>false</externalId>
+    <label>Handover Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Distressed Loans</fullName>
+                <default>false</default>
+                <label>Distressed Loans</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

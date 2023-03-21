@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Entity_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Typical Entity  types will  include Operating Company, Sole Proprietorship, EPC, Individual.  Value provided must match one of the values in the Entity Type pick list established for this organization.</description>
+    <externalId>false</externalId>
+    <label>Entity Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Operating Company</fullName>
+                <default>false</default>
+                <label>Operating Company</label>
+            </value>
+            <value>
+                <fullName>Sole Proprietorship</fullName>
+                <default>false</default>
+                <label>Sole Proprietorship</label>
+            </value>
+            <value>
+                <fullName>EPC</fullName>
+                <default>false</default>
+                <label>EPC</label>
+            </value>
+            <value>
+                <fullName>Individual</fullName>
+                <default>false</default>
+                <label>Individual</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

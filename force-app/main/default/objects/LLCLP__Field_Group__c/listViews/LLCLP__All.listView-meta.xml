@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLCLP__All</fullName>
+    <columns>LLCLP__Group__c</columns>
+    <columns>LLCLP__Object_Name__c</columns>
+    <columns>NAME</columns>
+    <columns>LLCLP__Factors__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

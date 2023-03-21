@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Alternate_Signature_Description__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional and can be collected as part of a workflow. It provides a description of the alternate text to print under a signature line for the beneficiary. This is used if something other than the beneficiary&apos;s name should be printed under their signature line.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>A description of the alternate text to print under a signature line for the beneficiary. This would be used if something other than the beneficiary&apos;s name should print under their signature line.</inlineHelpText>
+    <label>Alternate Signature Description</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
