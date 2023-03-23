@@ -13,6 +13,11 @@
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
+        <field>cm_Abundance_of_Caution__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
         <field>LLC_BI__Assessment_Method__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
@@ -39,11 +44,6 @@
     </displayedFields>
     <displayedFields>
         <field>LLC_BI__Zip_Code__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </displayedFields>
-    <displayedFields>
-        <field>cm_Abundance_of_Caution__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>

@@ -246,6 +246,10 @@
                 <behavior>Edit</behavior>
                 <field>LLC_BI__Dwelling__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>cm_Abundance_of_Caution__c</field>
+            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
     </layoutSections>

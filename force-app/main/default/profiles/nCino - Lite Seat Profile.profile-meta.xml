@@ -101476,10 +101476,6 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>LLC_BI__Loan__c-Classic Layout</layout>
-        <recordType>LLC_BI__Loan__c.Commercial_Loan_Record_Type</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>LLC_BI__Loan__c-Classic Layout</layout>
         <recordType>LLC_BI__Loan__c.Consumer_Loan_Record_Type</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -101505,6 +101501,10 @@
     <layoutAssignments>
         <layout>LLC_BI__Loan__c-Classic Layout</layout>
         <recordType>LLC_BI__Loan__c.LLC_BI__Test_Product_Type_1v2</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>LLC_BI__Loan__c-LLC_BI__nCino UI Hybrid</layout>
+        <recordType>LLC_BI__Loan__c.Commercial_Loan_Record_Type</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>LLC_BI__Lockbox_Service__c-LLC_BI__Lockbox Service Layout</layout>
@@ -102026,6 +102026,14 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>OrderItem-Order Product Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PersonAccount-Person Account Layout</layout>
+        <recordType>PersonAccount.Individual_Client</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PersonAccount-Person Account Layout</layout>
+        <recordType>PersonAccount.Individual_Prospect</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>PersonAccount-Person Account Layout</layout>
@@ -109388,6 +109396,10 @@
     <tabVisibilities>
         <tab>LLC_BI__Role__c</tab>
         <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>LLC_BI__Service_Mgmt__c</tab>
+        <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>LLC_BI__Spread_Statement_Record_Total__c</tab>

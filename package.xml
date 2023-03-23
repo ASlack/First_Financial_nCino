@@ -27845,6 +27845,7 @@
         <members>LLC_BI__Rate__c</members>
         <members>LLC_BI__Risk_Grade_Template__c</members>
         <members>LLC_BI__Role__c</members>
+        <members>LLC_BI__Service_Mgmt__c</members>
         <members>LLC_BI__Spread_Statement_Record_Total__c</members>
         <members>LLC_BI__Spread_Statement_Type__c</members>
         <members>LLC_BI__Strategy__c</members>
@@ -28891,6 +28892,7 @@
         <members>LLC_BI__Scenario__c.LLC_BI__Scenario_Card_Totals</members>
         <members>LLC_BI__Scenario__c.LLC_BI__Scenario_Proforma_ECA</members>
         <members>LLC_BI__Scenario__c.LLC_BI__TM_Proforma_Total_Quantity_Pricing</members>
+        <members>LLC_BI__Service_Mgmt__c.Third_Parties</members>
         <members>LLC_BI__Service_Mgmt__c.Third_Party_Service_Mgmt</members>
         <members>LLC_BI__Site_Visit_Memo__c.UI_Site_Visits</members>
         <members>LLC_BI__Spread_Statement_Period__c.LLC_BI__Add_Rent_Roll_Modal</members>
@@ -29073,6 +29075,7 @@
         <members>Section_Configuration_Layout</members>
         <members>Service_Mgmt_Record_Page</members>
         <members>Service_Mgmt_Record_Page1</members>
+        <members>Service_Mgmt_Record_Page2</members>
         <members>Site_Visit_Memo_Layout</members>
         <members>Team_Key_Layout</members>
         <members>Team_Layout</members>
@@ -30478,6 +30481,7 @@
         <members>LLC_BI__Risk_Grade_Template__c.Templates_Only</members>
         <members>LLC_BI__Risk_Grade_Template__c.Templates_and_Reviews</members>
         <members>LLC_BI__Role__c.LLC_BI__All</members>
+        <members>LLC_BI__Service_Mgmt__c.All</members>
         <members>LLC_BI__Site_Visit_Memo__c.LLC_BI__All</members>
         <members>LLC_BI__Spread_Statement_Record_Total__c.LLC_BI__All</members>
         <members>LLC_BI__Spread_Statement_Type__c.LLC_BI__All</members>
@@ -31048,9 +31052,12 @@
     </types>
     <types>
         <members>CBCFLD__CBC_Flood_Determination_Endpoint</members>
+        <members>Current_Salesforce_Instance</members>
+        <members>Current_Salesforce_Instance_c</members>
         <members>LLC_BI__ApexDevNet</members>
         <members>LLC_BI__docusign_production</members>
         <members>LLC_BI__docusign_sandbox</members>
+        <members>REST_Analytics_Communicator</members>
         <members>Sherman</members>
         <members>customer_portal</members>
         <members>llc_bi</members>
@@ -31059,6 +31066,7 @@
         <members>nFORCE__salesforce_master_org</members>
         <members>nFORCE__salesforce_master_sandbox</members>
         <members>nForce</members>
+        <members>nForms</members>
         <members>ncred</members>
         <name>RemoteSiteSetting</name>
     </types>
