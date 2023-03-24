@@ -28413,6 +28413,7 @@
         <members>LLC_BI__Collateral_Group__c.LLC_BI__Collateral_Group_Review_Card</members>
         <members>LLC_BI__Collateral_Valuation__c.LLC_BI__Collateral_Valuation_Default</members>
         <members>LLC_BI__Collateral__c.Collateral_Valuation_Possessory_CD</members>
+        <members>LLC_BI__Collateral__c.Collateral_Valuation_Possessory_Jewelry</members>
         <members>LLC_BI__Collateral__c.Collateral_Valuation_Possessory_LOC</members>
         <members>LLC_BI__Collateral__c.Collateral_Valuation_Possessory_Life_Ins</members>
         <members>LLC_BI__Collateral__c.Collateral_Valuation_Possessory_Other</members>
@@ -29113,6 +29114,7 @@
         <members>LLC_BI__Update_Deposit_Is_Booked</members>
         <members>Loan_After_Save_Loan_Name_Update</members>
         <members>Loan_Application_On_Hold</members>
+        <members>Loan_Created_Set_Create_Fields_Records</members>
         <members>Loan_ECOA_Notifications</members>
         <members>Loan_Is_Ready_For_Review</members>
         <members>Loan_RFI_Received</members>
@@ -29168,6 +29170,7 @@
         <members>LLC_BI__Update_Deposit_Is_Booked</members>
         <members>Loan_After_Save_Loan_Name_Update</members>
         <members>Loan_Application_On_Hold</members>
+        <members>Loan_Created_Set_Create_Fields_Records</members>
         <members>Loan_ECOA_Notifications</members>
         <members>Loan_Is_Ready_For_Review</members>
         <members>Loan_RFI_Received</members>
@@ -29446,6 +29449,7 @@
         <members>LLC_BI__Collateral__c-LLC_BI__Titled Vessel</members>
         <members>LLC_BI__Collateral__c-LLC_BI__UCC</members>
         <members>LLC_BI__Collateral__c-Other</members>
+        <members>LLC_BI__Collateral__c-Possessory Jewelry Gold Silver</members>
         <members>LLC_BI__Connection_Role__c-LLC_BI__Connection Role Layout</members>
         <members>LLC_BI__Connection_Role__c-nPortal__Portal Connection Role Layout</members>
         <members>LLC_BI__Connection__c-LLC_BI__Connection Layout</members>
@@ -30990,6 +30994,7 @@
         <members>LLC_BI__Collateral__c.LLC_BI__Titled_Vessel</members>
         <members>LLC_BI__Collateral__c.LLC_BI__UCC</members>
         <members>LLC_BI__Collateral__c.Other</members>
+        <members>LLC_BI__Collateral__c.Possessory_Jewelry_Gold_Silve</members>
         <members>LLC_BI__Entity_Compliance__c.LLC_BI__HMDA_Effective_2017</members>
         <members>LLC_BI__Entity_Compliance__c.LLC_BI__HMDA_Effective_2018</members>
         <members>LLC_BI__Fee__c.LLC_BI__Adjustments</members>
@@ -32100,5 +32105,16 @@
         <members>nFORCE__View__c.nFORCE__Convert_Multiple_to_Bootstrap3</members>
         <members>nFORCE__View__c.nFORCE__Convert_Single_to_Bootstrap3</members>
         <name>WebLink</name>
+    </types>
+    <types>
+        <members>LLC_BI__Collateral__c.Collateral_Mgmt_Jewelry_RT</members>
+        <members>LLC_BI__Loan__c.Loan_Default_App</members>
+        <name>WorkflowFieldUpdate</name>
+    </types>
+    <types>
+        <members>LLC_BI__Collateral__c.Possessory Life Insurance3</members>
+        <members>LLC_BI__Collateral__c.Possessory Life Insurance4</members>
+        <members>LLC_BI__Loan__c.CAB_Default Loan Name</members>
+        <name>WorkflowRule</name>
     </types>
 </Package>

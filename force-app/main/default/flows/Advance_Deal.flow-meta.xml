@@ -100,7 +100,7 @@
             <inputParameters>
                 <name>defaultApp</name>
                 <value>
-                    <stringValue>pp-details.dashboard-pp-sn-details</stringValue>
+                    <stringValue>m-pp-details.dashboard-pp-sn-details</stringValue>
                 </value>
             </inputParameters>
             <inputParameters>

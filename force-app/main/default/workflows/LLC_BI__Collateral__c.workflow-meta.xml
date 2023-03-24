@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Collateral_Mgmt_Jewelry_RT</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>Possessory_Jewelry_Gold_Silve</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Collateral Mgmt Jewelry RT</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Possessory Life Insurance3</fullName>
+        <actions>
+            <name>LLC_BI__Possessory_Life_Insurance</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Specifies page layout for Collateral2 based on Collateral Type</description>
+        <formula>TEXT(LLC_BI__Collateral_Type__r.LLC_BI__Type__c) = &quot;Possessory&quot;  &amp;&amp; TEXT(LLC_BI__Collateral_Type__r.LLC_BI__Subtype__c) = &quot;Life Insurance&quot;</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Possessory Life Insurance4</fullName>
+        <actions>
+            <name>Collateral_Mgmt_Jewelry_RT</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Specifies page layout for Collateral2 based on Collateral Subtype of Jewelry</description>
+        <formula>TEXT(LLC_BI__Collateral_Type__r.LLC_BI__Type__c) = &quot;Possessory&quot;  &amp;&amp;  TEXT(LLC_BI__Collateral_Type__r.LLC_BI__Subtype__c) = &quot;Jewelry / Gold / Silver&quot;</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

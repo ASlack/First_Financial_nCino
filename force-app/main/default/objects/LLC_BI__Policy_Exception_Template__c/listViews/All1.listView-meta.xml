@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ListView xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>All1</fullName>
+    <columns>NAME</columns>
+    <columns>LLC_BI__Type__c</columns>
+    <columns>LLC_BI__Code__c</columns>
+    <columns>LLC_BI__Severities__c</columns>
+    <columns>LLC_BI__Active__c</columns>
+    <columns>LLC_BI__Start_Date__c</columns>
+    <columns>LLC_BI__End_Date__c</columns>
     <filterScope>Everything</filterScope>
     <label>All</label>
 </ListView>

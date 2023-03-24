@@ -100608,6 +100608,18 @@
         <field>tFlow__Route__c.tFlow__Parent_Id__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Advance_Deal</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Loan_After_Save_Loan_Name_Update</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Loan_Created_Set_Create_Fields_Records</flow>
+    </flowAccesses>
     <layoutAssignments>
         <layout>Account-Account %28Vendor%29</layout>
         <recordType>Account.Vendor</recordType>
@@ -100827,6 +100839,10 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>LLCLP__Field_Group__c-LLCLP__Field Group Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>LLC_BI__Collateral__c-Possessory Jewelry Gold Silver</layout>
+        <recordType>LLC_BI__Collateral__c.Possessory_Jewelry_Gold_Silve</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>LLC_BI__External_Data_Mapping__c-LLC_BI__External Data Mapping Layout</layout>
@@ -104091,6 +104107,11 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>LLC_BI__Collateral__c.Other</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>LLC_BI__Collateral__c.Possessory_Jewelry_Gold_Silve</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>

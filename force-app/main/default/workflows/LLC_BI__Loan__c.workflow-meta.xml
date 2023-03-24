@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Loan_Default_App</fullName>
+        <field>LLC_BI__Default_App__c</field>
+        <formula>IF(
+AND(
+ISPICKVAL(LLC_BI__Product_Line__c, &quot;Commercial&quot;),
+OR(
+ISPICKVAL(LLC_BI__Stage__c, &quot;Qualification&quot;),
+ISPICKVAL(LLC_BI__Stage__c, &quot;Proposal&quot;),
+ISPICKVAL(LLC_BI__Stage__c, &quot;Credit Underwriting&quot;),
+ISPICKVAL(LLC_BI__Stage__c, &quot;Final Review&quot;),
+ISPICKVAL(LLC_BI__Stage__c, &quot;Approval / Loan Committee&quot;),
+ISPICKVAL(LLC_BI__Stage__c, &quot;Processing&quot;)
+)
+),
+&apos;m-loan.dashboard-loan&apos;,
+IF(
+AND(
+ISPICKVAL(LLC_BI__Product_Line__c, &quot;Commercial&quot;),
+OR(
+ISPICKVAL(LLC_BI__Stage__c, &quot;Doc Prep&quot;),
+ISPICKVAL(LLC_BI__Stage__c, &quot;Closing&quot;),
+ISPICKVAL(LLC_BI__Stage__c, &quot;Booking &amp; Funding&quot;),
+ISPICKVAL(LLC_BI__Stage__c, &quot;Booked&quot;),
+ISPICKVAL(LLC_BI__Stage__c, &quot;Complete&quot;)
+)
+),
+&apos;m-loan-post-approval.post-approval-loan-dashboard&apos;,
+IF(
+ISPICKVAL(LLC_BI__Product_Line__c, &quot;Consumer&quot;),
+&apos;m-retail.m-retail-loan-details&apos;,
+&apos;m-loan.dashboard-loan&apos;
+)
+)
+)</formula>
+        <name>Loan - Default App</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>CAB_Default Loan Name</fullName>
+        <actions>
+            <name>Default_Loan_Name</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>Enforces a Loan naming convention. Added for the Commercial Accelerate project.</description>
+        <formula>AND(     NOT(ISBLANK(LLC_BI__Account__c)),     NOT(ISPICKVAL(LLC_BI__Product__c, &apos;&apos;)),     OR(     NOT(ISBLANK(LLC_BI__Amount__c)),         AND(             NOT(ISBLANK(LLC_BI__Amount__c)),             ISCHANGED(LLC_BI__Amount__c)         )     ), $User.No_Workflow__c = False )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>
