@@ -31084,6 +31084,9 @@
         <members>ExecutiveDashboard/Stage_Duration_Booked_Loans_New_Ene</members>
         <members>ExecutiveDashboard/Time_from_Approval_to_Booking_Ajo</members>
         <members>ExecutiveDashboard/Time_to_Close_New_Money_NTo</members>
+        <members>FFinGroupReports</members>
+        <members>FFinGroupReports/Lost_Loans_By_Lender_VOc</members>
+        <members>FFinGroupReports/Lost_Loans_By_Region_31Z</members>
         <members>LLC_BI__nCino_Compliance_Reports</members>
         <members>LLC_BI__nCino_Reports</members>
         <members>LLC_BI__nCino_Reports/Approval_Process_History_Report</members>
