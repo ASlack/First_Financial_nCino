@@ -21185,6 +21185,7 @@
         <members>LLC_BI__Loan__c.Auto_Pay_Account_Type__c</members>
         <members>LLC_BI__Loan__c.Auto_Pay_Routing_Number__c</members>
         <members>LLC_BI__Loan__c.CRA_Comments__c</members>
+        <members>LLC_BI__Loan__c.Call_Report_Code_FFIN__c</members>
         <members>LLC_BI__Loan__c.Closing_Specialist_Review_Comments__c</members>
         <members>LLC_BI__Loan__c.Closing_Specialist_Review_Completed_Date__c</members>
         <members>LLC_BI__Loan__c.Commercial_Purpose__c</members>
@@ -29099,6 +29100,7 @@
         <members>Advance_Deal</members>
         <members>CLA_Draw_Auto_Submit_for_Approval</members>
         <members>CRA_Reportable_Invocable</members>
+        <members>Collateral_Valuation_On_Create_Update_Coll_Mgmt</members>
         <members>Commercial_LoanAutoDecision</members>
         <members>Contact_Create_Edit_All_LOB_Baseline</members>
         <members>Contact_Create_Edit_Master</members>
@@ -29155,6 +29157,7 @@
         <members>Advance_Deal</members>
         <members>CLA_Draw_Auto_Submit_for_Approval</members>
         <members>CRA_Reportable_Invocable</members>
+        <members>Collateral_Valuation_On_Create_Update_Coll_Mgmt</members>
         <members>Commercial_LoanAutoDecision</members>
         <members>Contact_Create_Edit_All_LOB_Baseline</members>
         <members>Contact_Create_Edit_Master</members>

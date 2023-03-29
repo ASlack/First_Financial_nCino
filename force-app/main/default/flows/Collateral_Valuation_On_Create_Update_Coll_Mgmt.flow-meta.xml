@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <environments>Default</environments>
+    <interviewLabel>Collateral Valuation On Create Update Coll Mgmt {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Collateral Valuation Update Coll Mgmt</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Collateral_Mgmt_Record</name>
+        <label>Update Collateral Mgmt Record</label>
+        <locationX>176</locationX>
+        <locationY>335</locationY>
+        <inputAssignments>
+            <field>LLC_BI__Appraisal_Date__c</field>
+            <value>
+                <elementReference>$Record.LLC_BI__Valuation_Date__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>LLC_BI__Assessment_Method__c</field>
+            <value>
+                <elementReference>$Record.LLC_BI__Source__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>LLC_BI__Value__c</field>
+            <value>
+                <elementReference>$Record.LLC_BI__Value__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record.LLC_BI__Collateral__r</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_Collateral_Mgmt_Record</targetReference>
+        </connector>
+        <object>LLC_BI__Collateral_Valuation__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

@@ -8,14 +8,15 @@
             <axisBinding>y</axisBinding>
             <column>RowCount</column>
         </chartSummaries>
-        <chartType>HorizontalBar</chartType>
+        <chartType>Donut</chartType>
         <enableHoverLabels>false</enableHoverLabels>
-        <expandOthers>true</expandOthers>
+        <expandOthers>false</expandOthers>
         <groupingColumn>LLC_BI__Loan__c.LLC_BI__Branch__c</groupingColumn>
+        <legendPosition>Right</legendPosition>
         <location>CHART_BOTTOM</location>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
-        <showTotal>false</showTotal>
+        <showTotal>true</showTotal>
         <showValues>false</showValues>
         <size>Medium</size>
         <summaryAxisRange>Auto</summaryAxisRange>
@@ -48,14 +49,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>,Lost to Another Bank,Competitor- Other,Competitor- Price,&quot;Competitor- Product/Service Set Gap,&quot;,Competitor-Product/Service Functionality Gap,Does not need services,Lost Loan Relationship,Price,Product/Service Functionality Gap,Product/Service Gap</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>LLC_BI__Loan__c.LLC_BI__Stage__c</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>true</isUnlocked>
-            <operator>equals</operator>
-            <value>Qualification</value>
+            <value>Lost to Another Bank,Competitor- Other,Competitor- Price,&quot;Competitor- Product/Service Set Gap,&quot;,Competitor-Product/Service Functionality Gap,Does not need services,Lost Loan Relationship,Price,Product/Service Functionality Gap,Product/Service Gap</value>
         </criteriaItems>
         <criteriaItems>
             <column>LLC_BI__LoanTeam__c.LLC_BI__Assigned_Role__c</column>
@@ -69,12 +63,17 @@
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
+        <field>LLC_BI__Loan__c.LLC_BI__Branch__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
         <field>LLC_BI__LoanTeam__c.LLC_BI__User__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>LLC_BI__Loan__c.LLC_BI__Branch__c</field>
+        <field>LLC_BI__Loan__c.LLC_BI__Adverse_Action_Flag__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Lost Loans By Region</name>

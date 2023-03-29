@@ -77115,6 +77115,11 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Loan__c.Call_Report_Code_FFIN__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>LLC_BI__Loan__c.Closing_Specialist_Review_Comments__c</field>
         <readable>false</readable>
@@ -100652,6 +100657,10 @@
     <flowAccesses>
         <enabled>false</enabled>
         <flow>Advance_Deal</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Collateral_Valuation_On_Create_Update_Coll_Mgmt</flow>
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
