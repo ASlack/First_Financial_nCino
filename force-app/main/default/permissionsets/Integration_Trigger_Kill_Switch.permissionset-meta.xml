@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>Integration_Trigger_Kill_Switch</name>
+    </customPermissions>
+    <description>Permission set used to bypass automation in the system.  Should only be given to the Data User and Admins (when needed).  Typically this is not given to standard users.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Integration Trigger Kill Switch</label>
+</PermissionSet>

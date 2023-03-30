@@ -27742,6 +27742,7 @@
     </types>
     <types>
         <members>EFPIO__Package_Registry_View_Access</members>
+        <members>Integration_Trigger_Kill_Switch</members>
         <members>LLC_BI__Collateral_Groups_Add_Collateral</members>
         <members>LLC_BI__Collateral_Groups_Add_Group_Members</members>
         <members>LLC_BI__Collateral_Groups_Remove_Collateral</members>
@@ -30700,6 +30701,7 @@
         <members>EXUS__EXUS_Credit_View_Requests</members>
         <members>EXUS__EXUS_Credit_View_Responses</members>
         <members>Export_Reports</members>
+        <members>Integration_Trigger_Kill_Switch</members>
         <members>LLCLP__Laser_Pro</members>
         <members>LLC_BI__Clone_Only_Portfolio_Analytics_User</members>
         <members>LLC_BI__Configure_Underwriting_Statements</members>
