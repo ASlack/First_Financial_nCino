@@ -28741,6 +28741,7 @@
         <members>LLC_BI__Loan__c.LLC_BI__UI_Loan_Summary</members>
         <members>LLC_BI__Loan__c.LLC_BI__UI_Lookup_Fields</members>
         <members>LLC_BI__Loan__c.LLC_BI__UI_Referral_Information</members>
+        <members>LLC_BI__Loan__c.Loan_Deal_Proposal_Cancel_Field_Set</members>
         <members>LLC_BI__Loan__c.Loan_Deal_Proposal_Edit_Card</members>
         <members>LLC_BI__Loan__c.MemoCategoryLoanInformation</members>
         <members>LLC_BI__Loan__c.Participation_Bought_Details</members>

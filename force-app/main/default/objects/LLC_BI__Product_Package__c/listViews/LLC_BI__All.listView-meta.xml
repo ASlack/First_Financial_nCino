@@ -5,7 +5,7 @@
     <columns>LLC_BI__Account__c</columns>
     <columns>LLC_BI__Primary_Officer__c</columns>
     <columns>LLC_BI__Secondary_Officer__c</columns>
+    <columns>RECORDTYPE</columns>
     <filterScope>Everything</filterScope>
     <label>All</label>
-    <language>en_US</language>
 </ListView>

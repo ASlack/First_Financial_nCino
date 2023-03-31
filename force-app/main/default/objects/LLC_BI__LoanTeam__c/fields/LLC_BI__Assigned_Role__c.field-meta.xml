@@ -5,7 +5,7 @@
     <deprecated>false</deprecated>
     <description>This field is required. It is manually populated. It identifies the role that has been assigned to a user when adding them to the loan team.</description>
     <externalId>false</externalId>
-    <inlineHelpText>Available Roles: Loan Officer; Loan Assistant; Credit Analyst / Underwriter; Portfolio Manager; Loan Ops; Closer.</inlineHelpText>
+    <inlineHelpText>Available Roles: Loan Officer; Lending Assistant; Credit Analyst / Underwriter; Doc Prep Processor; Loan Ops.</inlineHelpText>
     <label>Role</label>
     <referenceTo>LLC_BI__Role__c</referenceTo>
     <relationshipLabel>Loan Team Members</relationshipLabel>
