@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Vendor</fullName>
+    <fullName>Credit_Group</fullName>
     <active>true</active>
-    <compactLayoutAssignment>Vendor_Type</compactLayoutAssignment>
-    <description>Select &quot;Vendor&quot; if you are adding an attorney, appraiser, or other third party.</description>
-    <label>Vendor</label>
+    <compactLayoutAssignment>Household</compactLayoutAssignment>
+    <description>Select &quot;Credit Group&quot; if you&apos;re adding a Credit Group relationship type.  Also referred to as an nCino Household.</description>
+    <label>Credit Group</label>
     <picklistValues>
         <picklist>AccountSource</picklist>
-        <values>
-            <fullName>Advertisement</fullName>
-            <default>false</default>
-        </values>
         <values>
             <fullName>Broker</fullName>
             <default>false</default>
@@ -20,27 +16,7 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>External Referral</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Other</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Partner</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Public Relations</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Seminar - Internal</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Seminar - Partner</fullName>
             <default>false</default>
         </values>
         <values>
@@ -49,10 +25,6 @@
         </values>
         <values>
             <fullName>Web</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Word of mouth</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -190,7 +162,11 @@
     <picklistValues>
         <picklist>LLC_BI__Status__c</picklist>
         <values>
-            <fullName>Vendor</fullName>
+            <fullName>Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect</fullName>
             <default>true</default>
         </values>
     </picklistValues>
@@ -231,7 +207,7 @@
     <picklistValues>
         <picklist>Type</picklist>
         <values>
-            <fullName>Vendor</fullName>
+            <fullName>Household</fullName>
             <default>true</default>
         </values>
     </picklistValues>

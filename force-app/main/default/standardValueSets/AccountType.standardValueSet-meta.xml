@@ -17,9 +17,9 @@
         <label>Corporation</label>
     </standardValue>
     <standardValue>
-        <fullName>Financial Institution</fullName>
+        <fullName>Household</fullName>
         <default>false</default>
-        <label>Financial Institution</label>
+        <label>Credit Group</label>
     </standardValue>
     <standardValue>
         <fullName>Government</fullName>
@@ -27,19 +27,9 @@
         <label>Government</label>
     </standardValue>
     <standardValue>
-        <fullName>Household</fullName>
-        <default>false</default>
-        <label>Household</label>
-    </standardValue>
-    <standardValue>
         <fullName>Individual</fullName>
         <default>false</default>
         <label>Individual</label>
-    </standardValue>
-    <standardValue>
-        <fullName>Institutional Investor</fullName>
-        <default>false</default>
-        <label>Institutional Investor</label>
     </standardValue>
     <standardValue>
         <fullName>Limited Liability Company</fullName>
@@ -60,5 +50,10 @@
         <fullName>Trust</fullName>
         <default>false</default>
         <label>Trust</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Vendor</fullName>
+        <default>false</default>
+        <label>Vendor</label>
     </standardValue>
 </StandardValueSet>
