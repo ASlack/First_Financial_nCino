@@ -7,6 +7,7 @@
     <inlineHelpText>Date is originally set in the Covenant set-up wizard, but afterward, it is automatically populated whenever Covenant Compliance records are updated to approved. It identifies the next date that a covenant record should be reviewed.</inlineHelpText>
     <label>Next Evaluation Date</label>
     <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
     <type>Date</type>

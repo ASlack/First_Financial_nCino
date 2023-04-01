@@ -14,47 +14,857 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>Construction</fullName>
+                <fullName>Farm RE LT Fixed</fullName>
                 <default>false</default>
-                <label>Construction</label>
+                <label>Farm RE LT Fixed</label>
             </value>
             <value>
-                <fullName>Equipment</fullName>
+                <fullName>Farm RE 360</fullName>
                 <default>false</default>
-                <label>Equipment</label>
+                <label>Farm RE 360</label>
             </value>
             <value>
-                <fullName>Line of Credit</fullName>
+                <fullName>Farm RE 365</fullName>
                 <default>false</default>
-                <label>Line of Credit</label>
+                <label>Farm RE 365</label>
             </value>
             <value>
-                <fullName>HELOC</fullName>
+                <fullName>Rural Farm Land 360</fullName>
                 <default>false</default>
-                <label>HELOC</label>
+                <label>Rural Farm Land 360</label>
             </value>
             <value>
-                <fullName>Purchase</fullName>
+                <fullName>Agricultural 360</fullName>
                 <default>false</default>
-                <label>Purchase</label>
+                <label>Agricultural 360</label>
+            </value>
+            <value>
+                <fullName>Agricultural 365</fullName>
+                <default>false</default>
+                <label>Agricultural 365</label>
+            </value>
+            <value>
+                <fullName>Rural Farm Land 365</fullName>
+                <default>false</default>
+                <label>Rural Farm Land 365</label>
+            </value>
+            <value>
+                <fullName>NO Occup LT Fixed</fullName>
+                <default>false</default>
+                <label>NO Occup LT Fixed</label>
+            </value>
+            <value>
+                <fullName>Non-Own Occ CRE 365</fullName>
+                <default>false</default>
+                <label>Non-Own Occ CRE 365</label>
+            </value>
+            <value>
+                <fullName>Non-Own Occ CRE 360</fullName>
+                <default>false</default>
+                <label>Non-Own Occ CRE 360</label>
+            </value>
+            <value>
+                <fullName>Own Occup Long Amtz</fullName>
+                <default>false</default>
+                <label>Own Occup Long Amtz</label>
+            </value>
+            <value>
+                <fullName>Own Occup LT Fixed</fullName>
+                <default>false</default>
+                <label>Own Occup LT Fixed</label>
+            </value>
+            <value>
+                <fullName>Owner Occ CRE 365</fullName>
+                <default>false</default>
+                <label>Owner Occ CRE 365</label>
+            </value>
+            <value>
+                <fullName>Owner Occ CRE 360</fullName>
+                <default>false</default>
+                <label>Owner Occ CRE 360</label>
+            </value>
+            <value>
+                <fullName>C&amp;I 365</fullName>
+                <default>false</default>
+                <label>C&amp;I 365</label>
+            </value>
+            <value>
+                <fullName>C&amp;I 30/360</fullName>
+                <default>false</default>
+                <label>C&amp;I 30/360</label>
+            </value>
+            <value>
+                <fullName>C&amp;I 360</fullName>
+                <default>false</default>
+                <label>C&amp;I 360</label>
+            </value>
+            <value>
+                <fullName>C&amp;I Precomp</fullName>
+                <default>false</default>
+                <label>C&amp;I Precomp</label>
+            </value>
+            <value>
+                <fullName>Comm Long Amort</fullName>
+                <default>false</default>
+                <label>Comm Long Amort</label>
+            </value>
+            <value>
+                <fullName>Commercial LT fixed</fullName>
+                <default>false</default>
+                <label>Commercial LT fixed</label>
+            </value>
+            <value>
+                <fullName>Commercial Indirect</fullName>
+                <default>false</default>
+                <label>Commercial Indirect</label>
+            </value>
+            <value>
+                <fullName>ACH Cr Risk Limits</fullName>
+                <default>false</default>
+                <label>ACH Cr Risk Limits</label>
+            </value>
+            <value>
+                <fullName>SBA 30/360 NON RE</fullName>
+                <default>false</default>
+                <label>SBA 30/360 NON RE</label>
+            </value>
+            <value>
+                <fullName>Lease - Indian Ink</fullName>
+                <default>false</default>
+                <label>Lease - Indian Ink</label>
+            </value>
+            <value>
+                <fullName>NO Occup Long Amtz</fullName>
+                <default>false</default>
+                <label>NO Occup Long Amtz</label>
+            </value>
+            <value>
+                <fullName>Other Loans 360</fullName>
+                <default>false</default>
+                <label>Other Loans 360</label>
+            </value>
+            <value>
+                <fullName>Other Loans 30/360</fullName>
+                <default>false</default>
+                <label>Other Loans 30/360</label>
+            </value>
+            <value>
+                <fullName>Other Loans 365</fullName>
+                <default>false</default>
+                <label>Other Loans 365</label>
+            </value>
+            <value>
+                <fullName>Dealer Draft Line</fullName>
+                <default>false</default>
+                <label>Dealer Draft Line</label>
+            </value>
+            <value>
+                <fullName>Lease Deprecation - Indian Ink</fullName>
+                <default>false</default>
+                <label>Lease Deprecation - Indian Ink</label>
+            </value>
+            <value>
+                <fullName>Commercial 1-4 365</fullName>
+                <default>false</default>
+                <label>Commercial 1-4 365</label>
+            </value>
+            <value>
+                <fullName>Commercial 1-4 360</fullName>
+                <default>false</default>
+                <label>Commercial 1-4 360</label>
+            </value>
+            <value>
+                <fullName>Cons C&amp;L 365 Fix Int</fullName>
+                <default>false</default>
+                <label>Cons C&amp;L 365 Fix Int</label>
+            </value>
+            <value>
+                <fullName>Cons C&amp;L 365 Fix Mat</fullName>
+                <default>false</default>
+                <label>Cons C&amp;L 365 Fix Mat</label>
+            </value>
+            <value>
+                <fullName>Cons C&amp;L 365 Fix Pri</fullName>
+                <default>false</default>
+                <label>Cons C&amp;L 365 Fix Pri</label>
+            </value>
+            <value>
+                <fullName>Cons C&amp;L 365 Fix P&amp;I</fullName>
+                <default>false</default>
+                <label>Cons C&amp;L 365 Fix P&amp;I</label>
+            </value>
+            <value>
+                <fullName>Cons C&amp;L 365 Fix P+I</fullName>
+                <default>false</default>
+                <label>Cons C&amp;L 365 Fix P+I</label>
+            </value>
+            <value>
+                <fullName>Cons C&amp;L 365 Var Int</fullName>
+                <default>false</default>
+                <label>Cons C&amp;L 365 Var Int</label>
+            </value>
+            <value>
+                <fullName>Cons C&amp;L 365 Var Mat</fullName>
+                <default>false</default>
+                <label>Cons C&amp;L 365 Var Mat</label>
+            </value>
+            <value>
+                <fullName>Cons C&amp;L 365 Var P&amp;I</fullName>
+                <default>false</default>
+                <label>Cons C&amp;L 365 Var P&amp;I</label>
+            </value>
+            <value>
+                <fullName>Cons C&amp;L 365 Var P+I</fullName>
+                <default>false</default>
+                <label>Cons C&amp;L 365 Var P+I</label>
+            </value>
+            <value>
+                <fullName>Cons &amp; Dev Long Amtz</fullName>
+                <default>false</default>
+                <label>Cons &amp; Dev Long Amtz</label>
+            </value>
+            <value>
+                <fullName>Const &amp; Dev 365 (Nonconsumer)</fullName>
+                <default>false</default>
+                <label>Const &amp; Dev 365 (Nonconsumer)</label>
+            </value>
+            <value>
+                <fullName>Const &amp; Dev 360 (Nonconsumer)</fullName>
+                <default>false</default>
+                <label>Const &amp; Dev 360 (Nonconsumer)</label>
+            </value>
+            <value>
+                <fullName>Cons &amp; Dev LT Fixed</fullName>
+                <default>false</default>
+                <label>Cons &amp; Dev LT Fixed</label>
+            </value>
+            <value>
+                <fullName>HE Land Fixed</fullName>
+                <default>false</default>
+                <label>HE Land Fixed</label>
+            </value>
+            <value>
+                <fullName>HE Land Var</fullName>
+                <default>false</default>
+                <label>HE Land Var</label>
+            </value>
+            <value>
+                <fullName>HELOC Land</fullName>
+                <default>false</default>
+                <label>HELOC Land</label>
+            </value>
+            <value>
+                <fullName>HELOC Repayment Land</fullName>
+                <default>false</default>
+                <label>HELOC Repayment Land</label>
+            </value>
+            <value>
+                <fullName>Rural Land 360</fullName>
+                <default>false</default>
+                <label>Rural Land 360</label>
+            </value>
+            <value>
+                <fullName>Rural Land 365</fullName>
+                <default>false</default>
+                <label>Rural Land 365</label>
+            </value>
+            <value>
+                <fullName>Cons Lot Var 365 P&amp;I</fullName>
+                <default>false</default>
+                <label>Cons Lot Var 365 P&amp;I</label>
+            </value>
+            <value>
+                <fullName>Municipality 360</fullName>
+                <default>false</default>
+                <label>Municipality 360</label>
+            </value>
+            <value>
+                <fullName>Municipality 365</fullName>
+                <default>false</default>
+                <label>Municipality 365</label>
+            </value>
+            <value>
+                <fullName>IRB 360/30</fullName>
+                <default>false</default>
+                <label>IRB 360/30</label>
+            </value>
+            <value>
+                <fullName>IRB 30/360</fullName>
+                <default>false</default>
+                <label>IRB 30/360</label>
+            </value>
+            <value>
+                <fullName>IRB 360/360</fullName>
+                <default>false</default>
+                <label>IRB 360/360</label>
+            </value>
+            <value>
+                <fullName>IRB Actual 365/360</fullName>
+                <default>false</default>
+                <label>IRB Actual 365/360</label>
+            </value>
+            <value>
+                <fullName>Municipality LT Fix</fullName>
+                <default>false</default>
+                <label>Municipality LT Fix</label>
+            </value>
+            <value>
+                <fullName>IRB Actual 365/365</fullName>
+                <default>false</default>
+                <label>IRB Actual 365/365</label>
+            </value>
+            <value>
+                <fullName>HE Residential Fixed</fullName>
+                <default>false</default>
+                <label>HE Residential Fixed</label>
+            </value>
+            <value>
+                <fullName>Cons NonAuto Precomp</fullName>
+                <default>false</default>
+                <label>Cons NonAuto Precomp</label>
+            </value>
+            <value>
+                <fullName>Cons Non-Auto 360</fullName>
+                <default>false</default>
+                <label>Cons Non-Auto 360</label>
+            </value>
+            <value>
+                <fullName>Cons Non-Auto 365</fullName>
+                <default>false</default>
+                <label>Cons Non-Auto 365</label>
+            </value>
+            <value>
+                <fullName>Overdraft Protection</fullName>
+                <default>false</default>
+                <label>Overdraft Protection</label>
+            </value>
+            <value>
+                <fullName>LOC Professional</fullName>
+                <default>false</default>
+                <label>LOC Professional</label>
+            </value>
+            <value>
+                <fullName>LOC Consumer</fullName>
+                <default>false</default>
+                <label>LOC Consumer</label>
+            </value>
+            <value>
+                <fullName>Home Improvement</fullName>
+                <default>false</default>
+                <label>Home Improvement</label>
+            </value>
+            <value>
+                <fullName>Consumer Line of Cr</fullName>
+                <default>false</default>
+                <label>Consumer Line of Cr</label>
+            </value>
+            <value>
+                <fullName>Cons Auto Precomp</fullName>
+                <default>false</default>
+                <label>Cons Auto Precomp</label>
+            </value>
+            <value>
+                <fullName>Cons 1-4 365 Fix Int</fullName>
+                <default>false</default>
+                <label>Cons 1-4 365 Fix Int</label>
+            </value>
+            <value>
+                <fullName>Cons 1-4 365 Fix Mat</fullName>
+                <default>false</default>
+                <label>Cons 1-4 365 Fix Mat</label>
+            </value>
+            <value>
+                <fullName>Cons 1-4 365 Fix Pri</fullName>
+                <default>false</default>
+                <label>Cons 1-4 365 Fix Pri</label>
+            </value>
+            <value>
+                <fullName>Cons 1-4 365 Fix P&amp;I</fullName>
+                <default>false</default>
+                <label>Cons 1-4 365 Fix P&amp;I</label>
+            </value>
+            <value>
+                <fullName>Cons 1-4 365 Fix P+I</fullName>
+                <default>false</default>
+                <label>Cons 1-4 365 Fix P+I</label>
+            </value>
+            <value>
+                <fullName>Cons 1-4 365 Var Int</fullName>
+                <default>false</default>
+                <label>Cons 1-4 365 Var Int</label>
+            </value>
+            <value>
+                <fullName>Cons 1-4 365 Var P&amp;I</fullName>
+                <default>false</default>
+                <label>Cons 1-4 365 Var P&amp;I</label>
+            </value>
+            <value>
+                <fullName>Cons 1-4 365 Var P+I</fullName>
+                <default>false</default>
+                <label>Cons 1-4 365 Var P+I</label>
+            </value>
+            <value>
+                <fullName>Residential Long Amt</fullName>
+                <default>false</default>
+                <label>Residential Long Amt</label>
+            </value>
+            <value>
+                <fullName>Residential LT Fixed</fullName>
+                <default>false</default>
+                <label>Residential LT Fixed</label>
+            </value>
+            <value>
+                <fullName>Rural Land W Res 360</fullName>
+                <default>false</default>
+                <label>Rural Land W Res 360</label>
+            </value>
+            <value>
+                <fullName>Rural Land W Res 365</fullName>
+                <default>false</default>
+                <label>Rural Land W Res 365</label>
+            </value>
+            <value>
+                <fullName>Retail Finance</fullName>
+                <default>false</default>
+                <label>Retail Finance</label>
+            </value>
+            <value>
+                <fullName>HE Residential Var</fullName>
+                <default>false</default>
+                <label>HE Residential Var</label>
+            </value>
+            <value>
+                <fullName>HELOC Residential</fullName>
+                <default>false</default>
+                <label>HELOC Residential</label>
+            </value>
+            <value>
+                <fullName>HELOC Repayments Res</fullName>
+                <default>false</default>
+                <label>HELOC Repayments Res</label>
+            </value>
+            <value>
+                <fullName>R.E. Held for Sale</fullName>
+                <default>false</default>
+                <label>R.E. Held for Sale</label>
+            </value>
+            <value>
+                <fullName>ITIN VAR RE Loan</fullName>
+                <default>false</default>
+                <label>ITIN VAR RE Loan</label>
+            </value>
+            <value>
+                <fullName>ITIN-MMCT</fullName>
+                <default>false</default>
+                <label>ITIN-MMCT</label>
+            </value>
+            <value>
+                <fullName>Home Imp Secured</fullName>
+                <default>false</default>
+                <label>Home Imp Secured</label>
+            </value>
+            <value>
+                <fullName>R/E Jumbo-Fixed 365</fullName>
+                <default>false</default>
+                <label>R/E Jumbo-Fixed 365</label>
+            </value>
+            <value>
+                <fullName>Affordable Home Loan</fullName>
+                <default>false</default>
+                <label>Affordable Home Loan</label>
+            </value>
+            <value>
+                <fullName>Afford Home LN MMCT</fullName>
+                <default>false</default>
+                <label>Afford Home LN MMCT</label>
+            </value>
+            <value>
+                <fullName>Cons. Indirect 365</fullName>
+                <default>false</default>
+                <label>Cons. Indirect 365</label>
+            </value>
+            <value>
+                <fullName>Consumer Auto 365</fullName>
+                <default>false</default>
+                <label>Consumer Auto 365</label>
+            </value>
+            <value>
+                <fullName>Consumer Auto 360</fullName>
+                <default>false</default>
+                <label>Consumer Auto 360</label>
             </value>
         </valueSetDefinition>
         <valueSettings>
-            <controllingFieldValue>Real Estate</controllingFieldValue>
-            <valueName>Construction</valueName>
+            <controllingFieldValue>Owner Occupied CRE</controllingFieldValue>
+            <valueName>Own Occup Long Amtz</valueName>
         </valueSettings>
         <valueSettings>
-            <controllingFieldValue>Real Estate</controllingFieldValue>
-            <controllingFieldValue>Non-Real Estate</controllingFieldValue>
-            <valueName>Line of Credit</valueName>
+            <controllingFieldValue>Owner Occupied CRE</controllingFieldValue>
+            <valueName>Own Occup LT Fixed</valueName>
         </valueSettings>
         <valueSettings>
-            <controllingFieldValue>Real Estate</controllingFieldValue>
-            <valueName>Purchase</valueName>
+            <controllingFieldValue>Owner Occupied CRE</controllingFieldValue>
+            <valueName>Owner Occ CRE 365</valueName>
         </valueSettings>
         <valueSettings>
-            <controllingFieldValue>Non-Real Estate</controllingFieldValue>
-            <valueName>Equipment</valueName>
+            <controllingFieldValue>Owner Occupied CRE</controllingFieldValue>
+            <valueName>Owner Occ CRE 360</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>C&amp;I 365</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>C&amp;I 30/360</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>C&amp;I 360</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>C&amp;I Precomp</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>Comm Long Amort</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>Commercial LT fixed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>Commercial Indirect</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>Other Loans 360</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>Other Loans 30/360</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>Other Loans 365</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lease</controllingFieldValue>
+            <valueName>Lease - Indian Ink</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lease</controllingFieldValue>
+            <valueName>Lease Deprecation - Indian Ink</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Construction &amp; Development RE</controllingFieldValue>
+            <valueName>Cons C&amp;L 365 Fix Int</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Construction &amp; Development RE</controllingFieldValue>
+            <valueName>Cons C&amp;L 365 Fix Mat</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Construction &amp; Development RE</controllingFieldValue>
+            <valueName>Cons C&amp;L 365 Fix Pri</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Construction &amp; Development RE</controllingFieldValue>
+            <valueName>Cons C&amp;L 365 Fix P&amp;I</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Construction &amp; Development RE</controllingFieldValue>
+            <valueName>Cons C&amp;L 365 Fix P+I</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Construction &amp; Development RE</controllingFieldValue>
+            <valueName>Cons C&amp;L 365 Var Int</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Construction &amp; Development RE</controllingFieldValue>
+            <valueName>Cons C&amp;L 365 Var Mat</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Construction &amp; Development RE</controllingFieldValue>
+            <valueName>Cons C&amp;L 365 Var P&amp;I</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Construction &amp; Development RE</controllingFieldValue>
+            <valueName>Cons C&amp;L 365 Var P+I</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Construction &amp; Development RE</controllingFieldValue>
+            <valueName>Cons &amp; Dev Long Amtz</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Construction &amp; Development RE</controllingFieldValue>
+            <valueName>Const &amp; Dev 365 (Nonconsumer)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Construction &amp; Development RE</controllingFieldValue>
+            <valueName>Const &amp; Dev 360 (Nonconsumer)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Construction &amp; Development RE</controllingFieldValue>
+            <valueName>Cons &amp; Dev LT Fixed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Construction &amp; Development RE</controllingFieldValue>
+            <valueName>HE Land Fixed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Construction &amp; Development RE</controllingFieldValue>
+            <valueName>HE Land Var</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Construction &amp; Development RE</controllingFieldValue>
+            <valueName>HELOC Land</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Construction &amp; Development RE</controllingFieldValue>
+            <valueName>HELOC Repayment Land</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Construction &amp; Development RE</controllingFieldValue>
+            <valueName>Rural Land 360</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Construction &amp; Development RE</controllingFieldValue>
+            <valueName>Rural Land 365</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Construction &amp; Development RE</controllingFieldValue>
+            <valueName>Cons Lot Var 365 P&amp;I</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Residential RE</controllingFieldValue>
+            <valueName>Commercial 1-4 365</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Residential RE</controllingFieldValue>
+            <valueName>Commercial 1-4 360</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consumer Residential RE</controllingFieldValue>
+            <valueName>HE Residential Fixed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consumer Residential RE</controllingFieldValue>
+            <valueName>Cons 1-4 365 Fix Int</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consumer Residential RE</controllingFieldValue>
+            <valueName>Cons 1-4 365 Fix Mat</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consumer Residential RE</controllingFieldValue>
+            <valueName>Cons 1-4 365 Fix Pri</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consumer Residential RE</controllingFieldValue>
+            <valueName>Cons 1-4 365 Fix P&amp;I</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consumer Residential RE</controllingFieldValue>
+            <valueName>Cons 1-4 365 Fix P+I</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consumer Residential RE</controllingFieldValue>
+            <valueName>Cons 1-4 365 Var Int</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consumer Residential RE</controllingFieldValue>
+            <valueName>Cons 1-4 365 Var P&amp;I</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consumer Residential RE</controllingFieldValue>
+            <valueName>Cons 1-4 365 Var P+I</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consumer Residential RE</controllingFieldValue>
+            <valueName>Residential Long Amt</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consumer Residential RE</controllingFieldValue>
+            <valueName>Residential LT Fixed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consumer Residential RE</controllingFieldValue>
+            <valueName>Rural Land W Res 360</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consumer Residential RE</controllingFieldValue>
+            <valueName>Rural Land W Res 365</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consumer Residential RE</controllingFieldValue>
+            <valueName>HE Residential Var</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consumer Residential RE</controllingFieldValue>
+            <valueName>HELOC Residential</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consumer Residential RE</controllingFieldValue>
+            <valueName>HELOC Repayments Res</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consumer Residential RE</controllingFieldValue>
+            <valueName>R.E. Held for Sale</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consumer Residential RE</controllingFieldValue>
+            <valueName>ITIN VAR RE Loan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consumer Residential RE</controllingFieldValue>
+            <valueName>ITIN-MMCT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consumer Residential RE</controllingFieldValue>
+            <valueName>Home Imp Secured</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consumer Residential RE</controllingFieldValue>
+            <valueName>R/E Jumbo-Fixed 365</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consumer Residential RE</controllingFieldValue>
+            <valueName>Affordable Home Loan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consumer Residential RE</controllingFieldValue>
+            <valueName>Afford Home LN MMCT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Farm RE</controllingFieldValue>
+            <valueName>Farm RE LT Fixed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Farm RE</controllingFieldValue>
+            <valueName>Farm RE 360</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Farm RE</controllingFieldValue>
+            <valueName>Farm RE 365</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Farm RE</controllingFieldValue>
+            <valueName>Rural Farm Land 360</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Farm RE</controllingFieldValue>
+            <valueName>Rural Farm Land 365</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consumer Non-Auto</controllingFieldValue>
+            <valueName>Cons NonAuto Precomp</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consumer Non-Auto</controllingFieldValue>
+            <valueName>Cons Non-Auto 360</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consumer Non-Auto</controllingFieldValue>
+            <valueName>Cons Non-Auto 365</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consumer Non-Auto</controllingFieldValue>
+            <valueName>Overdraft Protection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consumer Non-Auto</controllingFieldValue>
+            <valueName>LOC Professional</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consumer Non-Auto</controllingFieldValue>
+            <valueName>LOC Consumer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consumer Non-Auto</controllingFieldValue>
+            <valueName>Home Improvement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consumer Non-Auto</controllingFieldValue>
+            <valueName>Consumer Line of Cr</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consumer Non-Auto</controllingFieldValue>
+            <valueName>Retail Finance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Agricultural</controllingFieldValue>
+            <valueName>Agricultural 360</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Agricultural</controllingFieldValue>
+            <valueName>Agricultural 365</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consumer Auto</controllingFieldValue>
+            <valueName>Cons Auto Precomp</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consumer Auto</controllingFieldValue>
+            <valueName>Cons. Indirect 365</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consumer Auto</controllingFieldValue>
+            <valueName>Consumer Auto 365</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consumer Auto</controllingFieldValue>
+            <valueName>Consumer Auto 360</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-Owner Occupied CRE</controllingFieldValue>
+            <valueName>NO Occup LT Fixed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-Owner Occupied CRE</controllingFieldValue>
+            <valueName>Non-Own Occ CRE 365</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-Owner Occupied CRE</controllingFieldValue>
+            <valueName>Non-Own Occ CRE 360</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-Owner Occupied CRE</controllingFieldValue>
+            <valueName>NO Occup Long Amtz</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Municipality</controllingFieldValue>
+            <valueName>Municipality 360</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Municipality</controllingFieldValue>
+            <valueName>Municipality 365</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Municipality</controllingFieldValue>
+            <valueName>IRB 360/30</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Municipality</controllingFieldValue>
+            <valueName>IRB 30/360</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Municipality</controllingFieldValue>
+            <valueName>IRB 360/360</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Municipality</controllingFieldValue>
+            <valueName>IRB Actual 365/360</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Municipality</controllingFieldValue>
+            <valueName>Municipality LT Fix</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Municipality</controllingFieldValue>
+            <valueName>IRB Actual 365/365</valueName>
         </valueSettings>
     </valueSet>
 </CustomField>
