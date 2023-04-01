@@ -61105,12 +61105,12 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>Account.LLC_BI__FICO_Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>Account.LLC_BI__FICO_Score__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -61515,7 +61515,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>Account.LLC_BI__Status__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -61585,7 +61585,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>Account.LLC_BI__lookupKey__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -61610,9 +61610,9 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Account.NAICS__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -88997,22 +88997,22 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>NAICS__c.Code__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>NAICS__c.NAICS_Code_Description__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>NAICS__c.Name__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>NAICS__c.Subsector__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -100673,11 +100673,23 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Account-LLC_BI__Account %28Business%29</layout>
+        <recordType>Account.Business_Client</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account-LLC_BI__Account %28Business%29</layout>
+        <recordType>Account.Business_Prospect</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account-LLC_BI__Account %28Business%29</layout>
         <recordType>Account.LLC_BI__Business</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Account-LLC_BI__Account %28Business%29</layout>
         <recordType>Account.LLC_BI__Lender</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account-LLC_BI__Account %28Household%29</layout>
+        <recordType>Account.Credit_Group</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Account-LLC_BI__Account %28Household%29</layout>
@@ -102041,6 +102053,14 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>OrderItem-Order Product Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PersonAccount-Person Account Layout</layout>
+        <recordType>PersonAccount.Individual_Client</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PersonAccount-Person Account Layout</layout>
+        <recordType>PersonAccount.Individual_Prospect</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>PersonAccount-Person Account Layout</layout>
@@ -104884,6 +104904,15 @@
         <modifyAllRecords>false</modifyAllRecords>
         <object>LLC_BI__third_party_report__c</object>
         <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>false</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>NAICS__c</object>
+        <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
         <allowCreate>true</allowCreate>
@@ -108859,24 +108888,40 @@
         <enabled>true</enabled>
     </pageAccesses>
     <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Account.Business_Client</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
         <default>true</default>
-        <recordType>Account.LLC_BI__Business</recordType>
+        <personAccountDefault>true</personAccountDefault>
+        <recordType>Account.Business_Prospect</recordType>
         <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Account.Credit_Group</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Account.LLC_BI__Business</recordType>
+        <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Account.LLC_BI__Household</recordType>
-        <visible>true</visible>
+        <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Account.LLC_BI__Individual</recordType>
-        <visible>true</visible>
+        <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Account.LLC_BI__Lender</recordType>
-        <visible>true</visible>
+        <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
@@ -109215,6 +109260,17 @@
         <default>false</default>
         <recordType>Opportunity.LLC_BI__Treasury_Management</recordType>
         <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>PersonAccount.Individual_Client</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <personAccountDefault>true</personAccountDefault>
+        <recordType>PersonAccount.Individual_Prospect</recordType>
+        <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>

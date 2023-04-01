@@ -61609,9 +61609,9 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Account.NAICS__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -100672,11 +100672,23 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Account-LLC_BI__Account %28Business%29</layout>
+        <recordType>Account.Business_Client</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account-LLC_BI__Account %28Business%29</layout>
+        <recordType>Account.Business_Prospect</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account-LLC_BI__Account %28Business%29</layout>
         <recordType>Account.LLC_BI__Business</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Account-LLC_BI__Account %28Business%29</layout>
         <recordType>Account.LLC_BI__Lender</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account-LLC_BI__Account %28Household%29</layout>
+        <recordType>Account.Credit_Group</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Account-LLC_BI__Account %28Household%29</layout>
@@ -102040,6 +102052,14 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>OrderItem-Order Product Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PersonAccount-Person Account Layout</layout>
+        <recordType>PersonAccount.Individual_Client</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PersonAccount-Person Account Layout</layout>
+        <recordType>PersonAccount.Individual_Prospect</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>PersonAccount-Person Account Layout</layout>
@@ -110239,24 +110259,40 @@
         <enabled>true</enabled>
     </pageAccesses>
     <recordTypeVisibilities>
-        <default>true</default>
-        <recordType>Account.LLC_BI__Business</recordType>
+        <default>false</default>
+        <recordType>Account.Business_Client</recordType>
         <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>true</default>
+        <personAccountDefault>true</personAccountDefault>
+        <recordType>Account.Business_Prospect</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Account.Credit_Group</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Account.LLC_BI__Business</recordType>
+        <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Account.LLC_BI__Household</recordType>
-        <visible>true</visible>
+        <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Account.LLC_BI__Individual</recordType>
-        <visible>true</visible>
+        <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Account.LLC_BI__Lender</recordType>
-        <visible>true</visible>
+        <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
@@ -110598,9 +110634,19 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <personAccountDefault>true</personAccountDefault>
-        <recordType>PersonAccount.PersonAccount</recordType>
+        <recordType>PersonAccount.Individual_Client</recordType>
         <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <personAccountDefault>true</personAccountDefault>
+        <recordType>PersonAccount.Individual_Prospect</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>PersonAccount.PersonAccount</recordType>
+        <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>

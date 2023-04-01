@@ -12,6 +12,11 @@
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
+        <field>Industry</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <availableFields>
         <field>NumberOfEmployees</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
@@ -28,14 +33,14 @@
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>Industry</field>
+        <field>NAICS__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
         <field>Type</field>
         <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
+        <isRequired>true</isRequired>
     </displayedFields>
     <displayedFields>
         <field>Phone</field>
