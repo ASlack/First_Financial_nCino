@@ -28899,6 +28899,7 @@
         <members>LLC_BI__Scenario__c.LLC_BI__Scenario_Card_Totals</members>
         <members>LLC_BI__Scenario__c.LLC_BI__Scenario_Proforma_ECA</members>
         <members>LLC_BI__Scenario__c.LLC_BI__TM_Proforma_Total_Quantity_Pricing</members>
+        <members>LLC_BI__Service_Mgmt__c.Third_Parties</members>
         <members>LLC_BI__Service_Mgmt__c.Third_Party_Service_Mgmt</members>
         <members>LLC_BI__Site_Visit_Memo__c.UI_Site_Visits</members>
         <members>LLC_BI__Spread_Statement_Period__c.LLC_BI__Add_Rent_Roll_Modal</members>
@@ -32110,6 +32111,7 @@
     <types>
         <members>LLC_BI__Collateral__c.Collateral_Mgmt_Jewelry_RT</members>
         <members>LLC_BI__Collateral__c.Titled_Boat</members>
+        <members>LLC_BI__Loan__c.Loan_Default_App</members>
         <name>WorkflowFieldUpdate</name>
     </types>
     <types>
