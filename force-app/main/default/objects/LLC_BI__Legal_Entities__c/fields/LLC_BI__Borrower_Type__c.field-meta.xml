@@ -41,6 +41,16 @@
                 <default>false</default>
                 <label>Primary</label>
             </value>
+            <value>
+                <fullName>Guarantor Credit Group</fullName>
+                <default>false</default>
+                <label>Guarantor Credit Group</label>
+            </value>
+            <value>
+                <fullName>Borrower Credit Group</fullName>
+                <default>false</default>
+                <label>Borrower Credit Group</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>

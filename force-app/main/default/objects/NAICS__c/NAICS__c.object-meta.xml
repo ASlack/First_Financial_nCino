@@ -159,7 +159,7 @@
         <label>NAICS Code</label>
         <type>Text</type>
     </nameField>
-    <pluralLabel>NAICS&apos;s</pluralLabel>
+    <pluralLabel>NAICS's</pluralLabel>
     <searchLayouts>
         <lookupDialogsAdditionalFields>Name__c</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>Code__c</lookupDialogsAdditionalFields>

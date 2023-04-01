@@ -17112,6 +17112,7 @@
         <members>LLC_BI__Treasury_Service__c.Treasury_Service_Layout</members>
         <members>Lead.Lead_Layout</members>
         <members>Opportunity.Opportunity_Layout</members>
+        <members>PersonAccount.Individual_Compact</members>
         <members>nFORCE__Screen_Section__c.Screen_Section_Layout</members>
         <name>CompactLayout</name>
     </types>
@@ -29102,6 +29103,8 @@
         <name>FlexiPage</name>
     </types>
     <types>
+        <members>Account_Created_Updates</members>
+        <members>Account_NAICS_Code_is_Changed</members>
         <members>Advance_Deal</members>
         <members>CLA_Draw_Auto_Submit_for_Approval</members>
         <members>CRA_Reportable_Invocable</members>
@@ -30978,6 +30981,9 @@
         <name>QuickAction</name>
     </types>
     <types>
+        <members>Account.Business_Client</members>
+        <members>Account.Business_Prospect</members>
+        <members>Account.Credit_Group</members>
         <members>Account.LLC_BI__Business</members>
         <members>Account.LLC_BI__Household</members>
         <members>Account.LLC_BI__Individual</members>
@@ -31053,6 +31059,8 @@
         <members>Lead.LLC_BI__Treasury_Management</members>
         <members>Opportunity.LLC_BI__Loan</members>
         <members>Opportunity.LLC_BI__Treasury_Management</members>
+        <members>PersonAccount.Individual_Client</members>
+        <members>PersonAccount.Individual_Prospect</members>
         <members>PersonAccount.PersonAccount</members>
         <members>SCOC__LCRDataSourceAnalysis__c.SCOC__SBSS7_Business</members>
         <members>SCOC__LCRDataSourceAnalysis__c.SCOC__SBSS7_Consumer</members>
@@ -32117,6 +32125,12 @@
         <name>WorkflowFieldUpdate</name>
     </types>
     <types>
+        <members>Account.Account - Industry Code Lookup Populated</members>
+        <members>Account.LLC_BI__Account Set Household Record Type</members>
+        <members>Account.LLC_BI__Account Set Individual Record Type</members>
+        <members>Account.LLC_BI__Account Set Lender Record Type</members>
+        <members>Contact.LLC_BI__Contact Set Business Record Type</members>
+        <members>Contact.LLC_BI__Contact Set Individual Record Type</members>
         <members>LLC_BI__Collateral__c.LLC_BI__Possessory Other2</members>
         <members>LLC_BI__Collateral__c.Other%2FGovernment Contracts2</members>
         <members>LLC_BI__Collateral__c.Possessory Life Insurance3</members>
