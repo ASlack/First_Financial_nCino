@@ -17180,6 +17180,7 @@
         <members>Account.EXUS__Business_Credit_Product__c</members>
         <members>Account.Estimated_Annual_Revenue__c</members>
         <members>Account.Fax</members>
+        <members>Account.Full_Legal_Name_Formula__c</members>
         <members>Account.Industry</members>
         <members>Account.Integration_Source__c</members>
         <members>Account.IsCustomerPortal</members>
@@ -29135,6 +29136,7 @@
         <members>PB09_nCino_CAB_Populate_Loan_Lookup_on_Pricing_Payment_Component</members>
         <members>PB10_nCino_CAB_Oppy_LTM_s_on_Loan</members>
         <members>PB1_2_nCino_PMB_Run_HMDA_Automation_Services</members>
+        <members>Product_Package_Creation_Field_Updates</members>
         <members>REG_O_Questionnaire_Rendering_Invocable</members>
         <members>REG_W_Questionnaire_Rendering_Invocable</members>
         <members>Relationship_Evaluation_LoanAutoDecision</members>
@@ -32099,5 +32101,9 @@
         <members>nFORCE__View__c.nFORCE__Convert_Multiple_to_Bootstrap3</members>
         <members>nFORCE__View__c.nFORCE__Convert_Single_to_Bootstrap3</members>
         <name>WebLink</name>
+    </types>
+    <types>
+        <members>LLC_BI__Loan__c.CAB_Default Loan Name</members>
+        <name>WorkflowRule</name>
     </types>
 </Package>
