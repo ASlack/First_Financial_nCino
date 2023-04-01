@@ -4,16 +4,36 @@
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
+                    <name>actionNames</name>
+                    <valueList>
+                        <valueListItems>
+                            <value>LLC_BI__Product_Package__c.Advance_Deal</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Delete</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>FeedItem.TextPost</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>FeedItem.QuestionPost</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>FeedItem.PollPost</value>
+                        </valueListItems>
+                    </valueList>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
                     <name>collapsed</name>
                     <value>false</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>enableActionsConfiguration</name>
-                    <value>false</value>
+                    <value>true</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>enableActionsInNative</name>
-                    <value>false</value>
+                    <value>true</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>hideChatterActions</name>
@@ -34,12 +54,15 @@
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
+                    <name>defaultAppField</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
                     <name>groupApp</name>
                     <value>Deal</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>routeApp</name>
-                    <value>pp-tn-borrowers-and-guarantors</value>
+                    <value>pp-tn-borrowers-and-guarantors-m</value>
                 </componentInstanceProperties>
                 <componentName>nFORCE:UserInterfaceContainer</componentName>
                 <identifier>nFORCE_UserInterfaceContainer</identifier>
@@ -146,6 +169,42 @@
                 </componentInstanceProperties>
                 <componentName>LLC_BI:recordEditCard</componentName>
                 <identifier>LLC_BI_recordEditCard2</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.LLC_BI__Account__r.IsPersonAccount}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>false</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>cardTitle</name>
+                    <value>Relationship Details</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>fieldSet</name>
+                    <value>Deal_Proposal_Individual</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>lookupApiName</name>
+                    <value>LLC_BI__Account__c</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>readOnlyOverride</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentName>LLC_BI:recordEditCard</componentName>
+                <identifier>LLC_BI_recordEditCard3</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.LLC_BI__Account__r.IsPersonAccount}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>true</rightValue>
+                    </criteria>
+                </visibilityRule>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -165,12 +224,16 @@
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
+                    <name>cancelLoanFieldSet</name>
+                    <value>Loan_Deal_Proposal_Cancel_Field_Set</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
                     <name>deferToNewProposalFieldSet</name>
                     <value>Loan_Deal_Proposal_Edit_Card</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>deleteLoanOnCancel</name>
-                    <value>true</value>
+                    <value>false</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>fieldSet</name>

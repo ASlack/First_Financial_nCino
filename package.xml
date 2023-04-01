@@ -17380,6 +17380,7 @@
         <members>Account.Tax_Id_Type__c</members>
         <members>Account.TickerSymbol</members>
         <members>Account.Tier</members>
+        <members>Account.Total_Relationship_Exposure__c</members>
         <members>Account.Total_Secured_Exposure__c</members>
         <members>Account.Type</members>
         <members>Account.UnsupportedBusiness__c</members>
@@ -22271,6 +22272,7 @@
         <members>LLC_BI__Product_Package__c.LLC_BI__Treasury_Annual_Operating_Cost__c</members>
         <members>LLC_BI__Product_Package__c.LLC_BI__Unused__c</members>
         <members>LLC_BI__Product_Package__c.LLC_BI__lookupKey__c</members>
+        <members>LLC_BI__Product_Package__c.Total_Relationship_Exposure__c</members>
         <members>LLC_BI__Product_Package__c.X1st_Approver__c</members>
         <members>LLC_BI__Product_Package__c.X2nd_Approver__c</members>
         <members>LLC_BI__Product_Package__c.cm_Approval_Committee__c</members>
@@ -28205,6 +28207,7 @@
         <members>Account.Credit_Memo_Standard_Review_Acct_Related</members>
         <members>Account.Credit_Memo_Standard_Review_ProdPack_Rel</members>
         <members>Account.Credit_Memo_Standard_Review_Product_Pack</members>
+        <members>Account.Deal_Proposal_Individual</members>
         <members>Account.Deal_Proposal_Relationship</members>
         <members>Account.EO_Business_Mailing_Address</members>
         <members>Account.EO_Details_Business_Summary</members>
@@ -28739,6 +28742,7 @@
         <members>LLC_BI__Loan__c.LLC_BI__UI_Loan_Summary</members>
         <members>LLC_BI__Loan__c.LLC_BI__UI_Lookup_Fields</members>
         <members>LLC_BI__Loan__c.LLC_BI__UI_Referral_Information</members>
+        <members>LLC_BI__Loan__c.Loan_Deal_Proposal_Cancel_Field_Set</members>
         <members>LLC_BI__Loan__c.Loan_Deal_Proposal_Edit_Card</members>
         <members>LLC_BI__Loan__c.MemoCategoryLoanInformation</members>
         <members>LLC_BI__Loan__c.Participation_Bought_Details</members>

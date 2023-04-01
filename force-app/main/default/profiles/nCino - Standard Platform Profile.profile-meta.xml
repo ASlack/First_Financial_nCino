@@ -61700,6 +61700,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Total_Relationship_Exposure__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Account.Total_Secured_Exposure__c</field>
         <readable>true</readable>
@@ -82342,6 +82347,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>LLC_BI__Product_Package__c.LLC_BI__lookupKey__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LLC_BI__Product_Package__c.Total_Relationship_Exposure__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
