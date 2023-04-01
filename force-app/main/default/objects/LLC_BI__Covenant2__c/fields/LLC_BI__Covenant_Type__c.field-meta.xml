@@ -10,6 +10,7 @@
     <referenceTo>LLC_BI__Covenant_Type__c</referenceTo>
     <relationshipName>Covenant2</relationshipName>
     <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
     <type>Lookup</type>

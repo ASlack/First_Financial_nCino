@@ -29082,6 +29082,7 @@
         <members>Section_Configuration_Layout</members>
         <members>Service_Mgmt_Record_Page</members>
         <members>Service_Mgmt_Record_Page1</members>
+        <members>Service_Mgmt_Record_Page2</members>
         <members>Site_Visit_Memo_Layout</members>
         <members>Team_Key_Layout</members>
         <members>Team_Layout</members>
@@ -30491,6 +30492,7 @@
         <members>LLC_BI__Risk_Grade_Template__c.Templates_Only</members>
         <members>LLC_BI__Risk_Grade_Template__c.Templates_and_Reviews</members>
         <members>LLC_BI__Role__c.LLC_BI__All</members>
+        <members>LLC_BI__Service_Mgmt__c.All</members>
         <members>LLC_BI__Site_Visit_Memo__c.LLC_BI__All</members>
         <members>LLC_BI__Spread_Statement_Record_Total__c.LLC_BI__All</members>
         <members>LLC_BI__Spread_Statement_Type__c.LLC_BI__All</members>

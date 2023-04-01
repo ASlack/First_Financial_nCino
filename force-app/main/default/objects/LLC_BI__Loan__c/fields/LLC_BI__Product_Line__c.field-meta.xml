@@ -18,6 +18,21 @@
                 <label>Commercial</label>
             </value>
             <value>
+                <fullName>Agricultural</fullName>
+                <default>false</default>
+                <label>Agricultural</label>
+            </value>
+            <value>
+                <fullName>Construction</fullName>
+                <default>false</default>
+                <label>Construction</label>
+            </value>
+            <value>
+                <fullName>Municipality</fullName>
+                <default>false</default>
+                <label>Municipality</label>
+            </value>
+            <value>
                 <fullName>Consumer</fullName>
                 <default>false</default>
                 <label>Consumer</label>

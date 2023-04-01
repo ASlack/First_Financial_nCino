@@ -7,6 +7,7 @@
     <inlineHelpText>This field is required and populated based on the Frequency. This field sets the number of days prior to the Covenant&apos;s next evaluation date that a compliance record will be created.</inlineHelpText>
     <label>Compliance Days Prior</label>
     <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>

@@ -7,6 +7,7 @@
     <inlineHelpText>Select the correct Service type.</inlineHelpText>
     <label>Service Type</label>
     <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
     <valueSet>
