@@ -14,29 +14,9 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>Account Balance / Statement</fullName>
-                <default>false</default>
-                <label>Account Balance / Statement</label>
-            </value>
-            <value>
                 <fullName>Appraisal</fullName>
                 <default>false</default>
                 <label>Appraisal</label>
-            </value>
-            <value>
-                <fullName>Credit Officer</fullName>
-                <default>false</default>
-                <label>Credit Officer</label>
-            </value>
-            <value>
-                <fullName>Financial Statement</fullName>
-                <default>false</default>
-                <label>Financial Statement</label>
-            </value>
-            <value>
-                <fullName>Insurance Agent</fullName>
-                <default>false</default>
-                <label>Insurance Agent</label>
             </value>
             <value>
                 <fullName>Internal Valuation</fullName>
@@ -44,44 +24,19 @@
                 <label>Internal Valuation</label>
             </value>
             <value>
-                <fullName>Inventory Report</fullName>
+                <fullName>Net Book Value</fullName>
                 <default>false</default>
-                <label>Inventory Report</label>
+                <label>Net Book Value</label>
             </value>
             <value>
-                <fullName>Invoice / Bill of Sale</fullName>
+                <fullName>Property Tax Assessment</fullName>
                 <default>false</default>
-                <label>Invoice / Bill of Sale</label>
+                <label>Property Tax Assessment</label>
             </value>
             <value>
-                <fullName>Real Estate Abundance of Caution</fullName>
+                <fullName>Sales Invoice</fullName>
                 <default>false</default>
-                <label>Real Estate Abundance of Caution</label>
-            </value>
-            <value>
-                <fullName>Receivables Aging</fullName>
-                <default>false</default>
-                <label>Receivables Aging</label>
-            </value>
-            <value>
-                <fullName>Real Estate Evaluation</fullName>
-                <default>false</default>
-                <label>Real Estate Evaluation</label>
-            </value>
-            <value>
-                <fullName>Real Estate Restricted Appraisal</fullName>
-                <default>false</default>
-                <label>Real Estate Restricted Appraisal</label>
-            </value>
-            <value>
-                <fullName>Third Party Source</fullName>
-                <default>false</default>
-                <label>Third Party Source</label>
-            </value>
-            <value>
-                <fullName>Valuation Service Vendor</fullName>
-                <default>false</default>
-                <label>Valuation Service Vendor</label>
+                <label>Sales Invoice</label>
             </value>
         </valueSetDefinition>
     </valueSet>

@@ -20895,6 +20895,7 @@
         <members>LLC_BI__Loan_Assumptions__c.LLC_BI__Requested_Loan_Amount__c</members>
         <members>LLC_BI__Loan_Assumptions__c.LLC_BI__Selected_Period__c</members>
         <members>LLC_BI__Loan_Assumptions__c.LLC_BI__lookupKey__c</members>
+        <members>LLC_BI__Loan_Collateral2__c.AbundanceofCaution__c</members>
         <members>LLC_BI__Loan_Collateral2__c.LLC_BI__Active__c</members>
         <members>LLC_BI__Loan_Collateral2__c.LLC_BI__Advance_Rate_Override__c</members>
         <members>LLC_BI__Loan_Collateral2__c.LLC_BI__Advance_Rate__c</members>
@@ -28417,6 +28418,7 @@
         <members>LLC_BI__Collateral_Group__c.LLC_BI__Collateral_Group_Review_Card</members>
         <members>LLC_BI__Collateral_Valuation__c.LLC_BI__Collateral_Valuation_Default</members>
         <members>LLC_BI__Collateral__c.Collateral_Valuation_Possessory_CD</members>
+        <members>LLC_BI__Collateral__c.Collateral_Valuation_Possessory_Jewelry</members>
         <members>LLC_BI__Collateral__c.Collateral_Valuation_Possessory_LOC</members>
         <members>LLC_BI__Collateral__c.Collateral_Valuation_Possessory_Life_Ins</members>
         <members>LLC_BI__Collateral__c.Collateral_Valuation_Possessory_Other</members>
@@ -29101,6 +29103,7 @@
         <members>Advance_Deal</members>
         <members>CLA_Draw_Auto_Submit_for_Approval</members>
         <members>CRA_Reportable_Invocable</members>
+        <members>Collateral_Valuation_On_Create_Update_Coll_Mgmt</members>
         <members>Commercial_LoanAutoDecision</members>
         <members>Contact_Create_Edit_All_LOB_Baseline</members>
         <members>Contact_Create_Edit_Master</members>
@@ -29451,6 +29454,7 @@
         <members>LLC_BI__Collateral__c-LLC_BI__Titled Vessel</members>
         <members>LLC_BI__Collateral__c-LLC_BI__UCC</members>
         <members>LLC_BI__Collateral__c-Other</members>
+        <members>LLC_BI__Collateral__c-Possessory Jewelry Gold Silver</members>
         <members>LLC_BI__Connection_Role__c-LLC_BI__Connection Role Layout</members>
         <members>LLC_BI__Connection_Role__c-nPortal__Portal Connection Role Layout</members>
         <members>LLC_BI__Connection__c-LLC_BI__Connection Layout</members>
@@ -30995,6 +30999,7 @@
         <members>LLC_BI__Collateral__c.LLC_BI__Titled_Vessel</members>
         <members>LLC_BI__Collateral__c.LLC_BI__UCC</members>
         <members>LLC_BI__Collateral__c.Other</members>
+        <members>LLC_BI__Collateral__c.Possessory_Jewelry_Gold_Silve</members>
         <members>LLC_BI__Entity_Compliance__c.LLC_BI__HMDA_Effective_2017</members>
         <members>LLC_BI__Entity_Compliance__c.LLC_BI__HMDA_Effective_2018</members>
         <members>LLC_BI__Fee__c.LLC_BI__Adjustments</members>
@@ -32103,6 +32108,21 @@
         <name>WebLink</name>
     </types>
     <types>
+        <members>LLC_BI__Collateral__c.Collateral_Mgmt_Jewelry_RT</members>
+        <members>LLC_BI__Collateral__c.Titled_Boat</members>
+        <name>WorkflowFieldUpdate</name>
+    </types>
+    <types>
+        <members>LLC_BI__Collateral__c.LLC_BI__Possessory Other2</members>
+        <members>LLC_BI__Collateral__c.Other%2FGovernment Contracts2</members>
+        <members>LLC_BI__Collateral__c.Possessory Life Insurance3</members>
+        <members>LLC_BI__Collateral__c.Possessory Life Insurance4</members>
+        <members>LLC_BI__Collateral__c.Possessory Other3</members>
+        <members>LLC_BI__Collateral__c.Possessory Savings%2FCD3</members>
+        <members>LLC_BI__Collateral__c.Possessory Securities3</members>
+        <members>LLC_BI__Collateral__c.Titled Boat2</members>
+        <members>LLC_BI__Collateral__c.Titled Ship2</members>
+        <members>LLC_BI__Collateral__c.Titled Trailer2</members>
         <members>LLC_BI__Loan__c.CAB_Default Loan Name</members>
         <name>WorkflowRule</name>
     </types>
