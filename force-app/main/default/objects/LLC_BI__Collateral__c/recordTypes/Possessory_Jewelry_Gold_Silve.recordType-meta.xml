@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Possessory_Jewelry_Gold_Silve</fullName>
+    <active>true</active>
+    <description>RT used for Collateral with a type of Possessory and Subtype of Jewelry / Gold / Silver</description>
+    <label>Possessory Jewelry Gold Silve</label>
+</RecordType>

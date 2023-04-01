@@ -2,6 +2,11 @@
 <FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>LLC_BI__Prod_Pkg_UI_Related_Pledge_Schedule</fullName>
     <availableFields>
+        <field>LLC_BI__Active__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <availableFields>
         <field>LLC_BI__Collateral__r.LLC_BI__Collateral_Rollup_Count__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
@@ -28,11 +33,6 @@
     </availableFields>
     <availableFields>
         <field>LLC_BI__Collateral__r.LLC_BI__Parent_Collateral__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </availableFields>
-    <availableFields>
-        <field>LLC_BI__Pledged_Status__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </availableFields>
@@ -83,7 +83,7 @@
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>LLC_BI__Active__c</field>
+        <field>LLC_BI__Pledged_Status__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
