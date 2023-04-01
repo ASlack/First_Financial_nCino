@@ -7,6 +7,7 @@
     <inlineHelpText>Select the state in which the license is issued for the relationship.</inlineHelpText>
     <label>Professional License State (Firm)</label>
     <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
     <valueSet>

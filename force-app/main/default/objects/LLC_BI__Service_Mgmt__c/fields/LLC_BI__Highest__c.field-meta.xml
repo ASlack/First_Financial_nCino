@@ -11,6 +11,7 @@
     <relationshipLabel>Service Mgmts (Highest)</relationshipLabel>
     <relationshipName>Highest_Service_Mgmts</relationshipName>
     <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
     <trackTrending>false</trackTrending>
     <type>Lookup</type>
 </CustomField>
