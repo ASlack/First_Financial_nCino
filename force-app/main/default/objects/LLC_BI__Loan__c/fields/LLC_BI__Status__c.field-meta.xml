@@ -23,29 +23,39 @@
                 <label>Hold</label>
             </value>
             <value>
-                <fullName>Lost</fullName>
+                <fullName>In Progress</fullName>
                 <default>false</default>
-                <label>Lost</label>
+                <label>In Progress</label>
             </value>
             <value>
-                <fullName>Declined</fullName>
+                <fullName>In Progress/Needs Information</fullName>
                 <default>false</default>
-                <label>Declined</label>
+                <label>In Progress/Needs Information</label>
             </value>
             <value>
-                <fullName>Charge-Off</fullName>
+                <fullName>Being Reviewed</fullName>
                 <default>false</default>
-                <label>Charge-Off</label>
+                <label>Being Reviewed</label>
             </value>
             <value>
-                <fullName>Paid Out</fullName>
+                <fullName>Rework Requested</fullName>
                 <default>false</default>
-                <label>Paid Out</label>
+                <label>Rework Requested</label>
             </value>
             <value>
-                <fullName>Withdrawn</fullName>
+                <fullName>Rework in Progress</fullName>
                 <default>false</default>
-                <label>Withdrawn</label>
+                <label>Rework in Progress</label>
+            </value>
+            <value>
+                <fullName>Assigned to Analyst</fullName>
+                <default>false</default>
+                <label>Assigned to Analyst</label>
+            </value>
+            <value>
+                <fullName>Completed</fullName>
+                <default>false</default>
+                <label>Completed</label>
             </value>
         </valueSetDefinition>
     </valueSet>
