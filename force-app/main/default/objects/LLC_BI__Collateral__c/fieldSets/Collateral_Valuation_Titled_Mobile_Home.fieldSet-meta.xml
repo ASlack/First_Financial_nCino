@@ -8,11 +8,6 @@
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>LLC_BI__Collateral_Name__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </displayedFields>
-    <displayedFields>
         <field>LLC_BI__Assessment_Method__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>

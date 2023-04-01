@@ -36,15 +36,15 @@
         <label>Collateral Value</label>
         <layoutColumns>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Readonly</behavior>
                 <field>LLC_BI__Assessment_Method__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Readonly</behavior>
                 <field>LLC_BI__Value__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Readonly</behavior>
                 <field>LLC_BI__Appraisal_Date__c</field>
             </layoutItems>
             <layoutItems>
@@ -92,11 +92,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>LetterofCreditIssueDate__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>LetterofCreditMaturityDate__c</field>
+                <field>LLC_BI__Letter_of_Credit_Date__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -229,12 +225,17 @@
         <sortOrder>Asc</sortOrder>
     </relatedLists>
     <relatedLists>
+        <customButtons>LLC_BI__Add_Valuation_Record</customButtons>
+        <excludeButtons>MassChangeOwner</excludeButtons>
+        <excludeButtons>New</excludeButtons>
         <fields>NAME</fields>
         <fields>LLC_BI__Value__c</fields>
         <fields>LLC_BI__Source__c</fields>
         <fields>LLC_BI__Valuation_Date__c</fields>
         <fields>LLC_BI__Type__c</fields>
         <relatedList>LLC_BI__Collateral_Valuation__c.LLC_BI__Collateral__c</relatedList>
+        <sortField>LLC_BI__Valuation_Date__c</sortField>
+        <sortOrder>Desc</sortOrder>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
@@ -263,7 +264,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h8X00000rwnC1</masterLabel>
+        <masterLabel>00hDn00000AfYUw</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

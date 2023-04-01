@@ -23,17 +23,12 @@
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>LetterofCreditIssueDate__c</field>
+        <field>LLC_BI__Letter_of_Credit_Date__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
         <field>LLC_BI__Possessory_Account_Number__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </displayedFields>
-    <displayedFields>
-        <field>LetterofCreditMaturityDate__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>

@@ -20,14 +20,14 @@
                 <label>Motor Vehicle</label>
             </value>
             <value>
-                <fullName>Pleasure Boat</fullName>
+                <fullName>Boat</fullName>
                 <default>false</default>
-                <label>Pleasure Boat</label>
+                <label>Boat</label>
             </value>
             <value>
-                <fullName>Vessel</fullName>
+                <fullName>ATV</fullName>
                 <default>false</default>
-                <label>Vessel</label>
+                <label>ATV</label>
             </value>
             <value>
                 <fullName>Aircraft</fullName>
@@ -214,6 +214,126 @@
                 <default>false</default>
                 <label>Government Contracts</label>
             </value>
+            <value>
+                <fullName>Motorcycles</fullName>
+                <default>false</default>
+                <label>Motorcycles</label>
+            </value>
+            <value>
+                <fullName>RV / Motorhome</fullName>
+                <default>false</default>
+                <label>RV / Motorhome</label>
+            </value>
+            <value>
+                <fullName>Jewelry / Gold / Silver</fullName>
+                <default>false</default>
+                <label>Jewelry / Gold / Silver</label>
+            </value>
+            <value>
+                <fullName>Described in UCC Filing</fullName>
+                <default>false</default>
+                <label>Described in UCC Filing</label>
+            </value>
+            <value>
+                <fullName>A/R</fullName>
+                <default>false</default>
+                <label>A/R</label>
+            </value>
+            <value>
+                <fullName>Floor Plan</fullName>
+                <default>false</default>
+                <label>Floor Plan</label>
+            </value>
+            <value>
+                <fullName>Feed Lot Cattle</fullName>
+                <default>false</default>
+                <label>Feed Lot Cattle</label>
+            </value>
+            <value>
+                <fullName>Oil &amp; Gas Equipment</fullName>
+                <default>false</default>
+                <label>Oil &amp; Gas Equipment</label>
+            </value>
+            <value>
+                <fullName>Rental Property - 1-4 Family</fullName>
+                <default>false</default>
+                <label>Rental Property - 1-4 Family</label>
+            </value>
+            <value>
+                <fullName>Development</fullName>
+                <default>false</default>
+                <label>Development</label>
+            </value>
+            <value>
+                <fullName>Oil and Gas Reserves</fullName>
+                <default>false</default>
+                <label>Oil and Gas Reserves</label>
+            </value>
+            <value>
+                <fullName>Car Washes</fullName>
+                <default>false</default>
+                <label>Car Washes</label>
+            </value>
+            <value>
+                <fullName>Church Property</fullName>
+                <default>false</default>
+                <label>Church Property</label>
+            </value>
+            <value>
+                <fullName>Hotel / Motel</fullName>
+                <default>false</default>
+                <label>Hotel / Motel</label>
+            </value>
+            <value>
+                <fullName>Self Storage Facilities</fullName>
+                <default>false</default>
+                <label>Self Storage Facilities</label>
+            </value>
+            <value>
+                <fullName>Convenience Stores</fullName>
+                <default>false</default>
+                <label>Convenience Stores</label>
+            </value>
+            <value>
+                <fullName>RV Parks</fullName>
+                <default>false</default>
+                <label>RV Parks</label>
+            </value>
+            <value>
+                <fullName>For Profit Hospitals / Surgery Centers</fullName>
+                <default>false</default>
+                <label>For Profit Hospitals / Surgery Centers</label>
+            </value>
+            <value>
+                <fullName>Funeral Homes</fullName>
+                <default>false</default>
+                <label>Funeral Homes</label>
+            </value>
+            <value>
+                <fullName>Nursing Homes</fullName>
+                <default>false</default>
+                <label>Nursing Homes</label>
+            </value>
+            <value>
+                <fullName>Restaurants</fullName>
+                <default>false</default>
+                <label>Restaurants</label>
+            </value>
+            <value>
+                <fullName>Leases</fullName>
+                <default>false</default>
+                <label>Leases</label>
+            </value>
+            <value>
+                <fullName>I&amp;S Tax Pledge</fullName>
+                <default>false</default>
+                <label>I&amp;S Tax Pledge</label>
+            </value>
+            <value>
+                <fullName>M&amp;O Tax Pledge</fullName>
+                <default>false</default>
+                <label>M&amp;O Tax Pledge</label>
+            </value>
         </valueSetDefinition>
         <valueSettings>
             <controllingFieldValue>Titled</controllingFieldValue>
@@ -221,11 +341,11 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Titled</controllingFieldValue>
-            <valueName>Pleasure Boat</valueName>
+            <valueName>Boat</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Titled</controllingFieldValue>
-            <valueName>Vessel</valueName>
+            <valueName>ATV</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Titled</controllingFieldValue>
@@ -243,6 +363,14 @@
             <controllingFieldValue>Titled</controllingFieldValue>
             <controllingFieldValue>Real Estate</controllingFieldValue>
             <valueName>Mobile Home</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Titled</controllingFieldValue>
+            <valueName>Motorcycles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Titled</controllingFieldValue>
+            <valueName>RV / Motorhome</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Real Estate</controllingFieldValue>
@@ -283,6 +411,58 @@
         <valueSettings>
             <controllingFieldValue>Real Estate</controllingFieldValue>
             <valueName>Other RE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Real Estate</controllingFieldValue>
+            <valueName>Rental Property - 1-4 Family</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Real Estate</controllingFieldValue>
+            <valueName>Development</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Real Estate</controllingFieldValue>
+            <valueName>Oil and Gas Reserves</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Real Estate</controllingFieldValue>
+            <valueName>Car Washes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Real Estate</controllingFieldValue>
+            <valueName>Church Property</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Real Estate</controllingFieldValue>
+            <valueName>Hotel / Motel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Real Estate</controllingFieldValue>
+            <valueName>Self Storage Facilities</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Real Estate</controllingFieldValue>
+            <valueName>Convenience Stores</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Real Estate</controllingFieldValue>
+            <valueName>RV Parks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Real Estate</controllingFieldValue>
+            <valueName>For Profit Hospitals / Surgery Centers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Real Estate</controllingFieldValue>
+            <valueName>Funeral Homes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Real Estate</controllingFieldValue>
+            <valueName>Nursing Homes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Real Estate</controllingFieldValue>
+            <valueName>Restaurants</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>UCC</controllingFieldValue>
@@ -341,8 +521,40 @@
             <valueName>Minerals, Oil and Gas</valueName>
         </valueSettings>
         <valueSettings>
+            <controllingFieldValue>UCC</controllingFieldValue>
+            <valueName>Described in UCC Filing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UCC</controllingFieldValue>
+            <valueName>A/R</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UCC</controllingFieldValue>
+            <valueName>Floor Plan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UCC</controllingFieldValue>
+            <valueName>Feed Lot Cattle</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UCC</controllingFieldValue>
+            <valueName>Oil &amp; Gas Equipment</valueName>
+        </valueSettings>
+        <valueSettings>
             <controllingFieldValue>Other</controllingFieldValue>
             <valueName>Government Contracts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>Leases</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>I&amp;S Tax Pledge</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>M&amp;O Tax Pledge</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Possessory</controllingFieldValue>
@@ -375,6 +587,10 @@
         <valueSettings>
             <controllingFieldValue>Possessory</controllingFieldValue>
             <valueName>Life Insurance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Possessory</controllingFieldValue>
+            <valueName>Jewelry / Gold / Silver</valueName>
         </valueSettings>
     </valueSet>
 </CustomField>

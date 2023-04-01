@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Collateral_Mgmt_Jewelry_RT</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>Possessory_Jewelry_Gold_Silve</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Collateral Mgmt Jewelry RT</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Titled_Boat</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>LLC_BI__Titled_Boat</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Titled Boat</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>LLC_BI__Possessory Other2</fullName>
+        <actions>
+            <name>LLC_BI__Possessory_Other</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>Specifies page layout for Collateral2 based on Collateral Type</description>
+        <formula>TEXT(LLC_BI__Collateral_Type__r.LLC_BI__Type__c) = &quot;Possessory&quot;  &amp;&amp;  (TEXT(LLC_BI__Collateral_Type__r.LLC_BI__Subtype__c) = &quot;Other Possessory&quot; || TEXT(LLC_BI__Collateral_Type__r.LLC_BI__Subtype__c) = &quot;Note/Instrument&quot; || TEXT(LLC_BI__Collateral_Type__r.LLC_BI__Subtype__c) = &quot;Receipts/Bills&quot;)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Other%2FGovernment Contracts2</fullName>
+        <actions>
+            <name>LLC_BI__Government_Contracts2</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Specifies page layout for Collateral2 based on Collateral Type</description>
+        <formula>TEXT(LLC_BI__Collateral_Type__r.LLC_BI__Type__c) = &quot;Other&quot;</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Possessory Life Insurance3</fullName>
+        <actions>
+            <name>LLC_BI__Possessory_Life_Insurance</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Specifies page layout for Collateral2 based on Collateral Type</description>
+        <formula>TEXT(LLC_BI__Collateral_Type__r.LLC_BI__Type__c) = &quot;Possessory&quot;  &amp;&amp; TEXT(LLC_BI__Collateral_Type__r.LLC_BI__Subtype__c) = &quot;Life Insurance&quot;</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Possessory Life Insurance4</fullName>
+        <actions>
+            <name>Collateral_Mgmt_Jewelry_RT</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Specifies page layout for Collateral2 based on Collateral Subtype of Jewelry</description>
+        <formula>TEXT(LLC_BI__Collateral_Type__r.LLC_BI__Type__c) = &quot;Possessory&quot;  &amp;&amp;  TEXT(LLC_BI__Collateral_Type__r.LLC_BI__Subtype__c) = &quot;Jewelry / Gold / Silver&quot;</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Possessory Other3</fullName>
+        <actions>
+            <name>LLC_BI__Possessory_Other</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Specifies page layout for Collateral2 based on Collateral Type</description>
+        <formula>TEXT(LLC_BI__Collateral_Type__r.LLC_BI__Type__c) = &quot;Possessory&quot;  &amp;&amp;  TEXT(LLC_BI__Collateral_Type__r.LLC_BI__Subtype__c) = &quot;Other Possessory&quot;</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Possessory Savings%2FCD3</fullName>
+        <actions>
+            <name>LLC_BI__Possessory_Savings_CD</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Specifies page layout for Collateral2 based on Collateral Type</description>
+        <formula>TEXT(LLC_BI__Collateral_Type__r.LLC_BI__Type__c) = &quot;Possessory&quot;  &amp;&amp;  TEXT(LLC_BI__Collateral_Type__r.LLC_BI__Subtype__c) = &quot;Savings/CDs&quot;</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Possessory Securities3</fullName>
+        <actions>
+            <name>LLC_BI__Possessory_Securities</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Specifies page layout for Collateral2 based on Collateral Type</description>
+        <formula>TEXT(LLC_BI__Collateral_Type__r.LLC_BI__Type__c) = &quot;Possessory&quot;  &amp;&amp;  (TEXT(LLC_BI__Collateral_Type__r.LLC_BI__Subtype__c) = &quot;Securities&quot; || TEXT(LLC_BI__Collateral_Type__r.LLC_BI__Subtype__c) = &quot;Note/Instrument&quot; || TEXT(LLC_BI__Collateral_Type__r.LLC_BI__Subtype__c) = &quot;Receipts/Bills&quot;)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Titled Boat2</fullName>
+        <actions>
+            <name>Titled_Boat</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Specifies page layout for Collateral2 based on Collateral Type</description>
+        <formula>TEXT(LLC_BI__Collateral_Type__r.LLC_BI__Type__c) = &quot;Titled&quot;  &amp;&amp;  TEXT(LLC_BI__Collateral_Type__r.LLC_BI__Subtype__c) = &quot;Boat&quot;</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Titled Ship2</fullName>
+        <actions>
+            <name>LLC_BI__Titled_Vessel</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Specifies page layout for Collateral2 based on Collateral Type</description>
+        <formula>TEXT(LLC_BI__Collateral_Type__r.LLC_BI__Type__c) = &quot;Titled&quot;  &amp;&amp;  TEXT(LLC_BI__Collateral_Type__r.LLC_BI__Subtype__c) = &quot;Ship&quot;</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Titled Trailer2</fullName>
+        <actions>
+            <name>LLC_BI__Titled_Trailer_Other</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Specifies page layout for Collateral2 based on Collateral Type</description>
+        <formula>TEXT(LLC_BI__Collateral_Type__r.LLC_BI__Type__c) = &quot;Titled&quot;  &amp;&amp;  TEXT(LLC_BI__Collateral_Type__r.LLC_BI__Subtype__c) != &quot;Motor Vehicle&quot; &amp;&amp; TEXT(LLC_BI__Collateral_Type__r.LLC_BI__Subtype__c) != &quot;Mobile Home&quot; &amp;&amp;  TEXT(LLC_BI__Collateral_Type__r.LLC_BI__Subtype__c) != &quot;Boat&quot; &amp;&amp; TEXT(LLC_BI__Collateral_Type__r.LLC_BI__Subtype__c) != &quot;Vessel&quot; &amp;&amp; TEXT(LLC_BI__Collateral_Type__r.LLC_BI__Subtype__c) != &quot;Aircraft&quot;</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>
