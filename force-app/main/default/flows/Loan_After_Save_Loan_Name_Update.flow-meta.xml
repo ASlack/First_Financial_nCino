@@ -5,8 +5,8 @@
         <description>Checks if individual or business relationship for in process loans</description>
         <name>Individual_or_Business_In_Process</name>
         <label>Individual or Business In Process</label>
-        <locationX>710</locationX>
-        <locationY>455</locationY>
+        <locationX>770</locationX>
+        <locationY>575</locationY>
         <defaultConnector>
             <targetReference>loanNameUpdateBusinessInProcess</targetReference>
         </defaultConnector>
@@ -31,8 +31,8 @@
         <description>Checks if individual or business relationship for in process loans</description>
         <name>Individual_or_Business_Not_In_Process</name>
         <label>Individual or Business Not In Process</label>
-        <locationX>182</locationX>
-        <locationY>455</locationY>
+        <locationX>242</locationX>
+        <locationY>575</locationY>
         <defaultConnector>
             <targetReference>loanNameUpdateBusinessNotInProcess</targetReference>
         </defaultConnector>
@@ -54,11 +54,33 @@
         </rules>
     </decisions>
     <decisions>
+        <name>Integration_Trigger_Kill_Switch</name>
+        <label>Integration Trigger Kill Switch</label>
+        <locationX>176</locationX>
+        <locationY>335</locationY>
+        <defaultConnector>
+            <targetReference>What_is_the_loan_stage</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Kill_Switch_True</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Permission.Integration_Trigger_Kill_Switch</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Kill Switch = True</label>
+        </rules>
+    </decisions>
+    <decisions>
         <description>Checks to see if the loan stage is booked/complete or in-process</description>
         <name>What_is_the_loan_stage</name>
         <label>What is the loan stage</label>
-        <locationX>446</locationX>
-        <locationY>335</locationY>
+        <locationX>506</locationX>
+        <locationY>455</locationY>
         <defaultConnector>
             <targetReference>Individual_or_Business_In_Process</targetReference>
         </defaultConnector>
@@ -86,7 +108,7 @@
             <label>notInProcess</label>
         </rules>
     </decisions>
-    <description>Updates the loan name depending on the stage of the loan.  NAVEBANK-412</description>
+    <description>Updates the loan name depending on the stage of the loan.</description>
     <environments>Default</environments>
     <formulas>
         <description>Updates loan name for business relationship on booked loans</description>
@@ -98,7 +120,20 @@
         <description>Loan name formula for in process loans for business relationships</description>
         <name>loanNameFormulaBusinessInProcess</name>
         <dataType>String</dataType>
-        <expression>{!$Record.LLC_BI__Account__r.Name} &amp; &apos; - &apos; &amp; TEXT({!$Record.LLC_BI__Product__c}) &amp; &apos; - &apos; &amp; &apos;$&apos; &amp; TEXT({!$Record.LLC_BI__Amount__c})</expression>
+        <expression>{!$Record.LLC_BI__Account__r.Name} &amp; &apos; - &apos; &amp; TEXT({!$Record.LLC_BI__Product__c}) &amp; &apos; - &apos; &amp; &apos;$&apos; &amp; IF( 
+  {!$Record.LLC_BI__Amount__c} &gt;= 1000000, 
+  TEXT(FLOOR({!$Record.LLC_BI__Amount__c} / 1000000)) &amp; &quot;,&quot;, 
+  &quot;&quot;) &amp; 
+IF( 
+  {!$Record.LLC_BI__Amount__c}&gt;= 1000, 
+  RIGHT(TEXT(FLOOR({!$Record.LLC_BI__Amount__c} / 1000)), 3) &amp; &quot;,&quot;, 
+  &quot;&quot;) &amp; 
+RIGHT(TEXT(FLOOR({!$Record.LLC_BI__Amount__c})), 3) &amp; &quot;.&quot; &amp; 
+IF( 
+  MOD({!$Record.LLC_BI__Amount__c} , 1) * 100 &lt; 10, 
+  &quot;0&quot; &amp; TEXT(ROUND(MOD({!$Record.LLC_BI__Amount__c} , 1), 2) * 100), 
+  TEXT(MIN(ROUND(MOD({!$Record.LLC_BI__Amount__c} , 1), 2) * 100, 99)) 
+)</expression>
     </formulas>
     <formulas>
         <description>Loan name formula for non-booked/complete loans for individuals</description>
@@ -110,7 +145,20 @@
         <description>Formula for loan name update for in process loans for individuals</description>
         <name>loanNameFormulaIndividualInProcess</name>
         <dataType>String</dataType>
-        <expression>{!$Record.LLC_BI__Account__r.FirstName} &amp; &apos; &apos; &amp;{!$Record.LLC_BI__Account__r.LastName} &amp; &apos; - &apos; &amp; TEXT({!$Record.LLC_BI__Product__c}) &amp; &apos; - &apos; &amp; &apos;$&apos; &amp; TEXT({!$Record.LLC_BI__Amount__c})</expression>
+        <expression>{!$Record.LLC_BI__Account__r.FirstName} &amp; &apos; &apos; &amp;{!$Record.LLC_BI__Account__r.LastName} &amp; &apos; - &apos; &amp; TEXT({!$Record.LLC_BI__Product__c}) &amp; &apos; - &apos; &amp; &apos;$&apos; &amp; IF( 
+  {!$Record.LLC_BI__Amount__c} &gt;= 1000000, 
+  TEXT(FLOOR({!$Record.LLC_BI__Amount__c} / 1000000)) &amp; &quot;,&quot;, 
+  &quot;&quot;) &amp; 
+IF( 
+  {!$Record.LLC_BI__Amount__c}&gt;= 1000, 
+  RIGHT(TEXT(FLOOR({!$Record.LLC_BI__Amount__c} / 1000)), 3) &amp; &quot;,&quot;, 
+  &quot;&quot;) &amp; 
+RIGHT(TEXT(FLOOR({!$Record.LLC_BI__Amount__c})), 3) &amp; &quot;.&quot; &amp; 
+IF( 
+  MOD({!$Record.LLC_BI__Amount__c} , 1) * 100 &lt; 10, 
+  &quot;0&quot; &amp; TEXT(ROUND(MOD({!$Record.LLC_BI__Amount__c} , 1), 2) * 100), 
+  TEXT(MIN(ROUND(MOD({!$Record.LLC_BI__Amount__c} , 1), 2) * 100, 99)) 
+)</expression>
     </formulas>
     <interviewLabel>Loan - After Save - Loan Name Update {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Loan - After Save - Loan Name Update</label>
@@ -137,8 +185,8 @@
         <description>Updates the loan name for in process loans for business relationships</description>
         <name>loanNameUpdateBusinessInProcess</name>
         <label>loanNameUpdateBusinessInProcess</label>
-        <locationX>842</locationX>
-        <locationY>575</locationY>
+        <locationX>902</locationX>
+        <locationY>695</locationY>
         <inputAssignments>
             <field>Name</field>
             <value>
@@ -151,8 +199,8 @@
         <description>Updates loan name for booked or complete, not in process loans for business relationships</description>
         <name>loanNameUpdateBusinessNotInProcess</name>
         <label>loanNameUpdateBusinessNotInProcess</label>
-        <locationX>314</locationX>
-        <locationY>575</locationY>
+        <locationX>374</locationX>
+        <locationY>695</locationY>
         <inputAssignments>
             <field>Name</field>
             <value>
@@ -165,8 +213,8 @@
         <description>Updates the loan name for in process loans for individuals</description>
         <name>loanNameUpdateIndividualInProcess</name>
         <label>loanNameUpdateIndividualInProcess</label>
-        <locationX>578</locationX>
-        <locationY>575</locationY>
+        <locationX>638</locationX>
+        <locationY>695</locationY>
         <inputAssignments>
             <field>Name</field>
             <value>
@@ -179,8 +227,8 @@
         <description>Updates the loan name when the loan is not in process for individuals</description>
         <name>loanNameUpdateIndividualNotInProcess</name>
         <label>loanNameUpdateIndividualNotInProcess</label>
-        <locationX>50</locationX>
-        <locationY>575</locationY>
+        <locationX>110</locationX>
+        <locationY>695</locationY>
         <inputAssignments>
             <field>Name</field>
             <value>
@@ -190,14 +238,14 @@
         <inputReference>$Record</inputReference>
     </recordUpdates>
     <start>
-        <locationX>320</locationX>
+        <locationX>50</locationX>
         <locationY>0</locationY>
         <connector>
-            <targetReference>What_is_the_loan_stage</targetReference>
+            <targetReference>Integration_Trigger_Kill_Switch</targetReference>
         </connector>
         <object>LLC_BI__Loan__c</object>
         <recordTriggerType>CreateAndUpdate</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
     </start>
-    <status>Draft</status>
+    <status>Active</status>
 </Flow>

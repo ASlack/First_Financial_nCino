@@ -4,6 +4,50 @@
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
+                    <name>actionNames</name>
+                    <valueList>
+                        <valueListItems>
+                            <value>Delete</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>FeedItem.TextPost</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>FeedItem.QuestionPost</value>
+                        </valueListItems>
+                    </valueList>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>collapsed</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>enableActionsConfiguration</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>enableActionsInNative</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>hideChatterActions</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>numVisibleActions</name>
+                    <value>3</value>
+                </componentInstanceProperties>
+                <componentName>force:highlightsPanel</componentName>
+                <identifier>force_highlightsPanel</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>header</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
                     <name>defaultAppField</name>
                     <value>llc_bi__default_app__c</value>
                 </componentInstanceProperties>
@@ -96,38 +140,12 @@
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
-                    <name>collapsed</name>
-                    <value>false</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>enableActionsConfiguration</name>
-                    <value>false</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>enableActionsInNative</name>
-                    <value>false</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>hideChatterActions</name>
-                    <value>false</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>numVisibleActions</name>
-                    <value>3</value>
-                </componentInstanceProperties>
-                <componentName>force:highlightsPanel</componentName>
-                <identifier>force_highlightsPanel</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
                     <name>decorate</name>
                     <value>true</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>richTextValue</name>
-                    <value>&lt;p&gt;&lt;b&gt;Items required to submit for approval:&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;Number of Reviewable Loan Facilities is greater than 0&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;A Primary Officer&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Level 1, 2, or 3 Approving Officer entered&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Loan is in Final Review&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</value>
+                    <value>&lt;p&gt;&lt;strong&gt;Items required to submit for approval:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Number of Reviewable Loan Facilities is greater than 0&lt;/strong&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Total Relationship Exposure / Credit Group is set&lt;/strong&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Approver 1 is set&lt;/strong&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Loan is in Final Review&lt;/strong&gt;&lt;/li&gt;&lt;/ul&gt;</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:richText</componentName>
                 <identifier>flexipage_richText</identifier>
@@ -153,15 +171,19 @@
                     <name>additionalFieldName</name>
                     <value>LLC_BI__lookupKey__c</value>
                 </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>showLoansTab</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>showTreasuryTab</name>
+                    <value>false</value>
+                </componentInstanceProperties>
                 <componentName>LLC_BI:commercialWorkspace</componentName>
                 <identifier>LLC_BI_commercialWorkspace</identifier>
             </componentInstance>
         </itemInstances>
         <name>sidebar</name>
-        <type>Region</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <name>header</name>
         <type>Region</type>
     </flexiPageRegions>
     <masterLabel>Commercial Workspace</masterLabel>

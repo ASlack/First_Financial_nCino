@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Full_Legal_Name_Formula__c</fullName>
+    <description>This field is populated based on First Name and Last Name for Person Accounts.  Non-Person Accounts utilize Relationship Name</description>
+    <externalId>false</externalId>
+    <formula>IF(
+IsPersonAccount,
+FirstName &amp; &quot; &quot; &amp; &quot; &quot; &amp; LastName,
+Name
+)</formula>
+    <label>Full Legal Name</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
