@@ -21197,6 +21197,8 @@
         <members>LLC_BI__Loan__c.Completed_Due_Date__c</members>
         <members>LLC_BI__Loan__c.Compliance_Comments__c</members>
         <members>LLC_BI__Loan__c.Confirm_Application__c</members>
+        <members>LLC_BI__Loan__c.Counter_Offer_Letter_Sent__c</members>
+        <members>LLC_BI__Loan__c.Counter_Offer_Verbally_Advised__c</members>
         <members>LLC_BI__Loan__c.Counteroffer_Received__c</members>
         <members>LLC_BI__Loan__c.Date_of_Adverse_Action_and_Counter__c</members>
         <members>LLC_BI__Loan__c.Decision_Due_Date__c</members>
@@ -31943,6 +31945,7 @@
         <members>LLC_BI__Loan_Collateral2__c.LLC_BI__Advance_Rate_Override</members>
         <members>LLC_BI__Loan_Collateral2__c.LLC_BI__Pledge_More_Than_Lendable_Value</members>
         <members>LLC_BI__Loan_Compliance__c.LLC_BI__LE_CD_Date_Required</members>
+        <members>LLC_BI__Loan__c.Counter_Offer</members>
         <members>LLC_BI__Loan__c.LLC_BI__Amount_Outstanding_Check_Against_Amount</members>
         <members>LLC_BI__Loan__c.LLC_BI__Balloon_Amount_terms_must_be_equal</members>
         <members>LLC_BI__Loan__c.LLC_BI__Balloon_Loan_terms_cannot_be_blank</members>
