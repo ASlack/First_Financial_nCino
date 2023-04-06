@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Vendor</fullName>
+    <fullName>Business_Client</fullName>
     <active>true</active>
-    <compactLayoutAssignment>Vendor_Type</compactLayoutAssignment>
-    <description>Select &quot;Vendor&quot; if you are adding an attorney, appraiser, or other third party.</description>
-    <label>Vendor</label>
+    <description>Business which is stored on Jack Henry (not an individual person)</description>
+    <label>Business Client</label>
     <picklistValues>
         <picklist>AccountSource</picklist>
-        <values>
-            <fullName>Advertisement</fullName>
-            <default>false</default>
-        </values>
         <values>
             <fullName>Broker</fullName>
             <default>false</default>
@@ -20,27 +15,7 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>External Referral</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Other</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Partner</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Public Relations</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Seminar - Internal</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Seminar - Partner</fullName>
             <default>false</default>
         </values>
         <values>
@@ -49,10 +24,6 @@
         </values>
         <values>
             <fullName>Web</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Word of mouth</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -2179,8 +2150,36 @@
     <picklistValues>
         <picklist>Type</picklist>
         <values>
-            <fullName>Vendor</fullName>
-            <default>true</default>
+            <fullName>Association</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Broker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corporation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Limited Liability Company</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partnership</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sole Proprietorship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trust</fullName>
+            <default>false</default>
         </values>
     </picklistValues>
 </RecordType>

@@ -21181,6 +21181,9 @@
         <members>LLC_BI__Loan__c.Amount_of_additional_funds__c</members>
         <members>LLC_BI__Loan__c.Application_Date__c</members>
         <members>LLC_BI__Loan__c.Application_On_Hold_Last_Notification__c</members>
+        <members>LLC_BI__Loan__c.Appraisal_Delivered_Date__c</members>
+        <members>LLC_BI__Loan__c.Appraisal_Waived_Date__c</members>
+        <members>LLC_BI__Loan__c.Approval_Advised_Sent_Date__c</members>
         <members>LLC_BI__Loan__c.Approved_Date__c</members>
         <members>LLC_BI__Loan__c.Auto_Pay_Account_Type__c</members>
         <members>LLC_BI__Loan__c.Auto_Pay_Routing_Number__c</members>
@@ -21549,6 +21552,7 @@
         <members>LLC_BI__Loan__c.Property_Type__c</members>
         <members>LLC_BI__Loan__c.Reg_W_Reportable__c</members>
         <members>LLC_BI__Loan__c.Request_Additional_Funds__c</members>
+        <members>LLC_BI__Loan__c.Right_To_Copy_Of_Appraisal_Sent_Date__c</members>
         <members>LLC_BI__Loan__c.Secondary_Market_Buyer__c</members>
         <members>LLC_BI__Loan__c.Secondary_Source_of_Repayment__c</members>
         <members>LLC_BI__Loan__c.Submitted_for_Approval_Date__c</members>
@@ -28749,6 +28753,7 @@
         <members>LLC_BI__Loan__c.Participation_Bought_Details</members>
         <members>LLC_BI__Loan__c.Participation_Details_Custom</members>
         <members>LLC_BI__Loan__c.PricingReadOnly</members>
+        <members>LLC_BI__Loan__c.Reg_B</members>
         <members>LLC_BI__Loan__c.Reg_O</members>
         <members>LLC_BI__Loan__c.Reg_W</members>
         <members>LLC_BI__Loan__c.RequiredLoanFieldsToCreateRateOrPayment</members>
@@ -30976,6 +30981,9 @@
         <name>QuickAction</name>
     </types>
     <types>
+        <members>Account.Business_Client</members>
+        <members>Account.Business_Prospect</members>
+        <members>Account.Credit_Group</members>
         <members>Account.LLC_BI__Business</members>
         <members>Account.LLC_BI__Household</members>
         <members>Account.LLC_BI__Individual</members>
@@ -31051,6 +31059,8 @@
         <members>Lead.LLC_BI__Treasury_Management</members>
         <members>Opportunity.LLC_BI__Loan</members>
         <members>Opportunity.LLC_BI__Treasury_Management</members>
+        <members>PersonAccount.Individual_Client</members>
+        <members>PersonAccount.Individual_Prospect</members>
         <members>PersonAccount.PersonAccount</members>
         <members>SCOC__LCRDataSourceAnalysis__c.SCOC__SBSS7_Business</members>
         <members>SCOC__LCRDataSourceAnalysis__c.SCOC__SBSS7_Consumer</members>
@@ -31965,6 +31975,7 @@
         <members>LLC_BI__Loan__c.Loan_Validation_07</members>
         <members>LLC_BI__Loan__c.Loan_Validation_09</members>
         <members>LLC_BI__Loan__c.Loan_Validation_10</members>
+        <members>LLC_BI__Loan__c.Reg_B_Dates</members>
         <members>LLC_BI__Product_Type__c.LLC_BI__Product_State_Booked_Config_Count</members>
         <members>LLC_BI__Product_Type__c.LLC_BI__Product_State_Closed_Config_Count</members>
         <members>LLC_BI__Product_Type__c.LLC_BI__Product_State_Excluded_Config_Count</members>
