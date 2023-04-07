@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Joint_Intent</fullName>
+    <active>true</active>
+    <description>Joint Intent question must be answered before proceeding to Credit Underwriting and Final Review</description>
+    <errorConditionFormula>ISPICKVAL(IcertifythisloanhasJointIntent__c , &apos;&apos;)&amp;&amp; $User.No_Workflow__c = false &amp;&amp;  $User.No_Validation__c = false</errorConditionFormula>
+    <errorMessage>Joint Intent question must be answered before proceeding to Credit Underwriting and Final Review</errorMessage>
+</ValidationRule>

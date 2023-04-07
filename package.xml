@@ -17112,6 +17112,7 @@
         <members>LLC_BI__Treasury_Service__c.Treasury_Service_Layout</members>
         <members>Lead.Lead_Layout</members>
         <members>Opportunity.Opportunity_Layout</members>
+        <members>Task.Task</members>
         <members>nFORCE__Screen_Section__c.Screen_Section_Layout</members>
         <name>CompactLayout</name>
     </types>
@@ -17126,6 +17127,7 @@
         <name>ContentAsset</name>
     </types>
     <types>
+        <members>https_ffin_ncinodev_sandbox_my_site_com</members>
         <members>https_force_com</members>
         <members>https_mydomain_lightning_force_com</members>
         <members>https_psomaster_178d0fdb484_force_com</members>
@@ -21183,6 +21185,7 @@
         <members>LLC_BI__Loan__c.Application_On_Hold_Last_Notification__c</members>
         <members>LLC_BI__Loan__c.Appraisal_Delivered_Date__c</members>
         <members>LLC_BI__Loan__c.Appraisal_Waived_Date__c</members>
+        <members>LLC_BI__Loan__c.ApprovalExpirationDate__c</members>
         <members>LLC_BI__Loan__c.Approval_Advised_Sent_Date__c</members>
         <members>LLC_BI__Loan__c.Approved_Date__c</members>
         <members>LLC_BI__Loan__c.Auto_Pay_Account_Type__c</members>
@@ -21216,8 +21219,11 @@
         <members>LLC_BI__Loan__c.Funding_Date__c</members>
         <members>LLC_BI__Loan__c.HVCRE_Reportable__c</members>
         <members>LLC_BI__Loan__c.Has_Initial_Application_Date__c</members>
+        <members>LLC_BI__Loan__c.IcertifythisloanhasJointIntent__c</members>
         <members>LLC_BI__Loan__c.In_Product_Package__c</members>
+        <members>LLC_BI__Loan__c.IncompleteCompleteClock__c</members>
         <members>LLC_BI__Loan__c.Incomplete_Date__c</members>
+        <members>LLC_BI__Loan__c.InitialApplicationClock__c</members>
         <members>LLC_BI__Loan__c.Initial_Application_Date__c</members>
         <members>LLC_BI__Loan__c.Integration_Source__c</members>
         <members>LLC_BI__Loan__c.Is_this_a_Test__c</members>
@@ -30863,6 +30869,10 @@
         <name>PermissionSet</name>
     </types>
     <types>
+        <members>Customer_User_Permission_Set_Group</members>
+        <name>PermissionSetGroup</name>
+    </types>
+    <types>
         <members>LLC_BI__Default</members>
         <members>nFORCE__Default</members>
         <name>PlatformCachePartition</name>
@@ -31300,6 +31310,7 @@
         <members>Portfolio_Manager</members>
         <members>Senior_Credit_Officer</members>
         <members>UserACustomerPersonAccount</members>
+        <members>ZenCustomerPersonAccount</members>
         <members>nCino_Administrator</members>
         <members>nCino_Data_Admin</members>
         <name>Role</name>
@@ -31956,6 +31967,7 @@
         <members>LLC_BI__Loan_Collateral2__c.LLC_BI__Pledge_More_Than_Lendable_Value</members>
         <members>LLC_BI__Loan_Compliance__c.LLC_BI__LE_CD_Date_Required</members>
         <members>LLC_BI__Loan__c.Counter_Offer</members>
+        <members>LLC_BI__Loan__c.Joint_Intent</members>
         <members>LLC_BI__Loan__c.LLC_BI__Amount_Outstanding_Check_Against_Amount</members>
         <members>LLC_BI__Loan__c.LLC_BI__Balloon_Amount_terms_must_be_equal</members>
         <members>LLC_BI__Loan__c.LLC_BI__Balloon_Loan_terms_cannot_be_blank</members>

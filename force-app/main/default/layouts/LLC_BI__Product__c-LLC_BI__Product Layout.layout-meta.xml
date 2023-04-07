@@ -79,6 +79,10 @@
                 <behavior>Edit</behavior>
                 <field>LLC_BI__Institution__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>nPortal__Online_Application_Type__c</field>
+            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
     </layoutSections>

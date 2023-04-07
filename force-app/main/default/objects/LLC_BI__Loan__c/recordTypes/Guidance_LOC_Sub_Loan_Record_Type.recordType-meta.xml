@@ -231,6 +231,17 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>IcertifythisloanhasJointIntent__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>Is_this_a_Test__c</picklist>
         <values>
             <fullName>No</fullName>
