@@ -1,0 +1,137 @@
+<apex:page >
+	<c:JxAdminConfig />
+	<c:JxAdminConfigDataService />
+	<c:JxAdminConfigIncludes />
+
+	<div class="force slds">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-xs-12 content-heading">
+								<div class="ng-cloak slds-p-top_x-small" id="parm-search-admin" ng-app="jxAdminConfig" ng-cloak="true" ng-controller="jxAdminConfigController as cc">
+									<div ng-if="cc.initializingData != true">
+										<div class="slds-notify-relative-container" ng-if="cc.toastStack.length>0">
+											<div ng-repeat="toast in cc.toastStack">
+												<div class="slds-notify slds-notify--toast {{toast.toastType}} slds-theme--alert-texture" role="alert">
+													<span class="slds-assistive-text"></span>
+													<div class="row">
+														<div class="col-md-1 col-lg-1 col-sm-1 col-xs-2 no-gutter text-right">
+															<span class="slds-button__icon slds-button__icon--large">
+																<img src="" width="24" height="24" ng-src="{!URLFOR($Resource.nFORCE__SLDS0102,
+																		'assets/icons/utility/')}{{toast.toastIcon}}.svg"/>
+															</span>
+														</div>
+														<div class="col-md-10 col-sm-10 col-xs-8 no-gutter">
+															<div class="notify__content">
+																<h2 class="slds-text-heading--small slds-col--padded" ng-bind="toast.message"></h2>
+																<p ng-if="toast.subHeading" class="slds-col--padded {{toast.toastType}}">{{toast.subHeading}}</p>
+															</div>
+														</div>
+														<div class="col-md-1 col-sm-1 col-xs-2 no-gutter">
+															<button class="slds-button slds-button--icon-inverse slds-notify__close pull-left"
+																ng-click="cc.toastStack.remove(toast)">
+																<img class="slds-button__icon slds-button__icon--large"
+																	src="{!URLFOR($Resource.nFORCE__SLDS0102, '/assets/icons/action/close_60.png')}">
+																</img>
+																<span class="slds-assistive-text">Close</span>
+															</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="slds-box">
+											<div class="slds-text-heading_medium slds-p-top_xxx-small">{{cc.labels.ABJX_Sync_Title}}</div>
+											<p class="slds-text-body_regular">{{cc.labels.ABJX_Sync_Instruction}}</p>
+											<br />
+											<div class="container-fluid">
+												<div class="row">
+													<div class="col-sm-4 col-wrapper">
+														<div class="row slds-clearfix">
+															<div class="slds-form-element">
+																<label class="slds-form-element__label" for="select-parm-id-1">
+																	{{cc.labels.ABJX_Parm_Label}}
+																</label>
+																<div class="slds-form-element__control">
+																	<select ng-model="cc.currentConfig.selectedParm" id="select-parm-id-1" class="slds-input" 
+																		ng-options="option.label for option in cc.currentConfig.parmOptions track by option.value" 
+																		ng-change="cc.selectOnChange()">
+																	</select>
+																</div>
+															</div>
+															<br />
+															<div class="slds-p-top--small">
+																<button ng-click="cc.parmSync()" class="slds-button slds-button--brand" ng-disabled="cc.performingAjax" >
+																	{{cc.labels.ABJX_Sync}}
+																</button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<br/>
+											<div class="container-fluid" ng-if="cc.selectedParmValues.length>0">
+												<div class="row">
+													<div class="col-xs-12 slds-text-heading--label no-gutter"><strong>{{cc.labels.ABJX_Sync_Current_Title}}</strong></div>
+												</div>
+												<div class="row">
+													<div class="slds-text-heading_medium slds-p-top_xxx-small col-md-2 col-sm-3 col-xs-5 no-gutter">
+														{{cc.labels.ABJX_Sync_Code_Column}}
+													</div>
+													<div class="slds-text-heading_medium slds-p-top_xxx-small col-md-4 col-sm-5 col-xs-7 no-gutter">
+														{{cc.labels.ABJX_Sync_Desc_Column}}
+													</div>
+													<div ng-if="cc.selectedRecordTypes.length > 0" class="slds-text-heading_medium slds-p-top_xxx-small col-md-6 col-sm-8 col-xs-12 no-gutter">
+														{{cc.labels.ABJX_Sync_RT_Column}}
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-md-6 col-sm-8 col-xs-12">
+														<div class="row" ng-repeat="result in cc.selectedParmValues">
+															<div ng-if="result.isActive !== false">
+																<div class="col-sm-4 no-gutter">
+																	{{result.valueName}}
+																</div>
+																<div class="col-sm-8 no-gutter">
+																	{{result.label}}
+																</div>
+															</div>
+														</div>
+													</div>
+													<div ng-if="cc.selectedRecordTypes.length > 0" 
+														class="col-md-6 col-sm-8 col-xs-12 no-gutter">
+														<div class="slds-form-element__control" ng-repeat="rt in cc.selectedRecordTypes">
+															<input type="checkbox" name="{{rt.Id}}" id="{{rt.Id}}" value="{{rt.Id}}" 
+																ng-model="rt.isChecked" />
+															<label for="{{rt.Id}}">{{rt.label}}</label>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-12 col-single">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-sm-12 col-wrapper">
+								<div class="row view-container slds-clearfix">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</apex:page>

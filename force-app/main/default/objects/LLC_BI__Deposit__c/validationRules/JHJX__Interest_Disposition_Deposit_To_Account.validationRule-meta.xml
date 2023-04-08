@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JHJX__Interest_Disposition_Deposit_To_Account</fullName>
+    <active>true</active>
+    <description>Require the fields Interest Disbursement Account ID and Interest Disbursement Account Types when Disposition of Interest is set to Deposit to Account.</description>
+    <errorConditionFormula>AND(
+ISCHANGED(JHJX__IntDisp__c),
+TEXT(JHJX__IntDisp__c)= &apos;DepToAcct&apos;,
+OR(
+ISBLANK(JHJX__IntDispAcctId__c),
+ISBLANK(TEXT(JHJX__IntDispAcctType__c))
+)
+)</errorConditionFormula>
+    <errorMessage>The fields Interest Disbursement Account ID and Interest Disbursement Account Types must be populated.</errorMessage>
+</ValidationRule>

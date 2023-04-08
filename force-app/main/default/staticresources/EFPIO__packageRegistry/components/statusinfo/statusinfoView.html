@@ -1,0 +1,11 @@
+<div class="packageTitleTileMedium {{vm.getCssFromName(vm.tileType)}} {{vm.timerState}}">
+<div>
+    <span>Refresh</span><br />
+    <span><input type="text" ng-model="vm.RefreshValue" /></span>sec<br />
+    <span>Days Back</span><br />
+    <span><input type="text" ng-model="vm.DaysBackValue" /></span><br />
+    <span><button class="tilebutton timerupstart" ng-click="vm.upstartTimer()"><span>Update </span></button><button class="tilebutton timerstop" ng-click="vm.stop()"><span>Stop</span></button></span><br />
+</div>
+<span class="branding-bar">{{vm.tileType}}</span>
+<span class="badge-bottom">{{vm.ResultCount}}</span>
+</div>

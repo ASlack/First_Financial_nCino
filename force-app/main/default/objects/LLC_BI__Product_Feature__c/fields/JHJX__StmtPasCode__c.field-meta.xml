@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JHJX__StmtPasCode__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The code that designates if the account holder has a passbook for transaction posting.</description>
+    <externalId>false</externalId>
+    <label>Statement or Passbook Code</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>NA</fullName>
+                <default>true</default>
+                <label>NA</label>
+            </value>
+            <value>
+                <fullName>Pas</fullName>
+                <default>false</default>
+                <label>Pas</label>
+            </value>
+            <value>
+                <fullName>Stmt</fullName>
+                <default>false</default>
+                <label>Stmt</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JHJX__LOCGdnceRedType__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Answers the question: What balance is used for the reduction to the line of credit level balance?</description>
+    <externalId>false</externalId>
+    <label>Line of Credit Reduction Level Balance</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AvlBal</fullName>
+                <default>false</default>
+                <label>Available Balance</label>
+            </value>
+            <value>
+                <fullName>LOCAmt</fullName>
+                <default>false</default>
+                <label>Line of Credit Amount</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

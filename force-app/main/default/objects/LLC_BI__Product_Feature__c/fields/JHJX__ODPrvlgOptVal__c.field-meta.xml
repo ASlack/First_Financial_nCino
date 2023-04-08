@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JHJX__ODPrvlgOptVal__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Users populate this optional picklist to indicate if the system should report overdraft plans to regulatory agencies. By default, it is No.</description>
+    <externalId>false</externalId>
+    <label>Overdraft Privilege Option</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Accept</fullName>
+                <default>false</default>
+                <label>Accept</label>
+            </value>
+            <value>
+                <fullName>Decline</fullName>
+                <default>true</default>
+                <label>Decline</label>
+            </value>
+            <value>
+                <fullName>Exmp</fullName>
+                <default>false</default>
+                <label>Exmp</label>
+            </value>
+            <value>
+                <fullName>Inelgb</fullName>
+                <default>false</default>
+                <label>Inelgb</label>
+            </value>
+            <value>
+                <fullName>NoRs</fullName>
+                <default>false</default>
+                <label>NoRs</label>
+            </value>
+            <value>
+                <fullName>Revo</fullName>
+                <default>false</default>
+                <label>Revo</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

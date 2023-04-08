@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JHJX__CollatDocExcDt__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Users populate this optional date field to specify a collateral document letter date. This field is mapped to the jXchange field CollatDocExcDt. The default value is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter a Collateral Document Letter Date.</inlineHelpText>
+    <label>Collateral Document Letter Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

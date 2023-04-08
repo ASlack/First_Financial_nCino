@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JHJX__ItmTrunc__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Users populate this optional picklist to indicate if the system should use item truncation and safekeeping. By default, it is NoTrunc.</description>
+    <externalId>false</externalId>
+    <label>Item Truncation</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Img</fullName>
+                <default>false</default>
+                <label>Img</label>
+            </value>
+            <value>
+                <fullName>ImgAndTrunc</fullName>
+                <default>false</default>
+                <label>ImgAndTrunc</label>
+            </value>
+            <value>
+                <fullName>NA</fullName>
+                <default>false</default>
+                <label>NA</label>
+            </value>
+            <value>
+                <fullName>NoTrunc</fullName>
+                <default>true</default>
+                <label>NoTrunc</label>
+            </value>
+            <value>
+                <fullName>Trunc</fullName>
+                <default>false</default>
+                <label>Trunc</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

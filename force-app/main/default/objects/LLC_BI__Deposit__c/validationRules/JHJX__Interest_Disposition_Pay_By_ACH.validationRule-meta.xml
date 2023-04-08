@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JHJX__Interest_Disposition_Pay_By_ACH</fullName>
+    <active>true</active>
+    <description>Require additional fields when Disposition of Interest is set to Pay By ACH.</description>
+    <errorConditionFormula>AND(
+ISCHANGED(JHJX__IntDisp__c),
+TEXT(JHJX__IntDisp__c)= &apos;PayByACH&apos;,
+OR(
+ISBLANK(JHJX__ACHCompDiscrData__c),
+ISBLANK(JHJX__ACHCompEntryDesc__c),
+ISBLANK(JHJX__ACHCompId__c),
+ISBLANK(JHJX__ACHCrName__c),
+ISBLANK(JHJX__ACHCompName__c),
+ISBLANK(JHJX__ACHTrnCode__c),
+ISBLANK(JHJX__ACHCrAcctId__c),
+ISBLANK(JHJX__ACHCrRtNum__c),
+ISBLANK(JHJX__ACHSendPreNoteCode__c),
+ISBLANK(TEXT(JHJX__ACHStdEntryClass__c))
+)
+)</errorConditionFormula>
+    <errorMessage>Additional fields required when Disposition of Interest is set to Pay By ACH.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,211 @@
+<div id="{{vm.data.UniqueId}}" class="package-item-wrapper">
+	<p ng-click="vm.togglePackageVisibility()" tooltip="click to expand" title="click to expand" class="package-item-wrapper-name">{{vm.data.Name}}</p>
+		<div id="{{vm.data.UniqueId}}:info" class="package-item-wrapper-info" ng-if="vm.isExpanded === true">
+			<div class="package-item-wrapper-info-row">
+			<div class="package-item-wrapper-info-row-column1">
+				<div class="packageTitleTileGrid d-flex flex-justify-center flex-wrap">
+					<statusinfo tile-type="IN PROGRESS" registry-name="{{vm.data.Name}}" fully-qualified-class-name=""></statusinfo>
+					<statusinfo tile-type="SUCCESS" registry-name="{{vm.data.Name}}" fully-qualified-class-name=""></statusinfo>
+					<statusinfo tile-type="ERRORED" registry-name="{{vm.data.Name}}" fully-qualified-class-name=""></statusinfo>
+				</div>
+			</div>
+			<div class="package-item-wrapper-info-row-column2">
+				<p class="package-item-wrapper-info-description">{{vm.data.Description}}</p>
+				<table class="package-item-wrapper-info-table">
+					<thead>
+						<tr>
+							<td>Namespace</td>
+							<td>Plugin Version</td>
+							<td>Plm Version</td>
+							<td>Integration Points</td>
+							<td>Log Storage SObject</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>{{vm.data.Namespace}}</td>
+							<td>{{vm.data.PluginVersion}}</td>
+							<td>{{vm.data.PlmVersion}}</td>
+							<td>{{vm.data.ServicesAvailable}}</td>
+							<td><a ng-href="{{vm.data.LogStorageSObjectListViewUrl}}" target="_blank">{{vm.data.LogStorageSObject}}</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div ng-show="vm.isExpanded" class="available-services-container">
+			<h4>{{vm.data.ServicesAvailable}} Available Integration Points</h4>
+				<div ng-repeat="service in vm.XPkgServices" ng-init="uniqueId = (vm.data.UniqueId + ':info:services:' + $index + ':' + service.UniqueId);">
+					<div id="{{uniqueId}}" class="package-item-wrapper-info-service-wrapper">
+						<p ng-click="vm.togglePackageServiceVisibility($index)" tooltip="click to expand" title="click to expand" class="package-item-wrapper-info-service-name">[{{service.ServiceType}}] {{(service.nFORCEBeanName !== undefined && service.nFORCEBeanName.length > 0)? service.nFORCEBeanName : service.FullyQualifiedClassName}}</p>
+						<div id="{{uniqueId}}:info" class="package-item-wrapper-info-service-wrapper-info" ng-if="vm.XPkgServices[$index].isExpanded === true">
+							<div ng-if="(service.SignatureMethodName.length && (['Global Class'.toUpperCase(),'Global Method'.toUpperCase(),'Global Virtual Class'.toUpperCase(),'Global Virtual Method'.toUpperCase(),'Global Abstract Class'.toUpperCase(),'Global Abstract Method'.toUpperCase(),'Global Interface'.toUpperCase()].includes(service.ServiceType.toUpperCase())))">
+								<p>Signature: <b>{{service.SignatureMethodName}}</b></p>
+							</div>
+
+							<div ng-if="(service.nFORCEBeanName.length && service.ServiceType.toUpperCase() === 'nFORCE.ACrossPackageService'.toUpperCase())">
+								<p>nFORCE Bean Name: <b>{{service.nFORCEBeanName}}</b></p>
+							</div>
+
+							<div ng-if="(service.FullyQualifiedClassName.length && service.ServiceType.toUpperCase() === 'On Platform Orchestration Event Handler'.toUpperCase())">
+								<p>Fully Qualified Class Name: <b>{{service.FullyQualifiedClassName}}</b></p>
+								<p>Event Success Status: <b>{{service.EventSuccessStatus}}</b>, Event Failure Status: <b>{{service.EventFailureStatus}}</b></p>
+							</div>
+
+							<div ng-if="(service.FullyQualifiedClassName.length && service.ServiceType.toUpperCase() === 'nFORCE.RemoteActionController.Endpoint'.toUpperCase())">
+								<p>Endpoint to specify in the Visualforce.remoting.Manager.invokeAction method: <b>{{service.FullyQualifiedClassName}}</b></p>
+							</div>
+
+							<div ng-if="(service.FullyQualifiedClassName.length && service.ServiceType.toUpperCase() === 'InvocableMethod'.toUpperCase())">
+								<p>Fully Qualified Method name to use if using Apex: <b>{{service.nFORCEBeanName}}</b></p>
+								<p>Flow invocable Action Name: <b>{{service.FullyQualifiedClassName}}</b></p>
+							</div>
+							<div ng-if="['Mapping Function - No Return Value'.toUpperCase(),'Mapping Function - Return Value'.toUpperCase()].includes(service.ServiceType.toUpperCase())">
+								<div ng-if="service.nFORCEBeanName !== undefined && service.nFORCEBeanName.length > 0">
+									<p>Alias Name: <b>{{service.nFORCEBeanName}}</b></p>
+									<p>Can use within Value Source using the 'fn:' prefix (ex = fn:{{service.nFORCEBeanName}}). If being used within a repeater, can be used in the Transformation Formula using the 'pfn:' prefix (ex = pfn:{{service.nFORCEBeanName}}).</p>
+									<div ng-if="service.FunctionVisibility === 'Is_Public'">
+										<p><b>{{service.nFORCEBeanName}}</b> is visible in the MIM UI</p>
+									</div>
+									<div ng-if="service.FunctionVisibility === 'Is_Internal'">
+										<p><b>{{service.nFORCEBeanName}}</b> is NOT visibile in the MIM UI</p>
+									</div>
+								</div>
+								<div ng-if="service.nFORCEBeanName === undefined || service.nFORCEBeanName === null || service.nFORCEBeanName.length === 0">
+									<p>Class Name: <b>{{service.FullyQualifiedClassName}}</b></p>
+									<p>Can use within Value Source using the 'del:' prefix (ex = del:{{service.FullyQualifiedClassName}}). If being used within a repeater, can be used in the Transformation Formula using the 'pdel:' prefix (ex = pdel:{{service.FullyQualifiedClassName}}).</p>
+									<div ng-if="service.FunctionVisibility === 'Is_Public'">
+										<p><b>{{service.FullyQualifiedClassName}}</b> is visible in the MIM UI</p>
+									</div>
+									<div ng-if="service.FunctionVisibility === 'Is_Internal'">
+										<p><b>{{service.FullyQualifiedClassName}}</b> is NOT visibile in the MIM UI</p>
+									</div>
+								</div>
+							</div>
+
+							<p class="package-item-wrapper-info-description">{{service.Description}}</p>
+
+							<p ng-if="(service.InformationUrl.length)">Additional Information located at: <a ng-href="{{service.InformationUrl}}" target="_blank"><b>{{service.InformationUrl}}</b></a></p>
+
+							<div ng-if="(service.FullyQualifiedClassName.length && service.ServiceType.toUpperCase() === 'ON PLATFORM ORCHESTRATION EVENT HANDLER')" class="packageTitleTileGrid d-flex flex-justify-center flex-wrap">
+								<statusinfo tile-type="IN PROGRESS" registry-name="{{vm.data.Name}}" fully-qualified-class-name="{{service.FullyQualifiedClassName}}"></statusinfo>
+								<statusinfo tile-type="SUCCESS" registry-name="{{vm.data.Name}}" fully-qualified-class-name="{{service.FullyQualifiedClassName}}"></statusinfo>
+								<statusinfo tile-type="ERRORED" registry-name="{{vm.data.Name}}" fully-qualified-class-name="{{service.FullyQualifiedClassName}}"></statusinfo>
+							</div>
+							<div ng-if="['Mapping Function - No Return Value'.toUpperCase(),'Mapping Function - Return Value'.toUpperCase()].includes(service.ServiceType.toUpperCase())">
+								<div class="package-item-wrapper-info-row">
+									<div class="package-item-wrapper-info-row-column100" ng-if="service.InputParameters.length === 0">
+										<h1>There are no input parameters.</h1><br/>
+									</div>
+									<div class="package-item-wrapper-info-row-column100" ng-if="service.InputParameters.length > 0">
+										<h1>{{service.InputParameterCount}} Input Parameter(s)</h1>
+										<br/>
+										<table class="service-parameters">
+											<thead>
+												<tr>
+													<td width="100">Location</td>
+													<td width="50">Required</td>
+													<td width="100">Data Type</td>
+													<td width="75">Parameter Name</td>
+													<td width="200">Description</td>
+												</tr>
+											</thead>
+											<tbody>
+												<tr ng-repeat="serviceParameter in service.InputParameters">
+													<td>{{serviceParameter.Location}}</td>
+													<td>{{serviceParameter.Required}}</td>
+													<td>{{serviceParameter.DataType}}</td>
+													<td>{{serviceParameter.ParameterName}}</td>
+													<td>{{serviceParameter.Description}}</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="package-item-wrapper-info-row">
+									<div class="package-item-wrapper-info-row-column100" ng-if="(service.OutputParameters.length === 0 && service.ServiceType.toUpperCase() === 'Mapping Function - Return Value'.toUpperCase())">
+										<h1>There are no output parameters.</h1><br/>
+									</div>
+									<div class="package-item-wrapper-info-row-column100" ng-if="(service.OutputParameters.length === 1 && service.ServiceType.toUpperCase() === 'Mapping Function - Return Value'.toUpperCase())">
+										<!--<h1>Output Parameter</h1>-->
+										<br/>
+										<h1>The output is of type: {{service.OutputParameters[0].DataType}}</h1>
+									</div>
+								</div>
+							</div>
+							<div ng-if="!['Mapping Function - No Return Value'.toUpperCase(),'Mapping Function - Return Value'.toUpperCase(),'Global Class'.toUpperCase(),'Global Virtual Class'.toUpperCase(),'Global Abstract Class'.toUpperCase(),'Global Interface'.toUpperCase()].includes(service.ServiceType.toUpperCase())">
+								<div class="package-item-wrapper-info-row">
+									<div class="package-item-wrapper-info-row-column100" ng-if="service.InputParameters.length === 0">
+										<h1>There are no input parameters.</h1><br/>
+									</div>
+									<div class="package-item-wrapper-info-row-column100" ng-if="service.InputParameters.length > 0">
+
+										<h1>{{service.InputParameterCount}} Input Parameter(s)</h1>
+										<br/>
+										<table class="service-parameters">
+											<thead>
+												<tr>
+													<td width="100">Location</td>
+													<td width="50">Required</td>
+													<td width="200">Data Type</td>
+													<td width="120">Parameter Name</td>
+													<td width="120">Name</td>
+													<td width="200">Description</td>
+													<td width="150">Resource Name</td>
+												</tr>
+											</thead>
+											<tbody>
+												<tr ng-repeat="serviceParameter in service.InputParameters">
+													<td>{{serviceParameter.Location}}</td>
+													<td>{{serviceParameter.Required}}</td>
+													<td>{{serviceParameter.DataType}}</td>
+													<td>{{serviceParameter.ParameterName}}</td>
+													<td>{{serviceParameter.Name}}</td>
+													<td>{{serviceParameter.Description}}</td>
+													<td>{{serviceParameter.ResourceName}}</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							<div class="package-item-wrapper-info-row">
+								<div class="package-item-wrapper-info-row-column100" ng-if="service.OutputParameters.length === 0">
+									<h1>There are no output parameters.</h1><br/>
+								</div>
+								<div class="package-item-wrapper-info-row-column100" ng-if="service.OutputParameters.length > 0">
+
+									<h1>{{service.OutputParameterCount}} Output Parameter(s)</h1>
+									<br/>
+									<table class="service-parameters">
+										<thead>
+											<tr>
+												<td width="100">Location</td>
+												<td width="50">Required</td>
+												<td width="200">Data Type</td>
+												<td width="120">Parameter Name</td>
+												<td width="120">Name</td>
+												<td width="200">Description</td>
+												<td width="150">Resource Name</td>
+											</tr>
+										</thead>
+										<tbody>
+											<tr ng-repeat="serviceParameter in service.OutputParameters">
+												<td>{{serviceParameter.Location}}</td>
+												<td>{{serviceParameter.Required}}</td>
+												<td>{{serviceParameter.DataType}}</td>
+												<td>{{serviceParameter.ParameterName}}</td>
+												<td>{{serviceParameter.Name}}</td>
+												<td>{{serviceParameter.Description}}</td>
+												<td>{{serviceParameter.ResourceName}}</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JHJX__BenflOwnType__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The Users populate this required field to define the type of beneficial owner information.  By default, it is Beneficial Owners.</description>
+    <externalId>false</externalId>
+    <label>Beneficial Owner Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Own</fullName>
+                <default>true</default>
+                <label>Beneficial owners</label>
+            </value>
+            <value>
+                <fullName>CntlOwn</fullName>
+                <default>false</default>
+                <label>Both controlling individual and beneficial owner</label>
+            </value>
+            <value>
+                <fullName>Cntl</fullName>
+                <default>false</default>
+                <label>Controlling individual/significant responsibility</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

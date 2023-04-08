@@ -1,0 +1,169 @@
+<apex:page >
+	<c:JxAdminConfig />
+	<c:JxAdminConfigDataService />
+	<c:JxAdminConfigIncludes />
+
+	<div class="force slds">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-xs-12 content-heading">
+								<div class="ng-cloak slds-p-top_x-small" id="parm-search-admin" ng-app="jxAdminConfig" ng-cloak="true" ng-controller="jxAdminConfigController as cc">
+									<div ng-if="cc.initializingData != true">
+										<div class="slds-notify-relative-container" ng-if="cc.toastStack.length>0">
+											<div ng-repeat="toast in cc.toastStack">
+												<div class="slds-notify slds-notify--toast {{toast.toastType}} slds-theme--alert-texture" role="alert">
+													<span class="slds-assistive-text"></span>
+													<div class="row">
+														<div class="col-md-1 col-lg-1 col-sm-1 col-xs-2 no-gutter text-right">
+															<span class="slds-button__icon slds-button__icon--large">
+																<img src="" width="24" height="24" ng-src="{!URLFOR($Resource.nFORCE__SLDS0102,
+																		'assets/icons/utility/')}{{toast.toastIcon}}.svg"/>
+															</span>
+														</div>
+														<div class="col-md-10 col-sm-10 col-xs-8 no-gutter">
+															<div class="notify__content">
+																<h2 class="slds-text-heading--small slds-col--padded" ng-bind="toast.message"></h2>
+																<p ng-if="toast.subHeading" class="slds-col--padded {{toast.toastType}}">{{toast.subHeading}}</p>
+															</div>
+														</div>
+														<div class="col-md-1 col-sm-1 col-xs-2 no-gutter">
+															<button class="slds-button slds-button--icon-inverse slds-notify__close pull-left"
+																ng-click="cc.toastStack.remove(toast)">
+																<img class="slds-button__icon slds-button__icon--large"
+																	src="{!URLFOR($Resource.nFORCE__SLDS0102, '/assets/icons/action/close_60.png')}">
+																</img>
+																<span class="slds-assistive-text">Close</span>
+															</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="slds-box">
+											<div class="slds-text-heading_medium slds-p-top_xxx-small">{{cc.labels.ABJX_Inquiry_Title}}</div>
+											<p class="slds-text-body_regular">{{cc.labels.ABJX_Inquiry_Instruction}}</p>
+											<br />
+											<div class="container-fluid">
+												<div class="row">
+													<div class="col-sm-4 col-wrapper">
+														<div class="row slds-clearfix">
+															<div class="slds-form-element">
+																<label class="slds-form-element__label" for="text-input-id-1">
+																	{{cc.labels.ABJX_Parm_Label}}
+																</label>
+																<div class="slds-form-element__control">
+																	<input ng-model="cc.currentConfig.inquiryParmName" id="text-input-id-1" type="text" placeholder="{{cc.labels.ABJX_Parm_Placeholder}}" maxlength="50" class="slds-input" />
+																</div>
+															</div>
+															<br />
+															<div class="slds-form-element" ng-if="cc.currentConfig.parmOptions.length > 0">
+																<label class="slds-form-element__label" for="select-parm-id-1">
+																	{{cc.labels.ABJX_Criteria_Label}}
+																</label>
+																<div class="slds-form-element__control">
+																	<select ng-model="cc.currentConfig.selectedParm" id="select-parm-id-1" class="slds-input" 
+																		ng-options="option.label for option in cc.currentConfig.parmOptions track by option.value">
+																	</select>
+																</div>
+															</div>
+															<br />
+															<div class="slds-p-top--small">
+																<div class="row">
+																	<div class="col-sm-10 col-wrapper">
+																		<button ng-if="cc.currentConfig.inquiryParmName == cc.currentConfig.searchHeader.searchValue && cc.currentConfig.searchHeader.totalRec > 0 && cc.currentConfig.searchHeader.fromRec - cc.currentConfig.searchHeader.maxRec + 1 > 0" 
+																			ng-click="cc.parmInquiry((cc.currentConfig.searchHeader.fromRec - cc.currentConfig.searchHeader.maxRec + 1))" class="slds-button slds-button--brand" ng-disabled="cc.performingAjax">
+																			{{cc.labels.ABJX_Previous}}
+																		</button>
+																		<button ng-if="cc.currentConfig.inquiryParmName != cc.currentConfig.searchHeader.searchValue || (cc.currentConfig.searchHeader.moreRecs == false && cc.currentConfig.searchHeader.sentRec == cc.currentConfig.searchHeader.totalRec)" 
+																			ng-click="cc.parmInquiry()" class="slds-button slds-button--brand" ng-disabled="cc.performingAjax">
+																			{{cc.labels.ABJX_Inquire}}
+																		</button>
+																		<button ng-if="cc.currentConfig.inquiryParmName == cc.currentConfig.searchHeader.searchValue && cc.currentConfig.searchHeader.moreRecs == true" 
+																			ng-click="cc.parmInquiry()" class="slds-button slds-button--brand" ng-disabled="cc.performingAjax">
+																			{{cc.labels.ABJX_Next}}
+																		</button>
+																	</div>
+																	<div class="col-sm-2 col-wrapper">
+																		<button ng-if="cc.currentConfig.inquiryParmName != ''" ng-click="cc.reset()" class="slds-button slds-button--brand" ng-disabled="cc.performingAjax">
+																			{{cc.labels.ABJX_Reset}}
+																		</button>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<br/>
+											<div class="container-fluid" ng-if="cc.currentConfig.inquiryResult.length>0">
+												<div class="row slds-m-bottom_xx-small iseven-false">
+													<div class="slds-text-heading_medium col-md-1 col-sm-2 col-xs-5 no-gutter">
+														{{cc.labels.ABJX_Inquiry_Code_Column}}
+													</div>
+													<div class="slds-text-heading_medium col-md-3 col-sm-5 col-xs-7 no-gutter">
+														{{cc.labels.ABJX_Inquiry_Desc_Column}}
+													</div>
+													<div class="slds-text-heading_medium col-md-8 col-sm-5 col-xs-12 no-gutter">
+														<span ng-if="cc.currentConfig.inquiryResult[0].ParmValInfoArray != null && cc.currentConfig.inquiryResult[0].ParmValInfoArray.ParmValInfo.length > 0">
+															{{cc.labels.ABJX_Inquiry_Info_Column}}
+														</span>
+														<button class="slds-button slds-button--icon-inverse pull-right"
+															ng-click="cc.exportResults()" 
+															ng-if="cc.exportRows.length > 0">
+															<img class="slds-button__icon slds-button__icon--large" 
+																src="{!URLFOR($Resource.nFORCE__SLDS0102, '/assets/icons/utility/download_60.png')}">
+															</img>
+															<span class="slds-assistive-text">Download</span>
+														</button>
+													</div>
+												</div>
+												<div ng-repeat="result in cc.currentConfig.inquiryResult" class="row slds-m-bottom_xx-small iseven-{{$even}}">
+													<div class="col-md-1 col-sm-2 col-xs-5 no-gutter">
+														{{result.ParmValCode}}
+													</div>
+													<div class="col-md-3 col-sm-5 col-xs-7 no-gutter">
+														{{result.ParmValDesc}}
+													</div>
+													<div ng-if="result.ParmValInfoArray != null && result.ParmValInfoArray.ParmValInfo.length > 0" 
+														class="col-md-8 col-sm-5 col-xs-12 no-gutter">
+														<div class="container-fluid">
+															<div class="row slds-m-bottom_xxx-small" ng-repeat="info in result.ParmValInfoArray.ParmValInfo">
+																<div class="col-md-3 col-sm-4 col-xs-6 no-gutter slds-text-heading_small slds-p-right_xxx-small">
+																	{{info.ParmValTxt}}
+																</div>
+																<div class="col-md-3 col-sm-4 col-xs-6 no-gutter">
+																	{{info.ParmValDetail}}
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-12 col-single">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-sm-12 col-wrapper">
+								<div class="row view-container slds-clearfix">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</apex:page>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>JHJX__EmbosName</fullName>
+        <description>The system populates the JHJX__EmbosName__c field with the LLC_BI__Primary_Emboss_Name__c value.</description>
+        <field>JHJX__EmbosName__c</field>
+        <formula>LLC_BI__Primary_Emboss_Name__c</formula>
+        <name>Emboss Name</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>JHJX__SecdEmbosName</fullName>
+        <description>The system populates the JHJX__SecdEmbosName__c field with the LLC_BI__Secondary_Emboss_Name__c value.</description>
+        <field>JHJX__SecdEmbosName__c</field>
+        <formula>LLC_BI__Secondary_Emboss_Name__c</formula>
+        <name>Secondary Emboss Name</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>JHJX__Change Primary Emboss Name</fullName>
+        <actions>
+            <name>JHJX__EmbosName</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>This workflow rule runs when the user changes the value of LLC_BI__Primary_Emboss_Name__c.</description>
+        <formula>ISCHANGED(LLC_BI__Primary_Emboss_Name__c)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>JHJX__Change Secondary Emboss Name</fullName>
+        <actions>
+            <name>JHJX__SecdEmbosName</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>This workflow rule runs when the user changes the value of LLC_BI__Secondary_Emboss_Name__c.</description>
+        <formula>ISCHANGED(LLC_BI__Secondary_Emboss_Name__c)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

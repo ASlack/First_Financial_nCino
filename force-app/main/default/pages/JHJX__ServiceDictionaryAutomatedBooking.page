@@ -1,0 +1,23 @@
+<apex:page standardController="JHJX__SvcDictInfo__c" extensions="JHJX.ABJXServiceDictionaryController">
+<script type = "text/javascript">
+    function loadMe() {
+        var a;
+        Visualforce.remoting.Manager.invokeAction(
+            //Invoking controller action
+            '{!$RemoteAction.ABJXServiceDictionaryController.ServiceDictionaryLoad}',
+             '{!SvcDictInfo__c.Id}',
+            function(result, event){
+               //We can access the records through the parameter result
+               //event.status determines if there is error or not 
+               if(event.status){
+                    
+               }               
+            },
+            {escape: true}
+        );
+    }
+    </script>
+    <apex:form >
+        <button onclick="loadMe()">Run Load</button>
+    </apex:form>
+</apex:page>

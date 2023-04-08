@@ -1,0 +1,35 @@
+<div class="packageTitleContainer">
+    <div class="packageTitleContainerMessage {{vm.orchestrationIsActive?'on':'off'}} rounded" 
+    tooltip="{{vm.orchestrationIsActive?'ACTIVE':'DISABLED'}}" 
+    title="{{vm.orchestrationIsActive?'ACTIVE':'DISABLED'}}">
+        <p class="registry-title">On Platform Orchestration : {{vm.orchestrationIsActive?'ACTIVE':'DISABLED'}}</p>
+    </div>
+    <p ng-if="!vm.orchestrationIsActive">Please ensure the plugin is activated to continue.</p>
+</div>
+
+<div ng-if="vm.orchestrationIsActive">
+    <div class="packageTitleTileGrid d-flex flex-justify-center flex-wrap">
+        
+        <statusinfo tile-type="IN PROGRESS" registry-name="" fully-qualified-class-name=""></statusinfo>
+        <statusinfo tile-type="SUCCESS" registry-name="" fully-qualified-class-name=""></statusinfo>
+        <statusinfo tile-type="ERRORED" registry-name="" fully-qualified-class-name=""></statusinfo>
+            
+    </div>
+
+</div>
+
+<div class="flex-center">
+
+    <div ng-if="vm.registeredPackagesCount > 0" class="flex-center">
+
+        <br /><hr />
+    
+        <h2>{{vm.registeredPackagesCount}} Registered Package(s) <button class="tilebutton tilebutton-wide" ng-click="vm.getPackages()"><span>REFRESH PACKAGES </span></button><button ng-if="true === false" class="tilebutton tilebutton-wide" ng-click="vm.toggleSpinner()"><span>TOGGLE SPINNER </span></button></h2>
+        <hr />
+        <div>
+            <packageinfo data="package" index="{{$index}}" ng-repeat="package in vm.registeredPackages"></packageinfo>
+        </div>
+
+    </div>
+
+</div>

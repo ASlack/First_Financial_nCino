@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JHJX__CollatDocOffCode__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Users populate this optional lookup field to specify a collateral document officer code. This field is mapped to the jXchange field CollatDocOffCode. The default value is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter a Collateral Document Officer Code.</inlineHelpText>
+    <label>Collateral Document Officer Code</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Document_Placeholders</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

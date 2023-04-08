@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JHJX__EFTCardProdCode__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Users populate this required number field with the code that identifies the type details of an EFT card. By default, it is null.</description>
+    <externalId>false</externalId>
+    <label>ISO Number</label>
+    <precision>9</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

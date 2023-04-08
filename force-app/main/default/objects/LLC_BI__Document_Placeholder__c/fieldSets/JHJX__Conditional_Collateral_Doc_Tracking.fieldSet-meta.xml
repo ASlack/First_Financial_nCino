@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JHJX__Conditional_Collateral_Doc_Tracking</fullName>
+    <description>This field set contains the document manager type field that determines whether or not to display fields in the Collateral Doc Tracking field set.</description>
+    <displayedFields>
+        <field>LLC_BI__DocManager__r.LLC_BI__Type__c</field>
+        <isFieldManaged>true</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Conditional Collateral Doc Field Set</label>
+</FieldSet>

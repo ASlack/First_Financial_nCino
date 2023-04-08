@@ -1,0 +1,112 @@
+<apex:page showHeader="false" sideBar="false" standardController="LLC_BI__Loan__c">
+
+    <c:ABJXNavigationIncludes />
+    <c:ABJXBookingIncludes />
+    <c:ABJXBookingSummaryIncludes />
+    <c:ABJXConfiguration objectId="{!LLC_BI__Loan__c.Id}"/>
+    <apex:includeScript value="{!URLFOR($Resource.nFUSE__ux, 'lib/cometd.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.nFUSE__ux, 'lib/json2.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.nFUSE__ux, 'lib/jquery_cometd.js')}"/>
+    <c:ABJXSubscriber channel="TransactionLogUpdate" />
+
+    <div id="pushNotificationUpdates" ng-app="ncJHJXNav" ng-controller="jhjxNavController as vm"  class="slds force">
+        <message></message>
+
+        <div class="slds-compliant-col-wrapper container-fluid">
+            <div class="row">
+                <div class="col-md-12" >
+                    <div class="container-fluid">
+
+                        <ul class="slds-tabs--default__nav " role="tablist" id="parentUL">
+                            <li class="slds-tabs--default__item slds-text-heading--label slds-active" title="{!$Label.ABJX_Book_To_Core}" role="presentation">
+                                <a class="slds-tabs--default__link" href="javascript:void(0);" role="tab" onclick="toggleTabs(this);" tabindex="0" aria-selected="true" aria-controls="tab-default-1" id="tab-default-1__item">{!$Label.ABJX_Book_To_Core}</a>
+                            </li>
+                            <li class="slds-tabs--default__item slds-text-heading--label" title="{!$Label.ABJX_Booking_Summary}" role="presentation">
+                                <a class="slds-tabs--default__link" href="javascript:void(0);" role="tab" onclick="toggleTabs(this);" tabindex="-1" aria-selected="false" aria-controls="tab-default-2" id="tab-default-2__item">{!$Label.ABJX_Booking_Summary}</a>
+                            </li>
+                        </ul>
+                        <div class="row view-container" style="margin-bottom:0px;">
+                            <div class="col-sm-12 col-wrapper">
+                                <div class="row">
+                                    <div class="slds-tabs--default slds-p-around--medium">
+
+                                        <c:ABJXNavigationPartials />
+                                        <jhjx-nav-component/>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <c:ABJXHeaderPartials />
+        <div id="tab-default-1" class="slds-tabs--default__content slds-show" role="tabpanel" aria-labelledby="tab-default-1__item">
+
+            <c:ABJXPartials />
+            <generic-j-h-j-x />
+
+
+            <c:ABJXFormData />
+
+            <c:ABJXDataTable />
+
+            <div ng-if="vm.sharedService.currentPage == 0">
+                <c:ABJXAncillaryProductsPartials />
+                <ancillary-products-component />
+            </div>
+
+            <div ng-if="vm.sharedService.currentPage == 1">
+                <c:ABJXReviewPartials />
+                <review-loan-details/>
+            </div>
+            <br/>
+            <c:ABJXNavigationButtonsPartials />
+            <jhjx-nav-buttons-component/>
+
+        </div>
+        <div id="tab-default-2" class="slds-tabs--default__content slds-hide" role="tabpanel" aria-labelledby="tab-default-2__item">
+
+            <c:ABJXBookingStatusPartials />
+            <c:ABJXBookingSummaryPartials />
+            <booking-summary-component/>
+        </div>
+
+
+
+    </div>
+    <script type="text/javascript">
+        function toggleTabs(ele){
+            var id = ele.id;
+
+
+            if(!ele.parentElement.classList.contains("slds-active")){
+                ele.parentElement.classList.add("slds-active");
+                if(ele.parentElement.nextElementSibling!=null){
+                    ele.parentElement.nextElementSibling.classList.remove("slds-active");
+                }
+                else{
+                    ele.parentElement.previousElementSibling.classList.remove("slds-active");
+                }
+                var idToShow = ele.getAttribute("aria-controls");
+                var contentToShow = document.getElementById(idToShow);
+                contentToShow.classList.toggle("slds-show");
+                contentToShow.classList.toggle("slds-hide");
+
+                if(contentToShow.nextElementSibling!=null){
+                    contentToShow.nextElementSibling.classList.toggle("slds-show");
+                    contentToShow.nextElementSibling.classList.toggle("slds-hide");
+                }
+                else{
+                    contentToShow.previousElementSibling.classList.toggle("slds-show");
+                    contentToShow.previousElementSibling.classList.toggle("slds-hide");
+
+                }
+            }
+
+        }
+
+    </script>
+
+</apex:page>

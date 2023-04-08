@@ -1,0 +1,52 @@
+<apex:page standardController="LLC_BI__Loan__c" extensions="JHJX.ABJXLoanController">
+<!--the value of the standardController attribute should be the object you want the page to be available for-->
+
+<!-- Webpacked jQuery bundle. -->
+<apex:includeScript value="{!URLFOR($Resource.LLC_BI__llc_web_ui, 'bundles/jquery-bundle.js')}" />
+<apex:includeScript value="{!URLFOR($Resource.nFUSE__ux, 'lib/cometd.js')}"/>
+<apex:includeScript value="{!URLFOR($Resource.nFUSE__ux, 'lib/json2.js')}"/>
+<apex:includeScript value="{!URLFOR($Resource.nFUSE__ux, 'lib/jquery_cometd.js')}"/>
+
+<!--
+See force-integration-plugins-jxchange/tree/54f9e51d6d56c8ee034300c0ddef3e8dca3ee7df/AutomatedBooking/src/pages
+to grab javascript that should be upgraded to angular
+-->
+
+<div id="ncJHJXPlainWrapper">
+    <button id="LoanAutomatedReserveBooking" onclick="reserveLoan()" style="display:none;">{!$Label.LoanBookingReserveButton}</button>
+    <button id="LoanJHJX" onclick="bookLoan()" style="display:none;">{!$Label.LoanBookingButton}</button>
+    <button id="LoanAutomatedModifyBooking" onclick="modifyLoan()" style="display:none;">{!$Label.LoanBookingModifyButton}</button>
+    <button id="LoanAutomatedRenewBooking" onclick="renewLoan()" style="display:none;">{!$Label.LoanBookingRenewButton}</button>
+    
+    <!-- if you wish to include a RAW preview, then use the below to house it -->
+	<!-- DEFAULT has link hidden -->
+	<!-- BEGIN -->
+	
+	<div class="form-horizontal col-md-12 row-clear" id="previewContainer1" style="display: none;">
+		<div class="form-group row">
+			<div class="col-sm-4 content-label">
+				<span>
+					<div class="content-label">
+						 <label class="form-control-static input-sm"><a href="javascript:void();" onclick="getRawPayload()">{!$Label.ABJX_ToggleRawView}</a></label>
+					</div>
+				</span>
+			</div>
+			<div class="col-sm-6 content-body">
+				<span>
+					<textarea readonly="readonly" id="datapreview1" placeholder="" class="input-sm form-control" style="display:none;width: 100%;height: 100px;overflow-x: scroll;overflow-y: scroll;"></textarea>
+				</span>
+			</div>
+		</div>
+	</div>
+	
+	<!-- END -->
+	
+    <div id="LoanJHJXResponse"></div>
+    <p id="LoanJHJXCompleted" style="display:none;">{!$Label.BookingCompleted}</p>
+    
+    <div id="jxSummaryResponse">
+        <p id="jxBody">Test Test </p>
+    </div>
+    
+</div>
+</apex:page>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JHJX__Allow_Duplicate_CIF_Creation</fullName>
+    <active>true</active>
+    <description>This validation rule checks for a configured JX setting and determines if the Account is enabled to Allow Duplicate CIF.</description>
+    <errorConditionFormula>AND
+		(NOT(ISBLANK(TEXT(Type))),NOT(ISBLANK($Setup.JHJX__JXSettings__c.JHJX__AllowAccountTypeDuplicates__c)),ISPICKVAL(JHJX__AllowDuplicateCIF__c,&apos;&apos;)
+		,IF(CONTAINS($Setup.JHJX__JXSettings__c.JHJX__AllowAccountTypeDuplicates__c,TEXT(Type))
+		, true,false))</errorConditionFormula>
+    <errorMessage>A value for the Allow Duplicate CIF field is required.</errorMessage>
+</ValidationRule>

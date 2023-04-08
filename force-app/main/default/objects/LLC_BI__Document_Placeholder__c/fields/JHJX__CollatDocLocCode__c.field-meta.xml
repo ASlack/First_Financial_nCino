@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JHJX__CollatDocLocCode__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Users populate this optional text field to specify a collateral document filed location. This field is mapped to the jXchange field CollatDocLocCode. The default value is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter a Collateral Document Filed Location.</inlineHelpText>
+    <label>Collateral Document Filed Location</label>
+    <length>15</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

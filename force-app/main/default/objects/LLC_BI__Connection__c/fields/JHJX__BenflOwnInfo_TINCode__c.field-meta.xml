@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JHJX__BenflOwnInfo_TINCode__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The Users populate this optional field to define the type of TIN code.  By default, it is blank.</description>
+    <externalId>false</externalId>
+    <label>Beneficial Owner TINCode Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>OTHER</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>PASSPORT</fullName>
+                <default>false</default>
+                <label>Passport</label>
+            </value>
+            <value>
+                <fullName>TAXID</fullName>
+                <default>false</default>
+                <label>Tax ID</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

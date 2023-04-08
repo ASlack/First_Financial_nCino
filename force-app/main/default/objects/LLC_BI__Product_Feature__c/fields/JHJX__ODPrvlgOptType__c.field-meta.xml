@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JHJX__ODPrvlgOptType__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Users populate this optional picklist to indicate the overdraft privilege option type. By default, it is Decline.</description>
+    <externalId>false</externalId>
+    <label>Overdraft Privilege Option</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Elec</fullName>
+                <default>true</default>
+                <label>Elec</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

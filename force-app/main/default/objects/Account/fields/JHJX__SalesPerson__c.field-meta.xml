@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JHJX__SalesPerson__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The Users populate this optional picklist field that represents the sales person. By default, it is blank.</description>
+    <externalId>false</externalId>
+    <label>Sales Person</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>JHJX__SalesPerson</valueSetName>
+    </valueSet>
+</CustomField>

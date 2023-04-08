@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JHJX__AutomatedBooking_Deposit</fullName>
+    <availableFields>
+        <field>JHJX__EmbosName__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <availableFields>
+        <field>JHJX__SecdEmbosName__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <description>Jack Henry jXchange Automated Booking Fields</description>
+    <label>JHJX Automated Booking</label>
+</FieldSet>

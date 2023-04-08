@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JHJX__CollatDocRecvDt__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Users populate this optional date field to specify a collateral document date received. This field is mapped to the jXchange field CollatDocRecvDt. The default value is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter a Collateral Document Date Received.</inlineHelpText>
+    <label>Collateral Document Date Received</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

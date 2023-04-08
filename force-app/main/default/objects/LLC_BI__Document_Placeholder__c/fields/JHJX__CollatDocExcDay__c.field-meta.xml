@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JHJX__CollatDocExcDay__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Users populate this optional text field to specify the collateral document expired number of days. This field is mapped to the jXchange field CollatDocExcDay. The default value is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter a Collateral Document Expired No. of Days.</inlineHelpText>
+    <label>Collateral Document Expired No. of Days</label>
+    <length>5</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JHJX__AutoNSFFee__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Users populate this optional picklist to indicate the Automatic NSF fee. By default, it is Chg.</description>
+    <externalId>false</externalId>
+    <label>Automatic NSF fee</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Chg</fullName>
+                <default>true</default>
+                <label>Chg</label>
+            </value>
+            <value>
+                <fullName>NA</fullName>
+                <default>false</default>
+                <label>NA</label>
+            </value>
+            <value>
+                <fullName>Wav</fullName>
+                <default>false</default>
+                <label>Wav</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

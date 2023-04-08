@@ -3,13 +3,13 @@
     <contactEmail>daniel.miller@zennify.com</contactEmail>
     <label>Customer Portal File Upload App</label>
     <oauthConfig>
-        <callbackUrl>https://login.salesforce.com/services/oauth2/authorize</callbackUrl>
-        <consumerKey>3MVG9ux34Ig8G5eoYuEKGiZdxZEUWs9zt8Ag5Tru7DEJmYktp6EEpaV.8IvcvJAUwYxCwuf8F713jE8INFMvF</consumerKey>
+        <callbackUrl>https://test.salesforce.com/services/oauth2/authorize</callbackUrl>
+        <consumerKey>3MVG9sVI3Fa3A7wCoOLmrCPnxUKXgqsmvIYV81DH4cwCHSaxDUkorExLjx9WnTFhhlOJP6tkOrfB1E4zH5JL.</consumerKey>
         <isAdminApproved>false</isAdminApproved>
         <isClientCredentialEnabled>false</isClientCredentialEnabled>
         <isCodeCredentialEnabled>false</isCodeCredentialEnabled>
         <isCodeCredentialPostOnly>false</isCodeCredentialPostOnly>
-        <isConsumerSecretOptional>true</isConsumerSecretOptional>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
         <isIntrospectAllTokens>false</isIntrospectAllTokens>
         <isSecretRequiredForRefreshToken>false</isSecretRequiredForRefreshToken>
         <scopes>Chatter</scopes>

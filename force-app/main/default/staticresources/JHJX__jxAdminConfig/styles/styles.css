@@ -1,0 +1,77 @@
+.ng-cloak {
+	display: none !important;
+}
+
+#parm-search-admin div .slds-text-heading--label {
+	margin-bottom: 8px;
+	padding-bottom: 8px;
+	border-bottom: 1px solid #d8d8d8;
+}
+
+#parm-search-admin div .slds-text-heading_medium {
+	display: block;
+	margin-bottom: 8px;
+	font-size: 16px;
+	font-weight: 300;
+	text-transform: capitalize;
+	color: #16325c;
+}
+
+#parm-search-admin div .slds-m-bottom_xx-small {
+	margin-bottom: 0.25rem;
+}
+
+#parm-search-admin div .slds-m-bottom_xxx-small {
+	margin-bottom: 0.125rem;
+}
+
+#parm-search-admin div.row.iseven-true {
+	border-bottom: 1px solid rgb(221, 219, 218);
+	background-color: #ffffff;
+}
+
+#parm-search-admin div.row.iseven-false {
+	border-bottom: 1px solid rgb(221, 219, 218);
+	background-color: #ffffff;
+}
+
+#parm-search-admin div.slds-box div.slds-illustration_container {
+	text-align: center;
+}
+
+#parm-search-admin div.notify__content p.slds-col--padded {
+	color: white;
+	background: transparent;
+}
+
+#parm-search-admin div.notify__content p.slds-col--padded.slds-theme--warning {
+	color: black;
+}
+
+#parm-search-admin div.notify__content p.slds-col--padded.slds-theme--warning {
+	color: black;
+}
+
+#parm-search-admin button.slds-button--text_destructive {
+	color: #c23934;
+	border-color: #dddbda;
+	background-color: #ffffff;
+}
+
+#parm-search-admin button.slds-button--text_destructive:hover {
+	background-color: #f7f7f7;
+}
+
+#parm-search-admin a.slds-button_outline-brand {
+	padding-left: 16px;
+	padding-right: 16px;
+	color: #0070d2;
+	border-color: #0070d2;
+	background-color: #ffffff;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#parm-search-admin a.slds-button_outline-brand:hover {
+	background-color: #f7f7f7;
+}

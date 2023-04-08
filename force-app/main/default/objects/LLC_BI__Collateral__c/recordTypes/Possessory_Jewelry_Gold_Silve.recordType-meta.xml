@@ -5,6 +5,21 @@
     <description>RT used for Collateral with a type of Possessory and Subtype of Jewelry / Gold / Silver</description>
     <label>Possessory Jewelry Gold Silve</label>
     <picklistValues>
+        <picklist>JHJX__HldAcctType__c</picklist>
+        <values>
+            <fullName>D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>NameoftheAgency__c</picklist>
         <values>
             <fullName>AAFAF</fullName>

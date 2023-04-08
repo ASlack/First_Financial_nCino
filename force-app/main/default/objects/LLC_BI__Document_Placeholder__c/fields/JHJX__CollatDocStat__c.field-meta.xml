@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JHJX__CollatDocStat__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Users populate this optional picklist field to specify a collateral document status code. This field is mapped to the jXchange field CollatDocStat. The default value is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select a Collateral Document Status Code.</inlineHelpText>
+    <label>Collateral Document Status Code</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CI</fullName>
+                <default>false</default>
+                <label>Collateral Incomplete</label>
+            </value>
+            <value>
+                <fullName>CO</fullName>
+                <default>false</default>
+                <label>Charged Off</label>
+            </value>
+            <value>
+                <fullName>CR</fullName>
+                <default>false</default>
+                <label>Out for Collection or Reissue</label>
+            </value>
+            <value>
+                <fullName>DC</fullName>
+                <default>false</default>
+                <label>Document Complete</label>
+            </value>
+            <value>
+                <fullName>EX</fullName>
+                <default>false</default>
+                <label>Expired</label>
+            </value>
+            <value>
+                <fullName>FB</fullName>
+                <default>false</default>
+                <label>Hold for Future Borrowings</label>
+            </value>
+            <value>
+                <fullName>FR</fullName>
+                <default>false</default>
+                <label>In Foreclusure</label>
+            </value>
+            <value>
+                <fullName>PO</fullName>
+                <default>false</default>
+                <label>Paid Off</label>
+            </value>
+            <value>
+                <fullName>RL</fullName>
+                <default>false</default>
+                <label>Release only upon officer approval</label>
+            </value>
+            <value>
+                <fullName>SC</fullName>
+                <default>false</default>
+                <label>Secures loans in other departments</label>
+            </value>
+            <value>
+                <fullName>SF</fullName>
+                <default>false</default>
+                <label>Held for Safekeeping</label>
+            </value>
+            <value>
+                <fullName>SP</fullName>
+                <default>false</default>
+                <label>Special (Refer to Management)</label>
+            </value>
+            <value>
+                <fullName>TR</fullName>
+                <default>false</default>
+                <label>Collateral on Trust Receipt</label>
+            </value>
+            <value>
+                <fullName>WV</fullName>
+                <default>false</default>
+                <label>Waived</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

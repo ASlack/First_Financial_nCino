@@ -17,6 +17,10 @@
                 <behavior>Edit</behavior>
                 <field>LLC_BI__Branch_Id__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Region__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

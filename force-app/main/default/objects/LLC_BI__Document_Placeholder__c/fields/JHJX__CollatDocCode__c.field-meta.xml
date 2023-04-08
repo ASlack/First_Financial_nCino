@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JHJX__CollatDocCode__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Users populate this optional picklist field to specify a collateral document type code. This field is mapped to the jXchange field CollatDocCode. The default value is blank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select a Collateral Document Type Code.</inlineHelpText>
+    <label>Collateral Document Type Code</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>001</fullName>
+                <default>false</default>
+                <label>Vehicle Title</label>
+            </value>
+            <value>
+                <fullName>002</fullName>
+                <default>false</default>
+                <label>Security Agreement</label>
+            </value>
+            <value>
+                <fullName>003</fullName>
+                <default>false</default>
+                <label>UCC Agreement</label>
+            </value>
+            <value>
+                <fullName>004</fullName>
+                <default>false</default>
+                <label>Deed of Trust</label>
+            </value>
+            <value>
+                <fullName>005</fullName>
+                <default>false</default>
+                <label>Certificate of Deposit</label>
+            </value>
+            <value>
+                <fullName>006</fullName>
+                <default>false</default>
+                <label>Savings Assignment</label>
+            </value>
+            <value>
+                <fullName>007</fullName>
+                <default>false</default>
+                <label>Accounts Receivable Listing</label>
+            </value>
+            <value>
+                <fullName>008</fullName>
+                <default>false</default>
+                <label>Construction Binder</label>
+            </value>
+            <value>
+                <fullName>009</fullName>
+                <default>false</default>
+                <label>Vehicle Insurance</label>
+            </value>
+            <value>
+                <fullName>010</fullName>
+                <default>false</default>
+                <label>Property Insurance</label>
+            </value>
+            <value>
+                <fullName>011</fullName>
+                <default>false</default>
+                <label>Equipment Insurance</label>
+            </value>
+            <value>
+                <fullName>012</fullName>
+                <default>false</default>
+                <label>Assignment of Rents</label>
+            </value>
+            <value>
+                <fullName>013</fullName>
+                <default>false</default>
+                <label>Rental Agreement</label>
+            </value>
+            <value>
+                <fullName>014</fullName>
+                <default>false</default>
+                <label>Rent Roll</label>
+            </value>
+            <value>
+                <fullName>015</fullName>
+                <default>false</default>
+                <label>Title Commitment</label>
+            </value>
+            <value>
+                <fullName>016</fullName>
+                <default>false</default>
+                <label>Title Insurance</label>
+            </value>
+            <value>
+                <fullName>017</fullName>
+                <default>false</default>
+                <label>Balance Sheet</label>
+            </value>
+            <value>
+                <fullName>018</fullName>
+                <default>false</default>
+                <label>Profit and Loss Statement</label>
+            </value>
+            <value>
+                <fullName>019</fullName>
+                <default>false</default>
+                <label>CPA Prepared Financial Stmt</label>
+            </value>
+            <value>
+                <fullName>020</fullName>
+                <default>false</default>
+                <label>Audited Financial Statement</label>
+            </value>
+            <value>
+                <fullName>021</fullName>
+                <default>false</default>
+                <label>Financial Statement</label>
+            </value>
+            <value>
+                <fullName>022</fullName>
+                <default>false</default>
+                <label>Personal Tax Return</label>
+            </value>
+            <value>
+                <fullName>023</fullName>
+                <default>false</default>
+                <label>Business Tax Return</label>
+            </value>
+            <value>
+                <fullName>024</fullName>
+                <default>false</default>
+                <label>Extension of Tax Return</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

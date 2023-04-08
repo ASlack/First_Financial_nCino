@@ -1,0 +1,23 @@
+<apex:page id="LoanReserveNumber" showHeader="false" sideBar="false" standardController="LLC_BI__Loan__c">
+	 <nFORCE:ncDataProvidersIncludes />
+	 <nFORCE:ncUIIncludes />
+    <c:ABJXLoanReserveIncludes />
+    <c:ABJXBookingSummaryIncludes />
+    <c:ABJXLoanReserveConfig objectId="{!LLC_BI__Loan__c.Id}"/>
+
+
+    <apex:includeScript value="{!URLFOR($Resource.nFUSE__ux, 'lib/cometd.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.nFUSE__ux, 'lib/json2.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.nFUSE__ux, 'lib/jquery_cometd.js')}"/>
+    <c:ABJXSubscriber channel="TransactionLogUpdate" />
+
+    <div id="pushNotificationUpdates" ng-app="ncJHJXReserveLoanNumber" ng-controller="reserveLoanNumberController as vm"  class="slds force">
+        <message></message>
+        <c:ABJXHeaderPartials />
+        <c:ABJXFormData />
+        <c:ABJXBookingStatusPartials />
+        <c:ABJXReserveLoanPartials />
+        <reserve-loan-number />
+    </div>
+
+</apex:page>

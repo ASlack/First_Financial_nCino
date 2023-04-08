@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>nCino</fullName>
+        <default>false</default>
+        <label>nCino</label>
+    </customValue>
+    <description>Sales Associate</description>
+    <masterLabel>Sales Associate</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

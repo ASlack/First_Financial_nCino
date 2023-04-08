@@ -20,6 +20,7 @@ global virtual class ConfigurationBase_v1 implements EFPIO.IConfiguration {
     global static String ON_PLATFORM_ORCHESTRATION_EVENT_HANDLER;
     global static String REMOTE_ACTION_ENDPOINT;
     global static String REST_SERVICE;
+    global static String UNIVERAL_RESOURCE_TYPE;
     global ConfigurationBase_v1() {
 
     }

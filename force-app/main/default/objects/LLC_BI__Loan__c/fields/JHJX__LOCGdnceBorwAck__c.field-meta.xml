@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JHJX__LOCGdnceBorwAck__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Answers the question: Has the line of credit borrower acknowledge the guidance?</description>
+    <externalId>false</externalId>
+    <label>Line of Credit Borrower Ack Guidance</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>false</fullName>
+                <default>true</default>
+                <label>False</label>
+            </value>
+            <value>
+                <fullName>true</fullName>
+                <default>false</default>
+                <label>True</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JHJX__ChgODFeeDaysType__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Users populate this optional picklist to select the type of days to use when determining overdraft fees. By default, it is N/A.</description>
+    <externalId>false</externalId>
+    <label>Type of Days to Charge Overdraft Fees</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CalDays</fullName>
+                <default>false</default>
+                <label>Actual Days</label>
+            </value>
+            <value>
+                <fullName>BusDays</fullName>
+                <default>false</default>
+                <label>Business Days</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

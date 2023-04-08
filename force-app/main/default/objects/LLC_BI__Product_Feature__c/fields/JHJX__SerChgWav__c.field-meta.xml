@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JHJX__SerChgWav__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The field that defines when an institution debits the account for service charges.</description>
+    <externalId>false</externalId>
+    <label>Service Charge</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Chg</fullName>
+                <default>true</default>
+                <label>Chg</label>
+            </value>
+            <value>
+                <fullName>NA</fullName>
+                <default>false</default>
+                <label>NA</label>
+            </value>
+            <value>
+                <fullName>Wav</fullName>
+                <default>false</default>
+                <label>Wav</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

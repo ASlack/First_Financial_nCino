@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JHJX__IdVerifyQuery__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The user populates this optional text field to configure the IdVerifyQuery that is used when booking to the core.</description>
+    <externalId>false</externalId>
+    <label>IdVerifyQuery</label>
+    <length>20</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

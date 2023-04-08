@@ -4,24 +4,4 @@
     <availableInTouch>true</availableInTouch>
     <confirmationTokenRequired>false</confirmationTokenRequired>
     <label>PackageRegistry_v1</label>
-    <packageVersions>
-        <majorNumber>2</majorNumber>
-        <minorNumber>2210</minorNumber>
-        <namespace>LLC_BI</namespace>
-    </packageVersions>
-    <packageVersions>
-        <majorNumber>2</majorNumber>
-        <minorNumber>684</minorNumber>
-        <namespace>NDOC</namespace>
-    </packageVersions>
-    <packageVersions>
-        <majorNumber>2</majorNumber>
-        <minorNumber>2007</minorNumber>
-        <namespace>nFORCE</namespace>
-    </packageVersions>
-    <packageVersions>
-        <majorNumber>2</majorNumber>
-        <minorNumber>492</minorNumber>
-        <namespace>nFUSE</namespace>
-    </packageVersions>
 </ApexPage>

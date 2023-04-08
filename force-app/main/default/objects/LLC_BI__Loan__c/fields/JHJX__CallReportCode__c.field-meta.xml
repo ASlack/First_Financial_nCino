@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JHJX__CallReportCode__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is used in the jXchange integration.</description>
+    <externalId>false</externalId>
+    <label>Call Report Code</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>10A</fullName>
+                <default>false</default>
+                <label>10A - Leases to individuals for household, family, and other personal expenditures</label>
+            </value>
+            <value>
+                <fullName>10B</fullName>
+                <default>false</default>
+                <label>10B - All other leases</label>
+            </value>
+            <value>
+                <fullName>10</fullName>
+                <default>false</default>
+                <label>10 - Lease financing receivables (net of unearned income).</label>
+            </value>
+            <value>
+                <fullName>11</fullName>
+                <default>false</default>
+                <label>11 - LESS: Any unearned income on loans reflected in items 1-9 above</label>
+            </value>
+            <value>
+                <fullName>12</fullName>
+                <default>false</default>
+                <label>12 - Total loans and leases, net of unearned income</label>
+            </value>
+            <value>
+                <fullName>1A1</fullName>
+                <default>false</default>
+                <label>1A1 - 1-4 Family Residential Construction Loans</label>
+            </value>
+            <value>
+                <fullName>1A2</fullName>
+                <default>false</default>
+                <label>1A2 - Other Construction Loans, all Land Develop, Other Land Loans</label>
+            </value>
+            <value>
+                <fullName>1A</fullName>
+                <default>false</default>
+                <label>1A - Construction, land development, and other land loans</label>
+            </value>
+            <value>
+                <fullName>1B</fullName>
+                <default>false</default>
+                <label>1B - Secured by farmland</label>
+            </value>
+            <value>
+                <fullName>1C1</fullName>
+                <default>false</default>
+                <label>1C1 - Revolving, open-end loans secured by 1-4 family residential properties and extended under lines of credit</label>
+            </value>
+            <value>
+                <fullName>1C2A</fullName>
+                <default>false</default>
+                <label>1C2A - Secured by first liens</label>
+            </value>
+            <value>
+                <fullName>1C2B</fullName>
+                <default>false</default>
+                <label>1C2B - Secured by junior liens</label>
+            </value>
+            <value>
+                <fullName>1C2</fullName>
+                <default>false</default>
+                <label>1C2 - Closed-end loans secured by 1-4 family residential properties</label>
+            </value>
+            <value>
+                <fullName>1C</fullName>
+                <default>false</default>
+                <label>1C - Secured by 1-4 family residential properties</label>
+            </value>
+            <value>
+                <fullName>1D</fullName>
+                <default>false</default>
+                <label>1D - Secured by multifamily (5 or more) residential properties</label>
+            </value>
+            <value>
+                <fullName>1E1</fullName>
+                <default>false</default>
+                <label>1E1 - Loans secured by owner-occupied nonfarm nonresidential properties</label>
+            </value>
+            <value>
+                <fullName>1E2</fullName>
+                <default>false</default>
+                <label>1E2 - Loans secured by other nonfarm nonresidential properties</label>
+            </value>
+            <value>
+                <fullName>1E</fullName>
+                <default>false</default>
+                <label>1E - Secured by nonfarm nonresidential properties</label>
+            </value>
+            <value>
+                <fullName>1</fullName>
+                <default>false</default>
+                <label>1 - Loans secured by real estate</label>
+            </value>
+            <value>
+                <fullName>2A1</fullName>
+                <default>false</default>
+                <label>2A1 - To U.S. branches and agencies of foreign banks</label>
+            </value>
+            <value>
+                <fullName>2A2</fullName>
+                <default>false</default>
+                <label>2A2 - To other commercial banks in the U.S.</label>
+            </value>
+            <value>
+                <fullName>2A</fullName>
+                <default>false</default>
+                <label>2A - To commercial banks in the U.S</label>
+            </value>
+            <value>
+                <fullName>2B</fullName>
+                <default>false</default>
+                <label>2B - To other depository institutions in the U.S.</label>
+            </value>
+            <value>
+                <fullName>2C1</fullName>
+                <default>false</default>
+                <label>2C1 - To foreign branches of other U.S. banks</label>
+            </value>
+            <value>
+                <fullName>2C2</fullName>
+                <default>false</default>
+                <label>2C2 - To other banks in foreign countries</label>
+            </value>
+            <value>
+                <fullName>2C</fullName>
+                <default>false</default>
+                <label>2C - To banks in foreign countries</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>2 - Loans to depository institutions and acceptances of other banks</label>
+            </value>
+            <value>
+                <fullName>3</fullName>
+                <default>false</default>
+                <label>3 - Loans to finance agricultural production and other loans to farmers</label>
+            </value>
+            <value>
+                <fullName>4A</fullName>
+                <default>false</default>
+                <label>4A - To U.S. addressees (domicile).</label>
+            </value>
+            <value>
+                <fullName>4B</fullName>
+                <default>false</default>
+                <label>4B - To non-U.S. addressees (domicile).</label>
+            </value>
+            <value>
+                <fullName>4</fullName>
+                <default>false</default>
+                <label>4 - Commercial and industrial loans</label>
+            </value>
+            <value>
+                <fullName>6A</fullName>
+                <default>false</default>
+                <label>6A - Credit cards</label>
+            </value>
+            <value>
+                <fullName>6C</fullName>
+                <default>false</default>
+                <label>6C - Automobile loans</label>
+            </value>
+            <value>
+                <fullName>6D</fullName>
+                <default>false</default>
+                <label>6D - Other consumer loans</label>
+            </value>
+            <value>
+                <fullName>6</fullName>
+                <default>false</default>
+                <label>6 - Loans to individuals for household, family, and other personal expenditures</label>
+            </value>
+            <value>
+                <fullName>7</fullName>
+                <default>false</default>
+                <label>7 - Loans to foreign governments and official institutions</label>
+            </value>
+            <value>
+                <fullName>8</fullName>
+                <default>false</default>
+                <label>8 - Obligations (other than securities and leases) of states and political subdivisions in the U.S.</label>
+            </value>
+            <value>
+                <fullName>9A</fullName>
+                <default>false</default>
+                <label>9A - Loans to nondepository financial institutions</label>
+            </value>
+            <value>
+                <fullName>9B1</fullName>
+                <default>false</default>
+                <label>9B1 - Loans for purchasing or carrying securities</label>
+            </value>
+            <value>
+                <fullName>9B2</fullName>
+                <default>false</default>
+                <label>9B2 - All other loans</label>
+            </value>
+            <value>
+                <fullName>9B</fullName>
+                <default>false</default>
+                <label>9B - Other loans</label>
+            </value>
+            <value>
+                <fullName>9</fullName>
+                <default>false</default>
+                <label>9 - Loans to nondepository financial institutions and other loans</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

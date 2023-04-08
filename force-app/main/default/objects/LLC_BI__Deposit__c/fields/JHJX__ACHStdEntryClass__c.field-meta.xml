@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JHJX__ACHStdEntryClass__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The Users populate this optional text field with the ACH standard entry class. By default, it is blank.</description>
+    <externalId>false</externalId>
+    <label>Standard Entry Class</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ARC</fullName>
+                <default>false</default>
+                <label>Accounts Receivable Entry</label>
+            </value>
+            <value>
+                <fullName>COR</fullName>
+                <default>false</default>
+                <label>Automated Notification of Change</label>
+            </value>
+            <value>
+                <fullName>CCD</fullName>
+                <default>false</default>
+                <label>Cash Concentration and Disbursement</label>
+            </value>
+            <value>
+                <fullName>CTX</fullName>
+                <default>false</default>
+                <label>Corporate Trade Exchange</label>
+            </value>
+            <value>
+                <fullName>CBR</fullName>
+                <default>false</default>
+                <label>Cross Border Entry</label>
+            </value>
+            <value>
+                <fullName>CIE</fullName>
+                <default>false</default>
+                <label>Customer Initiated Entry</label>
+            </value>
+            <value>
+                <fullName>WEB</fullName>
+                <default>false</default>
+                <label>Internet-Initiated Entry</label>
+            </value>
+            <value>
+                <fullName>MTE</fullName>
+                <default>false</default>
+                <label>Machine Transfer Entry</label>
+            </value>
+            <value>
+                <fullName>POP</fullName>
+                <default>false</default>
+                <label>Point-of-Purchase Entry</label>
+            </value>
+            <value>
+                <fullName>POS</fullName>
+                <default>false</default>
+                <label>Point-of-Sale Entry</label>
+            </value>
+            <value>
+                <fullName>PPD</fullName>
+                <default>false</default>
+                <label>Prearranged Payment and Deposit</label>
+            </value>
+            <value>
+                <fullName>RCK</fullName>
+                <default>false</default>
+                <label>Re-presented Check Entry</label>
+            </value>
+            <value>
+                <fullName>TEL</fullName>
+                <default>false</default>
+                <label>Telephone-Initiated Entry</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
