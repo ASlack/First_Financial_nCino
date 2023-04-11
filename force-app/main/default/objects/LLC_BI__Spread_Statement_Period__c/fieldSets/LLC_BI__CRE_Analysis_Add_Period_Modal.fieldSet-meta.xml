@@ -32,21 +32,6 @@
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>LLC_BI__Supplemental_Number_of_Periods__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </availableFields>
-    <availableFields>
-        <field>LLC_BI__Supplemental_Source__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </availableFields>
-    <availableFields>
-        <field>LLC_BI__Supplemental_Statement_Date__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </availableFields>
-    <availableFields>
         <field>LLC_BI__Type__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
@@ -71,6 +56,21 @@
         <field>LLC_BI__Analyst__c</field>
         <isFieldManaged>true</isFieldManaged>
         <isRequired>true</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>LLC_BI__Supplemental_Statement_Date__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>LLC_BI__Supplemental_Number_of_Periods__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>LLC_BI__Supplemental_Source__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
         <field>LLC_BI__Is_Fiscal_Year__c</field>
