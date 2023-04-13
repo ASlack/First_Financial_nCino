@@ -31267,8 +31267,15 @@
         <members>nCRED__Spreads_Show_Hide_Rows</members>
         <members>nCRED__Spreads_View</members>
         <members>nCino_Advance_Rate_Override</members>
+        <members>nCino_Covenants_Update_Next_Eval_Date</members>
+        <members>nCino_Create_Adverse_Actions</members>
         <members>nCino_Create_Credit_Actions</members>
+        <members>nCino_Create_Edit_Conditions</members>
+        <members>nCino_Create_Edit_Covenants</members>
+        <members>nCino_Create_Edit_Delete_Conditions</members>
+        <members>nCino_Create_Edit_Delete_Covenants</members>
         <members>nCino_Create_Edit_Delete_Policy_Exceptions</members>
+        <members>nCino_Create_Edit_Policy_Exceptions</members>
         <members>nCino_Create_Memos</members>
         <members>nCino_Create_Private_Reports</members>
         <members>nCino_Credit_Underwriter_Persona</members>
@@ -31280,6 +31287,7 @@
         <members>nCino_Risk_Rating_Create_Edit</members>
         <members>nCino_Risk_Rating_Override</members>
         <members>nCino_UAT_Credit_Approval_Date</members>
+        <members>nCino_View_Access_to_Conditions_Covenants_Collateral_and_Policy_Exceptions</members>
         <members>nFORCE__Bulk_Field_Updates_User</members>
         <members>nFORCE__DescribesRemote_Access</members>
         <members>nFORCE__Orchestration_Framework_Configure_Workflows</members>
