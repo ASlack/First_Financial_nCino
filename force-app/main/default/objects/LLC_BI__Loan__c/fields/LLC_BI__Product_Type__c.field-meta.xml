@@ -14,33 +14,116 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>Real Estate</fullName>
+                <fullName>Farm RE</fullName>
                 <default>false</default>
-                <label>Real Estate</label>
+                <label>Farm RE</label>
             </value>
             <value>
-                <fullName>Non-Real Estate</fullName>
+                <fullName>Agricultural</fullName>
                 <default>false</default>
-                <label>Non-Real Estate</label>
+                <label>Agricultural</label>
             </value>
             <value>
-                <fullName>Consumer Real Estate</fullName>
+                <fullName>Non-Owner Occupied CRE</fullName>
                 <default>false</default>
-                <label>Consumer Real Estate</label>
+                <label>Non-Owner Occupied CRE</label>
             </value>
             <value>
-                <fullName>Consumer Non-Real Estate</fullName>
+                <fullName>Owner Occupied CRE</fullName>
                 <default>false</default>
-                <label>Consumer Non-Real Estate</label>
+                <label>Owner Occupied CRE</label>
+            </value>
+            <value>
+                <fullName>Commercial</fullName>
+                <default>false</default>
+                <label>Commercial</label>
+            </value>
+            <value>
+                <fullName>Lease</fullName>
+                <default>false</default>
+                <label>Lease</label>
+            </value>
+            <value>
+                <fullName>Residential RE</fullName>
+                <default>false</default>
+                <label>Residential RE</label>
+            </value>
+            <value>
+                <fullName>Construction &amp; Development RE</fullName>
+                <default>false</default>
+                <label>Construction &amp; Development RE</label>
+            </value>
+            <value>
+                <fullName>Consumer Residential RE</fullName>
+                <default>false</default>
+                <label>Consumer Residential RE</label>
+            </value>
+            <value>
+                <fullName>Consumer Non-Auto</fullName>
+                <default>false</default>
+                <label>Consumer Non-Auto</label>
+            </value>
+            <value>
+                <fullName>Consumer Auto</fullName>
+                <default>false</default>
+                <label>Consumer Auto</label>
+            </value>
+            <value>
+                <fullName>Municipality</fullName>
+                <default>false</default>
+                <label>Municipality</label>
+            </value>
+            <value>
+                <fullName>ACH</fullName>
+                <default>false</default>
+                <label>ACH</label>
+            </value>
+            <value>
+                <fullName>SBA</fullName>
+                <default>false</default>
+                <label>SBA</label>
+            </value>
+            <value>
+                <fullName>Dealer Draft</fullName>
+                <default>false</default>
+                <label>Dealer Draft</label>
             </value>
         </valueSetDefinition>
         <valueSettings>
             <controllingFieldValue>Commercial</controllingFieldValue>
-            <valueName>Real Estate</valueName>
+            <valueName>Non-Owner Occupied CRE</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Commercial</controllingFieldValue>
-            <valueName>Non-Real Estate</valueName>
+            <valueName>Owner Occupied CRE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>Commercial</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>Lease</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>Residential RE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Agricultural</controllingFieldValue>
+            <valueName>Farm RE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Agricultural</controllingFieldValue>
+            <valueName>Agricultural</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Construction</controllingFieldValue>
+            <valueName>Construction &amp; Development RE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Municipality</controllingFieldValue>
+            <valueName>Municipality</valueName>
         </valueSettings>
     </valueSet>
 </CustomField>

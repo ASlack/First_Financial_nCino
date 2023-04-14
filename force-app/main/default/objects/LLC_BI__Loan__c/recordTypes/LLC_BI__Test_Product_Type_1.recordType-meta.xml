@@ -17,129 +17,6 @@
         </values>
     </picklistValues>
     <picklistValues>
-        <picklist>Call_Report_Code_FFIN__c</picklist>
-        <values>
-            <fullName>10A</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>10B</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>1A1</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>1A2</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>1B</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>1C1</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>1C2A</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>1C2B</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>1D</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>1E1</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>1E2</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>2A</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>2A1</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>2B</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>2C1</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>2C2</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>3</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>4A</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>4B</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>5A</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>5B</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>6A</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>6B</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>6C</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>6D</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>7</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>8</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>99</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>9B1</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>9B2</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
         <picklist>Commercial_Purpose__c</picklist>
         <values>
             <fullName>No</fullName>
@@ -255,31 +132,11 @@
     <picklistValues>
         <picklist>JHJX__CallReportCode__c</picklist>
         <values>
-            <fullName>1</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>10</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>10A</fullName>
             <default>false</default>
         </values>
         <values>
             <fullName>10B</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>11</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>12</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>1A</fullName>
             <default>false</default>
         </values>
         <values>
@@ -295,15 +152,7 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>1C</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>1C1</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>1C2</fullName>
             <default>false</default>
         </values>
         <values>
@@ -319,19 +168,11 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>1E</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>1E1</fullName>
             <default>false</default>
         </values>
         <values>
             <fullName>1E2</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>2</fullName>
             <default>false</default>
         </values>
         <values>
@@ -343,15 +184,7 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>2A2</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>2B</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>2C</fullName>
             <default>false</default>
         </values>
         <values>
@@ -367,19 +200,11 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>4</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>4A</fullName>
             <default>false</default>
         </values>
         <values>
             <fullName>4B</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>6</fullName>
             <default>false</default>
         </values>
         <values>
@@ -395,23 +220,7 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>7</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>8</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>9</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>9A</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>9B</fullName>
             <default>false</default>
         </values>
         <values>
@@ -525,6 +334,1192 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>LLC_BI__Balloon_Product_Structure__c</picklist>
+        <values>
+            <fullName>Balloon Amount</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Balloon Term</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LLC_BI__Borrower_State__c</picklist>
+        <values>
+            <fullName>AK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ID</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ND</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NJ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WY</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LLC_BI__Financed_Fee_Calculations__c</picklist>
+        <values>
+            <fullName>Add to Loan Amount</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manual Calculation</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Subtract From Loan Amount</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LLC_BI__Index__c</picklist>
+        <values>
+            <fullName>WSJ Prime</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LLC_BI__Interest_Accrual_Method__c</picklist>
+        <values>
+            <fullName>30_360</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Actual_360</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Actual_365</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Actual_Actual</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LLC_BI__Interest_Rate_Adjustment_Frequency__c</picklist>
+        <values>
+            <fullName>Annual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Biannual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Daily</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Every Five Years</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Every Three Years</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Every Two Years</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monthly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quarterly</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LLC_BI__LeadSource__c</picklist>
+        <values>
+            <fullName>Association</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Broker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Current Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Direct Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email Campaign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employee Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industry Professional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Magazine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prior Origination</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade Show</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wholesaler</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LLC_BI__Lead_Specifics__c</picklist>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LLC_BI__Legal_Firm__c</picklist>
+        <values>
+            <fullName>Sample Firm 2</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LLC_BI__Lost_To__c</picklist>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LLC_BI__Participation_Type__c</picklist>
+        <values>
+            <fullName>Participation agreement agented</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Participation bought</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Participation sold</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LLC_BI__Payment_Schedule__c</picklist>
+        <values>
+            <fullName>Annual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bi-Monthly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monthly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quarterly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Semi-Annual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Single Pay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Weekly</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LLC_BI__Payment_Type__c</picklist>
+        <values>
+            <fullName>Balloon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction Permanent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Draw Down Line Of Credit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Generic Non-Disclosable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Irregular</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Principal%2BInterest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Revolving Line Of Credit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LLC_BI__Pricing_Basis__c</picklist>
+        <values>
+            <fullName>Fixed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preferred Fixed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preferred Variable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Variable</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LLC_BI__Product_Line__c</picklist>
+        <values>
+            <fullName>Commercial</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LLC_BI__Product_Type__c</picklist>
+        <values>
+            <fullName>Commercial</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LLC_BI__Product__c</picklist>
+        <values>
+            <fullName>C%26I 365</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LLC_BI__Referred_To__c</picklist>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LLC_BI__Risk_Grade__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>13</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>14</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>15</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LLC_BI__SNC_Type__c</picklist>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SNC agent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SNC non-agent</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LLC_BI__Secondary_Mkt_Sold__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LLC_BI__Stage__c</picklist>
+        <values>
+            <fullName>Approval %2F Loan Committee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Booked</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit Underwriting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Doc Prep</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Final Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Processing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proposal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Qualification</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LLC_BI__Status__c</picklist>
+        <values>
+            <fullName>Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LLC_BI__Syndication_Type__c</picklist>
+        <values>
+            <fullName>Syndication agented</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Syndication purchased</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Syndication title role</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Loan_Collateral_Sub_Type__c</picklist>
+        <values>
+            <fullName>1 - Unsecured</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10 - Savings Deposit - In-house</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>100 - Common Stock - Restricted %28Legend%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>110 - Common Stock - Warrants</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>130 - Preferred Stock - Bank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>140 - Preferred Stock - Bank Holding Co%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>150 - Preferred Stock - Actively Traded</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>160 - Preferred Stock - Limited Market</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>170 - Preferred Stock - Restricted %28Legend%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>180 - Preferred Stock - Warrants</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>20 - Savings Deposit - Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>200 - Bonds%2FDebentures - Bank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>210 - Bonds%2FDebentures - Bank Holding Co%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>220 - Bonds%2FDebentures - Actively Traded</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>230 - Bonds%2FDebentures - Limited Market</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>240 - Bonds%2FDebentures - Warrants</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>260 - U%2ES%2E Govt%2E Securities - Bearer W%2FCoupons</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>270 - U%2ES%2E Govt%2E Securities - Bearer WO%2FCoupons</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>280 - U%2ES%2E Govt%2E Securities - Registered W%2FCoupons</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>290 - U%2ES%2E Govt%2E Securities - Registered WO%2FCoupons</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>30 - Certificate of Deposit - In-house</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>300 - Foreign Govt%2E Securities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>320 - State%2FMunicipal Securities - Bearer W%2FCoupons</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>330 - State%2FMunicipal Securities - Bearer WO%2FCoupons</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>340 - State%2FMunicipal Securities - Registered W%2FCoupons</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>350 - State%2FMunicipal Securities - Registered WO%2FCoupons</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>355 - Partnership Interest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>360 - Residential Development R%2EE%2E WO%2FStructures 1A2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>370 - 1-4 Family Residential R%2EE%2E W%2FStructures 1CA or 1C1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>372 - Multifamily Residential R%2EE%2E W%2FStructures 1D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>374 - Mobile Home W%2FReal Estate 1CA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>375 - Condo RE W%2FStructures</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>380 - Commercial Development R%2EE%2E WO%2FStructures 1A2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>385 - Residential Real Estate W%2FO Structures %3C25 Acres 1A2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>390 - General Purpose Commercial R%2EE%2E W%2FStructures 1E1 or 1E2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>40 - Certificate of Deposit - Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>400 - Farm R%2EE%2E 1B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>410 - Special Purpose R%2EE%2E W%2FStructures 1E1 or 1E2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>420 - Residential Construction WO%2FTakeout 1A1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>430 - Commercial Construction WO%2FTakeout 1A2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>440 - Residential Construction W%2F3rd Party Takeout 1A1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>450 - Commercial Construction W%2F3rd Party Takeout 1A2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>460 - Second Lien on Residential R%2EE%2E W%2FStructures 1CB or 1C1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>470 - Second Lien on Commercial R%2EE%2E W%2FStructures 1E1 or 1E2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>480 - Second Lien on Unimproved R%2EE%2E 1A2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>485 - Raw Land</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>490 - Stocker Cattle on Pasture 500 Cow%2FCalf on Pasture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>510 - Cattle in Feed Lot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>520 - Other Livestock</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>525 - Horses</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>530 - Crops</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>535 - Aquaculture Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>540 - Agricultural Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>550 - Accounts Receivable - Specific</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>560 - Accounts Receivable - Blanket</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>570 - Notes Receivable - Unsecured</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>580 - Notes Receivable - Secured</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>590 - Notes Receivable - R%2EE%2E Secured</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>60 - Common Stock - Bank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>600 - Letter of Credit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>620 - Inventory - Specific W%2FRepurchase Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>630 - Inventory - Specific WO%2FRepurchase Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>640 - Inventory - Blanket W%2FRepurchase Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>650 - Inventory - Blanket WO%2FRepurchase Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>670 - Neg%2E Warehouse Receipts - Agri-Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>680 - Neg%2E Warehouse Receipts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>690 - Non-Neg%2E Warehouse Receipts - Agri-Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>70 - Common Stock - Bank Holding Co%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>700 - Non-Neg%2E Warehouse Receipts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>710 - Mobile Homes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>711 - Mobile Homes - Indirect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>720 - Furniture and Fixtures</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>722 - Household Goods</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>723 - Household Goods - Indirect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>730 - Machinery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>740 - Automotive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>741 - Automotive - Indirect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>742 - Commercial Vehicle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>743 - Commercial Vehicle - Indirect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>744 - Motorcycle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>745 - Motorcycle - Indirect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>746 - RV Travel Trailer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>747 - RV Travel Trailer - Indirect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>748 - RV Motorhome</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>750 - Rolling Stock %28Railroad %26 Common Carrier Equip%2E%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>760 - Aircraft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>770 - Boats</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>771 - Boats - Indirect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>780 - Construction%2FHeavy Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>790 - Oil and Gas Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>80 - Common Stock - Actively Traded</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>800 - Other Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>802 - Spa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>803 - Spa - Indirect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>804 - Portable Building</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>805 - Portable Building - Indirect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>806 - Business Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>807 - Business Equipment - Indirect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>809 - Retail Finance Program - Indirect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>810 - Ship Mortgage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>820 - Oil %26 Gas - Developed and Producing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>830 - Oil %26 Gas - Developed Non-Producing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>840 - Oil %26 Gas - Undeveloped</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>850 - Other Mineral Interests</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>860 - I%26S Tax Pledge %28QSCB%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>862 - M%26O Tax Pledge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>864 - Other Revenue Pledge %28Non-Profit%2FMunicipal%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>870 - Insurance Renewal Commissions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>880 - Lease Payments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>890 - Trust Account - Beneficiary Interest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>90 - Common Stock - Limited Market</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>900 - Royalties</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>910 - Student Loan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>911 - Parent Plus Loan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>920 - General Intangibles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>930 - Cash Surrender Value Life Insurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>935 - Annuities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>940 - Brokerage Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>950 - Misc%2E Collateral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>960 - Gold %28Bullion and%2For Coin%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>970 - Silver %28Bullion and%2For Coin%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>980 - Jewelry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>99 - Unsecured Conversion Only DO NOT USE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>999 - Guidance Line of Credit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Loan_Collateral_Type__c</picklist>
+        <values>
+            <fullName>Agricultural</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Automotive%2C Equipment%2C Etc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Depository Accounts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mineral Interests</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non Real Estate Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Real Estate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Securities</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>Lost_Reason__c</picklist>
         <values>
             <fullName>Competitor- Other</fullName>
@@ -617,6 +1612,89 @@
         </values>
         <values>
             <fullName>Owner occupied</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Real_Estate_Sub_Type__c</picklist>
+        <values>
+            <fullName>Car Dealerships</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Car Washes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Church</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Convenience Stores</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Daycare Facility</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>For Profit Schools</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Funeral Homes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Commercial Warehouse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gym%2FDance%2FSports Facility</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hotel %2F Motel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturing Plant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medical %E2%80%93 ER Facility %2F Surgery Centers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multi-Tenant Office Space %E2%80%93 Medical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multi-Tenant Office Space %E2%80%93 Non-Medical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multi-Tenant Shopping Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nursing Homes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RV Parks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Restaurants %E2%80%93 Fast Food %2F Fast Casual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Restaurants %E2%80%93 Table Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Self-Storage Facilities</fullName>
             <default>false</default>
         </values>
     </picklistValues>

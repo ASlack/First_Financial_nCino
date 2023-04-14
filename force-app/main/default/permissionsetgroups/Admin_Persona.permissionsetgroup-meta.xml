@@ -41,7 +41,12 @@
     <permissionSets>nCRED__Spreads_Show_Hide_Groups</permissionSets>
     <permissionSets>nCRED__Spreads_Show_Hide_Rows</permissionSets>
     <permissionSets>nCRED__Spreads_View</permissionSets>
+    <permissionSets>nCino_Create_Edit_Delete_Collateral</permissionSets>
+    <permissionSets>nCino_Create_Edit_Delete_Conditions</permissionSets>
+    <permissionSets>nCino_Create_Edit_Delete_Covenants</permissionSets>
+    <permissionSets>nCino_Create_Edit_Delete_Policy_Exceptions</permissionSets>
     <permissionSets>nCino_Create_Memos</permissionSets>
+    <permissionSets>nCino_Read_Create_Edit_Service_Mgmt</permissionSets>
     <permissionSets>nFORCE__UI_Framework_Administrator</permissionSets>
     <permissionSets>nFORCE__UI_Framework_User</permissionSets>
     <permissionSets>nFORMS__Configure_Field_Masking_for_Forms_Engine</permissionSets>

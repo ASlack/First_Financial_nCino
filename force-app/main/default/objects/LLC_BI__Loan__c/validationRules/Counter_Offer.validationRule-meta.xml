@@ -3,6 +3,10 @@
     <fullName>Counter_Offer</fullName>
     <active>true</active>
     <description>Counter Offer Letter Sent and Counter Offer Verbally Advised cannot both be populated</description>
-    <errorConditionFormula>NOT(ISNULL( Counter_Offer_Letter_Sent__c )) &amp;&amp; NOT(ISNULL( Counter_Offer_Verbally_Advised__c ))</errorConditionFormula>
+    <errorConditionFormula>AND(
+NOT(ISNULL( Counter_Offer_Letter_Sent__c )),
+NOT(ISNULL( Counter_Offer_Verbally_Advised__c )),
+$User.No_Validation__c = false
+)</errorConditionFormula>
     <errorMessage>Counter Offer Letter Sent and Counter Offer Verbally Advised cannot both be populated</errorMessage>
 </ValidationRule>

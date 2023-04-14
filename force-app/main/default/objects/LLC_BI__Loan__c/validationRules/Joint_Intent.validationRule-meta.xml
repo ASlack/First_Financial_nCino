@@ -3,6 +3,11 @@
     <fullName>Joint_Intent</fullName>
     <active>true</active>
     <description>Joint Intent question must be answered before proceeding to Credit Underwriting and Final Review</description>
-    <errorConditionFormula>ISPICKVAL(IcertifythisloanhasJointIntent__c , &apos;&apos;)&amp;&amp; $User.No_Workflow__c = false &amp;&amp;  $User.No_Validation__c = false</errorConditionFormula>
+    <errorConditionFormula>AND(
+ISPICKVAL(IcertifythisloanhasJointIntent__c , &apos;&apos;),
+$User.No_Validation__c = false,
+OR(
+ISPICKVAL(LLC_BI__Stage__c, &apos;Credit Underwriting&apos;),
+ISPICKVAL(LLC_BI__Stage__c, &apos;Final Review&apos;)))</errorConditionFormula>
     <errorMessage>Joint Intent question must be answered before proceeding to Credit Underwriting and Final Review</errorMessage>
 </ValidationRule>

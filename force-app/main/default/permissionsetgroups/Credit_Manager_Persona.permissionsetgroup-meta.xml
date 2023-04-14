@@ -25,7 +25,13 @@
     <permissionSets>nCRED__Spreads_Financial_Projections_View_Drivers</permissionSets>
     <permissionSets>nCRED__Spreads_Show_Hide_Rows</permissionSets>
     <permissionSets>nCRED__Spreads_View</permissionSets>
+    <permissionSets>nCino_Covenants_Update_Next_Eval_Date</permissionSets>
+    <permissionSets>nCino_Create_Edit_Collateral</permissionSets>
+    <permissionSets>nCino_Create_Edit_Delete_Conditions</permissionSets>
+    <permissionSets>nCino_Create_Edit_Delete_Covenants</permissionSets>
+    <permissionSets>nCino_Create_Edit_Delete_Policy_Exceptions</permissionSets>
     <permissionSets>nCino_Create_Memos</permissionSets>
+    <permissionSets>nCino_Read_Create_Edit_Service_Mgmt</permissionSets>
     <permissionSets>nFORCE__UI_Framework_User</permissionSets>
     <status>Updated</status>
 </PermissionSetGroup>

@@ -7,7 +7,12 @@
     <permissionSets>NDOC__Document_Manager_Review_Documents</permissionSets>
     <permissionSets>NDOC__Import_Relationship_Docs_to_Loan_DocMan</permissionSets>
     <permissionSets>NDOC__Universal_Document_Manager_Edit_Details_Permission</permissionSets>
+    <permissionSets>nCino_Create_Edit_Collateral</permissionSets>
+    <permissionSets>nCino_Create_Edit_Conditions</permissionSets>
+    <permissionSets>nCino_Create_Edit_Covenants</permissionSets>
+    <permissionSets>nCino_Create_Edit_Policy_Exceptions</permissionSets>
     <permissionSets>nCino_Create_Memos</permissionSets>
+    <permissionSets>nCino_Read_Create_Edit_Service_Mgmt</permissionSets>
     <permissionSets>nFORCE__UI_Framework_User</permissionSets>
     <status>Updated</status>
 </PermissionSetGroup>

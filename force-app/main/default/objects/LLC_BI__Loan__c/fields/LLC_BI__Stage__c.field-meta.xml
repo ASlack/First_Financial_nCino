@@ -53,9 +53,9 @@
                 <label>Closing</label>
             </value>
             <value>
-                <fullName>Boarding</fullName>
+                <fullName>Booking &amp; Funding</fullName>
                 <default>false</default>
-                <label>Boarding</label>
+                <label>Booking &amp; Funding</label>
             </value>
             <value>
                 <fullName>Booked</fullName>

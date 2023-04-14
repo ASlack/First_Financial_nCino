@@ -37,11 +37,6 @@
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>LLC_BI__Fee_Type_Description__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </availableFields>
-    <availableFields>
         <field>LLC_BI__First_Payout_Date__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
@@ -146,6 +141,11 @@
         <field>LLC_BI__Collection_Method__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>LLC_BI__Fee_Type_Description__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>true</isRequired>
     </displayedFields>
     <label>Add Non-Standard Fees</label>
 </FieldSet>

@@ -71073,6 +71073,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>LLC_BI__Collateral__c.PMSI_Rollup__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>LLC_BI__Collateral__c.Property_Tax__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -76568,6 +76573,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>LLC_BI__Loan_Collateral2__c.cm_PMSI__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>LLC_BI__Loan_Collateral_Aggregate__c.LLC_BI__Collateral_Pledged_Count__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -79692,6 +79702,16 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Loan__c.Loan_Collateral_Sub_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Loan__c.Loan_Collateral_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>LLC_BI__Loan__c.Lost_Reason__c</field>
         <readable>false</readable>
@@ -79735,6 +79755,11 @@
         <editable>false</editable>
         <field>LLC_BI__Loan__c.Property_Type__c</field>
         <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Loan__c.Real_Estate_Sub_Type__c</field>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -101778,6 +101803,10 @@
         <enabled>false</enabled>
         <flow>Loan_Created_Set_Create_Fields_Records</flow>
     </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Loan_Lost_Reason_Set_Update_Status</flow>
+    </flowAccesses>
     <layoutAssignments>
         <layout>Account-Account %28Vendor%29</layout>
         <recordType>Account.Vendor</recordType>
@@ -102623,10 +102652,6 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>LLC_BI__Loan__c-Classic Layout</layout>
-        <recordType>LLC_BI__Loan__c.Commercial_Loan_Record_Type</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>LLC_BI__Loan__c-Classic Layout</layout>
         <recordType>LLC_BI__Loan__c.Consumer_Loan_Record_Type</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -102652,6 +102677,10 @@
     <layoutAssignments>
         <layout>LLC_BI__Loan__c-Classic Layout</layout>
         <recordType>LLC_BI__Loan__c.LLC_BI__Test_Product_Type_1v2</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>LLC_BI__Loan__c-LLC_BI__nCino UI Hybrid</layout>
+        <recordType>LLC_BI__Loan__c.Commercial_Loan_Record_Type</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>LLC_BI__Lockbox_Service__c-LLC_BI__Lockbox Service Layout</layout>
@@ -106930,6 +106959,10 @@
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
+        <tab>LLC_BI__Classification__c</tab>
+        <visibility>DefaultOff</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>LLC_BI__Collateral_Type__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
@@ -107040,6 +107073,10 @@
     <tabVisibilities>
         <tab>LLC_BI__Role__c</tab>
         <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>LLC_BI__Roll_Up_Column__c</tab>
+        <visibility>DefaultOff</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>LLC_BI__Spread_Statement_Record_Total__c</tab>
