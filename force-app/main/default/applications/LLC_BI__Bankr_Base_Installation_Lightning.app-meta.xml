@@ -16,6 +16,7 @@
     <subscriberTabs>LLC_BI__Covenant2__c</subscriberTabs>
     <subscriberTabs>LLC_BI__Product_Package__c</subscriberTabs>
     <subscriberTabs>LLC_BI__Collateral__c</subscriberTabs>
+    <subscriberTabs>nFORCE__Brand__c</subscriberTabs>
     <tabs>standard-home</tabs>
     <tabs>standard-Lead</tabs>
     <tabs>LLC_BI__Loan__c</tabs>

@@ -17,10 +17,46 @@
                 <default>false</default>
                 <label>The document you provided is missing a required signature. Please sign this document and upload again.</label>
             </value>
+            <value>
+                <fullName>You did not provide the requested document.  Please upload the correct document and submit again.</fullName>
+                <default>false</default>
+                <label>You did not provide the requested document.  Please upload the correct document and submit again.</label>
+            </value>
+            <value>
+                <fullName>The document you uploaded cannot be read. Please upload a legible document.</fullName>
+                <default>false</default>
+                <label>The document you uploaded cannot be read. Please upload a legible document.</label>
+            </value>
+            <value>
+                <fullName>The document you provided is out of date. Please provide a current version of the document.</fullName>
+                <default>false</default>
+                <label>The document you provided is out of date. Please provide a current version of the document.</label>
+            </value>
+            <value>
+                <fullName>The document you provided is incomplete. Please fill out the document completely and upload again.</fullName>
+                <default>false</default>
+                <label>The document you provided is incomplete. Please fill out the document completely and upload again.</label>
+            </value>
         </valueSetDefinition>
         <valueSettings>
             <controllingFieldValue>Missing Signature</controllingFieldValue>
             <valueName>The document you provided is missing a required signature. Please sign this document and upload again.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wrong File</controllingFieldValue>
+            <valueName>You did not provide the requested document.  Please upload the correct document and submit again.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unreadable</controllingFieldValue>
+            <valueName>The document you uploaded cannot be read. Please upload a legible document.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Out of Date</controllingFieldValue>
+            <valueName>The document you provided is out of date. Please provide a current version of the document.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incomplete</controllingFieldValue>
+            <valueName>The document you provided is incomplete. Please fill out the document completely and upload again.</valueName>
         </valueSettings>
     </valueSet>
 </CustomField>

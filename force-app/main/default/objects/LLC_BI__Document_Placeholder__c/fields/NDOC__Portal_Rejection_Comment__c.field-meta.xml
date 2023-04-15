@@ -18,9 +18,9 @@
                 <label>The document you provided is missing a required signature. Please sign this document and upload again.</label>
             </value>
             <value>
-                <fullName>You did not provide the requested document. Please upload the correct document and submit again.</fullName>
+                <fullName>You did not provide the requested document.  Please upload the correct document and submit again.</fullName>
                 <default>false</default>
-                <label>You did not provide the requested document. Please upload the correct document and submit again.</label>
+                <label>You did not provide the requested document.  Please upload the correct document and submit again.</label>
             </value>
             <value>
                 <fullName>The document you uploaded cannot be read. Please upload a legible document.</fullName>
@@ -41,6 +41,10 @@
         <valueSettings>
             <controllingFieldValue>Missing Signature</controllingFieldValue>
             <valueName>The document you provided is missing a required signature. Please sign this document and upload again.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wrong File</controllingFieldValue>
+            <valueName>You did not provide the requested document.  Please upload the correct document and submit again.</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Unreadable</controllingFieldValue>

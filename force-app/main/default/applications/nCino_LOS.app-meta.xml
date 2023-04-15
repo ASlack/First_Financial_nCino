@@ -66,6 +66,12 @@
     <tabs>standard-report</tabs>
     <tabs>standard-Dashboard</tabs>
     <tabs>standard-Feed</tabs>
+    <tabs>LLC_BI__Classification__c</tabs>
+    <tabs>LLC_BI__Roll_Up_Column__c</tabs>
+    <tabs>Region__c</tabs>
+    <tabs>nFORCE__Screen_Section__c</tabs>
+    <tabs>nFORCE__Tile__c</tabs>
+    <tabs>nFORCE__Brand__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>nCino_PSO_Lightning_UtilityBar</utilityBar>
 </CustomApplication>

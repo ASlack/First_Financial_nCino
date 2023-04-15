@@ -20941,6 +20941,7 @@
         <members>LLC_BI__Funding_Method__c.LLC_BI__Funding_User_ID__c</members>
         <members>LLC_BI__Funding_Method__c.LLC_BI__lookupKey__c</members>
         <members>LLC_BI__Funding_Method__c.cm_Account_Number_Confirm__c</members>
+        <members>LLC_BI__Funding_Method__c.cm_Routing_Number_confirm__c</members>
         <members>LLC_BI__Id_Document_Requirement__c.LLC_BI__Relationship_Type__c</members>
         <members>LLC_BI__Id_Document_Requirement__c.LLC_BI__Total_Documents_Required__c</members>
         <members>LLC_BI__Id_Document_Requirement__c.LLC_BI__lookupKey__c</members>
@@ -24550,6 +24551,7 @@
         <members>RecordAlert.WhatId</members>
         <members>Region__c.CLC_Total_Relationship_Max_Authority__c</members>
         <members>Region__c.Lenders_can_use_10_Rule__c</members>
+        <members>Region__c.LookupKey__c</members>
         <members>Region__c.RDLC_Total_Relationship_Max_Authority__c</members>
         <members>Region__c.SLC_Total_Relationship_Max_Authority__c</members>
         <members>ResidentialLoanApplication.AccountId</members>
@@ -25718,6 +25720,7 @@
         <members>User.ProfileId</members>
         <members>User.ReceivesAdminInfoEmails</members>
         <members>User.ReceivesInfoEmails</members>
+        <members>User.Region__c</members>
         <members>User.SenderEmail</members>
         <members>User.SenderName</members>
         <members>User.Signature</members>

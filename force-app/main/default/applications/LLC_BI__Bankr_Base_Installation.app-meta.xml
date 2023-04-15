@@ -26,4 +26,9 @@
     <tabs>nFORCE__Field_Configuration__c</tabs>
     <tabs>nFUSE__Transaction_Log__c</tabs>
     <tabs>LLC_BI__Policy_Exception_Template__c</tabs>
+    <tabs>LLC_BI__Classification__c</tabs>
+    <tabs>LLC_BI__Roll_Up_Column__c</tabs>
+    <tabs>nFORCE__Screen_Section__c</tabs>
+    <tabs>nFORCE__Tile__c</tabs>
+    <tabs>nFORCE__Brand__c</tabs>
 </CustomApplication>
