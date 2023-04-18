@@ -83391,6 +83391,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>LLC_BI__Product_Package__c.Any_Classified_Loan_100M__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>LLC_BI__Product_Package__c.Approver_1__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -83412,6 +83417,16 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>LLC_BI__Product_Package__c.Approver_5__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Product_Package__c.Classified_Loan_Long_Term__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Product_Package__c.Enable_10_Rule__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -83772,6 +83787,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>LLC_BI__Product_Package__c.LLC_BI__lookupKey__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Product_Package__c.Package_Secure_Type__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -84181,6 +84201,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>LLC_BI__Product_Type__c.cm_Product_Class_Code__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>LLC_BI__Product_Type__c.cm_Static_Name__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -84307,6 +84332,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>LLC_BI__Product__c.LLC_BI__lookupKey__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Product__c.cm_Informatica_Product_Code__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -97002,6 +97032,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>User.Officer_Codes__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>User.Region__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

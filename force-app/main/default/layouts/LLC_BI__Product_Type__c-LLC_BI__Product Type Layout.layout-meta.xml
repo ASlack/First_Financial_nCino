@@ -23,6 +23,10 @@
                 <behavior>Edit</behavior>
                 <field>LLC_BI__lookupKey__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>cm_Product_Class_Code__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

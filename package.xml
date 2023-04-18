@@ -17193,9 +17193,11 @@
         <members>LLC_BI__Credit_Memo_Modifcation__c.MAP100_Short_Term_Extension</members>
         <members>LLC_BI__Credit_Memo_Modifcation__c.MAP200_Change_Memo_AP_Not_Required</members>
         <members>LLC_BI__Credit_Memo_Modifcation__c.MAP200_Change_Memo_AP_Required</members>
+        <members>LLC_BI__Loan__c.FFIN_Loan_Abilene</members>
         <members>LLC_BI__Loan__c.LAP100_Sample_Loan_Approval_Process</members>
         <members>LLC_BI__Loan__c.LAP100_nCino_Gold_Standard_AP</members>
         <members>LLC_BI__Loan__c.PP_Two_Step_Approval_Process</members>
+        <members>LLC_BI__Product_Package__c.FFIN_PP_Abilene</members>
         <members>LLC_BI__Product_Package__c.PPAP100_nCino_Gold_Standard_AP</members>
         <members>LLC_BI__Product_Package__c.PP_Sample_Approval_Process</members>
         <members>LLC_BI__Product_Package__c.PP_Two_Approvers_Approval_Process</members>
@@ -22552,11 +22554,14 @@
         <members>LLC_BI__Product_Package_Team__c.LLC_BI__Assigned_Role__c</members>
         <members>LLC_BI__Product_Package_Team__c.LLC_BI__Product_Package__c</members>
         <members>LLC_BI__Product_Package_Team__c.LLC_BI__User__c</members>
+        <members>LLC_BI__Product_Package__c.Any_Classified_Loan_100M__c</members>
         <members>LLC_BI__Product_Package__c.Approver_1__c</members>
         <members>LLC_BI__Product_Package__c.Approver_2__c</members>
         <members>LLC_BI__Product_Package__c.Approver_3__c</members>
         <members>LLC_BI__Product_Package__c.Approver_4__c</members>
         <members>LLC_BI__Product_Package__c.Approver_5__c</members>
+        <members>LLC_BI__Product_Package__c.Classified_Loan_Long_Term__c</members>
+        <members>LLC_BI__Product_Package__c.Enable_10_Rule__c</members>
         <members>LLC_BI__Product_Package__c.Household__c</members>
         <members>LLC_BI__Product_Package__c.LLC_BI__Account__c</members>
         <members>LLC_BI__Product_Package__c.LLC_BI__Additional_Income_Category__c</members>
@@ -22629,6 +22634,7 @@
         <members>LLC_BI__Product_Package__c.LLC_BI__Treasury_Annual_Operating_Cost__c</members>
         <members>LLC_BI__Product_Package__c.LLC_BI__Unused__c</members>
         <members>LLC_BI__Product_Package__c.LLC_BI__lookupKey__c</members>
+        <members>LLC_BI__Product_Package__c.Package_Secure_Type__c</members>
         <members>LLC_BI__Product_Package__c.Region__c</members>
         <members>LLC_BI__Product_Package__c.X1st_Approver__c</members>
         <members>LLC_BI__Product_Package__c.X2nd_Approver__c</members>
@@ -22723,6 +22729,7 @@
         <members>LLC_BI__Product_Type__c.LLC_BI__Usage_Type__c</members>
         <members>LLC_BI__Product_Type__c.LLC_BI__configKey__c</members>
         <members>LLC_BI__Product_Type__c.LLC_BI__lookupKey__c</members>
+        <members>LLC_BI__Product_Type__c.cm_Product_Class_Code__c</members>
         <members>LLC_BI__Product_Type__c.cm_Static_Name__c</members>
         <members>LLC_BI__Product_Type__c.nPortal__Online_Application_Enabled__c</members>
         <members>LLC_BI__Product_Type__c.nPortal__Online_Application_Group__c</members>
@@ -22750,6 +22757,7 @@
         <members>LLC_BI__Product__c.LLC_BI__RealEstate__c</members>
         <members>LLC_BI__Product__c.LLC_BI__Screen_Section__c</members>
         <members>LLC_BI__Product__c.LLC_BI__lookupKey__c</members>
+        <members>LLC_BI__Product__c.cm_Informatica_Product_Code__c</members>
         <members>LLC_BI__Product__c.cm_Static_Name__c</members>
         <members>LLC_BI__Product__c.nPortal__Can_Pledge_Multiple_Collateral__c</members>
         <members>LLC_BI__Product__c.nPortal__External_Name__c</members>
@@ -32681,6 +32689,8 @@
         <members>LLC_BI__Loan__c.Loan_Update_Stage_to_Processing</members>
         <members>LLC_BI__Loan__c.Loan_Update_Submitted_for_Approval</members>
         <members>LLC_BI__Loan__c.Set_Is_Review_Ready_to_False</members>
+        <members>LLC_BI__Product_Package__c.PP_Approval_Step_5</members>
+        <members>LLC_BI__Product_Package__c.PP_Approval_Step_6</members>
         <members>LLC_BI__Treasury_Service__c.JHJX__EmbosName</members>
         <members>LLC_BI__Treasury_Service__c.JHJX__SecdEmbosName</members>
         <name>WorkflowFieldUpdate</name>
