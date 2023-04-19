@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
-    <active>false</active>
+    <active>true</active>
     <allowRecall>true</allowRecall>
     <allowedSubmitters>
         <type>allInternalUsers</type>
@@ -41,8 +41,28 @@ NOT(ISBLANK(LLC_BI__Product_Package__r.Approver_1__c))
         </assignedApprover>
         <entryCriteria>
             <formula>AND(
-NOT(ISBLANK(LLC_BI__Product_Package__r.Approver_2__c))
-)</formula>
+NOT(ISBLANK(LLC_BI__Product_Package__r.Approver_2__c)),
+LLC_BI__Product_Package__r.Enable_10_Rule__c = False,
+
+OR(
+AND(
+ISPICKVAL(LLC_BI__Product_Package__r.Package_Secure_Type__c, &quot;Secured&quot;),
+LLC_BI__Product_Package__r.Total_Relationship_Exposure__c &gt; LLC_BI__Product_Package__r.X1st_Approver__r.LLC_BI__Secured_Individual_Lending_Authority__c),
+AND(
+ISPICKVAL(LLC_BI__Product_Package__r.Package_Secure_Type__c, &quot;Unsecured&quot;),
+LLC_BI__Product_Package__r.Total_Relationship_Exposure__c &gt; LLC_BI__Product_Package__r.X1st_Approver__r.LLC_BI__Unsecured_Individual_Lending_Authority__c),
+
+AND(
+ISPICKVAL(LLC_BI__Product_Package__r.Package_Secure_Type__c, &quot;Cash Secured&quot;),
+LLC_BI__Product_Package__r.Total_Relationship_Exposure__c &gt; 250000),
+
+ISPICKVAL(LLC_BI__Product_Package__r.LLC_BI__Risk_Rating__c, &quot;3&quot;),
+ISPICKVAL(LLC_BI__Product_Package__r.LLC_BI__Risk_Rating__c, &quot;4&quot;),
+ISPICKVAL(LLC_BI__Product_Package__r.LLC_BI__Risk_Rating__c, &quot;5&quot;),
+ISPICKVAL(LLC_BI__Product_Package__r.LLC_BI__Risk_Rating__c, &quot;6&quot;),
+ISPICKVAL(LLC_BI__Product_Package__r.LLC_BI__Risk_Rating__c, &quot;7&quot;),
+LLC_BI__Product_Package__r.Any_Classified_Loan_100M__c = True,
+LLC_BI__Product_Package__r.Classified_Loan_Long_Term__c = True))</formula>
         </entryCriteria>
         <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
         <label>Approver 2</label>
@@ -61,7 +81,10 @@ NOT(ISBLANK(LLC_BI__Product_Package__r.Approver_2__c))
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
         <entryCriteria>
-            <formula>OR(
+            <formula>AND(
+LLC_BI__Product_Package__r.Enable_10_Rule__c = False,
+
+OR(
 AND(
 ISPICKVAL(LLC_BI__Product_Package__r.Package_Secure_Type__c, &quot;Secured&quot;),
 LLC_BI__Product_Package__r.Total_Relationship_Exposure__c &gt; LLC_BI__Product_Package__r.X1st_Approver__r.LLC_BI__Secured_Individual_Lending_Authority__c,
@@ -83,7 +106,7 @@ LLC_BI__Product_Package__r.Total_Relationship_Exposure__c &gt; LLC_BI__Product_P
 NOT(ISBLANK( LLC_BI__Product_Package__r.X2nd_Approver__c ))
 ),
 AND(
-ISPICKVAL(LLC_BI__Product_Package__r.Package_Secure_Type__c, &quot;Unsecured&quot;),
+ISPICKVAL(LLC_BI__Product_Package__r.Package_Secure_Type__c, &quot;Cash Secured&quot;),
 LLC_BI__Product_Package__r.Total_Relationship_Exposure__c &gt; 250000
 ),
 ISPICKVAL(LLC_BI__Product_Package__r.LLC_BI__Risk_Rating__c, &quot;3&quot;),
@@ -91,14 +114,11 @@ ISPICKVAL(LLC_BI__Product_Package__r.LLC_BI__Risk_Rating__c, &quot;4&quot;),
 ISPICKVAL(LLC_BI__Product_Package__r.LLC_BI__Risk_Rating__c, &quot;5&quot;),
 ISPICKVAL(LLC_BI__Product_Package__r.LLC_BI__Risk_Rating__c, &quot;6&quot;),
 ISPICKVAL(LLC_BI__Product_Package__r.LLC_BI__Risk_Rating__c, &quot;7&quot;),
-ISPICKVAL(LLC_BI__Product_Package__r.LLC_BI__Risk_Rating__c, &quot;8&quot;),
-ISPICKVAL(LLC_BI__Product_Package__r.LLC_BI__Risk_Rating__c, &quot;9&quot;),
-ISPICKVAL(LLC_BI__Product_Package__r.LLC_BI__Risk_Rating__c, &quot;10&quot;),
 LLC_BI__Product_Package__r.Any_Classified_Loan_100M__c = True,
 LLC_BI__Product_Package__r.Classified_Loan_Long_Term__c = True
-)</formula>
+))</formula>
         </entryCriteria>
-        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <ifCriteriaNotMet>ApproveRecord</ifCriteriaNotMet>
         <label>Commercial Loan Committee</label>
         <name>Commercial_Loan_Committee</name>
         <rejectBehavior>
@@ -185,10 +205,6 @@ NOT(ISPICKVAL(LLC_BI__Product_Package__r.LLC_BI__Risk_Rating__c, &quot;&quot;))
     </entryCriteria>
     <finalApprovalActions>
         <action>
-            <name>Loan_Approved</name>
-            <type>Alert</type>
-        </action>
-        <action>
             <name>Loan_Set_Credit_Approval_Date_to_Today</name>
             <type>FieldUpdate</type>
         </action>
@@ -204,10 +220,6 @@ NOT(ISPICKVAL(LLC_BI__Product_Package__r.LLC_BI__Risk_Rating__c, &quot;&quot;))
     <finalApprovalRecordLock>false</finalApprovalRecordLock>
     <finalRejectionActions>
         <action>
-            <name>Loan_Rejected</name>
-            <type>Alert</type>
-        </action>
-        <action>
             <name>Loan_Set_Stage_to_Final_Review</name>
             <type>FieldUpdate</type>
         </action>
@@ -220,7 +232,7 @@ NOT(ISPICKVAL(LLC_BI__Product_Package__r.LLC_BI__Risk_Rating__c, &quot;&quot;))
         </action>
     </initialSubmissionActions>
     <label>FFIN Loan - Abilene</label>
-    <processOrder>2</processOrder>
+    <processOrder>1</processOrder>
     <recallActions>
         <action>
             <name>Loan_Set_Stage_to_Final_Review</name>

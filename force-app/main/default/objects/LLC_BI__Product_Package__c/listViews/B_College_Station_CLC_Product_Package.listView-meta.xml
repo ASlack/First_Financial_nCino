@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>B_College_Station_CLC_Product_Package</fullName>
+    <filterScope>Queue</filterScope>
+    <label>B/College Station CLC</label>
+    <queue>B_College_Station_CLC</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

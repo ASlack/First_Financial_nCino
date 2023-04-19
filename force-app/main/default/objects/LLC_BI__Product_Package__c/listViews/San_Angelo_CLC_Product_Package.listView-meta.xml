@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>San_Angelo_CLC_Product_Package</fullName>
+    <filterScope>Queue</filterScope>
+    <label>San Angelo CLC</label>
+    <queue>San_Angelo_CLC</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

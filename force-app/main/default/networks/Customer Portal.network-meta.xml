@@ -5,7 +5,7 @@
     <changePasswordTemplate>LLC_BI__Bankr_Templates/nPortal__Reset_Password</changePasswordTemplate>
     <communityRoles/>
     <disableReputationRecordConversations>false</disableReputationRecordConversations>
-    <emailSenderAddress>jennifer.bernard@ncino.com</emailSenderAddress>
+    <emailSenderAddress>daniel.miller@zennify.com</emailSenderAddress>
     <emailSenderName>Customer Portal</emailSenderName>
     <enableApexCDNCaching>true</enableApexCDNCaching>
     <enableCustomVFErrorPageOverrides>true</enableCustomVFErrorPageOverrides>
@@ -31,14 +31,14 @@
     <gatherCustomerSentimentData>false</gatherCustomerSentimentData>
     <headlessForgotPasswordTemplate>unfiled$public/CommunityHeadlessForgotPasswordTemplate</headlessForgotPasswordTemplate>
     <networkMemberGroups>
-        <profile>admin</profile>
-        <profile>nCino Community User</profile>
+        <profile>Admin</profile>
+        <profile>ncino community user</profile>
     </networkMemberGroups>
     <networkPageOverrides>
         <changePasswordPageOverrideSetting>VisualForce</changePasswordPageOverrideSetting>
         <forgotPasswordPageOverrideSetting>VisualForce</forgotPasswordPageOverrideSetting>
         <homePageOverrideSetting>VisualForce</homePageOverrideSetting>
-        <loginPageOverrideSetting>Standard</loginPageOverrideSetting>
+        <loginPageOverrideSetting>VisualForce</loginPageOverrideSetting>
         <selfRegProfilePageOverrideSetting>Standard</selfRegProfilePageOverrideSetting>
     </networkPageOverrides>
     <picassoSite>Customer_Portal1</picassoSite>

@@ -6,6 +6,6 @@
     <fields>LLC_BI__Loan_Facilities_Count__c</fields>
     <fields>LLC_BI__Reviewable_Loan_Facilities_Count__c</fields>
     <fields>LLC_BI__Primary_Officer__c</fields>
-    <fields>LLC_BI__Risk_Rating__c</fields>
+    <fields>Total_Relationship_Exposure__c</fields>
     <label>Product Package Layout</label>
 </CompactLayout>

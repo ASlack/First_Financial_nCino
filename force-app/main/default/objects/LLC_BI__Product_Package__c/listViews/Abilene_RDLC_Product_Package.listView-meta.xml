@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Abilene_RDLC_Product_Package</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Abilene RDLC</label>
+    <queue>Abilene_RDLC</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>
