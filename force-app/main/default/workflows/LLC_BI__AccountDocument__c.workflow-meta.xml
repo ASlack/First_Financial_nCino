@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>CP_Relationship_Document_Uploaded</fullName>
+        <description>CP Relationship Document Uploaded</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Uploaded_Notified_User__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>PSO_Email_Templates/ET66_Relationship_Document_Uploaded</template>
+    </alerts>
+</Workflow>

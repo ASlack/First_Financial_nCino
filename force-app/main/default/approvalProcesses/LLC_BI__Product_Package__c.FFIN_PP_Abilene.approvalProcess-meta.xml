@@ -229,7 +229,6 @@ Total_Relationship_Exposure__c &gt; Region__r.SLC_Total_Relationship_Max_Authori
     <entryCriteria>
         <formula>AND(
     Region__r.Name = &apos;Abilene&apos;,
-    LLC_BI__Reviewable_Loan_Facilities_Count__c &gt;= 1,
     NOT(ISBLANK(Household__c)),
     NOT(ISBLANK(Approver_1__c)),
     NOT(ISPICKVAL(Package_Secure_Type__c, &quot;&quot;)),

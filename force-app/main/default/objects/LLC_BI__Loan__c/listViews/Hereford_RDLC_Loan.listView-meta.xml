@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hereford_RDLC_Loan</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Hereford RDLC</label>
+    <queue>Hereford_RDLC</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

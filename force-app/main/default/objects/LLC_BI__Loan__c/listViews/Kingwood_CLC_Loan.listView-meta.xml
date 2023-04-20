@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Kingwood_CLC_Loan</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Kingwood CLC</label>
+    <queue>Kingwood_CLC</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

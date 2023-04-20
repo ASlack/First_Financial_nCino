@@ -62370,6 +62370,11 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.ffin_Relationship_Manager__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Account.nBRIDGER__OFAC_AliasNames__c</field>
         <readable>true</readable>
@@ -68080,6 +68085,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>LLC_BI__AccountDocument__c.Uploaded_Notified_User__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>LLC_BI__Account_Collateral__c.LLC_BI__Collateral_Association__c</field>
         <readable>true</readable>
@@ -69367,6 +69377,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>LLC_BI__Branch__c.LLC_BI__lookupKey__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LLC_BI__Branch__c.Region_Name_Formula__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -76171,6 +76186,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>LLC_BI__LLC_LoanDocument__c.Lending_Assistant_Notified_User__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>LLC_BI__LLC_LoanDocument__c.NDOC__Account__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -76247,6 +76267,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>LLC_BI__LLC_LoanDocument__c.NDOC__year__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__LLC_LoanDocument__c.Uploaded_Notified_User__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -78256,6 +78281,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>LLC_BI__Loan__c.First_Lien_On_Dwelling_Determined_Date__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>LLC_BI__Loan__c.Full_Product_Name__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -80001,6 +80031,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>LLC_BI__Loan__c.Loan_Secured_by_1st_Lien_on_Dwelling__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>LLC_BI__Loan__c.Lost_Reason__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -80203,6 +80238,11 @@
         <editable>false</editable>
         <field>LLC_BI__Loan__c.cm_Portfolio_Manager__c</field>
         <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Loan__c.cm_Property_is_in_a_Flood_Zone__c</field>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -83383,6 +83423,11 @@
         <editable>true</editable>
         <field>LLC_BI__Product_Package__c.Classified_Loan_Long_Term__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LLC_BI__Product_Package__c.Delete_Testing_Approval_Steps__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -102116,7 +102161,15 @@
     </fieldPermissions>
     <flowAccesses>
         <enabled>false</enabled>
+        <flow>Account_Document_Portal_Enabled_Notification</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
         <flow>Advance_Deal</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Entity_Involvement_Assign_Reg_0_and_Employee_on_Loan</flow>
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
@@ -102128,7 +102181,23 @@
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
+        <flow>Loan_Document_Portal_Enabled_Notification</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Loan_LO_or_LA_Changed_Update_Portal_Docs</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
         <flow>Loan_Lost_Reason_Set_Update_Status</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>PB02_nCino_PMB_Update_LTM_Lookup_Fields_on_Loan</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Relationship_RM_Changed_Update_Portal_Docs</flow>
     </flowAccesses>
     <layoutAssignments>
         <layout>Account-LLC_BI__Account %28Business%29</layout>

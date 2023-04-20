@@ -51,6 +51,10 @@
                 <behavior>Edit</behavior>
                 <field>LLC_BI__Personal_Fin_Statements__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>ffin_Relationship_Manager__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

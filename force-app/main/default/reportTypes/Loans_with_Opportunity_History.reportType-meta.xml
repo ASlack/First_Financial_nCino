@@ -805,6 +805,56 @@
             <field>Submitted_for_Approval_Date__c</field>
             <table>LLC_BI__Loan__c</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Region__c</field>
+            <table>LLC_BI__Loan__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Real_Estate_Sub_Type__c</field>
+            <table>LLC_BI__Loan__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Loan_Collateral_Type__c</field>
+            <table>LLC_BI__Loan__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Loan_Collateral_Sub_Type__c</field>
+            <table>LLC_BI__Loan__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Loan_Secured_by_1st_Lien_on_Dwelling__c</field>
+            <table>LLC_BI__Loan__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>First_Lien_On_Dwelling_Determined_Date__c</field>
+            <table>LLC_BI__Loan__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LLC_BI__Booked_Date__c</field>
+            <table>LLC_BI__Loan__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LLC_BI__Booked_DateTime__c</field>
+            <table>LLC_BI__Loan__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>cm_Loan_Assistant__c</field>
+            <table>LLC_BI__Loan__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>cm_Property_is_in_a_Flood_Zone__c</field>
+            <table>LLC_BI__Loan__c</table>
+        </columns>
         <masterLabel>Loans</masterLabel>
     </sections>
     <sections>

@@ -17594,6 +17594,7 @@
         <members>Account.cm_Street_Address_Line_1__c</members>
         <members>Account.cm_Street_Address_Line_2__c</members>
         <members>Account.cm_Third_Party_Type_Text__c</members>
+        <members>Account.ffin_Relationship_Manager__c</members>
         <members>Account.nBRIDGER__OFAC_AliasNames__c</members>
         <members>Account.nBRIDGER__OFAC_CSR_Relationship__c</members>
         <members>Account.nBRIDGER__OFAC_Disposition_Date__c</members>
@@ -19334,6 +19335,7 @@
         <members>LLC_BI__AccountDocument__c.NDOC__Year__c</members>
         <members>LLC_BI__AccountDocument__c.NDOC__fileName__c</members>
         <members>LLC_BI__AccountDocument__c.NDOC__isTrash__c</members>
+        <members>LLC_BI__AccountDocument__c.Uploaded_Notified_User__c</members>
         <members>LLC_BI__Account_Collateral__c.LLC_BI__Account__c</members>
         <members>LLC_BI__Account_Collateral__c.LLC_BI__Collateral_Association__c</members>
         <members>LLC_BI__Account_Collateral__c.LLC_BI__Collateral__c</members>
@@ -19600,6 +19602,7 @@
         <members>LLC_BI__Branch__c.LLC_BI__Street__c</members>
         <members>LLC_BI__Branch__c.LLC_BI__Zip_Code__c</members>
         <members>LLC_BI__Branch__c.LLC_BI__lookupKey__c</members>
+        <members>LLC_BI__Branch__c.Region_Name_Formula__c</members>
         <members>LLC_BI__Branch__c.Region__c</members>
         <members>LLC_BI__Branch__c.cm_Default_Online_Branch__c</members>
         <members>LLC_BI__Branch__c.cm_Duplicate_Online_Branches__c</members>
@@ -21063,6 +21066,7 @@
         <members>LLC_BI__LLC_LoanDocument__c.LLC_BI__reviewedBy__c</members>
         <members>LLC_BI__LLC_LoanDocument__c.LLC_BI__sortOrder__c</members>
         <members>LLC_BI__LLC_LoanDocument__c.LLC_BI__version__c</members>
+        <members>LLC_BI__LLC_LoanDocument__c.Lending_Assistant_Notified_User__c</members>
         <members>LLC_BI__LLC_LoanDocument__c.NDOC__Account__c</members>
         <members>LLC_BI__LLC_LoanDocument__c.NDOC__Created_By_Closing_Checklist_Id__c</members>
         <members>LLC_BI__LLC_LoanDocument__c.NDOC__HasBeenWaived__c</members>
@@ -21079,6 +21083,7 @@
         <members>LLC_BI__LLC_LoanDocument__c.NDOC__isTrash__c</members>
         <members>LLC_BI__LLC_LoanDocument__c.NDOC__neededByStage__c</members>
         <members>LLC_BI__LLC_LoanDocument__c.NDOC__year__c</members>
+        <members>LLC_BI__LLC_LoanDocument__c.Uploaded_Notified_User__c</members>
         <members>LLC_BI__Legal_Entities__c.Integration_Source__c</members>
         <members>LLC_BI__Legal_Entities__c.LLC_BI__Account__c</members>
         <members>LLC_BI__Legal_Entities__c.LLC_BI__Address__c</members>
@@ -21887,6 +21892,7 @@
         <members>LLC_BI__Loan__c.cm_Method_of_Doc_Prep__c</members>
         <members>LLC_BI__Loan__c.cm_Participation_Amount__c</members>
         <members>LLC_BI__Loan__c.cm_Portfolio_Manager__c</members>
+        <members>LLC_BI__Loan__c.cm_Property_is_in_a_Flood_Zone__c</members>
         <members>LLC_BI__Loan__c.cm_Roll_Up_Adverse_Action__c</members>
         <members>LLC_BI__Loan__c.cm_Today_s_Date__c</members>
         <members>LLC_BI__Loan__c.zen_Compliance_Officer__c</members>
@@ -22563,6 +22569,7 @@
         <members>LLC_BI__Product_Package__c.Approver_4__c</members>
         <members>LLC_BI__Product_Package__c.Approver_5__c</members>
         <members>LLC_BI__Product_Package__c.Classified_Loan_Long_Term__c</members>
+        <members>LLC_BI__Product_Package__c.Delete_Testing_Approval_Steps__c</members>
         <members>LLC_BI__Product_Package__c.Enable_10_Rule__c</members>
         <members>LLC_BI__Product_Package__c.Household__c</members>
         <members>LLC_BI__Product_Package__c.LLC_BI__Account__c</members>
@@ -28267,6 +28274,8 @@
     <types>
         <members>Company_Performance_Dashboard_Standard</members>
         <members>Company_Performance_Dashboard_Standard/CompanyPerformanceDashboard</members>
+        <members>FirstFinancial</members>
+        <members>FirstFinancial/CLNoZYywGtxdAySGNEFSZVnQxATADq</members>
         <members>LLC_BI__nCino_Dashboards</members>
         <members>LLC_BI__nCino_Dashboards/Marketing_Dashboard_nCino</members>
         <members>LLC_BI__nCino_Dashboards/awmZqurFRyHaPQfwltTpqQeACqXzRZ</members>
@@ -28532,6 +28541,8 @@
         <members>PSO_Email_Templates/ET63_Package_Submitted</members>
         <members>PSO_Email_Templates/ET64_Package_Approved</members>
         <members>PSO_Email_Templates/ET65_Package_Rejected</members>
+        <members>PSO_Email_Templates/ET66_Relationship_Document_Uploaded</members>
+        <members>PSO_Email_Templates/ET67_Loan_Document_Uploaded</members>
         <members>nBRIDGER__OFAC_Notifications</members>
         <members>nBRIDGER__OFAC_Notifications/nBRIDGER__OFACMatchNotification</members>
         <members>nBRIDGER__OFAC_Notifications/nBRIDGER__OFACMoreInformationNotification</members>
@@ -28807,6 +28818,7 @@
         <members>LLC_BI__Beneficiary__c.LLC_BI__UI_Beneficiary</members>
         <members>LLC_BI__Bill_Point__c.LLC_BI__TM_Manage_Bill_Points</members>
         <members>LLC_BI__Branch__c.JHJX__ABJX</members>
+        <members>LLC_BI__Branch__c.UI_Lookup_Fields</members>
         <members>LLC_BI__Budget__c.LLC_BI__Budget_Summary</members>
         <members>LLC_BI__Budget__c.LLC_BI__Draws_History_Summary</members>
         <members>LLC_BI__Budget__c.LLC_BI__Draws_Overview_Summary</members>
@@ -29554,6 +29566,7 @@
         <name>FlexiPage</name>
     </types>
     <types>
+        <members>Account_Document_Portal_Enabled_Notification</members>
         <members>Advance_Deal</members>
         <members>CLA_Draw_Auto_Submit_for_Approval</members>
         <members>CRA_Reportable_Invocable</members>
@@ -29564,6 +29577,7 @@
         <members>Contact_Create_Edit_Primary_Contact_Update</members>
         <members>Create_Product_Package_Zen</members>
         <members>Employee_Loan_Reg_O_Invocable</members>
+        <members>Entity_Involvement_Assign_Reg_0_and_Employee_on_Loan</members>
         <members>HMDA_Questionnaire_Rendering_Invocable</members>
         <members>HVCRE_Questionnaire_Rendering_Invocable</members>
         <members>InspectionPlaceholder</members>
@@ -29574,8 +29588,10 @@
         <members>Loan_After_Save_Loan_Name_Update</members>
         <members>Loan_Application_On_Hold</members>
         <members>Loan_Created_Set_Create_Fields_Records</members>
+        <members>Loan_Document_Portal_Enabled_Notification</members>
         <members>Loan_ECOA_Notifications</members>
         <members>Loan_Is_Ready_For_Review</members>
+        <members>Loan_LO_or_LA_Changed_Update_Portal_Docs</members>
         <members>Loan_Lost_Reason_Set_Update_Status</members>
         <members>Loan_RFI_Received</members>
         <members>Loan_Set_Initial_Application_Date</members>
@@ -29597,6 +29613,7 @@
         <members>REG_O_Questionnaire_Rendering_Invocable</members>
         <members>REG_W_Questionnaire_Rendering_Invocable</members>
         <members>Relationship_Evaluation_LoanAutoDecision</members>
+        <members>Relationship_RM_Changed_Update_Portal_Docs</members>
         <members>Retail_LoanAutoDecision</members>
         <members>SCOC__Credit_Pass_Review_SCOC</members>
         <members>SCOC__Credit_Pass_Review_Template_SCOC</members>
@@ -29613,6 +29630,7 @@
         <name>Flow</name>
     </types>
     <types>
+        <members>Account_Document_Portal_Enabled_Notification</members>
         <members>Advance_Deal</members>
         <members>CLA_Draw_Auto_Submit_for_Approval</members>
         <members>CRA_Reportable_Invocable</members>
@@ -29623,6 +29641,7 @@
         <members>Contact_Create_Edit_Primary_Contact_Update</members>
         <members>Create_Product_Package_Zen</members>
         <members>Employee_Loan_Reg_O_Invocable</members>
+        <members>Entity_Involvement_Assign_Reg_0_and_Employee_on_Loan</members>
         <members>HMDA_Questionnaire_Rendering_Invocable</members>
         <members>HVCRE_Questionnaire_Rendering_Invocable</members>
         <members>InspectionPlaceholder</members>
@@ -29633,8 +29652,10 @@
         <members>Loan_After_Save_Loan_Name_Update</members>
         <members>Loan_Application_On_Hold</members>
         <members>Loan_Created_Set_Create_Fields_Records</members>
+        <members>Loan_Document_Portal_Enabled_Notification</members>
         <members>Loan_ECOA_Notifications</members>
         <members>Loan_Is_Ready_For_Review</members>
+        <members>Loan_LO_or_LA_Changed_Update_Portal_Docs</members>
         <members>Loan_Lost_Reason_Set_Update_Status</members>
         <members>Loan_RFI_Received</members>
         <members>Loan_Set_Initial_Application_Date</members>
@@ -29656,6 +29677,7 @@
         <members>REG_O_Questionnaire_Rendering_Invocable</members>
         <members>REG_W_Questionnaire_Rendering_Invocable</members>
         <members>Relationship_Evaluation_LoanAutoDecision</members>
+        <members>Relationship_RM_Changed_Update_Portal_Docs</members>
         <members>Retail_LoanAutoDecision</members>
         <members>SCOC__Credit_Pass_Review_SCOC</members>
         <members>SCOC__Credit_Pass_Review_Template_SCOC</members>
@@ -30908,12 +30930,36 @@
         <members>LLC_BI__Loan_Collateral__c.LLC_BI__All</members>
         <members>LLC_BI__Loan_Compliance__c.LLC_BI__All</members>
         <members>LLC_BI__Loan_Modification__c.LLC_BI__All</members>
+        <members>LLC_BI__Loan__c.Abilene_CLC_Loan</members>
+        <members>LLC_BI__Loan__c.Abilene_RDLC_Loan</members>
+        <members>LLC_BI__Loan__c.B_College_Station_CLC_Loan</members>
+        <members>LLC_BI__Loan__c.B_College_Station_RDLC_Loan</members>
         <members>LLC_BI__Loan__c.Board_of_Directors_Loan</members>
         <members>LLC_BI__Loan__c.CLA_Queue_Loan</members>
+        <members>LLC_BI__Loan__c.Cleburne_CLC_Loan</members>
+        <members>LLC_BI__Loan__c.Cleburne_RDLC_Loan</members>
+        <members>LLC_BI__Loan__c.Conroe_CLC_Loan</members>
+        <members>LLC_BI__Loan__c.Conroe_RDLC_Loan</members>
+        <members>LLC_BI__Loan__c.Eastland_CLC_Loan</members>
+        <members>LLC_BI__Loan__c.Eastland_RDLC_Loan</members>
+        <members>LLC_BI__Loan__c.FFIN_DLC_Loan</members>
+        <members>LLC_BI__Loan__c.Fort_Worth_CLC_Loan</members>
+        <members>LLC_BI__Loan__c.Fort_Worth_RDLC_Loan</members>
+        <members>LLC_BI__Loan__c.Hereford_CLC_Loan</members>
+        <members>LLC_BI__Loan__c.Hereford_RDLC_Loan</members>
+        <members>LLC_BI__Loan__c.Kingwood_CLC_Loan</members>
+        <members>LLC_BI__Loan__c.Kingwood_RDLC_Loan</members>
         <members>LLC_BI__Loan__c.LLC_BI__All</members>
         <members>LLC_BI__Loan__c.Loan_Approval_Queue_Loan</members>
         <members>LLC_BI__Loan__c.Loan_Committee_Loan</members>
+        <members>LLC_BI__Loan__c.Orange_CLC_Loan</members>
+        <members>LLC_BI__Loan__c.Orange_RDLC_Loan</members>
+        <members>LLC_BI__Loan__c.San_Angelo_CLC_Loan</members>
+        <members>LLC_BI__Loan__c.San_Angelo_RDLC_Loan</members>
+        <members>LLC_BI__Loan__c.Senior_Loan_Committee_Loan</members>
         <members>LLC_BI__Loan__c.Shadow_Queue_Loan</members>
+        <members>LLC_BI__Loan__c.Southlake_CLC_Loan</members>
+        <members>LLC_BI__Loan__c.Southlake_RDLC_Loan</members>
         <members>LLC_BI__Loan__c.Stage_Approval_Loan_Committee</members>
         <members>LLC_BI__Loan__c.Stage_Booked</members>
         <members>LLC_BI__Loan__c.Stage_Closing</members>
@@ -30924,6 +30970,12 @@
         <members>LLC_BI__Loan__c.Stage_Processing</members>
         <members>LLC_BI__Loan__c.Stage_Proposal</members>
         <members>LLC_BI__Loan__c.Stage_Qualification</members>
+        <members>LLC_BI__Loan__c.Stephenville_CLC_Loan</members>
+        <members>LLC_BI__Loan__c.Stephenville_RDLC_Loan</members>
+        <members>LLC_BI__Loan__c.Sweetwater_CLC_Loan</members>
+        <members>LLC_BI__Loan__c.Sweetwater_RDLC_Loan</members>
+        <members>LLC_BI__Loan__c.Weatherford_CLC_Loan</members>
+        <members>LLC_BI__Loan__c.Weatherford_RDLC_Loan</members>
         <members>LLC_BI__Matrix__c.LLC_BI__Pricing</members>
         <members>LLC_BI__Miscellaneous_Service__c.LLC_BI__All</members>
         <members>LLC_BI__Opportunity_History__c.LLC_BI__All</members>
@@ -31627,8 +31679,12 @@
         <members>ExecutiveDashboard/Time_from_Approval_to_Booking_Ajo</members>
         <members>ExecutiveDashboard/Time_to_Close_New_Money_NTo</members>
         <members>FFinGroupReports</members>
+        <members>FFinGroupReports/Loans_Needing_Credit_Analyst_akR</members>
         <members>FFinGroupReports/Lost_Loans_By_Lender_VOc</members>
         <members>FFinGroupReports/Lost_Loans_By_Region_31Z</members>
+        <members>FFinGroupReports/Pipeline_By_Region_dpw</members>
+        <members>FFinGroupReports/Stage_DurationNot_Booked_DAR</members>
+        <members>FFinGroupReports/Stage_Duration_Report_Wcn</members>
         <members>LLC_BI__nCino_Compliance_Reports</members>
         <members>LLC_BI__nCino_Reports</members>
         <members>LLC_BI__nCino_Reports/Approval_Process_History_Report</members>
@@ -32688,6 +32744,8 @@
         <name>WebLink</name>
     </types>
     <types>
+        <members>LLC_BI__AccountDocument__c.CP_Relationship_Document_Uploaded</members>
+        <members>LLC_BI__LLC_LoanDocument__c.CP_Loan_Document_Uploaded</members>
         <members>LLC_BI__Loan__c.LLC_BI__Alert_Loan_Withdrawn_Declined</members>
         <members>LLC_BI__Loan__c.LLC_BI__Alert_Loan_in_Closing_Stage_too_Long</members>
         <members>LLC_BI__Loan__c.LLC_BI__Loan_Closing_E_mail_Alert</members>

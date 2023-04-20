@@ -13,1121 +13,1130 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>10 - Savings Deposit - In-house</fullName>
+                <fullName>10</fullName>
                 <default>false</default>
                 <label>10 - Savings Deposit - In-house</label>
             </value>
             <value>
-                <fullName>20 - Savings Deposit - Other</fullName>
+                <fullName>20</fullName>
                 <default>false</default>
                 <label>20 - Savings Deposit - Other</label>
             </value>
             <value>
-                <fullName>30 - Certificate of Deposit - In-house</fullName>
+                <fullName>30</fullName>
                 <default>false</default>
                 <label>30 - Certificate of Deposit - In-house</label>
             </value>
             <value>
-                <fullName>40 - Certificate of Deposit - Other</fullName>
+                <fullName>40</fullName>
                 <default>false</default>
                 <label>40 - Certificate of Deposit - Other</label>
             </value>
             <value>
-                <fullName>60 - Common Stock - Bank</fullName>
+                <fullName>60</fullName>
                 <default>false</default>
                 <label>60 - Common Stock - Bank</label>
             </value>
             <value>
-                <fullName>70 - Common Stock - Bank Holding Co.</fullName>
+                <fullName>70</fullName>
                 <default>false</default>
                 <label>70 - Common Stock - Bank Holding Co.</label>
             </value>
             <value>
-                <fullName>80 - Common Stock - Actively Traded</fullName>
+                <fullName>80</fullName>
                 <default>false</default>
                 <label>80 - Common Stock - Actively Traded</label>
             </value>
             <value>
-                <fullName>90 - Common Stock - Limited Market</fullName>
+                <fullName>90</fullName>
                 <default>false</default>
                 <label>90 - Common Stock - Limited Market</label>
             </value>
             <value>
-                <fullName>99 - Unsecured Conversion Only DO NOT USE</fullName>
+                <fullName>99</fullName>
                 <default>false</default>
                 <label>99 - Unsecured Conversion Only DO NOT USE</label>
             </value>
             <value>
-                <fullName>100 - Common Stock - Restricted (Legend)</fullName>
+                <fullName>100</fullName>
                 <default>false</default>
                 <label>100 - Common Stock - Restricted (Legend)</label>
             </value>
             <value>
-                <fullName>110 - Common Stock - Warrants</fullName>
+                <fullName>110</fullName>
                 <default>false</default>
                 <label>110 - Common Stock - Warrants</label>
             </value>
             <value>
-                <fullName>130 - Preferred Stock - Bank</fullName>
+                <fullName>130</fullName>
                 <default>false</default>
                 <label>130 - Preferred Stock - Bank</label>
             </value>
             <value>
-                <fullName>140 - Preferred Stock - Bank Holding Co.</fullName>
+                <fullName>140</fullName>
                 <default>false</default>
                 <label>140 - Preferred Stock - Bank Holding Co.</label>
             </value>
             <value>
-                <fullName>150 - Preferred Stock - Actively Traded</fullName>
+                <fullName>150</fullName>
                 <default>false</default>
                 <label>150 - Preferred Stock - Actively Traded</label>
             </value>
             <value>
-                <fullName>160 - Preferred Stock - Limited Market</fullName>
+                <fullName>160</fullName>
                 <default>false</default>
                 <label>160 - Preferred Stock - Limited Market</label>
             </value>
             <value>
-                <fullName>170 - Preferred Stock - Restricted (Legend)</fullName>
+                <fullName>170</fullName>
                 <default>false</default>
                 <label>170 - Preferred Stock - Restricted (Legend)</label>
             </value>
             <value>
-                <fullName>180 - Preferred Stock - Warrants</fullName>
+                <fullName>180</fullName>
                 <default>false</default>
                 <label>180 - Preferred Stock - Warrants</label>
             </value>
             <value>
-                <fullName>200 - Bonds/Debentures - Bank</fullName>
+                <fullName>200</fullName>
                 <default>false</default>
                 <label>200 - Bonds/Debentures - Bank</label>
             </value>
             <value>
-                <fullName>210 - Bonds/Debentures - Bank Holding Co.</fullName>
+                <fullName>210</fullName>
                 <default>false</default>
                 <label>210 - Bonds/Debentures - Bank Holding Co.</label>
             </value>
             <value>
-                <fullName>220 - Bonds/Debentures - Actively Traded</fullName>
+                <fullName>220</fullName>
                 <default>false</default>
                 <label>220 - Bonds/Debentures - Actively Traded</label>
             </value>
             <value>
-                <fullName>230 - Bonds/Debentures - Limited Market</fullName>
+                <fullName>230</fullName>
                 <default>false</default>
                 <label>230 - Bonds/Debentures - Limited Market</label>
             </value>
             <value>
-                <fullName>240 - Bonds/Debentures - Warrants</fullName>
+                <fullName>240</fullName>
                 <default>false</default>
                 <label>240 - Bonds/Debentures - Warrants</label>
             </value>
             <value>
-                <fullName>260 - U.S. Govt. Securities - Bearer W/Coupons</fullName>
+                <fullName>260</fullName>
                 <default>false</default>
                 <label>260 - U.S. Govt. Securities - Bearer W/Coupons</label>
             </value>
             <value>
-                <fullName>270 - U.S. Govt. Securities - Bearer WO/Coupons</fullName>
+                <fullName>270</fullName>
                 <default>false</default>
                 <label>270 - U.S. Govt. Securities - Bearer WO/Coupons</label>
             </value>
             <value>
-                <fullName>280 - U.S. Govt. Securities - Registered W/Coupons</fullName>
+                <fullName>280</fullName>
                 <default>false</default>
                 <label>280 - U.S. Govt. Securities - Registered W/Coupons</label>
             </value>
             <value>
-                <fullName>290 - U.S. Govt. Securities - Registered WO/Coupons</fullName>
+                <fullName>290</fullName>
                 <default>false</default>
                 <label>290 - U.S. Govt. Securities - Registered WO/Coupons</label>
             </value>
             <value>
-                <fullName>300 - Foreign Govt. Securities</fullName>
+                <fullName>300</fullName>
                 <default>false</default>
                 <label>300 - Foreign Govt. Securities</label>
             </value>
             <value>
-                <fullName>320 - State/Municipal Securities - Bearer W/Coupons</fullName>
+                <fullName>320</fullName>
                 <default>false</default>
                 <label>320 - State/Municipal Securities - Bearer W/Coupons</label>
             </value>
             <value>
-                <fullName>330 - State/Municipal Securities - Bearer WO/Coupons</fullName>
+                <fullName>330</fullName>
                 <default>false</default>
                 <label>330 - State/Municipal Securities - Bearer WO/Coupons</label>
             </value>
             <value>
-                <fullName>340 - State/Municipal Securities - Registered W/Coupons</fullName>
+                <fullName>340</fullName>
                 <default>false</default>
                 <label>340 - State/Municipal Securities - Registered W/Coupons</label>
             </value>
             <value>
-                <fullName>350 - State/Municipal Securities - Registered WO/Coupons</fullName>
+                <fullName>350</fullName>
                 <default>false</default>
                 <label>350 - State/Municipal Securities - Registered WO/Coupons</label>
             </value>
             <value>
-                <fullName>355 - Partnership Interest</fullName>
+                <fullName>355</fullName>
                 <default>false</default>
                 <label>355 - Partnership Interest</label>
             </value>
             <value>
-                <fullName>360 - Residential Development R.E. WO/Structures 1A2</fullName>
+                <fullName>360</fullName>
                 <default>false</default>
                 <label>360 - Residential Development R.E. WO/Structures 1A2</label>
             </value>
             <value>
-                <fullName>370 - 1-4 Family Residential R.E. W/Structures 1CA or 1C1</fullName>
+                <fullName>370</fullName>
                 <default>false</default>
                 <label>370 - 1-4 Family Residential R.E. W/Structures 1CA or 1C1</label>
             </value>
             <value>
-                <fullName>372 - Multifamily Residential R.E. W/Structures 1D</fullName>
+                <fullName>372</fullName>
                 <default>false</default>
                 <label>372 - Multifamily Residential R.E. W/Structures 1D</label>
             </value>
             <value>
-                <fullName>374 - Mobile Home W/Real Estate 1CA</fullName>
+                <fullName>374</fullName>
                 <default>false</default>
                 <label>374 - Mobile Home W/Real Estate 1CA</label>
             </value>
             <value>
-                <fullName>375 - Condo RE W/Structures</fullName>
+                <fullName>375</fullName>
                 <default>false</default>
                 <label>375 - Condo RE W/Structures</label>
             </value>
             <value>
-                <fullName>380 - Commercial Development R.E. WO/Structures 1A2</fullName>
+                <fullName>380</fullName>
                 <default>false</default>
                 <label>380 - Commercial Development R.E. WO/Structures 1A2</label>
             </value>
             <value>
-                <fullName>385 - Residential Real Estate W/O Structures &lt;25 Acres 1A2</fullName>
+                <fullName>385</fullName>
                 <default>false</default>
                 <label>385 - Residential Real Estate W/O Structures &lt;25 Acres 1A2</label>
             </value>
             <value>
-                <fullName>390 - General Purpose Commercial R.E. W/Structures 1E1 or 1E2</fullName>
+                <fullName>390</fullName>
                 <default>false</default>
                 <label>390 - General Purpose Commercial R.E. W/Structures 1E1 or 1E2</label>
             </value>
             <value>
-                <fullName>400 - Farm R.E. 1B</fullName>
+                <fullName>400</fullName>
                 <default>false</default>
                 <label>400 - Farm R.E. 1B</label>
             </value>
             <value>
-                <fullName>410 - Special Purpose R.E. W/Structures 1E1 or 1E2</fullName>
+                <fullName>410</fullName>
                 <default>false</default>
                 <label>410 - Special Purpose R.E. W/Structures 1E1 or 1E2</label>
             </value>
             <value>
-                <fullName>420 - Residential Construction WO/Takeout 1A1</fullName>
+                <fullName>420</fullName>
                 <default>false</default>
                 <label>420 - Residential Construction WO/Takeout 1A1</label>
             </value>
             <value>
-                <fullName>430 - Commercial Construction WO/Takeout 1A2</fullName>
+                <fullName>430</fullName>
                 <default>false</default>
                 <label>430 - Commercial Construction WO/Takeout 1A2</label>
             </value>
             <value>
-                <fullName>440 - Residential Construction W/3rd Party Takeout 1A1</fullName>
+                <fullName>440</fullName>
                 <default>false</default>
                 <label>440 - Residential Construction W/3rd Party Takeout 1A1</label>
             </value>
             <value>
-                <fullName>450 - Commercial Construction W/3rd Party Takeout 1A2</fullName>
+                <fullName>450</fullName>
                 <default>false</default>
                 <label>450 - Commercial Construction W/3rd Party Takeout 1A2</label>
             </value>
             <value>
-                <fullName>460 - Second Lien on Residential R.E. W/Structures 1CB or 1C1</fullName>
+                <fullName>460</fullName>
                 <default>false</default>
                 <label>460 - Second Lien on Residential R.E. W/Structures 1CB or 1C1</label>
             </value>
             <value>
-                <fullName>470 - Second Lien on Commercial R.E. W/Structures 1E1 or 1E2</fullName>
+                <fullName>470</fullName>
                 <default>false</default>
                 <label>470 - Second Lien on Commercial R.E. W/Structures 1E1 or 1E2</label>
             </value>
             <value>
-                <fullName>480 - Second Lien on Unimproved R.E. 1A2</fullName>
+                <fullName>480</fullName>
                 <default>false</default>
                 <label>480 - Second Lien on Unimproved R.E. 1A2</label>
             </value>
             <value>
-                <fullName>485 - Raw Land</fullName>
+                <fullName>485</fullName>
                 <default>false</default>
                 <label>485 - Raw Land</label>
             </value>
             <value>
-                <fullName>490 - Stocker Cattle on Pasture 500 Cow/Calf on Pasture</fullName>
+                <fullName>490</fullName>
                 <default>false</default>
                 <label>490 - Stocker Cattle on Pasture 500 Cow/Calf on Pasture</label>
             </value>
             <value>
-                <fullName>510 - Cattle in Feed Lot</fullName>
+                <fullName>500</fullName>
+                <default>false</default>
+                <label>500 - Cow/Calf on Pasture</label>
+            </value>
+            <value>
+                <fullName>510</fullName>
                 <default>false</default>
                 <label>510 - Cattle in Feed Lot</label>
             </value>
             <value>
-                <fullName>520 - Other Livestock</fullName>
+                <fullName>520</fullName>
                 <default>false</default>
                 <label>520 - Other Livestock</label>
             </value>
             <value>
-                <fullName>525 - Horses</fullName>
+                <fullName>525</fullName>
                 <default>false</default>
                 <label>525 - Horses</label>
             </value>
             <value>
-                <fullName>530 - Crops</fullName>
+                <fullName>530</fullName>
                 <default>false</default>
                 <label>530 - Crops</label>
             </value>
             <value>
-                <fullName>535 - Aquaculture Products</fullName>
+                <fullName>535</fullName>
                 <default>false</default>
                 <label>535 - Aquaculture Products</label>
             </value>
             <value>
-                <fullName>540 - Agricultural Equipment</fullName>
+                <fullName>540</fullName>
                 <default>false</default>
                 <label>540 - Agricultural Equipment</label>
             </value>
             <value>
-                <fullName>550 - Accounts Receivable - Specific</fullName>
+                <fullName>550</fullName>
                 <default>false</default>
                 <label>550 - Accounts Receivable - Specific</label>
             </value>
             <value>
-                <fullName>560 - Accounts Receivable - Blanket</fullName>
+                <fullName>560</fullName>
                 <default>false</default>
                 <label>560 - Accounts Receivable - Blanket</label>
             </value>
             <value>
-                <fullName>570 - Notes Receivable - Unsecured</fullName>
+                <fullName>570</fullName>
                 <default>false</default>
                 <label>570 - Notes Receivable - Unsecured</label>
             </value>
             <value>
-                <fullName>580 - Notes Receivable - Secured</fullName>
+                <fullName>580</fullName>
                 <default>false</default>
                 <label>580 - Notes Receivable - Secured</label>
             </value>
             <value>
-                <fullName>590 - Notes Receivable - R.E. Secured</fullName>
+                <fullName>590</fullName>
                 <default>false</default>
                 <label>590 - Notes Receivable - R.E. Secured</label>
             </value>
             <value>
-                <fullName>600 - Letter of Credit</fullName>
+                <fullName>600</fullName>
                 <default>false</default>
                 <label>600 - Letter of Credit</label>
             </value>
             <value>
-                <fullName>620 - Inventory - Specific W/Repurchase Agreement</fullName>
+                <fullName>620</fullName>
                 <default>false</default>
                 <label>620 - Inventory - Specific W/Repurchase Agreement</label>
             </value>
             <value>
-                <fullName>630 - Inventory - Specific WO/Repurchase Agreement</fullName>
+                <fullName>630</fullName>
                 <default>false</default>
                 <label>630 - Inventory - Specific WO/Repurchase Agreement</label>
             </value>
             <value>
-                <fullName>640 - Inventory - Blanket W/Repurchase Agreement</fullName>
+                <fullName>640</fullName>
                 <default>false</default>
                 <label>640 - Inventory - Blanket W/Repurchase Agreement</label>
             </value>
             <value>
-                <fullName>650 - Inventory - Blanket WO/Repurchase Agreement</fullName>
+                <fullName>650</fullName>
                 <default>false</default>
                 <label>650 - Inventory - Blanket WO/Repurchase Agreement</label>
             </value>
             <value>
-                <fullName>670 - Neg. Warehouse Receipts - Agri-Products</fullName>
+                <fullName>670</fullName>
                 <default>false</default>
                 <label>670 - Neg. Warehouse Receipts - Agri-Products</label>
             </value>
             <value>
-                <fullName>680 - Neg. Warehouse Receipts</fullName>
+                <fullName>680</fullName>
                 <default>false</default>
                 <label>680 - Neg. Warehouse Receipts</label>
             </value>
             <value>
-                <fullName>690 - Non-Neg. Warehouse Receipts - Agri-Products</fullName>
+                <fullName>690</fullName>
                 <default>false</default>
                 <label>690 - Non-Neg. Warehouse Receipts - Agri-Products</label>
             </value>
             <value>
-                <fullName>700 - Non-Neg. Warehouse Receipts</fullName>
+                <fullName>700</fullName>
                 <default>false</default>
                 <label>700 - Non-Neg. Warehouse Receipts</label>
             </value>
             <value>
-                <fullName>710 - Mobile Homes</fullName>
+                <fullName>710</fullName>
                 <default>false</default>
                 <label>710 - Mobile Homes</label>
             </value>
             <value>
-                <fullName>711 - Mobile Homes - Indirect</fullName>
+                <fullName>711</fullName>
                 <default>false</default>
                 <label>711 - Mobile Homes - Indirect</label>
             </value>
             <value>
-                <fullName>720 - Furniture and Fixtures</fullName>
+                <fullName>720</fullName>
                 <default>false</default>
                 <label>720 - Furniture and Fixtures</label>
             </value>
             <value>
-                <fullName>722 - Household Goods</fullName>
+                <fullName>722</fullName>
                 <default>false</default>
                 <label>722 - Household Goods</label>
             </value>
             <value>
-                <fullName>723 - Household Goods - Indirect</fullName>
+                <fullName>723</fullName>
                 <default>false</default>
                 <label>723 - Household Goods - Indirect</label>
             </value>
             <value>
-                <fullName>730 - Machinery</fullName>
+                <fullName>730</fullName>
                 <default>false</default>
                 <label>730 - Machinery</label>
             </value>
             <value>
-                <fullName>740 - Automotive</fullName>
+                <fullName>740</fullName>
                 <default>false</default>
                 <label>740 - Automotive</label>
             </value>
             <value>
-                <fullName>741 - Automotive - Indirect</fullName>
+                <fullName>741</fullName>
                 <default>false</default>
                 <label>741 - Automotive - Indirect</label>
             </value>
             <value>
-                <fullName>742 - Commercial Vehicle</fullName>
+                <fullName>742</fullName>
                 <default>false</default>
                 <label>742 - Commercial Vehicle</label>
             </value>
             <value>
-                <fullName>743 - Commercial Vehicle - Indirect</fullName>
+                <fullName>743</fullName>
                 <default>false</default>
                 <label>743 - Commercial Vehicle - Indirect</label>
             </value>
             <value>
-                <fullName>744 - Motorcycle</fullName>
+                <fullName>744</fullName>
                 <default>false</default>
                 <label>744 - Motorcycle</label>
             </value>
             <value>
-                <fullName>745 - Motorcycle - Indirect</fullName>
+                <fullName>745</fullName>
                 <default>false</default>
                 <label>745 - Motorcycle - Indirect</label>
             </value>
             <value>
-                <fullName>746 - RV Travel Trailer</fullName>
+                <fullName>746</fullName>
                 <default>false</default>
                 <label>746 - RV Travel Trailer</label>
             </value>
             <value>
-                <fullName>747 - RV Travel Trailer - Indirect</fullName>
+                <fullName>747</fullName>
                 <default>false</default>
                 <label>747 - RV Travel Trailer - Indirect</label>
             </value>
             <value>
-                <fullName>748 - RV Motorhome</fullName>
+                <fullName>748</fullName>
                 <default>false</default>
                 <label>748 - RV Motorhome</label>
             </value>
             <value>
-                <fullName>750 - Rolling Stock (Railroad &amp; Common Carrier Equip.)</fullName>
+                <fullName>750</fullName>
                 <default>false</default>
                 <label>750 - Rolling Stock (Railroad &amp; Common Carrier Equip.)</label>
             </value>
             <value>
-                <fullName>760 - Aircraft</fullName>
+                <fullName>760</fullName>
                 <default>false</default>
                 <label>760 - Aircraft</label>
             </value>
             <value>
-                <fullName>770 - Boats</fullName>
+                <fullName>770</fullName>
                 <default>false</default>
                 <label>770 - Boats</label>
             </value>
             <value>
-                <fullName>771 - Boats - Indirect</fullName>
+                <fullName>771</fullName>
                 <default>false</default>
                 <label>771 - Boats - Indirect</label>
             </value>
             <value>
-                <fullName>780 - Construction/Heavy Equipment</fullName>
+                <fullName>780</fullName>
                 <default>false</default>
                 <label>780 - Construction/Heavy Equipment</label>
             </value>
             <value>
-                <fullName>790 - Oil and Gas Equipment</fullName>
+                <fullName>790</fullName>
                 <default>false</default>
                 <label>790 - Oil and Gas Equipment</label>
             </value>
             <value>
-                <fullName>800 - Other Equipment</fullName>
+                <fullName>800</fullName>
                 <default>false</default>
                 <label>800 - Other Equipment</label>
             </value>
             <value>
-                <fullName>802 - Spa</fullName>
+                <fullName>802</fullName>
                 <default>false</default>
                 <label>802 - Spa</label>
             </value>
             <value>
-                <fullName>803 - Spa - Indirect</fullName>
+                <fullName>803</fullName>
                 <default>false</default>
                 <label>803 - Spa - Indirect</label>
             </value>
             <value>
-                <fullName>804 - Portable Building</fullName>
+                <fullName>804</fullName>
                 <default>false</default>
                 <label>804 - Portable Building</label>
             </value>
             <value>
-                <fullName>805 - Portable Building - Indirect</fullName>
+                <fullName>805</fullName>
                 <default>false</default>
                 <label>805 - Portable Building - Indirect</label>
             </value>
             <value>
-                <fullName>806 - Business Equipment</fullName>
+                <fullName>806</fullName>
                 <default>false</default>
                 <label>806 - Business Equipment</label>
             </value>
             <value>
-                <fullName>807 - Business Equipment - Indirect</fullName>
+                <fullName>807</fullName>
                 <default>false</default>
                 <label>807 - Business Equipment - Indirect</label>
             </value>
             <value>
-                <fullName>809 - Retail Finance Program - Indirect</fullName>
+                <fullName>809</fullName>
                 <default>false</default>
                 <label>809 - Retail Finance Program - Indirect</label>
             </value>
             <value>
-                <fullName>810 - Ship Mortgage</fullName>
+                <fullName>810</fullName>
                 <default>false</default>
                 <label>810 - Ship Mortgage</label>
             </value>
             <value>
-                <fullName>820 - Oil &amp; Gas - Developed and Producing</fullName>
+                <fullName>820</fullName>
                 <default>false</default>
                 <label>820 - Oil &amp; Gas - Developed and Producing</label>
             </value>
             <value>
-                <fullName>830 - Oil &amp; Gas - Developed Non-Producing</fullName>
+                <fullName>830</fullName>
                 <default>false</default>
                 <label>830 - Oil &amp; Gas - Developed Non-Producing</label>
             </value>
             <value>
-                <fullName>840 - Oil &amp; Gas - Undeveloped</fullName>
+                <fullName>840</fullName>
                 <default>false</default>
                 <label>840 - Oil &amp; Gas - Undeveloped</label>
             </value>
             <value>
-                <fullName>850 - Other Mineral Interests</fullName>
+                <fullName>850</fullName>
                 <default>false</default>
                 <label>850 - Other Mineral Interests</label>
             </value>
             <value>
-                <fullName>860 - I&amp;S Tax Pledge (QSCB)</fullName>
+                <fullName>860</fullName>
                 <default>false</default>
                 <label>860 - I&amp;S Tax Pledge (QSCB)</label>
             </value>
             <value>
-                <fullName>862 - M&amp;O Tax Pledge</fullName>
+                <fullName>862</fullName>
                 <default>false</default>
                 <label>862 - M&amp;O Tax Pledge</label>
             </value>
             <value>
-                <fullName>864 - Other Revenue Pledge (Non-Profit/Municipal)</fullName>
+                <fullName>864</fullName>
                 <default>false</default>
                 <label>864 - Other Revenue Pledge (Non-Profit/Municipal)</label>
             </value>
             <value>
-                <fullName>870 - Insurance Renewal Commissions</fullName>
+                <fullName>870</fullName>
                 <default>false</default>
                 <label>870 - Insurance Renewal Commissions</label>
             </value>
             <value>
-                <fullName>880 - Lease Payments</fullName>
+                <fullName>880</fullName>
                 <default>false</default>
                 <label>880 - Lease Payments</label>
             </value>
             <value>
-                <fullName>890 - Trust Account - Beneficiary Interest</fullName>
+                <fullName>890</fullName>
                 <default>false</default>
                 <label>890 - Trust Account - Beneficiary Interest</label>
             </value>
             <value>
-                <fullName>900 - Royalties</fullName>
+                <fullName>900</fullName>
                 <default>false</default>
                 <label>900 - Royalties</label>
             </value>
             <value>
-                <fullName>910 - Student Loan</fullName>
+                <fullName>910</fullName>
                 <default>false</default>
                 <label>910 - Student Loan</label>
             </value>
             <value>
-                <fullName>911 - Parent Plus Loan</fullName>
+                <fullName>911</fullName>
                 <default>false</default>
                 <label>911 - Parent Plus Loan</label>
             </value>
             <value>
-                <fullName>920 - General Intangibles</fullName>
+                <fullName>920</fullName>
                 <default>false</default>
                 <label>920 - General Intangibles</label>
             </value>
             <value>
-                <fullName>930 - Cash Surrender Value Life Insurance</fullName>
+                <fullName>930</fullName>
                 <default>false</default>
                 <label>930 - Cash Surrender Value Life Insurance</label>
             </value>
             <value>
-                <fullName>935 - Annuities</fullName>
+                <fullName>935</fullName>
                 <default>false</default>
                 <label>935 - Annuities</label>
             </value>
             <value>
-                <fullName>940 - Brokerage Account</fullName>
+                <fullName>940</fullName>
                 <default>false</default>
                 <label>940 - Brokerage Account</label>
             </value>
             <value>
-                <fullName>950 - Misc. Collateral</fullName>
+                <fullName>950</fullName>
                 <default>false</default>
                 <label>950 - Misc. Collateral</label>
             </value>
             <value>
-                <fullName>960 - Gold (Bullion and/or Coin)</fullName>
+                <fullName>960</fullName>
                 <default>false</default>
                 <label>960 - Gold (Bullion and/or Coin)</label>
             </value>
             <value>
-                <fullName>970 - Silver (Bullion and/or Coin)</fullName>
+                <fullName>970</fullName>
                 <default>false</default>
                 <label>970 - Silver (Bullion and/or Coin)</label>
             </value>
             <value>
-                <fullName>980 - Jewelry</fullName>
+                <fullName>980</fullName>
                 <default>false</default>
                 <label>980 - Jewelry</label>
             </value>
             <value>
-                <fullName>999 - Guidance Line of Credit</fullName>
+                <fullName>999</fullName>
                 <default>false</default>
                 <label>999 - Guidance Line of Credit</label>
             </value>
             <value>
-                <fullName>1 - Unsecured</fullName>
+                <fullName>1</fullName>
                 <default>false</default>
                 <label>1 - Unsecured</label>
             </value>
         </valueSetDefinition>
         <valueSettings>
             <controllingFieldValue>Depository Accounts</controllingFieldValue>
-            <valueName>10 - Savings Deposit - In-house</valueName>
+            <valueName>10</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Depository Accounts</controllingFieldValue>
-            <valueName>20 - Savings Deposit - Other</valueName>
+            <valueName>20</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Depository Accounts</controllingFieldValue>
-            <valueName>30 - Certificate of Deposit - In-house</valueName>
+            <valueName>30</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Depository Accounts</controllingFieldValue>
-            <valueName>40 - Certificate of Deposit - Other</valueName>
+            <valueName>40</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Securities</controllingFieldValue>
-            <valueName>60 - Common Stock - Bank</valueName>
+            <valueName>60</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Securities</controllingFieldValue>
-            <valueName>70 - Common Stock - Bank Holding Co.</valueName>
+            <valueName>70</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Securities</controllingFieldValue>
-            <valueName>80 - Common Stock - Actively Traded</valueName>
+            <valueName>80</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Securities</controllingFieldValue>
-            <valueName>90 - Common Stock - Limited Market</valueName>
+            <valueName>90</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Securities</controllingFieldValue>
-            <valueName>99 - Unsecured Conversion Only DO NOT USE</valueName>
+            <valueName>99</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Securities</controllingFieldValue>
-            <valueName>100 - Common Stock - Restricted (Legend)</valueName>
+            <valueName>100</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Securities</controllingFieldValue>
-            <valueName>110 - Common Stock - Warrants</valueName>
+            <valueName>110</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Securities</controllingFieldValue>
-            <valueName>130 - Preferred Stock - Bank</valueName>
+            <valueName>130</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Securities</controllingFieldValue>
-            <valueName>140 - Preferred Stock - Bank Holding Co.</valueName>
+            <valueName>140</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Securities</controllingFieldValue>
-            <valueName>150 - Preferred Stock - Actively Traded</valueName>
+            <valueName>150</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Securities</controllingFieldValue>
-            <valueName>160 - Preferred Stock - Limited Market</valueName>
+            <valueName>160</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Securities</controllingFieldValue>
-            <valueName>170 - Preferred Stock - Restricted (Legend)</valueName>
+            <valueName>170</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Securities</controllingFieldValue>
-            <valueName>180 - Preferred Stock - Warrants</valueName>
+            <valueName>180</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Securities</controllingFieldValue>
-            <valueName>200 - Bonds/Debentures - Bank</valueName>
+            <valueName>200</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Securities</controllingFieldValue>
-            <valueName>210 - Bonds/Debentures - Bank Holding Co.</valueName>
+            <valueName>210</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Securities</controllingFieldValue>
-            <valueName>220 - Bonds/Debentures - Actively Traded</valueName>
+            <valueName>220</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Securities</controllingFieldValue>
-            <valueName>230 - Bonds/Debentures - Limited Market</valueName>
+            <valueName>230</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Securities</controllingFieldValue>
-            <valueName>240 - Bonds/Debentures - Warrants</valueName>
+            <valueName>240</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Securities</controllingFieldValue>
-            <valueName>260 - U.S. Govt. Securities - Bearer W/Coupons</valueName>
+            <valueName>260</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Securities</controllingFieldValue>
-            <valueName>270 - U.S. Govt. Securities - Bearer WO/Coupons</valueName>
+            <valueName>270</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Securities</controllingFieldValue>
-            <valueName>280 - U.S. Govt. Securities - Registered W/Coupons</valueName>
+            <valueName>280</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Securities</controllingFieldValue>
-            <valueName>290 - U.S. Govt. Securities - Registered WO/Coupons</valueName>
+            <valueName>290</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Securities</controllingFieldValue>
-            <valueName>300 - Foreign Govt. Securities</valueName>
+            <valueName>300</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Securities</controllingFieldValue>
-            <valueName>320 - State/Municipal Securities - Bearer W/Coupons</valueName>
+            <valueName>320</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Securities</controllingFieldValue>
-            <valueName>330 - State/Municipal Securities - Bearer WO/Coupons</valueName>
+            <valueName>330</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Securities</controllingFieldValue>
-            <valueName>340 - State/Municipal Securities - Registered W/Coupons</valueName>
+            <valueName>340</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Securities</controllingFieldValue>
-            <valueName>350 - State/Municipal Securities - Registered WO/Coupons</valueName>
+            <valueName>350</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Securities</controllingFieldValue>
-            <valueName>355 - Partnership Interest</valueName>
+            <valueName>355</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Real Estate</controllingFieldValue>
-            <valueName>360 - Residential Development R.E. WO/Structures 1A2</valueName>
+            <valueName>360</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Real Estate</controllingFieldValue>
-            <valueName>370 - 1-4 Family Residential R.E. W/Structures 1CA or 1C1</valueName>
+            <valueName>370</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Real Estate</controllingFieldValue>
-            <valueName>372 - Multifamily Residential R.E. W/Structures 1D</valueName>
+            <valueName>372</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Real Estate</controllingFieldValue>
-            <valueName>374 - Mobile Home W/Real Estate 1CA</valueName>
+            <valueName>374</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Real Estate</controllingFieldValue>
-            <valueName>375 - Condo RE W/Structures</valueName>
+            <valueName>375</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Real Estate</controllingFieldValue>
-            <valueName>380 - Commercial Development R.E. WO/Structures 1A2</valueName>
+            <valueName>380</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Real Estate</controllingFieldValue>
-            <valueName>385 - Residential Real Estate W/O Structures &lt;25 Acres 1A2</valueName>
+            <valueName>385</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Real Estate</controllingFieldValue>
-            <valueName>390 - General Purpose Commercial R.E. W/Structures 1E1 or 1E2</valueName>
+            <valueName>390</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Real Estate</controllingFieldValue>
-            <valueName>400 - Farm R.E. 1B</valueName>
+            <valueName>400</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Real Estate</controllingFieldValue>
-            <valueName>410 - Special Purpose R.E. W/Structures 1E1 or 1E2</valueName>
+            <valueName>410</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Real Estate</controllingFieldValue>
-            <valueName>420 - Residential Construction WO/Takeout 1A1</valueName>
+            <valueName>420</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Real Estate</controllingFieldValue>
-            <valueName>430 - Commercial Construction WO/Takeout 1A2</valueName>
+            <valueName>430</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Real Estate</controllingFieldValue>
-            <valueName>440 - Residential Construction W/3rd Party Takeout 1A1</valueName>
+            <valueName>440</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Real Estate</controllingFieldValue>
-            <valueName>450 - Commercial Construction W/3rd Party Takeout 1A2</valueName>
+            <valueName>450</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Real Estate</controllingFieldValue>
-            <valueName>460 - Second Lien on Residential R.E. W/Structures 1CB or 1C1</valueName>
+            <valueName>460</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Real Estate</controllingFieldValue>
-            <valueName>470 - Second Lien on Commercial R.E. W/Structures 1E1 or 1E2</valueName>
+            <valueName>470</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Real Estate</controllingFieldValue>
-            <valueName>480 - Second Lien on Unimproved R.E. 1A2</valueName>
+            <valueName>480</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Real Estate</controllingFieldValue>
-            <valueName>485 - Raw Land</valueName>
+            <valueName>485</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Agricultural</controllingFieldValue>
-            <valueName>490 - Stocker Cattle on Pasture 500 Cow/Calf on Pasture</valueName>
+            <valueName>490</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Agricultural</controllingFieldValue>
-            <valueName>510 - Cattle in Feed Lot</valueName>
+            <valueName>500</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Agricultural</controllingFieldValue>
-            <valueName>520 - Other Livestock</valueName>
+            <valueName>510</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Agricultural</controllingFieldValue>
-            <valueName>525 - Horses</valueName>
+            <valueName>520</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Agricultural</controllingFieldValue>
-            <valueName>530 - Crops</valueName>
+            <valueName>525</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Agricultural</controllingFieldValue>
-            <valueName>535 - Aquaculture Products</valueName>
+            <valueName>530</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Agricultural</controllingFieldValue>
-            <valueName>540 - Agricultural Equipment</valueName>
+            <valueName>535</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Agricultural</controllingFieldValue>
+            <valueName>540</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Non Real Estate Business</controllingFieldValue>
-            <valueName>550 - Accounts Receivable - Specific</valueName>
+            <valueName>550</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Non Real Estate Business</controllingFieldValue>
-            <valueName>560 - Accounts Receivable - Blanket</valueName>
+            <valueName>560</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Non Real Estate Business</controllingFieldValue>
-            <valueName>570 - Notes Receivable - Unsecured</valueName>
+            <valueName>570</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Non Real Estate Business</controllingFieldValue>
-            <valueName>580 - Notes Receivable - Secured</valueName>
+            <valueName>580</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Non Real Estate Business</controllingFieldValue>
-            <valueName>590 - Notes Receivable - R.E. Secured</valueName>
+            <valueName>590</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Non Real Estate Business</controllingFieldValue>
-            <valueName>600 - Letter of Credit</valueName>
+            <valueName>600</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Non Real Estate Business</controllingFieldValue>
-            <valueName>620 - Inventory - Specific W/Repurchase Agreement</valueName>
+            <valueName>620</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Non Real Estate Business</controllingFieldValue>
-            <valueName>630 - Inventory - Specific WO/Repurchase Agreement</valueName>
+            <valueName>630</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Non Real Estate Business</controllingFieldValue>
-            <valueName>640 - Inventory - Blanket W/Repurchase Agreement</valueName>
+            <valueName>640</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Non Real Estate Business</controllingFieldValue>
-            <valueName>650 - Inventory - Blanket WO/Repurchase Agreement</valueName>
+            <valueName>650</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Non Real Estate Business</controllingFieldValue>
-            <valueName>670 - Neg. Warehouse Receipts - Agri-Products</valueName>
+            <valueName>670</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Non Real Estate Business</controllingFieldValue>
-            <valueName>680 - Neg. Warehouse Receipts</valueName>
+            <valueName>680</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Non Real Estate Business</controllingFieldValue>
-            <valueName>690 - Non-Neg. Warehouse Receipts - Agri-Products</valueName>
+            <valueName>690</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Non Real Estate Business</controllingFieldValue>
-            <valueName>700 - Non-Neg. Warehouse Receipts</valueName>
+            <valueName>700</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Non Real Estate Business</controllingFieldValue>
-            <valueName>710 - Mobile Homes</valueName>
+            <valueName>710</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Non Real Estate Business</controllingFieldValue>
-            <valueName>711 - Mobile Homes - Indirect</valueName>
+            <valueName>711</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Non Real Estate Business</controllingFieldValue>
-            <valueName>720 - Furniture and Fixtures</valueName>
+            <valueName>720</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Non Real Estate Business</controllingFieldValue>
-            <valueName>722 - Household Goods</valueName>
+            <valueName>722</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Non Real Estate Business</controllingFieldValue>
-            <valueName>723 - Household Goods - Indirect</valueName>
+            <valueName>723</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Automotive, Equipment, Etc</controllingFieldValue>
-            <valueName>730 - Machinery</valueName>
+            <valueName>730</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Automotive, Equipment, Etc</controllingFieldValue>
-            <valueName>740 - Automotive</valueName>
+            <valueName>740</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Automotive, Equipment, Etc</controllingFieldValue>
-            <valueName>741 - Automotive - Indirect</valueName>
+            <valueName>741</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Automotive, Equipment, Etc</controllingFieldValue>
-            <valueName>742 - Commercial Vehicle</valueName>
+            <valueName>742</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Automotive, Equipment, Etc</controllingFieldValue>
-            <valueName>743 - Commercial Vehicle - Indirect</valueName>
+            <valueName>743</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Automotive, Equipment, Etc</controllingFieldValue>
-            <valueName>744 - Motorcycle</valueName>
+            <valueName>744</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Automotive, Equipment, Etc</controllingFieldValue>
-            <valueName>745 - Motorcycle - Indirect</valueName>
+            <valueName>745</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Automotive, Equipment, Etc</controllingFieldValue>
-            <valueName>746 - RV Travel Trailer</valueName>
+            <valueName>746</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Automotive, Equipment, Etc</controllingFieldValue>
-            <valueName>747 - RV Travel Trailer - Indirect</valueName>
+            <valueName>747</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Automotive, Equipment, Etc</controllingFieldValue>
-            <valueName>748 - RV Motorhome</valueName>
+            <valueName>748</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Automotive, Equipment, Etc</controllingFieldValue>
-            <valueName>750 - Rolling Stock (Railroad &amp; Common Carrier Equip.)</valueName>
+            <valueName>750</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Automotive, Equipment, Etc</controllingFieldValue>
-            <valueName>760 - Aircraft</valueName>
+            <valueName>760</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Automotive, Equipment, Etc</controllingFieldValue>
-            <valueName>770 - Boats</valueName>
+            <valueName>770</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Automotive, Equipment, Etc</controllingFieldValue>
-            <valueName>771 - Boats - Indirect</valueName>
+            <valueName>771</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Automotive, Equipment, Etc</controllingFieldValue>
-            <valueName>780 - Construction/Heavy Equipment</valueName>
+            <valueName>780</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Automotive, Equipment, Etc</controllingFieldValue>
-            <valueName>790 - Oil and Gas Equipment</valueName>
+            <valueName>790</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Automotive, Equipment, Etc</controllingFieldValue>
-            <valueName>800 - Other Equipment</valueName>
+            <valueName>800</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Automotive, Equipment, Etc</controllingFieldValue>
-            <valueName>802 - Spa</valueName>
+            <valueName>802</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Automotive, Equipment, Etc</controllingFieldValue>
-            <valueName>803 - Spa - Indirect</valueName>
+            <valueName>803</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Automotive, Equipment, Etc</controllingFieldValue>
-            <valueName>804 - Portable Building</valueName>
+            <valueName>804</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Automotive, Equipment, Etc</controllingFieldValue>
-            <valueName>805 - Portable Building - Indirect</valueName>
+            <valueName>805</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Automotive, Equipment, Etc</controllingFieldValue>
-            <valueName>806 - Business Equipment</valueName>
+            <valueName>806</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Automotive, Equipment, Etc</controllingFieldValue>
-            <valueName>807 - Business Equipment - Indirect</valueName>
+            <valueName>807</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Automotive, Equipment, Etc</controllingFieldValue>
-            <valueName>809 - Retail Finance Program - Indirect</valueName>
+            <valueName>809</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Automotive, Equipment, Etc</controllingFieldValue>
-            <valueName>810 - Ship Mortgage</valueName>
+            <valueName>810</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Mineral Interests</controllingFieldValue>
-            <valueName>820 - Oil &amp; Gas - Developed and Producing</valueName>
+            <valueName>820</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Mineral Interests</controllingFieldValue>
-            <valueName>830 - Oil &amp; Gas - Developed Non-Producing</valueName>
+            <valueName>830</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Mineral Interests</controllingFieldValue>
-            <valueName>840 - Oil &amp; Gas - Undeveloped</valueName>
+            <valueName>840</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Mineral Interests</controllingFieldValue>
-            <valueName>850 - Other Mineral Interests</valueName>
+            <valueName>850</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Other</controllingFieldValue>
-            <valueName>860 - I&amp;S Tax Pledge (QSCB)</valueName>
+            <valueName>860</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Other</controllingFieldValue>
-            <valueName>862 - M&amp;O Tax Pledge</valueName>
+            <valueName>862</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Other</controllingFieldValue>
-            <valueName>864 - Other Revenue Pledge (Non-Profit/Municipal)</valueName>
+            <valueName>864</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Other</controllingFieldValue>
-            <valueName>870 - Insurance Renewal Commissions</valueName>
+            <valueName>870</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Other</controllingFieldValue>
-            <valueName>880 - Lease Payments</valueName>
+            <valueName>880</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Other</controllingFieldValue>
-            <valueName>890 - Trust Account - Beneficiary Interest</valueName>
+            <valueName>890</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Other</controllingFieldValue>
-            <valueName>900 - Royalties</valueName>
+            <valueName>900</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Other</controllingFieldValue>
-            <valueName>910 - Student Loan</valueName>
+            <valueName>910</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Other</controllingFieldValue>
-            <valueName>911 - Parent Plus Loan</valueName>
+            <valueName>911</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Other</controllingFieldValue>
-            <valueName>920 - General Intangibles</valueName>
+            <valueName>920</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Other</controllingFieldValue>
-            <valueName>930 - Cash Surrender Value Life Insurance</valueName>
+            <valueName>930</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Other</controllingFieldValue>
-            <valueName>935 - Annuities</valueName>
+            <valueName>935</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Other</controllingFieldValue>
-            <valueName>940 - Brokerage Account</valueName>
+            <valueName>940</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Other</controllingFieldValue>
-            <valueName>950 - Misc. Collateral</valueName>
+            <valueName>950</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Other</controllingFieldValue>
-            <valueName>960 - Gold (Bullion and/or Coin)</valueName>
+            <valueName>960</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Other</controllingFieldValue>
-            <valueName>970 - Silver (Bullion and/or Coin)</valueName>
+            <valueName>970</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Other</controllingFieldValue>
-            <valueName>980 - Jewelry</valueName>
+            <valueName>980</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Other</controllingFieldValue>
-            <valueName>999 - Guidance Line of Credit</valueName>
+            <valueName>999</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Other</controllingFieldValue>
-            <valueName>1 - Unsecured</valueName>
+            <valueName>1</valueName>
         </valueSettings>
     </valueSet>
 </CustomField>
