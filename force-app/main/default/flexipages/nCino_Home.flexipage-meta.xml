@@ -25,8 +25,16 @@
         </itemInstances>
         <itemInstances>
             <componentInstance>
-                <componentName>LLC_BI:dealProposalCard</componentName>
-                <identifier>LLC_BI_dealProposalCard</identifier>
+                <componentInstanceProperties>
+                    <name>dashboardName</name>
+                    <value>CLNoZYywGtxdAySGNEFSZVnQxATADq</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>hideOnError</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentName>desktopDashboards:embeddedDashboard</componentName>
+                <identifier>desktopDashboards_embeddedDashboard</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -93,20 +101,8 @@ Add website links here!</value>
         </itemInstances>
         <itemInstances>
             <componentInstance>
-                <componentInstanceProperties>
-                    <name>cacheAge</name>
-                    <value>1440</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>reportName</name>
-                    <value>Covenants_Upcoming</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>showRefreshButton</name>
-                    <value>true</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:reportChart</componentName>
-                <identifier>flexipage_reportChart2</identifier>
+                <componentName>LLC_BI:dealProposalCard</componentName>
+                <identifier>LLC_BI_dealProposalCard</identifier>
             </componentInstance>
         </itemInstances>
         <name>sidebar</name>

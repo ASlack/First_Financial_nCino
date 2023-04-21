@@ -63,10 +63,11 @@ Enable_10_Rule__c = False,
 OR(
 AND(
 ISPICKVAL(Package_Secure_Type__c, &quot;Secured&quot;),
-Total_Relationship_Exposure__c &gt; X1st_Approver__r.LLC_BI__Secured_Individual_Lending_Authority__c),
+Total_Relationship_Exposure__c &gt; Approver_1__r.LLC_BI__Secured_Individual_Lending_Authority__c),
 AND(
 ISPICKVAL(Package_Secure_Type__c, &quot;Unsecured&quot;),
-Total_Relationship_Exposure__c &gt; X1st_Approver__r.LLC_BI__Unsecured_Individual_Lending_Authority__c),
+Total_Relationship_Exposure__c &gt; Approver_1__r.LLC_BI__Unsecured_Individual_Lending_Authority__c),
+
 AND(
 ISPICKVAL(Package_Secure_Type__c, &quot;Cash Secured&quot;),
 Total_Relationship_Exposure__c &gt; 250000),
@@ -77,7 +78,8 @@ ISPICKVAL(LLC_BI__Risk_Rating__c, &quot;5&quot;),
 ISPICKVAL(LLC_BI__Risk_Rating__c, &quot;6&quot;),
 ISPICKVAL(LLC_BI__Risk_Rating__c, &quot;7&quot;),
 Any_Classified_Loan_100M__c = True,
-Classified_Loan_Long_Term__c = True))</formula>
+Classified_Loan_Long_Term__c = True)
+)</formula>
         </entryCriteria>
         <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
         <label>Approver 2</label>
@@ -108,23 +110,23 @@ Enable_10_Rule__c = False,
 OR(
 AND(
  ISPICKVAL(Package_Secure_Type__c, &quot;Secured&quot;),
- Total_Relationship_Exposure__c &gt;  X1st_Approver__r.LLC_BI__Secured_Individual_Lending_Authority__c,
- ISBLANK( X2nd_Approver__c )
+ Total_Relationship_Exposure__c &gt;  Approver_1__r.LLC_BI__Secured_Individual_Lending_Authority__c,
+ ISBLANK( Approver_2__c)
 ),
 AND(
  ISPICKVAL(Package_Secure_Type__c, &quot;Secured&quot;),
- Total_Relationship_Exposure__c &gt;   X2nd_Approver__r.LLC_BI__Secured_Individual_Lending_Authority__c,
- NOT(ISBLANK( X2nd_Approver__c ))
+ Total_Relationship_Exposure__c &gt;   Approver_2__r.LLC_BI__Secured_Individual_Lending_Authority__c,
+ NOT(ISBLANK( Approver_2__c))
 ),
 AND(
  ISPICKVAL(Package_Secure_Type__c, &quot;Unsecured&quot;),
- Total_Relationship_Exposure__c &gt;  X1st_Approver__r.LLC_BI__Unsecured_Individual_Lending_Authority__c,
- ISBLANK( X2nd_Approver__c )
+ Total_Relationship_Exposure__c &gt;  Approver_1__r.LLC_BI__Unsecured_Individual_Lending_Authority__c,
+ ISBLANK( Approver_2__c)
 ),
 AND(
  ISPICKVAL(Package_Secure_Type__c, &quot;Unsecured&quot;),
- Total_Relationship_Exposure__c &gt;   X2nd_Approver__r.LLC_BI__Unsecured_Individual_Lending_Authority__c,
- NOT(ISBLANK( X2nd_Approver__c ))
+ Total_Relationship_Exposure__c &gt;   Approver_2__r.LLC_BI__Unsecured_Individual_Lending_Authority__c,
+ NOT(ISBLANK( Approver_2__c))
 ),
 AND(
  ISPICKVAL(Package_Secure_Type__c, &quot;Cash Secured&quot;),
