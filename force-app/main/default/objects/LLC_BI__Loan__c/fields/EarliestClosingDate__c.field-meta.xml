@@ -3,7 +3,7 @@
     <fullName>EarliestClosingDate__c</fullName>
     <externalId>false</externalId>
     <formula>IF(ISBLANK( Appraisal_Delivered_Date__c ),
-IF(ISBLANK( Appraisal_Waived_Date__c ), null, Appraisal_Waived_Date__c + 30), Appraisal_Delivered_Date__c + 30
+IF(ISBLANK( Appraisal_Waived_Date__c ), null, Appraisal_Waived_Date__c + 3), Appraisal_Delivered_Date__c + 3
 
 )</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>

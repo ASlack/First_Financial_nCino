@@ -3,12 +3,17 @@
     <fullName>IncompleteCompleteClock__c</fullName>
     <externalId>false</externalId>
     <formula>IF( 
-OR(
-NOT(ISBLANK (cm_Completed_Application__c)), 
+AND(
+NOT(ISBLANK (cm_Completed_Application__c)),
+ISBLANK(Counter_Offer_Letter_Sent__c),
+ISBLANK(Counteroffer_Received__c),
 cm_Completed_Application__c&gt;= Incomplete_Date__c), 
 (cm_Completed_Application__c+ 30), 
-IF( 
-NOT (ISBLANK ( Incomplete_Date__c)),
+IF(
+AND( 
+NOT(ISBLANK ( Incomplete_Date__c)),
+ISBLANK(Counter_Offer_Letter_Sent__c),
+ISBLANK(Counteroffer_Received__c)),
 (Incomplete_Date__c+ 30), 
 IF( 
 AND(
