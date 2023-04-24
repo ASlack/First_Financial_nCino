@@ -21190,6 +21190,10 @@
         <members>LLC_BI__Loan__c.Amount_of_additional_funds__c</members>
         <members>LLC_BI__Loan__c.Application_Date__c</members>
         <members>LLC_BI__Loan__c.Application_On_Hold_Last_Notification__c</members>
+        <members>LLC_BI__Loan__c.Appraisal_Delivered_Date__c</members>
+        <members>LLC_BI__Loan__c.Appraisal_Waived_Date__c</members>
+        <members>LLC_BI__Loan__c.ApprovalExpirationDate__c</members>
+        <members>LLC_BI__Loan__c.Approval_Advised_Sent_Date__c</members>
         <members>LLC_BI__Loan__c.Approved_Date__c</members>
         <members>LLC_BI__Loan__c.Auto_Pay_Account_Type__c</members>
         <members>LLC_BI__Loan__c.Auto_Pay_Routing_Number__c</members>
@@ -21205,6 +21209,8 @@
         <members>LLC_BI__Loan__c.Completed_Due_Date__c</members>
         <members>LLC_BI__Loan__c.Compliance_Comments__c</members>
         <members>LLC_BI__Loan__c.Confirm_Application__c</members>
+        <members>LLC_BI__Loan__c.Counter_Offer_Letter_Sent__c</members>
+        <members>LLC_BI__Loan__c.Counter_Offer_Verbally_Advised__c</members>
         <members>LLC_BI__Loan__c.Counteroffer_Received__c</members>
         <members>LLC_BI__Loan__c.Date_of_Adverse_Action_and_Counter__c</members>
         <members>LLC_BI__Loan__c.Decision_Due_Date__c</members>
@@ -21215,15 +21221,21 @@
         <members>LLC_BI__Loan__c.Declined_Date__c</members>
         <members>LLC_BI__Loan__c.Do_you_own_the_property_that_is_going_to__c</members>
         <members>LLC_BI__Loan__c.Due_Date_for_Client_to_Respond_Counter__c</members>
+        <members>LLC_BI__Loan__c.EarliestClosingDate__c</members>
+        <members>LLC_BI__Loan__c.First_Lien_On_Dwelling_Determined_Date__c</members>
         <members>LLC_BI__Loan__c.Full_Product_Name__c</members>
         <members>LLC_BI__Loan__c.Funding_Date__c</members>
         <members>LLC_BI__Loan__c.HVCRE_Reportable__c</members>
         <members>LLC_BI__Loan__c.Has_Initial_Application_Date__c</members>
+        <members>LLC_BI__Loan__c.IcertifythisloanhasJointIntent__c</members>
         <members>LLC_BI__Loan__c.In_Product_Package__c</members>
+        <members>LLC_BI__Loan__c.IncompleteCompleteClock__c</members>
         <members>LLC_BI__Loan__c.Incomplete_Date__c</members>
+        <members>LLC_BI__Loan__c.InitialApplicationClock__c</members>
         <members>LLC_BI__Loan__c.Initial_Application_Date__c</members>
         <members>LLC_BI__Loan__c.Integration_Source__c</members>
         <members>LLC_BI__Loan__c.Is_this_a_Test__c</members>
+        <members>LLC_BI__Loan__c.JHJX__CallReportCode__c</members>
         <members>LLC_BI__Loan__c.LLCLP__LP_User_Defined_1__c</members>
         <members>LLC_BI__Loan__c.LLCLP__LP_User_Defined_2__c</members>
         <members>LLC_BI__Loan__c.LLCLP__LP_User_Defined_3__c</members>
@@ -21544,6 +21556,9 @@
         <members>LLC_BI__Loan__c.LLC_BI__nCino_Loan_Number__c</members>
         <members>LLC_BI__Loan__c.Lead_Referral_Comments__c</members>
         <members>LLC_BI__Loan__c.Legal_Firm_Customer__c</members>
+        <members>LLC_BI__Loan__c.Loan_Collateral_Sub_Type__c</members>
+        <members>LLC_BI__Loan__c.Loan_Collateral_Type__c</members>
+        <members>LLC_BI__Loan__c.Loan_Secured_by_1st_Lien_on_Dwelling__c</members>
         <members>LLC_BI__Loan__c.Lost_Reason__c</members>
         <members>LLC_BI__Loan__c.Memo_Modification_Approved__c</members>
         <members>LLC_BI__Loan__c.Migration_ID__c</members>
@@ -21553,9 +21568,11 @@
         <members>LLC_BI__Loan__c.Primary_Source_of_Repayment__c</members>
         <members>LLC_BI__Loan__c.Property_Subtype__c</members>
         <members>LLC_BI__Loan__c.Property_Type__c</members>
+        <members>LLC_BI__Loan__c.Real_Estate_Sub_Type__c</members>
         <members>LLC_BI__Loan__c.Reg_W_Reportable__c</members>
         <members>LLC_BI__Loan__c.Region__c</members>
         <members>LLC_BI__Loan__c.Request_Additional_Funds__c</members>
+        <members>LLC_BI__Loan__c.Right_To_Copy_Of_Appraisal_Sent_Date__c</members>
         <members>LLC_BI__Loan__c.Secondary_Market_Buyer__c</members>
         <members>LLC_BI__Loan__c.Secondary_Source_of_Repayment__c</members>
         <members>LLC_BI__Loan__c.Submitted_for_Approval_Date__c</members>
@@ -21583,6 +21600,7 @@
         <members>LLC_BI__Loan__c.cm_Method_of_Doc_Prep__c</members>
         <members>LLC_BI__Loan__c.cm_Participation_Amount__c</members>
         <members>LLC_BI__Loan__c.cm_Portfolio_Manager__c</members>
+        <members>LLC_BI__Loan__c.cm_Property_is_in_a_Flood_Zone__c</members>
         <members>LLC_BI__Loan__c.cm_Roll_Up_Adverse_Action__c</members>
         <members>LLC_BI__Loan__c.cm_Today_s_Date__c</members>
         <members>LLC_BI__Loan__c.zen_Compliance_Officer__c</members>
@@ -28769,6 +28787,7 @@
         <members>LLC_BI__Loan__c.Participation_Bought_Details</members>
         <members>LLC_BI__Loan__c.Participation_Details_Custom</members>
         <members>LLC_BI__Loan__c.PricingReadOnly</members>
+        <members>LLC_BI__Loan__c.Reg_B</members>
         <members>LLC_BI__Loan__c.Reg_O</members>
         <members>LLC_BI__Loan__c.Reg_W</members>
         <members>LLC_BI__Loan__c.RequiredLoanFieldsToCreateRateOrPayment</members>
@@ -29133,6 +29152,7 @@
         <members>Covenant_Update_Region_and_Account_upon_Account_Covenant_Creation</members>
         <members>Create_Product_Package_Zen</members>
         <members>Employee_Loan_Reg_O_Invocable</members>
+        <members>Entity_Involvement_Assign_Reg_0_and_Employee_on_Loan</members>
         <members>HMDA_Questionnaire_Rendering_Invocable</members>
         <members>HVCRE_Questionnaire_Rendering_Invocable</members>
         <members>InspectionPlaceholder</members>
@@ -29145,6 +29165,7 @@
         <members>Loan_Created_Set_Create_Fields_Records</members>
         <members>Loan_ECOA_Notifications</members>
         <members>Loan_Is_Ready_For_Review</members>
+        <members>Loan_Lost_Reason_Set_Update_Status</members>
         <members>Loan_RFI_Received</members>
         <members>Loan_Set_Initial_Application_Date</members>
         <members>Loan_Update_Product_Package_Fields_for_Approval_Process_Record_Trigger_Flow</members>
@@ -29173,6 +29194,7 @@
         <members>SCOC__Credit_Report_Type_Template_SCOC</members>
         <members>Set_Initial_Application_Date</members>
         <members>Valuation_Auto_Submit</members>
+        <members>X1st_Lien_On_Dwelling_Determined_Date</members>
         <members>nCino__IALAutoDecision</members>
         <members>nCino__ILCreditPreProcessing</members>
         <members>nCino__ILFindExistingValidCreditReport</members>
@@ -31967,6 +31989,16 @@
         <members>LLC_BI__Loan_Collateral2__c.LLC_BI__Advance_Rate_Override</members>
         <members>LLC_BI__Loan_Collateral2__c.LLC_BI__Pledge_More_Than_Lendable_Value</members>
         <members>LLC_BI__Loan_Compliance__c.LLC_BI__LE_CD_Date_Required</members>
+        <members>LLC_BI__Loan__c.Application_Date</members>
+        <members>LLC_BI__Loan__c.Appraisal_Delivered_Date</members>
+        <members>LLC_BI__Loan__c.Appraisal_Waived_Date</members>
+        <members>LLC_BI__Loan__c.Approval_Advised_Sent_Date</members>
+        <members>LLC_BI__Loan__c.Complete_Application_Date</members>
+        <members>LLC_BI__Loan__c.Counter_Offer</members>
+        <members>LLC_BI__Loan__c.Decline_Advised_Sent_Date</members>
+        <members>LLC_BI__Loan__c.First_Lien_On_Dwelling_Determined_Date</members>
+        <members>LLC_BI__Loan__c.Incomplete_Application_Date</members>
+        <members>LLC_BI__Loan__c.Joint_Intent</members>
         <members>LLC_BI__Loan__c.LLC_BI__Amount_Outstanding_Check_Against_Amount</members>
         <members>LLC_BI__Loan__c.LLC_BI__Balloon_Amount_terms_must_be_equal</members>
         <members>LLC_BI__Loan__c.LLC_BI__Balloon_Loan_terms_cannot_be_blank</members>
@@ -31986,6 +32018,9 @@
         <members>LLC_BI__Loan__c.Loan_Validation_07</members>
         <members>LLC_BI__Loan__c.Loan_Validation_09</members>
         <members>LLC_BI__Loan__c.Loan_Validation_10</members>
+        <members>LLC_BI__Loan__c.Right_To_Copy_Of_Appraisal_Sent_Date</members>
+        <members>LLC_BI__Loan__c.Term_Sheet_RFI_Date</members>
+        <members>LLC_BI__Loan__c.Withdrawn_Notification_Received_Date</members>
         <members>LLC_BI__Product_Type__c.LLC_BI__Product_State_Booked_Config_Count</members>
         <members>LLC_BI__Product_Type__c.LLC_BI__Product_State_Closed_Config_Count</members>
         <members>LLC_BI__Product_Type__c.LLC_BI__Product_State_Excluded_Config_Count</members>

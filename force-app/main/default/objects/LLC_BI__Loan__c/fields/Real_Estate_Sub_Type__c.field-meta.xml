@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Real_Estate_Sub_Type__c</fullName>
+    <description>As FFin user, I need to be able to report on the types of real estate loans in our portfolio so I can manage our concentration.</description>
+    <externalId>false</externalId>
+    <label>Real Estate Sub-Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>JHJX__CallReportCode__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Church</fullName>
+                <default>false</default>
+                <label>Church</label>
+            </value>
+            <value>
+                <fullName>Self-Storage Facilities</fullName>
+                <default>false</default>
+                <label>Self-Storage Facilities</label>
+            </value>
+            <value>
+                <fullName>Car Washes</fullName>
+                <default>false</default>
+                <label>Car Washes</label>
+            </value>
+            <value>
+                <fullName>RV Parks</fullName>
+                <default>false</default>
+                <label>RV Parks</label>
+            </value>
+            <value>
+                <fullName>Hotel / Motel</fullName>
+                <default>false</default>
+                <label>Hotel / Motel</label>
+            </value>
+            <value>
+                <fullName>Medical – ER Facility / Surgery Centers</fullName>
+                <default>false</default>
+                <label>Medical – ER Facility / Surgery Centers</label>
+            </value>
+            <value>
+                <fullName>Multi-Tenant Office Space – Medical</fullName>
+                <default>false</default>
+                <label>Multi-Tenant Office Space – Medical</label>
+            </value>
+            <value>
+                <fullName>Multi-Tenant Office Space – Non-Medical</fullName>
+                <default>false</default>
+                <label>Multi-Tenant Office Space – Non-Medical</label>
+            </value>
+            <value>
+                <fullName>Multi-Tenant Shopping Center</fullName>
+                <default>false</default>
+                <label>Multi-Tenant Shopping Center</label>
+            </value>
+            <value>
+                <fullName>General Commercial Warehouse</fullName>
+                <default>false</default>
+                <label>General Commercial Warehouse</label>
+            </value>
+            <value>
+                <fullName>Funeral Homes</fullName>
+                <default>false</default>
+                <label>Funeral Homes</label>
+            </value>
+            <value>
+                <fullName>Restaurants – Fast Food / Fast Casual</fullName>
+                <default>false</default>
+                <label>Restaurants – Fast Food / Fast Casual</label>
+            </value>
+            <value>
+                <fullName>Restaurants – Table Service</fullName>
+                <default>false</default>
+                <label>Restaurants – Table Service</label>
+            </value>
+            <value>
+                <fullName>Convenience Stores</fullName>
+                <default>false</default>
+                <label>Convenience Stores</label>
+            </value>
+            <value>
+                <fullName>For Profit Schools</fullName>
+                <default>false</default>
+                <label>For Profit Schools</label>
+            </value>
+            <value>
+                <fullName>Car Dealerships</fullName>
+                <default>false</default>
+                <label>Car Dealerships</label>
+            </value>
+            <value>
+                <fullName>Nursing Homes</fullName>
+                <default>false</default>
+                <label>Nursing Homes</label>
+            </value>
+            <value>
+                <fullName>Daycare Facility</fullName>
+                <default>false</default>
+                <label>Daycare Facility</label>
+            </value>
+            <value>
+                <fullName>Gym/Dance/Sports Facility</fullName>
+                <default>false</default>
+                <label>Gym/Dance/Sports Facility</label>
+            </value>
+            <value>
+                <fullName>Manufacturing Plant</fullName>
+                <default>false</default>
+                <label>Manufacturing Plant</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>1E1</controllingFieldValue>
+            <controllingFieldValue>1E2</controllingFieldValue>
+            <valueName>Church</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1E1</controllingFieldValue>
+            <controllingFieldValue>1E2</controllingFieldValue>
+            <valueName>Self-Storage Facilities</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1E1</controllingFieldValue>
+            <controllingFieldValue>1E2</controllingFieldValue>
+            <valueName>Car Washes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1E1</controllingFieldValue>
+            <controllingFieldValue>1E2</controllingFieldValue>
+            <valueName>RV Parks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1E1</controllingFieldValue>
+            <controllingFieldValue>1E2</controllingFieldValue>
+            <valueName>Hotel / Motel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1E1</controllingFieldValue>
+            <controllingFieldValue>1E2</controllingFieldValue>
+            <valueName>Medical – ER Facility / Surgery Centers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1E1</controllingFieldValue>
+            <controllingFieldValue>1E2</controllingFieldValue>
+            <valueName>Multi-Tenant Office Space – Medical</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1E1</controllingFieldValue>
+            <controllingFieldValue>1E2</controllingFieldValue>
+            <valueName>Multi-Tenant Office Space – Non-Medical</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1E1</controllingFieldValue>
+            <controllingFieldValue>1E2</controllingFieldValue>
+            <valueName>Multi-Tenant Shopping Center</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1E1</controllingFieldValue>
+            <controllingFieldValue>1E2</controllingFieldValue>
+            <valueName>General Commercial Warehouse</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1E1</controllingFieldValue>
+            <controllingFieldValue>1E2</controllingFieldValue>
+            <valueName>Funeral Homes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1E1</controllingFieldValue>
+            <controllingFieldValue>1E2</controllingFieldValue>
+            <valueName>Restaurants – Fast Food / Fast Casual</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1E1</controllingFieldValue>
+            <controllingFieldValue>1E2</controllingFieldValue>
+            <valueName>Restaurants – Table Service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1E1</controllingFieldValue>
+            <controllingFieldValue>1E2</controllingFieldValue>
+            <valueName>Convenience Stores</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1E1</controllingFieldValue>
+            <controllingFieldValue>1E2</controllingFieldValue>
+            <valueName>For Profit Schools</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1E1</controllingFieldValue>
+            <controllingFieldValue>1E2</controllingFieldValue>
+            <valueName>Car Dealerships</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1E1</controllingFieldValue>
+            <controllingFieldValue>1E2</controllingFieldValue>
+            <valueName>Nursing Homes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1E1</controllingFieldValue>
+            <controllingFieldValue>1E2</controllingFieldValue>
+            <valueName>Daycare Facility</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1E1</controllingFieldValue>
+            <controllingFieldValue>1E2</controllingFieldValue>
+            <valueName>Gym/Dance/Sports Facility</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1E1</controllingFieldValue>
+            <controllingFieldValue>1E2</controllingFieldValue>
+            <valueName>Manufacturing Plant</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

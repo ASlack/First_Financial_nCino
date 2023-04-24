@@ -57,6 +57,11 @@
                 <default>false</default>
                 <label>Completed</label>
             </value>
+            <value>
+                <fullName>Lost</fullName>
+                <default>false</default>
+                <label>Lost</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>

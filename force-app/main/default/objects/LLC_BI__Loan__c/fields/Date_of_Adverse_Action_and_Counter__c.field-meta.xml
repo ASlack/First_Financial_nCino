@@ -4,7 +4,7 @@
     <description>This field is to be set when an adverse action has been taken against an application and a counteroffer notice sent.</description>
     <externalId>false</externalId>
     <inlineHelpText>Date when the bank issues an adverse action and counteroffer notice to the client.</inlineHelpText>
-    <label>Date of Adverse Action and Counter</label>
+    <label>Adverse Action Date</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>
