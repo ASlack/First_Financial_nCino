@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Withdrawn_Notification_Received_Date</fullName>
+    <active>true</active>
+    <description>Withdrawn Notification Received Date cannot be in the future</description>
+    <errorConditionFormula>$User.No_Validation__c =false &amp;&amp;
+ Withdrawn_Date__c   &gt;  TODAY()</errorConditionFormula>
+    <errorMessage>Withdrawn Notification Received Date cannot be in the future</errorMessage>
+</ValidationRule>

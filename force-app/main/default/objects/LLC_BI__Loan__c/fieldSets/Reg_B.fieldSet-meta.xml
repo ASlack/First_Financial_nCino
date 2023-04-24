@@ -1,176 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>UI_Loan_Details</fullName>
-    <description>New UI Loan Details Field Set</description>
+    <fullName>Reg_B</fullName>
+    <description>Reg B fields</description>
     <displayedFields>
-        <field>LLC_BI__Product_Package__c</field>
+        <field>Counteroffer_Received__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>Name</field>
+        <field>Counter_Offer_Verbally_Advised__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>LLC_BI__Amount__c</field>
+        <field>Due_Date_for_Client_to_Respond_Counter__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>LLC_BI__Loan_Officer__c</field>
+        <field>Counter_Offer_Letter_Sent__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>What_is_the_purpose_of_the_loan__c</field>
+        <field>Application_Date__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>Region__c</field>
+        <field>Incomplete_Date__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>LLC_BI__Is_Review_Ready__c</field>
+        <field>cm_Completed_Application__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>LLC_BI__Branch__c</field>
+        <field>Appraisal_Delivered_Date__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>LLC_BI__TDR__c</field>
+        <field>Appraisal_Waived_Date__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>IcertifythisloanhasJointIntent__c</field>
+        <field>Right_To_Copy_Of_Appraisal_Sent_Date__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>LLC_BI__Stage__c</field>
+        <field>Withdrawn_Date__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>LLC_BI__Status__c</field>
+        <field>Declined_Date__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>LLC_BI__Is_SBA__c</field>
+        <field>Approval_Advised_Sent_Date__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>JHJX__OriginationDate__c</field>
+        <field>Term_Sheet_RFI_Date__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>LLC_BI__SBA__c</field>
+        <field>Term_Sheet_RFI_Due_Date__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>LLC_BI__Current_LTV__c</field>
+        <field>EarliestClosingDate__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>LLC_BI__SBA_Guarantee__c</field>
+        <field>InitialApplicationClock__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>LLC_BI__Product_Line__c</field>
+        <field>LLC_BI__Credit_Approval_Date__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>LLC_BI__Product_Type__c</field>
+        <field>ApprovalExpirationDate__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>LLC_BI__Product__c</field>
+        <field>Date_of_Adverse_Action_and_Counter__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>JHJX__CallReportCode__c</field>
+        <field>IncompleteCompleteClock__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>LLC_BI__Risk_Grade__c</field>
+        <field>Loan_Secured_by_1st_Lien_on_Dwelling__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>Real_Estate_Sub_Type__c</field>
+        <field>First_Lien_On_Dwelling_Determined_Date__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
-    <displayedFields>
-        <field>JHJX__LOCCode__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </displayedFields>
-    <displayedFields>
-        <field>JHJX__LOCGdnceType__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </displayedFields>
-    <displayedFields>
-        <field>Loan_Collateral_Type__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </displayedFields>
-    <displayedFields>
-        <field>JHJX__LOCGdnceBorwAck__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </displayedFields>
-    <displayedFields>
-        <field>Loan_Collateral_Sub_Type__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </displayedFields>
-    <displayedFields>
-        <field>JHJX__LOCPrtcpCode__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </displayedFields>
-    <displayedFields>
-        <field>JHJX__LOCGdnceRedType__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </displayedFields>
-    <displayedFields>
-        <field>LLC_BI__UCC_County__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </displayedFields>
-    <displayedFields>
-        <field>LLC_BI__Maturity_Date__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </displayedFields>
-    <displayedFields>
-        <field>LLC_BI__Is_Participation__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </displayedFields>
-    <displayedFields>
-        <field>cm_Property_is_in_a_Flood_Zone__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </displayedFields>
-    <label>UI Loan Details</label>
+    <label>Reg B</label>
 </FieldSet>

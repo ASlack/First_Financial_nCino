@@ -4,7 +4,7 @@
     <description>This field tracks the completed application date for the loan record. Added for the commercial accelerate project.</description>
     <externalId>false</externalId>
     <inlineHelpText>Date where the banker certifies it received all the information required per the term sheet/RFI. This date will initiate the Reg B timer.</inlineHelpText>
-    <label>Completed Application</label>
+    <label>Complete Application Date</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>
