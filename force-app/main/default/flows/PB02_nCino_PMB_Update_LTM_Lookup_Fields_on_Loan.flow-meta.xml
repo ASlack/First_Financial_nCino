@@ -43,9 +43,6 @@
         <label>myDecision10</label>
         <locationX>50</locationX>
         <locationY>0</locationY>
-        <defaultConnector>
-            <targetReference>myDecision12</targetReference>
-        </defaultConnector>
         <defaultConnectorLabel>default</defaultConnectorLabel>
         <rules>
             <name>myRule_11</name>
@@ -61,34 +58,6 @@
                 <targetReference>myRule_11_A1</targetReference>
             </connector>
             <label>Role = Loan Ops</label>
-        </rules>
-    </decisions>
-    <decisions>
-        <processMetadataValues>
-            <name>index</name>
-            <value>
-                <numberValue>6.0</numberValue>
-            </value>
-        </processMetadataValues>
-        <name>myDecision12</name>
-        <label>myDecision12</label>
-        <locationX>50</locationX>
-        <locationY>0</locationY>
-        <defaultConnectorLabel>default</defaultConnectorLabel>
-        <rules>
-            <name>myRule_13</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>formula_myRule_13</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <booleanValue>true</booleanValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>myRule_13_A1</targetReference>
-            </connector>
-            <label>Role = Closer</label>
         </rules>
     </decisions>
     <decisions>
@@ -212,7 +181,7 @@
             <connector>
                 <targetReference>myRule_9_A1</targetReference>
             </connector>
-            <label>Role = Portfolio Manager</label>
+            <label>Role = Doc Prep Processor</label>
         </rules>
     </decisions>
     <decisions>
@@ -324,23 +293,6 @@ NOT(ISBLANK({!myVariable_current.LLC_BI__User__c} )),
             <value>
                 <stringValue>AND(
 NOT(ISBLANK([LLC_BI__LoanTeam__c].LLC_BI__User__c )),
-[LLC_BI__LoanTeam__c].LLC_BI__Assigned_Role__c.Name = &apos;Closer&apos;
-)</stringValue>
-            </value>
-        </processMetadataValues>
-        <name>formula_myRule_13</name>
-        <dataType>Boolean</dataType>
-        <expression>AND(
-NOT(ISBLANK({!myVariable_current.LLC_BI__User__c} )),
-{!myVariable_current.LLC_BI__Assigned_Role__r.Name} = &apos;Closer&apos;
-)</expression>
-    </formulas>
-    <formulas>
-        <processMetadataValues>
-            <name>originalFormula</name>
-            <value>
-                <stringValue>AND(
-NOT(ISBLANK([LLC_BI__LoanTeam__c].LLC_BI__User__c )),
 [LLC_BI__LoanTeam__c].LLC_BI__Assigned_Role__c.Name = &apos;Loan Officer&apos;
 )</stringValue>
             </value>
@@ -375,7 +327,7 @@ NOT(ISBLANK({!myVariable_old.LLC_BI__User__c} )),
             <value>
                 <stringValue>AND(
 NOT(ISBLANK([LLC_BI__LoanTeam__c].LLC_BI__User__c )),
-[LLC_BI__LoanTeam__c].LLC_BI__Assigned_Role__c.Name = &apos;Loan Assistant&apos;
+[LLC_BI__LoanTeam__c].LLC_BI__Assigned_Role__c.Name = &apos;Lending Assistant&apos;
 )</stringValue>
             </value>
         </processMetadataValues>
@@ -383,7 +335,7 @@ NOT(ISBLANK([LLC_BI__LoanTeam__c].LLC_BI__User__c )),
         <dataType>Boolean</dataType>
         <expression>AND(
 NOT(ISBLANK({!myVariable_current.LLC_BI__User__c} )),
-{!myVariable_current.LLC_BI__Assigned_Role__r.Name} = &apos;Loan Assistant&apos;
+{!myVariable_current.LLC_BI__Assigned_Role__r.Name} = &apos;Lending Assistant&apos;
 )</expression>
     </formulas>
     <formulas>
@@ -392,7 +344,7 @@ NOT(ISBLANK({!myVariable_current.LLC_BI__User__c} )),
             <value>
                 <stringValue>AND(
 NOT(ISBLANK([LLC_BI__LoanTeam__c].LLC_BI__User__c )),
-[LLC_BI__LoanTeam__c].LLC_BI__Assigned_Role__c.Name = &apos;Loan Assistant&apos;
+[LLC_BI__LoanTeam__c].LLC_BI__Assigned_Role__c.Name = &apos;Lending Assistant&apos;
 )</stringValue>
             </value>
         </processMetadataValues>
@@ -400,7 +352,7 @@ NOT(ISBLANK([LLC_BI__LoanTeam__c].LLC_BI__User__c )),
         <dataType>Boolean</dataType>
         <expression>AND(
 NOT(ISBLANK({!myVariable_old.LLC_BI__User__c} )),
-{!myVariable_old.LLC_BI__Assigned_Role__r.Name} = &apos;Loan Assistant&apos;
+{!myVariable_old.LLC_BI__Assigned_Role__r.Name} = &apos;Lending Assistant&apos;
 )</expression>
     </formulas>
     <formulas>
@@ -426,7 +378,7 @@ NOT(ISBLANK({!myVariable_current.LLC_BI__User__c} )),
             <value>
                 <stringValue>AND(
 NOT(ISBLANK([LLC_BI__LoanTeam__c].LLC_BI__User__c )),
-[LLC_BI__LoanTeam__c].LLC_BI__Assigned_Role__c.Name = &apos;Portfolio Manager&apos;
+[LLC_BI__LoanTeam__c].LLC_BI__Assigned_Role__c.Name = &apos;Doc Prep Processor&apos;
 )</stringValue>
             </value>
         </processMetadataValues>
@@ -434,10 +386,10 @@ NOT(ISBLANK([LLC_BI__LoanTeam__c].LLC_BI__User__c )),
         <dataType>Boolean</dataType>
         <expression>AND(
 NOT(ISBLANK({!myVariable_current.LLC_BI__User__c} )),
-{!myVariable_current.LLC_BI__Assigned_Role__r.Name} = &apos;Portfolio Manager&apos;
+{!myVariable_current.LLC_BI__Assigned_Role__r.Name} = &apos;Doc Prep Processor&apos;
 )</expression>
     </formulas>
-    <interviewLabel>PB02_nCino_PMB_Update_LTM_Lookup_Fields_on_Loan-1_InterviewLabel</interviewLabel>
+    <interviewLabel>PB02_nCino_PMB_Update_LTM_Lookup_Fields_on_Loan-3_InterviewLabel</interviewLabel>
     <label>PB02 - nCino - PMB - Update LTM Lookup Fields on Loan</label>
     <processMetadataValues>
         <name>ObjectType</name>
@@ -539,87 +491,6 @@ NOT(ISBLANK({!myVariable_current.LLC_BI__User__c} )),
                 </value>
             </processMetadataValues>
             <field>cm_Loan_Ops__c</field>
-            <value>
-                <elementReference>myVariable_current.LLC_BI__User__c</elementReference>
-            </value>
-        </inputAssignments>
-        <object>LLC_BI__Loan__c</object>
-    </recordUpdates>
-    <recordUpdates>
-        <processMetadataValues>
-            <name>evaluationType</name>
-            <value>
-                <stringValue>always</stringValue>
-            </value>
-        </processMetadataValues>
-        <processMetadataValues>
-            <name>extraTypeInfo</name>
-        </processMetadataValues>
-        <processMetadataValues>
-            <name>isChildRelationship</name>
-            <value>
-                <booleanValue>false</booleanValue>
-            </value>
-        </processMetadataValues>
-        <processMetadataValues>
-            <name>reference</name>
-            <value>
-                <stringValue>[LLC_BI__LoanTeam__c].Loan</stringValue>
-            </value>
-        </processMetadataValues>
-        <processMetadataValues>
-            <name>referenceTargetField</name>
-        </processMetadataValues>
-        <name>myRule_13_A1</name>
-        <label>Update Closer Loan User Lookup</label>
-        <locationX>1300</locationX>
-        <locationY>200</locationY>
-        <filterLogic>and</filterLogic>
-        <filters>
-            <processMetadataValues>
-                <name>implicit</name>
-                <value>
-                    <booleanValue>true</booleanValue>
-                </value>
-            </processMetadataValues>
-            <field>Id</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>myVariable_current.LLC_BI__Loan__c</elementReference>
-            </value>
-        </filters>
-        <inputAssignments>
-            <processMetadataValues>
-                <name>dataType</name>
-                <value>
-                    <stringValue>ID</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>isRequired</name>
-                <value>
-                    <booleanValue>false</booleanValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideLabel</name>
-                <value>
-                    <stringValue>Closer</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideReferenceTo</name>
-                <value>
-                    <stringValue>User</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>rightHandSideType</name>
-                <value>
-                    <stringValue>Reference</stringValue>
-                </value>
-            </processMetadataValues>
-            <field>cm_Closer__c</field>
             <value>
                 <elementReference>myVariable_current.LLC_BI__User__c</elementReference>
             </value>

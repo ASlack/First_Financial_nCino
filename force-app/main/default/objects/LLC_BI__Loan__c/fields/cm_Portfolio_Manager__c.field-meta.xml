@@ -2,9 +2,9 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>cm_Portfolio_Manager__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
-    <description>Used to capture the assigned Portfolio Manager. Added for the Commercial Accelerate project.</description>
+    <description>Used to capture the assigned Doc Prep Processor. Added for the Commercial Accelerate project.</description>
     <externalId>false</externalId>
-    <label>Portfolio Manager</label>
+    <label>Doc Prep Processor</label>
     <referenceTo>User</referenceTo>
     <relationshipName>Loans3</relationshipName>
     <required>false</required>

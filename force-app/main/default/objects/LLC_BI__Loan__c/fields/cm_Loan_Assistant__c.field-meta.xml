@@ -3,7 +3,7 @@
     <fullName>cm_Loan_Assistant__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
     <externalId>false</externalId>
-    <label>Credit Analyst</label>
+    <label>Lending Assistant</label>
     <referenceTo>User</referenceTo>
     <relationshipName>Loans1</relationshipName>
     <required>false</required>
