@@ -145,10 +145,17 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>richTextValue</name>
-                    <value>&lt;p&gt;&lt;strong&gt;Items required to submit for approval:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Number of Reviewable Loan Facilities is greater than 0&lt;/strong&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Total Relationship Exposure / Credit Group is set&lt;/strong&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Approver 1 is set&lt;/strong&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Loan is in Final Review&lt;/strong&gt;&lt;/li&gt;&lt;/ul&gt;</value>
+                    <value>&lt;p&gt;&lt;strong&gt;Items required to submit for approval:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Number of Reviewable Loan Facilities is greater than 0&lt;/strong&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Total Relationship Exposure / Credit Group is set&lt;/strong&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Approver 1 is set&lt;/strong&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Package Secure Type is set&lt;/strong&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Risk Rating is set&lt;/strong&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Loan(s) in Final Review&lt;/strong&gt;&lt;/li&gt;&lt;/ul&gt;</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:richText</componentName>
                 <identifier>flexipage_richText</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.LLC_BI__Status__c}</leftValue>
+                        <operator>NE</operator>
+                        <rightValue>Approved</rightValue>
+                    </criteria>
+                </visibilityRule>
             </componentInstance>
         </itemInstances>
         <itemInstances>

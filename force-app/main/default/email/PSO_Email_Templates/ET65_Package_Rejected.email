@@ -1,0 +1,10 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[Hello&nbsp;<span style="background-color: rgb(255, 255, 255);">{!Organization.Name}&nbsp;</span>Team Member, 
+<br>
+<br>Product Package "{!LLC_BI__Product_Package__c.Name}"&nbsp;<span style="background-color: rgb(255, 255, 255);">has been Rejected at this time. You may simply need to add/update information or the loan(s) may need to be declined.</span><br><br>Primary Relationship:&nbsp;{!LLC_BI__Product_Package__c.LLC_BI__Account__c}<br>Relationship Exposure: {!LLC_BI__Product_Package__c.Total_Relationship_Exposure__c}<br>
+<br>Primary Officer:&nbsp;{!LLC_BI__Product_Package__c.LLC_BI__Primary_Officer__c}<br>Lending Assistant:&nbsp;{!LLC_BI__Product_Package__c.LLC_BI__Secondary_Officer__c}<br><div><br></div><div><span style="background-color: rgb(255, 255, 255);">Rejected by: &nbsp;{!ApprovalRequest.Process_Approver}</span><div><br></div><div>Rejection Comments: &nbsp;{!ApprovalRequest.Comments}</div><div><br></div><div>Click here for complete Product Package Details: {!LLC_BI__Product_Package__c.Link}.<br>
+<br>nCino<div><br></div><div style="text-align: right;">ET65</div></div></div>]]></td>
+</tr>
+</table>

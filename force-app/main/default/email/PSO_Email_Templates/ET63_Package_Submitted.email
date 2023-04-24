@@ -1,0 +1,19 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[Hello&nbsp;<span style="background-color: rgb(255, 255, 255);">{!Organization.Name}&nbsp;</span>Team Member, 
+<br>
+<br>Product Package "{!LLC_BI__Product_Package__c.Name}" has been submitted to you for 
+Approval. Please use this link to visit the loan page: 
+{!LLC_BI__Product_Package__c.Link}.
+<br>
+<br>After you have reviewed the Product Package, navigate to the "Approval History" route.  Then click on Approve/Reject.  On the next page, 
+enter your comments and either Approve, or Reject, the Package.
+<br>
+<br>Primary Relationship:&nbsp;{!LLC_BI__Product_Package__c.LLC_BI__Account__c}<br>Relationship Exposure: {!LLC_BI__Product_Package__c.Total_Relationship_Exposure__c} 
+<br>
+<br>Number of Reviewable Facilities:&nbsp;{!LLC_BI__Product_Package__c.LLC_BI__Reviewable_Loan_Facilities_Count__c}<br>
+<br>Primary Officer:&nbsp;{!LLC_BI__Product_Package__c.LLC_BI__Primary_Officer__c}<br>Lending Assistant:&nbsp;{!LLC_BI__Product_Package__c.LLC_BI__Secondary_Officer__c}<br>
+<br>nCino<div><br></div><div style="text-align: right;">ET63</div>]]></td>
+</tr>
+</table>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>PP_Approved_Email</fullName>
+        <description>PP Approved Email</description>
+        <protected>false</protected>
+        <recipients>
+            <field>LLC_BI__Primary_Officer__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>LLC_BI__Secondary_Officer__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>PSO_Email_Templates/ET64_Package_Approved</template>
+    </alerts>
+    <alerts>
+        <fullName>PP_Rejected_Email</fullName>
+        <description>PP Rejected Email</description>
+        <protected>false</protected>
+        <recipients>
+            <field>LLC_BI__Primary_Officer__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>LLC_BI__Secondary_Officer__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>PSO_Email_Templates/ET65_Package_Rejected</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>PP_Approval_Step_5</fullName>
+        <description>Changes the PP Status to Approval Step 5 for propagation</description>
+        <field>LLC_BI__Status__c</field>
+        <literalValue>Approval Step 5</literalValue>
+        <name>PP-Approval Step 5</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>PP_Approval_Step_6</fullName>
+        <field>LLC_BI__Status__c</field>
+        <literalValue>Approval Step 6</literalValue>
+        <name>PP Approval Step 6</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+</Workflow>

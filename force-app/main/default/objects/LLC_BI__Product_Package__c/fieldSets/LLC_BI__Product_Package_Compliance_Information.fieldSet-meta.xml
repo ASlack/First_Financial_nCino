@@ -18,7 +18,7 @@
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>OwnerId</field>
+        <field>Region__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
@@ -49,6 +49,11 @@
     </displayedFields>
     <displayedFields>
         <field>LLC_BI__Description__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>OwnerId</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
