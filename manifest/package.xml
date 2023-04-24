@@ -17115,6 +17115,7 @@
         <members>Lead.Lead_Layout</members>
         <members>Opportunity.Opportunity_Layout</members>
         <members>PersonAccount.Individual_Compact</members>
+        <members>Task.Task</members>
         <members>nFORCE__Screen_Section__c.Screen_Section_Layout</members>
         <name>CompactLayout</name>
     </types>
@@ -31964,6 +31965,7 @@
     <types>
         <members>Account.LLC_BI__Tax_Identification_Max_Length</members>
         <members>Account.LLC_BI__To_date_cannot_be_before_from_d_ate</members>
+        <members>Account.PO_Box_not_Allowed_on_Physical_Address</members>
         <members>Contact.LLC_BI__Prevent_Reassigning_Individual_Contacts</members>
         <members>Contact.LLC_BI__Require_Country_of_Citizenship</members>
         <members>Contact.LLC_BI__Social_Security_Max_Length</members>
