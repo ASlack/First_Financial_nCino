@@ -2,41 +2,8 @@
 <RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>LLC_BI__Maintenance_Task</fullName>
     <active>true</active>
+    <compactLayoutAssignment>Task</compactLayoutAssignment>
     <label>Maintenance Task</label>
-    <picklistValues>
-        <picklist>LLC_BI__Maintenance_Type__c</picklist>
-        <values>
-            <fullName>Add</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Change</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Remove</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>LLC_BI__SubType__c</picklist>
-        <values>
-            <fullName>Add Authorized User</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Address Change</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Credit Limit Change</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Other</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
     <picklistValues>
         <picklist>Priority</picklist>
         <values>
