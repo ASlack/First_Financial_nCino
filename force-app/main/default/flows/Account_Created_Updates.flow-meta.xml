@@ -7,7 +7,7 @@
         <locationX>176</locationX>
         <locationY>335</locationY>
         <defaultConnector>
-            <targetReference>Update_Account</targetReference>
+            <targetReference>Get_User_Region</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -23,8 +23,45 @@
             <label>Kill Switch = True</label>
         </rules>
     </decisions>
+    <decisions>
+        <name>Is_Region_Set</name>
+        <label>Is Region Set</label>
+        <locationX>374</locationX>
+        <locationY>575</locationY>
+        <defaultConnector>
+            <targetReference>Get_Region</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Set Region</defaultConnectorLabel>
+        <rules>
+            <name>User_Selected_Region_or_Does_Not_Have_One</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Region__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_User_Region.Region__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Simple_Update_Account</targetReference>
+            </connector>
+            <label>User Selected Region or Does Not Have One</label>
+        </rules>
+    </decisions>
     <description>Flow used for when an Account is created</description>
     <environments>Default</environments>
+    <formulas>
+        <name>var_UserRegion</name>
+        <dataType>String</dataType>
+        <expression>TEXT({!Get_User_Region.Region__c})</expression>
+    </formulas>
     <interviewLabel>Account Created - Updates {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Account Created - Updates</label>
     <processMetadataValues>
@@ -46,16 +83,80 @@
         </value>
     </processMetadataValues>
     <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Region</name>
+        <label>Get Region</label>
+        <locationX>506</locationX>
+        <locationY>695</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_Account</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>var_UserRegion</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Region__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_User_Region</name>
+        <label>Get User Region</label>
+        <locationX>374</locationX>
+        <locationY>455</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Is_Region_Set</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.OwnerId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>User</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Region__c</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
     <recordUpdates>
         <description>Used to specify fast-field updates to the Account</description>
-        <name>Update_Account</name>
-        <label>Update Account</label>
-        <locationX>308</locationX>
-        <locationY>455</locationY>
+        <name>Simple_Update_Account</name>
+        <label>Simple Update Account</label>
+        <locationX>242</locationX>
+        <locationY>695</locationY>
         <inputAssignments>
             <field>LLC_BI__Naics_Code__c</field>
             <value>
                 <elementReference>$Record.NAICS__r.Code__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Used to specify fast-field updates to the Account</description>
+        <name>Update_Account</name>
+        <label>Update Account</label>
+        <locationX>506</locationX>
+        <locationY>815</locationY>
+        <inputAssignments>
+            <field>LLC_BI__Naics_Code__c</field>
+            <value>
+                <elementReference>$Record.NAICS__r.Code__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Region__c</field>
+            <value>
+                <elementReference>Get_Region.Id</elementReference>
             </value>
         </inputAssignments>
         <inputReference>$Record</inputReference>

@@ -62,6 +62,12 @@
                 <elementReference>ProductPackageNameFormula</elementReference>
             </value>
         </inputAssignments>
+        <inputAssignments>
+            <field>Region__c</field>
+            <value>
+                <elementReference>$Record.LLC_BI__Account__r.Region__c</elementReference>
+            </value>
+        </inputAssignments>
         <inputReference>$Record</inputReference>
     </recordUpdates>
     <start>

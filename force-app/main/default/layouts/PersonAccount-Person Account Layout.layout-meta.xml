@@ -30,7 +30,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>OwnerId</field>
+                <field>Region__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -51,8 +51,16 @@
                 <behavior>Edit</behavior>
                 <field>LLC_BI__Personal_Fin_Statements__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>ffin_Relationship_Manager__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>OwnerId</field>
+            </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Type</field>
@@ -72,9 +80,6 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>PersonBirthdate</field>
-            </layoutItems>
-            <layoutItems>
-                <emptySpace>true</emptySpace>
             </layoutItems>
             <layoutItems>
                 <emptySpace>true</emptySpace>
@@ -298,6 +303,11 @@
             <sortOrder>4</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
+            <actionName>FeedItem.TextPost</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>0</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
             <actionName>LoginToNetworkAsPersonUser</actionName>
             <actionType>StandardButton</actionType>
             <sortOrder>5</sortOrder>
@@ -393,11 +403,6 @@
             <sortOrder>23</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>FeedItem.TextPost</actionName>
-            <actionType>QuickAction</actionType>
-            <sortOrder>0</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
             <actionName>LLC_BI__New_Deposit</actionName>
             <actionType>CustomButton</actionType>
             <sortOrder>24</sortOrder>
@@ -451,6 +456,14 @@
     <relatedLists>
         <fields>NAME</fields>
         <relatedList>LLC_BI__Service_Mgmt__c.LLC_BI__Account__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <fields>nPortal__Applicant__c</fields>
+        <fields>Product_Lookup__c</fields>
+        <fields>nPortal__Status__c</fields>
+        <fields>Context_Complete__c</fields>
+        <relatedList>LLC_BI__Application__c.nPortal__Account__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
