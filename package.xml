@@ -22385,6 +22385,7 @@
         <members>LLC_BI__Product_Type__c.LLC_BI__Usage_Type__c</members>
         <members>LLC_BI__Product_Type__c.LLC_BI__configKey__c</members>
         <members>LLC_BI__Product_Type__c.LLC_BI__lookupKey__c</members>
+        <members>LLC_BI__Product_Type__c.cm_Product_Class_Code__c</members>
         <members>LLC_BI__Product_Type__c.cm_Static_Name__c</members>
         <members>LLC_BI__Product_Type__c.nPortal__Online_Application_Enabled__c</members>
         <members>LLC_BI__Product_Type__c.nPortal__Online_Application_Group__c</members>
@@ -22411,6 +22412,7 @@
         <members>LLC_BI__Product__c.LLC_BI__RealEstate__c</members>
         <members>LLC_BI__Product__c.LLC_BI__Screen_Section__c</members>
         <members>LLC_BI__Product__c.LLC_BI__lookupKey__c</members>
+        <members>LLC_BI__Product__c.cm_Informatica_Product_Code__c</members>
         <members>LLC_BI__Product__c.cm_Static_Name__c</members>
         <members>LLC_BI__Product__c.nPortal__Can_Pledge_Multiple_Collateral__c</members>
         <members>LLC_BI__Product__c.nPortal__External_Name__c</members>

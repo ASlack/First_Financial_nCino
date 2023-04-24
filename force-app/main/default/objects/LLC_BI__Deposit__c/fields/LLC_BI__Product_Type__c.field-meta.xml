@@ -13,24 +13,69 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>CD</fullName>
-                <default>true</default>
-                <label>CD</label>
+                <fullName>Business Demand Deposit Account</fullName>
+                <default>false</default>
+                <label>Business Demand Deposit Account</label>
             </value>
             <value>
-                <fullName>Checking</fullName>
+                <fullName>Business Money Market Account</fullName>
                 <default>false</default>
-                <label>Checking</label>
+                <label>Business Money Market Account</label>
             </value>
             <value>
-                <fullName>Money Market</fullName>
+                <fullName>Business Savings Account</fullName>
                 <default>false</default>
-                <label>Money Market</label>
+                <label>Business Savings Account</label>
             </value>
             <value>
-                <fullName>Safe Deposit Box</fullName>
+                <fullName>Certificate of Deposit</fullName>
                 <default>false</default>
-                <label>Safe Deposit Box</label>
+                <label>Certificate of Deposit</label>
+            </value>
+            <value>
+                <fullName>Consumer Demand Deposit Account</fullName>
+                <default>false</default>
+                <label>Consumer Demand Deposit Account</label>
+            </value>
+            <value>
+                <fullName>Consumer Money Market Account</fullName>
+                <default>false</default>
+                <label>Consumer Money Market Account</label>
+            </value>
+            <value>
+                <fullName>Consumer Savings Account</fullName>
+                <default>false</default>
+                <label>Consumer Savings Account</label>
+            </value>
+            <value>
+                <fullName>Health Savings Account</fullName>
+                <default>false</default>
+                <label>Health Savings Account</label>
+            </value>
+            <value>
+                <fullName>Individual Retirement Account</fullName>
+                <default>false</default>
+                <label>Individual Retirement Account</label>
+            </value>
+            <value>
+                <fullName>Internal Demand Deposit Account</fullName>
+                <default>false</default>
+                <label>Internal Demand Deposit Account</label>
+            </value>
+            <value>
+                <fullName>Public Funds Certificate of Deposit</fullName>
+                <default>false</default>
+                <label>Public Funds Certificate of Deposit</label>
+            </value>
+            <value>
+                <fullName>Public Funds Demand Deposit Account</fullName>
+                <default>false</default>
+                <label>Public Funds Demand Deposit Account</label>
+            </value>
+            <value>
+                <fullName>Public Funds Money Market Account</fullName>
+                <default>false</default>
+                <label>Public Funds Money Market Account</label>
             </value>
         </valueSetDefinition>
     </valueSet>

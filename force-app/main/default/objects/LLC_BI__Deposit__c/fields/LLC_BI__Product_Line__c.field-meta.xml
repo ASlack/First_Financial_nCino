@@ -13,14 +13,24 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>Personal Banking</fullName>
-                <default>true</default>
-                <label>Personal Banking</label>
+                <fullName>Business Deposit</fullName>
+                <default>false</default>
+                <label>Business Deposit</label>
             </value>
             <value>
-                <fullName>Commercial Banking</fullName>
+                <fullName>Consumer Deposit</fullName>
                 <default>false</default>
-                <label>Commercial Banking</label>
+                <label>Consumer Deposit</label>
+            </value>
+            <value>
+                <fullName>Public Funds Deposit</fullName>
+                <default>false</default>
+                <label>Public Funds Deposit</label>
+            </value>
+            <value>
+                <fullName>Certificate of Deposit</fullName>
+                <default>false</default>
+                <label>Certificate of Deposit</label>
             </value>
         </valueSetDefinition>
     </valueSet>
