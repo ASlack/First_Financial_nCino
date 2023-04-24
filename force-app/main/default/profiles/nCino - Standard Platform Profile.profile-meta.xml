@@ -70636,6 +70636,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>LLC_BI__Collateral__c.PMSI_Rollup__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>LLC_BI__Collateral__c.Property_Tax__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -75907,6 +75912,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>LLC_BI__Loan_Collateral2__c.LLC_BI__Unique_Id__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LLC_BI__Loan_Collateral2__c.cm_PMSI__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

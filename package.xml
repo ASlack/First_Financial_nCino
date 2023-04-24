@@ -19802,6 +19802,7 @@
         <members>LLC_BI__Collateral__c.LetterofCreditMaturityDate__c</members>
         <members>LLC_BI__Collateral__c.Migration_ID__c</members>
         <members>LLC_BI__Collateral__c.NameoftheAgency__c</members>
+        <members>LLC_BI__Collateral__c.PMSI_Rollup__c</members>
         <members>LLC_BI__Collateral__c.Property_Tax__c</members>
         <members>LLC_BI__Collateral__c.cm_Abundance_of_Caution__c</members>
         <members>LLC_BI__Collateral__c.cm_Condo_Project_Name_if_master_policy__c</members>
@@ -20943,6 +20944,7 @@
         <members>LLC_BI__Loan_Collateral2__c.LLC_BI__Total_Prior_Lien_Amount__c</members>
         <members>LLC_BI__Loan_Collateral2__c.LLC_BI__Total_Superior_Lien_Amount__c</members>
         <members>LLC_BI__Loan_Collateral2__c.LLC_BI__Unique_Id__c</members>
+        <members>LLC_BI__Loan_Collateral2__c.cm_PMSI__c</members>
         <members>LLC_BI__Loan_Collateral_Aggregate__c.LLC_BI__Collateral_Pledged_Count__c</members>
         <members>LLC_BI__Loan_Collateral_Aggregate__c.LLC_BI__Current_Total_Lendable_Value__c</members>
         <members>LLC_BI__Loan_Collateral_Aggregate__c.LLC_BI__Total_Collateral_Pledged__c</members>
@@ -31973,6 +31975,7 @@
         <members>LLC_BI__Budget_Line_Item__c.LLC_BI__Tpl_LineItem_Config_Defaults_Clash</members>
         <members>LLC_BI__Budget_Line_Item__c.LLC_BI__Tpl_Percent_of_Budget_Cannot_Exceed_100</members>
         <members>LLC_BI__Collateral_Type__c.LLC_BI__Advance_Rate_should_not_be_null</members>
+        <members>LLC_BI__Collateral__c.PMSI_Rollup_Greater_than_1</members>
         <members>LLC_BI__Connection_Role__c.LLC_BI__Reciprocal_Role</members>
         <members>LLC_BI__Connection__c.LLC_BI__Prevent_Edit_on_Connections</members>
         <members>LLC_BI__Contingent_Liabilty__c.Authorized_Signer_Validation_01</members>
