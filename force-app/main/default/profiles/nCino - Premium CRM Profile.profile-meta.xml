@@ -82826,6 +82826,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>LLC_BI__Product_Type__c.cm_Product_Class_Code__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>LLC_BI__Product_Type__c.cm_Static_Name__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -82947,6 +82952,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>LLC_BI__Product__c.LLC_BI__lookupKey__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LLC_BI__Product__c.cm_Informatica_Product_Code__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
