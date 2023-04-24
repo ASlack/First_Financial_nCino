@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Region__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>The Region in which a user is associated with.  Drives automation of Relationship Region</inlineHelpText>
+    <label>Region</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Abilene</fullName>
+                <default>false</default>
+                <label>Abilene</label>
+            </value>
+            <value>
+                <fullName>Sweetwater</fullName>
+                <default>false</default>
+                <label>Sweetwater</label>
+            </value>
+            <value>
+                <fullName>Hereford</fullName>
+                <default>false</default>
+                <label>Hereford</label>
+            </value>
+            <value>
+                <fullName>Cleburne</fullName>
+                <default>false</default>
+                <label>Cleburne</label>
+            </value>
+            <value>
+                <fullName>Weatherford</fullName>
+                <default>false</default>
+                <label>Weatherford</label>
+            </value>
+            <value>
+                <fullName>Southlake</fullName>
+                <default>false</default>
+                <label>Southlake</label>
+            </value>
+            <value>
+                <fullName>Fort Worth</fullName>
+                <default>false</default>
+                <label>Fort Worth</label>
+            </value>
+            <value>
+                <fullName>Stephenville</fullName>
+                <default>false</default>
+                <label>Stephenville</label>
+            </value>
+            <value>
+                <fullName>San Angelo</fullName>
+                <default>false</default>
+                <label>San Angelo</label>
+            </value>
+            <value>
+                <fullName>Kingwood</fullName>
+                <default>false</default>
+                <label>Kingwood</label>
+            </value>
+            <value>
+                <fullName>Bryan/College Station</fullName>
+                <default>false</default>
+                <label>Bryan/College Station</label>
+            </value>
+            <value>
+                <fullName>Conroe</fullName>
+                <default>false</default>
+                <label>Conroe</label>
+            </value>
+            <value>
+                <fullName>Eastland</fullName>
+                <default>false</default>
+                <label>Eastland</label>
+            </value>
+            <value>
+                <fullName>Orange</fullName>
+                <default>false</default>
+                <label>Orange</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
