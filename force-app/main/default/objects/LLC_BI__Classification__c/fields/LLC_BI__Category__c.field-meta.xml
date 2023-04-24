@@ -17,6 +17,11 @@
                 <default>false</default>
                 <label>RMA Benchmarking</label>
             </value>
+            <value>
+                <fullName>NOI Statement</fullName>
+                <default>false</default>
+                <label>NOI Statement</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>
