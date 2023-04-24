@@ -28186,6 +28186,7 @@
         <members>SIOC__Run_BV</members>
         <members>SIOC__Run_IAV</members>
         <members>nCRED__Spreads_Edit</members>
+        <members>nCino_Covenant_Mgmt_Update_Next_Evaluation_Date</members>
         <members>nFORCE__Bulk_Field_Updates_User</members>
         <members>nFORCE__Describes_Cache_SObject_Lookup_Field_Access</members>
         <members>nFORCE__Describes_Cache_SObject_Type_Access</members>
@@ -31543,6 +31544,7 @@
         <members>CollaborationGroup.NewGroupMember</members>
         <members>CollaborationGroup.NewGroupRecord</members>
         <members>FeedItem.NewTaskFromFeedItem</members>
+        <members>LLC_BI__Covenant2__c.Update_Next_Evaluation_Date</members>
         <members>LLC_BI__Product_Package__c.Advance_Deal</members>
         <members>LLC_BI__Product_Package__c.Update_Product_Package</members>
         <members>LLC_BI__Review__c.Approval_Details</members>
