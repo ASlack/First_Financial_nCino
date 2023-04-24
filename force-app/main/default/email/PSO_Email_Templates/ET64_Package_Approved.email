@@ -1,0 +1,11 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[Hello&nbsp;<span style="background-color: rgb(255, 255, 255);">{!Organization.Name}&nbsp;</span>Team Member, 
+<br>
+<br>Product Package "{!LLC_BI__Product_Package__c.Name}"&nbsp;has been Approved. 
+<br><br>Primary Relationship:&nbsp;{!LLC_BI__Product_Package__c.LLC_BI__Account__c}<br>Relationship Exposure: {!LLC_BI__Product_Package__c.Total_Relationship_Exposure__c}<br>
+<br>Primary Officer:&nbsp;{!LLC_BI__Product_Package__c.LLC_BI__Primary_Officer__c}<br>Lending Assistant:&nbsp;{!LLC_BI__Product_Package__c.LLC_BI__Secondary_Officer__c}<br><div><br></div><div>Approval Comments: &nbsp;{!ApprovalRequest.Comments}<br><div><br></div><div>Click here for complete Product Package Details: {!LLC_BI__Product_Package__c.Link}.<br>
+<br>nCino<div><br></div><div style="text-align: right;">ET64</div></div></div>]]></td>
+</tr>
+</table>

@@ -17006,9 +17006,11 @@
         <members>LLC_BI__Credit_Memo_Modifcation__c.MAP100_Short_Term_Extension</members>
         <members>LLC_BI__Credit_Memo_Modifcation__c.MAP200_Change_Memo_AP_Not_Required</members>
         <members>LLC_BI__Credit_Memo_Modifcation__c.MAP200_Change_Memo_AP_Required</members>
+        <members>LLC_BI__Loan__c.FFIN_Loan_Abilene</members>
         <members>LLC_BI__Loan__c.LAP100_Sample_Loan_Approval_Process</members>
         <members>LLC_BI__Loan__c.LAP100_nCino_Gold_Standard_AP</members>
         <members>LLC_BI__Loan__c.PP_Two_Step_Approval_Process</members>
+        <members>LLC_BI__Product_Package__c.FFIN_PP_Abilene</members>
         <members>LLC_BI__Product_Package__c.PPAP100_nCino_Gold_Standard_AP</members>
         <members>LLC_BI__Product_Package__c.PP_Sample_Approval_Process</members>
         <members>LLC_BI__Product_Package__c.PP_Two_Approvers_Approval_Process</members>
@@ -22204,11 +22206,14 @@
         <members>LLC_BI__Product_Package_Team__c.LLC_BI__Assigned_Role__c</members>
         <members>LLC_BI__Product_Package_Team__c.LLC_BI__Product_Package__c</members>
         <members>LLC_BI__Product_Package_Team__c.LLC_BI__User__c</members>
+        <members>LLC_BI__Product_Package__c.Any_Classified_Loan_100M__c</members>
         <members>LLC_BI__Product_Package__c.Approver_1__c</members>
         <members>LLC_BI__Product_Package__c.Approver_2__c</members>
         <members>LLC_BI__Product_Package__c.Approver_3__c</members>
         <members>LLC_BI__Product_Package__c.Approver_4__c</members>
         <members>LLC_BI__Product_Package__c.Approver_5__c</members>
+        <members>LLC_BI__Product_Package__c.Classified_Loan_Long_Term__c</members>
+        <members>LLC_BI__Product_Package__c.Enable_10_Rule__c</members>
         <members>LLC_BI__Product_Package__c.Household__c</members>
         <members>LLC_BI__Product_Package__c.LLC_BI__Account__c</members>
         <members>LLC_BI__Product_Package__c.LLC_BI__Additional_Income_Category__c</members>
@@ -22281,6 +22286,7 @@
         <members>LLC_BI__Product_Package__c.LLC_BI__Treasury_Annual_Operating_Cost__c</members>
         <members>LLC_BI__Product_Package__c.LLC_BI__Unused__c</members>
         <members>LLC_BI__Product_Package__c.LLC_BI__lookupKey__c</members>
+        <members>LLC_BI__Product_Package__c.Package_Secure_Type__c</members>
         <members>LLC_BI__Product_Package__c.Region__c</members>
         <members>LLC_BI__Product_Package__c.Total_Relationship_Exposure__c</members>
         <members>LLC_BI__Product_Package__c.X1st_Approver__c</members>
@@ -28164,6 +28170,9 @@
         <members>PSO_Email_Templates/ET60_Transaction_Request_Rejected</members>
         <members>PSO_Email_Templates/ET61_Transaction_Request_Approved</members>
         <members>PSO_Email_Templates/ET62_Transaction_Request_Submitted</members>
+        <members>PSO_Email_Templates/ET63_Package_Submitted</members>
+        <members>PSO_Email_Templates/ET64_Package_Approved</members>
+        <members>PSO_Email_Templates/ET65_Package_Rejected</members>
         <members>nBRIDGER__OFAC_Notifications</members>
         <members>nBRIDGER__OFAC_Notifications/nBRIDGER__OFACMatchNotification</members>
         <members>nBRIDGER__OFAC_Notifications/nBRIDGER__OFACMoreInformationNotification</members>
@@ -30969,12 +30978,42 @@
         <name>Prompt</name>
     </types>
     <types>
+        <members>Abilene_CLC</members>
+        <members>Abilene_RDLC</members>
         <members>Adverse_Action_Queue</members>
+        <members>B_College_Station_CLC</members>
+        <members>B_College_Station_RDLC</members>
         <members>Board_of_Directors</members>
         <members>CLA_Queue</members>
         <members>ChecklistTeamQueue</members>
+        <members>Cleburne_CLC</members>
+        <members>Cleburne_RDLC</members>
+        <members>Conroe_CLC</members>
+        <members>Conroe_RDLC</members>
+        <members>Eastland_CLC</members>
+        <members>Eastland_RDLC</members>
+        <members>FFIN_DLC</members>
+        <members>Fort_Worth_CLC</members>
+        <members>Fort_Worth_RDLC</members>
+        <members>Hereford_CLC</members>
+        <members>Hereford_RDLC</members>
+        <members>Kingwood_CLC</members>
+        <members>Kingwood_RDLC</members>
         <members>Loan_Approval_Queue</members>
         <members>Loan_Committee</members>
+        <members>Orange_CLC</members>
+        <members>Orange_RDLC</members>
+        <members>San_Angelo_CLC</members>
+        <members>San_Angelo_RDLC</members>
+        <members>Senior_Loan_Committee</members>
+        <members>Southlake_CLC</members>
+        <members>Southlake_RDLC</members>
+        <members>Stephenville_CLC</members>
+        <members>Stephenville_RDLC</members>
+        <members>Sweetwater_CLC</members>
+        <members>Sweetwater_RDLC</members>
+        <members>Weatherford_CLC</members>
+        <members>Weatherford_RDLC</members>
         <members>cm_Review_Committee_Approval_Queue</members>
         <name>Queue</name>
     </types>
@@ -32139,9 +32178,16 @@
         <name>WebLink</name>
     </types>
     <types>
+        <members>LLC_BI__Product_Package__c.PP_Approved_Email</members>
+        <members>LLC_BI__Product_Package__c.PP_Rejected_Email</members>
+        <name>WorkflowAlert</name>
+    </types>
+    <types>
         <members>LLC_BI__Collateral__c.Collateral_Mgmt_Jewelry_RT</members>
         <members>LLC_BI__Collateral__c.Titled_Boat</members>
         <members>LLC_BI__Loan__c.Loan_Default_App</members>
+        <members>LLC_BI__Product_Package__c.PP_Approval_Step_5</members>
+        <members>LLC_BI__Product_Package__c.PP_Approval_Step_6</members>
         <name>WorkflowFieldUpdate</name>
     </types>
     <types>

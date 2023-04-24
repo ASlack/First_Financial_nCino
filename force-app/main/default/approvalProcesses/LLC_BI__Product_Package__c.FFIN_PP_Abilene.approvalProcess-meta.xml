@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>true</allowRecall>
+    <allowedSubmitters>
+        <type>allInternalUsers</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Name</field>
+        <field>Owner</field>
+        <field>LLC_BI__Status__c</field>
+        <field>X1st_Approver__c</field>
+        <field>X2nd_Approver__c</field>
+        <field>Total_Relationship_Exposure__c</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <approvalActions>
+            <action>
+                <name>PP_Approval_Step_2</name>
+                <type>FieldUpdate</type>
+            </action>
+        </approvalActions>
+        <assignedApprover>
+            <approver>
+                <name>Approver_1__c</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>AND(
+    NOT(ISBLANK(Approver_1__c))
+)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Approver 1</label>
+        <name>Approver_1</name>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <approvalActions>
+            <action>
+                <name>PP_Approval_Step_3</name>
+                <type>FieldUpdate</type>
+            </action>
+        </approvalActions>
+        <assignedApprover>
+            <approver>
+                <name>Approver_2__c</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>AND(
+NOT(ISBLANK(Approver_2__c)),
+Enable_10_Rule__c = False,
+
+OR(
+AND(
+ISPICKVAL(Package_Secure_Type__c, &quot;Secured&quot;),
+Total_Relationship_Exposure__c &gt; Approver_1__r.LLC_BI__Secured_Individual_Lending_Authority__c),
+AND(
+ISPICKVAL(Package_Secure_Type__c, &quot;Unsecured&quot;),
+Total_Relationship_Exposure__c &gt; Approver_1__r.LLC_BI__Unsecured_Individual_Lending_Authority__c),
+
+AND(
+ISPICKVAL(Package_Secure_Type__c, &quot;Cash Secured&quot;),
+Total_Relationship_Exposure__c &gt; 250000),
+
+ISPICKVAL(LLC_BI__Risk_Rating__c, &quot;3&quot;),
+ISPICKVAL(LLC_BI__Risk_Rating__c, &quot;4&quot;),
+ISPICKVAL(LLC_BI__Risk_Rating__c, &quot;5&quot;),
+ISPICKVAL(LLC_BI__Risk_Rating__c, &quot;6&quot;),
+ISPICKVAL(LLC_BI__Risk_Rating__c, &quot;7&quot;),
+Any_Classified_Loan_100M__c = True,
+Classified_Loan_Long_Term__c = True)
+)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Approver 2</label>
+        <name>Approver_2</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <approvalActions>
+            <action>
+                <name>PP_Approval_Step_4</name>
+                <type>FieldUpdate</type>
+            </action>
+        </approvalActions>
+        <assignedApprover>
+            <approver>
+                <name>Abilene_CLC</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>AND(
+Enable_10_Rule__c = False,
+
+OR(
+AND(
+ ISPICKVAL(Package_Secure_Type__c, &quot;Secured&quot;),
+ Total_Relationship_Exposure__c &gt;  Approver_1__r.LLC_BI__Secured_Individual_Lending_Authority__c,
+ ISBLANK( Approver_2__c)
+),
+AND(
+ ISPICKVAL(Package_Secure_Type__c, &quot;Secured&quot;),
+ Total_Relationship_Exposure__c &gt;   Approver_2__r.LLC_BI__Secured_Individual_Lending_Authority__c,
+ NOT(ISBLANK( Approver_2__c))
+),
+AND(
+ ISPICKVAL(Package_Secure_Type__c, &quot;Unsecured&quot;),
+ Total_Relationship_Exposure__c &gt;  Approver_1__r.LLC_BI__Unsecured_Individual_Lending_Authority__c,
+ ISBLANK( Approver_2__c)
+),
+AND(
+ ISPICKVAL(Package_Secure_Type__c, &quot;Unsecured&quot;),
+ Total_Relationship_Exposure__c &gt;   Approver_2__r.LLC_BI__Unsecured_Individual_Lending_Authority__c,
+ NOT(ISBLANK( Approver_2__c))
+),
+AND(
+ ISPICKVAL(Package_Secure_Type__c, &quot;Cash Secured&quot;),
+ Total_Relationship_Exposure__c &gt; 250000
+),
+ISPICKVAL(LLC_BI__Risk_Rating__c, &quot;3&quot;),
+ISPICKVAL(LLC_BI__Risk_Rating__c, &quot;4&quot;),
+ISPICKVAL(LLC_BI__Risk_Rating__c, &quot;5&quot;),
+ISPICKVAL(LLC_BI__Risk_Rating__c, &quot;6&quot;),
+ISPICKVAL(LLC_BI__Risk_Rating__c, &quot;7&quot;),
+Any_Classified_Loan_100M__c = True,
+Classified_Loan_Long_Term__c = True
+))</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>ApproveRecord</ifCriteriaNotMet>
+        <label>Commercial Loan Committee</label>
+        <name>Commercial_Loan_Committee</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <approvalActions>
+            <action>
+                <name>PP_Approval_Step_5</name>
+                <type>FieldUpdate</type>
+            </action>
+        </approvalActions>
+        <assignedApprover>
+            <approver>
+                <name>Abilene_RDLC</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>OR(
+Total_Relationship_Exposure__c &gt; Region__r.CLC_Total_Relationship_Max_Authority__c,
+Any_Classified_Loan_100M__c = True,
+Classified_Loan_Long_Term__c = True
+)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>ApproveRecord</ifCriteriaNotMet>
+        <label>Regional Directors Loan Committee</label>
+        <name>Regional_Directors_Loan_Committee</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <approvalActions>
+            <action>
+                <name>PP_Approval_Step_6</name>
+                <type>FieldUpdate</type>
+            </action>
+        </approvalActions>
+        <assignedApprover>
+            <approver>
+                <name>Senior_Loan_Committee</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>OR(
+Total_Relationship_Exposure__c &gt; Region__r.RDLC_Total_Relationship_Max_Authority__c,
+Classified_Loan_Long_Term__c = True
+)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>ApproveRecord</ifCriteriaNotMet>
+        <label>Senior Loan Committee</label>
+        <name>Senior_Loan_Committee</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>FFIN_DLC</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>AND(
+Total_Relationship_Exposure__c &gt; Region__r.SLC_Total_Relationship_Max_Authority__c
+)</formula>
+        </entryCriteria>
+        <label>FFIN Directors Loan Committee</label>
+        <name>FFIN_Directors_Loan_Committee</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <description>Approval Process for Abilene Region</description>
+    <emailTemplate>PSO_Email_Templates/ET63_Package_Submitted</emailTemplate>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <formula>AND(
+    Region__r.Name = &apos;Abilene&apos;,
+    NOT(ISBLANK(Household__c)),
+    NOT(ISBLANK(Approver_1__c)),
+    NOT(ISPICKVAL(Package_Secure_Type__c, &quot;&quot;)),
+    NOT(ISPICKVAL(LLC_BI__Risk_Rating__c, &quot;&quot;))
+)</formula>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>LLC_BI__Product_Package_Status_Approved</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>PP_Approved_Email</name>
+            <type>Alert</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>LLC_BI__Product_Package_Status_Rejected</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>PP_Rejected_Email</name>
+            <type>Alert</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <initialSubmissionActions>
+        <action>
+            <name>PP_Approval_Step_1</name>
+            <type>FieldUpdate</type>
+        </action>
+    </initialSubmissionActions>
+    <label>FFIN PP - Abilene</label>
+    <processOrder>1</processOrder>
+    <recallActions>
+        <action>
+            <name>LLC_BI__Product_Package_Status_Recalled</name>
+            <type>FieldUpdate</type>
+        </action>
+    </recallActions>
+    <recordEditability>AdminOrCurrentApprover</recordEditability>
+    <showApprovalHistory>false</showApprovalHistory>
+</ApprovalProcess>

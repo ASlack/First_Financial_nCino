@@ -4,4 +4,98 @@
     <active>true</active>
     <description>RT used for Deal Proposal</description>
     <label>Deal Proposal</label>
+    <picklistValues>
+        <picklist>LLC_BI__Status__c</picklist>
+        <values>
+            <fullName>Approval Step 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approval Step 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approval Step 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approval Step 4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approval Step 5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approval Step 6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Declined</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intermediately Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intermediately Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Open</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recalled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Withdrawn</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Package_Secure_Type__c</picklist>
+        <values>
+            <fullName>Cash Secured</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Secured</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unsecured</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
 </RecordType>
