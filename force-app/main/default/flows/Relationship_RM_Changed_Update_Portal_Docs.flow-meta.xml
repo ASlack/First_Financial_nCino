@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <decisions>
+        <name>Integration_Trigger_Kill_Switch</name>
+        <label>Integration Trigger Kill Switch</label>
+        <locationX>176</locationX>
+        <locationY>335</locationY>
+        <defaultConnector>
+            <targetReference>Update_Account_Doc_User_Lookup</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Kill_Switch_True</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Permission.Integration_Trigger_Kill_Switch</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Kill Switch = True</label>
+        </rules>
+    </decisions>
+    <description>When the Relationship Manager is changed on an Account, update all placeholders which are portal enabled</description>
+    <environments>Default</environments>
+    <interviewLabel>Relationship - RM Changed, Update Portal Docs {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Relationship - RM Changed, Update Portal Docs</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Account_Doc_User_Lookup</name>
+        <label>Update Account Doc User Lookup</label>
+        <locationX>308</locationX>
+        <locationY>455</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>LLC_BI__Account__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>LLC_BI__Portal_Enabled__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Uploaded_Notified_User__c</field>
+            <value>
+                <elementReference>$Record.ffin_Relationship_Manager__c</elementReference>
+            </value>
+        </inputAssignments>
+        <object>LLC_BI__AccountDocument__c</object>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Integration_Trigger_Kill_Switch</targetReference>
+        </connector>
+        <filterFormula>AND(
+ISCHANGED({!$Record.ffin_Relationship_Manager__c}),
+{!$Record.ffin_Relationship_Manager__c} != Null
+)</filterFormula>
+        <object>Account</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>
