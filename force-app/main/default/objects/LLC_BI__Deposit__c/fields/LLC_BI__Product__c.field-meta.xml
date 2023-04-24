@@ -13,14 +13,274 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>Personal Savings</fullName>
-                <default>true</default>
-                <label>Personal Savings</label>
+                <fullName>1st Rate Checking GF</fullName>
+                <default>false</default>
+                <label>1st Rate Checking GF</label>
             </value>
             <value>
-                <fullName>Individual</fullName>
+                <fullName>Advantage Checking</fullName>
                 <default>false</default>
-                <label>Individual</label>
+                <label>Advantage Checking</label>
+            </value>
+            <value>
+                <fullName>Anywhere Ckg</fullName>
+                <default>false</default>
+                <label>Anywhere Ckg</label>
+            </value>
+            <value>
+                <fullName>Bank Internal DDA</fullName>
+                <default>false</default>
+                <label>Bank Internal DDA</label>
+            </value>
+            <value>
+                <fullName>Bounceback Checking</fullName>
+                <default>false</default>
+                <label>Bounceback Checking</label>
+            </value>
+            <value>
+                <fullName>Bus Analysis - SRB</fullName>
+                <default>false</default>
+                <label>Bus Analysis - SRB</label>
+            </value>
+            <value>
+                <fullName>BUS MM Special</fullName>
+                <default>false</default>
+                <label>BUS MM Special</label>
+            </value>
+            <value>
+                <fullName>Business 500</fullName>
+                <default>false</default>
+                <label>Business 500</label>
+            </value>
+            <value>
+                <fullName>Business Analysis</fullName>
+                <default>false</default>
+                <label>Business Analysis</label>
+            </value>
+            <value>
+                <fullName>Business Interest</fullName>
+                <default>false</default>
+                <label>Business Interest</label>
+            </value>
+            <value>
+                <fullName>Business Money Mkt</fullName>
+                <default>false</default>
+                <label>Business Money Mkt</label>
+            </value>
+            <value>
+                <fullName>Business Savings</fullName>
+                <default>false</default>
+                <label>Business Savings</label>
+            </value>
+            <value>
+                <fullName>Cashier Checks</fullName>
+                <default>false</default>
+                <label>Cashier Checks</label>
+            </value>
+            <value>
+                <fullName>Certificate of Deposit</fullName>
+                <default>false</default>
+                <label>Certificate of Deposit</label>
+            </value>
+            <value>
+                <fullName>Christmas Club</fullName>
+                <default>false</default>
+                <label>Christmas Club</label>
+            </value>
+            <value>
+                <fullName>Closed Converted</fullName>
+                <default>false</default>
+                <label>Closed Converted</label>
+            </value>
+            <value>
+                <fullName>Closed Converted Sav</fullName>
+                <default>false</default>
+                <label>Closed Converted Sav</label>
+            </value>
+            <value>
+                <fullName>Commercial MM-GF BCS</fullName>
+                <default>false</default>
+                <label>Commercial MM-GF BCS</label>
+            </value>
+            <value>
+                <fullName>Consumer IRA</fullName>
+                <default>false</default>
+                <label>Consumer IRA</label>
+            </value>
+            <value>
+                <fullName>Domestic Banks DDA</fullName>
+                <default>false</default>
+                <label>Domestic Banks DDA</label>
+            </value>
+            <value>
+                <fullName>Expense Checks</fullName>
+                <default>false</default>
+                <label>Expense Checks</label>
+            </value>
+            <value>
+                <fullName>First @ Wk-Exec (GF)</fullName>
+                <default>false</default>
+                <label>First @ Wk-Exec (GF)</label>
+            </value>
+            <value>
+                <fullName>First @ Wk-Prof (GF)</fullName>
+                <default>false</default>
+                <label>First @ Wk-Prof (GF)</label>
+            </value>
+            <value>
+                <fullName>First Access</fullName>
+                <default>false</default>
+                <label>First Access</label>
+            </value>
+            <value>
+                <fullName>Free with eStatement</fullName>
+                <default>false</default>
+                <label>Free with eStatement</label>
+            </value>
+            <value>
+                <fullName>Go Global</fullName>
+                <default>false</default>
+                <label>Go Global</label>
+            </value>
+            <value>
+                <fullName>Health Savings Acct</fullName>
+                <default>false</default>
+                <label>Health Savings Acct</label>
+            </value>
+            <value>
+                <fullName>Heritage Ckg</fullName>
+                <default>false</default>
+                <label>Heritage Ckg</label>
+            </value>
+            <value>
+                <fullName>Honor Checking</fullName>
+                <default>false</default>
+                <label>Honor Checking</label>
+            </value>
+            <value>
+                <fullName>Hybrid Analysis Int</fullName>
+                <default>false</default>
+                <label>Hybrid Analysis Int</label>
+            </value>
+            <value>
+                <fullName>Hybrid Public Fund</fullName>
+                <default>false</default>
+                <label>Hybrid Public Fund</label>
+            </value>
+            <value>
+                <fullName>Interest Checks</fullName>
+                <default>false</default>
+                <label>Interest Checks</label>
+            </value>
+            <value>
+                <fullName>Interest Ckg</fullName>
+                <default>false</default>
+                <label>Interest Ckg</label>
+            </value>
+            <value>
+                <fullName>Interest Public Fund</fullName>
+                <default>false</default>
+                <label>Interest Public Fund</label>
+            </value>
+            <value>
+                <fullName>Internal Reserve Acc</fullName>
+                <default>false</default>
+                <label>Internal Reserve Acc</label>
+            </value>
+            <value>
+                <fullName>Investment Accounts</fullName>
+                <default>false</default>
+                <label>Investment Accounts</label>
+            </value>
+            <value>
+                <fullName>IOLTA</fullName>
+                <default>false</default>
+                <label>IOLTA</label>
+            </value>
+            <value>
+                <fullName>Kids Savings</fullName>
+                <default>false</default>
+                <label>Kids Savings</label>
+            </value>
+            <value>
+                <fullName>Money Mkt Public Fun</fullName>
+                <default>false</default>
+                <label>Money Mkt Public Fun</label>
+            </value>
+            <value>
+                <fullName>Payroll Account</fullName>
+                <default>false</default>
+                <label>Payroll Account</label>
+            </value>
+            <value>
+                <fullName>Personal MMA-GF BCS</fullName>
+                <default>false</default>
+                <label>Personal MMA-GF BCS</label>
+            </value>
+            <value>
+                <fullName>Personal Money Order</fullName>
+                <default>false</default>
+                <label>Personal Money Order</label>
+            </value>
+            <value>
+                <fullName>PF MM Special</fullName>
+                <default>false</default>
+                <label>PF MM Special</label>
+            </value>
+            <value>
+                <fullName>Premier Business MM</fullName>
+                <default>false</default>
+                <label>Premier Business MM</label>
+            </value>
+            <value>
+                <fullName>Premier Checking</fullName>
+                <default>false</default>
+                <label>Premier Checking</label>
+            </value>
+            <value>
+                <fullName>Premier Money Market</fullName>
+                <default>false</default>
+                <label>Premier Money Market</label>
+            </value>
+            <value>
+                <fullName>Public Funds CD</fullName>
+                <default>false</default>
+                <label>Public Funds CD</label>
+            </value>
+            <value>
+                <fullName>Public Funds Check</fullName>
+                <default>false</default>
+                <label>Public Funds Check</label>
+            </value>
+            <value>
+                <fullName>Repo Account-Tiered</fullName>
+                <default>false</default>
+                <label>Repo Account-Tiered</label>
+            </value>
+            <value>
+                <fullName>Savings</fullName>
+                <default>false</default>
+                <label>Savings</label>
+            </value>
+            <value>
+                <fullName>Select Checking</fullName>
+                <default>false</default>
+                <label>Select Checking</label>
+            </value>
+            <value>
+                <fullName>State &amp; Pol Savings</fullName>
+                <default>false</default>
+                <label>State &amp; Pol Savings</label>
+            </value>
+            <value>
+                <fullName>Transfer Account</fullName>
+                <default>false</default>
+                <label>Transfer Account</label>
+            </value>
+            <value>
+                <fullName>WOW! Checking</fullName>
+                <default>false</default>
+                <label>WOW! Checking</label>
             </value>
         </valueSetDefinition>
     </valueSet>
