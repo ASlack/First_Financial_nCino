@@ -36,6 +36,11 @@
                 <default>false</default>
                 <label>Prepopulated</label>
             </value>
+            <value>
+                <fullName>Loan Assumptions</fullName>
+                <default>false</default>
+                <label>Loan Assumptions</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>
