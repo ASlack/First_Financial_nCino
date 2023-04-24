@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Incomplete_Application_Date</fullName>
+    <active>true</active>
+    <description>Incomplete Application Date cannot be in the future</description>
+    <errorConditionFormula>$User.No_Validation__c =false &amp;&amp;
+ Incomplete_Date__c  &gt;  TODAY()</errorConditionFormula>
+    <errorMessage>Incomplete Application Date cannot be in the future</errorMessage>
+</ValidationRule>

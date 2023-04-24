@@ -29,12 +29,12 @@
             <value>
                 <fullName>Competitor- Product/Service Set Gap,</fullName>
                 <default>false</default>
-                <label>Competitor- Product/Service Set Gap,</label>
+                <label>Competitor- Product/Service Set</label>
             </value>
             <value>
                 <fullName>Competitor-Product/Service Functionality Gap</fullName>
                 <default>false</default>
-                <label>Competitor-Product/Service Functionality Gap</label>
+                <label>Competitor-Product/Service Functionality</label>
             </value>
             <value>
                 <fullName>Does not need services</fullName>
@@ -54,12 +54,12 @@
             <value>
                 <fullName>Product/Service Functionality Gap</fullName>
                 <default>false</default>
-                <label>Product/Service Functionality Gap</label>
+                <label>Product/Service Functionality</label>
             </value>
             <value>
                 <fullName>Product/Service Gap</fullName>
                 <default>false</default>
-                <label>Product/Service Gap</label>
+                <label>Product/Service</label>
             </value>
         </valueSetDefinition>
     </valueSet>

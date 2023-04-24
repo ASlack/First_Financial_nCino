@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JHJX__CallReportCode__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is used in the jXchange integration.</description>
+    <externalId>false</externalId>
+    <label>Call Report Code</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>LLC_BI__Product_Type__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1A1</fullName>
+                <default>false</default>
+                <label>1A1 - Residential Construction</label>
+            </value>
+            <value>
+                <fullName>1A2</fullName>
+                <default>false</default>
+                <label>1A2 - Other Construction, All Land Development &amp; Other Land Loans</label>
+            </value>
+            <value>
+                <fullName>1B</fullName>
+                <default>false</default>
+                <label>1B - Secured by farm land</label>
+            </value>
+            <value>
+                <fullName>1C1</fullName>
+                <default>false</default>
+                <label>1C1 - Secured by 1-4 family residential prop. - revolving loan</label>
+            </value>
+            <value>
+                <fullName>1C2A</fullName>
+                <default>false</default>
+                <label>1C2A - Secured by 1-4 family residential prop. - first lien</label>
+            </value>
+            <value>
+                <fullName>1C2B</fullName>
+                <default>false</default>
+                <label>1C2B - Secured by 1-4 family residential prop. - junior lien</label>
+            </value>
+            <value>
+                <fullName>1D</fullName>
+                <default>false</default>
+                <label>1D - Secured by multifamily residential properties</label>
+            </value>
+            <value>
+                <fullName>1E1</fullName>
+                <default>false</default>
+                <label>1E1 - Owner-Occupied Nonfarm/Nonresidential Properties</label>
+            </value>
+            <value>
+                <fullName>1E2</fullName>
+                <default>false</default>
+                <label>1E2 - Nonowner-Occupied Nonfarm/Nonresidential Properties</label>
+            </value>
+            <value>
+                <fullName>2A</fullName>
+                <default>false</default>
+                <label>2A - Loans to commercial banks in the U.S.</label>
+            </value>
+            <value>
+                <fullName>2A1</fullName>
+                <default>false</default>
+                <label>2A1 - Loans to U.S. branches and agencies of foreign banks</label>
+            </value>
+            <value>
+                <fullName>2B</fullName>
+                <default>false</default>
+                <label>2B - Loans to other depository institutions in the U.S.</label>
+            </value>
+            <value>
+                <fullName>2C1</fullName>
+                <default>false</default>
+                <label>2C1 - Loans to foreign branches of other U.S. banks</label>
+            </value>
+            <value>
+                <fullName>2C2</fullName>
+                <default>false</default>
+                <label>2C2 - Loans to other banks in foreign countries</label>
+            </value>
+            <value>
+                <fullName>3</fullName>
+                <default>false</default>
+                <label>3 - Loans to finance agricultural prod. &amp; other loans to farmers</label>
+            </value>
+            <value>
+                <fullName>4A</fullName>
+                <default>false</default>
+                <label>4A - Commercial &amp; industrial loans - U.S. addresses</label>
+            </value>
+            <value>
+                <fullName>4B</fullName>
+                <default>false</default>
+                <label>4B - Commercial &amp; industrial loans - Non-U.S. addresses</label>
+            </value>
+            <value>
+                <fullName>5A</fullName>
+                <default>false</default>
+                <label>5A - Acceptances of U.S. banks</label>
+            </value>
+            <value>
+                <fullName>5B</fullName>
+                <default>false</default>
+                <label>5B - Acceptances of foreign banks</label>
+            </value>
+            <value>
+                <fullName>6A</fullName>
+                <default>false</default>
+                <label>6A - Consumer - Credit cards and related plans</label>
+            </value>
+            <value>
+                <fullName>6B</fullName>
+                <default>false</default>
+                <label>6B - Other Revolving Consumer Credit Plans</label>
+            </value>
+            <value>
+                <fullName>6C</fullName>
+                <default>false</default>
+                <label>6C - Auto Consumer Loans</label>
+            </value>
+            <value>
+                <fullName>6D</fullName>
+                <default>false</default>
+                <label>6D - Other Consumer Loans</label>
+            </value>
+            <value>
+                <fullName>7</fullName>
+                <default>false</default>
+                <label>7 - Loans to foreign governments and official institutions</label>
+            </value>
+            <value>
+                <fullName>8</fullName>
+                <default>false</default>
+                <label>8 - Obligations of states and political subdivisions in the U.S.</label>
+            </value>
+            <value>
+                <fullName>99</fullName>
+                <default>false</default>
+                <label>99 - Conversion</label>
+            </value>
+            <value>
+                <fullName>9B1</fullName>
+                <default>false</default>
+                <label>9B1 - Loans for purchasing or carrying securities</label>
+            </value>
+            <value>
+                <fullName>9B2</fullName>
+                <default>false</default>
+                <label>9B2 - All Other Loans</label>
+            </value>
+            <value>
+                <fullName>10A</fullName>
+                <default>false</default>
+                <label>10A - Leases to Individuals for Household, Family &amp; Other Pers Exp</label>
+            </value>
+            <value>
+                <fullName>10B</fullName>
+                <default>false</default>
+                <label>10B - All Other Leases</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Owner Occupied CRE</controllingFieldValue>
+            <valueName>1E1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <controllingFieldValue>ACH</controllingFieldValue>
+            <controllingFieldValue>SBA</controllingFieldValue>
+            <controllingFieldValue>Lease</controllingFieldValue>
+            <controllingFieldValue>Dealer Draft</controllingFieldValue>
+            <valueName>2A</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <controllingFieldValue>ACH</controllingFieldValue>
+            <controllingFieldValue>SBA</controllingFieldValue>
+            <controllingFieldValue>Lease</controllingFieldValue>
+            <controllingFieldValue>Dealer Draft</controllingFieldValue>
+            <valueName>4A</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <controllingFieldValue>ACH</controllingFieldValue>
+            <controllingFieldValue>SBA</controllingFieldValue>
+            <controllingFieldValue>Lease</controllingFieldValue>
+            <controllingFieldValue>Dealer Draft</controllingFieldValue>
+            <valueName>9B1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <controllingFieldValue>ACH</controllingFieldValue>
+            <controllingFieldValue>SBA</controllingFieldValue>
+            <controllingFieldValue>Lease</controllingFieldValue>
+            <controllingFieldValue>Dealer Draft</controllingFieldValue>
+            <valueName>9B2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <controllingFieldValue>ACH</controllingFieldValue>
+            <controllingFieldValue>SBA</controllingFieldValue>
+            <controllingFieldValue>Lease</controllingFieldValue>
+            <controllingFieldValue>Dealer Draft</controllingFieldValue>
+            <valueName>10B</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Construction &amp; Development RE</controllingFieldValue>
+            <valueName>1A1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Construction &amp; Development RE</controllingFieldValue>
+            <valueName>1A2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consumer Residential RE</controllingFieldValue>
+            <controllingFieldValue>Residential RE</controllingFieldValue>
+            <valueName>1C1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consumer Residential RE</controllingFieldValue>
+            <controllingFieldValue>Residential RE</controllingFieldValue>
+            <valueName>1C2A</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consumer Residential RE</controllingFieldValue>
+            <controllingFieldValue>Residential RE</controllingFieldValue>
+            <valueName>1C2B</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consumer Non-Auto</controllingFieldValue>
+            <valueName>6A</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consumer Non-Auto</controllingFieldValue>
+            <valueName>6B</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consumer Non-Auto</controllingFieldValue>
+            <valueName>6D</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Farm RE</controllingFieldValue>
+            <valueName>1B</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Agricultural</controllingFieldValue>
+            <valueName>3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consumer Auto</controllingFieldValue>
+            <valueName>6C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-Owner Occupied CRE</controllingFieldValue>
+            <valueName>1D</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-Owner Occupied CRE</controllingFieldValue>
+            <valueName>1E2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Municipality</controllingFieldValue>
+            <valueName>8</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

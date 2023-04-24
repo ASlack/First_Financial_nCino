@@ -2,7 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Declined_Date__c</fullName>
     <externalId>false</externalId>
-    <label>Declined Date</label>
+    <label>Decline Advised/Sent Date</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>

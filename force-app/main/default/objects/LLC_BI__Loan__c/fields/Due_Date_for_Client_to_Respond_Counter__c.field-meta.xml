@@ -3,13 +3,13 @@
     <fullName>Due_Date_for_Client_to_Respond_Counter__c</fullName>
     <description>This field sets the due date for client to respond counter, which is 60 days after notice is sent.</description>
     <externalId>false</externalId>
-    <formula>IF(ISBLANK( Date_of_Adverse_Action_and_Counter__c), 
-null,
-Date_of_Adverse_Action_and_Counter__c + 60 
+    <formula>IF(ISBLANK( Counter_Offer_Verbally_Advised__c ), 
+IF(ISBLANK( Counter_Offer_Letter_Sent__c  ), null, Counter_Offer_Letter_Sent__c  + 30),
+Counter_Offer_Verbally_Advised__c + 30 
 
 )</formula>
     <inlineHelpText>Due date for client to respond to counteroffer made.</inlineHelpText>
-    <label>Due Date for Client to Respond Counter</label>
+    <label>Counter Offer Expiration Date</label>
     <required>false</required>
     <trackHistory>false</trackHistory>
     <type>Date</type>
