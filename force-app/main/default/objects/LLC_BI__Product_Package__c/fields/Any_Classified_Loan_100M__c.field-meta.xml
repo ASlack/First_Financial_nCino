@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Any_Classified_Loan_100M__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Will be referenced in Automation and Approval Processes</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is checked when one or more loans within the Package have a Risk Rating of 3 or higher and the loan amount is greater than 100M</inlineHelpText>
+    <label>Any Classified Loan &gt;$100M</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

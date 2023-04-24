@@ -91,12 +91,22 @@
             <value>
                 <fullName>Approval Step 3</fullName>
                 <default>false</default>
-                <label>Approval Step 3</label>
+                <label>Approval Step 3 - CLC</label>
             </value>
             <value>
                 <fullName>Approval Step 4</fullName>
                 <default>false</default>
-                <label>Approval Step 4</label>
+                <label>Approval Step 4 - RDLC</label>
+            </value>
+            <value>
+                <fullName>Approval Step 5</fullName>
+                <default>false</default>
+                <label>Approval Step 5 - SLC</label>
+            </value>
+            <value>
+                <fullName>Approval Step 6</fullName>
+                <default>false</default>
+                <label>Approval Step 6 - FFIN DLC</label>
             </value>
         </valueSetDefinition>
     </valueSet>
