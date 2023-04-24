@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PMSI_Rollup_Greater_than_1</fullName>
+    <active>true</active>
+    <description>Checks to see if PMSI is set on more than 1 Active Pledge Records</description>
+    <errorConditionFormula>AND(
+ $User.No_Validation__c = false,
+ PMSI_Rollup__c &gt; 1
+)</errorConditionFormula>
+    <errorMessage>This Collateral record is already flagged as PMSI for a separate loan.  PMSI must be checked on only one Collateral Pledge record.</errorMessage>
+</ValidationRule>
