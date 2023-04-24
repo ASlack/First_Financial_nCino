@@ -37,6 +37,10 @@
                 <behavior>Edit</behavior>
                 <field>AbundanceofCaution__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>cm_PMSI__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
