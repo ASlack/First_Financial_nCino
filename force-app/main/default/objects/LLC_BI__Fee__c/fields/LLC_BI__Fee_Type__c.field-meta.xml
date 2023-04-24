@@ -10,46 +10,211 @@
     <type>Picklist</type>
     <valueSet>
         <valueSetDefinition>
-            <sorted>false</sorted>
+            <sorted>true</sorted>
             <value>
-                <fullName>Appraisal</fullName>
+                <fullName>Administration Fee</fullName>
                 <default>false</default>
-                <label>Appraisal</label>
+                <label>Administration Fee</label>
             </value>
             <value>
-                <fullName>Attorney</fullName>
+                <fullName>Appraisal Fee</fullName>
                 <default>false</default>
-                <label>Attorney</label>
+                <label>Appraisal Fee</label>
             </value>
             <value>
-                <fullName>Credit Report</fullName>
+                <fullName>Appraisal Fee (Review)</fullName>
                 <default>false</default>
-                <label>Credit Report</label>
+                <label>Appraisal Fee (Review)</label>
             </value>
             <value>
-                <fullName>DMV</fullName>
+                <fullName>Attorney Doc Fees</fullName>
                 <default>false</default>
-                <label>DMV</label>
+                <label>Attorney Doc Fees</label>
             </value>
             <value>
-                <fullName>Government Recording</fullName>
+                <fullName>Commercial Document Fee (NEW)</fullName>
                 <default>false</default>
-                <label>Government Recording</label>
+                <label>Commercial Document Fee (NEW)</label>
             </value>
             <value>
-                <fullName>Loan Origination</fullName>
+                <fullName>Commercial Document Fee (RENEWAL)</fullName>
                 <default>false</default>
-                <label>Loan Origination</label>
+                <label>Commercial Document Fee (RENEWAL)</label>
             </value>
             <value>
-                <fullName>Settlement/Close</fullName>
+                <fullName>Consumer Modification Fee</fullName>
                 <default>false</default>
-                <label>Settlement/Close</label>
+                <label>Consumer Modification Fee</label>
             </value>
             <value>
-                <fullName>State Tax Stamps</fullName>
+                <fullName>Copy Fee</fullName>
                 <default>false</default>
-                <label>State Tax Stamps</label>
+                <label>Copy Fee</label>
+            </value>
+            <value>
+                <fullName>Courier Fee</fullName>
+                <default>false</default>
+                <label>Courier Fee</label>
+            </value>
+            <value>
+                <fullName>Credit Reporting Fee (CBR)</fullName>
+                <default>false</default>
+                <label>Credit Reporting Fee (CBR)</label>
+            </value>
+            <value>
+                <fullName>Delivery/Overnight Fee</fullName>
+                <default>false</default>
+                <label>Delivery/Overnight Fee</label>
+            </value>
+            <value>
+                <fullName>Discount Fee</fullName>
+                <default>false</default>
+                <label>Discount Fee</label>
+            </value>
+            <value>
+                <fullName>Draw Fees</fullName>
+                <default>false</default>
+                <label>Draw Fees</label>
+            </value>
+            <value>
+                <fullName>Endorsements</fullName>
+                <default>false</default>
+                <label>Endorsements</label>
+            </value>
+            <value>
+                <fullName>Environmental Report Fee</fullName>
+                <default>false</default>
+                <label>Environmental Report Fee</label>
+            </value>
+            <value>
+                <fullName>E-recording Fee</fullName>
+                <default>false</default>
+                <label>E-recording Fee</label>
+            </value>
+            <value>
+                <fullName>Escrow Fee</fullName>
+                <default>false</default>
+                <label>Escrow Fee</label>
+            </value>
+            <value>
+                <fullName>Extension Fee</fullName>
+                <default>false</default>
+                <label>Extension Fee</label>
+            </value>
+            <value>
+                <fullName>FedEx, UPS, Postage</fullName>
+                <default>false</default>
+                <label>FedEx, UPS, Postage</label>
+            </value>
+            <value>
+                <fullName>Flood Determination</fullName>
+                <default>false</default>
+                <label>Flood Determination</label>
+            </value>
+            <value>
+                <fullName>Guaranty Fee</fullName>
+                <default>false</default>
+                <label>Guaranty Fee</label>
+            </value>
+            <value>
+                <fullName>HOA Fee</fullName>
+                <default>false</default>
+                <label>HOA Fee</label>
+            </value>
+            <value>
+                <fullName>Homeowners Insurance Fee</fullName>
+                <default>false</default>
+                <label>Homeowners Insurance Fee</label>
+            </value>
+            <value>
+                <fullName>Initial Escrow Deposit Account</fullName>
+                <default>false</default>
+                <label>Initial Escrow Deposit Account</label>
+            </value>
+            <value>
+                <fullName>Inspection Fees</fullName>
+                <default>false</default>
+                <label>Inspection Fees</label>
+            </value>
+            <value>
+                <fullName>Lenders Title Insurance</fullName>
+                <default>false</default>
+                <label>Lenders Title Insurance</label>
+            </value>
+            <value>
+                <fullName>Letter of Credit Fee</fullName>
+                <default>false</default>
+                <label>Letter of Credit Fee</label>
+            </value>
+            <value>
+                <fullName>Loan Origination ($)</fullName>
+                <default>false</default>
+                <label>Loan Origination ($)</label>
+            </value>
+            <value>
+                <fullName>Loan Origination (%)</fullName>
+                <default>false</default>
+                <label>Loan Origination (%)</label>
+            </value>
+            <value>
+                <fullName>Mobile Notary</fullName>
+                <default>false</default>
+                <label>Mobile Notary</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Owners Title Insurance Fee</fullName>
+                <default>false</default>
+                <label>Owners Title Insurance Fee</label>
+            </value>
+            <value>
+                <fullName>Processing Fee</fullName>
+                <default>false</default>
+                <label>Processing Fee</label>
+            </value>
+            <value>
+                <fullName>Processing Fee &lt; $250k</fullName>
+                <default>false</default>
+                <label>Processing Fee &lt; $250k</label>
+            </value>
+            <value>
+                <fullName>Processing Fee &gt; $250k</fullName>
+                <default>false</default>
+                <label>Processing Fee &gt; $250k</label>
+            </value>
+            <value>
+                <fullName>Property Taxes</fullName>
+                <default>false</default>
+                <label>Property Taxes</label>
+            </value>
+            <value>
+                <fullName>Recording Fee</fullName>
+                <default>false</default>
+                <label>Recording Fee</label>
+            </value>
+            <value>
+                <fullName>Research Fee</fullName>
+                <default>false</default>
+                <label>Research Fee</label>
+            </value>
+            <value>
+                <fullName>SBA Guaranty Fee</fullName>
+                <default>false</default>
+                <label>SBA Guaranty Fee</label>
+            </value>
+            <value>
+                <fullName>SBA Packaging Fee</fullName>
+                <default>false</default>
+                <label>SBA Packaging Fee</label>
+            </value>
+            <value>
+                <fullName>Settlement/Closing Fee</fullName>
+                <default>false</default>
+                <label>Settlement/Closing Fee</label>
             </value>
             <value>
                 <fullName>Survey</fullName>
@@ -57,14 +222,39 @@
                 <label>Survey</label>
             </value>
             <value>
-                <fullName>Title Insurance</fullName>
+                <fullName>Tax Certificate</fullName>
                 <default>false</default>
-                <label>Title Insurance</label>
+                <label>Tax Certificate</label>
             </value>
             <value>
-                <fullName>Title Search</fullName>
+                <fullName>Tax Service Fee</fullName>
                 <default>false</default>
-                <label>Title Search</label>
+                <label>Tax Service Fee</label>
+            </value>
+            <value>
+                <fullName>Third Party Service Fees</fullName>
+                <default>false</default>
+                <label>Third Party Service Fees</label>
+            </value>
+            <value>
+                <fullName>Title Fee</fullName>
+                <default>false</default>
+                <label>Title Fee</label>
+            </value>
+            <value>
+                <fullName>UCC Fee</fullName>
+                <default>false</default>
+                <label>UCC Fee</label>
+            </value>
+            <value>
+                <fullName>VOE</fullName>
+                <default>false</default>
+                <label>VOE</label>
+            </value>
+            <value>
+                <fullName>Wire Fee</fullName>
+                <default>false</default>
+                <label>Wire Fee</label>
             </value>
         </valueSetDefinition>
     </valueSet>
