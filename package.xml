@@ -19123,6 +19123,7 @@
         <members>LLC_BI__AccountDocument__c.NDOC__Year__c</members>
         <members>LLC_BI__AccountDocument__c.NDOC__fileName__c</members>
         <members>LLC_BI__AccountDocument__c.NDOC__isTrash__c</members>
+        <members>LLC_BI__AccountDocument__c.Uploaded_Notified_User__c</members>
         <members>LLC_BI__Account_Collateral__c.LLC_BI__Account__c</members>
         <members>LLC_BI__Account_Collateral__c.LLC_BI__Collateral_Association__c</members>
         <members>LLC_BI__Account_Collateral__c.LLC_BI__Collateral__c</members>
@@ -20677,6 +20678,7 @@
         <members>LLC_BI__Funding_Method__c.LLC_BI__Funding_User_ID__c</members>
         <members>LLC_BI__Funding_Method__c.LLC_BI__lookupKey__c</members>
         <members>LLC_BI__Funding_Method__c.cm_Account_Number_Confirm__c</members>
+        <members>LLC_BI__Funding_Method__c.cm_Routing_Number_confirm__c</members>
         <members>LLC_BI__Id_Document_Requirement__c.LLC_BI__Relationship_Type__c</members>
         <members>LLC_BI__Id_Document_Requirement__c.LLC_BI__Total_Documents_Required__c</members>
         <members>LLC_BI__Id_Document_Requirement__c.LLC_BI__lookupKey__c</members>
@@ -20796,6 +20798,7 @@
         <members>LLC_BI__LLC_LoanDocument__c.LLC_BI__reviewedBy__c</members>
         <members>LLC_BI__LLC_LoanDocument__c.LLC_BI__sortOrder__c</members>
         <members>LLC_BI__LLC_LoanDocument__c.LLC_BI__version__c</members>
+        <members>LLC_BI__LLC_LoanDocument__c.Lending_Assistant_Notified_User__c</members>
         <members>LLC_BI__LLC_LoanDocument__c.NDOC__Account__c</members>
         <members>LLC_BI__LLC_LoanDocument__c.NDOC__Created_By_Closing_Checklist_Id__c</members>
         <members>LLC_BI__LLC_LoanDocument__c.NDOC__HasBeenWaived__c</members>
@@ -20812,6 +20815,7 @@
         <members>LLC_BI__LLC_LoanDocument__c.NDOC__isTrash__c</members>
         <members>LLC_BI__LLC_LoanDocument__c.NDOC__neededByStage__c</members>
         <members>LLC_BI__LLC_LoanDocument__c.NDOC__year__c</members>
+        <members>LLC_BI__LLC_LoanDocument__c.Uploaded_Notified_User__c</members>
         <members>LLC_BI__Legal_Entities__c.Integration_Source__c</members>
         <members>LLC_BI__Legal_Entities__c.LLC_BI__Account__c</members>
         <members>LLC_BI__Legal_Entities__c.LLC_BI__Address__c</members>
@@ -28178,6 +28182,8 @@
         <members>PSO_Email_Templates/ET63_Package_Submitted</members>
         <members>PSO_Email_Templates/ET64_Package_Approved</members>
         <members>PSO_Email_Templates/ET65_Package_Rejected</members>
+        <members>PSO_Email_Templates/ET66_Relationship_Document_Uploaded</members>
+        <members>PSO_Email_Templates/ET67_Loan_Document_Uploaded</members>
         <members>nBRIDGER__OFAC_Notifications</members>
         <members>nBRIDGER__OFAC_Notifications/nBRIDGER__OFACMatchNotification</members>
         <members>nBRIDGER__OFAC_Notifications/nBRIDGER__OFACMoreInformationNotification</members>
@@ -29136,6 +29142,7 @@
     </types>
     <types>
         <members>Account_Created_Updates</members>
+        <members>Account_Document_Portal_Enabled_Notification</members>
         <members>Account_NAICS_Code_is_Changed</members>
         <members>Advance_Deal</members>
         <members>CLA_Draw_Auto_Submit_for_Approval</members>
@@ -29158,8 +29165,10 @@
         <members>Loan_After_Save_Loan_Name_Update</members>
         <members>Loan_Application_On_Hold</members>
         <members>Loan_Created_Set_Create_Fields_Records</members>
+        <members>Loan_Document_Portal_Enabled_Notification</members>
         <members>Loan_ECOA_Notifications</members>
         <members>Loan_Is_Ready_For_Review</members>
+        <members>Loan_LO_or_LA_Changed_Update_Portal_Docs</members>
         <members>Loan_RFI_Received</members>
         <members>Loan_Set_Initial_Application_Date</members>
         <members>Loan_Update_Product_Package_Fields_for_Approval_Process_Record_Trigger_Flow</members>
@@ -29181,6 +29190,7 @@
         <members>REG_O_Questionnaire_Rendering_Invocable</members>
         <members>REG_W_Questionnaire_Rendering_Invocable</members>
         <members>Relationship_Evaluation_LoanAutoDecision</members>
+        <members>Relationship_RM_Changed_Update_Portal_Docs</members>
         <members>Retail_LoanAutoDecision</members>
         <members>SCOC__Credit_Pass_Review_SCOC</members>
         <members>SCOC__Credit_Pass_Review_Template_SCOC</members>
@@ -32189,6 +32199,8 @@
         <name>WebLink</name>
     </types>
     <types>
+        <members>LLC_BI__AccountDocument__c.CP_Relationship_Document_Uploaded</members>
+        <members>LLC_BI__LLC_LoanDocument__c.CP_Loan_Document_Uploaded</members>
         <members>LLC_BI__Product_Package__c.PP_Approved_Email</members>
         <members>LLC_BI__Product_Package__c.PP_Rejected_Email</members>
         <name>WorkflowAlert</name>

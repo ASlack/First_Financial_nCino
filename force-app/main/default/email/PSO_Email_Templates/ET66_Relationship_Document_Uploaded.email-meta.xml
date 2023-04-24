@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Used to notify that Portal Relationship Document Has Been Uploaded</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>nCino_Email_Letterhead</letterhead>
+    <name>ET66 - Relationship Document Uploaded</name>
+    <style>freeForm</style>
+    <subject>*** A Customer has uploaded a Relationship Document - Relationship &quot;{!Account.Name}&quot; ***</subject>
+    <textOnly>Hello {!Organization.Name} Team Member,
+
+A Relationship Document has been uploaded for {!Account.Name}.
+
+Document Name: {!LLC_BI__AccountDocument__c.Name}
+
+Click here for full details:  {!Account.Link}.
+
+nCino
+
+ET66</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

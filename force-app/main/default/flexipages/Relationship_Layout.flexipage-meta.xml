@@ -305,7 +305,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>title</name>
-                    <value>Contacts &amp; Connections</value>
+                    <value>Connections</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:tab</componentName>
                 <identifier>flexipage_tab4</identifier>
@@ -618,69 +618,14 @@
                             <value>Edit</value>
                         </valueListItems>
                         <valueListItems>
-                            <value>CustomButton.Account.LLC_BI__review</value>
-                        </valueListItems>
-                        <valueListItems>
                             <value>CustomButton.Account.nCRED__StatementLauncher</value>
                         </valueListItems>
                         <valueListItems>
                             <value>FeedItem.TextPost</value>
                         </valueListItems>
                         <valueListItems>
-                            <value>CustomButton.Account.LLC_BI__New_Deposit</value>
-                            <visibilityRule>
-                                <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7 AND 8</booleanFilter>
-                                <criteria>
-                                    <leftValue>{!Record.Type}</leftValue>
-                                    <operator>NE</operator>
-                                    <rightValue>Individual</rightValue>
-                                </criteria>
-                                <criteria>
-                                    <leftValue>{!Record.Type}</leftValue>
-                                    <operator>NE</operator>
-                                    <rightValue>Business Trust</rightValue>
-                                </criteria>
-                                <criteria>
-                                    <leftValue>{!Record.Type}</leftValue>
-                                    <operator>NE</operator>
-                                    <rightValue>Unincorporated Association</rightValue>
-                                </criteria>
-                                <criteria>
-                                    <leftValue>{!Record.Type}</leftValue>
-                                    <operator>NE</operator>
-                                    <rightValue>Trust (not formed by a SOS filing)</rightValue>
-                                </criteria>
-                                <criteria>
-                                    <leftValue>{!Record.Type}</leftValue>
-                                    <operator>NE</operator>
-                                    <rightValue>Sole Proprietorship</rightValue>
-                                </criteria>
-                                <criteria>
-                                    <leftValue>{!Record.Type}</leftValue>
-                                    <operator>NE</operator>
-                                    <rightValue>Government entity</rightValue>
-                                </criteria>
-                                <criteria>
-                                    <leftValue>{!Record.UnsupportedBusiness__c}</leftValue>
-                                    <operator>EQUAL</operator>
-                                    <rightValue>false</rightValue>
-                                </criteria>
-                                <criteria>
-                                    <leftValue>{!Record.Country_of_Incorporation__c}</leftValue>
-                                    <operator>EQUAL</operator>
-                                    <rightValue>US</rightValue>
-                                </criteria>
-                            </visibilityRule>
-                        </valueListItems>
-                        <valueListItems>
                             <value>LoginToNetworkAsPersonUser</value>
                             <visibilityRule>
-                                <booleanFilter>1 OR 2</booleanFilter>
-                                <criteria>
-                                    <leftValue>{!$User.UserRole.Name}</leftValue>
-                                    <operator>CONTAINS</operator>
-                                    <rightValue>Relationship Officer</rightValue>
-                                </criteria>
                                 <criteria>
                                     <leftValue>{!$User.UserRole.Name}</leftValue>
                                     <operator>EQUAL</operator>
