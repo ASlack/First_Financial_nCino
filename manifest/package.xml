@@ -28575,6 +28575,7 @@
         <members>LLC_BI__Excluded_Exposure__c.LLC_BI__Exposure_Exclusion_Enable</members>
         <members>LLC_BI__Fee_Loan_Aggregate__c.LLC_BI__Enhanced_Fee_Loan_Aggregate_Summary</members>
         <members>LLC_BI__Fee_Loan_Aggregate__c.LLC_BI__Pricing_Option_Fee_Aggregate_Summary</members>
+        <members>LLC_BI__Fee__c.Add_New_Other_Fees</members>
         <members>LLC_BI__Fee__c.Amount</members>
         <members>LLC_BI__Fee__c.Credit_Memo_Standard_Loan</members>
         <members>LLC_BI__Fee__c.Credit_Memo_Standard_Review_Account</members>
