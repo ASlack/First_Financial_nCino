@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
-    <description>Create/edit/delete Policy Exceptions</description>
+    <description>Create/edit Policy Exceptions</description>
     <fieldPermissions>
         <editable>true</editable>
         <field>LLC_BI__Policy_Exception__c.LLC_BI__Automatically_Added__c</field>
@@ -62,7 +62,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
-    <label>nCino Create/Edit/Delete Policy Exceptions</label>
+    <label>nCino Create/Edit Policy Exceptions</label>
     <objectPermissions>
         <allowCreate>false</allowCreate>
         <allowDelete>false</allowDelete>
@@ -83,7 +83,7 @@
     </objectPermissions>
     <objectPermissions>
         <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
+        <allowDelete>false</allowDelete>
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>

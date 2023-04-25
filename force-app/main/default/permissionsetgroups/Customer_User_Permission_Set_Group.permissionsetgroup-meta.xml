@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This permission set group holds all of the permission sets for Customer Portal.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Customer User Permission Set Group</label>
+    <permissionSets>nPortal__Customer_User_Permissions</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>
