@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ImpactfromPotentialEconomicRecession__c</fullName>
+    <description>/ Borrower&apos;s Outlook Narrative</description>
+    <externalId>false</externalId>
+    <label>Impact from Potential Economic Recession</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Html</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

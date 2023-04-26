@@ -61330,9 +61330,39 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.AnalysisTrendBorrowersFinancialNar__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.AnalysisTrendCreditworthinessNarrat__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.AnalysisTrendGuarantorsFinancial__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.AnalysisTrendOwnershipChangeNarrat__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.AnalysisTrendRLOCNarrative__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Account.AnnualRevenue</field>
         <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.AssessedValuationsTop10TaxPayers__c</field>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -61343,6 +61373,11 @@
         <editable>false</editable>
         <field>Account.Billing_Address__c</field>
         <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.BondRatingNarrative__c</field>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -61358,6 +61393,11 @@
         <editable>false</editable>
         <field>Account.Country_of_Incorporation__c</field>
         <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.DebtSummaryNarrative__c</field>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -61380,9 +61420,24 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.FinancialReviewNarrative__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.ImpactfromPotentialEconomicRecession__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Account.Industry</field>
         <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.IndustryDataAwardsNarrative__c</field>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -62175,6 +62230,21 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.LeverageNarrative__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.LiquidityNarrative__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.LoanReviewCommentsNarrative__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Account.ManualReviewRequired__c</field>
         <readable>false</readable>
@@ -62210,6 +62280,11 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.OverviewandBackgroundCommentsNarrati__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Account.Ownership</field>
         <readable>false</readable>
@@ -62228,6 +62303,11 @@
         <editable>false</editable>
         <field>Account.Primary_Industry__c</field>
         <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.ProfitabilityNarrative__c</field>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -62263,6 +62343,11 @@
         <editable>false</editable>
         <field>Account.Secondary_Industry__c</field>
         <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.SensitivityAnalysisIncomeStatement__c</field>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -80095,6 +80180,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Loan__c.RequestSummaryNarrative__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>LLC_BI__Loan__c.Request_Additional_Funds__c</field>
         <readable>false</readable>
@@ -83391,6 +83481,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>LLC_BI__Product_Package__c.AdequacyofSourceofRepaymentNarrativ__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>LLC_BI__Product_Package__c.Any_Classified_Loan_100M__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -83425,13 +83520,43 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Product_Package__c.CollateralNarrative__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Product_Package__c.ContingentDebtNarrative__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Product_Package__c.CreditBureauReportNarrative__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>LLC_BI__Product_Package__c.Delete_Testing_Approval_Steps__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>LLC_BI__Product_Package__c.DepositoryRelationshipExpectationsNar__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>LLC_BI__Product_Package__c.Enable_10_Rule__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Product_Package__c.FinancialAddendumNarrative__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Product_Package__c.GuarantorComakerCommentsNarrative__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -83796,12 +83921,77 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>LLC_BI__Product_Package__c.LifeInsuranceNarrative__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Product_Package__c.NotestothePersonalFinancialStatemen__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>LLC_BI__Product_Package__c.Package_Secure_Type__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>LLC_BI__Product_Package__c.PolicyExceptionsCommentsNarrative__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Product_Package__c.PrimaryNotestoHistoricalCashFlowNa__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Product_Package__c.PrimarySourcesofRepaymentInfoNarrat__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>LLC_BI__Product_Package__c.Region__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Product_Package__c.SecondaryNotestoHistoricalCashFlow__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Product_Package__c.SecondarySourcesofRepaymentInfoNarr__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Product_Package__c.SensitivityAnalysisCashFlowCoverag__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Product_Package__c.StrengthsNarrative__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Product_Package__c.TaxReturnsNarrative__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Product_Package__c.TertiaryNotestoHistoricalCashFlow__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Product_Package__c.TertiarySourcesofRepaymentInfoNarra__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Product_Package__c.WeaknessesNarrative__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

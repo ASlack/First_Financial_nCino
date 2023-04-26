@@ -26,12 +26,15 @@
                     <value>800</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
+                    <name>label</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
                     <name>pageName</name>
                     <value>NDOC__UniversalDocMan</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>showLabel</name>
-                    <value>true</value>
+                    <value>false</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:visualforcePage</componentName>
                 <identifier>flexipage_visualforcePage</identifier>
@@ -63,6 +66,16 @@
             </componentInstance>
         </itemInstances>
         <name>Facet-91384382-a567-4fdb-b647-a260b821eeb8</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentName>nFORMS:dgDocumentGeneration</componentName>
+                <identifier>nFORMS_dgDocumentGeneration</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>Facet-5035f0de-fdcf-42fa-b5f9-3f9dbb81c04a</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -130,6 +143,20 @@
                 </componentInstanceProperties>
                 <componentName>flexipage:tab</componentName>
                 <identifier>flexipage_tab</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-5035f0de-fdcf-42fa-b5f9-3f9dbb81c04a</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>Document Generation</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>flexipage_tab2</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>

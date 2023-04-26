@@ -48,6 +48,11 @@
     </availableFields>
     <description>Field set that appears in second section of Memo Details</description>
     <displayedFields>
+        <field>Loan_Information_Change__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
         <field>CLA_Budget_Amount_Change__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>

@@ -6,6 +6,7 @@
     <columns>LLC_BI__Amount__c</columns>
     <columns>LLC_BI__Account__c</columns>
     <columns>LLC_BI__Product_Line__c</columns>
+    <columns>Region__c</columns>
     <columns>LLC_BI__Product_Type__c</columns>
     <columns>LLC_BI__Product__c</columns>
     <columns>LLC_BI__InterestRate__c</columns>
@@ -19,5 +20,4 @@
         <value>Credit Underwriting</value>
     </filters>
     <label>Stage = Credit Underwriting</label>
-    <language>en_US</language>
 </ListView>
