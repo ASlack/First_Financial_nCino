@@ -78881,6 +78881,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>LLC_BI__Loan__c.Loan_Secured_by_1st_Lien_on_Dwelling__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>LLC_BI__Loan__c.Lost_Reason__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -79076,12 +79081,42 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>LLC_BI__Loan__c.cm_Property_is_in_a_Flood_Zone__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>LLC_BI__Loan__c.cm_Roll_Up_Adverse_Action__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>LLC_BI__Loan__c.cm_Today_s_Date__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LLC_BI__Loan__c.ffin_Credit_Manager_Reviewer__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LLC_BI__Loan__c.ffin_Docs_Needed_By__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LLC_BI__Loan__c.ffin_Docs_Review_Needed__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LLC_BI__Loan__c.ffin_Request_Needed_By__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LLC_BI__Loan__c.ffin_Request_Type__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -82922,6 +82957,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>LLC_BI__Product__c.cm_Static_Name__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LLC_BI__Product__c.ffin_Product_Bucket__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -100715,6 +100755,10 @@
     <flowAccesses>
         <enabled>false</enabled>
         <flow>Loan_Created_Set_Create_Fields_Records</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Loan_Updated_Amount_RR_Update_Product_Package</flow>
     </flowAccesses>
     <layoutAssignments>
         <layout>Account-Account %28Vendor%29</layout>

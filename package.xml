@@ -21913,6 +21913,11 @@
         <members>LLC_BI__Loan__c.cm_Property_is_in_a_Flood_Zone__c</members>
         <members>LLC_BI__Loan__c.cm_Roll_Up_Adverse_Action__c</members>
         <members>LLC_BI__Loan__c.cm_Today_s_Date__c</members>
+        <members>LLC_BI__Loan__c.ffin_Credit_Manager_Reviewer__c</members>
+        <members>LLC_BI__Loan__c.ffin_Docs_Needed_By__c</members>
+        <members>LLC_BI__Loan__c.ffin_Docs_Review_Needed__c</members>
+        <members>LLC_BI__Loan__c.ffin_Request_Needed_By__c</members>
+        <members>LLC_BI__Loan__c.ffin_Request_Type__c</members>
         <members>LLC_BI__Loan__c.zen_Compliance_Officer__c</members>
         <members>LLC_BI__Loan__c.zen_Narrative_10__c</members>
         <members>LLC_BI__Loan__c.zen_Narrative_11__c</members>
@@ -22807,6 +22812,7 @@
         <members>LLC_BI__Product__c.LLC_BI__lookupKey__c</members>
         <members>LLC_BI__Product__c.cm_Informatica_Product_Code__c</members>
         <members>LLC_BI__Product__c.cm_Static_Name__c</members>
+        <members>LLC_BI__Product__c.ffin_Product_Bucket__c</members>
         <members>LLC_BI__Product__c.nPortal__Can_Pledge_Multiple_Collateral__c</members>
         <members>LLC_BI__Product__c.nPortal__External_Name__c</members>
         <members>LLC_BI__Product__c.nPortal__OA_Approval_Next_Steps__c</members>
@@ -29635,6 +29641,7 @@
         <members>Loan_RFI_Received</members>
         <members>Loan_Set_Initial_Application_Date</members>
         <members>Loan_Update_Product_Package_Fields_for_Approval_Process_Record_Trigger_Flow</members>
+        <members>Loan_Updated_Amount_RR_Update_Product_Package</members>
         <members>Master_LoanAutoDecision</members>
         <members>Master_Questionnaire_PB</members>
         <members>PB01_1_nCino_CAB_Loan_Stage_Updates</members>
@@ -29699,6 +29706,7 @@
         <members>Loan_RFI_Received</members>
         <members>Loan_Set_Initial_Application_Date</members>
         <members>Loan_Update_Product_Package_Fields_for_Approval_Process_Record_Trigger_Flow</members>
+        <members>Loan_Updated_Amount_RR_Update_Product_Package</members>
         <members>Master_LoanAutoDecision</members>
         <members>Master_Questionnaire_PB</members>
         <members>PB01_1_nCino_CAB_Loan_Stage_Updates</members>
@@ -31433,6 +31441,8 @@
         <members>nCino_Create_Edit_Policy_Exceptions</members>
         <members>nCino_Create_Memos</members>
         <members>nCino_Create_Private_Reports</members>
+        <members>nCino_Credit_Manager_Review_Edit_Access</members>
+        <members>nCino_Credit_Manager_Review_View_Access</members>
         <members>nCino_Credit_Underwriter_Persona</members>
         <members>nCino_Delete_Participations</members>
         <members>nCino_Delete_Policy_Exceptions</members>

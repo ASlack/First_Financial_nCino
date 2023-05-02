@@ -37,6 +37,10 @@
                 <behavior>Edit</behavior>
                 <field>LLC_BI__RealEstate_Type__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>ffin_Product_Bucket__c</field>
+            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>

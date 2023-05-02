@@ -80058,6 +80058,31 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>LLC_BI__Loan__c.ffin_Credit_Manager_Reviewer__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Loan__c.ffin_Docs_Needed_By__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Loan__c.ffin_Docs_Review_Needed__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Loan__c.ffin_Request_Needed_By__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Loan__c.ffin_Request_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>LLC_BI__Loan__c.zen_Compliance_Officer__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -84249,6 +84274,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>LLC_BI__Product__c.cm_Static_Name__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LLC_BI__Product__c.ffin_Product_Bucket__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -102092,6 +102122,10 @@
     <flowAccesses>
         <enabled>false</enabled>
         <flow>Loan_Lost_Reason_Set_Update_Status</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Loan_Updated_Amount_RR_Update_Product_Package</flow>
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
