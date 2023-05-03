@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
+        <field>LLC_BI__Loan__c.ffin_Request_Needed_By__c</field>
+    </columns>
+    <columns>
         <field>CUST_NAME</field>
     </columns>
     <columns>
@@ -39,6 +42,13 @@
             <operator>equals</operator>
             <value>Credit Underwriting</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>LLC_BI__Loan__c.ffin_Lender_Plans_to_Underwrite__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>No</value>
+        </criteriaItems>
         <language>en_US</language>
     </filter>
     <format>Summary</format>
@@ -50,6 +60,11 @@
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>LLC_BI__Loan__c.LLC_BI__Branch__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>LLC_BI__Loan__c.ffin_Request_Type__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Loans Needing Credit Analyst</name>

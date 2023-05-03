@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Request_Type_Spreads_n_Cash_Flow</fullName>
+    <active>true</active>
+    <description>When Request Type is set to ‘Spreads &amp; Cash Flow’, Request Needed By cannot be set to Today’s Date.  Stop user when moving to Credit Underwriting.</description>
+    <errorConditionFormula>AND(
+$User.No_Validation__c = False,
+ISPICKVAL(ffin_Request_Type__c, &quot;Spreads &amp; Cash Flow&quot;),
+ffin_Request_Needed_By__c &lt;= TODAY(),
+ISCHANGED(LLC_BI__Stage__c),
+ISPICKVAL(LLC_BI__Stage__c, &quot;Credit Underwriting&quot;)
+)</errorConditionFormula>
+    <errorMessage>Request Needed By cannot be set in the past or today&apos;s date when requesting &apos;Spreads &amp; Cash Flow&apos;</errorMessage>
+</ValidationRule>

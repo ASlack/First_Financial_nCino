@@ -263,12 +263,16 @@
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>$User.No_Workflow__c = True</stringValue>
+                <stringValue>OR(
+$User.No_Workflow__c = True,
+$Permission.Integration_Trigger_Kill_Switch = True)</stringValue>
             </value>
         </processMetadataValues>
         <name>formula_myRule_1</name>
         <dataType>Boolean</dataType>
-        <expression>{!$User.No_Workflow__c} = True</expression>
+        <expression>OR(
+{!$User.No_Workflow__c} = True,
+{!$Permission.Integration_Trigger_Kill_Switch} = True)</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
@@ -389,7 +393,7 @@ NOT(ISBLANK({!myVariable_current.LLC_BI__User__c} )),
 {!myVariable_current.LLC_BI__Assigned_Role__r.Name} = &apos;Doc Prep Processor&apos;
 )</expression>
     </formulas>
-    <interviewLabel>PB02_nCino_PMB_Update_LTM_Lookup_Fields_on_Loan-3_InterviewLabel</interviewLabel>
+    <interviewLabel>PB02_nCino_PMB_Update_LTM_Lookup_Fields_on_Loan-4_InterviewLabel</interviewLabel>
     <label>PB02 - nCino - PMB - Update LTM Lookup Fields on Loan</label>
     <processMetadataValues>
         <name>ObjectType</name>

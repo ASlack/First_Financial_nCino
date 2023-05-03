@@ -3,6 +3,8 @@
     <fullName>LLC_BI__All</fullName>
     <columns>NAME</columns>
     <columns>LLC_BI__lookupKey__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>LAST_UPDATE</columns>
     <filterScope>Everything</filterScope>
     <label>All</label>
     <language>en_US</language>

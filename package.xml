@@ -21916,6 +21916,7 @@
         <members>LLC_BI__Loan__c.ffin_Credit_Manager_Reviewer__c</members>
         <members>LLC_BI__Loan__c.ffin_Docs_Needed_By__c</members>
         <members>LLC_BI__Loan__c.ffin_Docs_Review_Needed__c</members>
+        <members>LLC_BI__Loan__c.ffin_Lender_Plans_to_Underwrite__c</members>
         <members>LLC_BI__Loan__c.ffin_Request_Needed_By__c</members>
         <members>LLC_BI__Loan__c.ffin_Request_Type__c</members>
         <members>LLC_BI__Loan__c.zen_Compliance_Officer__c</members>
@@ -29635,6 +29636,7 @@
         <members>Loan_Created_Set_Create_Fields_Records</members>
         <members>Loan_Document_Portal_Enabled_Notification</members>
         <members>Loan_ECOA_Notifications</members>
+        <members>Loan_Fast_Update_Update_Status_to_Open</members>
         <members>Loan_Is_Ready_For_Review</members>
         <members>Loan_LO_or_LA_Changed_Update_Portal_Docs</members>
         <members>Loan_Lost_Reason_Set_Update_Status</members>
@@ -29642,6 +29644,7 @@
         <members>Loan_Set_Initial_Application_Date</members>
         <members>Loan_Update_Product_Package_Fields_for_Approval_Process_Record_Trigger_Flow</members>
         <members>Loan_Updated_Amount_RR_Update_Product_Package</members>
+        <members>Loan_Updated_Lender_Plans_to_Underwrite</members>
         <members>Master_LoanAutoDecision</members>
         <members>Master_Questionnaire_PB</members>
         <members>PB01_1_nCino_CAB_Loan_Stage_Updates</members>
@@ -29700,6 +29703,7 @@
         <members>Loan_Created_Set_Create_Fields_Records</members>
         <members>Loan_Document_Portal_Enabled_Notification</members>
         <members>Loan_ECOA_Notifications</members>
+        <members>Loan_Fast_Update_Update_Status_to_Open</members>
         <members>Loan_Is_Ready_For_Review</members>
         <members>Loan_LO_or_LA_Changed_Update_Portal_Docs</members>
         <members>Loan_Lost_Reason_Set_Update_Status</members>
@@ -29707,6 +29711,7 @@
         <members>Loan_Set_Initial_Application_Date</members>
         <members>Loan_Update_Product_Package_Fields_for_Approval_Process_Record_Trigger_Flow</members>
         <members>Loan_Updated_Amount_RR_Update_Product_Package</members>
+        <members>Loan_Updated_Lender_Plans_to_Underwrite</members>
         <members>Master_LoanAutoDecision</members>
         <members>Master_Questionnaire_PB</members>
         <members>PB01_1_nCino_CAB_Loan_Stage_Updates</members>
@@ -31593,6 +31598,8 @@
         <members>CollaborationGroup.NewGroupRecord</members>
         <members>FeedItem.NewTaskFromFeedItem</members>
         <members>LLC_BI__Covenant2__c.Update_Next_Evaluation_Date</members>
+        <members>LLC_BI__Loan__c.Doc_Prep_Request</members>
+        <members>LLC_BI__Loan__c.Request_for_Underwriting</members>
         <members>LLC_BI__Product_Package__c.Advance_Deal</members>
         <members>LLC_BI__Product_Package__c.Update_Product_Package</members>
         <members>LLC_BI__Review__c.Approval_Details</members>
@@ -32630,6 +32637,8 @@
         <members>LLC_BI__Loan__c.LLC_BI__Rate_Ceiling_Higher_Or_Equal_To_Floor</members>
         <members>LLC_BI__Loan__c.LLC_BI__Rate_Floor_Lower_Or_Equal_To_Ceiling</members>
         <members>LLC_BI__Loan__c.LLC_BI__Takedown_Amount_Less_Or_Equal_Parent</members>
+        <members>LLC_BI__Loan__c.Lender_Does_Not_Plan_to_Underwrite</members>
+        <members>LLC_BI__Loan__c.Lender_Plans_to_Underwrite</members>
         <members>LLC_BI__Loan__c.Loan_Validation_01</members>
         <members>LLC_BI__Loan__c.Loan_Validation_02</members>
         <members>LLC_BI__Loan__c.Loan_Validation_03</members>
@@ -32640,6 +32649,10 @@
         <members>LLC_BI__Loan__c.Loan_Validation_09</members>
         <members>LLC_BI__Loan__c.Loan_Validation_10</members>
         <members>LLC_BI__Loan__c.Reg_B_Dates</members>
+        <members>LLC_BI__Loan__c.Request_Type_Full_Presentation</members>
+        <members>LLC_BI__Loan__c.Request_Type_Loan_Amount_Validation</members>
+        <members>LLC_BI__Loan__c.Request_Type_Spreads_n_Cash_Flow</members>
+        <members>LLC_BI__Loan__c.Request_Type_Streamlined_Presentation</members>
         <members>LLC_BI__Loan__c.Right_To_Copy_Of_Appraisal_Sent_Date</members>
         <members>LLC_BI__Loan__c.Term_Sheet_RFI_Date</members>
         <members>LLC_BI__Loan__c.Withdrawn_Notification_Received_Date</members>

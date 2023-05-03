@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Request_Type_Loan_Amount_Validation</fullName>
+    <active>true</active>
+    <description>Loan Amount must be greater than $300,000 when Request Type is set to ‘Full Loan Presentation’ or &apos;Streamlined Loan Presentation&apos;</description>
+    <errorConditionFormula>AND(
+$User.No_Validation__c = False,
+ISCHANGED(LLC_BI__Stage__c),
+ISPICKVAL(LLC_BI__Stage__c, &quot;Credit Underwriting&quot;),
+LLC_BI__Amount__c &lt; 300000,
+OR(
+ISPICKVAL(ffin_Request_Type__c, &quot;Full Loan Presentation&quot;),
+ISPICKVAL(ffin_Request_Type__c, &quot;Streamlined Loan Presentation&quot;)
+))</errorConditionFormula>
+    <errorMessage>Only deals that are greater than $300,000 can be requested for &apos;Full Loan Presentation&apos; or &apos;Streamlined Loan Presentation&apos;</errorMessage>
+</ValidationRule>

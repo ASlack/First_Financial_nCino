@@ -984,6 +984,17 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>ffin_Lender_Plans_to_Underwrite__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>ffin_Request_Type__c</picklist>
         <values>
             <fullName>Cash Flow Only</fullName>
