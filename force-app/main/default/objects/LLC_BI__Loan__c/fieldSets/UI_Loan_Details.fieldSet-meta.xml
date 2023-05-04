@@ -23,7 +23,7 @@
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>What_is_the_purpose_of_the_loan__c</field>
+        <field>ffin_Purpose_Code__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>

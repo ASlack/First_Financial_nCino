@@ -1,0 +1,17 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[Hello&nbsp;<span style="background-color: rgb(255, 255, 255);">{!Organization.Name}&nbsp;</span>Team Member, 
+<br>
+<br>Review "{!LLC_BI__Review__c.Name}" has been submitted to you for 
+Approval. Please use this link to visit the Record: 
+{!LLC_BI__Review__c.Link}.
+<br>
+<br>After you have reviewed the record, navigate to the "Approval" tab.  Then click on Approve/Reject.  On the next page, 
+enter your comments and either Approve, or Reject, the Review record.
+<br>
+<br>Primary Relationship:&nbsp;{!LLC_BI__Review__c.LLC_BI__Account__c}<div><br></div><div>Review Type: {!LLC_BI__Review__c.LLC_BI__Review_Type__c}<br>
+<br>Primary Officer:&nbsp;{!LLC_BI__Review__c.cm_Loan_Officer__c}<br>
+<br>nCino<div><br></div><div style="text-align: right;">ET68</div></div>]]></td>
+</tr>
+</table>

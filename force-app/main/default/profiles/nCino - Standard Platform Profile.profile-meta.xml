@@ -61437,6 +61437,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Account.CustomerSince__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Account.DebtSummaryNarrative__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -70611,7 +70616,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>LLC_BI__Collateral__c.LLC_BI__Assessment_Method__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -80403,6 +80408,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>LLC_BI__Loan__c.ffin_Lender_Plans_to_Underwrite__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Loan__c.ffin_Purpose_Code__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -102440,11 +102450,31 @@
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
+        <flow>CLA_Draw_Auto_Submit_for_Approval</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
         <flow>Collateral_Valuation_On_Create_Update_Coll_Mgmt</flow>
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
+        <flow>Contact_Create_Edit_All_LOB_Baseline</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Contact_Create_Edit_Master</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Contact_Create_Edit_Primary_Contact_Update</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
         <flow>Entity_Involvement_Assign_Reg_0_and_Employee_on_Loan</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>LLC_BI__Update_Deposit_Is_Booked</flow>
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
@@ -102480,11 +102510,47 @@
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
+        <flow>PB01_1_nCino_CAB_Loan_Stage_Updates</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>PB01_nCino_Master_Loan_PB</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
         <flow>PB02_nCino_PMB_Update_LTM_Lookup_Fields_on_Loan</flow>
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
+        <flow>PB03_nCino_CAB_Set_Loan_Officer_on_Review</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>PB04_nCino_PMB_Populate_Contact_Lookupkey</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>PB05_nCino_CAB_Push_Final_Risk_Grade_Value_to_Loan</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>PB06_nCino_PMB_Populate_Relationship_Lookup_on_Covenant_Mgmt</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Product_Package_Creation_Field_Updates</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
         <flow>Relationship_RM_Changed_Update_Portal_Docs</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Review_Created_Update_Record</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Valuation_Auto_Submit</flow>
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>

@@ -17201,6 +17201,7 @@
         <members>LLC_BI__Product_Package__c.PPAP100_nCino_Gold_Standard_AP</members>
         <members>LLC_BI__Product_Package__c.PP_Sample_Approval_Process</members>
         <members>LLC_BI__Product_Package__c.PP_Two_Approvers_Approval_Process</members>
+        <members>LLC_BI__Review__c.FFIN_Review_AP</members>
         <members>LLC_BI__Review__c.RAP100_nCino_Gold_Standard_AP</members>
         <members>LLC_BI__Transaction_Request__c.CLA_Draw_Approval</members>
         <members>LLC_BI__Valuation__c.Valuation_CLA_Inspection_Manager_Approv</members>
@@ -17374,6 +17375,7 @@
         <members>Account.ChannelProgramName</members>
         <members>Account.Country_of_Citizenship__c</members>
         <members>Account.Country_of_Incorporation__c</members>
+        <members>Account.CustomerSince__c</members>
         <members>Account.DebtSummaryNarrative__c</members>
         <members>Account.Description</members>
         <members>Account.EXUS__Business_Credit_Product__c</members>
@@ -21917,6 +21919,7 @@
         <members>LLC_BI__Loan__c.ffin_Docs_Needed_By__c</members>
         <members>LLC_BI__Loan__c.ffin_Docs_Review_Needed__c</members>
         <members>LLC_BI__Loan__c.ffin_Lender_Plans_to_Underwrite__c</members>
+        <members>LLC_BI__Loan__c.ffin_Purpose_Code__c</members>
         <members>LLC_BI__Loan__c.ffin_Request_Needed_By__c</members>
         <members>LLC_BI__Loan__c.ffin_Request_Type__c</members>
         <members>LLC_BI__Loan__c.zen_Compliance_Officer__c</members>
@@ -28589,6 +28592,7 @@
         <members>PSO_Email_Templates/ET65_Package_Rejected</members>
         <members>PSO_Email_Templates/ET66_Relationship_Document_Uploaded</members>
         <members>PSO_Email_Templates/ET67_Loan_Document_Uploaded</members>
+        <members>PSO_Email_Templates/ET68_Review_Submitted</members>
         <members>nBRIDGER__OFAC_Notifications</members>
         <members>nBRIDGER__OFAC_Notifications/nBRIDGER__OFACMatchNotification</members>
         <members>nBRIDGER__OFAC_Notifications/nBRIDGER__OFACMoreInformationNotification</members>
@@ -29393,6 +29397,7 @@
         <members>LLC_BI__Requirement__c.LLC_BI__Smart_Checklist_Loan_Fields</members>
         <members>LLC_BI__Requirement__c.LLC_BI__Smart_Checklist_Product_Package_Fields</members>
         <members>LLC_BI__Requirement__c.LLC_BI__Smart_Checklist_Treasury_Service_Fields</members>
+        <members>LLC_BI__Review_Account__c.Review_UI_Table</members>
         <members>LLC_BI__Review__c.Credit_Memo_Standard_Review_Account</members>
         <members>LLC_BI__Review__c.Credit_Memo_Standard_Review_Product_Pack</members>
         <members>LLC_BI__Review__c.LLC_BI__Product_Package_Related_List</members>
@@ -29659,11 +29664,13 @@
         <members>PB09_nCino_CAB_Populate_Loan_Lookup_on_Pricing_Payment_Component</members>
         <members>PB10_nCino_CAB_Oppy_LTM_s_on_Loan</members>
         <members>PB1_2_nCino_PMB_Run_HMDA_Automation_Services</members>
+        <members>Product_Package_Creation_Field_Updates</members>
         <members>REG_O_Questionnaire_Rendering_Invocable</members>
         <members>REG_W_Questionnaire_Rendering_Invocable</members>
         <members>Relationship_Evaluation_LoanAutoDecision</members>
         <members>Relationship_RM_Changed_Update_Portal_Docs</members>
         <members>Retail_LoanAutoDecision</members>
+        <members>Review_Created_Update_Record</members>
         <members>SCOC__Credit_Pass_Review_SCOC</members>
         <members>SCOC__Credit_Pass_Review_Template_SCOC</members>
         <members>SCOC__Credit_Report_Type_SCOC</members>
@@ -29726,11 +29733,13 @@
         <members>PB09_nCino_CAB_Populate_Loan_Lookup_on_Pricing_Payment_Component</members>
         <members>PB10_nCino_CAB_Oppy_LTM_s_on_Loan</members>
         <members>PB1_2_nCino_PMB_Run_HMDA_Automation_Services</members>
+        <members>Product_Package_Creation_Field_Updates</members>
         <members>REG_O_Questionnaire_Rendering_Invocable</members>
         <members>REG_W_Questionnaire_Rendering_Invocable</members>
         <members>Relationship_Evaluation_LoanAutoDecision</members>
         <members>Relationship_RM_Changed_Update_Portal_Docs</members>
         <members>Retail_LoanAutoDecision</members>
+        <members>Review_Created_Update_Record</members>
         <members>SCOC__Credit_Pass_Review_SCOC</members>
         <members>SCOC__Credit_Pass_Review_Template_SCOC</members>
         <members>SCOC__Credit_Report_Type_SCOC</members>
@@ -30984,6 +30993,7 @@
         <members>LLC_BI__Loan_Modification__c.LLC_BI__All</members>
         <members>LLC_BI__Loan__c.Abilene_CLC_Loan</members>
         <members>LLC_BI__Loan__c.Abilene_RDLC_Loan</members>
+        <members>LLC_BI__Loan__c.Approved_Not_Booked</members>
         <members>LLC_BI__Loan__c.B_College_Station_CLC_Loan</members>
         <members>LLC_BI__Loan__c.B_College_Station_RDLC_Loan</members>
         <members>LLC_BI__Loan__c.Board_of_Directors_Loan</members>

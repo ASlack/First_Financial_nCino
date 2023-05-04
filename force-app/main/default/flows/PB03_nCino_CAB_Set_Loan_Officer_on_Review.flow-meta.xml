@@ -403,7 +403,7 @@ ISCHANGED({!myVariable_old.00N5e000002WoGp__NotFound})
         <object>LLC_BI__Review__c</object>
     </recordUpdates>
     <startElementReference>myDecision</startElementReference>
-    <status>Active</status>
+    <status>Obsolete</status>
     <variables>
         <name>myVariable_current</name>
         <dataType>SObject</dataType>

@@ -284,7 +284,7 @@ ISBLANK({!SObject.Account.cm_Primary_Contact__c})
         <object>Account</object>
     </recordUpdates>
     <startElementReference>sobjectInputCheckDecision</startElementReference>
-    <status>Active</status>
+    <status>Obsolete</status>
     <variables>
         <name>SObject</name>
         <dataType>SObject</dataType>
