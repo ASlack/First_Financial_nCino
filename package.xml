@@ -17194,10 +17194,12 @@
         <members>LLC_BI__Credit_Memo_Modifcation__c.MAP200_Change_Memo_AP_Not_Required</members>
         <members>LLC_BI__Credit_Memo_Modifcation__c.MAP200_Change_Memo_AP_Required</members>
         <members>LLC_BI__Loan__c.FFIN_Loan_Abilene</members>
+        <members>LLC_BI__Loan__c.FFIN_Loan_Abilene_v2</members>
         <members>LLC_BI__Loan__c.LAP100_Sample_Loan_Approval_Process</members>
         <members>LLC_BI__Loan__c.LAP100_nCino_Gold_Standard_AP</members>
         <members>LLC_BI__Loan__c.PP_Two_Step_Approval_Process</members>
         <members>LLC_BI__Product_Package__c.FFIN_PP_Abilene</members>
+        <members>LLC_BI__Product_Package__c.FFIN_PP_Abilene_v2</members>
         <members>LLC_BI__Product_Package__c.PPAP100_nCino_Gold_Standard_AP</members>
         <members>LLC_BI__Product_Package__c.PP_Sample_Approval_Process</members>
         <members>LLC_BI__Product_Package__c.PP_Two_Approvers_Approval_Process</members>
@@ -17547,6 +17549,7 @@
         <members>Account.LLC_BI__lookupKey__c</members>
         <members>Account.LeverageNarrative__c</members>
         <members>Account.LiquidityNarrative__c</members>
+        <members>Account.LoanAgreementCovenantsNarrative__c</members>
         <members>Account.LoanReviewCommentsNarrative__c</members>
         <members>Account.ManualReviewRequired__c</members>
         <members>Account.Merchant_ID__c</members>
@@ -17560,6 +17563,7 @@
         <members>Account.OwnerId</members>
         <members>Account.Ownership</members>
         <members>Account.ParentId</members>
+        <members>Account.PastDueInformationNarrative__c</members>
         <members>Account.PersonAssistantName</members>
         <members>Account.PersonAssistantPhone</members>
         <members>Account.PersonBirthdate</members>
@@ -21876,6 +21880,7 @@
         <members>LLC_BI__Loan__c.Post_Closing_Review_Comments__c</members>
         <members>LLC_BI__Loan__c.Post_Closing_Review_Completed_By__c</members>
         <members>LLC_BI__Loan__c.Post_Closing_Review_Completed_Date__c</members>
+        <members>LLC_BI__Loan__c.Prepayment_Penalty_Amount__c</members>
         <members>LLC_BI__Loan__c.Primary_Source_of_Repayment__c</members>
         <members>LLC_BI__Loan__c.Property_Subtype__c</members>
         <members>LLC_BI__Loan__c.Property_Type__c</members>
@@ -21891,6 +21896,7 @@
         <members>LLC_BI__Loan__c.Term_Sheet_RFI_Date__c</members>
         <members>LLC_BI__Loan__c.Term_Sheet_RFI_Due_Date__c</members>
         <members>LLC_BI__Loan__c.Tertiary_Source_of_Repayment__c</members>
+        <members>LLC_BI__Loan__c.Today_s_Date_30__c</members>
         <members>LLC_BI__Loan__c.UW_RFI_Date__c</members>
         <members>LLC_BI__Loan__c.UW_RFI_Due_Date__c</members>
         <members>LLC_BI__Loan__c.UW_RFI_Received_Date__c</members>
@@ -32658,6 +32664,7 @@
         <members>LLC_BI__Loan__c.Loan_Validation_07</members>
         <members>LLC_BI__Loan__c.Loan_Validation_09</members>
         <members>LLC_BI__Loan__c.Loan_Validation_10</members>
+        <members>LLC_BI__Loan__c.Prepayment_Penalty_Amount_Required</members>
         <members>LLC_BI__Loan__c.Reg_B_Dates</members>
         <members>LLC_BI__Loan__c.Request_Type_Full_Presentation</members>
         <members>LLC_BI__Loan__c.Request_Type_Loan_Amount_Validation</members>

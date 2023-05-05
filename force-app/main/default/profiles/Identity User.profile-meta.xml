@@ -62246,6 +62246,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Account.LoanAgreementCovenantsNarrative__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Account.LoanReviewCommentsNarrative__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -62298,6 +62303,11 @@
         <editable>true</editable>
         <field>Account.ParentId</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.PastDueInformationNarrative__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -80156,6 +80166,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>LLC_BI__Loan__c.Prepayment_Penalty_Amount__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>LLC_BI__Loan__c.Primary_Source_of_Repayment__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -80227,6 +80242,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>LLC_BI__Loan__c.Tertiary_Source_of_Repayment__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LLC_BI__Loan__c.Today_s_Date_30__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

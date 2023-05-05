@@ -51,6 +51,16 @@ Loan__c.Monthly_Payment__c</description>
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
+        <field>LLC_BI__Prepayment_Penalty__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>Prepayment_Penalty_Amount__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
         <field>LLC_BI__Next_Rate_Change_Date__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
