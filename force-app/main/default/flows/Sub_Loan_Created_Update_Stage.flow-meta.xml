@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <decisions>
+        <name>Kill_Switch</name>
+        <label>Kill Switch</label>
+        <locationX>176</locationX>
+        <locationY>311</locationY>
+        <defaultConnector>
+            <targetReference>Structure_Hierarchy_Check</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Kill_Switch_True</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Permission.Integration_Trigger_Kill_Switch</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$User.No_Workflow__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Kill Switch = True</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Structure_Hierarchy_Check</name>
+        <label>Structure Hierarchy Check</label>
+        <locationX>440</locationX>
+        <locationY>431</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Limit_or_SubLimit</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.LLC_BI__Structure_Hierarchy__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Limit</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.LLC_BI__Structure_Hierarchy__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Sub Limit</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Child_Loan</targetReference>
+            </connector>
+            <label>Limit or SubLimit</label>
+        </rules>
+        <rules>
+            <name>Takedown</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.LLC_BI__Structure_Hierarchy__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Takedown</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Takedown_to_Booking_Funding</targetReference>
+            </connector>
+            <label>Takedown</label>
+        </rules>
+    </decisions>
+    <description>When a Sub Loan is created - Update stage accordingly</description>
+    <environments>Default</environments>
+    <interviewLabel>Sub Loan Created - Update Stage {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Sub Loan Created - Update Stage</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Child_Loan</name>
+        <label>Update Child Loan</label>
+        <locationX>176</locationX>
+        <locationY>551</locationY>
+        <inputAssignments>
+            <field>LLC_BI__Stage__c</field>
+            <value>
+                <elementReference>$Record.LLC_BI__ParentLoan__r.LLC_BI__Stage__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Takedown_to_Booking_Funding</name>
+        <label>Update Takedown to Booking &amp; Funding</label>
+        <locationX>440</locationX>
+        <locationY>551</locationY>
+        <inputAssignments>
+            <field>LLC_BI__Stage__c</field>
+            <value>
+                <stringValue>Booking &amp; Funding</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Kill_Switch</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>LLC_BI__Is_Main__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <object>LLC_BI__Loan__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

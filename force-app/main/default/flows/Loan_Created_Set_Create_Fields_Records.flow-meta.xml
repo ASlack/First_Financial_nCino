@@ -159,6 +159,9 @@
         <label>Lookup Check</label>
         <locationX>616</locationX>
         <locationY>575</locationY>
+        <defaultConnector>
+            <targetReference>Update_Loan_Simple</targetReference>
+        </defaultConnector>
         <defaultConnectorLabel>No Officers</defaultConnectorLabel>
         <rules>
             <name>Primary_Officer_and_Lending_Assistant_Set</name>
@@ -198,7 +201,7 @@
             <label>Primary Officer Only</label>
         </rules>
     </decisions>
-    <description>When a Loan is created, flow is used to Create Loan Team Records</description>
+    <description>When a Main Loan is created, flow is used to Create Loan Team Records</description>
     <environments>Default</environments>
     <interviewLabel>Loan Created - Create LTM Roles {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Loan Created - Set/Create Fields/Records</label>
@@ -330,6 +333,7 @@
         <queriedFields>Id</queriedFields>
         <queriedFields>LLC_BI__Primary_Officer__c</queriedFields>
         <queriedFields>LLC_BI__Secondary_Officer__c</queriedFields>
+        <queriedFields>Region__c</queriedFields>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordUpdates>
@@ -341,6 +345,25 @@
             <field>LLC_BI__Loan_Officer__c</field>
             <value>
                 <elementReference>Get_Product_Package.LLC_BI__Primary_Officer__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Region__c</field>
+            <value>
+                <elementReference>Get_Product_Package.Region__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Loan_Simple</name>
+        <label>Update Loan - Simple</label>
+        <locationX>880</locationX>
+        <locationY>695</locationY>
+        <inputAssignments>
+            <field>Region__c</field>
+            <value>
+                <elementReference>Get_Product_Package.Region__c</elementReference>
             </value>
         </inputAssignments>
         <inputReference>$Record</inputReference>
@@ -378,6 +401,13 @@
             <operator>IsNull</operator>
             <value>
                 <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>LLC_BI__Is_Main__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
             </value>
         </filters>
         <object>LLC_BI__Loan__c</object>

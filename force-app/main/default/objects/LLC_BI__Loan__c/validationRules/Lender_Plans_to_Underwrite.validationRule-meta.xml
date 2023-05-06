@@ -8,7 +8,8 @@ $User.No_Validation__c = False,
 NOT(ISPICKVAL(ffin_Lender_Plans_to_Underwrite__c, &quot;Yes&quot;)),
 NOT(ISPICKVAL(ffin_Lender_Plans_to_Underwrite__c, &quot;No&quot;)),
 ISCHANGED(LLC_BI__Stage__c),
-ISPICKVAL(LLC_BI__Stage__c, &quot;Credit Underwriting&quot;)
+ISPICKVAL(LLC_BI__Stage__c, &quot;Credit Underwriting&quot;),
+LLC_BI__Is_Main__c = TRUE
 )</errorConditionFormula>
     <errorMessage>&apos;Lender Plans to Underwrite?&apos; must be determined prior to moving to Credit Underwriting</errorMessage>
 </ValidationRule>

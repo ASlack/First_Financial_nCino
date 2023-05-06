@@ -261,6 +261,13 @@
                 <elementReference>Get_Product_Package.Id</elementReference>
             </value>
         </filters>
+        <filters>
+            <field>LLC_BI__Is_Main__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
         <getFirstRecordOnly>false</getFirstRecordOnly>
         <object>LLC_BI__Loan__c</object>
         <queriedFields>Id</queriedFields>
@@ -311,6 +318,13 @@
                 <elementReference>$Record.LLC_BI__Product_Package__c</elementReference>
             </value>
         </filters>
+        <filters>
+            <field>LLC_BI__Is_Main__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
         <object>LLC_BI__Loan__c</object>
         <outputAssignments>
             <assignToReference>var_HighestLoanRiskGrade</assignToReference>
@@ -332,7 +346,7 @@
         <connector>
             <targetReference>Integration_Trigger_Kill_Switch</targetReference>
         </connector>
-        <filterLogic>1 OR 2 OR (3 AND (4 OR 5))</filterLogic>
+        <filterLogic>(1 OR 2 OR (3 AND (4 OR 5))) AND 6</filterLogic>
         <filters>
             <field>LLC_BI__Amount__c</field>
             <operator>IsChanged</operator>
@@ -366,6 +380,13 @@
             <operator>EqualTo</operator>
             <value>
                 <stringValue>Final Review</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>LLC_BI__Is_Main__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
             </value>
         </filters>
         <object>LLC_BI__Loan__c</object>
