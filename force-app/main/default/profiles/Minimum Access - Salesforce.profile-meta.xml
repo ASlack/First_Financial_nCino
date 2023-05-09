@@ -71926,6 +71926,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>LLC_BI__Covenant2__c.ffin_Description__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>LLC_BI__Covenant2__c.isTest__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -72093,6 +72098,11 @@
         <editable>false</editable>
         <field>LLC_BI__Covenant_Type__c.LLC_BI__lookupKey__c</field>
         <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Covenant_Type__c.ffin_Description__c</field>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -102788,6 +102798,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>LLC_BI__Possessory_Property_Details__c-LLC_BI__Possessory Property Details Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>LLC_BI__Product_Package__c-LLC_BI__nCino UI Hybrid</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>LLC_BI__Product_Package__c-LLC_BI__nCino UI Hybrid</layout>

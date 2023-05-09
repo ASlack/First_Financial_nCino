@@ -20151,6 +20151,7 @@
         <members>LLC_BI__Covenant2__c.Migration_ID__c</members>
         <members>LLC_BI__Covenant2__c.Region__c</members>
         <members>LLC_BI__Covenant2__c.Relationship__c</members>
+        <members>LLC_BI__Covenant2__c.ffin_Description__c</members>
         <members>LLC_BI__Covenant2__c.isTest__c</members>
         <members>LLC_BI__Covenant2__c.zen_Current_Value__c</members>
         <members>LLC_BI__Covenant_Compliance2__c.LLC_BI__Approval_Date__c</members>
@@ -20189,6 +20190,7 @@
         <members>LLC_BI__Covenant_Type__c.LLC_BI__Category__c</members>
         <members>LLC_BI__Covenant_Type__c.LLC_BI__Is_Financial_Indicator__c</members>
         <members>LLC_BI__Covenant_Type__c.LLC_BI__lookupKey__c</members>
+        <members>LLC_BI__Covenant_Type__c.ffin_Description__c</members>
         <members>LLC_BI__Covenant__c.LLC_BI__Account__c</members>
         <members>LLC_BI__Covenant__c.LLC_BI__Active__c</members>
         <members>LLC_BI__Covenant__c.LLC_BI__Contact__c</members>
@@ -32908,6 +32910,7 @@
     <types>
         <members>LLC_BI__Collateral__c.Possessory Life Insurance3</members>
         <members>LLC_BI__Collateral__c.Possessory Life Insurance4</members>
+        <members>LLC_BI__Covenant_Compliance2__c.LLC_BI__Set_Historic_Financial_Indicator_Value</members>
         <members>LLC_BI__Loan__c.CAB_Default Loan Name</members>
         <members>LLC_BI__Loan__c.Commercial Product Line-Record Type</members>
         <members>LLC_BI__Loan__c.Consumer Product Line-Record Type</members>

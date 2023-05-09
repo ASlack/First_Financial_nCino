@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <rules>
+        <fullName>LLC_BI__Set_Historic_Financial_Indicator_Value</fullName>
+        <actions>
+            <name>LLC_BI__Set_Historic_Financial_Indicator_Value</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>LLC_BI__Covenant_Compliance2__c.LLC_BI__Status__c</field>
+            <operation>equals</operation>
+            <value>Compliant</value>
+        </criteriaItems>
+        <description>When the Covenant_Compliance2 Status is set to Compliant, sets the Historic Financial Indicator Value to Covenant2.Financial_Indicator_Value</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>
