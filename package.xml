@@ -29666,6 +29666,7 @@
         <members>Loan_LO_or_LA_Changed_Update_Portal_Docs</members>
         <members>Loan_Lost_Reason_Set_Update_Status</members>
         <members>Loan_RFI_Received</members>
+        <members>Loan_Scheduled_Loan_Team_Chatter_Notifications</members>
         <members>Loan_Set_Initial_Application_Date</members>
         <members>Loan_Update_Product_Package_Fields_for_Approval_Process_Record_Trigger_Flow</members>
         <members>Loan_Updated_Amount_RR_Update_Product_Package</members>
@@ -29737,6 +29738,7 @@
         <members>Loan_LO_or_LA_Changed_Update_Portal_Docs</members>
         <members>Loan_Lost_Reason_Set_Update_Status</members>
         <members>Loan_RFI_Received</members>
+        <members>Loan_Scheduled_Loan_Team_Chatter_Notifications</members>
         <members>Loan_Set_Initial_Application_Date</members>
         <members>Loan_Update_Product_Package_Fields_for_Approval_Process_Record_Trigger_Flow</members>
         <members>Loan_Updated_Amount_RR_Update_Product_Package</members>

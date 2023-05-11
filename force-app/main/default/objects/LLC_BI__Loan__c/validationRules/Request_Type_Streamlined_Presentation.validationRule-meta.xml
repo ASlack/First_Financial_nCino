@@ -6,10 +6,21 @@
     <errorConditionFormula>AND(
 $User.No_Validation__c = False,
 ISPICKVAL(ffin_Request_Type__c, &quot;Streamlined Loan Presentation&quot;),
-ffin_Request_Needed_By__c &lt;= (TODAY()+4),
 ISCHANGED(LLC_BI__Stage__c),
 ISPICKVAL(LLC_BI__Stage__c, &quot;Credit Underwriting&quot;),
-LLC_BI__Is_Main__c = TRUE
+LLC_BI__Is_Main__c = TRUE,
+
+ffin_Request_Needed_By__c &lt;= (TODAY() +
+CASE(
+WEEKDAY(TODAY()),
+1, 4,
+2, 4,
+3, 6,
+4, 6,
+5, 6,
+6, 6,
+7, 5,
+0))
 )</errorConditionFormula>
     <errorMessage>Request Needed By cannot be set within 4 Business Days when requesting &apos;Streamlined Loan Presentation&apos;</errorMessage>
 </ValidationRule>
