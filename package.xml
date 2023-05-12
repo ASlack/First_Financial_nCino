@@ -20241,12 +20241,15 @@
         <members>LLC_BI__Credit_Memo_Modifcation__c.LLC_BI__Use_of_Proceeds_Change__c</members>
         <members>LLC_BI__Credit_Memo_Modifcation__c.LLC_BI__User_Initiated__c</members>
         <members>LLC_BI__Credit_Memo_Modifcation__c.LLC_BI__lookupKey__c</members>
+        <members>LLC_BI__Credit_Memo_Modifcation__c.Length_of_Short_Term_Extension__c</members>
         <members>LLC_BI__Credit_Memo_Modifcation__c.LoanAmountDecrease__c</members>
         <members>LLC_BI__Credit_Memo_Modifcation__c.Loan_Information_Change__c</members>
         <members>LLC_BI__Credit_Memo_Modifcation__c.Loan_Officer__c</members>
+        <members>LLC_BI__Credit_Memo_Modifcation__c.Maturity_Date_at_time_of_Creation__c</members>
         <members>LLC_BI__Credit_Memo_Modifcation__c.ReApprovalAfter90Days__c</members>
         <members>LLC_BI__Credit_Memo_Modifcation__c.cm_Approval_Required_Formula__c</members>
         <members>LLC_BI__Credit_Memo_Modifcation__c.cm_ChangeMemoFlag__c</members>
+        <members>LLC_BI__Credit_Memo_Modifcation__c.cm_Proposed_Maturity_Date__c</members>
         <members>LLC_BI__Credit_Memo_Screen__c.LLC_BI__Active__c</members>
         <members>LLC_BI__Credit_Memo_Screen__c.LLC_BI__Credit_Memo__c</members>
         <members>LLC_BI__Credit_Memo_Screen__c.LLC_BI__Description__c</members>
@@ -21520,6 +21523,7 @@
         <members>LLC_BI__Loan__c.Counter_Offer_Letter_Sent__c</members>
         <members>LLC_BI__Loan__c.Counter_Offer_Verbally_Advised__c</members>
         <members>LLC_BI__Loan__c.Counteroffer_Received__c</members>
+        <members>LLC_BI__Loan__c.Cumulative_Days_of_Extensions__c</members>
         <members>LLC_BI__Loan__c.Date_of_Adverse_Action_and_Counter__c</members>
         <members>LLC_BI__Loan__c.Decision_Due_Date__c</members>
         <members>LLC_BI__Loan__c.Decision_Hold_Comments__c</members>
@@ -29673,6 +29677,8 @@
         <members>Loan_Updated_Lender_Plans_to_Underwrite</members>
         <members>Master_LoanAutoDecision</members>
         <members>Master_Questionnaire_PB</members>
+        <members>Memo_Created_Set_Fields</members>
+        <members>Memo_Created_Update_Fields_Submit</members>
         <members>PB01_1_nCino_CAB_Loan_Stage_Updates</members>
         <members>PB01_nCino_Master_Loan_PB</members>
         <members>PB02_nCino_PMB_Update_LTM_Lookup_Fields_on_Loan</members>
@@ -29745,6 +29751,8 @@
         <members>Loan_Updated_Lender_Plans_to_Underwrite</members>
         <members>Master_LoanAutoDecision</members>
         <members>Master_Questionnaire_PB</members>
+        <members>Memo_Created_Set_Fields</members>
+        <members>Memo_Created_Update_Fields_Submit</members>
         <members>PB01_1_nCino_CAB_Loan_Stage_Updates</members>
         <members>PB01_nCino_Master_Loan_PB</members>
         <members>PB02_nCino_PMB_Update_LTM_Lookup_Fields_on_Loan</members>

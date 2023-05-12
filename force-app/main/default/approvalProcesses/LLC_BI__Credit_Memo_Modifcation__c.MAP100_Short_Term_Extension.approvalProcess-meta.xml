@@ -40,6 +40,7 @@
     <entryCriteria>
         <formula>AND(
 ISPICKVAL(LLC_BI__Memo_Type__c, &apos;Short Term Extension&apos;),
+LLC_BI__Loan__r.Cumulative_Days_of_Extensions__c  &lt;= 90,
 NOT(ISBLANK(Loan_Officer__c))
 )</formula>
     </entryCriteria>

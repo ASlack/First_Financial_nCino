@@ -72387,6 +72387,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>LLC_BI__Credit_Memo_Modifcation__c.Length_of_Short_Term_Extension__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>LLC_BI__Credit_Memo_Modifcation__c.LoanAmountDecrease__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -72398,6 +72403,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>LLC_BI__Credit_Memo_Modifcation__c.Loan_Officer__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Credit_Memo_Modifcation__c.Maturity_Date_at_time_of_Creation__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -72414,6 +72424,11 @@
         <editable>false</editable>
         <field>LLC_BI__Credit_Memo_Modifcation__c.cm_ChangeMemoFlag__c</field>
         <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Credit_Memo_Modifcation__c.cm_Proposed_Maturity_Date__c</field>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -78398,6 +78413,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>LLC_BI__Loan__c.Counteroffer_Received__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LLC_BI__Loan__c.Cumulative_Days_of_Extensions__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -102565,6 +102585,14 @@
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
+        <flow>Memo_Created_Set_Fields</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Memo_Created_Update_Fields_Submit</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
         <flow>PB01_1_nCino_CAB_Loan_Stage_Updates</flow>
     </flowAccesses>
     <flowAccesses>
@@ -102590,6 +102618,10 @@
     <flowAccesses>
         <enabled>false</enabled>
         <flow>PB06_nCino_PMB_Populate_Relationship_Lookup_on_Covenant_Mgmt</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>PB07_nCino_CAB_Auto_Submit_Short_Term_Extension_Memo_for_Approval</flow>
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
