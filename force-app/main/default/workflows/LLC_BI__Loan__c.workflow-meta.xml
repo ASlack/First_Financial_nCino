@@ -259,8 +259,6 @@ TEXT(MIN(ROUND(MOD(LLC_BI__Amount__c, 1), 2) * 100, 99))
         <fullName>Loan_Default_App</fullName>
         <field>LLC_BI__Default_App__c</field>
         <formula>IF(
-AND(
-ISPICKVAL(LLC_BI__Product_Line__c, &quot;Commercial&quot;),
 OR(
 ISPICKVAL(LLC_BI__Stage__c, &quot;Qualification&quot;),
 ISPICKVAL(LLC_BI__Stage__c, &quot;Proposal&quot;),
@@ -268,26 +266,18 @@ ISPICKVAL(LLC_BI__Stage__c, &quot;Credit Underwriting&quot;),
 ISPICKVAL(LLC_BI__Stage__c, &quot;Final Review&quot;),
 ISPICKVAL(LLC_BI__Stage__c, &quot;Approval / Loan Committee&quot;),
 ISPICKVAL(LLC_BI__Stage__c, &quot;Processing&quot;)
-)
 ),
 &apos;m-loan.dashboard-loan&apos;,
 IF(
-AND(
-ISPICKVAL(LLC_BI__Product_Line__c, &quot;Commercial&quot;),
 OR(
 ISPICKVAL(LLC_BI__Stage__c, &quot;Doc Prep&quot;),
 ISPICKVAL(LLC_BI__Stage__c, &quot;Closing&quot;),
 ISPICKVAL(LLC_BI__Stage__c, &quot;Booking &amp; Funding&quot;),
 ISPICKVAL(LLC_BI__Stage__c, &quot;Booked&quot;),
 ISPICKVAL(LLC_BI__Stage__c, &quot;Complete&quot;)
-)
 ),
 &apos;m-loan-post-approval.post-approval-loan-dashboard&apos;,
-IF(
-ISPICKVAL(LLC_BI__Product_Line__c, &quot;Consumer&quot;),
-&apos;m-retail.m-retail-loan-details&apos;,
 &apos;m-loan.dashboard-loan&apos;
-)
 )
 )</formula>
         <name>Loan - Default App</name>
@@ -703,7 +693,7 @@ ISPICKVAL(LLC_BI__Product_Line__c, &quot;Consumer&quot;),
             <name>Loan_Set_Application_Date_to_Today</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <description>Sets the Application Date to &apos;Today&apos; when a loan record is created</description>
         <formula>ISBLANK(Application_Date__c)</formula>
         <triggerType>onCreateOnly</triggerType>

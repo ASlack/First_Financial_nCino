@@ -14,12 +14,12 @@ ffin_Request_Needed_By__c &lt;= (TODAY() +
 CASE(
 WEEKDAY(TODAY()),
 1, 4,
-2, 4,
-3, 6,
-4, 6,
-5, 6,
-6, 6,
-7, 5,
+2, 3,
+3, 3,
+4, 5,
+5, 5,
+6, 5,
+7, 4,
 0))
 )</errorConditionFormula>
     <errorMessage>Request Needed By cannot be set within 4 Business Days when requesting &apos;Streamlined Loan Presentation&apos;</errorMessage>

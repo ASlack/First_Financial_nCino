@@ -3,12 +3,10 @@
     <fullName>LLC_BI__All</fullName>
     <columns>LLC_BI__Type__c</columns>
     <columns>LLC_BI__Subtype__c</columns>
-    <columns>LLC_BI__lookupKey__c</columns>
     <columns>LLC_BI__Collateral_Code__c</columns>
     <columns>LLC_BI__Advance_Rate__c</columns>
-    <columns>LLC_BI__Icon_Type__c</columns>
-    <columns>LLC_BI__Icon_Background_Color__c</columns>
-    <columns>LLC_BI__Icon_Color__c</columns>
+    <columns>LLCLP__Is_Excluded_From_LaserPro_Extract__c</columns>
+    <columns>LLC_BI__lookupKey__c</columns>
     <columns>NAME</columns>
     <columns>LLC_BI__Screen__c</columns>
     <columns>LLC_BI__Group_Type__c</columns>

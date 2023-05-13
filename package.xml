@@ -29663,6 +29663,7 @@
         <members>Loan_After_Save_Loan_Name_Update</members>
         <members>Loan_Application_On_Hold</members>
         <members>Loan_Created_Set_Create_Fields_Records</members>
+        <members>Loan_Created_Updated_Update_Application_Date</members>
         <members>Loan_Document_Portal_Enabled_Notification</members>
         <members>Loan_ECOA_Notifications</members>
         <members>Loan_Fast_Update_Update_Status_to_Open</members>
@@ -29737,6 +29738,7 @@
         <members>Loan_After_Save_Loan_Name_Update</members>
         <members>Loan_Application_On_Hold</members>
         <members>Loan_Created_Set_Create_Fields_Records</members>
+        <members>Loan_Created_Updated_Update_Application_Date</members>
         <members>Loan_Document_Portal_Enabled_Notification</members>
         <members>Loan_ECOA_Notifications</members>
         <members>Loan_Fast_Update_Update_Status_to_Open</members>
