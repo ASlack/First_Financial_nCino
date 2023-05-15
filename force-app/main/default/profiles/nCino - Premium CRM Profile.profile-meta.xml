@@ -6274,6 +6274,11 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__CFG_ConfigValue__c.LLC_BI__Category__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>LLC_BI__Loan__c.EarliestClosingDate__c</field>
         <readable>true</readable>
@@ -6291,6 +6296,16 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>LLC_BI__Loan__c.LLC_BI__Risk_Grade__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Loan__c.LLC_BI__Structure_Hierarchy__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Loan__c.LLC_BI__Structure__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
