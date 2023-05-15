@@ -215,6 +215,16 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
+                <componentName>nFORMS:dgDocumentGeneration</componentName>
+                <identifier>nFORMS_dgDocumentGeneration</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>Facet-b796d3ae-f931-4469-b5af-58c192d54588</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
                 <componentInstanceProperties>
                     <name>showLegacyActivityComposer</name>
                     <value>false</value>
@@ -379,6 +389,20 @@
                 </componentInstanceProperties>
                 <componentName>flexipage:tab</componentName>
                 <identifier>flexipage_tab</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-b796d3ae-f931-4469-b5af-58c192d54588</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>Document Generation</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>flexipage_tab5</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>

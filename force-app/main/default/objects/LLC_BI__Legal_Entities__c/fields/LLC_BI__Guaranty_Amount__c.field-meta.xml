@@ -12,14 +12,9 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>Unlimited</fullName>
+                <fullName>Full</fullName>
                 <default>false</default>
-                <label>Unlimited</label>
-            </value>
-            <value>
-                <fullName>Amount of Note</fullName>
-                <default>false</default>
-                <label>Amount of Note</label>
+                <label>Full</label>
             </value>
             <value>
                 <fullName>Limited</fullName>
