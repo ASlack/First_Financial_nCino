@@ -3673,6 +3673,16 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.cm_Preferred_Contact_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Contact.cm_Preferred_Portal_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Contact.cm_State_ID_Expiration_Date__c</field>
         <readable>false</readable>
@@ -10040,6 +10050,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>User.Region__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>User.cm_Preferred_Portal_Name__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>

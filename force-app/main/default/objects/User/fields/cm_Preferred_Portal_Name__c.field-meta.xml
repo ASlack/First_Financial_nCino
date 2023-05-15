@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cm_Preferred_Portal_Name__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+NOT(ISBLANK( Contact.cm_Preferred_Contact_Name__c )), Contact.cm_Preferred_Contact_Name__c,  FirstName)</formula>
+    <inlineHelpText>For Portal Users: when Preferred Contact Name is specified on the contact, Customer Portal Email Templates will utilize the value in that field. Otherwise, First Name will be used.</inlineHelpText>
+    <label>Preferred Portal Name</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
