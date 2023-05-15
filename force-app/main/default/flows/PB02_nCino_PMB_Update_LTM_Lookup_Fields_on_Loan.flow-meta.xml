@@ -86,7 +86,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>myRule_3_pmetdec</targetReference>
+                <targetReference>myRule_3_A1</targetReference>
             </connector>
             <label>Role = Loan Officer</label>
         </rules>
@@ -117,7 +117,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>myRule_5_pmetdec</targetReference>
+                <targetReference>myRule_5_A1</targetReference>
             </connector>
             <label>Role = Loan Assistant</label>
         </rules>
@@ -184,91 +184,21 @@
             <label>Role = Doc Prep Processor</label>
         </rules>
     </decisions>
-    <decisions>
-        <name>myRule_3_pmetdec</name>
-        <label>Previously Met Decision</label>
-        <locationX>300</locationX>
-        <locationY>100</locationY>
-        <defaultConnector>
-            <targetReference>myRule_3_A1</targetReference>
-        </defaultConnector>
-        <defaultConnectorLabel>Not Previously Met</defaultConnectorLabel>
-        <rules>
-            <name>myRule_3_pmetnullrule</name>
-            <conditionLogic>or</conditionLogic>
-            <conditions>
-                <leftValueReference>myVariable_old</leftValueReference>
-                <operator>IsNull</operator>
-                <rightValue>
-                    <booleanValue>true</booleanValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>myRule_3_A1</targetReference>
-            </connector>
-            <label>Previously Met - Null</label>
-        </rules>
-        <rules>
-            <name>myRule_3_pmetrule</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>formula_myRule_3_pmetrule</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <booleanValue>true</booleanValue>
-                </rightValue>
-            </conditions>
-            <label>Previously Met - Prev</label>
-        </rules>
-    </decisions>
-    <decisions>
-        <name>myRule_5_pmetdec</name>
-        <label>Previously Met Decision</label>
-        <locationX>500</locationX>
-        <locationY>100</locationY>
-        <defaultConnector>
-            <targetReference>myRule_5_A1</targetReference>
-        </defaultConnector>
-        <defaultConnectorLabel>Not Previously Met</defaultConnectorLabel>
-        <rules>
-            <name>myRule_5_pmetnullrule</name>
-            <conditionLogic>or</conditionLogic>
-            <conditions>
-                <leftValueReference>myVariable_old</leftValueReference>
-                <operator>IsNull</operator>
-                <rightValue>
-                    <booleanValue>true</booleanValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>myRule_5_A1</targetReference>
-            </connector>
-            <label>Previously Met - Null</label>
-        </rules>
-        <rules>
-            <name>myRule_5_pmetrule</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>formula_myRule_5_pmetrule</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <booleanValue>true</booleanValue>
-                </rightValue>
-            </conditions>
-            <label>Previously Met - Prev</label>
-        </rules>
-    </decisions>
     <description>This PB updates the Loan Team Member User Lookup fields on Loan when the LTM records are created and/or edited.</description>
     <formulas>
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>$User.No_Workflow__c = True</stringValue>
+                <stringValue>OR(
+$User.No_Workflow__c = True,
+$Permission.Integration_Trigger_Kill_Switch = True)</stringValue>
             </value>
         </processMetadataValues>
         <name>formula_myRule_1</name>
         <dataType>Boolean</dataType>
-        <expression>{!$User.No_Workflow__c} = True</expression>
+        <expression>OR(
+{!$User.No_Workflow__c} = True,
+{!$Permission.Integration_Trigger_Kill_Switch} = True)</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
@@ -310,23 +240,6 @@ NOT(ISBLANK({!myVariable_current.LLC_BI__User__c} )),
             <value>
                 <stringValue>AND(
 NOT(ISBLANK([LLC_BI__LoanTeam__c].LLC_BI__User__c )),
-[LLC_BI__LoanTeam__c].LLC_BI__Assigned_Role__c.Name = &apos;Loan Officer&apos;
-)</stringValue>
-            </value>
-        </processMetadataValues>
-        <name>formula_myRule_3_pmetrule</name>
-        <dataType>Boolean</dataType>
-        <expression>AND(
-NOT(ISBLANK({!myVariable_old.LLC_BI__User__c} )),
-{!myVariable_old.LLC_BI__Assigned_Role__r.Name} = &apos;Loan Officer&apos;
-)</expression>
-    </formulas>
-    <formulas>
-        <processMetadataValues>
-            <name>originalFormula</name>
-            <value>
-                <stringValue>AND(
-NOT(ISBLANK([LLC_BI__LoanTeam__c].LLC_BI__User__c )),
 [LLC_BI__LoanTeam__c].LLC_BI__Assigned_Role__c.Name = &apos;Lending Assistant&apos;
 )</stringValue>
             </value>
@@ -336,23 +249,6 @@ NOT(ISBLANK([LLC_BI__LoanTeam__c].LLC_BI__User__c )),
         <expression>AND(
 NOT(ISBLANK({!myVariable_current.LLC_BI__User__c} )),
 {!myVariable_current.LLC_BI__Assigned_Role__r.Name} = &apos;Lending Assistant&apos;
-)</expression>
-    </formulas>
-    <formulas>
-        <processMetadataValues>
-            <name>originalFormula</name>
-            <value>
-                <stringValue>AND(
-NOT(ISBLANK([LLC_BI__LoanTeam__c].LLC_BI__User__c )),
-[LLC_BI__LoanTeam__c].LLC_BI__Assigned_Role__c.Name = &apos;Lending Assistant&apos;
-)</stringValue>
-            </value>
-        </processMetadataValues>
-        <name>formula_myRule_5_pmetrule</name>
-        <dataType>Boolean</dataType>
-        <expression>AND(
-NOT(ISBLANK({!myVariable_old.LLC_BI__User__c} )),
-{!myVariable_old.LLC_BI__Assigned_Role__r.Name} = &apos;Lending Assistant&apos;
 )</expression>
     </formulas>
     <formulas>
@@ -389,7 +285,7 @@ NOT(ISBLANK({!myVariable_current.LLC_BI__User__c} )),
 {!myVariable_current.LLC_BI__Assigned_Role__r.Name} = &apos;Doc Prep Processor&apos;
 )</expression>
     </formulas>
-    <interviewLabel>PB02_nCino_PMB_Update_LTM_Lookup_Fields_on_Loan-3_InterviewLabel</interviewLabel>
+    <interviewLabel>PB02_nCino_PMB_Update_LTM_Lookup_Fields_on_Loan-5_InterviewLabel</interviewLabel>
     <label>PB02 - nCino - PMB - Update LTM Lookup Fields on Loan</label>
     <processMetadataValues>
         <name>ObjectType</name>

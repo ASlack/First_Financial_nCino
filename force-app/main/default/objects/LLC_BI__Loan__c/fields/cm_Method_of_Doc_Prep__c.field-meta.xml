@@ -15,12 +15,17 @@
             <value>
                 <fullName>Attorney Prepared</fullName>
                 <default>false</default>
-                <label>Attorney Prepared</label>
+                <label>Externally Prepared</label>
             </value>
             <value>
                 <fullName>Internally Prepared</fullName>
                 <default>false</default>
                 <label>Internally Prepared</label>
+            </value>
+            <value>
+                <fullName>Internally &amp; Externally Prepared</fullName>
+                <default>false</default>
+                <label>Internally &amp; Externally Prepared</label>
             </value>
         </valueSetDefinition>
     </valueSet>
