@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
-    <active>false</active>
+    <active>true</active>
     <allowRecall>true</allowRecall>
     <allowedSubmitters>
         <type>allInternalUsers</type>
@@ -17,69 +17,15 @@
         <allowDelegate>true</allowDelegate>
         <assignedApprover>
             <approver>
-                <name>cm_Loan_Officer__c</name>
-                <type>relatedUserField</type>
+                <type>adhoc</type>
             </approver>
-            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
-        <description>Record submitted to Loan Officer for approval.</description>
-        <entryCriteria>
-            <criteriaItems>
-                <field>LLC_BI__Review__c.cm_Loan_Officer__c</field>
-                <operation>notEqual</operation>
-            </criteriaItems>
-        </entryCriteria>
-        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
-        <label>Step 1 - Loan Officer</label>
-        <name>Step_1_Loan_Officer</name>
+        <description>Record submitted for approval.</description>
+        <label>Step 1 - Manual</label>
+        <name>Step_1_Manual</name>
     </approvalStep>
-    <approvalStep>
-        <allowDelegate>true</allowDelegate>
-        <assignedApprover>
-            <approver>
-                <name>cm_Credit_Administrator__c</name>
-                <type>relatedUserField</type>
-            </approver>
-            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
-        </assignedApprover>
-        <description>Record submitted to Credit Administrator for approval.</description>
-        <entryCriteria>
-            <criteriaItems>
-                <field>LLC_BI__Review__c.cm_Credit_Administrator__c</field>
-                <operation>notEqual</operation>
-            </criteriaItems>
-        </entryCriteria>
-        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
-        <label>Step 2 - Credit Administrator</label>
-        <name>Step_2_Credit_Administrator</name>
-        <rejectBehavior>
-            <type>RejectRequest</type>
-        </rejectBehavior>
-    </approvalStep>
-    <approvalStep>
-        <allowDelegate>true</allowDelegate>
-        <assignedApprover>
-            <approver>
-                <name>cm_Review_Committee_Approval_Queue</name>
-                <type>queue</type>
-            </approver>
-            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
-        </assignedApprover>
-        <description>Record submitted to Committee for approval.</description>
-        <entryCriteria>
-            <criteriaItems>
-                <field>LLC_BI__Review__c.cm_Send_to_Credit_Committee__c</field>
-                <operation>notEqual</operation>
-                <value>No</value>
-            </criteriaItems>
-        </entryCriteria>
-        <label>Step 3 - Committee Approval</label>
-        <name>Step_3_Committee_Approval</name>
-        <rejectBehavior>
-            <type>RejectRequest</type>
-        </rejectBehavior>
-    </approvalStep>
-    <description>The nCino Gold Standard Review Approval Process.</description>
+    <description>First Financial&apos;s Review Approval Process.</description>
+    <emailTemplate>PSO_Email_Templates/ET68_Review_Submitted</emailTemplate>
     <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
     <entryCriteria>
         <criteriaItems>
@@ -128,7 +74,7 @@
             <type>FieldUpdate</type>
         </action>
     </initialSubmissionActions>
-    <label>RAP100 - nCino Gold Standard AP</label>
+    <label>FFIN Review AP</label>
     <processOrder>1</processOrder>
     <recallActions>
         <action>

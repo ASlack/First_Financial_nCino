@@ -789,7 +789,7 @@ NOT(ISBLANK({!SObject.LLC_BI__Home_Zipcode__c}))
         <object>Contact</object>
     </recordUpdates>
     <startElementReference>sobjectInputCheckDecision</startElementReference>
-    <status>Active</status>
+    <status>Obsolete</status>
     <variables>
         <name>SObject</name>
         <dataType>SObject</dataType>

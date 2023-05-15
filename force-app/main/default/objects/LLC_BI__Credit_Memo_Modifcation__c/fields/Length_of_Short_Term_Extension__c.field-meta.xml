@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Length_of_Short_Term_Extension__c</fullName>
+    <description>Captures the difference between the Proposed Maturity Date and Maturity Date at Time of Creation</description>
+    <externalId>false</externalId>
+    <formula>cm_Proposed_Maturity_Date__c -  Maturity_Date_at_time_of_Creation__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Length of Short-Term Extension</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -17014,6 +17014,7 @@
         <members>LLC_BI__Product_Package__c.PPAP100_nCino_Gold_Standard_AP</members>
         <members>LLC_BI__Product_Package__c.PP_Sample_Approval_Process</members>
         <members>LLC_BI__Product_Package__c.PP_Two_Approvers_Approval_Process</members>
+        <members>LLC_BI__Review__c.FFIN_Review_AP</members>
         <members>LLC_BI__Review__c.RAP100_nCino_Gold_Standard_AP</members>
         <members>LLC_BI__Transaction_Request__c.CLA_Draw_Approval</members>
         <members>LLC_BI__Valuation__c.Valuation_CLA_Inspection_Manager_Approv</members>
@@ -19984,12 +19985,15 @@
         <members>LLC_BI__Credit_Memo_Modifcation__c.LLC_BI__Use_of_Proceeds_Change__c</members>
         <members>LLC_BI__Credit_Memo_Modifcation__c.LLC_BI__User_Initiated__c</members>
         <members>LLC_BI__Credit_Memo_Modifcation__c.LLC_BI__lookupKey__c</members>
+        <members>LLC_BI__Credit_Memo_Modifcation__c.Length_of_Short_Term_Extension__c</members>
         <members>LLC_BI__Credit_Memo_Modifcation__c.LoanAmountDecrease__c</members>
         <members>LLC_BI__Credit_Memo_Modifcation__c.Loan_Information_Change__c</members>
         <members>LLC_BI__Credit_Memo_Modifcation__c.Loan_Officer__c</members>
+        <members>LLC_BI__Credit_Memo_Modifcation__c.Maturity_Date_at_time_of_Creation__c</members>
         <members>LLC_BI__Credit_Memo_Modifcation__c.ReApprovalAfter90Days__c</members>
         <members>LLC_BI__Credit_Memo_Modifcation__c.cm_Approval_Required_Formula__c</members>
         <members>LLC_BI__Credit_Memo_Modifcation__c.cm_ChangeMemoFlag__c</members>
+        <members>LLC_BI__Credit_Memo_Modifcation__c.cm_Proposed_Maturity_Date__c</members>
         <members>LLC_BI__Credit_Memo_Screen__c.LLC_BI__Active__c</members>
         <members>LLC_BI__Credit_Memo_Screen__c.LLC_BI__Credit_Memo__c</members>
         <members>LLC_BI__Credit_Memo_Screen__c.LLC_BI__Description__c</members>
@@ -21215,6 +21219,7 @@
         <members>LLC_BI__Loan__c.Compliance_Comments__c</members>
         <members>LLC_BI__Loan__c.Confirm_Application__c</members>
         <members>LLC_BI__Loan__c.Counteroffer_Received__c</members>
+        <members>LLC_BI__Loan__c.Cumulative_Days_of_Extensions__c</members>
         <members>LLC_BI__Loan__c.Date_of_Adverse_Action_and_Counter__c</members>
         <members>LLC_BI__Loan__c.Decision_Due_Date__c</members>
         <members>LLC_BI__Loan__c.Decision_Hold_Comments__c</members>
@@ -28184,6 +28189,7 @@
         <members>PSO_Email_Templates/ET65_Package_Rejected</members>
         <members>PSO_Email_Templates/ET66_Relationship_Document_Uploaded</members>
         <members>PSO_Email_Templates/ET67_Loan_Document_Uploaded</members>
+        <members>PSO_Email_Templates/ET68_Review_Submitted</members>
         <members>nBRIDGER__OFAC_Notifications</members>
         <members>nBRIDGER__OFAC_Notifications/nBRIDGER__OFACMatchNotification</members>
         <members>nBRIDGER__OFAC_Notifications/nBRIDGER__OFACMoreInformationNotification</members>
@@ -28925,6 +28931,7 @@
         <members>LLC_BI__Requirement__c.LLC_BI__Smart_Checklist_Loan_Fields</members>
         <members>LLC_BI__Requirement__c.LLC_BI__Smart_Checklist_Product_Package_Fields</members>
         <members>LLC_BI__Requirement__c.LLC_BI__Smart_Checklist_Treasury_Service_Fields</members>
+        <members>LLC_BI__Review_Account__c.Review_UI_Table</members>
         <members>LLC_BI__Review__c.Credit_Memo_Standard_Review_Account</members>
         <members>LLC_BI__Review__c.Credit_Memo_Standard_Review_Product_Pack</members>
         <members>LLC_BI__Review__c.LLC_BI__Product_Package_Related_List</members>
@@ -29174,6 +29181,8 @@
         <members>Loan_Update_Product_Package_Fields_for_Approval_Process_Record_Trigger_Flow</members>
         <members>Master_LoanAutoDecision</members>
         <members>Master_Questionnaire_PB</members>
+        <members>Memo_Created_Set_Fields</members>
+        <members>Memo_Created_Update_Fields_Submit</members>
         <members>PB01_1_nCino_CAB_Loan_Stage_Updates</members>
         <members>PB01_nCino_Master_Loan_PB</members>
         <members>PB02_nCino_PMB_Update_LTM_Lookup_Fields_on_Loan</members>
@@ -29192,6 +29201,7 @@
         <members>Relationship_Evaluation_LoanAutoDecision</members>
         <members>Relationship_RM_Changed_Update_Portal_Docs</members>
         <members>Retail_LoanAutoDecision</members>
+        <members>Review_Created_Update_Record</members>
         <members>SCOC__Credit_Pass_Review_SCOC</members>
         <members>SCOC__Credit_Pass_Review_Template_SCOC</members>
         <members>SCOC__Credit_Report_Type_SCOC</members>
