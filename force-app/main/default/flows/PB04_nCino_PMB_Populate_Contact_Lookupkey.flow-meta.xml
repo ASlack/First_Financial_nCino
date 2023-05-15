@@ -170,7 +170,7 @@
                 <stringValue>[Account].Name &amp; &quot; ( &quot; &amp; [Account].cm_Third_Party_Type_Text__c &amp; &quot;)&quot;</stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_6_myRule_5_A1_2010133591</name>
+        <name>formula_6_myRule_5_A1_9634367141</name>
         <dataType>String</dataType>
         <expression>{!myVariable_current.Name} &amp; &quot; ( &quot; &amp; {!myVariable_current.cm_Third_Party_Type_Text__c} &amp; &quot;)&quot;</expression>
     </formulas>
@@ -181,7 +181,7 @@
                 <stringValue>LEFT([Account].Name,FIND(&quot;(&quot;,[Account].Name)-1) &amp; &quot; ( &quot; &amp; [Account].cm_Third_Party_Type_Text__c &amp; &quot;)&quot;</stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_9_myRule_8_A1_8456485801</name>
+        <name>formula_9_myRule_8_A1_3298102493</name>
         <dataType>String</dataType>
         <expression>LEFT({!myVariable_current.Name},FIND(&quot;(&quot;,{!myVariable_current.Name})-1) &amp; &quot; ( &quot; &amp; {!myVariable_current.cm_Third_Party_Type_Text__c} &amp; &quot;)&quot;</expression>
     </formulas>
@@ -189,12 +189,16 @@
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>$User.No_Workflow__c = True</stringValue>
+                <stringValue>OR(
+$User.No_Workflow__c = True,
+$Permission.Integration_Trigger_Kill_Switch = True)</stringValue>
             </value>
         </processMetadataValues>
         <name>formula_myRule_1</name>
         <dataType>Boolean</dataType>
-        <expression>{!$User.No_Workflow__c} = True</expression>
+        <expression>OR(
+{!$User.No_Workflow__c} = True,
+{!$Permission.Integration_Trigger_Kill_Switch} = True)</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
@@ -212,8 +216,8 @@ $User.No_Workflow__c = False
         <dataType>Boolean</dataType>
         <expression>AND(
 ISPICKVAL({!myVariable_current.Type}, &apos;Individual&apos;),
-ISCHANGED({!myVariable_current.00N5e000002Wnn0__NotFound}),
-NOT(ISBLANK({!myVariable_current.00N5e000002Wnn0__NotFound})),
+ISCHANGED({!myVariable_current.LLC_BI__lookupKey__c}),
+NOT(ISBLANK({!myVariable_current.LLC_BI__lookupKey__c})),
 {!$User.No_Workflow__c} = False
 )</expression>
     </formulas>
@@ -233,8 +237,8 @@ $User.No_Workflow__c = False
         <dataType>Boolean</dataType>
         <expression>AND(
 ISPICKVAL({!myVariable_old.Type}, &apos;Individual&apos;),
-ISCHANGED({!myVariable_old.00N5e000002Wnn0__NotFound}),
-NOT(ISBLANK({!myVariable_old.00N5e000002Wnn0__NotFound})),
+ISCHANGED({!myVariable_old.LLC_BI__lookupKey__c}),
+NOT(ISBLANK({!myVariable_old.LLC_BI__lookupKey__c})),
 {!$User.No_Workflow__c} = False
 )</expression>
     </formulas>
@@ -286,7 +290,7 @@ NOT(ISNEW()),
 ISCHANGED({!myVariable_current.LLC_BI__Third_Party__c} ),
 NOT(ISCHANGED({!myVariable_current.Name} )))</expression>
     </formulas>
-    <interviewLabel>PB04_nCino_PMB_Populate_Contact_Lookupkey-5_InterviewLabel</interviewLabel>
+    <interviewLabel>PB04_nCino_PMB_Populate_Contact_Lookupkey-7_InterviewLabel</interviewLabel>
     <label>PB04 - nCino - PMB - Populate Contact Lookupkey</label>
     <processMetadataValues>
         <name>ObjectType</name>
@@ -688,7 +692,7 @@ NOT(ISCHANGED({!myVariable_current.Name} )))</expression>
             </processMetadataValues>
             <field>Name</field>
             <value>
-                <elementReference>formula_6_myRule_5_A1_2010133591</elementReference>
+                <elementReference>formula_6_myRule_5_A1_9634367141</elementReference>
             </value>
         </inputAssignments>
         <object>Account</object>
@@ -818,7 +822,7 @@ NOT(ISCHANGED({!myVariable_current.Name} )))</expression>
             </processMetadataValues>
             <field>Name</field>
             <value>
-                <elementReference>formula_9_myRule_8_A1_8456485801</elementReference>
+                <elementReference>formula_9_myRule_8_A1_3298102493</elementReference>
             </value>
         </inputAssignments>
         <object>Account</object>

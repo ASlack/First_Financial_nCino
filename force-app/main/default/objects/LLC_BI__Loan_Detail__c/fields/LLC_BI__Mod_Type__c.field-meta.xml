@@ -22,21 +22,6 @@
                 <default>false</default>
                 <label>Modification</label>
             </value>
-            <value>
-                <fullName>Borrowing Structure Adjustment</fullName>
-                <default>false</default>
-                <label>Borrowing Structure Adjustment</label>
-            </value>
-            <value>
-                <fullName>Collateral Adjustment</fullName>
-                <default>false</default>
-                <label>Collateral Adjustment</label>
-            </value>
-            <value>
-                <fullName>Rate Change</fullName>
-                <default>false</default>
-                <label>Rate Change</label>
-            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>
