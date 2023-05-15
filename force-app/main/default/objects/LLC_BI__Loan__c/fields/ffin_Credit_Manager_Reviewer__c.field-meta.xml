@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ffin_Credit_Manager_Reviewer__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Field used for Credit Manager to set themself as the Lookup</description>
+    <externalId>false</externalId>
+    <label>Credit Manager Reviewer</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Loans7</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

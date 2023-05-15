@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ffin_Request_Type__c</fullName>
+    <description>Field used for Lender / Lending Assistant to select their Request Type when moving to Underwriting</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Lender / Lending Assistant to select their Request Type when moving to Underwriting</inlineHelpText>
+    <label>Request Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Full Loan Presentation</fullName>
+                <default>false</default>
+                <label>Full Loan Presentation</label>
+            </value>
+            <value>
+                <fullName>Streamlined Loan Presentation</fullName>
+                <default>false</default>
+                <label>Streamlined Loan Presentation</label>
+            </value>
+            <value>
+                <fullName>Spreads Only</fullName>
+                <default>false</default>
+                <label>Spreads Only</label>
+            </value>
+            <value>
+                <fullName>Cash Flow Only</fullName>
+                <default>false</default>
+                <label>Cash Flow Only</label>
+            </value>
+            <value>
+                <fullName>Spreads &amp; Cash Flow</fullName>
+                <default>false</default>
+                <label>Spreads &amp; Cash Flow</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

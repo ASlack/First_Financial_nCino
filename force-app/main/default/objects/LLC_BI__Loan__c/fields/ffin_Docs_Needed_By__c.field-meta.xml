@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ffin_Docs_Needed_By__c</fullName>
+    <description>Field used for Lender / Lending Assistant to fill in when Docs are Needed By</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Used for Lender / Lending Assistant / Doc Prep Manager to fill in when Docs are Needed By</inlineHelpText>
+    <label>Docs Needed By</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>
