@@ -19899,6 +19899,7 @@
         <members>LLC_BI__Covenant2__c.Migration_ID__c</members>
         <members>LLC_BI__Covenant2__c.Region__c</members>
         <members>LLC_BI__Covenant2__c.Relationship__c</members>
+        <members>LLC_BI__Covenant2__c.ffin_Description__c</members>
         <members>LLC_BI__Covenant2__c.isTest__c</members>
         <members>LLC_BI__Covenant2__c.zen_Current_Value__c</members>
         <members>LLC_BI__Covenant_Compliance2__c.LLC_BI__Approval_Date__c</members>
@@ -19937,6 +19938,7 @@
         <members>LLC_BI__Covenant_Type__c.LLC_BI__Category__c</members>
         <members>LLC_BI__Covenant_Type__c.LLC_BI__Is_Financial_Indicator__c</members>
         <members>LLC_BI__Covenant_Type__c.LLC_BI__lookupKey__c</members>
+        <members>LLC_BI__Covenant_Type__c.ffin_Description__c</members>
         <members>LLC_BI__Covenant__c.LLC_BI__Account__c</members>
         <members>LLC_BI__Covenant__c.LLC_BI__Active__c</members>
         <members>LLC_BI__Covenant__c.LLC_BI__Contact__c</members>

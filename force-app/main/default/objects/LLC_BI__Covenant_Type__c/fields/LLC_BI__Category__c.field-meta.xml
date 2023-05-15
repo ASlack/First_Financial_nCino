@@ -22,11 +22,6 @@
                 <label>Financial Indicators</label>
             </value>
             <value>
-                <fullName>Term Covenants</fullName>
-                <default>false</default>
-                <label>Term Covenants</label>
-            </value>
-            <value>
                 <fullName>Default Covenants</fullName>
                 <default>false</default>
                 <label>Default Covenants</label>
