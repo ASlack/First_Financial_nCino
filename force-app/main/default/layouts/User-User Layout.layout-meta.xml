@@ -63,7 +63,8 @@
                 <field>nPortal__Has_Reached_Ownership_Limit__c</field>
             </layoutItems>
             <layoutItems>
-                <emptySpace>true</emptySpace>
+                <behavior>Readonly</behavior>
+                <field>cm_Preferred_Portal_Name__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>

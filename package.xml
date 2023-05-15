@@ -18198,6 +18198,8 @@
         <members>Contact.cm_Passport_Issue_Date__c</members>
         <members>Contact.cm_Passport_Issuing_Country__c</members>
         <members>Contact.cm_Passport_Number__c</members>
+        <members>Contact.cm_Preferred_Contact_Name__c</members>
+        <members>Contact.cm_Preferred_Portal_Name__c</members>
         <members>Contact.cm_State_ID_Expiration_Date__c</members>
         <members>Contact.cm_State_ID_Issue_Date__c</members>
         <members>Contact.cm_State_ID_Issuing_State__c</members>
@@ -25405,6 +25407,7 @@
         <members>User.UserSubtype</members>
         <members>User.Username</members>
         <members>User.WorkspaceId</members>
+        <members>User.cm_Preferred_Portal_Name__c</members>
         <members>User.nBIDCA__nCino_Data_User2__c</members>
         <members>User.nBRIDGER__Bridger_Password__c</members>
         <members>User.nBRIDGER__Bridger_Username__c</members>
@@ -27951,6 +27954,7 @@
         <members>Experiences_Shared_Document_Folder</members>
         <members>Experiences_Shared_Document_Folder/logo_resized_transparent_v3_png</members>
         <members>LLC_BI__nCino_Document_Templates</members>
+        <members>LLC_BI__nCino_Document_Templates/FFIN_Email_Logo</members>
         <members>LLC_BI__nCino_Platform_Screen_Views</members>
         <members>LLC_BI__nCino_Platform_Screen_Views/LLC_BI__Approval_History_ReadOnly</members>
         <members>LLC_BI__nCino_Platform_Screen_Views/LLC_BI__Authorized_Signers_ReadOnly</members>
@@ -28060,6 +28064,7 @@
     <types>
         <members>CBCFLD__CBC_Flood_Template</members>
         <members>CBCFLD__CBC_Flood_Template/CBCFLD__CBC_Flood_Update_Notification</members>
+        <members>CM_NCINO_TEMPLATES</members>
         <members>LLC_BI__Bankr_Templates</members>
         <members>LLC_BI__Bankr_Templates/LLC_BI__Closing3DayAlert</members>
         <members>LLC_BI__Bankr_Templates/LLC_BI__Committee7Day</members>
