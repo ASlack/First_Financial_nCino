@@ -42,5 +42,10 @@
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
+    <displayedFields>
+        <field>LLC_BI__Loan__r.Cumulative_Days_of_Extensions__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
     <label>Memo Detail</label>
 </FieldSet>

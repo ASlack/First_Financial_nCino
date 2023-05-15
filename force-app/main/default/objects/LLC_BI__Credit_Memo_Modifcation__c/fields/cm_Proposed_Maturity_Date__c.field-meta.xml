@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cm_Proposed_Maturity_Date__c</fullName>
+    <description>Captures the Proposed Maturity Date which will be used to validate the length of this extension</description>
+    <externalId>false</externalId>
+    <label>Proposed Maturity Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>
