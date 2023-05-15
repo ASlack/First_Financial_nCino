@@ -17173,20 +17173,32 @@
     <types>
         <members>Account.AccountNumber</members>
         <members>Account.AccountSource</members>
+        <members>Account.AnalysisTrendBorrowersFinancialNar__c</members>
+        <members>Account.AnalysisTrendCreditworthinessNarrat__c</members>
+        <members>Account.AnalysisTrendGuarantorsFinancial__c</members>
+        <members>Account.AnalysisTrendOwnershipChangeNarrat__c</members>
+        <members>Account.AnalysisTrendRLOCNarrative__c</members>
         <members>Account.AnnualRevenue</members>
+        <members>Account.AssessedValuationsTop10TaxPayers__c</members>
         <members>Account.BillingAddress</members>
         <members>Account.Billing_Address__c</members>
+        <members>Account.BondRatingNarrative__c</members>
         <members>Account.Business_Mailing_Address_Same_as_Physica__c</members>
         <members>Account.ChannelProgramLevelName</members>
         <members>Account.ChannelProgramName</members>
         <members>Account.Country_of_Citizenship__c</members>
         <members>Account.Country_of_Incorporation__c</members>
+        <members>Account.CustomerSince__c</members>
+        <members>Account.DebtSummaryNarrative__c</members>
         <members>Account.Description</members>
         <members>Account.EXUS__Business_Credit_Product__c</members>
         <members>Account.Estimated_Annual_Revenue__c</members>
         <members>Account.Fax</members>
+        <members>Account.FinancialReviewNarrative__c</members>
         <members>Account.Full_Legal_Name_Formula__c</members>
+        <members>Account.ImpactfromPotentialEconomicRecession__c</members>
         <members>Account.Industry</members>
+        <members>Account.IndustryDataAwardsNarrative__c</members>
         <members>Account.Integration_Source__c</members>
         <members>Account.IsCustomerPortal</members>
         <members>Account.IsPartner</members>
@@ -17340,6 +17352,10 @@
         <members>Account.LLC_BI__UpsellOpportunity__c</members>
         <members>Account.LLC_BI__Valid_Resolution_Type__c</members>
         <members>Account.LLC_BI__lookupKey__c</members>
+        <members>Account.LeverageNarrative__c</members>
+        <members>Account.LiquidityNarrative__c</members>
+        <members>Account.LoanAgreementCovenantsNarrative__c</members>
+        <members>Account.LoanReviewCommentsNarrative__c</members>
         <members>Account.ManualReviewRequired__c</members>
         <members>Account.Merchant_ID__c</members>
         <members>Account.Merchant_Registration_Number_SURI_Numbe__c</members>
@@ -17348,9 +17364,11 @@
         <members>Account.NDOC__Document_Manager_Identifier__c</members>
         <members>Account.Name</members>
         <members>Account.NumberOfEmployees</members>
+        <members>Account.OverviewandBackgroundCommentsNarrati__c</members>
         <members>Account.OwnerId</members>
         <members>Account.Ownership</members>
         <members>Account.ParentId</members>
+        <members>Account.PastDueInformationNarrative__c</members>
         <members>Account.PersonAssistantName</members>
         <members>Account.PersonAssistantPhone</members>
         <members>Account.PersonBirthdate</members>
@@ -17373,6 +17391,7 @@
         <members>Account.PersonTitle</members>
         <members>Account.Phone</members>
         <members>Account.Primary_Industry__c</members>
+        <members>Account.ProfitabilityNarrative__c</members>
         <members>Account.Rating</members>
         <members>Account.Region__c</members>
         <members>Account.Registration_Number__c</members>
@@ -17380,6 +17399,7 @@
         <members>Account.ResidingSince__c</members>
         <members>Account.SCOC__CreditReportType__c</members>
         <members>Account.Secondary_Industry__c</members>
+        <members>Account.SensitivityAnalysisIncomeStatement__c</members>
         <members>Account.ShippingAddress</members>
         <members>Account.Sic</members>
         <members>Account.SicDesc</members>
@@ -21589,6 +21609,7 @@
         <members>LLC_BI__Loan__c.Real_Estate_Sub_Type__c</members>
         <members>LLC_BI__Loan__c.Reg_W_Reportable__c</members>
         <members>LLC_BI__Loan__c.Region__c</members>
+        <members>LLC_BI__Loan__c.RequestSummaryNarrative__c</members>
         <members>LLC_BI__Loan__c.Request_Additional_Funds__c</members>
         <members>LLC_BI__Loan__c.Right_To_Copy_Of_Appraisal_Sent_Date__c</members>
         <members>LLC_BI__Loan__c.Secondary_Market_Buyer__c</members>
@@ -22247,6 +22268,7 @@
         <members>LLC_BI__Product_Package_Team__c.LLC_BI__Assigned_Role__c</members>
         <members>LLC_BI__Product_Package_Team__c.LLC_BI__Product_Package__c</members>
         <members>LLC_BI__Product_Package_Team__c.LLC_BI__User__c</members>
+        <members>LLC_BI__Product_Package__c.AdequacyofSourceofRepaymentNarrativ__c</members>
         <members>LLC_BI__Product_Package__c.Any_Classified_Loan_100M__c</members>
         <members>LLC_BI__Product_Package__c.Approver_1__c</members>
         <members>LLC_BI__Product_Package__c.Approver_2__c</members>
@@ -22254,7 +22276,13 @@
         <members>LLC_BI__Product_Package__c.Approver_4__c</members>
         <members>LLC_BI__Product_Package__c.Approver_5__c</members>
         <members>LLC_BI__Product_Package__c.Classified_Loan_Long_Term__c</members>
+        <members>LLC_BI__Product_Package__c.CollateralNarrative__c</members>
+        <members>LLC_BI__Product_Package__c.ContingentDebtNarrative__c</members>
+        <members>LLC_BI__Product_Package__c.CreditBureauReportNarrative__c</members>
+        <members>LLC_BI__Product_Package__c.DepositoryRelationshipExpectationsNar__c</members>
         <members>LLC_BI__Product_Package__c.Enable_10_Rule__c</members>
+        <members>LLC_BI__Product_Package__c.FinancialAddendumNarrative__c</members>
+        <members>LLC_BI__Product_Package__c.GuarantorComakerCommentsNarrative__c</members>
         <members>LLC_BI__Product_Package__c.Household__c</members>
         <members>LLC_BI__Product_Package__c.LLC_BI__Account__c</members>
         <members>LLC_BI__Product_Package__c.LLC_BI__Additional_Income_Category__c</members>
@@ -22327,9 +22355,22 @@
         <members>LLC_BI__Product_Package__c.LLC_BI__Treasury_Annual_Operating_Cost__c</members>
         <members>LLC_BI__Product_Package__c.LLC_BI__Unused__c</members>
         <members>LLC_BI__Product_Package__c.LLC_BI__lookupKey__c</members>
+        <members>LLC_BI__Product_Package__c.LifeInsuranceNarrative__c</members>
+        <members>LLC_BI__Product_Package__c.NotestothePersonalFinancialStatemen__c</members>
         <members>LLC_BI__Product_Package__c.Package_Secure_Type__c</members>
+        <members>LLC_BI__Product_Package__c.PolicyExceptionsCommentsNarrative__c</members>
+        <members>LLC_BI__Product_Package__c.PrimaryNotestoHistoricalCashFlowNa__c</members>
+        <members>LLC_BI__Product_Package__c.PrimarySourcesofRepaymentInfoNarrat__c</members>
         <members>LLC_BI__Product_Package__c.Region__c</members>
+        <members>LLC_BI__Product_Package__c.SecondaryNotestoHistoricalCashFlow__c</members>
+        <members>LLC_BI__Product_Package__c.SecondarySourcesofRepaymentInfoNarr__c</members>
+        <members>LLC_BI__Product_Package__c.SensitivityAnalysisCashFlowCoverag__c</members>
+        <members>LLC_BI__Product_Package__c.StrengthsNarrative__c</members>
+        <members>LLC_BI__Product_Package__c.TaxReturnsNarrative__c</members>
+        <members>LLC_BI__Product_Package__c.TertiaryNotestoHistoricalCashFlow__c</members>
+        <members>LLC_BI__Product_Package__c.TertiarySourcesofRepaymentInfoNarra__c</members>
         <members>LLC_BI__Product_Package__c.Total_Relationship_Exposure__c</members>
+        <members>LLC_BI__Product_Package__c.WeaknessesNarrative__c</members>
         <members>LLC_BI__Product_Package__c.X1st_Approver__c</members>
         <members>LLC_BI__Product_Package__c.X2nd_Approver__c</members>
         <members>LLC_BI__Product_Package__c.cm_Approval_Committee__c</members>
@@ -32056,6 +32097,10 @@
         <members>WorkOrderPriority</members>
         <members>WorkOrderStatus</members>
         <name>StandardValueSet</name>
+    </types>
+    <types>
+        <members>Credit_Memo_Logo_FFIN</members>
+        <name>StaticResource</name>
     </types>
     <types>
         <members>en_US</members>

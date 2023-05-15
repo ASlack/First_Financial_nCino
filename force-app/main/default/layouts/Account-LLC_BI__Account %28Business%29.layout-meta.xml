@@ -79,6 +79,10 @@
                 <behavior>Edit</behavior>
                 <field>LLC_BI__Number_of_Signers__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>CustomerSince__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
