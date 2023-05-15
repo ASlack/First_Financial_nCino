@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ffin_Purpose_Code__c</fullName>
+    <description>First Financials Purpose Code which will be mapped to JHJX</description>
+    <externalId>false</externalId>
+    <label>Purpose Code</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1</fullName>
+                <default>false</default>
+                <label>1 - To acquire or carry seasonal inventory increase</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>2 - To acquire or carry non-seasonal inventory increase</label>
+            </value>
+            <value>
+                <fullName>3</fullName>
+                <default>false</default>
+                <label>3 - To acquire presold inventory</label>
+            </value>
+            <value>
+                <fullName>5</fullName>
+                <default>false</default>
+                <label>5 - To take advantage of quantity discounts</label>
+            </value>
+            <value>
+                <fullName>7</fullName>
+                <default>false</default>
+                <label>7 - To carry A/R resulting from seasonal increase in sales</label>
+            </value>
+            <value>
+                <fullName>8</fullName>
+                <default>false</default>
+                <label>8 - To carry non-seasonal increase in A/R</label>
+            </value>
+            <value>
+                <fullName>10</fullName>
+                <default>false</default>
+                <label>10 - To acquire or carry seasonal inventory &amp; A/R increase</label>
+            </value>
+            <value>
+                <fullName>11</fullName>
+                <default>false</default>
+                <label>11 - To acquire or carry non-seasonal inv. &amp; A/R increase</label>
+            </value>
+            <value>
+                <fullName>13</fullName>
+                <default>false</default>
+                <label>13 - To acquire or carry other current assets</label>
+            </value>
+            <value>
+                <fullName>15</fullName>
+                <default>false</default>
+                <label>15 - To acquire or carry investments to be held 60 days or less</label>
+            </value>
+            <value>
+                <fullName>16</fullName>
+                <default>false</default>
+                <label>16 - To acquire or carry listed stock long term</label>
+            </value>
+            <value>
+                <fullName>17</fullName>
+                <default>false</default>
+                <label>17 - To acquire or carry unlisted stock long term</label>
+            </value>
+            <value>
+                <fullName>18</fullName>
+                <default>false</default>
+                <label>18 - To acquire or carry bank or bank holding company stock L/T</label>
+            </value>
+            <value>
+                <fullName>20</fullName>
+                <default>false</default>
+                <label>20 - To acquire or carry corporate notes/bonds long term</label>
+            </value>
+            <value>
+                <fullName>21</fullName>
+                <default>false</default>
+                <label>21 - To acquire or carry nonprofit institution bonds long term</label>
+            </value>
+            <value>
+                <fullName>22</fullName>
+                <default>false</default>
+                <label>22 - To acquire or carry U.S./U.S. agency securities long term</label>
+            </value>
+            <value>
+                <fullName>23</fullName>
+                <default>false</default>
+                <label>23 - To acquire or carry State/State agency securities long term</label>
+            </value>
+            <value>
+                <fullName>24</fullName>
+                <default>false</default>
+                <label>24 - To acquire or carry Municipal/Co. or Spec. Dist. bonds L/T</label>
+            </value>
+            <value>
+                <fullName>25</fullName>
+                <default>false</default>
+                <label>25 - To acquire or carry other long term investments</label>
+            </value>
+            <value>
+                <fullName>26</fullName>
+                <default>false</default>
+                <label>26 - To acquire or carry partnership interest</label>
+            </value>
+            <value>
+                <fullName>27</fullName>
+                <default>false</default>
+                <label>27 - To acquire or carry controlling interest in another entity</label>
+            </value>
+            <value>
+                <fullName>30</fullName>
+                <default>false</default>
+                <label>30 - To acquire furniture and fixtures</label>
+            </value>
+            <value>
+                <fullName>31</fullName>
+                <default>false</default>
+                <label>31 - To acquire plant equipment</label>
+            </value>
+            <value>
+                <fullName>32</fullName>
+                <default>false</default>
+                <label>32 - To acquire intangible assets</label>
+            </value>
+            <value>
+                <fullName>33</fullName>
+                <default>false</default>
+                <label>33 - To fund equipment lease</label>
+            </value>
+            <value>
+                <fullName>34</fullName>
+                <default>false</default>
+                <label>34 - To acquire or carry mineral interest</label>
+            </value>
+            <value>
+                <fullName>35</fullName>
+                <default>false</default>
+                <label>35 - To replace bank overdraft</label>
+            </value>
+            <value>
+                <fullName>36</fullName>
+                <default>false</default>
+                <label>36 - To replace short term bank loan</label>
+            </value>
+            <value>
+                <fullName>37</fullName>
+                <default>false</default>
+                <label>37 - To replace long term bank loan</label>
+            </value>
+            <value>
+                <fullName>38</fullName>
+                <default>false</default>
+                <label>38 - To replace tax liability</label>
+            </value>
+            <value>
+                <fullName>39</fullName>
+                <default>false</default>
+                <label>39 - To replace other miscellaneous creditors</label>
+            </value>
+            <value>
+                <fullName>40</fullName>
+                <default>false</default>
+                <label>40 - To acquire treasury stock</label>
+            </value>
+            <value>
+                <fullName>45</fullName>
+                <default>false</default>
+                <label>45 - To pay payroll</label>
+            </value>
+            <value>
+                <fullName>46</fullName>
+                <default>false</default>
+                <label>46 - To pay operating expenses other than payroll</label>
+            </value>
+            <value>
+                <fullName>48</fullName>
+                <default>false</default>
+                <label>48 - To pay debt service</label>
+            </value>
+            <value>
+                <fullName>50</fullName>
+                <default>false</default>
+                <label>50 - To acquire or carry feeder cattle (feedlot)</label>
+            </value>
+            <value>
+                <fullName>51</fullName>
+                <default>false</default>
+                <label>51 - To acquire or carry stocker cattle (pasture)</label>
+            </value>
+            <value>
+                <fullName>52</fullName>
+                <default>false</default>
+                <label>52 - To fund cow/calf operation</label>
+            </value>
+            <value>
+                <fullName>53</fullName>
+                <default>false</default>
+                <label>53 - To Fund Aquaculture Products</label>
+            </value>
+            <value>
+                <fullName>55</fullName>
+                <default>false</default>
+                <label>55 - To acquire or carry other livestock (non-cattle)</label>
+            </value>
+            <value>
+                <fullName>56</fullName>
+                <default>false</default>
+                <label>56 - To acquire Agricultural Equipment</label>
+            </value>
+            <value>
+                <fullName>57</fullName>
+                <default>false</default>
+                <label>57 - To acquire or carry livestock feed</label>
+            </value>
+            <value>
+                <fullName>58</fullName>
+                <default>false</default>
+                <label>58 - Other loans to Ranchers/Farmers</label>
+            </value>
+            <value>
+                <fullName>59</fullName>
+                <default>false</default>
+                <label>59 - To fund crop production</label>
+            </value>
+            <value>
+                <fullName>60</fullName>
+                <default>false</default>
+                <label>60 - To acquire consumer durable goods</label>
+            </value>
+            <value>
+                <fullName>62</fullName>
+                <default>false</default>
+                <label>62 - To fund home improvements</label>
+            </value>
+            <value>
+                <fullName>64</fullName>
+                <default>false</default>
+                <label>64 - To pay miscellaneous consumer expenses</label>
+            </value>
+            <value>
+                <fullName>65</fullName>
+                <default>false</default>
+                <label>65 - To fund education expense</label>
+            </value>
+            <value>
+                <fullName>66</fullName>
+                <default>false</default>
+                <label>66 - To pay consumer taxes</label>
+            </value>
+            <value>
+                <fullName>68</fullName>
+                <default>false</default>
+                <label>68 - To replace other consumer creditors</label>
+            </value>
+            <value>
+                <fullName>70</fullName>
+                <default>false</default>
+                <label>70 - To acquire undeveloped R/E not for development or farming</label>
+            </value>
+            <value>
+                <fullName>71</fullName>
+                <default>false</default>
+                <label>71 - To acquire single family residential R/E</label>
+            </value>
+            <value>
+                <fullName>72</fullName>
+                <default>false</default>
+                <label>72 - To acquire multi-family residential R/E</label>
+            </value>
+            <value>
+                <fullName>73</fullName>
+                <default>false</default>
+                <label>73 - To acquire commercial R/E</label>
+            </value>
+            <value>
+                <fullName>74</fullName>
+                <default>false</default>
+                <label>74 - To acquire special purpose R/E</label>
+            </value>
+            <value>
+                <fullName>75</fullName>
+                <default>false</default>
+                <label>75 - To acquire farm R/E</label>
+            </value>
+            <value>
+                <fullName>76</fullName>
+                <default>false</default>
+                <label>76 - To fund single family residential R/E development</label>
+            </value>
+            <value>
+                <fullName>77</fullName>
+                <default>false</default>
+                <label>77 - To fund multi-family residential R/E development</label>
+            </value>
+            <value>
+                <fullName>78</fullName>
+                <default>false</default>
+                <label>78 - To fund commercial R/E development</label>
+            </value>
+            <value>
+                <fullName>79</fullName>
+                <default>false</default>
+                <label>79 - To fund special purpose R/E development</label>
+            </value>
+            <value>
+                <fullName>80</fullName>
+                <default>false</default>
+                <label>80 - To fund single family residential construction</label>
+            </value>
+            <value>
+                <fullName>81</fullName>
+                <default>false</default>
+                <label>81 - To fund multi-family residential construction</label>
+            </value>
+            <value>
+                <fullName>82</fullName>
+                <default>false</default>
+                <label>82 - To fund commercial construction</label>
+            </value>
+            <value>
+                <fullName>83</fullName>
+                <default>false</default>
+                <label>83 - To fund special purpose construction</label>
+            </value>
+            <value>
+                <fullName>84</fullName>
+                <default>false</default>
+                <label>84 - To fund raw land purchase</label>
+            </value>
+            <value>
+                <fullName>85</fullName>
+                <default>false</default>
+                <label>85 - To fund R/E development cost overruns</label>
+            </value>
+            <value>
+                <fullName>86</fullName>
+                <default>false</default>
+                <label>86 - To fund R/E building construction cost overruns</label>
+            </value>
+            <value>
+                <fullName>87</fullName>
+                <default>false</default>
+                <label>87 - 1-4 Res. Construction/Long Term Financing - 1 Time Close</label>
+            </value>
+            <value>
+                <fullName>88</fullName>
+                <default>false</default>
+                <label>88 - Bridge financing of residential R/E</label>
+            </value>
+            <value>
+                <fullName>89</fullName>
+                <default>false</default>
+                <label>89 - Permanent financing of residential R/E (In-house)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

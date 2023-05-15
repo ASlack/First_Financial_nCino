@@ -13,59 +13,109 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>ARM</fullName>
+                <fullName>700</fullName>
                 <default>false</default>
-                <label>ARM</label>
+                <label>Prime Rate</label>
             </value>
             <value>
-                <fullName>Fixed</fullName>
+                <fullName>750</fullName>
                 <default>false</default>
-                <label>Fixed</label>
+                <label>FFB Base Rate</label>
             </value>
             <value>
-                <fullName>LIBOR</fullName>
+                <fullName>777</fullName>
                 <default>false</default>
-                <label>LIBOR</label>
+                <label>US T-BILL 12 Mos</label>
             </value>
             <value>
-                <fullName>Treasury Constant Maturity - 1 Year +</fullName>
+                <fullName>800</fullName>
                 <default>false</default>
-                <label>Treasury Constant Maturity - 1 Year +</label>
+                <label>10 yr Treasury Rate</label>
             </value>
             <value>
-                <fullName>Treasury Constant Maturity - 2 Year +</fullName>
+                <fullName>850</fullName>
                 <default>false</default>
-                <label>Treasury Constant Maturity - 2 Year +</label>
+                <label>30 day SOFR</label>
             </value>
             <value>
-                <fullName>Treasury Constant Maturity - 3 Year +</fullName>
+                <fullName>860</fullName>
                 <default>false</default>
-                <label>Treasury Constant Maturity - 3 Year +</label>
+                <label>AMERIBOR</label>
             </value>
             <value>
-                <fullName>Treasury Constant Maturity - 5 Year +</fullName>
+                <fullName>880</fullName>
                 <default>false</default>
-                <label>Treasury Constant Maturity - 5 Year +</label>
+                <label>90 day SOFR</label>
             </value>
             <value>
-                <fullName>Treasury Constant Maturity - 7 Year +</fullName>
+                <fullName>901</fullName>
                 <default>false</default>
-                <label>Treasury Constant Maturity - 7 Year +</label>
+                <label>Fed Funds LOC</label>
             </value>
             <value>
-                <fullName>Treasury Constant Maturity - 10 Year +</fullName>
+                <fullName>902</fullName>
                 <default>false</default>
-                <label>Treasury Constant Maturity - 10 Year +</label>
+                <label>private Line Rate</label>
             </value>
             <value>
-                <fullName>WSJ Prime</fullName>
+                <fullName>903</fullName>
                 <default>false</default>
-                <label>WSJ Prime</label>
+                <label>3 Year Treasury Rate</label>
             </value>
             <value>
-                <fullName>Treasury Constant Maturity - 1 Year %2B</fullName>
+                <fullName>904</fullName>
                 <default>false</default>
-                <label>Treasury Constant Maturity - 1 Year %2B</label>
+                <label>5 Year Treasury Rate</label>
+            </value>
+            <value>
+                <fullName>905</fullName>
+                <default>false</default>
+                <label>Overdraft Protection</label>
+            </value>
+            <value>
+                <fullName>907</fullName>
+                <default>false</default>
+                <label>7 Year Treasury Rate</label>
+            </value>
+            <value>
+                <fullName>908</fullName>
+                <default>false</default>
+                <label>2 Year Treasury Bil</label>
+            </value>
+            <value>
+                <fullName>909</fullName>
+                <default>false</default>
+                <label>20 Year Treasury Bil</label>
+            </value>
+            <value>
+                <fullName>910</fullName>
+                <default>false</default>
+                <label>30 Year Treasury Bil</label>
+            </value>
+            <value>
+                <fullName>999</fullName>
+                <default>false</default>
+                <label>Zero Int Rate</label>
+            </value>
+            <value>
+                <fullName>766</fullName>
+                <default>false</default>
+                <label>Cleburne Private LOC</label>
+            </value>
+            <value>
+                <fullName>780</fullName>
+                <default>false</default>
+                <label>FFB San Angelo Base</label>
+            </value>
+            <value>
+                <fullName>790</fullName>
+                <default>false</default>
+                <label>FFB Conroe Base</label>
+            </value>
+            <value>
+                <fullName>785</fullName>
+                <default>false</default>
+                <label>FFB Sweetwater Base</label>
             </value>
         </valueSetDefinition>
     </valueSet>
