@@ -94,6 +94,19 @@
         <style>OneColumn</style>
     </layoutSections>
     <layoutSections>
+        <customLabel>true</customLabel>
+        <detailHeading>true</detailHeading>
+        <editHeading>false</editHeading>
+        <label>Covenant Type Description</label>
+        <layoutColumns>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>ffin_Description__c</field>
+            </layoutItems>
+        </layoutColumns>
+        <style>OneColumn</style>
+    </layoutSections>
+    <layoutSections>
         <customLabel>false</customLabel>
         <detailHeading>false</detailHeading>
         <editHeading>true</editHeading>
@@ -190,14 +203,32 @@
         <relatedList>LLC_BI__Account_Covenant__c.LLC_BI__Covenant2__c</relatedList>
     </relatedLists>
     <relatedLists>
+        <excludeButtons>MassChangeOwner</excludeButtons>
+        <excludeButtons>New</excludeButtons>
         <fields>NAME</fields>
+        <fields>LLC_BI__Effective_Date__c</fields>
         <fields>LLC_BI__Historic_Financial_Indicator__c</fields>
+        <fields>LLC_BI__Associated_Statement_Period_Status__c</fields>
+        <fields>LLC_BI__Automated_Testing_Status__c</fields>
         <fields>LLC_BI__Evaluated_By__c</fields>
         <fields>LLC_BI__Evaluation_Date__c</fields>
         <fields>LLC_BI__Approved_By__c</fields>
         <fields>LLC_BI__Approval_Date__c</fields>
         <fields>LLC_BI__Status__c</fields>
         <relatedList>LLC_BI__Covenant_Compliance2__c.LLC_BI__Covenant__c</relatedList>
+        <sortField>LLC_BI__Evaluation_Date__c</sortField>
+        <sortOrder>Asc</sortOrder>
+    </relatedLists>
+    <relatedLists>
+        <excludeButtons>MassChangeOwner</excludeButtons>
+        <excludeButtons>New</excludeButtons>
+        <fields>NAME</fields>
+        <fields>LLC_BI__Operator__c</fields>
+        <fields>LLC_BI__Financial_Indicator_Value__c</fields>
+        <fields>LLC_BI__End_Date__c</fields>
+        <relatedList>LLC_BI__Covenant_Rule__c.LLC_BI__Covenant__c</relatedList>
+        <sortField>LLC_BI__End_Date__c</sortField>
+        <sortOrder>Asc</sortOrder>
     </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>

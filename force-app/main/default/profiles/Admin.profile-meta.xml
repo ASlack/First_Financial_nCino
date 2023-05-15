@@ -6274,6 +6274,21 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>LLC_BI__Covenant2__c.ffin_Description__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Covenant_Type__c.LLC_BI__Category__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Covenant_Type__c.ffin_Description__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>LLC_BI__Credit_Memo_Modifcation__c.Length_of_Short_Term_Extension__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -10892,6 +10907,12 @@
     <layoutAssignments>
         <layout>LLC_BI__Collateral__c-Possessory Jewelry Gold Silver</layout>
         <recordType>LLC_BI__Collateral__c.Possessory_Jewelry_Gold_Silve</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>LLC_BI__Covenant2__c-LLC_BI__Covenant2 Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>LLC_BI__Covenant_Type__c-LLC_BI__Covenant Type Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>LLC_BI__Product_Feature__c-LLC_BI__Product Feature Layout</layout>
