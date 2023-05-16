@@ -201,7 +201,7 @@
             <label>Primary Officer Only</label>
         </rules>
     </decisions>
-    <description>When a Loan is created, flow is used to Create Loan Team Records</description>
+    <description>When a Main Loan is created, flow is used to Create Loan Team Records</description>
     <environments>Default</environments>
     <interviewLabel>Loan Created - Create LTM Roles {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Loan Created - Set/Create Fields/Records</label>
@@ -401,6 +401,13 @@
             <operator>IsNull</operator>
             <value>
                 <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>LLC_BI__Is_Main__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
             </value>
         </filters>
         <object>LLC_BI__Loan__c</object>

@@ -28799,8 +28799,12 @@
         <members>LLC_BI__Loan__c.Credit_Memo_Standard_Review_Account</members>
         <members>LLC_BI__Loan__c.Credit_Memo_Standard_Review_Product_Pack</members>
         <members>LLC_BI__Loan__c.Expansion_or_Remodal</members>
+        <members>LLC_BI__Loan__c.Fields_To_Not_Clone_Copy_Loan</members>
         <members>LLC_BI__Loan__c.Fields_To_Not_Clone_Modification</members>
         <members>LLC_BI__Loan__c.Fields_To_Not_Clone_Renewal</members>
+        <members>LLC_BI__Loan__c.Fields_To_Not_Clone_Sub_Loan</members>
+        <members>LLC_BI__Loan__c.Fields_to_Display_on_Creation_Copy</members>
+        <members>LLC_BI__Loan__c.Fields_to_Display_on_Creation_Sub_Loan</members>
         <members>LLC_BI__Loan__c.HMDA</members>
         <members>LLC_BI__Loan__c.HVCRE</members>
         <members>LLC_BI__Loan__c.LLC_BI__Affiliated_Detail</members>
@@ -29289,6 +29293,8 @@
         <members>SCOC__Credit_Report_Type_SCOC</members>
         <members>SCOC__Credit_Report_Type_Template_SCOC</members>
         <members>Set_Initial_Application_Date</members>
+        <members>Sub_Loan_Created_Update_Stage</members>
+        <members>Sub_Loan_Update_Stage_when_Parent_Loan_Stage_is_Updated</members>
         <members>Valuation_Auto_Submit</members>
         <members>X1st_Lien_On_Dwelling_Determined_Date</members>
         <members>nCino__IALAutoDecision</members>
