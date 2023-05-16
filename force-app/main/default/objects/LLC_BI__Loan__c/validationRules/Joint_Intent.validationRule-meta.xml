@@ -5,6 +5,7 @@
     <description>Joint Intent question must be answered before proceeding to Credit Underwriting and Final Review</description>
     <errorConditionFormula>AND(
 ISPICKVAL(IcertifythisloanhasJointIntent__c , &apos;&apos;),
+LLC_BI__Is_Main__c = TRUE,
 $User.No_Validation__c = false,
 OR(
 ISPICKVAL(LLC_BI__Stage__c, &apos;Credit Underwriting&apos;),

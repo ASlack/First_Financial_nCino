@@ -1,41 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>LLC_BI__ReviewDisplay</fullName>
-    <availableFields>
-        <field>LLC_BI__AmountOutstanding__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </availableFields>
-    <availableFields>
+    <fullName>Fields_to_Display_on_Creation_Sub_Loan</fullName>
+    <description>Fields which display in Loan Details when creating a new Sub Loan</description>
+    <displayedFields>
         <field>Name</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
-    </availableFields>
-    <availableFields>
-        <field>LLC_BI__Product__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </availableFields>
-    <availableFields>
-        <field>LLC_BI__lookupKey__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </availableFields>
-    <description>The fields that are displayed on the Review page</description>
+    </displayedFields>
     <displayedFields>
-        <field>LLC_BI__Stage__c</field>
+        <field>LLC_BI__Amount__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>LLC_BI__Status__c</field>
+        <field>LLC_BI__CloseDate__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>LLC_BI__Risk_Grade__c</field>
+        <field>LLC_BI__Maturity_Date__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
-    <label>ReviewDisplay</label>
+    <displayedFields>
+        <field>LLC_BI__Term_Months__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>LLC_BI__Amortized_Term_Months__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Fields to Display on Creation - Sub Loan</label>
 </FieldSet>
