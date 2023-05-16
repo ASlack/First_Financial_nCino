@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fields_to_Display_on_Creation_Copy</fullName>
+    <description>Fields which display in Loan Details when creating a new Copied Loan</description>
+    <displayedFields>
+        <field>Name</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>LLC_BI__Amount__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>LLC_BI__CloseDate__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>LLC_BI__Maturity_Date__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Fields to Display on Creation - Copy</label>
+</FieldSet>

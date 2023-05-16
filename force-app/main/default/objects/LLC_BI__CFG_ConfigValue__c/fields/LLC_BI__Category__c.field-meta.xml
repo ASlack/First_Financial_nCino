@@ -22,6 +22,11 @@
                 <label>Change Product</label>
             </value>
             <value>
+                <fullName>Copy Loan</fullName>
+                <default>false</default>
+                <label>Copy Loan</label>
+            </value>
+            <value>
                 <fullName>Delete_Feature_Enabled</fullName>
                 <default>false</default>
                 <label>Delete_Feature_Enabled</label>
