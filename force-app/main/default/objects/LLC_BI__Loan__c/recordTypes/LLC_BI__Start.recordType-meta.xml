@@ -130,6 +130,25 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>Last_Approver_for_Memo__c</picklist>
+        <values>
+            <fullName>CLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lender</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RDLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Senior Lender</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>Loan_Collateral_Sub_Type__c</picklist>
         <values>
             <fullName>1</fullName>

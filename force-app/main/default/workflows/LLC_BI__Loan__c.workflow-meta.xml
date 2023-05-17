@@ -246,6 +246,46 @@ TEXT(MIN(ROUND(MOD(LLC_BI__Amount__c, 1), 2) * 100, 99))
         <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
+        <fullName>Last_Approver_CLC</fullName>
+        <field>Last_Approver_for_Memo__c</field>
+        <literalValue>CLC</literalValue>
+        <name>Last Approver - CLC</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Last_Approver_Lender</fullName>
+        <field>Last_Approver_for_Memo__c</field>
+        <literalValue>Lender</literalValue>
+        <name>Last Approver - Lender</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Last_Approver_RDLC</fullName>
+        <field>Last_Approver_for_Memo__c</field>
+        <literalValue>RDLC</literalValue>
+        <name>Last Approver - RDLC</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Last_Approver_Senior_Lender</fullName>
+        <field>Last_Approver_for_Memo__c</field>
+        <literalValue>Senior Lender</literalValue>
+        <name>Last Approver - Senior Lender</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Loan_Blank_Out_Submitted_for_Approval</fullName>
         <description>Removes the original Submitted for Approval Date when a Loan is Rejected or Recalled</description>
         <field>Submitted_for_Approval_Date__c</field>

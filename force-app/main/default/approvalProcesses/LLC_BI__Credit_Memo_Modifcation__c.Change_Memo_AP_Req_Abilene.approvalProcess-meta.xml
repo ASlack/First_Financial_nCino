@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
-    <active>false</active>
+    <active>true</active>
     <allowRecall>true</allowRecall>
     <allowedSubmitters>
         <type>allInternalUsers</type>
@@ -13,23 +13,64 @@
         <allowDelegate>true</allowDelegate>
         <assignedApprover>
             <approver>
-                <name>LastModifiedBy</name>
+                <name>cm_Loan_Approver__c</name>
                 <type>relatedUserField</type>
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
         <entryCriteria>
-            <formula>2=1</formula>
+            <formula>OR(
+ISPICKVAL(Last_Approver_from_Loan__c, &quot;Lender&quot;),
+ISPICKVAL(Last_Approver_from_Loan__c, &quot;Senior Lender&quot;))</formula>
         </entryCriteria>
-        <ifCriteriaNotMet>ApproveRecord</ifCriteriaNotMet>
-        <label>Step 1 - Requires Approval</label>
-        <name>Step_1_Requires_Approval</name>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Last Approver from Loan</label>
+        <name>Last_Approver_from_Loan</name>
     </approvalStep>
-    <description>Approval process used to auto approve material loan changes AND used in additional automation to revert loan stage to Credit Underwriting.</description>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Abilene_CLC</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>ISPICKVAL(Last_Approver_from_Loan__c, &quot;CLC&quot;)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Commercial Loan Committee</label>
+        <name>Commercial_Loan_Committee</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>RDLC_Change_Memo_Queue</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>ISPICKVAL(Last_Approver_from_Loan__c, &quot;RDLC&quot;)</formula>
+        </entryCriteria>
+        <label>Regional Directors Loan Committee</label>
+        <name>Regional_Directors_Loan_Committee</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <description>Approval process used to approve material loan changes</description>
     <emailTemplate>PSO_Email_Templates/ET09_Change_Memo_Submitted</emailTemplate>
     <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
     <entryCriteria>
         <formula>AND(
+Region__r.Name = &apos;Abilene&apos;,
+NOT(ISPICKVAL(Last_Approver_from_Loan__c, &quot;&quot;)),
 ISPICKVAL(LLC_BI__Memo_Type__c, &apos;Change Memo&apos;),
 LLC_BI__Approval_Required__c = TRUE
 )</formula>
@@ -58,7 +99,7 @@ LLC_BI__Approval_Required__c = TRUE
             <type>FieldUpdate</type>
         </action>
     </initialSubmissionActions>
-    <label>MAP200 Change Memo - AP Required</label>
+    <label>Change Memo - AP Req - Abilene</label>
     <nextAutomatedApprover>
         <useApproverFieldOfRecordOwner>false</useApproverFieldOfRecordOwner>
         <userHierarchyField>Manager</userHierarchyField>

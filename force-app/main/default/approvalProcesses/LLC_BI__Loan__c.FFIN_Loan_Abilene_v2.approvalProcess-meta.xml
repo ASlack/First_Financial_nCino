@@ -14,6 +14,12 @@
     </approvalPageFields>
     <approvalStep>
         <allowDelegate>true</allowDelegate>
+        <approvalActions>
+            <action>
+                <name>Last_Approver_Lender</name>
+                <type>FieldUpdate</type>
+            </action>
+        </approvalActions>
         <assignedApprover>
             <approver>
                 <name>Loan_Approval_Queue</name>
@@ -32,6 +38,12 @@ NOT(ISBLANK(LLC_BI__Product_Package__r.Approver_1__c))
     </approvalStep>
     <approvalStep>
         <allowDelegate>true</allowDelegate>
+        <approvalActions>
+            <action>
+                <name>Last_Approver_Senior_Lender</name>
+                <type>FieldUpdate</type>
+            </action>
+        </approvalActions>
         <assignedApprover>
             <approver>
                 <name>Loan_Approval_Queue</name>
@@ -77,6 +89,12 @@ LLC_BI__Product_Package__r.Any_Classified_Loan_100M__c = True))</formula>
     </approvalStep>
     <approvalStep>
         <allowDelegate>false</allowDelegate>
+        <approvalActions>
+            <action>
+                <name>Last_Approver_CLC</name>
+                <type>FieldUpdate</type>
+            </action>
+        </approvalActions>
         <assignedApprover>
             <approver>
                 <name>Loan_Approval_Queue</name>
@@ -137,6 +155,12 @@ LLC_BI__Product_Package__r.Any_Classified_Loan_100M__c = True
     </approvalStep>
     <approvalStep>
         <allowDelegate>false</allowDelegate>
+        <approvalActions>
+            <action>
+                <name>Last_Approver_RDLC</name>
+                <type>FieldUpdate</type>
+            </action>
+        </approvalActions>
         <assignedApprover>
             <approver>
                 <name>Loan_Approval_Queue</name>

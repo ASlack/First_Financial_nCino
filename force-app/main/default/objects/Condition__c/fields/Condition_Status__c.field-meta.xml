@@ -11,9 +11,9 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>Unsatisfied</fullName>
+                <fullName>Not Satisfied</fullName>
                 <default>true</default>
-                <label>Unsatisfied</label>
+                <label>Not Satisfied</label>
             </value>
             <value>
                 <fullName>Satisfied</fullName>

@@ -13,7 +13,7 @@
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>Description__c</field>
+        <field>Comments__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
@@ -24,6 +24,16 @@
     </displayedFields>
     <displayedFields>
         <field>Condition_Status__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>AssignedTo__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>SecondaryAssignedTo__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>

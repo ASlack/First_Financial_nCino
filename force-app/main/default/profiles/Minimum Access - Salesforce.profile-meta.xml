@@ -64426,6 +64426,16 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Condition__c.AssignedTo__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Condition__c.Comments__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Condition__c.Condition_Assigned_To__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -64443,6 +64453,11 @@
         <editable>false</editable>
         <field>Condition__c.Description__c</field>
         <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Condition__c.SecondaryAssignedTo__c</field>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -72345,6 +72360,11 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Credit_Memo_Modifcation__c.Last_Approver_from_Loan__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>LLC_BI__Credit_Memo_Modifcation__c.Length_of_Short_Term_Extension__c</field>
         <readable>true</readable>
@@ -72375,6 +72395,11 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Credit_Memo_Modifcation__c.Region__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>LLC_BI__Credit_Memo_Modifcation__c.cm_Approval_Required_Formula__c</field>
         <readable>false</readable>
@@ -72383,6 +72408,11 @@
         <editable>false</editable>
         <field>LLC_BI__Credit_Memo_Modifcation__c.cm_ChangeMemoFlag__c</field>
         <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Credit_Memo_Modifcation__c.cm_Loan_Approver__c</field>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -80158,6 +80188,11 @@
         <editable>false</editable>
         <field>LLC_BI__Loan__c.LLC_BI__nCino_Loan_Number__c</field>
         <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Loan__c.Last_Approver_for_Memo__c</field>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
