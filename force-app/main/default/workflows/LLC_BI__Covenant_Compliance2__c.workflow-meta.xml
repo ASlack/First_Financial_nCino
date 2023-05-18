@@ -6,7 +6,7 @@
             <name>LLC_BI__Set_Historic_Financial_Indicator_Value</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>false</active>
+        <active>true</active>
         <criteriaItems>
             <field>LLC_BI__Covenant_Compliance2__c.LLC_BI__Status__c</field>
             <operation>equals</operation>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>UI_Adverse_Action_Dates</fullName>
+    <description>Holds date fields that users are required to enter after an adverse action is completed</description>
+    <displayedFields>
+        <field>Declined_Date__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>Withdrawn_Date__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>UI Adverse Action Dates</label>
+</FieldSet>

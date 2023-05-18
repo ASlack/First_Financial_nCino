@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unsatisfied_Conditions</fullName>
+    <active>true</active>
+    <description>Conditions must be satisfied prior to Closing and Booking &amp; Funding</description>
+    <errorConditionFormula>AND(  $User.No_Validation__c = false,
+Unsatisfied_Conditions_Closing__c &gt;= 1,
+OR(
+ ISPICKVAL(LLC_BI__Stage__c , &apos;Closing&apos;),
+ ISPICKVAL(LLC_BI__Stage__c , &apos;Booking &amp; Funding&apos;)
+)
+)</errorConditionFormula>
+    <errorMessage>Conditions must be satisfied prior to Closing and Booking &amp; Funding</errorMessage>
+</ValidationRule>

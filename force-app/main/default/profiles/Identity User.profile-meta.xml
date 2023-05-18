@@ -68406,6 +68406,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>LLC_BI__Adverse_Action__c.cm_Loan_Officer__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>LLC_BI__Analyzed_Account__c.LLC_BI__ACH_Pre_Funding_Requirement__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -102511,6 +102516,18 @@
     <flowAccesses>
         <enabled>false</enabled>
         <flow>Advance_Deal</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Adverse_Action_Created_Quick_Field_Updates</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Adverse_Action_Declination_Submit_for_Approval</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Adverse_Action_Notify_Loan_Team_via_Chatter</flow>
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
