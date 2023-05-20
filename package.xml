@@ -17200,11 +17200,13 @@
         <members>LLC_BI__Credit_Memo_Modifcation__c.MAP200_Change_Memo_AP_Required</members>
         <members>LLC_BI__Loan__c.FFIN_Loan_Abilene</members>
         <members>LLC_BI__Loan__c.FFIN_Loan_Abilene_v2</members>
+        <members>LLC_BI__Loan__c.FFIN_Loan_Bryan_College_Station</members>
         <members>LLC_BI__Loan__c.LAP100_Sample_Loan_Approval_Process</members>
         <members>LLC_BI__Loan__c.LAP100_nCino_Gold_Standard_AP</members>
         <members>LLC_BI__Loan__c.PP_Two_Step_Approval_Process</members>
         <members>LLC_BI__Product_Package__c.FFIN_PP_Abilene</members>
         <members>LLC_BI__Product_Package__c.FFIN_PP_Abilene_v2</members>
+        <members>LLC_BI__Product_Package__c.FFIN_PP_Bryan_College_Station</members>
         <members>LLC_BI__Product_Package__c.PPAP100_nCino_Gold_Standard_AP</members>
         <members>LLC_BI__Product_Package__c.PP_Sample_Approval_Process</members>
         <members>LLC_BI__Product_Package__c.PP_Two_Approvers_Approval_Process</members>
@@ -29689,6 +29691,7 @@
         <members>Loan_RFI_Received</members>
         <members>Loan_Scheduled_Loan_Team_Chatter_Notifications</members>
         <members>Loan_Set_Initial_Application_Date</members>
+        <members>Loan_Team_Member_Notify_Loan_Officer_when_Loan_Team_Member_is_Added</members>
         <members>Loan_Update_Product_Package_Fields_for_Approval_Process_Record_Trigger_Flow</members>
         <members>Loan_Updated_Amount_RR_Update_Product_Package</members>
         <members>Loan_Updated_Lender_Plans_to_Underwrite</members>
@@ -29768,6 +29771,7 @@
         <members>Loan_RFI_Received</members>
         <members>Loan_Scheduled_Loan_Team_Chatter_Notifications</members>
         <members>Loan_Set_Initial_Application_Date</members>
+        <members>Loan_Team_Member_Notify_Loan_Officer_when_Loan_Team_Member_is_Added</members>
         <members>Loan_Update_Product_Package_Fields_for_Approval_Process_Record_Trigger_Flow</members>
         <members>Loan_Updated_Amount_RR_Update_Product_Package</members>
         <members>Loan_Updated_Lender_Plans_to_Underwrite</members>

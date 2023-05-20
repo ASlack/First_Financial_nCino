@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Team_Member_Added_Chatter_Notification</name>
+        <label>Team Member Added Chatter Notification</label>
+        <locationX>176</locationX>
+        <locationY>623</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <elementReference>LTMAddedMessage</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>$Record.LLC_BI__Loan__c</elementReference>
+            </value>
+        </inputParameters>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <apiVersion>58.0</apiVersion>
+    <decisions>
+        <name>Assigned_Role</name>
+        <label>Assigned Role?</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>Other Roles</defaultConnectorLabel>
+        <rules>
+            <name>Credit_Analyst</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.LLC_BI__Assigned_Role__r.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Credit Analyst / Underwriter</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Team_Member_Added_Chatter_Notification</targetReference>
+            </connector>
+            <label>Credit Analyst</label>
+        </rules>
+        <rules>
+            <name>Doc_Prep_Processor</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.LLC_BI__Assigned_Role__r.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Doc Prep Processor</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Team_Member_Added_Chatter_Notification</targetReference>
+            </connector>
+            <label>Doc Prep Processor</label>
+        </rules>
+        <rules>
+            <name>Loan_Ops</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.LLC_BI__Assigned_Role__r.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Loan Ops</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Team_Member_Added_Chatter_Notification</targetReference>
+            </connector>
+            <label>Loan Ops</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Loan Team Member - Notify Loan Officer when Loan Team Member is Added {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Loan Team Member - Notify Loan Officer when Loan Team Member is Added</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Assigned_Role</targetReference>
+        </connector>
+        <object>LLC_BI__LoanTeam__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>LTMAddedMessage</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>@[{!$Record.LLC_BI__Loan__r.LLC_BI__Loan_Officer__c}] @[{!$Record.LLC_BI__Loan__r.cm_Loan_Assistant__c}] 
+
+Welcome to the loan @[{!$Record.LLC_BI__User__c}]. You have been added as the {!$Record.LLC_BI__Assigned_Role__r.Name}.</text>
+    </textTemplates>
+</Flow>
