@@ -17201,12 +17201,36 @@
         <members>LLC_BI__Loan__c.FFIN_Loan_Abilene</members>
         <members>LLC_BI__Loan__c.FFIN_Loan_Abilene_v2</members>
         <members>LLC_BI__Loan__c.FFIN_Loan_Bryan_College_Station</members>
+        <members>LLC_BI__Loan__c.FFIN_Loan_Cleburne</members>
+        <members>LLC_BI__Loan__c.FFIN_Loan_Conroe</members>
+        <members>LLC_BI__Loan__c.FFIN_Loan_Eastland</members>
+        <members>LLC_BI__Loan__c.FFIN_Loan_Fort_Worth</members>
+        <members>LLC_BI__Loan__c.FFIN_Loan_Hereford</members>
+        <members>LLC_BI__Loan__c.FFIN_Loan_Kingwood</members>
+        <members>LLC_BI__Loan__c.FFIN_Loan_Orange</members>
+        <members>LLC_BI__Loan__c.FFIN_Loan_San_Angelo</members>
+        <members>LLC_BI__Loan__c.FFIN_Loan_Southlake</members>
+        <members>LLC_BI__Loan__c.FFIN_Loan_Stephenville</members>
+        <members>LLC_BI__Loan__c.FFIN_Loan_Sweetwater</members>
+        <members>LLC_BI__Loan__c.FFIN_Loan_Weatherford</members>
         <members>LLC_BI__Loan__c.LAP100_Sample_Loan_Approval_Process</members>
         <members>LLC_BI__Loan__c.LAP100_nCino_Gold_Standard_AP</members>
         <members>LLC_BI__Loan__c.PP_Two_Step_Approval_Process</members>
         <members>LLC_BI__Product_Package__c.FFIN_PP_Abilene</members>
         <members>LLC_BI__Product_Package__c.FFIN_PP_Abilene_v2</members>
         <members>LLC_BI__Product_Package__c.FFIN_PP_Bryan_College_Station</members>
+        <members>LLC_BI__Product_Package__c.FFIN_PP_Cleburne</members>
+        <members>LLC_BI__Product_Package__c.FFIN_PP_Conroe</members>
+        <members>LLC_BI__Product_Package__c.FFIN_PP_Eastland</members>
+        <members>LLC_BI__Product_Package__c.FFIN_PP_Fort_Worth</members>
+        <members>LLC_BI__Product_Package__c.FFIN_PP_Hereford</members>
+        <members>LLC_BI__Product_Package__c.FFIN_PP_Kingwood</members>
+        <members>LLC_BI__Product_Package__c.FFIN_PP_Orange</members>
+        <members>LLC_BI__Product_Package__c.FFIN_PP_San_Angelo</members>
+        <members>LLC_BI__Product_Package__c.FFIN_PP_Southlake</members>
+        <members>LLC_BI__Product_Package__c.FFIN_PP_Stephenville</members>
+        <members>LLC_BI__Product_Package__c.FFIN_PP_Sweetwater</members>
+        <members>LLC_BI__Product_Package__c.FFIN_PP_Weatherford</members>
         <members>LLC_BI__Product_Package__c.PPAP100_nCino_Gold_Standard_AP</members>
         <members>LLC_BI__Product_Package__c.PP_Sample_Approval_Process</members>
         <members>LLC_BI__Product_Package__c.PP_Two_Approvers_Approval_Process</members>

@@ -224,11 +224,11 @@ LLC_BI__Product_Package__r.Total_Relationship_Exposure__c &gt; LLC_BI__Product_P
             <type>RejectRequest</type>
         </rejectBehavior>
     </approvalStep>
-    <description>Approval Process for Bryan/College Station Region</description>
+    <description>Approval Process for Eastland Region</description>
     <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
     <entryCriteria>
         <formula>AND(
-LLC_BI__Product_Package__r.Region__r.Name = &apos;Bryan/College Station&apos;,
+LLC_BI__Product_Package__r.Region__r.Name = &apos;Eastland&apos;,
 LLC_BI__Product_Package__r.LLC_BI__Reviewable_Loan_Facilities_Count__c &gt;= 1,
 LLC_BI__Is_Review_Ready__c = True,
 NOT(ISBLANK(LLC_BI__Product_Package__r.Household__c)),
@@ -265,8 +265,8 @@ NOT(ISPICKVAL(LLC_BI__Product_Package__r.LLC_BI__Risk_Rating__c, &quot;&quot;))
             <type>FieldUpdate</type>
         </action>
     </initialSubmissionActions>
-    <label>FFIN Loan - Bryan/College Station</label>
-    <processOrder>2</processOrder>
+    <label>FFIN Loan - Eastland</label>
+    <processOrder>5</processOrder>
     <recallActions>
         <action>
             <name>Loan_Set_Stage_to_Final_Review</name>

@@ -347,7 +347,10 @@ ISPICKVAL(Last_Approver_from_Loan__c, &quot;CLC&quot;))</formula>
 NOT(ISBLANK(Region__c)),
 NOT(ISPICKVAL(Last_Approver_from_Loan__c, &quot;&quot;)),
 ISPICKVAL(LLC_BI__Memo_Type__c, &apos;Change Memo&apos;),
-LLC_BI__Approval_Required__c = TRUE
+LLC_BI__Approval_Required__c = TRUE,
+OR(
+ISPICKVAL(LLC_BI__Approval_Status__c, &apos;New&apos;),
+ISPICKVAL(LLC_BI__Approval_Status__c, &apos;Recalled&apos;))
 )</formula>
     </entryCriteria>
     <finalApprovalActions>

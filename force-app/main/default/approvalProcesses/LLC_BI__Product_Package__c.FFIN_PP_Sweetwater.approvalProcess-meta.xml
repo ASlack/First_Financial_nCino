@@ -101,7 +101,7 @@ Any_Classified_Loan_100M__c = True)
         </approvalActions>
         <assignedApprover>
             <approver>
-                <name>B_College_Station_CLC</name>
+                <name>Sweetwater_CLC</name>
                 <type>queue</type>
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
@@ -167,7 +167,7 @@ Classified_Loan_Long_Term__c = True
         </approvalActions>
         <assignedApprover>
             <approver>
-                <name>B_College_Station_RDLC</name>
+                <name>Sweetwater_RDLC</name>
                 <type>queue</type>
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
@@ -234,12 +234,12 @@ Total_Relationship_Exposure__c &gt; Region__r.SLC_Total_Relationship_Max_Authori
             <type>RejectRequest</type>
         </rejectBehavior>
     </approvalStep>
-    <description>Approval Process for Bryan/College Station Region</description>
+    <description>Approval Process for Sweetwater Region</description>
     <emailTemplate>PSO_Email_Templates/ET63_Package_Submitted</emailTemplate>
     <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
     <entryCriteria>
         <formula>AND(
-    Region__r.Name = &apos;Bryan/College Station&apos;,
+    Region__r.Name = &apos;Sweetwater&apos;,
     NOT(ISBLANK(Household__c)),
     NOT(ISBLANK(Approver_1__c)),
     NOT(ISPICKVAL(Package_Secure_Type__c, &quot;&quot;)),
@@ -274,8 +274,8 @@ Total_Relationship_Exposure__c &gt; Region__r.SLC_Total_Relationship_Max_Authori
             <type>FieldUpdate</type>
         </action>
     </initialSubmissionActions>
-    <label>FFIN PP - Bryan/College Station</label>
-    <processOrder>2</processOrder>
+    <label>FFIN PP - Sweetwater</label>
+    <processOrder>13</processOrder>
     <recallActions>
         <action>
             <name>LLC_BI__Product_Package_Status_Recalled</name>
