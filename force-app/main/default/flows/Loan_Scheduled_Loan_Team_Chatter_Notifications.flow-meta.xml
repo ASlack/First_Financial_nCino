@@ -475,7 +475,7 @@
     <textTemplates>
         <name>IsDueDecisionMessage</name>
         <isViewedAsPlainText>true</isViewedAsPlainText>
-        <text>{!cvar_LTMUserIDs} &quot;application decision is due warning - credit action required&quot;</text>
+        <text>{!cvar_LTMUserIDs} &quot;Warning - Application Decision is past due - credit action required&quot;</text>
     </textTemplates>
     <textTemplates>
         <name>IsDueIncompleteMessage</name>
@@ -485,7 +485,7 @@
     <textTemplates>
         <name>OneDayDecisionDueMessage</name>
         <isViewedAsPlainText>true</isViewedAsPlainText>
-        <text>{!cvar_LTMUserIDs} &quot;application decision due 29 days warning - credit action required&quot;</text>
+        <text>{!cvar_LTMUserIDs} &quot;Warning - Application Decision due in 1 Day - credit action required&quot;</text>
     </textTemplates>
     <textTemplates>
         <name>OneDayIncompleteMessage</name>
@@ -500,7 +500,7 @@
     <textTemplates>
         <name>SevenDaysDecisionDueMessage</name>
         <isViewedAsPlainText>true</isViewedAsPlainText>
-        <text>{!cvar_LTMUserIDs} &quot;application decision due 23 days warning - credit action required&quot;</text>
+        <text>{!cvar_LTMUserIDs} &quot;Warning - Application Decision due in 7 Days - credit action required&quot;</text>
     </textTemplates>
     <textTemplates>
         <name>SevenDaysIncompleteMessage</name>
@@ -520,7 +520,7 @@
     <textTemplates>
         <name>ThreeDaysDecisionDueMessage</name>
         <isViewedAsPlainText>true</isViewedAsPlainText>
-        <text>{!cvar_LTMUserIDs} &quot;application decision due 27 days warning - credit action required&quot;</text>
+        <text>{!cvar_LTMUserIDs} &quot;Warning - Application Decision due in 3 Days - credit action required&quot;</text>
     </textTemplates>
     <textTemplates>
         <name>ThreeDaysIncompleteMessage</name>
