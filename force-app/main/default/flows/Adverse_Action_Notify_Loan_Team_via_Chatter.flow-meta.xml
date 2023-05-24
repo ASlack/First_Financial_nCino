@@ -77,12 +77,19 @@
             <targetReference>Set_Adverse_Action_Date_on_Loan</targetReference>
         </connector>
         <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
-        <filterLogic>and</filterLogic>
+        <filterLogic>or</filterLogic>
         <filters>
             <field>AA_Status__c</field>
             <operator>EqualTo</operator>
             <value>
                 <stringValue>Loan Declined</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AA_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Loan Withdrawn</stringValue>
             </value>
         </filters>
         <object>LLC_BI__Adverse_Action__c</object>

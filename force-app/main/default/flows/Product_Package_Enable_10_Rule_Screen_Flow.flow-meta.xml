@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>58.0</apiVersion>
+    <assignments>
+        <name>Assign_10_to_True</name>
+        <label>Assign 10% to True</label>
+        <locationX>50</locationX>
+        <locationY>1190</locationY>
+        <assignmentItems>
+            <assignToReference>Get_Product_Package.Enable_10_Rule__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Product_Package</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Region_Check</name>
+        <label>Region Check</label>
+        <locationX>897</locationX>
+        <locationY>350</locationY>
+        <defaultConnector>
+            <targetReference>Region_Does_Not_Allow_10_Rule_to_be_used</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Region Does Not Allow</defaultConnectorLabel>
+        <rules>
+            <name>Region_Allows_10_Rule</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Product_Package.Region__r.Lenders_can_use_10_Rule__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Risk_Rating_Check</targetReference>
+            </connector>
+            <label>Region Allows 10% Rule</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Risk_Rating_Check</name>
+        <label>Risk Rating Check</label>
+        <locationX>644</locationX>
+        <locationY>458</locationY>
+        <defaultConnector>
+            <targetReference>Risk_Rating_Requirements</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Risk Rating &gt; 2</defaultConnectorLabel>
+        <rules>
+            <name>Risk_Rating_1_or_2</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Product_Package.LLC_BI__Risk_Rating__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>1</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Product_Package.LLC_BI__Risk_Rating__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>2</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Total_Loan_Facilities_Amount_Max_Check</targetReference>
+            </connector>
+            <label>Risk Rating = 1 or 2</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Total_Credit_Exposure_Check</name>
+        <label>Total Credit Exposure Check</label>
+        <locationX>182</locationX>
+        <locationY>1082</locationY>
+        <defaultConnector>
+            <targetReference>Total_Loan_Facilities_Amount_Total_Credit_Exposure_10</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>TCE_x_10_Total_Loan_Facilities_Amount</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>TCE_x_10_Percent</leftValueReference>
+                <operator>GreaterThanOrEqualTo</operator>
+                <rightValue>
+                    <elementReference>Get_Product_Package.LLC_BI__Total_Loan_Facilities_Amount__c</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_10_to_True</targetReference>
+            </connector>
+            <label>TCE x 10% &gt;= Total Loan Facilities Amount</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Total_Loan_Fac_Amt_Approver_1s_Lending_Authority_Check</name>
+        <label>Total Loan Fac Amt &lt;= Approver 1s Lending Authority Check</label>
+        <locationX>182</locationX>
+        <locationY>674</locationY>
+        <defaultConnector>
+            <targetReference>Total_Loan_Facilities_Amount_of_all_loans_in_the_Product_Package_Approver_1_s_Le</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Approver_1s_Secured_Lending_Authority</name>
+            <conditionLogic>1 AND (2 OR 3)</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Product_Package.LLC_BI__Total_Loan_Facilities_Amount__c</leftValueReference>
+                <operator>LessThanOrEqualTo</operator>
+                <rightValue>
+                    <elementReference>Get_Product_Package.Approver_1__r.LLC_BI__Secured_Individual_Lending_Authority__c</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Product_Package.Package_Secure_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Secured</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Product_Package.Package_Secure_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Cash Secured</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Total_Credit_Exposure_Check</targetReference>
+            </connector>
+            <label>&lt;= Approver 1s Secured Lending Authority</label>
+        </rules>
+        <rules>
+            <name>Approver_1s_Unsecured_Lending_Authority</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Product_Package.LLC_BI__Total_Loan_Facilities_Amount__c</leftValueReference>
+                <operator>LessThanOrEqualTo</operator>
+                <rightValue>
+                    <elementReference>Get_Product_Package.Approver_1__r.LLC_BI__Unsecured_Individual_Lending_Authority__c</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Product_Package.Package_Secure_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Unsecured</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Total_Credit_Exposure_Check</targetReference>
+            </connector>
+            <label>&lt;= Approver 1s Unsecured Lending Authority</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Total_Loan_Facilities_Amount_Max_Check</name>
+        <label>Total Loan Facilities Amount Max Check</label>
+        <locationX>402</locationX>
+        <locationY>566</locationY>
+        <defaultConnector>
+            <targetReference>Total_Loan_Facilities_Amt_250m</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>TL Facilities Amt &gt; 250000</defaultConnectorLabel>
+        <rules>
+            <name>Total_Loan_Facilities_Amount_250000</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Product_Package.LLC_BI__Total_Loan_Facilities_Amount__c</leftValueReference>
+                <operator>LessThanOrEqualTo</operator>
+                <rightValue>
+                    <numberValue>250000.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Total_Loan_Fac_Amt_Approver_1s_Lending_Authority_Check</targetReference>
+            </connector>
+            <label>Total Loan Facilities Amount &lt;= 250000</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Valid_Inputs</name>
+        <label>Valid Inputs</label>
+        <locationX>1155</locationX>
+        <locationY>242</locationY>
+        <defaultConnector>
+            <targetReference>Minimum_Requirements_Are_Not_Met</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Missing Inputs</defaultConnectorLabel>
+        <rules>
+            <name>All_fields_are_Set</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Product_Package.LLC_BI__Risk_Rating__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Product_Package.Region__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Product_Package.Approver_1__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Product_Package.Household__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Product_Package.Package_Secure_Type__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Region_Check</targetReference>
+            </connector>
+            <label>All fields are Set</label>
+        </rules>
+    </decisions>
+    <description>Lenders have the ability to utilize 10% Rule prior to submitting for approval.  Screen flow to initiate that request</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>TCE_x_10_Percent</name>
+        <dataType>Currency</dataType>
+        <expression>({!Get_Product_Package.Household__r.Total_Relationship_Exposure__c}/10)</expression>
+        <scale>2</scale>
+    </formulas>
+    <interviewLabel>Product Package - Enable 10% Rule Screen Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Product Package - Enable 10% Rule Screen Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordLookups>
+        <name>Get_Product_Package</name>
+        <label>Get Product Package</label>
+        <locationX>1155</locationX>
+        <locationY>134</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Valid_Inputs</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>LLC_BI__Product_Package__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Product_Package</name>
+        <label>Update Product Package</label>
+        <locationX>50</locationX>
+        <locationY>1298</locationY>
+        <connector>
+            <targetReference>Success</targetReference>
+        </connector>
+        <inputReference>Get_Product_Package</inputReference>
+    </recordUpdates>
+    <screens>
+        <name>Minimum_Requirements_Are_Not_Met</name>
+        <label>Minimum Requirements Are Not Met</label>
+        <locationX>1414</locationX>
+        <locationY>350</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>Initial_Requirements</name>
+            <fieldText>&lt;p&gt;&lt;strong style=&quot;font-size: 14px;&quot;&gt;Please ensure the following data points are inputted in order to enable 10% Rule:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Region&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Risk Rating&lt;/span&gt;&lt;/li&gt;&lt;li&gt;Package Secure Type&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Approver 1&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Total Relationship Exposure / Credit Group&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Region_Does_Not_Allow_10_Rule_to_be_used</name>
+        <label>Region Does Not Allow 10% Rule to be used</label>
+        <locationX>1150</locationX>
+        <locationY>458</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>Region_Invalid</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px; color: rgb(255, 0, 0);&quot;&gt;Due to policy requirements, this Region does not allow for lenders to utilize the 10% Rule.&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Risk_Rating_Requirements</name>
+        <label>Risk Rating Requirements</label>
+        <locationX>886</locationX>
+        <locationY>566</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>RR_Invalid</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px; color: rgb(255, 0, 0);&quot;&gt;In order to utilize the 10% Rule, the overall Risk Rating for this Product Package must be &apos;1 - Pass&apos; or &apos;2 - Watch&apos;&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Success</name>
+        <label>Success</label>
+        <locationX>50</locationX>
+        <locationY>1406</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>TenPercent_Enabled_Message</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;10% Rule has been Enabled for this Package.  If any loans are added to this approval request, or the Risk Rating changes on any loans, this request will need to be redone.&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Total_Loan_Facilities_Amount_of_all_loans_in_the_Product_Package_Approver_1_s_Le</name>
+        <label>Total Loan Facilities Amount of all loans in the Product Package &lt;= Approver 1’s Lending Authority</label>
+        <locationX>358</locationX>
+        <locationY>782</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>Lending_Authority_Message</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px; color: rgb(255, 0, 0);&quot;&gt;Approver 1 does not have enough lending authority to enable 10% for this Package.&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Total_Loan_Facilities_Amount_Total_Credit_Exposure_10</name>
+        <label>Total Loan Facilities Amount &gt; (Total Credit Exposure * 10%)</label>
+        <locationX>314</locationX>
+        <locationY>1190</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>TCE_Message</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px; color: rgb(255, 0, 0);&quot;&gt;10% of the Total Credit Exposure for the Credit Group is less than the Total Loan Facilities Amount within this Package.  10% Rule will not be able to be utilized.  &lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Total_Loan_Facilities_Amt_250m</name>
+        <label>Total Loan Facilities Amount &gt; 250M</label>
+        <locationX>622</locationX>
+        <locationY>674</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>TLFA_Max_Message</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;color: rgb(255, 0, 0); font-size: 14px;&quot;&gt;The Total Amount of Loan Facilities in this Product Package exceeds the maximum of $250,000 allowed for 10% Rule to be used.&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>1029</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Product_Package</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

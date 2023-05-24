@@ -1,41 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Conditions_of_Approval</fullName>
-    <description>Loan Conditions route on Loan Object</description>
+    <fullName>UI_Loan_Codes</fullName>
+    <description>UI &gt; Loan Information &gt; Codes</description>
     <displayedFields>
-        <field>Name</field>
+        <field>LLC_BI__Product_Line__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>Category__c</field>
+        <field>LLC_BI__Product_Type__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>Description__c</field>
+        <field>LLC_BI__Product__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>Type__c</field>
+        <field>ffin_Purpose_Code__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>Condition_Status__c</field>
+        <field>JHJX__CallReportCode__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>Condition_Assigned_To__c</field>
+        <field>Loan_Collateral_Type__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>SecondaryAssignedTo__c</field>
+        <field>Real_Estate_Sub_Type__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
-    <label>Conditions of Approval</label>
+    <displayedFields>
+        <field>Loan_Collateral_Sub_Type__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>UI - Loan Codes</label>
 </FieldSet>

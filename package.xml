@@ -20278,6 +20278,7 @@
         <members>LLC_BI__Credit_Memo_Modifcation__c.Last_Approver_from_Loan__c</members>
         <members>LLC_BI__Credit_Memo_Modifcation__c.Length_of_Short_Term_Extension__c</members>
         <members>LLC_BI__Credit_Memo_Modifcation__c.LoanAmountDecrease__c</members>
+        <members>LLC_BI__Credit_Memo_Modifcation__c.LoanAmountIncrease__c</members>
         <members>LLC_BI__Credit_Memo_Modifcation__c.Loan_Information_Change__c</members>
         <members>LLC_BI__Credit_Memo_Modifcation__c.Loan_Officer__c</members>
         <members>LLC_BI__Credit_Memo_Modifcation__c.Maturity_Date_at_time_of_Creation__c</members>
@@ -29325,6 +29326,8 @@
         <members>LLC_BI__Loan__c.UI_Key_Dates_Reg_B_Editable</members>
         <members>LLC_BI__Loan__c.UI_Key_Dates_Reg_B_Read_Only</members>
         <members>LLC_BI__Loan__c.UI_Lead_Referral</members>
+        <members>LLC_BI__Loan__c.UI_Loan_Attributes</members>
+        <members>LLC_BI__Loan__c.UI_Loan_Codes</members>
         <members>LLC_BI__Loan__c.UI_Loan_Collateral1_Summary</members>
         <members>LLC_BI__Loan__c.UI_Loan_Collateral_Pledged</members>
         <members>LLC_BI__Loan__c.UI_Loan_Compliance_Certifications</members>
@@ -29736,6 +29739,7 @@
         <members>PB10_nCino_CAB_Oppy_LTM_s_on_Loan</members>
         <members>PB1_2_nCino_PMB_Run_HMDA_Automation_Services</members>
         <members>Product_Package_Creation_Field_Updates</members>
+        <members>Product_Package_Enable_10_Rule_Screen_Flow</members>
         <members>REG_O_Questionnaire_Rendering_Invocable</members>
         <members>REG_W_Questionnaire_Rendering_Invocable</members>
         <members>Relationship_Evaluation_LoanAutoDecision</members>
@@ -29816,6 +29820,7 @@
         <members>PB10_nCino_CAB_Oppy_LTM_s_on_Loan</members>
         <members>PB1_2_nCino_PMB_Run_HMDA_Automation_Services</members>
         <members>Product_Package_Creation_Field_Updates</members>
+        <members>Product_Package_Enable_10_Rule_Screen_Flow</members>
         <members>REG_O_Questionnaire_Rendering_Invocable</members>
         <members>REG_W_Questionnaire_Rendering_Invocable</members>
         <members>Relationship_Evaluation_LoanAutoDecision</members>
@@ -31698,6 +31703,7 @@
         <members>LLC_BI__Loan__c.Doc_Prep_Request</members>
         <members>LLC_BI__Loan__c.Request_for_Underwriting</members>
         <members>LLC_BI__Product_Package__c.Advance_Deal</members>
+        <members>LLC_BI__Product_Package__c.Enable_10_Rule</members>
         <members>LLC_BI__Product_Package__c.Update_Product_Package</members>
         <members>LLC_BI__Review__c.Approval_Details</members>
         <members>LLC_BI__Review__c.Generate_Credit_Memo</members>

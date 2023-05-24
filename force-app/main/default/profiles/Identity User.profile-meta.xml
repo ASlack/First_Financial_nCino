@@ -72381,6 +72381,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>LLC_BI__Credit_Memo_Modifcation__c.LoanAmountIncrease__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>LLC_BI__Credit_Memo_Modifcation__c.Loan_Information_Change__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -102628,6 +102633,10 @@
     <flowAccesses>
         <enabled>false</enabled>
         <flow>Product_Package_Creation_Field_Updates</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Product_Package_Enable_10_Rule_Screen_Flow</flow>
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>

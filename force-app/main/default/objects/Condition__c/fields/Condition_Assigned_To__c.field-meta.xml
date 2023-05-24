@@ -3,7 +3,7 @@
     <fullName>Condition_Assigned_To__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
     <externalId>false</externalId>
-    <label>Condition Assigned To</label>
+    <label>Assigned To</label>
     <referenceTo>User</referenceTo>
     <relationshipName>Conditions</relationshipName>
     <required>false</required>
