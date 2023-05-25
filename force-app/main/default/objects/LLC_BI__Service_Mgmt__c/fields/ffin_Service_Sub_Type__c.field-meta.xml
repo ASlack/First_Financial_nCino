@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ffin_Service_Sub_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Service Sub-Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>LLC_BI__Service_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Standard Appraisal (Form 1004)</fullName>
+                <default>false</default>
+                <label>Standard Appraisal (Form 1004)</label>
+            </value>
+            <value>
+                <fullName>Construction Appraisal</fullName>
+                <default>false</default>
+                <label>Construction Appraisal</label>
+            </value>
+            <value>
+                <fullName>As Is Appraisal</fullName>
+                <default>false</default>
+                <label>As Is Appraisal</label>
+            </value>
+            <value>
+                <fullName>Upon Completion Appraisal</fullName>
+                <default>false</default>
+                <label>Upon Completion Appraisal</label>
+            </value>
+            <value>
+                <fullName>FHA (Form 1004 supplemented with FHA requirements)</fullName>
+                <default>false</default>
+                <label>FHA (Form 1004 supplemented with FHA requirements)</label>
+            </value>
+            <value>
+                <fullName>Single Family Rental-Secondary Market (Form 1004, 1007, &amp; 216)</fullName>
+                <default>false</default>
+                <label>Single Family Rental-Secondary Market (Form 1004, 1007, &amp; 216)</label>
+            </value>
+            <value>
+                <fullName>2-4 Family (Form 1025)</fullName>
+                <default>false</default>
+                <label>2-4 Family (Form 1025)</label>
+            </value>
+            <value>
+                <fullName>Manufactured Home (Form 1004C)</fullName>
+                <default>false</default>
+                <label>Manufactured Home (Form 1004C)</label>
+            </value>
+            <value>
+                <fullName>Condo Unit (Form 1073)</fullName>
+                <default>false</default>
+                <label>Condo Unit (Form 1073)</label>
+            </value>
+            <value>
+                <fullName>Lot Appraisal (if no structural improvements)</fullName>
+                <default>false</default>
+                <label>Lot Appraisal (if no structural improvements)</label>
+            </value>
+            <value>
+                <fullName>Exterior only (Form 2055 used primarily for classified loans and foreclosures)</fullName>
+                <default>false</default>
+                <label>Exterior only (Form 2055 used primarily for classified loans and foreclosures)</label>
+            </value>
+            <value>
+                <fullName>Commercial Appraisal</fullName>
+                <default>false</default>
+                <label>Commercial Appraisal</label>
+            </value>
+            <value>
+                <fullName>Final Inspection with no recertification (Form 1004D)</fullName>
+                <default>false</default>
+                <label>Final Inspection with no recertification (Form 1004D)</label>
+            </value>
+            <value>
+                <fullName>Final Inspection with recertification (Form 1004D)</fullName>
+                <default>false</default>
+                <label>Final Inspection with recertification (Form 1004D)</label>
+            </value>
+            <value>
+                <fullName>Commercial Certifications of Completion</fullName>
+                <default>false</default>
+                <label>Commercial Certifications of Completion</label>
+            </value>
+            <value>
+                <fullName>Broker prepared evaluations</fullName>
+                <default>false</default>
+                <label>Broker prepared evaluations</label>
+            </value>
+            <value>
+                <fullName>First American Report</fullName>
+                <default>false</default>
+                <label>First American Report</label>
+            </value>
+            <value>
+                <fullName>Cushman-Wakefield or other vendor</fullName>
+                <default>false</default>
+                <label>Cushman-Wakefield or other vendor</label>
+            </value>
+            <value>
+                <fullName>Restricted report from an appraiser</fullName>
+                <default>false</default>
+                <label>Restricted report from an appraiser</label>
+            </value>
+            <value>
+                <fullName>Not in Flood Zone</fullName>
+                <default>false</default>
+                <label>Not in Flood Zone</label>
+            </value>
+            <value>
+                <fullName>In Flood Zone</fullName>
+                <default>false</default>
+                <label>In Flood Zone</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Appraiser</controllingFieldValue>
+            <valueName>Standard Appraisal (Form 1004)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Appraiser</controllingFieldValue>
+            <valueName>Construction Appraisal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Appraiser</controllingFieldValue>
+            <valueName>As Is Appraisal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Appraiser</controllingFieldValue>
+            <valueName>Upon Completion Appraisal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Appraiser</controllingFieldValue>
+            <valueName>FHA (Form 1004 supplemented with FHA requirements)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Appraiser</controllingFieldValue>
+            <valueName>Single Family Rental-Secondary Market (Form 1004, 1007, &amp; 216)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Appraiser</controllingFieldValue>
+            <valueName>2-4 Family (Form 1025)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Appraiser</controllingFieldValue>
+            <valueName>Manufactured Home (Form 1004C)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Appraiser</controllingFieldValue>
+            <valueName>Condo Unit (Form 1073)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Appraiser</controllingFieldValue>
+            <valueName>Lot Appraisal (if no structural improvements)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Appraiser</controllingFieldValue>
+            <valueName>Exterior only (Form 2055 used primarily for classified loans and foreclosures)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Appraiser</controllingFieldValue>
+            <valueName>Commercial Appraisal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Certifications of Completion</controllingFieldValue>
+            <valueName>Final Inspection with no recertification (Form 1004D)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Certifications of Completion</controllingFieldValue>
+            <valueName>Final Inspection with recertification (Form 1004D)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Certifications of Completion</controllingFieldValue>
+            <valueName>Commercial Certifications of Completion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Evaluations</controllingFieldValue>
+            <valueName>Broker prepared evaluations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Evaluations</controllingFieldValue>
+            <valueName>First American Report</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Evaluations</controllingFieldValue>
+            <valueName>Cushman-Wakefield or other vendor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Evaluations</controllingFieldValue>
+            <valueName>Restricted report from an appraiser</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Flood Approval Process</controllingFieldValue>
+            <valueName>Not in Flood Zone</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Flood Approval Process</controllingFieldValue>
+            <valueName>In Flood Zone</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

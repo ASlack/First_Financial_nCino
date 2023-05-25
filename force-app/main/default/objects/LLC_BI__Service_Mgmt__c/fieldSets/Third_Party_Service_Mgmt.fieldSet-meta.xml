@@ -18,6 +18,11 @@
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
+        <field>ffin_Service_Sub_Type__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
         <field>LLC_BI__Status__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>

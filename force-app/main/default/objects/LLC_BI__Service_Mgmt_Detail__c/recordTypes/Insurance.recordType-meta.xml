@@ -5,119 +5,6 @@
     <description>Custom Record Type for the Insurance Service Mgmt Details.</description>
     <label>Insurance</label>
     <picklistValues>
-        <picklist>LLC_BI__Status__c</picklist>
-        <values>
-            <fullName>Active</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Inactive</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Pending</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>LLC_BI__Sub_Type__c</picklist>
-        <values>
-            <fullName>Builder Risk</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Business Interruption</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Business Personal Property</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Collision %26 Comprehensive</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Credit</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Disability</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Earthquake</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Flood Building</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Flood Contents</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Hazard</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Liability</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Life</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Miscellaneous</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Multi Peril - Excluding Flood</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Multi Peril - Including Flood</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Re-Insurance</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Real and Personal Property</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Sinkhole</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Terrorism</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Title</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Windstorm and Hail</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Workers Compensation</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>LLC_BI__Type__c</picklist>
-        <values>
-            <fullName>Insurance</fullName>
-            <default>true</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
         <picklist>MarketValueInterest__c</picklist>
         <values>
             <fullName>Fee simple</fullName>
@@ -218,17 +105,6 @@
         </values>
     </picklistValues>
     <picklistValues>
-        <picklist>cm_Evaluation_Type__c</picklist>
-        <values>
-            <fullName>Exterior</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Interior</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
         <picklist>cm_Licensed_Appraiser_Allowed__c</picklist>
         <values>
             <fullName>General</fullName>
@@ -323,21 +199,6 @@
         </values>
     </picklistValues>
     <picklistValues>
-        <picklist>cm_Requested_Approaches__c</picklist>
-        <values>
-            <fullName>Cost</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Income</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Market Value</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
         <picklist>cm_Requested_Property_Rights__c</picklist>
         <values>
             <fullName>Fee Simple</fullName>
@@ -345,21 +206,6 @@
         </values>
         <values>
             <fullName>Leased Fee</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>cm_Requested_Values__c</picklist>
-        <values>
-            <fullName>Market Value As Is</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Market Value At Completion</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Market Value At Stabilization</fullName>
             <default>false</default>
         </values>
     </picklistValues>

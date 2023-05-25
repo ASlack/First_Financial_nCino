@@ -8,12 +8,17 @@
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
+        <field>LLC_BI__Account__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>true</isRequired>
+    </displayedFields>
+    <displayedFields>
         <field>LLC_BI__Service_Type__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>true</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>LLC_BI__Account__c</field>
+        <field>ffin_Service_Sub_Type__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>true</isRequired>
     </displayedFields>

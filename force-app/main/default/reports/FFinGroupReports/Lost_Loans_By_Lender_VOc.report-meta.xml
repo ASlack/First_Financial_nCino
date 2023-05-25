@@ -26,6 +26,9 @@
         <titleSize>18</titleSize>
     </chart>
     <columns>
+        <field>LLC_BI__LoanTeam__c.LLC_BI__User__c</field>
+    </columns>
+    <columns>
         <field>CUST_NAME</field>
     </columns>
     <columns>
@@ -60,7 +63,7 @@
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>LLC_BI__LoanTeam__c.LLC_BI__User__c</field>
+        <field>LLC_BI__Loan__c.Region__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <groupingsDown>

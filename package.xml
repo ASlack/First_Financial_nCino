@@ -75,6 +75,7 @@
         <members>DMAdmin__TestDMcfgController</members>
         <members>DMAdmin__dmaController</members>
         <members>DMAdmin__dmaTest</members>
+        <members>DocumentScanController</members>
         <members>EFPIO__AAccessTokenProvider_v1</members>
         <members>EFPIO__ACommitPriorityStrategy_v1</members>
         <members>EFPIO__AIdempotentUpgrade_v1</members>
@@ -21974,6 +21975,7 @@
         <members>LLC_BI__Loan__c.ffin_Credit_Manager_Reviewer__c</members>
         <members>LLC_BI__Loan__c.ffin_Docs_Needed_By__c</members>
         <members>LLC_BI__Loan__c.ffin_Docs_Review_Needed__c</members>
+        <members>LLC_BI__Loan__c.ffin_Escrow__c</members>
         <members>LLC_BI__Loan__c.ffin_Lender_Plans_to_Underwrite__c</members>
         <members>LLC_BI__Loan__c.ffin_Purpose_Code__c</members>
         <members>LLC_BI__Loan__c.ffin_Request_Needed_By__c</members>
@@ -23395,6 +23397,7 @@
         <members>LLC_BI__Service_Mgmt__c.LLC_BI__Service_Provider__c</members>
         <members>LLC_BI__Service_Mgmt__c.LLC_BI__Service_Type__c</members>
         <members>LLC_BI__Service_Mgmt__c.LLC_BI__Status__c</members>
+        <members>LLC_BI__Service_Mgmt__c.ffin_Service_Sub_Type__c</members>
         <members>LLC_BI__Site_Visit_Memo__c.LLC_BI__Account__c</members>
         <members>LLC_BI__Site_Visit_Memo__c.LLC_BI__Action_Items__c</members>
         <members>LLC_BI__Site_Visit_Memo__c.LLC_BI__Customer_Flow__c</members>
@@ -28303,6 +28306,7 @@
     </types>
     <types>
         <members>DM_Admin</members>
+        <members>Document_Scan</members>
         <members>EFPIO__nCino_Integration_Dashboard</members>
         <members>LLC_BI__Account_Covenant_Bulk_Associate</members>
         <members>LLC_BI__Application__c</members>
@@ -28319,6 +28323,7 @@
         <members>LLC_BI__Connection_Role__c</members>
         <members>LLC_BI__Covenant2__c</members>
         <members>LLC_BI__Covenant_Type__c</members>
+        <members>LLC_BI__Credit_Memo_Modifcation__c</members>
         <members>LLC_BI__Credit_Memo__c</members>
         <members>LLC_BI__Deposit__c</members>
         <members>LLC_BI__DocManager__c</members>
@@ -28343,6 +28348,7 @@
         <members>LLC_BI__Risk_Grade_Template__c</members>
         <members>LLC_BI__Role__c</members>
         <members>LLC_BI__Roll_Up_Column__c</members>
+        <members>LLC_BI__Service_Mgmt_Detail__c</members>
         <members>LLC_BI__Service_Mgmt__c</members>
         <members>LLC_BI__Spread_Statement_Record_Total__c</members>
         <members>LLC_BI__Spread_Statement_Type__c</members>
@@ -29316,6 +29322,7 @@
         <members>LLC_BI__Loan__c.RequiredLoanFieldsToCreateRateOrPayment</members>
         <members>LLC_BI__Loan__c.Standard_Product_Package_Credit_Memo</members>
         <members>LLC_BI__Loan__c.Standard_Product_Package_Credit_Memo_Exp</members>
+        <members>LLC_BI__Loan__c.UIEscrowCondRendered</members>
         <members>LLC_BI__Loan__c.UI_Adverse_Action_Dates</members>
         <members>LLC_BI__Loan__c.UI_Approval_Fields</members>
         <members>LLC_BI__Loan__c.UI_Attorney_Info</members>
@@ -29614,6 +29621,7 @@
         <members>Deal_Proposal</members>
         <members>Deposit_Layout</members>
         <members>DocManager_Layout</members>
+        <members>Document_Scan</members>
         <members>EFPIO__nCino_Integration_Dashboard</members>
         <members>Entity_Involvement_Layout</members>
         <members>ExpressionSetConsole_UtilityBar</members>
@@ -30674,6 +30682,7 @@
         <members>dmwEditReportPanel</members>
         <members>dmwFieldService</members>
         <members>dmwWorkspace</members>
+        <members>documentScanSubmission</members>
         <members>externalDataSourceLoader</members>
         <members>externalDataSourceRemover</members>
         <members>externalDataSourceSaver</members>
@@ -31191,6 +31200,7 @@
         <members>LLC_BI__Risk_Grade_Template__c.Templates_and_Reviews</members>
         <members>LLC_BI__Role__c.LLC_BI__All</members>
         <members>LLC_BI__Roll_Up_Column__c.All</members>
+        <members>LLC_BI__Service_Mgmt_Detail__c.All</members>
         <members>LLC_BI__Service_Mgmt__c.All</members>
         <members>LLC_BI__Site_Visit_Memo__c.LLC_BI__All</members>
         <members>LLC_BI__Spread_Statement_Record_Total__c.LLC_BI__All</members>
@@ -31843,6 +31853,7 @@
         <members>FFinGroupReports/Loans_Needing_Credit_Analyst_akR</members>
         <members>FFinGroupReports/Lost_Loans_By_Lender_VOc</members>
         <members>FFinGroupReports/Lost_Loans_By_Region_31Z</members>
+        <members>FFinGroupReports/New_Loans_Report_EnG</members>
         <members>FFinGroupReports/Pipeline_By_Region_dpw</members>
         <members>FFinGroupReports/Stage_DurationNot_Booked_DAR</members>
         <members>FFinGroupReports/Stage_Duration_Report_Wcn</members>
@@ -32696,6 +32707,7 @@
         <members>LLC_BI__Contingent_Liabilty__c.LLC_BI__Capacity_Soleprietorship</members>
         <members>LLC_BI__Contingent_Liabilty__c.LLC_BI__Capacity_Trust</members>
         <members>LLC_BI__Contingent_Liabilty__c.LLC_BI__percentage_only_if_assign_specific</members>
+        <members>LLC_BI__Credit_Memo_Modifcation__c.Short_Term_Extensions</members>
         <members>LLC_BI__Credit_Memo__c.LLC_BI__FScreen_Required</members>
         <members>LLC_BI__Credit_Memo__c.LLC_BI__Screen_Required</members>
         <members>LLC_BI__Deposit__c.JHJX__Interest_Disposition_Deposit_To_Account</members>

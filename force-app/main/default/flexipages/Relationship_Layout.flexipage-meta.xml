@@ -618,6 +618,28 @@
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
+                    <name>relatedListComponentOverride</name>
+                    <value>NONE</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>rowsToDisplay</name>
+                    <value>10</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>showActionBar</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentName>force:relatedListContainer</componentName>
+                <identifier>force_relatedListContainer2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>Facet-42c93055-d0da-4455-83b8-c6e3e67977d0</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
                     <name>body</name>
                     <value>Facet-2b15a4ec-ebd7-48ec-bb2b-f77fe07a82c1</value>
                 </componentInstanceProperties>
@@ -627,6 +649,20 @@
                 </componentInstanceProperties>
                 <componentName>flexipage:tab</componentName>
                 <identifier>detailTab3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-42c93055-d0da-4455-83b8-c6e3e67977d0</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>Related</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>flexipage_tab6</identifier>
             </componentInstance>
         </itemInstances>
         <name>Facet-74290267-c0f1-45b9-ab42-19c0289a7324</name>

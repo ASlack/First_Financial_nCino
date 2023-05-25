@@ -407,6 +407,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>DocumentScanController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>EFPIO__AAccessTokenProvider_v1</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -80522,6 +80526,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>LLC_BI__Loan__c.ffin_Escrow__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>LLC_BI__Loan__c.ffin_Lender_Plans_to_Underwrite__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -87123,6 +87132,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>LLC_BI__Service_Mgmt__c.LLC_BI__Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Service_Mgmt__c.ffin_Service_Sub_Type__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -102634,6 +102648,10 @@
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
+        <flow>Loan_Scheduled_Loan_Team_Chatter_Notifications</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
         <flow>Loan_Updated_Amount_RR_Update_Product_Package</flow>
     </flowAccesses>
     <flowAccesses>
@@ -111419,6 +111437,10 @@
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
+        <tab>Document_Scan</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>EFPIO__nCino_Integration_Dashboard</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
@@ -111481,6 +111503,10 @@
     <tabVisibilities>
         <tab>LLC_BI__Covenant_Type__c</tab>
         <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>LLC_BI__Credit_Memo_Modifcation__c</tab>
+        <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>LLC_BI__Credit_Memo__c</tab>
@@ -111576,6 +111602,10 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>LLC_BI__Roll_Up_Column__c</tab>
+        <visibility>DefaultOff</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>LLC_BI__Service_Mgmt_Detail__c</tab>
         <visibility>DefaultOff</visibility>
     </tabVisibilities>
     <tabVisibilities>
