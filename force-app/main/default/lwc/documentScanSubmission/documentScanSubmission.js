@@ -8,19 +8,13 @@ export default class DocumentScanSubmission extends LightningElement {
   matchingLoansMessage;
   actionMessage;
   selectedLoan;
+  fileUploaded;
 
   get acceptedFormats() {
     return [".pdf"];
   }
 
-  // renderedCallback() {
-  //   console.log(`rendered callback`);
-  //   this.partialReset();
-  // }
-
   handleLoanNumberInputBlur(event) {
-    // this.partialReset();
-    console.log(`blur`);
     this.loanNumber = event.target.value;
 
     if (this.loanNumber.length > 0) {
@@ -51,6 +45,7 @@ export default class DocumentScanSubmission extends LightningElement {
     this.matchingLoans = undefined;
     this.matchingLoanOptions = [];
     this.selectedLoan = undefined;
+    this.fileUploaded = undefined;
   }
 
   reset() {
@@ -62,8 +57,6 @@ export default class DocumentScanSubmission extends LightningElement {
   }
 
   handleLoanRadioGroupChange(event) {
-    // console.log(`changed to: `);
-    // console.log(JSON.stringify(event.target.value));
     this.selectedLoan = event.target.value;
   }
 
@@ -81,8 +74,11 @@ export default class DocumentScanSubmission extends LightningElement {
     });
   }
 
-  handleFileUploadFinished(event) {
+  handleUploadFinished(event) {
     console.log(`upload finished`);
-    console.log(event.target.value);
+    // console.log(JSON.parse(JSON.stringify(event.detail.files)));
+    // this.fileUploaded = true;
+    this.fileUploaded = event.detail.files[0];
+    console.log(this.fileUploaded);
   }
 }

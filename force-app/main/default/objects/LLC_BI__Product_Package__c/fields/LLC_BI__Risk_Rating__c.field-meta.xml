@@ -16,37 +16,37 @@
             <value>
                 <fullName>1</fullName>
                 <default>false</default>
-                <label>1 Pass</label>
+                <label>1 - Pass</label>
             </value>
             <value>
                 <fullName>2</fullName>
                 <default>false</default>
-                <label>2 Watch</label>
+                <label>2 - Watch</label>
             </value>
             <value>
                 <fullName>3</fullName>
                 <default>false</default>
-                <label>3 OAEM</label>
+                <label>3 - OAEM</label>
             </value>
             <value>
                 <fullName>4</fullName>
                 <default>false</default>
-                <label>4 Substandard</label>
+                <label>4 - Substandard</label>
             </value>
             <value>
                 <fullName>5</fullName>
                 <default>false</default>
-                <label>5 Substandard Non-Accrual</label>
+                <label>5 - Substandard Non-Accrual</label>
             </value>
             <value>
                 <fullName>6</fullName>
                 <default>false</default>
-                <label>6 Doubtful</label>
+                <label>6 - Doubtful</label>
             </value>
             <value>
                 <fullName>7</fullName>
                 <default>false</default>
-                <label>7 Loss</label>
+                <label>7 - Loss</label>
             </value>
         </valueSetDefinition>
     </valueSet>

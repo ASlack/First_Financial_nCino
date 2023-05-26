@@ -19,6 +19,10 @@
                 <behavior>Edit</behavior>
                 <field>ffin_Service_Sub_Type__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>ffin_Internal_Servicer__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

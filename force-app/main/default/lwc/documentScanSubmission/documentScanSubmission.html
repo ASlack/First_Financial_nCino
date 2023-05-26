@@ -1,56 +1,92 @@
 <template>
   <!-- <div class="slds-align_absolute-center"> -->
+  <lightning-card title="Document Scan Submission">
+    <div class="slds-p-around_xx-large">
+      <div class="slds-align_absolute-center">
+        <div class="column-flex">
+          <div class="slds-m-vertical_small">
+            <lightning-input
+              type="text"
+              label="Enter a loan number"
+              placeholder="1020304"
+              value={loanNumber}
+              onblur={handleLoanNumberInputBlur}
+              required
+            ></lightning-input>
+          </div>
+          <!-- style="width: 40%" -->
 
-  <lightning-card title="Document Scan Submission" style="width: 50%">
-    <div class="slds-p-around_x-large">
-      <lightning-input
-        type="text"
-        label="Enter a loan number"
-        placeholder="1020304"
-        value={loanNumber}
-        onblur={handleLoanNumberInputBlur}
-        required
-      ></lightning-input>
-      <!-- style="width: 40%" -->
+          <template if:true={loanNumber}>
+            <div class="slds-m-vertical_small">
+              <div>{matchingLoansMessage}</div>
+              <div>{actionMessage}</div>
+            </div>
+          </template>
 
-      <template if:true={loanNumber}>
-        <div class="slds-m-vertical_small">
-          <div>{matchingLoansMessage}</div>
-          <div>{actionMessage}</div>
+          <template if:true={matchingLoans}>
+            <div class="slds-m-vertical_small">
+              <lightning-radio-group
+                name="matchingLoanRadioGroup"
+                label="Select a loan"
+                options={matchingLoanOptions}
+                message-when-value-missing="You must select a loan"
+                onchange={handleLoanRadioGroupChange}
+                required
+              ></lightning-radio-group>
+            </div>
+          </template>
+
+          <template if:true={selectedLoan}>
+            <div class="slds-m-top_small slds-m-bottom_large">
+              <!-- TODO: center upload component -->
+              <div class="slds-align_absolute-center">
+                <lightning-file-upload
+                  name="documentScanUpload"
+                  accept={acceptedFormats}
+                  onuploadfinished={handleUploadFinished}
+                ></lightning-file-upload>
+              </div>
+            </div>
+          </template>
+          <template if:true={fileUploaded}>
+            <div class="slds-m-bottom_large">
+              <div class="slds-align_absolute-center">
+                <div>{fileUploaded.name}</div>
+                <div class="slds-m-left_xx-small">
+                  <lightning-icon
+                    icon-name="utility:success"
+                    alternative-text="Uploaded"
+                    variant="success"
+                    title="Uploaded"
+                    size="xx-small"
+                  ></lightning-icon>
+                </div>
+              </div>
+            </div>
+          </template>
+          <template if:true={loanNumber}>
+            <div class="slds-m-vertical_xx-large">
+              <!-- TODO: flex horizontal reset/split buttons -->
+              <div class="slds-m-bottom_small">
+                <lightning-button
+                  label="Reset"
+                  onclick={handleResetButton}
+                  stretch
+                ></lightning-button>
+              </div>
+              <template if:true={fileUploaded}>
+                <lightning-button
+                  label="Scan and Split Document"
+                  onclick={handleScanAndSplitButton}
+                  variant="brand"
+                  stretch
+                ></lightning-button>
+              </template>
+              <!-- </div> -->
+            </div>
+          </template>
         </div>
-      </template>
-
-      <div class="slds-m-vertical_small">
-        <template if:true={matchingLoans}>
-          <lightning-radio-group
-            name="matchingLoanRadioGroup"
-            label="Select a loan"
-            options={matchingLoanOptions}
-            message-when-value-missing="You must select a loan"
-            type="button"
-            onchange={handleLoanRadioGroupChange}
-            required
-          ></lightning-radio-group>
-        </template>
       </div>
-
-      <div class="slds-m-bottom_small slds-m-top_none slds-p-around_none">
-        <template if:true={selectedLoan}>
-          <lightning-file-upload
-            name="documentScanUpload"
-            accept={acceptedFormats}
-            onuploadfinished={handleUploadFinished}
-          ></lightning-file-upload>
-        </template>
-      </div>
-
-      <template if:true={loanNumber}>
-        <lightning-button
-          label="Reset"
-          onclick={handleResetButton}
-        ></lightning-button>
-      </template>
     </div>
   </lightning-card>
-  <!-- </div> -->
 </template>

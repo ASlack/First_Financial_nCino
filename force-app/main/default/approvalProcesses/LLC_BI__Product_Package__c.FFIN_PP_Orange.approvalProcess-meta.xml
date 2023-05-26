@@ -275,7 +275,7 @@ Total_Relationship_Exposure__c &gt; Region__r.SLC_Total_Relationship_Max_Authori
         </action>
     </initialSubmissionActions>
     <label>FFIN PP - Orange</label>
-    <processOrder>9</processOrder>
+    <processOrder>10</processOrder>
     <recallActions>
         <action>
             <name>LLC_BI__Product_Package_Status_Recalled</name>

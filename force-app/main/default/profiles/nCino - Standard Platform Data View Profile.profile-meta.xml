@@ -411,6 +411,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>DocumentScanControllerTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>EFPIO__AAccessTokenProvider_v1</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -84195,6 +84199,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>LLC_BI__Product_Package__c.Total_Relationship_Exposure__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>LLC_BI__Product_Package__c.WeaknessesNarrative__c</field>
         <readable>true</readable>
@@ -87127,6 +87136,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>LLC_BI__Service_Mgmt__c.LLC_BI__Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Service_Mgmt__c.ffin_Internal_Servicer__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

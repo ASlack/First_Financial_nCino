@@ -275,7 +275,7 @@ Total_Relationship_Exposure__c &gt; Region__r.SLC_Total_Relationship_Max_Authori
         </action>
     </initialSubmissionActions>
     <label>FFIN PP - Abilene</label>
-    <processOrder>1</processOrder>
+    <processOrder>2</processOrder>
     <recallActions>
         <action>
             <name>LLC_BI__Product_Package_Status_Recalled</name>

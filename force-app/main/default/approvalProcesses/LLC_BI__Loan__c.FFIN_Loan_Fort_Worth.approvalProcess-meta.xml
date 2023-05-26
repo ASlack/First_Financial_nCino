@@ -266,7 +266,7 @@ NOT(ISPICKVAL(LLC_BI__Product_Package__r.LLC_BI__Risk_Rating__c, &quot;&quot;))
         </action>
     </initialSubmissionActions>
     <label>FFIN Loan - Fort Worth</label>
-    <processOrder>6</processOrder>
+    <processOrder>7</processOrder>
     <recallActions>
         <action>
             <name>Loan_Set_Stage_to_Final_Review</name>

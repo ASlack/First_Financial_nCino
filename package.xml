@@ -76,6 +76,7 @@
         <members>DMAdmin__dmaController</members>
         <members>DMAdmin__dmaTest</members>
         <members>DocumentScanController</members>
+        <members>DocumentScanControllerTest</members>
         <members>EFPIO__AAccessTokenProvider_v1</members>
         <members>EFPIO__ACommitPriorityStrategy_v1</members>
         <members>EFPIO__AIdempotentUpgrade_v1</members>
@@ -17199,6 +17200,7 @@
         <members>LLC_BI__Credit_Memo_Modifcation__c.MAP100_Short_Term_Extension</members>
         <members>LLC_BI__Credit_Memo_Modifcation__c.MAP200_Change_Memo_AP_Not_Required</members>
         <members>LLC_BI__Credit_Memo_Modifcation__c.MAP200_Change_Memo_AP_Required</members>
+        <members>LLC_BI__Loan__c.FFIN_Loan_10_Rule</members>
         <members>LLC_BI__Loan__c.FFIN_Loan_Abilene</members>
         <members>LLC_BI__Loan__c.FFIN_Loan_Abilene_v2</members>
         <members>LLC_BI__Loan__c.FFIN_Loan_Bryan_College_Station</members>
@@ -17217,6 +17219,7 @@
         <members>LLC_BI__Loan__c.LAP100_Sample_Loan_Approval_Process</members>
         <members>LLC_BI__Loan__c.LAP100_nCino_Gold_Standard_AP</members>
         <members>LLC_BI__Loan__c.PP_Two_Step_Approval_Process</members>
+        <members>LLC_BI__Product_Package__c.FFIN_PP_10_Rule</members>
         <members>LLC_BI__Product_Package__c.FFIN_PP_Abilene</members>
         <members>LLC_BI__Product_Package__c.FFIN_PP_Abilene_v2</members>
         <members>LLC_BI__Product_Package__c.FFIN_PP_Bryan_College_Station</members>
@@ -23397,6 +23400,7 @@
         <members>LLC_BI__Service_Mgmt__c.LLC_BI__Service_Provider__c</members>
         <members>LLC_BI__Service_Mgmt__c.LLC_BI__Service_Type__c</members>
         <members>LLC_BI__Service_Mgmt__c.LLC_BI__Status__c</members>
+        <members>LLC_BI__Service_Mgmt__c.ffin_Internal_Servicer__c</members>
         <members>LLC_BI__Service_Mgmt__c.ffin_Service_Sub_Type__c</members>
         <members>LLC_BI__Site_Visit_Memo__c.LLC_BI__Account__c</members>
         <members>LLC_BI__Site_Visit_Memo__c.LLC_BI__Action_Items__c</members>

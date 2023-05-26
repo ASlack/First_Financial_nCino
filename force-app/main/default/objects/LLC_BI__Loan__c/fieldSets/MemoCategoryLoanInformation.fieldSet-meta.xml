@@ -3,22 +3,12 @@
     <fullName>MemoCategoryLoanInformation</fullName>
     <description>This field set is used in the Change Memo VF page when Loan Information is selected.</description>
     <displayedFields>
-        <field>LLC_BI__Amount__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </displayedFields>
-    <displayedFields>
         <field>LLC_BI__Prepayment_Penalty__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
         <field>LLC_BI__Prepayment_Penalty_Description__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </displayedFields>
-    <displayedFields>
-        <field>LLC_BI__Term_Months__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>

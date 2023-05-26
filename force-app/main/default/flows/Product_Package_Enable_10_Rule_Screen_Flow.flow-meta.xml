@@ -5,7 +5,7 @@
         <name>Assign_10_to_True</name>
         <label>Assign 10% to True</label>
         <locationX>50</locationX>
-        <locationY>1190</locationY>
+        <locationY>2006</locationY>
         <assignmentItems>
             <assignToReference>Get_Product_Package.Enable_10_Rule__c</assignToReference>
             <operator>Assign</operator>
@@ -17,6 +17,31 @@
             <targetReference>Update_Product_Package</targetReference>
         </connector>
     </assignments>
+    <decisions>
+        <name>Policy_Exception_Count_Check</name>
+        <label>Policy Exception Count Check</label>
+        <locationX>270</locationX>
+        <locationY>1514</locationY>
+        <defaultConnector>
+            <targetReference>Loop_thru_Loans</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Policy_Exceptions_Found</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Policy_Exceptions</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Policy_Exceptions_Found_Screen</targetReference>
+            </connector>
+            <label>Policy Exceptions Found</label>
+        </rules>
+    </decisions>
     <decisions>
         <name>Region_Check</name>
         <label>Region Check</label>
@@ -94,7 +119,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Assign_10_to_True</targetReference>
+                <targetReference>Get_Loans</targetReference>
             </connector>
             <label>TCE x 10% &gt;= Total Loan Facilities Amount</label>
         </rules>
@@ -248,6 +273,20 @@
     </formulas>
     <interviewLabel>Product Package - Enable 10% Rule Screen Flow {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Product Package - Enable 10% Rule Screen Flow</label>
+    <loops>
+        <name>Loop_thru_Loans</name>
+        <label>Loop thru Loans</label>
+        <locationX>50</locationX>
+        <locationY>1298</locationY>
+        <collectionReference>Get_Loans</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Get_Policy_Exceptions</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Assign_10_to_True</targetReference>
+        </noMoreValuesConnector>
+    </loops>
     <processMetadataValues>
         <name>BuilderType</name>
         <value>
@@ -267,6 +306,70 @@
         </value>
     </processMetadataValues>
     <processType>Flow</processType>
+    <recordLookups>
+        <name>Get_Loans</name>
+        <label>Get Loans</label>
+        <locationX>50</locationX>
+        <locationY>1190</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Loop_thru_Loans</targetReference>
+        </connector>
+        <filterLogic>1 AND ( 2 OR 3 ) AND 4</filterLogic>
+        <filters>
+            <field>LLC_BI__Product_Package__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>LLC_BI__Stage__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Credit Underwriting</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>LLC_BI__Stage__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Final Review</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>LLC_BI__Is_Main__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>LLC_BI__Loan__c</object>
+        <queriedFields>Id</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Policy_Exceptions</name>
+        <label>Get Policy Exceptions</label>
+        <locationX>270</locationX>
+        <locationY>1406</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Policy_Exception_Count_Check</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>LLC_BI__Loan__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Loop_thru_Loans.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>LLC_BI__Policy_Exception__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
     <recordLookups>
         <name>Get_Product_Package</name>
         <label>Get Product Package</label>
@@ -292,7 +395,7 @@
         <name>Update_Product_Package</name>
         <label>Update Product Package</label>
         <locationX>50</locationX>
-        <locationY>1298</locationY>
+        <locationY>2114</locationY>
         <connector>
             <targetReference>Success</targetReference>
         </connector>
@@ -309,6 +412,22 @@
         <fields>
             <name>Initial_Requirements</name>
             <fieldText>&lt;p&gt;&lt;strong style=&quot;font-size: 14px;&quot;&gt;Please ensure the following data points are inputted in order to enable 10% Rule:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Region&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Risk Rating&lt;/span&gt;&lt;/li&gt;&lt;li&gt;Package Secure Type&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Approver 1&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Total Relationship Exposure / Credit Group&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Policy_Exceptions_Found_Screen</name>
+        <label>Policy Exceptions Found</label>
+        <locationX>138</locationX>
+        <locationY>1622</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>Policy_Exceptions_Message</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;color: rgb(255, 0, 0); font-size: 14px;&quot;&gt;There were Policy Exceptions found on one or more In-Progress Loans within this package.  Credit Policy does not allow the 10% Rule to be used when there are Policy Exceptions.&lt;/span&gt;&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
         </fields>
         <showFooter>true</showFooter>
@@ -350,7 +469,7 @@
         <name>Success</name>
         <label>Success</label>
         <locationX>50</locationX>
-        <locationY>1406</locationY>
+        <locationY>2222</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
