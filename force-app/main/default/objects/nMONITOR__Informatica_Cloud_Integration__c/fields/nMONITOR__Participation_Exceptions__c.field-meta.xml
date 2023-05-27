@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nMONITOR__Participation_Exceptions__c</fullName>
+    <defaultValue>&quot;0&quot;</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Participation Exceptions for Participation Task.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Participation Exceptions for Participation Task.</inlineHelpText>
+    <label>Participation Exceptions</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

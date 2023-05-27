@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nMONITOR__Total_Errors__c</fullName>
+    <defaultValue>&quot;0&quot;</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Total Number of Errors reading from source and writing to nCino.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Total Number of Errors reading from source and writing to nCino.</inlineHelpText>
+    <label>Total Errors</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

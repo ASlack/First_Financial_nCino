@@ -20,8 +20,6 @@ export default class DocumentScanSubmission extends LightningElement {
     if (this.loanNumber.length > 0) {
       queryLoans({ loanNumber: this.loanNumber })
         .then((result) => {
-          console.log(result);
-          // TODO: temporarily make another loan have a loan number of 54601464
           this.matchingLoansMessage = `found ${result.length} loan(s) that matched ${this.loanNumber}`;
           if (result.length) {
             this.matchingLoans = result;
@@ -66,7 +64,6 @@ export default class DocumentScanSubmission extends LightningElement {
 
   processMatchingLoans() {
     this.matchingLoans.forEach((loan) => {
-      // console.log(loan);
       this.matchingLoanOptions.push({
         label: loan.Name,
         value: loan.Id
@@ -75,10 +72,11 @@ export default class DocumentScanSubmission extends LightningElement {
   }
 
   handleUploadFinished(event) {
-    console.log(`upload finished`);
-    // console.log(JSON.parse(JSON.stringify(event.detail.files)));
-    // this.fileUploaded = true;
     this.fileUploaded = event.detail.files[0];
-    console.log(this.fileUploaded);
+  }
+
+  handleScanAndSplitButton() {
+    const scanAndSplitEvent = new CustomEvent("scanandsplit");
+    this.dispatchEvent(scanAndSplitEvent);
   }
 }

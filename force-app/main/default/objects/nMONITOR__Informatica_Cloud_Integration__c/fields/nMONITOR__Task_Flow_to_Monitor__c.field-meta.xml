@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nMONITOR__Task_Flow_to_Monitor__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The name of the Task Flow being monitored with Setting Record.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Specify the name of the Task Flow being monitored with Setting Record. If multiple Task Flows are present, create multiple Setting Records.</inlineHelpText>
+    <label>Task Flow to Monitor</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

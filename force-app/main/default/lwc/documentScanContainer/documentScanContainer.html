@@ -1,0 +1,10 @@
+<template>
+  <template if:false={scanned}>
+    <c-document-scan-submission
+      onscanandsplit={handleScanAndSplit}
+    ></c-document-scan-submission>
+  </template>
+  <template if:true={scanned}>
+    <c-document-scan-review></c-document-scan-review>
+  </template>
+</template>

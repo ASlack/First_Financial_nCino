@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nMONITOR__Covenant__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Indicates the existing Covenant causing the Exception if the Covenant Object is synchronized. Will be NULL for migrations.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates the existing Covenant causing the Exception if the Covenant Object is synchronized. Will be NULL for migrations.</inlineHelpText>
+    <label>Covenant Mgmt</label>
+    <referenceTo>LLC_BI__Covenant2__c</referenceTo>
+    <relationshipLabel>Informatica Cloud Integrations</relationshipLabel>
+    <relationshipName>Informatica_Cloud_Integrations</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

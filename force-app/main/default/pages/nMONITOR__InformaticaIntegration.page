@@ -1,0 +1,12 @@
+<apex:page standardStylesheets="false" applyBodyTag="false">
+    <apex:includeLightning />
+    
+    <div id="content">
+        <div id="lightningComponent" />
+    </div>
+    <script>
+    $Lightning.use("nMONITOR:informaticaPage", function() {
+    	$Lightning.createComponent("nMONITOR:informaticaAdministration",{ },"lightningComponent",function(){});
+    });
+    </script>
+</apex:page>

@@ -15,10 +15,21 @@ private class DocumentScanControllerTest {
 
   @isTest
   static void testQueryLoans() {
-    System.debug('hello');
     List<LLC_BI__Loan__c> matchingLoans = DocumentScanController.queryLoans(
       '1234'
     );
-    System.assertNotEquals(0, matchingLoans.size());
+
+    System.assertNotEquals(
+      0,
+      matchingLoans.size(),
+      'list of matching loans should not be empty'
+    );
+
+    matchingLoans = DocumentScanController.queryLoans('');
+    System.assertEquals(
+      0,
+      matchingLoans.size(),
+      'list of matching loans should be empty'
+    );
   }
 }

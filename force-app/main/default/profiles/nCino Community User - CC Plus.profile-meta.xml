@@ -407,6 +407,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>DocumentScanControllerTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>EFPIO__AAccessTokenProvider_v1</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -56527,6 +56531,58 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>nMONITOR__CallInformaticaTaskFlowTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>nMONITOR__ClassTypeProvider</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>nMONITOR__ClassTypeProviderTests</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>nMONITOR__DataInstaller_v1</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>nMONITOR__InformaticaCreateSettingController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>nMONITOR__InformaticaGetSAStatus</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>nMONITOR__InformaticaGetSAStatusTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>nMONITOR__InformaticaSecureAgent</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>nMONITOR__InformaticaStatusScheduler</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>nMONITOR__InformaticaTaskFlow</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>nMONITOR__InformaticaTaskFlowTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>nMONITOR__PLMVersionInformation</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>nMONITOR__informaticaCreateSettingControllerTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>nPortal__AAbstractClassStub</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -60750,6 +60806,10 @@
     <customSettingAccesses>
         <enabled>true</enabled>
         <name>nFORCE__Custom_Error_Configuration__c</name>
+    </customSettingAccesses>
+    <customSettingAccesses>
+        <enabled>true</enabled>
+        <name>nMONITOR__Informatica_Cloud_Integration_Settings__c</name>
     </customSettingAccesses>
     <fieldPermissions>
         <editable>false</editable>
@@ -71418,6 +71478,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>LLC_BI__Credit_Memo_Modifcation__c.Last_Approver_from_Loan__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>LLC_BI__Credit_Memo_Modifcation__c.LoanAmountDecrease__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -75472,6 +75537,11 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>LLC_BI__Legal_Entities__c.nMONITOR__Unique_Identifier__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>LLC_BI__Lien__c.LLC_BI__Active__c</field>
         <readable>true</readable>
@@ -78858,6 +78928,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>LLC_BI__Loan__c.Last_Approver_for_Memo__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>LLC_BI__Loan__c.Lead_Referral_Comments__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -79779,6 +79854,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>LLC_BI__Participation__c.cm_Available_Amount__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LLC_BI__Participation__c.nMONITOR__Unique_Identifier__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -82973,6 +83053,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>LLC_BI__Product__c.nMONITOR__Product_Code__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>LLC_BI__Product__c.nPortal__Can_Pledge_Multiple_Collateral__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -85349,6 +85434,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>LLC_BI__Service_Mgmt__c.LLC_BI__Status__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LLC_BI__Service_Mgmt__c.ffin_Service_Sub_Type__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -100398,6 +100488,381 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Auto_Create_Case__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__CUSO_Bundle_Version__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Collateral_Bundle_Version__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Collateral_Errors__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Collateral_Exceptions__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Collateral_Mgmt__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Complete__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Connection_Errors__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Connection_Exceptions__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Connection_Role__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Contact_Errors__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Contact_Exceptions__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Contact__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Covenant_Bundle_Version__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Covenant_Errors__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Covenant_Exceptions__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Covenant__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Current_Product_Line__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Current_Product_Type__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Current_Product__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Daily_Integration_Bundle_Version__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Deposit_Errors__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Deposit_Exceptions__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Deposit__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__End_Time__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Entity_Involvement_Errors__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Entity_Involvement_Exceptions__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Exception_Description__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Household__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__IsCollateralPledged__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__IsCollateral__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__IsConnection__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__IsCovenant__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__IsEntityInvolvement__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__IsLoan__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__IsParticipation__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__IsRelationship__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Loan_Errors__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Loan_Exceptions__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Loan_Hierarchy_Value__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Loan__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Logged__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Migration_Bundle__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Monitor__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Monitoring_Task_Flow__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__On_Demand_Email_to_Case__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Participation_Errors__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Participation_Exceptions__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Product_Package__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Record_Age__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Relationship_Errors__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Relationship_Exceptions__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Relationship_Name__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Relationship_Type__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Relationship__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Secure_Agent_Data_inactive__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Secure_Agent_Id__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Secure_Agent_Process_inactive__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Start_Time__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Task_Flow_to_Monitor__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Tax_ID_or_SSN__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Today__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Total_Errors__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Total_Exceptions__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Total_Successes__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Translated_Product_Line__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Translated_Product_Type__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Translated_Product__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Treasury_Management_Bundle_Version__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Unique_Identifier__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__User_Friendly_Agent_Data_Status__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__User_Friendly_Agent_Process_Status__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__isContact__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__isDeposit__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__isObject__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>nPortal__Context__c.Applicant_Name__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -100766,6 +101231,14 @@
     <flowAccesses>
         <enabled>false</enabled>
         <flow>Loan_Updated_Amount_RR_Update_Product_Package</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>nMONITOR__CompleteMonitoring</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>nMONITOR__Informatica_Cloud_Integration</flow>
     </flowAccesses>
     <layoutAssignments>
         <layout>Account-Account %28Vendor%29</layout>
@@ -102717,6 +103190,53 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>nFUSE__Transaction_Log__c-nFUSE__Transaction Log Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>nMONITOR__Informatica_Cloud_Integration__c-nMONITOR__Collateral Exception</layout>
+        <recordType>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Collateral_Exception</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>nMONITOR__Informatica_Cloud_Integration__c-nMONITOR__Connection Exception</layout>
+        <recordType>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Connection_Exception</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>nMONITOR__Informatica_Cloud_Integration__c-nMONITOR__Contact Exception</layout>
+        <recordType>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Contact_Exception</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>nMONITOR__Informatica_Cloud_Integration__c-nMONITOR__Covenant Exception</layout>
+        <recordType>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Covenant_Exception</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>nMONITOR__Informatica_Cloud_Integration__c-nMONITOR__Deposit Exception</layout>
+        <recordType>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Deposit_Exception</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>nMONITOR__Informatica_Cloud_Integration__c-nMONITOR__Entity Involvement Exception</layout>
+        <recordType>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Entity_Involvement_Exception</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>nMONITOR__Informatica_Cloud_Integration__c-nMONITOR__Informatica Cloud Integration Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>nMONITOR__Informatica_Cloud_Integration__c-nMONITOR__Loan Exception</layout>
+        <recordType>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Loan_Exception</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>nMONITOR__Informatica_Cloud_Integration__c-nMONITOR__Monitor</layout>
+        <recordType>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Monitor</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>nMONITOR__Informatica_Cloud_Integration__c-nMONITOR__Participation Exception</layout>
+        <recordType>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Participation_Exception</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>nMONITOR__Informatica_Cloud_Integration__c-nMONITOR__Relationship Exception</layout>
+        <recordType>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Relationship_Exception</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>nMONITOR__Informatica_Cloud_Integration__c-nMONITOR__Settings</layout>
+        <recordType>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Settings</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>nPortal__Context__c-nPortal__Context Layout</layout>
@@ -105759,6 +106279,10 @@
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
+        <apexPage>nMONITOR__InformaticaIntegration</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
         <apexPage>nPortal__AccountOptions</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
@@ -106459,6 +106983,61 @@
         <recordType>Task.LLC_BI__Maintenance_Task</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Collateral_Exception</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Connection_Exception</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Contact_Exception</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Covenant_Exception</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Deposit_Exception</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Entity_Involvement_Exception</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Loan_Exception</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Monitor</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Participation_Exception</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>true</default>
+        <recordType>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Relationship_Exception</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Settings</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
     <tabVisibilities>
         <tab>DM_Admin</tab>
         <visibility>Hidden</visibility>
@@ -106621,6 +107200,10 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>LLC_BI__Spread_Statement_Type__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>LLC_BI__Statistic__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nMONITOR__Auto_Create_Case__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Box is checked by ICS if configured error threshold is exceeded by daily Monitor Record results.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Box is checked by ICS if configured error threshold is exceeded by daily Monitor Record results.</inlineHelpText>
+    <label>Auto Create Case</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

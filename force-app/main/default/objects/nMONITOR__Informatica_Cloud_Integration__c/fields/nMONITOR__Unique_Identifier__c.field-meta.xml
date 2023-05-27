@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nMONITOR__Unique_Identifier__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Represents the Loan Number, Collateral Account Number, CIF or Customer Number, or any other unique identifier used to allow the Integration to synchronize with a Record from the external system.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Unique Identifier for a given row from the source external system.</inlineHelpText>
+    <label>Unique Identifier</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

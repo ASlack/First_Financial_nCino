@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <description>Unchecks Monitor on Settings Record, adds Task Flow to Monitor name value to Monitor Record, and updates Complete to True on Monitor Record.</description>
+    <label>CompleteMonitoring</label>
+    <processMetadataValues>
+        <name>AssociatedRecord</name>
+        <value/>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+</Flow>

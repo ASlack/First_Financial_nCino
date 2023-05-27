@@ -1,0 +1,52 @@
+<template>
+  <lightning-card title="Document Scan Review">
+    <div class="slds-p-around_xx-large container">
+      <!-- <lightning-layout horizontal-align="space"> -->
+      <!-- TODO: use device-size property to adjust column size for larger screens -->
+      <lightning-layout multiple-rows horizontal-align="space">
+        <template for:item="document" for:each={documents}>
+          <lightning-layout-item
+            key={document.fileName}
+            size="2"
+            padding="around-small"
+          >
+            <div class="header-column">
+              <div class="column-flex">
+                <!-- <p class="field-title nowrap" title={document.fileName}> -->
+                <p class="nowrap" title={document.fileName}>
+                  {document.fileName}
+                </p>
+
+                <img
+                  style="
+                    width: 106.25px;
+                    height: 137.5px;
+                    border: 1px solid #d8dde6;
+                  "
+                  src={document.thumbnail}
+                />
+              </div>
+            </div>
+          </lightning-layout-item>
+        </template>
+      </lightning-layout>
+    </div>
+  </lightning-card>
+</template>
+
+<!-- <div class="slds-p-around_xx-large">
+      <div class="document-flex">
+        <template for:item="document" for:each={documents}>
+          <lightning-card key={document.fileName} title={document.fileName}>
+            <div class="slds-align_absolute-center">
+              <div>
+                <img
+                  style="width: 106.25px; height: 137.5px"
+                  src={document.thumbnail}
+                />
+              </div>
+            </div>
+          </lightning-card>
+        </template>
+      </div>
+    </div> -->

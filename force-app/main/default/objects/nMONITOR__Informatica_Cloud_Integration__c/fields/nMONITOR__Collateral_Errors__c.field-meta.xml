@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nMONITOR__Collateral_Errors__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Collateral Errors for Collateral, Collateral Pledged, Loan Collateral aggregate, Lien, and Collateral Ownership Objects.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Collateral Errors for Collateral, Collateral Pledged, Loan Collateral aggregate, Lien, and Collateral Ownership Objects.</inlineHelpText>
+    <label>Collateral Errors</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,5 +1,4 @@
 <template>
-  <!-- <div class="slds-align_absolute-center"> -->
   <lightning-card title="Document Scan Submission">
     <div class="slds-p-around_xx-large">
       <div class="slds-align_absolute-center">
@@ -14,7 +13,6 @@
               required
             ></lightning-input>
           </div>
-          <!-- style="width: 40%" -->
 
           <template if:true={loanNumber}>
             <div class="slds-m-vertical_small">
@@ -38,7 +36,6 @@
 
           <template if:true={selectedLoan}>
             <div class="slds-m-top_small slds-m-bottom_large">
-              <!-- TODO: center upload component -->
               <div class="slds-align_absolute-center">
                 <lightning-file-upload
                   name="documentScanUpload"
@@ -66,7 +63,6 @@
           </template>
           <template if:true={loanNumber}>
             <div class="slds-m-vertical_xx-large">
-              <!-- TODO: flex horizontal reset/split buttons -->
               <div class="slds-m-bottom_small">
                 <lightning-button
                   label="Reset"
@@ -82,7 +78,6 @@
                   stretch
                 ></lightning-button>
               </template>
-              <!-- </div> -->
             </div>
           </template>
         </div>

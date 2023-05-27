@@ -3,8 +3,8 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
-                <componentName>documentScanSubmission</componentName>
-                <identifier>c_documentScanSubmission</identifier>
+                <componentName>documentScanContainer</componentName>
+                <identifier>c_documentScanContainer2</identifier>
             </componentInstance>
         </itemInstances>
         <name>main</name>

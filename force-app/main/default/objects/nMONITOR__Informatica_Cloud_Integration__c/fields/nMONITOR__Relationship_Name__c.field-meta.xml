@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nMONITOR__Relationship_Name__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Holds the value Field Mapped to &apos;Name&apos; on the Relationship Object. Corresponds to the row of exception data.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Holds the value Field Mapped to &apos;Name&apos; on the Relationship Object. Corresponds to the row of exception data.</inlineHelpText>
+    <label>Relationship Name</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
