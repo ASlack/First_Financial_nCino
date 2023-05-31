@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Non_Managed</fullName>
+    <columns>MasterLabel</columns>
+    <columns>DeveloperName</columns>
+    <columns>NamespacePrefix</columns>
+    <columns>LLC_BI__Active__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>NamespacePrefix</field>
+        <operation>equals</operation>
+    </filters>
+    <label>Non Managed</label>
+    <language>en_US</language>
+</ListView>

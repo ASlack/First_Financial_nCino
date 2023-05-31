@@ -74,7 +74,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>lessOrEqual</operator>
-            <value>30</value>
+            <value>10</value>
         </criteriaItems>
         <language>en_US</language>
     </filter>
@@ -87,6 +87,11 @@
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>LLC_BI__Loan__c.LLC_BI__Branch__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>LLC_BI__Loan__c.LLC_BI__Product_Line__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Initial Application Clock</name>

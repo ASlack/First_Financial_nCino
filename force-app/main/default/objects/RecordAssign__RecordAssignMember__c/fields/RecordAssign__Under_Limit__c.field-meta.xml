@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RecordAssign__Under_Limit__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>OR(ISBLANK(RecordAssign__Limit__c), RecordAssign__Records_Assigned__c &lt; RecordAssign__Limit__c)</formula>
+    <label>Under Limit</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

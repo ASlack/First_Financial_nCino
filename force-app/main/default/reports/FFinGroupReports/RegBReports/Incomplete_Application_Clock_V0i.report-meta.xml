@@ -23,10 +23,10 @@
         <field>LLC_BI__Loan__c.Incomplete_Date__c</field>
     </columns>
     <customDetailFormulas>
-        <calculatedFormula>LLC_BI__Loan__c.cm_Completed_Application__c-LLC_BI__Loan__c.cm_Today_s_Date__c</calculatedFormula>
+        <calculatedFormula>LLC_BI__Loan__c.IncompleteCompleteClock__c-LLC_BI__Loan__c.cm_Today_s_Date__c</calculatedFormula>
         <dataType>Double</dataType>
         <developerName>CDF1</developerName>
-        <label>Days Until Completed Application Expires</label>
+        <label>Days Until Application Expires</label>
         <scale>0</scale>
     </customDetailFormulas>
     <filter>
@@ -84,7 +84,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>lessOrEqual</operator>
-            <value>30</value>
+            <value>10</value>
         </criteriaItems>
         <language>en_US</language>
     </filter>
@@ -97,6 +97,11 @@
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>LLC_BI__Loan__c.LLC_BI__Branch__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>LLC_BI__Loan__c.LLC_BI__Product_Line__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Incomplete Application Clock</name>

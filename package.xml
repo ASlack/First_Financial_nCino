@@ -7814,6 +7814,8 @@
         <members>NDOC__UserFixtures</members>
         <members>RecalculateRelationshipStats</members>
         <members>RecalculateRelationshipStatsTest</members>
+        <members>RecordAssign__RoundRobinAssignInvocable</members>
+        <members>RecordAssign__RoundRobinAssignTest</members>
         <members>RouteDeepClone</members>
         <members>RouteDeepCloneTest</members>
         <members>RouteGroupsWrapper</members>
@@ -17396,6 +17398,7 @@
         <members>LLC_BI__Bankr_Base_Installation_Lightning</members>
         <members>MTRNS__nCino_MIM</members>
         <members>MTRNS__nCino_MTRNS</members>
+        <members>RecordAssign__Record_Assigner</members>
         <members>nCino_LOS</members>
         <members>nFORCE__Data_Management_Administration</members>
         <members>nFORCE__nCino_User_Interface</members>
@@ -22007,6 +22010,7 @@
         <members>LLC_BI__Loan__c.ffin_Docs_Review_Needed__c</members>
         <members>LLC_BI__Loan__c.ffin_Escrow__c</members>
         <members>LLC_BI__Loan__c.ffin_Lender_Plans_to_Underwrite__c</members>
+        <members>LLC_BI__Loan__c.ffin_Prepayment_Penalty_Setup__c</members>
         <members>LLC_BI__Loan__c.ffin_Purpose_Code__c</members>
         <members>LLC_BI__Loan__c.ffin_Request_Needed_By__c</members>
         <members>LLC_BI__Loan__c.ffin_Request_Type__c</members>
@@ -24707,6 +24711,16 @@
         <members>RecordAlert.Subject</members>
         <members>RecordAlert.ValidUntilDate</members>
         <members>RecordAlert.WhatId</members>
+        <members>RecordAssign__RecordAssignConfiguration__c.RecordAssign__Queue_Name__c</members>
+        <members>RecordAssign__RecordAssignConfiguration__c.RecordAssign__Routing_Method__c</members>
+        <members>RecordAssign__RecordAssignMember__c.RecordAssign__Active__c</members>
+        <members>RecordAssign__RecordAssignMember__c.RecordAssign__Last_Assignment__c</members>
+        <members>RecordAssign__RecordAssignMember__c.RecordAssign__Limit_Frequency__c</members>
+        <members>RecordAssign__RecordAssignMember__c.RecordAssign__Limit__c</members>
+        <members>RecordAssign__RecordAssignMember__c.RecordAssign__RecordAssignConfiguration__c</members>
+        <members>RecordAssign__RecordAssignMember__c.RecordAssign__Records_Assigned__c</members>
+        <members>RecordAssign__RecordAssignMember__c.RecordAssign__Under_Limit__c</members>
+        <members>RecordAssign__RecordAssignMember__c.RecordAssign__User__c</members>
         <members>Region__c.CLC_Total_Relationship_Max_Authority__c</members>
         <members>Region__c.Lenders_can_use_10_Rule__c</members>
         <members>Region__c.LookupKey__c</members>
@@ -27700,6 +27714,8 @@
         <members>Recommendation</members>
         <members>RecordAction</members>
         <members>RecordAlert</members>
+        <members>RecordAssign__RecordAssignConfiguration__c</members>
+        <members>RecordAssign__RecordAssignMember__c</members>
         <members>RecordMergeHistory</members>
         <members>Region__c</members>
         <members>ResidentialLoanApplication</members>
@@ -28445,6 +28461,7 @@
         <members>DM_Admin</members>
         <members>Document_Scan</members>
         <members>EFPIO__nCino_Integration_Dashboard</members>
+        <members>LLC_BI__AccountDocument__c</members>
         <members>LLC_BI__Account_Covenant_Bulk_Associate</members>
         <members>LLC_BI__Application__c</members>
         <members>LLC_BI__Branch__c</members>
@@ -28501,6 +28518,7 @@
         <members>MTRNS__mim2Home</members>
         <members>NAICS__c</members>
         <members>Onboard_New_Customer</members>
+        <members>RecordAssign__RecordAssignConfiguration__c</members>
         <members>nArchive__nArchive__c</members>
         <members>nCino__CustomerOnboarding</members>
         <members>nDESIGN__Screen_Section__c</members>
@@ -28526,6 +28544,7 @@
         <members>Company_Performance_Dashboard_Standard/CompanyPerformanceDashboard</members>
         <members>FirstFinancial</members>
         <members>FirstFinancial/CLNoZYywGtxdAySGNEFSZVnQxATADq</members>
+        <members>FirstFinancial/NrIeUKKoZHGHdKSGiaVFLshGvSlsER</members>
         <members>LLC_BI__nCino_Dashboards</members>
         <members>LLC_BI__nCino_Dashboards/Marketing_Dashboard_nCino</members>
         <members>LLC_BI__nCino_Dashboards/awmZqurFRyHaPQfwltTpqQeACqXzRZ</members>
@@ -29451,6 +29470,7 @@
         <members>LLC_BI__Loan__c.Loan_Deal_Proposal_Cancel_Field_Set</members>
         <members>LLC_BI__Loan__c.Loan_Deal_Proposal_Edit_Card</members>
         <members>LLC_BI__Loan__c.MemoCategoryLoanInformation</members>
+        <members>LLC_BI__Loan__c.MemoNewRateRequested</members>
         <members>LLC_BI__Loan__c.Participation_Bought_Details</members>
         <members>LLC_BI__Loan__c.Participation_Details_Custom</members>
         <members>LLC_BI__Loan__c.PricingReadOnly</members>
@@ -29788,6 +29808,9 @@
         <members>Product_State_Config_Layout</members>
         <members>Product_Type_Layout</members>
         <members>Rate_Layout</members>
+        <members>RecordAssign__Record_Assign_Configuration_Record_Page</members>
+        <members>RecordAssign__Record_Assigner_UtilityBar</members>
+        <members>RecordAssign__Record_Assignment_Member_Record_Page</members>
         <members>Relationship_Layout</members>
         <members>Review_Layout</members>
         <members>Risk_Grade_Criteria_Layout</members>
@@ -29835,6 +29858,7 @@
         <members>Adverse_Action_Created_Quick_Field_Updates</members>
         <members>Adverse_Action_Declination_Submit_for_Approval</members>
         <members>Adverse_Action_Notify_Loan_Team_via_Chatter</members>
+        <members>Book_Customer_to_Core</members>
         <members>CLA_Draw_Auto_Submit_for_Approval</members>
         <members>CRA_Reportable_Invocable</members>
         <members>Collateral_Valuation_On_Create_Update_Coll_Mgmt</members>
@@ -29885,6 +29909,8 @@
         <members>PB09_nCino_CAB_Populate_Loan_Lookup_on_Pricing_Payment_Component</members>
         <members>PB10_nCino_CAB_Oppy_LTM_s_on_Loan</members>
         <members>PB1_2_nCino_PMB_Run_HMDA_Automation_Services</members>
+        <members>Pricing_Payment_Component_Update_Loan</members>
+        <members>Pricing_Rate_Component_Update_Loan</members>
         <members>Product_Package_Creation_Field_Updates</members>
         <members>Product_Package_Enable_10_Rule_Screen_Flow</members>
         <members>REG_O_Questionnaire_Rendering_Invocable</members>
@@ -29918,6 +29944,7 @@
         <members>Adverse_Action_Created_Quick_Field_Updates</members>
         <members>Adverse_Action_Declination_Submit_for_Approval</members>
         <members>Adverse_Action_Notify_Loan_Team_via_Chatter</members>
+        <members>Book_Customer_to_Core</members>
         <members>CLA_Draw_Auto_Submit_for_Approval</members>
         <members>CRA_Reportable_Invocable</members>
         <members>Collateral_Valuation_On_Create_Update_Coll_Mgmt</members>
@@ -29968,6 +29995,8 @@
         <members>PB09_nCino_CAB_Populate_Loan_Lookup_on_Pricing_Payment_Component</members>
         <members>PB10_nCino_CAB_Oppy_LTM_s_on_Loan</members>
         <members>PB1_2_nCino_PMB_Run_HMDA_Automation_Services</members>
+        <members>Pricing_Payment_Component_Update_Loan</members>
+        <members>Pricing_Rate_Component_Update_Loan</members>
         <members>Product_Package_Creation_Field_Updates</members>
         <members>Product_Package_Enable_10_Rule_Screen_Flow</members>
         <members>REG_O_Questionnaire_Rendering_Invocable</members>
@@ -30043,6 +30072,7 @@
         <members>LLC_HI</members>
         <members>MTRNS</members>
         <members>NDOC</members>
+        <members>RecordAssign</members>
         <members>SCALC</members>
         <members>SCOC</members>
         <members>SESOC</members>
@@ -30533,6 +30563,8 @@
         <members>Product2-LLC_BI__Product Layout</members>
         <members>Product2-Product Layout</members>
         <members>QuickText-Quick Text Layout</members>
+        <members>RecordAssign__RecordAssignConfiguration__c-RecordAssign__Record Assignment Configuration Layout</members>
+        <members>RecordAssign__RecordAssignMember__c-RecordAssign__Record Assignment Member Layout</members>
         <members>Region__c-Region Layout</members>
         <members>ResidentialLoanApplication-Residential Loan Application Layout</members>
         <members>SCOC__AddressList__c-SCOC__Address List Layout</members>
@@ -31197,6 +31229,7 @@
         <members>InsurancePolicyTransaction.All_InsurancePolicyTransactions</members>
         <members>InsuranceProfile.All_InsuranceProfiles</members>
         <members>LLCLP__Field_Group__c.LLCLP__All</members>
+        <members>LLC_BI__AccountDocument__c.All</members>
         <members>LLC_BI__Adverse_Action__c.LLC_BI__All</members>
         <members>LLC_BI__Analyzed_Account__c.LLC_BI__All</members>
         <members>LLC_BI__Authorized_User__c.LLC_BI__All</members>
@@ -31240,6 +31273,7 @@
         <members>LLC_BI__Id_Document_Requirement__c.LLC_BI__All</members>
         <members>LLC_BI__Id_Document_Type__c.LLC_BI__All</members>
         <members>LLC_BI__Id_Document__c.LLC_BI__All</members>
+        <members>LLC_BI__Index__mdt.Non_Managed</members>
         <members>LLC_BI__Legal_Entities__c.LLC_BI__All</members>
         <members>LLC_BI__Lien__c.LLC_BI__All</members>
         <members>LLC_BI__LoanRenewal__c.LLC_BI__All</members>
@@ -31302,6 +31336,7 @@
         <members>LLC_BI__Opportunity_Product__c.LLC_BI__All</members>
         <members>LLC_BI__Ownership_Structure_Role__c.LLC_BI__All</members>
         <members>LLC_BI__Ownership_Structure_Type__c.LLC_BI__All</members>
+        <members>LLC_BI__Period__mdt.ALL2</members>
         <members>LLC_BI__Policy_Exception_Template__c.All1</members>
         <members>LLC_BI__Policy_Exception_Template__c.LLC_BI__All</members>
         <members>LLC_BI__Pricing_Matrix__c.LLC_BI__All</members>
@@ -31436,6 +31471,7 @@
         <members>Product2.LLC_BI__AllProducts</members>
         <members>Recommendation.All_Recommendations</members>
         <members>RecordAlert.all_record_alerts</members>
+        <members>RecordAssign__RecordAssignConfiguration__c.RecordAssign__All</members>
         <members>ResidentialLoanApplication.All_ResidentialLoanApplications</members>
         <members>SCOC__LCREntity__c.SCOC__All</members>
         <members>SCOC__LCResponseMessageDetail__c.SCOC__All</members>
@@ -31661,6 +31697,7 @@
         <members>NDOC__Universal_Document_Manager_Delete_Permission</members>
         <members>NDOC__Universal_Document_Manager_Edit_Details_Permission</members>
         <members>Password_Does_Not_Expire</members>
+        <members>RecordAssign__Record_Assigner</members>
         <members>Relationship_Officer_Loan_access</members>
         <members>SCOC__SCOC_Interaction_Fields</members>
         <members>SCOC__SCOC_create</members>
@@ -32986,6 +33023,7 @@
         <members>LLC_BI__Underwriting_Bundle__c.LLC_BI__Date_Range_Must_Be_Valid</members>
         <members>LLC_BI__Underwriting_Bundle__c.LLC_BI__Template_Cannot_Have_Relationship</members>
         <members>LLC_BI__Underwriting_Summary__c.LLC_BI__start_date_cannot_be_after_end_date</members>
+        <members>RecordAssign__RecordAssignMember__c.RecordAssign__Chatter_User_Not_Allowed</members>
         <members>SCOC__CreditBureau__c.SCOC__Enforce_Unique_Bureau_Name</members>
         <members>nDESIGN__Screen_Section__c.nDESIGN__Mandatory</members>
         <members>nDESIGN__Section_Configuration__c.nDESIGN__Child_Display_Order</members>

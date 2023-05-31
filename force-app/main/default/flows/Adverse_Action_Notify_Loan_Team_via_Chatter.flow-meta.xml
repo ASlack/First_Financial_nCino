@@ -93,7 +93,7 @@
             </value>
         </filters>
         <object>LLC_BI__Adverse_Action__c</object>
-        <recordTriggerType>Update</recordTriggerType>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
     </start>
     <status>Active</status>

@@ -1014,6 +1014,25 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>ffin_Prepayment_Penalty_Setup__c</picklist>
+        <values>
+            <fullName>3%2F2%2F1%2C first 3 years</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2F2%2F2%2C first 3 years</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2F3%2F2%2F1%2C first 4 years</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2F4%2F3%2F2%2F1%2C first 5 years</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>ffin_Purpose_Code__c</picklist>
         <values>
             <fullName>1</fullName>

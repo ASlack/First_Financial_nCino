@@ -130,6 +130,25 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>LLC_BI__Loan_Class__c</picklist>
+        <values>
+            <fullName>New Loan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refinance Existing Loan With Lender</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Secured Renewal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unsecured Renewal</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>Last_Approver_for_Memo__c</picklist>
         <values>
             <fullName>CLC</fullName>
@@ -1018,6 +1037,25 @@
         </values>
         <values>
             <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ffin_Prepayment_Penalty_Setup__c</picklist>
+        <values>
+            <fullName>3%2F2%2F1%2C first 3 years</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2F2%2F2%2C first 3 years</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2F3%2F2%2F1%2C first 4 years</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2F4%2F3%2F2%2F1%2C first 5 years</fullName>
             <default>false</default>
         </values>
     </picklistValues>

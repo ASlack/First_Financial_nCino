@@ -2,11 +2,6 @@
 <FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>LLC_BI__MemoCategoryTerms</fullName>
     <availableFields>
-        <field>LLC_BI__Amortized_Term_Months__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </availableFields>
-    <availableFields>
         <field>LLC_BI__Balloon__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
@@ -74,6 +69,11 @@
     <description>MemoCategoryTerms</description>
     <displayedFields>
         <field>LLC_BI__Term_Months__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>LLC_BI__Amortized_Term_Months__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RecordAssign__Chatter_User_Not_Allowed</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISPICKVAL(RecordAssign__User__r.Profile.UserType, &quot;CsnOnly&quot;)</errorConditionFormula>
+    <errorDisplayField>RecordAssign__User__c</errorDisplayField>
+    <errorMessage>Chatter user cannot be selected</errorMessage>
+</ValidationRule>

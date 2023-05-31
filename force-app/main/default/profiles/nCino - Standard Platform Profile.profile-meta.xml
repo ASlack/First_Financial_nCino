@@ -21,6 +21,11 @@
         <visible>true</visible>
     </applicationVisibilities>
     <applicationVisibilities>
+        <application>RecordAssign__Record_Assigner</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
         <application>nCino_LOS</application>
         <default>true</default>
         <visible>true</visible>
@@ -31356,6 +31361,14 @@
     </classAccesses>
     <classAccesses>
         <apexClass>RecalculateRelationshipStatsTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>RecordAssign__RoundRobinAssignInvocable</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>RecordAssign__RoundRobinAssignTest</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -80601,6 +80614,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>LLC_BI__Loan__c.ffin_Prepayment_Penalty_Setup__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>LLC_BI__Loan__c.ffin_Purpose_Code__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -92635,6 +92653,41 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>RecordAssign__RecordAssignMember__c.RecordAssign__Active__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>RecordAssign__RecordAssignMember__c.RecordAssign__Last_Assignment__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>RecordAssign__RecordAssignMember__c.RecordAssign__Limit_Frequency__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>RecordAssign__RecordAssignMember__c.RecordAssign__Limit__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>RecordAssign__RecordAssignMember__c.RecordAssign__Records_Assigned__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>RecordAssign__RecordAssignMember__c.RecordAssign__Under_Limit__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>RecordAssign__RecordAssignMember__c.RecordAssign__User__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Region__c.CLC_Total_Relationship_Max_Authority__c</field>
         <readable>true</readable>
@@ -103051,6 +103104,10 @@
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
+        <flow>Book_Customer_to_Core</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
         <flow>CLA_Draw_Auto_Submit_for_Approval</flow>
     </flowAccesses>
     <flowAccesses>
@@ -103152,6 +103209,22 @@
     <flowAccesses>
         <enabled>false</enabled>
         <flow>PB07_nCino_CAB_Auto_Submit_Short_Term_Extension_Memo_for_Approval</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>PB08_nCino_CAB_Populate_Loan_Lookup_on_Pricing_Rate_Component</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>PB09_nCino_CAB_Populate_Loan_Lookup_on_Pricing_Payment_Component</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Pricing_Payment_Component_Update_Loan</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Pricing_Rate_Component_Update_Loan</flow>
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
@@ -104619,6 +104692,12 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>QuickText-Quick Text Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>RecordAssign__RecordAssignConfiguration__c-RecordAssign__Record Assignment Configuration Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>RecordAssign__RecordAssignMember__c-RecordAssign__Record Assignment Member Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Region__c-Region Layout</layout>
@@ -112033,6 +112112,10 @@
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
+        <tab>LLC_BI__AccountDocument__c</tab>
+        <visibility>DefaultOff</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>LLC_BI__Account_Covenant_Bulk_Associate</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
@@ -112255,6 +112338,10 @@
     <tabVisibilities>
         <tab>Onboard_New_Customer</tab>
         <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>RecordAssign__RecordAssignConfiguration__c</tab>
+        <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>nArchive__nArchive__c</tab>
