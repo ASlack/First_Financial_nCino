@@ -4,6 +4,15 @@
     <deleteConstraint>SetNull</deleteConstraint>
     <externalId>false</externalId>
     <label>Internal Servicer</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>User.Internal_Servicer_Service_Mgmt__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
     <referenceTo>User</referenceTo>
     <relationshipName>Service_Mgmt</relationshipName>
     <required>false</required>

@@ -13,24 +13,44 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>3/2/1, first 3 years</fullName>
+                <fullName>3/2/1, first 3 years (Any Principal Reduction)</fullName>
                 <default>false</default>
-                <label>3/2/1, first 3 years</label>
+                <label>3/2/1, first 3 years (Any Principal Reduction)</label>
             </value>
             <value>
-                <fullName>3/2/2, first 3 years</fullName>
+                <fullName>3/2/2, first 3 years (Any Principal Reduction)</fullName>
                 <default>false</default>
-                <label>3/2/2, first 3 years</label>
+                <label>3/2/2, first 3 years (Any Principal Reduction)</label>
             </value>
             <value>
-                <fullName>3/3/2/1, first 4 years</fullName>
+                <fullName>3/3/2/1, first 4 years (Any Principal Reduction)</fullName>
                 <default>false</default>
-                <label>3/3/2/1, first 4 years</label>
+                <label>3/3/2/1, first 4 years (Any Principal Reduction)</label>
             </value>
             <value>
-                <fullName>5/4/3/2/1, first 5 years</fullName>
+                <fullName>5/4/3/2/1, first 5 years (Any Principal Reduction)</fullName>
                 <default>false</default>
-                <label>5/4/3/2/1, first 5 years</label>
+                <label>5/4/3/2/1, first 5 years (Any Principal Reduction)</label>
+            </value>
+            <value>
+                <fullName>3/2/1, first 3 years (Refinance Only)</fullName>
+                <default>false</default>
+                <label>3/2/1, first 3 years (Refinance Only)</label>
+            </value>
+            <value>
+                <fullName>3/2/2, first 3 years (Refinance Only)</fullName>
+                <default>false</default>
+                <label>3/2/2, first 3 years (Refinance Only)</label>
+            </value>
+            <value>
+                <fullName>3/3/2/1, first 4 years (Refinance Only)</fullName>
+                <default>false</default>
+                <label>3/3/2/1, first 4 years (Refinance Only)</label>
+            </value>
+            <value>
+                <fullName>5/4/3/2/1, first 5 years (Refinance Only)</fullName>
+                <default>false</default>
+                <label>5/4/3/2/1, first 5 years (Refinance Only)</label>
             </value>
         </valueSetDefinition>
     </valueSet>

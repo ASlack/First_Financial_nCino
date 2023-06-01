@@ -4,8 +4,8 @@
     <assignments>
         <name>Assign_P_I_Payment_Info_to_Loan_record</name>
         <label>Assign P&amp;I Payment Info to Loan record</label>
-        <locationX>209</locationX>
-        <locationY>947</locationY>
+        <locationX>82</locationX>
+        <locationY>1055</locationY>
         <assignmentItems>
             <assignToReference>Get_Loan.LLC_BI__Monthly_Payment__c</assignToReference>
             <operator>Assign</operator>
@@ -34,8 +34,8 @@
     <assignments>
         <name>Assign_PPI_Payment_Info_to_Loan_record</name>
         <label>Assign P+I Payment Info to Loan record</label>
-        <locationX>473</locationX>
-        <locationY>1055</locationY>
+        <locationX>346</locationX>
+        <locationY>1163</locationY>
         <assignmentItems>
             <assignToReference>Get_Loan.LLC_BI__Monthly_Payment__c</assignToReference>
             <operator>Assign</operator>
@@ -93,8 +93,8 @@
     <decisions>
         <name>P_I_Payment_fields_Null_Check</name>
         <label>P&amp;I Payment fields Null Check</label>
-        <locationX>407</locationX>
-        <locationY>839</locationY>
+        <locationX>280</locationX>
+        <locationY>947</locationY>
         <defaultConnector>
             <targetReference>PPI_Payment_fields_Null_Check</targetReference>
         </defaultConnector>
@@ -132,8 +132,8 @@
     <decisions>
         <name>PPI_Payment_fields_Null_Check</name>
         <label>P+I Payment fields Null Check</label>
-        <locationX>605</locationX>
-        <locationY>947</locationY>
+        <locationX>478</locationX>
+        <locationY>1055</locationY>
         <defaultConnector>
             <targetReference>Update_Loan</targetReference>
         </defaultConnector>
@@ -178,10 +178,10 @@
     <decisions>
         <name>Pricing_Stream_Loan_Lookup_Check</name>
         <label>Pricing Stream Loan Lookup Check</label>
-        <locationX>407</locationX>
+        <locationX>533</locationX>
         <locationY>539</locationY>
         <defaultConnector>
-            <targetReference>P_I_Payment_fields_Null_Check</targetReference>
+            <targetReference>Sequence_Check</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -207,6 +207,28 @@
             <label>Pricing Stream Loan Lookup Not Null</label>
         </rules>
     </decisions>
+    <decisions>
+        <name>Sequence_Check</name>
+        <label>Sequence Check</label>
+        <locationX>533</locationX>
+        <locationY>839</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Sequence_1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.LLC_BI__Pricing_Stream__r.LLC_BI__Sequence__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <numberValue>1.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>P_I_Payment_fields_Null_Check</targetReference>
+            </connector>
+            <label>Sequence = 1</label>
+        </rules>
+    </decisions>
     <description>When Pricing Payment Component is created/updated, run flow to update Loan</description>
     <environments>Default</environments>
     <formulas>
@@ -221,7 +243,7 @@
 &apos;Frequency_Bimonthly&apos;, &apos;Bi-Monthly&apos;,
 &apos;Frequency_Quarterly&apos;, &apos;Quarterly&apos;,
 &apos;Frequency_Semimonthly&apos;, &apos;Semi-Monthly&apos;,
-&apos;Frequency_At_Maturity&apos;, &apos;@ Maturity&apos;,
+&apos;Frequency_At_Maturity&apos;, &apos;Single Pay&apos;,
 &apos;&apos;)</expression>
     </formulas>
     <formulas>
@@ -236,7 +258,7 @@
 &apos;Frequency_Bimonthly&apos;, &apos;Bi-Monthly&apos;,
 &apos;Frequency_Quarterly&apos;, &apos;Quarterly&apos;,
 &apos;Frequency_Semimonthly&apos;, &apos;Semi-Monthly&apos;,
-&apos;Frequency_At_Maturity&apos;, &apos;@ Maturity&apos;,
+&apos;Frequency_At_Maturity&apos;, &apos;Single Pay&apos;,
 &apos;&apos;)</expression>
     </formulas>
     <interviewLabel>Pricing Payment Component - Update Loan {!$Flow.CurrentDateTime}</interviewLabel>
@@ -263,7 +285,7 @@
     <recordLookups>
         <name>Get_Loan</name>
         <label>Get Loan</label>
-        <locationX>407</locationX>
+        <locationX>533</locationX>
         <locationY>431</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -288,10 +310,10 @@
     <recordUpdates>
         <name>Populate_Loan_Lookup_on_PPC</name>
         <label>Populate Loan Lookup on PPC</label>
-        <locationX>275</locationX>
+        <locationX>401</locationX>
         <locationY>647</locationY>
         <connector>
-            <targetReference>P_I_Payment_fields_Null_Check</targetReference>
+            <targetReference>Sequence_Check</targetReference>
         </connector>
         <inputAssignments>
             <field>cm_Loan__c</field>
@@ -304,8 +326,8 @@
     <recordUpdates>
         <name>Update_Loan</name>
         <label>Update Loan</label>
-        <locationX>407</locationX>
-        <locationY>1331</locationY>
+        <locationX>280</locationX>
+        <locationY>1439</locationY>
         <inputReference>Get_Loan</inputReference>
     </recordUpdates>
     <start>

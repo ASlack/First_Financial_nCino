@@ -87198,6 +87198,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>LLC_BI__Service_Mgmt__c.ffin_Service_Type_Category__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>LLC_BI__Site_Visit_Memo__c.LLC_BI__Action_Items__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -97472,6 +97477,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>User.Internal_Servicer_Service_Mgmt__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>User.Is_nCino_User__c</field>
         <readable>false</readable>
@@ -103119,6 +103129,10 @@
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
+        <flow>Loan_Set_Prepayment_Penalty_Description</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
         <flow>Loan_Updated_Amount_RR_Update_Product_Package</flow>
     </flowAccesses>
     <flowAccesses>
@@ -103196,6 +103210,10 @@
     <flowAccesses>
         <enabled>false</enabled>
         <flow>Review_Created_Update_Record</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Service_Mgmt_Record_Created_Chatter_Notification</flow>
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>

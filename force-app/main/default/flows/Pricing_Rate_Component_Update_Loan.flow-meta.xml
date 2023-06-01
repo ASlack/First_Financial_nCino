@@ -4,8 +4,8 @@
     <assignments>
         <name>Assign_Pricing_Values</name>
         <label>Assign Pricing Values</label>
-        <locationX>242</locationX>
-        <locationY>947</locationY>
+        <locationX>143</locationX>
+        <locationY>1055</locationY>
         <assignmentItems>
             <assignToReference>Get_Loan.LLC_BI__Index__c</assignToReference>
             <operator>Assign</operator>
@@ -70,10 +70,10 @@
     <decisions>
         <name>Pricing_Stream_Loan_Lookup_Check</name>
         <label>Pricing Stream Loan Lookup Check</label>
-        <locationX>374</locationX>
+        <locationX>473</locationX>
         <locationY>539</locationY>
         <defaultConnector>
-            <targetReference>Rate_Fields_Check</targetReference>
+            <targetReference>Sequence_Check</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -102,8 +102,8 @@
     <decisions>
         <name>Rate_Fields_Check</name>
         <label>Rate Fields Check</label>
-        <locationX>374</locationX>
-        <locationY>839</locationY>
+        <locationX>275</locationX>
+        <locationY>947</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>Rate_Fields_Not_Null</name>
@@ -140,6 +140,28 @@
                 <targetReference>Assign_Pricing_Values</targetReference>
             </connector>
             <label>Rate Fields Not Null</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Sequence_Check</name>
+        <label>Sequence Check</label>
+        <locationX>473</locationX>
+        <locationY>839</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Sequence_1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.LLC_BI__Pricing_Stream__r.LLC_BI__Sequence__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <numberValue>1.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Rate_Fields_Check</targetReference>
+            </connector>
+            <label>Sequence = 1</label>
         </rules>
     </decisions>
     <description>When Pricing Rate Component is created/updated, run flow to update Loan</description>
@@ -204,7 +226,7 @@
     <recordLookups>
         <name>Get_Loan</name>
         <label>Get Loan</label>
-        <locationX>374</locationX>
+        <locationX>473</locationX>
         <locationY>431</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -230,10 +252,10 @@
     <recordUpdates>
         <name>Populate_Loan_Lookup_on_PRC</name>
         <label>Populate Loan Lookup on PRC</label>
-        <locationX>242</locationX>
+        <locationX>341</locationX>
         <locationY>647</locationY>
         <connector>
-            <targetReference>Rate_Fields_Check</targetReference>
+            <targetReference>Sequence_Check</targetReference>
         </connector>
         <inputAssignments>
             <field>cm_Loan__c</field>
@@ -246,8 +268,8 @@
     <recordUpdates>
         <name>Update_Loan</name>
         <label>Update Loan</label>
-        <locationX>242</locationX>
-        <locationY>1055</locationY>
+        <locationX>143</locationX>
+        <locationY>1163</locationY>
         <inputReference>Get_Loan</inputReference>
     </recordUpdates>
     <start>

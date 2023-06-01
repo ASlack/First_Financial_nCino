@@ -4,6 +4,7 @@
     <deprecated>false</deprecated>
     <description>This field is optional. It is manually populated. The loan officer uses this text field to add comments to the loan.</description>
     <externalId>false</externalId>
+    <inlineHelpText>Used in LaserPro Field Mappings. The loan officer uses this text field to add comments to the loan.</inlineHelpText>
     <label>Officer Comments</label>
     <length>255</length>
     <required>false</required>
