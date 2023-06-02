@@ -5,7 +5,7 @@
         <name>Assign_Classified_Loan_Long_Term</name>
         <label>Assign Classified Loan - Long Term</label>
         <locationX>572</locationX>
-        <locationY>1631</locationY>
+        <locationY>1487</locationY>
         <assignmentItems>
             <assignToReference>Get_Product_Package.Classified_Loan_Long_Term__c</assignToReference>
             <operator>Assign</operator>
@@ -21,7 +21,7 @@
         <name>Assign_PP_Classified_Loan_100M</name>
         <label>Assign PP Classified Loan &gt; 100M</label>
         <locationX>572</locationX>
-        <locationY>1295</locationY>
+        <locationY>1187</locationY>
         <assignmentItems>
             <assignToReference>Get_Product_Package.Any_Classified_Loan_100M__c</assignToReference>
             <operator>Assign</operator>
@@ -37,7 +37,7 @@
         <name>Assign_Single_Variables</name>
         <label>Assign Single Variables</label>
         <locationX>704</locationX>
-        <locationY>1055</locationY>
+        <locationY>971</locationY>
         <assignmentItems>
             <assignToReference>Var_LoanRiskGrade</assignToReference>
             <operator>Assign</operator>
@@ -67,7 +67,7 @@
         <name>Product_Package_RR_Assignment</name>
         <label>Product Package RR Assignment</label>
         <locationX>484</locationX>
-        <locationY>695</locationY>
+        <locationY>647</locationY>
         <assignmentItems>
             <assignToReference>Get_Product_Package.LLC_BI__Risk_Rating__c</assignToReference>
             <operator>Assign</operator>
@@ -89,6 +89,13 @@
                 <booleanValue>false</booleanValue>
             </value>
         </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Get_Product_Package.Enable_10_Rule__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </assignmentItems>
         <connector>
             <targetReference>Get_Loan_Records_from_PP</targetReference>
         </connector>
@@ -97,7 +104,7 @@
         <name>Any_Classified_Loan_100M_and_RR_is_3_or_Higher</name>
         <label>Any Classified Loan &gt; 100M and RR is 3 or Higher</label>
         <locationX>704</locationX>
-        <locationY>1175</locationY>
+        <locationY>1079</locationY>
         <defaultConnector>
             <targetReference>Classified_Loan_Long_Term</targetReference>
         </defaultConnector>
@@ -157,7 +164,7 @@
         <name>Classified_Loan_Long_Term</name>
         <label>Classified Loan - Long Term</label>
         <locationX>704</locationX>
-        <locationY>1511</locationY>
+        <locationY>1379</locationY>
         <defaultConnector>
             <targetReference>Loop_thru_Loans</targetReference>
         </defaultConnector>
@@ -189,7 +196,7 @@
         <name>Integration_Trigger_Kill_Switch</name>
         <label>Integration Trigger Kill Switch</label>
         <locationX>176</locationX>
-        <locationY>335</locationY>
+        <locationY>323</locationY>
         <defaultConnector>
             <targetReference>Get_Product_Package</targetReference>
         </defaultConnector>
@@ -215,7 +222,7 @@
         <name>Loop_thru_Loans</name>
         <label>Loop thru Loans</label>
         <locationX>484</locationX>
-        <locationY>935</locationY>
+        <locationY>863</locationY>
         <collectionReference>Get_Loan_Records_from_PP</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
@@ -248,7 +255,7 @@
         <name>Get_Loan_Records_from_PP</name>
         <label>Get Loan Records from PP</label>
         <locationX>484</locationX>
-        <locationY>815</locationY>
+        <locationY>755</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Loop_thru_Loans</targetReference>
@@ -280,7 +287,7 @@
         <name>Get_Product_Package</name>
         <label>Get Product Package</label>
         <locationX>484</locationX>
-        <locationY>455</locationY>
+        <locationY>431</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Get_Single_Highest_Loan</targetReference>
@@ -299,13 +306,14 @@
         <queriedFields>LLC_BI__Risk_Rating__c</queriedFields>
         <queriedFields>Any_Classified_Loan_100M__c</queriedFields>
         <queriedFields>Classified_Loan_Long_Term__c</queriedFields>
+        <queriedFields>Enable_10_Rule__c</queriedFields>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordLookups>
         <name>Get_Single_Highest_Loan</name>
         <label>Get Single Highest Loan</label>
         <locationX>484</locationX>
-        <locationY>575</locationY>
+        <locationY>539</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Product_Package_RR_Assignment</targetReference>
@@ -337,7 +345,7 @@
         <name>Update_Product_Package</name>
         <label>Update Product Package</label>
         <locationX>484</locationX>
-        <locationY>1943</locationY>
+        <locationY>1763</locationY>
         <inputReference>Get_Product_Package</inputReference>
     </recordUpdates>
     <start>
@@ -346,7 +354,7 @@
         <connector>
             <targetReference>Integration_Trigger_Kill_Switch</targetReference>
         </connector>
-        <filterLogic>(1 OR 2 OR (3 AND (4 OR 5))) AND 6</filterLogic>
+        <filterLogic>(1 OR 2 OR 7 OR (3 AND (4 OR 5))) AND 6</filterLogic>
         <filters>
             <field>LLC_BI__Amount__c</field>
             <operator>IsChanged</operator>
@@ -385,6 +393,13 @@
         <filters>
             <field>LLC_BI__Is_Main__c</field>
             <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>LLC_BI__Is_Review_Ready__c</field>
+            <operator>IsChanged</operator>
             <value>
                 <booleanValue>true</booleanValue>
             </value>

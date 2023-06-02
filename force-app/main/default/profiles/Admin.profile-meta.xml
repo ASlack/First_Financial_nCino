@@ -6479,6 +6479,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>LLC_BI__Loan__c.ffin_Escrow__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>LLC_BI__Loan__c.ffin_Lender_Plans_to_Underwrite__c</field>
         <readable>true</readable>
     </fieldPermissions>
