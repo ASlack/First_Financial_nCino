@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Condition_Assigned_To__c</fullName>
+    <fullName>SecondaryAssignedTo__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
     <externalId>false</externalId>
-    <label>Assigned To</label>
+    <label>Secondary Assigned To</label>
     <referenceTo>User</referenceTo>
-    <relationshipName>Conditions</relationshipName>
+    <relationshipName>Conditions1</relationshipName>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>Lookup</type>
