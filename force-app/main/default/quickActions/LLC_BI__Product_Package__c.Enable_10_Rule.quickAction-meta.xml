@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Allows Lenders to utilize their 10% Authority to Approve this Product Package</description>
+    <flowDefinition>Product_Package_Enable_10_Rule_Screen_Flow</flowDefinition>
+    <label>Enable 10% Rule</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>
