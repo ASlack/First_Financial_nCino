@@ -6649,6 +6649,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>LLC_BI__Product_Package__c.Classified_Loan_Long_Term__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>LLC_BI__Product_Package__c.CollateralNarrative__c</field>
         <readable>true</readable>
     </fieldPermissions>
