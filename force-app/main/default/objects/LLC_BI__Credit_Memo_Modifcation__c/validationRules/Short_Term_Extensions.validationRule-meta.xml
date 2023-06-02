@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Short_Term_Extensions</fullName>
+    <active>true</active>
+    <description>Only Maturity Date can be changed on a Short Term Extension</description>
+    <errorConditionFormula>AND( $User.No_Validation__c = false,
+ ISPICKVAL(LLC_BI__Memo_Type__c , &apos;Short Term Extension&apos;),
+OR(
+ Borrower_Added__c = true,
+ Borrower_Removed__c = true,
+ CLA_Budget_Amount_Change__c = true,
+ CLA_Budget_Line_Item_Change__c = true,
+LLC_BI__Collateral_Change__c= true,
+ CovenantChange__c = true,
+ LLC_BI__Guarantor_Added__c = true,
+ LLC_BI__Guarantor_Removed__c = true,
+ LLC_BI__Life_Insurance_Change__c = true,
+ LLC_BI__Amount_Change__c = true,
+ LoanAmountDecrease__c = true,
+ LoanAmountIncrease__c = true,
+ Loan_Information_Change__c = true,
+ LLC_BI__Loan_Term_Change__c = true,
+ LLC_BI__New_Rate_Requested__c = true,
+ LLC_BI__Other__c = true,
+ LLC_BI__Post_Close_Items__c = true,
+ LLC_BI__Seller_Note_Change__c = true,
+ LLC_BI__Use_of_Proceeds_Change__c = true
+))</errorConditionFormula>
+    <errorMessage>Only Maturity Date can be changed on a Short Term Extension</errorMessage>
+</ValidationRule>
