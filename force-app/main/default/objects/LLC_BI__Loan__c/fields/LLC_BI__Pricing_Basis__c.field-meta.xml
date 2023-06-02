@@ -22,16 +22,6 @@
                 <default>false</default>
                 <label>Variable</label>
             </value>
-            <value>
-                <fullName>Preferred Fixed</fullName>
-                <default>false</default>
-                <label>Preferred Fixed</label>
-            </value>
-            <value>
-                <fullName>Preferred Variable</fullName>
-                <default>false</default>
-                <label>Preferred Variable</label>
-            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>

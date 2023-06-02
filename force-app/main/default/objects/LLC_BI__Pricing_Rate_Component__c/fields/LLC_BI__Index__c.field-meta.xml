@@ -12,209 +12,109 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>COF_mo_1</fullName>
+                <fullName>Prime_Rate</fullName>
                 <default>false</default>
-                <label>COF_mo_1</label>
+                <label>Prime_Rate</label>
             </value>
             <value>
-                <fullName>COF_mo_2</fullName>
+                <fullName>AMERIBOR</fullName>
                 <default>false</default>
-                <label>COF_mo_2</label>
+                <label>AMERIBOR</label>
             </value>
             <value>
-                <fullName>COF_mo_3</fullName>
+                <fullName>Treasury_Bil_yr_30</fullName>
                 <default>false</default>
-                <label>COF_mo_3</label>
+                <label>Treasury_Bil_yr_30</label>
             </value>
             <value>
-                <fullName>COF_mo_4</fullName>
+                <fullName>Treasury_Bil_yr_2</fullName>
                 <default>false</default>
-                <label>COF_mo_4</label>
+                <label>Treasury_Bil_yr_2</label>
             </value>
             <value>
-                <fullName>COF_mo_5</fullName>
+                <fullName>Cleburne_Private_LOC</fullName>
                 <default>false</default>
-                <label>COF_mo_5</label>
+                <label>Cleburne_Private_LOC</label>
             </value>
             <value>
-                <fullName>COF_mo_6</fullName>
+                <fullName>Fed_Funds_LOC</fullName>
                 <default>false</default>
-                <label>COF_mo_6</label>
+                <label>Fed_Funds_LOC</label>
             </value>
             <value>
-                <fullName>COF_Overnight</fullName>
+                <fullName>FFB_Base_Rate</fullName>
                 <default>false</default>
-                <label>COF_Overnight</label>
+                <label>FFB_Base_Rate</label>
             </value>
             <value>
-                <fullName>Fed_Funds_Current</fullName>
+                <fullName>FFB_Conroe_Base</fullName>
                 <default>false</default>
-                <label>Fed_Funds_Current</label>
+                <label>FFB_Conroe_Base</label>
             </value>
             <value>
-                <fullName>Fed_Funds_Prior_Day</fullName>
+                <fullName>FFB_San_Angelo_Base</fullName>
                 <default>false</default>
-                <label>Fed_Funds_Prior_Day</label>
+                <label>FFB_San_Angelo_Base</label>
             </value>
             <value>
-                <fullName>LIBOR_mo_1</fullName>
+                <fullName>FFB_Sweetwater_Base</fullName>
                 <default>false</default>
-                <label>LIBOR_mo_1</label>
+                <label>FFB_Sweetwater_Base</label>
             </value>
             <value>
-                <fullName>LIBOR_mo_12</fullName>
+                <fullName>Overdraft_Protection</fullName>
                 <default>false</default>
-                <label>LIBOR_mo_12</label>
+                <label>Overdraft_Protection</label>
             </value>
             <value>
-                <fullName>LIBOR_mo_2</fullName>
+                <fullName>private_Line_Rate</fullName>
                 <default>false</default>
-                <label>LIBOR_mo_2</label>
+                <label>private_Line_Rate</label>
             </value>
             <value>
-                <fullName>LIBOR_mo_3</fullName>
+                <fullName>SOFR_day_30</fullName>
                 <default>false</default>
-                <label>LIBOR_mo_3</label>
+                <label>SOFR_day_30</label>
             </value>
             <value>
-                <fullName>LIBOR_mo_6</fullName>
+                <fullName>SOFR_day_90</fullName>
                 <default>false</default>
-                <label>LIBOR_mo_6</label>
+                <label>SOFR_day_90</label>
             </value>
             <value>
-                <fullName>LIBOR_Overnight</fullName>
+                <fullName>Treasury_Bil_yr_20</fullName>
                 <default>false</default>
-                <label>LIBOR_Overnight</label>
+                <label>Treasury_Bil_yr_20</label>
             </value>
             <value>
-                <fullName>Prime</fullName>
+                <fullName>Treasury_Rate_yr_10</fullName>
                 <default>false</default>
-                <label>Prime</label>
+                <label>Treasury_Rate_yr_10</label>
             </value>
             <value>
-                <fullName>Prime_FRED</fullName>
+                <fullName>Treasury_Rate_yr_3</fullName>
                 <default>false</default>
-                <label>Prime_FRED</label>
+                <label>Treasury_Rate_yr_3</label>
             </value>
             <value>
-                <fullName>Swap_yr_1</fullName>
+                <fullName>Treasury_Rate_yr_5</fullName>
                 <default>false</default>
-                <label>Swap_yr_1</label>
+                <label>Treasury_Rate_yr_5</label>
             </value>
             <value>
-                <fullName>Swap_yr_10</fullName>
+                <fullName>Treasury_Rate_yr_7</fullName>
                 <default>false</default>
-                <label>Swap_yr_10</label>
+                <label>Treasury_Rate_yr_7</label>
             </value>
             <value>
-                <fullName>Swap_yr_2</fullName>
+                <fullName>US_T_BILL_mo_12</fullName>
                 <default>false</default>
-                <label>Swap_yr_2</label>
+                <label>US_T_BILL_mo_12</label>
             </value>
             <value>
-                <fullName>Swap_yr_3</fullName>
+                <fullName>Zero_Int_Rate</fullName>
                 <default>false</default>
-                <label>Swap_yr_3</label>
-            </value>
-            <value>
-                <fullName>Swap_yr_30</fullName>
-                <default>false</default>
-                <label>Swap_yr_30</label>
-            </value>
-            <value>
-                <fullName>Swap_yr_4</fullName>
-                <default>false</default>
-                <label>Swap_yr_4</label>
-            </value>
-            <value>
-                <fullName>Swap_yr_5</fullName>
-                <default>false</default>
-                <label>Swap_yr_5</label>
-            </value>
-            <value>
-                <fullName>Swap_yr_7</fullName>
-                <default>false</default>
-                <label>Swap_yr_7</label>
-            </value>
-            <value>
-                <fullName>TCMI_yr_1</fullName>
-                <default>false</default>
-                <label>TCMI_yr_1</label>
-            </value>
-            <value>
-                <fullName>TCMI_yr_10</fullName>
-                <default>false</default>
-                <label>TCMI_yr_10</label>
-            </value>
-            <value>
-                <fullName>TCMI_yr_2</fullName>
-                <default>false</default>
-                <label>TCMI_yr_2</label>
-            </value>
-            <value>
-                <fullName>TCMI_yr_20</fullName>
-                <default>false</default>
-                <label>TCMI_yr_20</label>
-            </value>
-            <value>
-                <fullName>TCMI_yr_3</fullName>
-                <default>false</default>
-                <label>TCMI_yr_3</label>
-            </value>
-            <value>
-                <fullName>TCMI_yr_30</fullName>
-                <default>false</default>
-                <label>TCMI_yr_30</label>
-            </value>
-            <value>
-                <fullName>TCMI_yr_5</fullName>
-                <default>false</default>
-                <label>TCMI_yr_5</label>
-            </value>
-            <value>
-                <fullName>TCMI_yr_7</fullName>
-                <default>false</default>
-                <label>TCMI_yr_7</label>
-            </value>
-            <value>
-                <fullName>Treasury_we_13</fullName>
-                <default>false</default>
-                <label>Treasury_we_13</label>
-            </value>
-            <value>
-                <fullName>Treasury_we_4</fullName>
-                <default>false</default>
-                <label>Treasury_we_4</label>
-            </value>
-            <value>
-                <fullName>Treasury_we_52</fullName>
-                <default>false</default>
-                <label>Treasury_we_52</label>
-            </value>
-            <value>
-                <fullName>Treasury_yr_10</fullName>
-                <default>false</default>
-                <label>Treasury_yr_10</label>
-            </value>
-            <value>
-                <fullName>Treasury_yr_2</fullName>
-                <default>false</default>
-                <label>Treasury_yr_2</label>
-            </value>
-            <value>
-                <fullName>Treasury_yr_20</fullName>
-                <default>false</default>
-                <label>Treasury_yr_20</label>
-            </value>
-            <value>
-                <fullName>Treasury_yr_30</fullName>
-                <default>false</default>
-                <label>Treasury_yr_30</label>
-            </value>
-            <value>
-                <fullName>Treasury_yr_5</fullName>
-                <default>false</default>
-                <label>Treasury_yr_5</label>
+                <label>Zero_Int_Rate</label>
             </value>
         </valueSetDefinition>
     </valueSet>

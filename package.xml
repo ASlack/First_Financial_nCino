@@ -26743,6 +26743,30 @@
         <name>CustomField</name>
     </types>
     <types>
+        <members>LLC_BI__Index.AMERIBOR</members>
+        <members>LLC_BI__Index.Cleburne_Private_LOC</members>
+        <members>LLC_BI__Index.FFB_Base_Rate</members>
+        <members>LLC_BI__Index.FFB_Conroe_Base</members>
+        <members>LLC_BI__Index.FFB_San_Angelo_Base</members>
+        <members>LLC_BI__Index.FFB_Sweetwater_Base</members>
+        <members>LLC_BI__Index.Fed_Funds_LOC</members>
+        <members>LLC_BI__Index.Overdraft_Protection</members>
+        <members>LLC_BI__Index.Prime_Rate</members>
+        <members>LLC_BI__Index.SOFR_day_30</members>
+        <members>LLC_BI__Index.SOFR_day_90</members>
+        <members>LLC_BI__Index.Treasury_Bil_yr_2</members>
+        <members>LLC_BI__Index.Treasury_Bil_yr_20</members>
+        <members>LLC_BI__Index.Treasury_Bil_yr_30</members>
+        <members>LLC_BI__Index.Treasury_Rate_yr_10</members>
+        <members>LLC_BI__Index.Treasury_Rate_yr_3</members>
+        <members>LLC_BI__Index.Treasury_Rate_yr_5</members>
+        <members>LLC_BI__Index.Treasury_Rate_yr_7</members>
+        <members>LLC_BI__Index.US_T_BILL_mo_12</members>
+        <members>LLC_BI__Index.Zero_Int_Rate</members>
+        <members>LLC_BI__Index.private_Line_Rate</members>
+        <name>CustomMetadata</name>
+    </types>
+    <types>
         <members>nCino__Web_Message</members>
         <members>nFORMS__Html_to_PDF_Notification</members>
         <name>CustomNotificationType</name>
@@ -29015,11 +29039,15 @@
         <members>LLC_BI__Pricing_Option__c.LLC_BI__Scenario_Card_Top</members>
         <members>LLC_BI__Pricing_Option__c.LLC_BI__Scenario_Profitability_Top_Component</members>
         <members>LLC_BI__Pricing_Option__c.nPortal__OA_Collapsed_Offer_Card_Summary</members>
+        <members>LLC_BI__Pricing_Payment_Component__c.JHJX__ABJX</members>
+        <members>LLC_BI__Pricing_Payment_Component__c.JHJX__ABJXDataReview</members>
         <members>LLC_BI__Pricing_Payment_Component__c.LLC_BI__Add_Payment_Available_Fields</members>
         <members>LLC_BI__Pricing_Payment_Component__c.LLC_BI__Expanded_Offer_Card_Payment_Table</members>
         <members>LLC_BI__Pricing_Payment_Component__c.LLC_BI__Payment_Component_Extended_Fields</members>
         <members>LLC_BI__Pricing_Payment_Component__c.LLC_BI__Payment_Data_for_Pricing_Option</members>
         <members>LLC_BI__Pricing_Payment_Component__c.LLC_BI__Payment_Structure_Table</members>
+        <members>LLC_BI__Pricing_Rate_Component__c.JHJX__ABJX</members>
+        <members>LLC_BI__Pricing_Rate_Component__c.JHJX__ABJXDataReview</members>
         <members>LLC_BI__Pricing_Rate_Component__c.LLC_BI__Add_Rate_Available_Fields</members>
         <members>LLC_BI__Pricing_Rate_Component__c.LLC_BI__Expanded_Offer_Card_Rate_Table</members>
         <members>LLC_BI__Pricing_Rate_Component__c.LLC_BI__Fixed_Rate_Additional_Fields</members>
@@ -29028,6 +29056,7 @@
         <members>LLC_BI__Pricing_Rate_Component__c.LLC_BI__Rate_Structure_Table</members>
         <members>LLC_BI__Pricing_Rate_Component__c.LLC_BI__Variable_Rate_Additional_Fields</members>
         <members>LLC_BI__Pricing_Stream__c.CAB_Pricing_Streams</members>
+        <members>LLC_BI__Pricing_Stream__c.JHJX__ABJX</members>
         <members>LLC_BI__Pricing_Stream__c.LLC_BI__Pricing_Option_Schedule_Details</members>
         <members>LLC_BI__Product_Package_Team__c.Credit_Memo_Standard_Product_Package</members>
         <members>LLC_BI__Product_Package_Team__c.Credit_Memo_Standard_Review_Product_Pack</members>
@@ -29343,6 +29372,8 @@
         <members>PB09_nCino_CAB_Populate_Loan_Lookup_on_Pricing_Payment_Component</members>
         <members>PB10_nCino_CAB_Oppy_LTM_s_on_Loan</members>
         <members>PB1_2_nCino_PMB_Run_HMDA_Automation_Services</members>
+        <members>Pricing_Payment_Component_Update_Loan</members>
+        <members>Pricing_Rate_Component_Update_Loan</members>
         <members>Product_Package_Creation_Field_Updates</members>
         <members>Product_Package_Enable_10_Rule_Screen_Flow</members>
         <members>REG_O_Questionnaire_Rendering_Invocable</members>
@@ -31066,8 +31097,11 @@
         <members>nCino_Delete_Policy_Exceptions</members>
         <members>nCino_Policy_Exception_Status</members>
         <members>nCino_Read_Create_Edit</members>
+        <members>nCino_Read_Create_Edit_Delete_Rate_Payment_Streams</members>
+        <members>nCino_Read_Create_Edit_Rate_Payment_Streams</members>
         <members>nCino_Read_Create_Edit_Service_Mgmt</members>
         <members>nCino_Read_Edit_Service_Mgmt</members>
+        <members>nCino_Read_Rate_Payment_Streams</members>
         <members>nCino_Relationship_Officer</members>
         <members>nCino_Risk_Rating_Create_Edit</members>
         <members>nCino_Risk_Rating_Override</members>
