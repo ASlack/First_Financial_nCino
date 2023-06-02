@@ -23,6 +23,10 @@
                 <field>LLC_BI__Unsecured_Individual_Lending_Authority__c</field>
             </layoutItems>
             <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Internal_Servicer_Service_Mgmt__c</field>
+            </layoutItems>
+            <layoutItems>
                 <emptySpace>true</emptySpace>
             </layoutItems>
             <layoutItems>
@@ -53,6 +57,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>No_Triggers__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>No_Workflow__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>

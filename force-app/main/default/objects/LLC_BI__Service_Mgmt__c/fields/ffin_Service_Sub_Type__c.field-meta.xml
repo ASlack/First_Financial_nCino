@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>LLC_BI__Sub_Type__c</fullName>
-    <deprecated>false</deprecated>
-    <description>The user populates this optional picklist field to determine the sub type of service details being added. By default, this field appears after a service type is selected.</description>
+    <fullName>ffin_Service_Sub_Type__c</fullName>
     <externalId>false</externalId>
-    <inlineHelpText>Select a service sub type.</inlineHelpText>
-    <label>Sub Type</label>
+    <label>Service Sub-Type</label>
     <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
     <valueSet>
-        <controllingField>LLC_BI__Type__c</controllingField>
+        <controllingField>LLC_BI__Service_Type__c</controllingField>
+        <restricted>true</restricted>
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>

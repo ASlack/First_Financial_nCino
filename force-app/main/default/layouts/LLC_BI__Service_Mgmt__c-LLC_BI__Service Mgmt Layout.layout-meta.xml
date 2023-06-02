@@ -13,7 +13,15 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>LLC_BI__Service_Provider_Contact__c</field>
+                <field>ffin_Service_Sub_Type__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>ffin_Service_Type_Category__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>ffin_Internal_Servicer__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -24,6 +32,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>LLC_BI__Service_Provider__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>LLC_BI__Service_Provider_Contact__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>

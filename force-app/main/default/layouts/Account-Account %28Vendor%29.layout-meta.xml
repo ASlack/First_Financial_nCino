@@ -5,6 +5,9 @@
     <excludeButtons>ChangeRecordType</excludeButtons>
     <excludeButtons>CreateCallList</excludeButtons>
     <excludeButtons>CreateSurveyInvitation</excludeButtons>
+    <excludeButtons>DataDotComAccountInsights</excludeButtons>
+    <excludeButtons>DataDotComClean</excludeButtons>
+    <excludeButtons>DataDotComCompanyHierarchy</excludeButtons>
     <excludeButtons>Delete</excludeButtons>
     <excludeButtons>DisableCustomerPortalAccount</excludeButtons>
     <excludeButtons>DisablePartnerPortalAccount</excludeButtons>
@@ -114,8 +117,14 @@
     </platformActionList>
     <quickActionList/>
     <relatedLists>
+        <excludeButtons>MassChangeOwner</excludeButtons>
+        <excludeButtons>New</excludeButtons>
         <fields>NAME</fields>
-        <relatedList>LLC_BI__Service_Mgmt__c.LLC_BI__Account__c</relatedList>
+        <fields>LLC_BI__Loan__c</fields>
+        <fields>LLC_BI__Service_Type__c</fields>
+        <fields>ffin_Service_Sub_Type__c</fields>
+        <fields>LLC_BI__Status__c</fields>
+        <relatedList>LLC_BI__Service_Mgmt__c.LLC_BI__Service_Provider__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>FULL_NAME</fields>
@@ -123,11 +132,6 @@
         <fields>CONTACT.EMAIL</fields>
         <fields>CONTACT.PHONE1</fields>
         <relatedList>RelatedContactList</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
-        <fields>LLC_BI__Connected_To__c</fields>
-        <relatedList>LLC_BI__Connection__c.LLC_BI__Connected_From__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>TASK.SUBJECT</fields>
@@ -157,7 +161,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h4x000007hepz</masterLabel>
+        <masterLabel>00hDn00000AfYSt</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>
