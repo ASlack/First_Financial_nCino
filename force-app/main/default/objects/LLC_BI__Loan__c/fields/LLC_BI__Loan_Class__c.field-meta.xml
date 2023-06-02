@@ -4,6 +4,7 @@
     <deprecated>false</deprecated>
     <description>This field is optional. It is manually populated. It is used to specify what class this loan is in, if it is new, refinanced, etc.</description>
     <externalId>false</externalId>
+    <inlineHelpText>Used in LaserPro Field Mappings. This field is used to categorize loans by class. It is used to specify what class this loan is in, if it is new, refinanced, etc.</inlineHelpText>
     <label>Loan Class</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>

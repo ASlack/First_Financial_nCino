@@ -21646,6 +21646,7 @@
         <members>LLC_BI__Loan__c.ffin_Docs_Needed_By__c</members>
         <members>LLC_BI__Loan__c.ffin_Docs_Review_Needed__c</members>
         <members>LLC_BI__Loan__c.ffin_Lender_Plans_to_Underwrite__c</members>
+        <members>LLC_BI__Loan__c.ffin_Prepayment_Penalty_Setup__c</members>
         <members>LLC_BI__Loan__c.ffin_Purpose_Code__c</members>
         <members>LLC_BI__Loan__c.ffin_Request_Needed_By__c</members>
         <members>LLC_BI__Loan__c.ffin_Request_Type__c</members>
@@ -28807,6 +28808,7 @@
         <members>LLC_BI__Loan__c.Fields_to_Display_on_Creation_Sub_Loan</members>
         <members>LLC_BI__Loan__c.HMDA</members>
         <members>LLC_BI__Loan__c.HVCRE</members>
+        <members>LLC_BI__Loan__c.JHJX__UI_Boarding_Data</members>
         <members>LLC_BI__Loan__c.LLC_BI__Affiliated_Detail</members>
         <members>LLC_BI__Loan__c.LLC_BI__Balance_Information</members>
         <members>LLC_BI__Loan__c.LLC_BI__Booked_Information</members>
@@ -28881,6 +28883,7 @@
         <members>LLC_BI__Loan__c.RequiredLoanFieldsToCreateRateOrPayment</members>
         <members>LLC_BI__Loan__c.Standard_Product_Package_Credit_Memo</members>
         <members>LLC_BI__Loan__c.Standard_Product_Package_Credit_Memo_Exp</members>
+        <members>LLC_BI__Loan__c.UIEscrowCondRendered</members>
         <members>LLC_BI__Loan__c.UI_Approval_Fields</members>
         <members>LLC_BI__Loan__c.UI_Attorney_Info</members>
         <members>LLC_BI__Loan__c.UI_Compliance_Information</members>
@@ -28889,7 +28892,10 @@
         <members>LLC_BI__Loan__c.UI_Key_Dates_Read_Only</members>
         <members>LLC_BI__Loan__c.UI_Key_Dates_Reg_B_Editable</members>
         <members>LLC_BI__Loan__c.UI_Key_Dates_Reg_B_Read_Only</members>
+        <members>LLC_BI__Loan__c.UI_LaserPro_Review</members>
         <members>LLC_BI__Loan__c.UI_Lead_Referral</members>
+        <members>LLC_BI__Loan__c.UI_Loan_Attributes</members>
+        <members>LLC_BI__Loan__c.UI_Loan_Codes</members>
         <members>LLC_BI__Loan__c.UI_Loan_Collateral1_Summary</members>
         <members>LLC_BI__Loan__c.UI_Loan_Collateral_Pledged</members>
         <members>LLC_BI__Loan__c.UI_Loan_Compliance_Certifications</members>
@@ -28897,6 +28903,7 @@
         <members>LLC_BI__Loan__c.UI_Loan_Details_Approved</members>
         <members>LLC_BI__Loan__c.UI_Loan_Narrative</members>
         <members>LLC_BI__Loan__c.UI_Loan_Pricing</members>
+        <members>LLC_BI__Loan__c.UI_Lost_Information</members>
         <members>LLC_BI__Loan__c.UI_Post_Closing_Review</members>
         <members>LLC_BI__Loan__c.UI_Product_Selection</members>
         <members>LLC_BI__Loan__c.UI_Secondary_Market</members>
@@ -29262,6 +29269,8 @@
         <members>Loan_RFI_Received</members>
         <members>Loan_Scheduled_Loan_Team_Chatter_Notifications</members>
         <members>Loan_Set_Initial_Application_Date</members>
+        <members>Loan_Set_Prepayment_Penalty_Description</members>
+        <members>Loan_Team_Member_Notify_Loan_Officer_when_Loan_Team_Member_is_Added</members>
         <members>Loan_Update_Product_Package_Fields_for_Approval_Process_Record_Trigger_Flow</members>
         <members>Loan_Updated_Amount_RR_Update_Product_Package</members>
         <members>Loan_Updated_Lender_Plans_to_Underwrite</members>
@@ -32165,6 +32174,7 @@
         <members>LLC_BI__Loan__c.Appraisal_Delivered_Date</members>
         <members>LLC_BI__Loan__c.Appraisal_Waived_Date</members>
         <members>LLC_BI__Loan__c.Approval_Advised_Sent_Date</members>
+        <members>LLC_BI__Loan__c.Call_Report_Code</members>
         <members>LLC_BI__Loan__c.Complete_Application_Date</members>
         <members>LLC_BI__Loan__c.Counter_Offer</members>
         <members>LLC_BI__Loan__c.Decline_Advised_Sent_Date</members>
@@ -32192,6 +32202,7 @@
         <members>LLC_BI__Loan__c.Loan_Validation_07</members>
         <members>LLC_BI__Loan__c.Loan_Validation_09</members>
         <members>LLC_BI__Loan__c.Loan_Validation_10</members>
+        <members>LLC_BI__Loan__c.Prepayment_Penalty_Amount_Required</members>
         <members>LLC_BI__Loan__c.Request_Type_Full_Presentation</members>
         <members>LLC_BI__Loan__c.Request_Type_Loan_Amount_Validation</members>
         <members>LLC_BI__Loan__c.Request_Type_Spreads_n_Cash_Flow</members>

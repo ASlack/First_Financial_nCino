@@ -110,6 +110,18 @@
             <valueName>Residential RE</valueName>
         </valueSettings>
         <valueSettings>
+            <controllingFieldValue>Consumer</controllingFieldValue>
+            <valueName>Consumer Residential RE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consumer</controllingFieldValue>
+            <valueName>Consumer Non-Auto</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consumer</controllingFieldValue>
+            <valueName>Consumer Auto</valueName>
+        </valueSettings>
+        <valueSettings>
             <controllingFieldValue>Agricultural</controllingFieldValue>
             <valueName>Farm RE</valueName>
         </valueSettings>

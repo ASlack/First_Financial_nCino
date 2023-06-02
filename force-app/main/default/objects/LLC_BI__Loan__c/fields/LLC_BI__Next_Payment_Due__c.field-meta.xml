@@ -4,6 +4,7 @@
     <deprecated>false</deprecated>
     <description>This date field is used to specify when the next payment on the loan is due.</description>
     <externalId>false</externalId>
+    <inlineHelpText>Used in LaserPro Field Mappings. This date field is used to specify when the next payment on the loan is due.</inlineHelpText>
     <label>Next Payment Due</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>

@@ -4,6 +4,7 @@
     <deprecated>false</deprecated>
     <description>This field is optional. It is manually populated. This field contains the date that the funds for this loan were wired to the borrower.</description>
     <externalId>false</externalId>
+    <inlineHelpText>Used in LaserPro Field Mappings. This field contains the date that the funds for this loan were wired to the borrower.</inlineHelpText>
     <label>Wire Date</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
