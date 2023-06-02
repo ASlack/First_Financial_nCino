@@ -31,7 +31,10 @@
     <entryCriteria>
         <formula>AND(
 ISPICKVAL(LLC_BI__Memo_Type__c, &apos;Change Memo&apos;),
-LLC_BI__Approval_Required__c = FALSE
+LLC_BI__Approval_Required__c = FALSE,
+OR(
+ISPICKVAL(LLC_BI__Approval_Status__c, &apos;New&apos;),
+ISPICKVAL(LLC_BI__Approval_Status__c, &apos;Recalled&apos;))
 )</formula>
     </entryCriteria>
     <finalApprovalActions>
