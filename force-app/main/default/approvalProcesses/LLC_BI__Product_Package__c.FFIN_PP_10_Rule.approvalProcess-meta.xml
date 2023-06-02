@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>true</allowRecall>
+    <allowedSubmitters>
+        <type>allInternalUsers</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Name</field>
+        <field>Owner</field>
+        <field>LLC_BI__Status__c</field>
+        <field>X1st_Approver__c</field>
+        <field>X2nd_Approver__c</field>
+        <field>Total_Relationship_Exposure__c</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <approvalActions>
+            <action>
+                <name>PP_Approval_Step_2</name>
+                <type>FieldUpdate</type>
+            </action>
+        </approvalActions>
+        <assignedApprover>
+            <approver>
+                <name>Approver_1__c</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <label>Approver 1</label>
+        <name>Approver_1</name>
+    </approvalStep>
+    <description>Approval Process when Enable 10% Rule is checked</description>
+    <emailTemplate>PSO_Email_Templates/ET63_Package_Submitted</emailTemplate>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <formula>AND(
+    Enable_10_Rule__c = True,
+    NOT(ISBLANK(Household__c)),
+    NOT(ISBLANK(Approver_1__c)),
+    NOT(ISPICKVAL(Package_Secure_Type__c, &quot;&quot;)),
+    NOT(ISPICKVAL(LLC_BI__Risk_Rating__c, &quot;&quot;))
+)</formula>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>LLC_BI__Product_Package_Status_Approved</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>PP_Approved_Email</name>
+            <type>Alert</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>LLC_BI__Product_Package_Status_Rejected</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>PP_Rejected_Email</name>
+            <type>Alert</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <initialSubmissionActions>
+        <action>
+            <name>PP_Approval_Step_1</name>
+            <type>FieldUpdate</type>
+        </action>
+    </initialSubmissionActions>
+    <label>FFIN PP - 10% Rule</label>
+    <processOrder>1</processOrder>
+    <recallActions>
+        <action>
+            <name>LLC_BI__Product_Package_Status_Recalled</name>
+            <type>FieldUpdate</type>
+        </action>
+    </recallActions>
+    <recordEditability>AdminOrCurrentApprover</recordEditability>
+    <showApprovalHistory>false</showApprovalHistory>
+</ApprovalProcess>

@@ -1,6 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
     <fieldUpdates>
+        <fullName>Last_Approver_CLC</fullName>
+        <field>Last_Approver_for_Memo__c</field>
+        <literalValue>CLC</literalValue>
+        <name>Last Approver - CLC</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Last_Approver_Lender</fullName>
+        <field>Last_Approver_for_Memo__c</field>
+        <literalValue>Lender</literalValue>
+        <name>Last Approver - Lender</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Last_Approver_RDLC</fullName>
+        <field>Last_Approver_for_Memo__c</field>
+        <literalValue>RDLC</literalValue>
+        <name>Last Approver - RDLC</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Last_Approver_Senior_Lender</fullName>
+        <field>Last_Approver_for_Memo__c</field>
+        <literalValue>Senior Lender</literalValue>
+        <name>Last Approver - Senior Lender</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Loan_Default_App</fullName>
         <field>LLC_BI__Default_App__c</field>
         <formula>IF(
