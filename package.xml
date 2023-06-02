@@ -27943,6 +27943,7 @@
         <members>LLC_BI__CFG_ConfigKey__c</members>
         <members>LLC_BI__CFG_ConfigValue__c</members>
         <members>LLC_BI__Checklist__c</members>
+        <members>LLC_BI__Classification__c</members>
         <members>LLC_BI__Collateral_Type__c</members>
         <members>LLC_BI__Collateral__c</members>
         <members>LLC_BI__Connection_Role__c</members>
@@ -27971,6 +27972,7 @@
         <members>LLC_BI__Rate__c</members>
         <members>LLC_BI__Risk_Grade_Template__c</members>
         <members>LLC_BI__Role__c</members>
+        <members>LLC_BI__Roll_Up_Column__c</members>
         <members>LLC_BI__Service_Mgmt_Detail__c</members>
         <members>LLC_BI__Service_Mgmt__c</members>
         <members>LLC_BI__Spread_Statement_Record_Total__c</members>
@@ -28001,8 +28003,10 @@
         <members>nFORCE__Route_Group__c</members>
         <members>nFORCE__Route_Terms__c</members>
         <members>nFORCE__Route__c</members>
+        <members>nFORCE__Screen_Section__c</members>
         <members>nFORCE__Screen__c</members>
         <members>nFORCE__Session__c</members>
+        <members>nFORCE__Tile__c</members>
         <members>nFORMS__FormManager</members>
         <members>nFUSE__Transaction_Log__c</members>
         <name>CustomTab</name>
