@@ -12,6 +12,11 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
+                <fullName>Borrower changed their mind</fullName>
+                <default>false</default>
+                <label>Borrower changed their mind</label>
+            </value>
+            <value>
                 <fullName>Application Approved but Not Accepted</fullName>
                 <default>false</default>
                 <label>Application Approved but Not Accepted</label>
