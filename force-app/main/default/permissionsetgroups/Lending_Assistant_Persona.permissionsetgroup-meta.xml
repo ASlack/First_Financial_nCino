@@ -24,6 +24,7 @@
     <permissionSets>nCino_Create_Edit_Policy_Exceptions</permissionSets>
     <permissionSets>nCino_Create_Memos</permissionSets>
     <permissionSets>nCino_Credit_Manager_Review_View_Access</permissionSets>
+    <permissionSets>nCino_Read_Create_Edit_Delete_Rate_Payment_Streams</permissionSets>
     <permissionSets>nCino_Read_Edit_Service_Mgmt</permissionSets>
     <permissionSets>nFORCE__UI_Framework_User</permissionSets>
     <permissionSets>nPortal__Create_Customer_Portal_User</permissionSets>
