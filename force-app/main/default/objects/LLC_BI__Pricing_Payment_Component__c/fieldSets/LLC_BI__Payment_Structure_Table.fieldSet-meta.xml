@@ -37,11 +37,6 @@
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>LLC_BI__Payment_Type__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </availableFields>
-    <availableFields>
         <field>LLC_BI__Percent_Of_Total_Loan_Amount__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
@@ -74,6 +69,11 @@
     </displayedFields>
     <displayedFields>
         <field>LLC_BI__Frequency__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>LLC_BI__Payment_Type__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>

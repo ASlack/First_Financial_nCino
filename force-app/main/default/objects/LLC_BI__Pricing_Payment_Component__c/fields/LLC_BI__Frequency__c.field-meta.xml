@@ -22,14 +22,39 @@
                 <label>Frequency_Annually</label>
             </value>
             <value>
-                <fullName>Biweekly</fullName>
+                <fullName>Frequency_Biweekly</fullName>
                 <default>false</default>
-                <label>Biweekly</label>
+                <label>Frequency_Biweekly</label>
             </value>
             <value>
-                <fullName>Weekly</fullName>
+                <fullName>Frequency_Weekly</fullName>
                 <default>false</default>
-                <label>Weekly</label>
+                <label>Frequency_Weekly</label>
+            </value>
+            <value>
+                <fullName>Frequency_At_Maturity</fullName>
+                <default>false</default>
+                <label>Frequency_At_Maturity</label>
+            </value>
+            <value>
+                <fullName>Frequency_Semiannually</fullName>
+                <default>false</default>
+                <label>Frequency_Semiannually</label>
+            </value>
+            <value>
+                <fullName>Frequency_Bimonthly</fullName>
+                <default>false</default>
+                <label>Frequency_Bimonthly</label>
+            </value>
+            <value>
+                <fullName>Frequency_Quarterly</fullName>
+                <default>false</default>
+                <label>Frequency_Quarterly</label>
+            </value>
+            <value>
+                <fullName>Frequency_Semimonthly</fullName>
+                <default>false</default>
+                <label>Frequency_Semimonthly</label>
             </value>
         </valueSetDefinition>
     </valueSet>

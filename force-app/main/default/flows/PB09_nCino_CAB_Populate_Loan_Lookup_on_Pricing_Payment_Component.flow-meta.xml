@@ -913,7 +913,7 @@ NOT(ISBLANK({!myVariable_current.LLC_BI__Pricing_Stream__r.LLC_BI__Loan__c}))
         <object>LLC_BI__Loan__c</object>
     </recordUpdates>
     <startElementReference>myDecision</startElementReference>
-    <status>Active</status>
+    <status>Obsolete</status>
     <variables>
         <name>myVariable_current</name>
         <dataType>SObject</dataType>

@@ -43,6 +43,16 @@
                 <label>Annual</label>
             </value>
             <value>
+                <fullName>Bi-Weekly</fullName>
+                <default>false</default>
+                <label>Bi-Weekly</label>
+            </value>
+            <value>
+                <fullName>Semi-Monthly</fullName>
+                <default>false</default>
+                <label>Semi-Monthly</label>
+            </value>
+            <value>
                 <fullName>Single Pay</fullName>
                 <default>false</default>
                 <label>Single Pay</label>

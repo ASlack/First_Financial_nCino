@@ -22,14 +22,19 @@
                 <label>Frequency_Annually</label>
             </value>
             <value>
-                <fullName>Biweekly</fullName>
+                <fullName>Frequency_Biweekly</fullName>
                 <default>false</default>
-                <label>Biweekly</label>
+                <label>Frequency_Biweekly</label>
             </value>
             <value>
-                <fullName>Weekly</fullName>
+                <fullName>Frequency_Weekly</fullName>
                 <default>false</default>
-                <label>Weekly</label>
+                <label>Frequency_Weekly</label>
+            </value>
+            <value>
+                <fullName>At Maturity</fullName>
+                <default>false</default>
+                <label>At Maturity</label>
             </value>
         </valueSetDefinition>
     </valueSet>
