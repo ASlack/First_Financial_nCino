@@ -6383,6 +6383,41 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Adverse_Action__c.LLC_BI__Credit_Provider__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Adverse_Action__c.LLC_BI__Decline_Reason_1__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Adverse_Action__c.LLC_BI__Decline_Reason_2__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Adverse_Action__c.LLC_BI__Decline_Reason_3__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Adverse_Action__c.LLC_BI__Decline_Reason_4__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Adverse_Action__c.LLC_BI__Withdraw_Reason__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Adverse_Action__c.cm_Loan_Officer__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>LLC_BI__Covenant2__c.ffin_Description__c</field>
         <readable>true</readable>

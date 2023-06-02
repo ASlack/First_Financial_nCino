@@ -17002,6 +17002,8 @@
     </types>
     <types>
         <members>LLC_BI__Adverse_Action__c.Adverse_Action_Approval_Process</members>
+        <members>LLC_BI__Adverse_Action__c.Adverse_Action_Auto_Approve</members>
+        <members>LLC_BI__Adverse_Action__c.Adverse_Action_Needs_Approval</members>
         <members>LLC_BI__Covenant_Compliance2__c.CCAP100_Covenant_Compliance_Approval</members>
         <members>LLC_BI__Credit_Memo_Modifcation__c.MAP100_Short_Term_Extension</members>
         <members>LLC_BI__Credit_Memo_Modifcation__c.MAP200_Change_Memo_AP_Not_Required</members>
@@ -19188,6 +19190,7 @@
         <members>LLC_BI__Adverse_Action__c.cm_AA_Type__c</members>
         <members>LLC_BI__Adverse_Action__c.cm_Counter_Offer_Due_Date__c</members>
         <members>LLC_BI__Adverse_Action__c.cm_Counter_Offer_Status__c</members>
+        <members>LLC_BI__Adverse_Action__c.cm_Loan_Officer__c</members>
         <members>LLC_BI__Analyzed_Account__c.LLC_BI__ACH_Pre_Funding_Requirement__c</members>
         <members>LLC_BI__Analyzed_Account__c.LLC_BI__Account_Action__c</members>
         <members>LLC_BI__Analyzed_Account__c.LLC_BI__Account_Filter_Amount__c</members>
@@ -28885,6 +28888,7 @@
         <members>LLC_BI__Loan__c.Standard_Product_Package_Credit_Memo</members>
         <members>LLC_BI__Loan__c.Standard_Product_Package_Credit_Memo_Exp</members>
         <members>LLC_BI__Loan__c.UIEscrowCondRendered</members>
+        <members>LLC_BI__Loan__c.UI_Adverse_Action_Dates</members>
         <members>LLC_BI__Loan__c.UI_Approval_Fields</members>
         <members>LLC_BI__Loan__c.UI_Attorney_Info</members>
         <members>LLC_BI__Loan__c.UI_Compliance_Information</members>
@@ -29240,6 +29244,9 @@
         <members>Account_Document_Portal_Enabled_Notification</members>
         <members>Account_NAICS_Code_is_Changed</members>
         <members>Advance_Deal</members>
+        <members>Adverse_Action_Created_Quick_Field_Updates</members>
+        <members>Adverse_Action_Declination_Submit_for_Approval</members>
+        <members>Adverse_Action_Notify_Loan_Team_via_Chatter</members>
         <members>CLA_Draw_Auto_Submit_for_Approval</members>
         <members>CRA_Reportable_Invocable</members>
         <members>Collateral_Valuation_On_Create_Update_Coll_Mgmt</members>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Notify_Loan_Officer_via_Chatter</name>
+        <label>Notify Loan Officer via Chatter</label>
+        <locationX>176</locationX>
+        <locationY>431</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <elementReference>ChatterMessage</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>$Record.LLC_BI__Loan__c</elementReference>
+            </value>
+        </inputParameters>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <apiVersion>58.0</apiVersion>
+    <description>Automatically posts a notification to chatter when an adverse action record is completed</description>
+    <environments>Default</environments>
+    <interviewLabel>Adverse Action - Notify Loan Team via Chatter {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Adverse Action - Notify Loan Team via Chatter</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Set_Adverse_Action_Date_on_Loan</name>
+        <label>Set Adverse Action Date on Loan</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <connector>
+            <targetReference>Notify_Loan_Officer_via_Chatter</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.LLC_BI__Loan__c</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Date_of_Adverse_Action_and_Counter__c</field>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record.LLC_BI__Loan__r</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Set_Adverse_Action_Date_on_Loan</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>or</filterLogic>
+        <filters>
+            <field>AA_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Loan Declined</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AA_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Loan Withdrawn</stringValue>
+            </value>
+        </filters>
+        <object>LLC_BI__Adverse_Action__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>ChatterMessage</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>@[{!$Record.LLC_BI__Loan__r.LLC_BI__Loan_Officer__c}] @[{!$Record.LLC_BI__Loan__r.cm_Loan_Assistant__c}] This loan was decisioned via an Adverse Action. Please notify the customer and input the necessary Reg B information.</text>
+    </textTemplates>
+</Flow>
