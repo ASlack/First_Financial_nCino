@@ -9,12 +9,42 @@
 .column-flex {
   display: flex;
   flex-direction: column;
+}
+
+.doc-header-container {
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
+/* TODO: adjust max-width based on device size */
 .nowrap {
-  max-width: 110px;
+  /* max-width: 110px; */
+  max-width: calc(100vh / 4.25);
+  /* max-width: 280px; */
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+
+/* small */
+@media (min-width: 480px) {
+  /* .responsive {
+    border: 5px solid red;
+  } */
+  /* TODO: set nowrap here */
+}
+
+@media (min-width: 768px) {
+  /* .responsive {
+    border: 5px solid orange;
+  } */
+  /* TODO: set nowrap here */
+}
+
+@media (min-width: 1024px) {
+  /* .responsive {
+    border: 5px solid green;
+  } */
+  /* TODO: set nowrap here */
 }

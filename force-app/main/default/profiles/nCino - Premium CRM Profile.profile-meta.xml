@@ -80353,9 +80353,9 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>LLC_BI__Loan__c.Lost_Reason__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -103267,6 +103267,10 @@
     <flowAccesses>
         <enabled>false</enabled>
         <flow>X1st_Lien_On_Dwelling_Determined_Date</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Zen_Consumer_Loan_Creation_on_Relationship</flow>
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>

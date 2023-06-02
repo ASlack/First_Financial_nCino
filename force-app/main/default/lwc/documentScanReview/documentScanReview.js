@@ -1,5 +1,7 @@
 import { LightningElement } from "lwc";
 
+//* hard-coded values for testing
+// TODO: delete this array once Apex logic for parsing documents is complete
 const docs = [
   {
     fileName: "FFBI-522 AC",
@@ -21,6 +23,10 @@ const docs = [
   {
     fileName: "JavaScript Developer I Purchase Confirmation",
     thumbnail: "https://i.imgur.com/R7MIMqp.png"
+  },
+  {
+    fileName: "FFBI-522 AC",
+    thumbnail: "https://i.imgur.com/bjKycDt.jpg"
   }
 ];
 

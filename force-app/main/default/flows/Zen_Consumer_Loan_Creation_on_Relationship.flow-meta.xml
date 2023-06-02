@@ -1,6 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <apiVersion>58.0</apiVersion>
+    <assignments>
+        <name>Assign_fields_to_the_Loan</name>
+        <label>Assign fields to the Loan</label>
+        <locationX>176</locationX>
+        <locationY>350</locationY>
+        <assignmentItems>
+            <assignToReference>LoanRecordToCreate.LLC_BI__Amount__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Loan_Amount</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>LoanRecordToCreate.LLC_BI__Account__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>RecordId</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>LoanRecordToCreate.LLC_BI__Stage__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Processing</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Create_Loan_Record</targetReference>
+        </connector>
+    </assignments>
+    <choices>
+        <name>ConsumerAutoOption</name>
+        <choiceText>Consumer Auto</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Consumer Auto</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>ConsumerNonAutoOption</name>
+        <choiceText>Consumer Non-Auto</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Consumer Non-Auto</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>ConsumerREOption</name>
+        <choiceText>Consumer Residential Real Estate</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Consumer Residential RE</stringValue>
+        </value>
+    </choices>
     <choices>
         <name>No</name>
         <choiceText>No</choiceText>
@@ -26,11 +80,105 @@
         <picklistObject>LLC_BI__Legal_Entities__c</picklistObject>
     </dynamicChoiceSets>
     <dynamicChoiceSets>
-        <name>ProductChoices</name>
-        <collectionReference>Retrieve_Consumer_Products</collectionReference>
+        <name>ConsumerAutoChoices</name>
         <dataType>String</dataType>
         <displayField>Name</displayField>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>LLC_BI__Product_Line_Name__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Consumer</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>LLC_BI__Product_Type_Name__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Consumer Auto</stringValue>
+            </value>
+        </filters>
         <object>LLC_BI__Product__c</object>
+        <outputAssignments>
+            <assignToReference>LoanRecordToCreate.LLC_BI__Product_Line__c</assignToReference>
+            <field>LLC_BI__Product_Line_Name__c</field>
+        </outputAssignments>
+        <outputAssignments>
+            <assignToReference>LoanRecordToCreate.LLC_BI__Product_Type__c</assignToReference>
+            <field>LLC_BI__Product_Type_Name__c</field>
+        </outputAssignments>
+        <outputAssignments>
+            <assignToReference>LoanRecordToCreate.LLC_BI__Product__c</assignToReference>
+            <field>Name</field>
+        </outputAssignments>
+        <valueField>Id</valueField>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>ConsumerNonAutoChoices</name>
+        <dataType>String</dataType>
+        <displayField>Name</displayField>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>LLC_BI__Product_Line_Name__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Consumer</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>LLC_BI__Product_Type_Name__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Consumer Non-Auto</stringValue>
+            </value>
+        </filters>
+        <object>LLC_BI__Product__c</object>
+        <outputAssignments>
+            <assignToReference>LoanRecordToCreate.LLC_BI__Product_Line__c</assignToReference>
+            <field>LLC_BI__Product_Line_Name__c</field>
+        </outputAssignments>
+        <outputAssignments>
+            <assignToReference>LoanRecordToCreate.LLC_BI__Product_Type__c</assignToReference>
+            <field>LLC_BI__Product_Type_Name__c</field>
+        </outputAssignments>
+        <outputAssignments>
+            <assignToReference>LoanRecordToCreate.LLC_BI__Product__c</assignToReference>
+            <field>Name</field>
+        </outputAssignments>
+        <valueField>Id</valueField>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>ConsumerResidentialREChoices</name>
+        <dataType>String</dataType>
+        <displayField>Name</displayField>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>LLC_BI__Product_Line_Name__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Consumer</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>LLC_BI__Product_Type_Name__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Consumer Residential RE</stringValue>
+            </value>
+        </filters>
+        <object>LLC_BI__Product__c</object>
+        <outputAssignments>
+            <assignToReference>LoanRecordToCreate.LLC_BI__Product_Line__c</assignToReference>
+            <field>LLC_BI__Product_Line_Name__c</field>
+        </outputAssignments>
+        <outputAssignments>
+            <assignToReference>LoanRecordToCreate.LLC_BI__Product_Type__c</assignToReference>
+            <field>LLC_BI__Product_Type_Name__c</field>
+        </outputAssignments>
+        <outputAssignments>
+            <assignToReference>LoanRecordToCreate.LLC_BI__Product__c</assignToReference>
+            <field>Name</field>
+        </outputAssignments>
         <valueField>Id</valueField>
     </dynamicChoiceSets>
     <environments>Default</environments>
@@ -55,48 +203,168 @@
         </value>
     </processMetadataValues>
     <processType>Flow</processType>
-    <recordLookups>
-        <name>Retrieve_Consumer_Products</name>
-        <label>Retrieve Consumer Products</label>
+    <recordCreates>
+        <name>Create_Entity_Involvement</name>
+        <label>Create Entity Involvement</label>
         <locationX>176</locationX>
-        <locationY>242</locationY>
-        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
-        <connector>
-            <targetReference>Loan_Creation_Screen</targetReference>
-        </connector>
-        <filterLogic>and</filterLogic>
-        <filters>
-            <field>LLC_BI__Product_Line_Name__c</field>
-            <operator>EqualTo</operator>
+        <locationY>566</locationY>
+        <inputAssignments>
+            <field>LLC_BI__Account__c</field>
             <value>
-                <stringValue>Consumer</stringValue>
+                <elementReference>RecordId</elementReference>
             </value>
-        </filters>
-        <getFirstRecordOnly>false</getFirstRecordOnly>
-        <object>LLC_BI__Product__c</object>
-        <sortField>LLC_BI__Product_Type_Name__c</sortField>
-        <sortOrder>Desc</sortOrder>
+        </inputAssignments>
+        <inputAssignments>
+            <field>LLC_BI__Borrower_Type__c</field>
+            <value>
+                <elementReference>Borrower_Type</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>LLC_BI__Contingent_Type__c</field>
+            <value>
+                <stringValue>Joint &amp; Several</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>LLC_BI__Loan__c</field>
+            <value>
+                <elementReference>Create_Loan_Record</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>LLC_BI__Ownership__c</field>
+            <value>
+                <numberValue>100.0</numberValue>
+            </value>
+        </inputAssignments>
+        <object>LLC_BI__Legal_Entities__c</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
-    </recordLookups>
+    </recordCreates>
+    <recordCreates>
+        <name>Create_Loan_Record</name>
+        <label>Create Loan Record</label>
+        <locationX>176</locationX>
+        <locationY>458</locationY>
+        <connector>
+            <targetReference>Create_Entity_Involvement</targetReference>
+        </connector>
+        <inputReference>LoanRecordToCreate</inputReference>
+    </recordCreates>
     <runInMode>SystemModeWithSharing</runInMode>
     <screens>
         <name>Loan_Creation_Screen</name>
         <label>Loan Creation Screen</label>
         <locationX>176</locationX>
-        <locationY>350</locationY>
+        <locationY>242</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Assign_fields_to_the_Loan</targetReference>
+        </connector>
         <fields>
-            <name>Have_Documents_Already_Been_Created_Signed</name>
-            <choiceReferences>Yes</choiceReferences>
-            <choiceReferences>No</choiceReferences>
-            <dataType>Boolean</dataType>
-            <defaultSelectedChoiceReference>No</defaultSelectedChoiceReference>
-            <fieldText>Have Documents Already Been Created &amp; Signed?</fieldText>
-            <fieldType>RadioButtons</fieldType>
-            <helpText>&lt;p&gt;An answer of &apos;Yes&apos; will skip the loan straight to Booking &amp;amp; Funding stage.&lt;/p&gt;</helpText>
-            <isRequired>true</isRequired>
+            <name>Loan_Creation_Screen_Section1</name>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>Loan_Creation_Screen_Section1_Column1</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>Have_Documents_Already_Been_Created_Signed</name>
+                    <choiceReferences>Yes</choiceReferences>
+                    <choiceReferences>No</choiceReferences>
+                    <dataType>Boolean</dataType>
+                    <defaultSelectedChoiceReference>No</defaultSelectedChoiceReference>
+                    <fieldText>Have Documents Already Been Created &amp; Signed?</fieldText>
+                    <fieldType>RadioButtons</fieldType>
+                    <helpText>&lt;p&gt;An answer of &apos;Yes&apos; will skip the loan straight to Booking &amp;amp; Funding stage.&lt;/p&gt;</helpText>
+                    <isRequired>true</isRequired>
+                </fields>
+                <fields>
+                    <name>Select_Product_Type</name>
+                    <choiceReferences>ConsumerAutoOption</choiceReferences>
+                    <choiceReferences>ConsumerNonAutoOption</choiceReferences>
+                    <choiceReferences>ConsumerREOption</choiceReferences>
+                    <dataType>String</dataType>
+                    <fieldText>Select Product Type</fieldText>
+                    <fieldType>RadioButtons</fieldType>
+                    <isRequired>true</isRequired>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>6</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <fields>
+                <name>Loan_Creation_Screen_Section1_Column2</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>Consumer_RE_Product</name>
+                    <choiceReferences>ConsumerResidentialREChoices</choiceReferences>
+                    <dataType>String</dataType>
+                    <fieldText>Select Consumer RE Product</fieldText>
+                    <fieldType>RadioButtons</fieldType>
+                    <isRequired>true</isRequired>
+                    <visibilityRule>
+                        <conditionLogic>and</conditionLogic>
+                        <conditions>
+                            <leftValueReference>Select_Product_Type</leftValueReference>
+                            <operator>EqualTo</operator>
+                            <rightValue>
+                                <elementReference>ConsumerREOption</elementReference>
+                            </rightValue>
+                        </conditions>
+                    </visibilityRule>
+                </fields>
+                <fields>
+                    <name>Consumer_Non_Auto_Product</name>
+                    <choiceReferences>ConsumerNonAutoChoices</choiceReferences>
+                    <dataType>String</dataType>
+                    <fieldText>Select Consumer Non Auto Product</fieldText>
+                    <fieldType>RadioButtons</fieldType>
+                    <isRequired>true</isRequired>
+                    <visibilityRule>
+                        <conditionLogic>and</conditionLogic>
+                        <conditions>
+                            <leftValueReference>Select_Product_Type</leftValueReference>
+                            <operator>EqualTo</operator>
+                            <rightValue>
+                                <elementReference>ConsumerNonAutoOption</elementReference>
+                            </rightValue>
+                        </conditions>
+                    </visibilityRule>
+                </fields>
+                <fields>
+                    <name>Consumer_Auto_Product</name>
+                    <choiceReferences>ConsumerAutoChoices</choiceReferences>
+                    <dataType>String</dataType>
+                    <fieldText>Select Consumer Auto Product</fieldText>
+                    <fieldType>RadioButtons</fieldType>
+                    <isRequired>true</isRequired>
+                    <visibilityRule>
+                        <conditionLogic>and</conditionLogic>
+                        <conditions>
+                            <leftValueReference>Select_Product_Type</leftValueReference>
+                            <operator>EqualTo</operator>
+                            <rightValue>
+                                <elementReference>ConsumerAutoOption</elementReference>
+                            </rightValue>
+                        </conditions>
+                    </visibilityRule>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>6</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+            <regionContainerType>SectionWithoutHeader</regionContainerType>
         </fields>
         <fields>
             <name>Loan_Details</name>
@@ -118,52 +386,6 @@
                     <fieldType>InputField</fieldType>
                     <isRequired>false</isRequired>
                     <scale>2</scale>
-                </fields>
-                <fields>
-                    <name>Product</name>
-                    <choiceReferences>ProductChoices</choiceReferences>
-                    <dataType>String</dataType>
-                    <fieldText>Product</fieldText>
-                    <fieldType>DropdownBox</fieldType>
-                    <isRequired>false</isRequired>
-                </fields>
-                <fields>
-                    <name>Products</name>
-                    <extensionName>flowruntime:dependentPicklists</extensionName>
-                    <fieldType>ComponentInstance</fieldType>
-                    <inputParameters>
-                        <name>dependencyWrapperApiName</name>
-                        <value>
-                            <stringValue>LLC_BI__Loan__c</stringValue>
-                        </value>
-                    </inputParameters>
-                    <inputParameters>
-                        <name>topPicklistApiName</name>
-                        <value>
-                            <stringValue>LLC_BI__Product_Line__c</stringValue>
-                        </value>
-                    </inputParameters>
-                    <inputParameters>
-                        <name>middlePicklistApiName</name>
-                        <value>
-                            <stringValue>LLC_BI__Product_Type__c</stringValue>
-                        </value>
-                    </inputParameters>
-                    <inputParameters>
-                        <name>bottomPicklistApiName</name>
-                        <value>
-                            <stringValue>LLC_BI__Product__c</stringValue>
-                        </value>
-                    </inputParameters>
-                    <inputParameters>
-                        <name>topValue</name>
-                        <value>
-                            <stringValue>Consumer</stringValue>
-                        </value>
-                    </inputParameters>
-                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
-                    <isRequired>true</isRequired>
-                    <storeOutputAutomatically>true</storeOutputAutomatically>
                 </fields>
                 <inputParameters>
                     <name>width</name>
@@ -240,7 +462,7 @@
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
         <connector>
-            <targetReference>Retrieve_Consumer_Products</targetReference>
+            <targetReference>Loan_Creation_Screen</targetReference>
         </connector>
         <fields>
             <name>Qualification_Text</name>
@@ -260,11 +482,26 @@
     </start>
     <status>Draft</status>
     <variables>
+        <name>currentItemFromSourceCollection</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>LLC_BI__Product__c</objectType>
+    </variables>
+    <variables>
         <name>LoanRecordToCreate</name>
         <dataType>SObject</dataType>
         <isCollection>false</isCollection>
         <isInput>false</isInput>
         <isOutput>false</isOutput>
         <objectType>LLC_BI__Loan__c</objectType>
+    </variables>
+    <variables>
+        <name>RecordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
     </variables>
 </Flow>
