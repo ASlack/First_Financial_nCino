@@ -3,7 +3,7 @@
     <fullName>Description__c</fullName>
     <externalId>false</externalId>
     <inlineHelpText>A value for this field is required if a Condition Type of &quot;Other&quot; is selected</inlineHelpText>
-    <label>Description</label>
+    <label>Comments</label>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>TextArea</type>
