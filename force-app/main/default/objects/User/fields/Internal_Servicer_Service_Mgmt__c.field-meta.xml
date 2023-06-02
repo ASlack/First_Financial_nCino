@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Internal_Servicer_Service_Mgmt__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Used to determine if user can be selected as Internal Servicer for Service Mgmt.  This user will receive notifications when set as the Internal Servicer on Service Mgmt (Appraisals, Flood Ordering, etc)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Used to determine if user can be selected as Internal Servicer for Service Mgmt.  This user will receive notifications when set as the Internal Servicer on Service Mgmt (Appraisals, Flood Ordering, etc)</inlineHelpText>
+    <label>Internal Servicer (Service Mgmt)</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

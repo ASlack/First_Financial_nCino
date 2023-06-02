@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Used to notify Flood queue when Service Mgmt Record is created</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>nCino_Email_Letterhead</letterhead>
+    <name>ET69 - Service Mgmt Flood</name>
+    <style>freeForm</style>
+    <subject>*** A Flood Approval Process Service has been Submitted ***</subject>
+    <textOnly>Hello {!Organization.Name} Flood Team,
+
+Service Management &quot;{!LLC_BI__Service_Mgmt__c.Name}&quot; has been created. Please use this link to visit the Record: {!LLC_BI__Service_Mgmt__c.Link}.
+
+Loan:  {!LLC_BI__Service_Mgmt__c.LLC_BI__Loan__c}
+
+Primary Relationship: {!LLC_BI__Service_Mgmt__c.LLC_BI__Account__c}
+
+nCino
+
+ET69</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

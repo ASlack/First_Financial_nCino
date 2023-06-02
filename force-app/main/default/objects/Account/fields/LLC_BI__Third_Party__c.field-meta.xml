@@ -32,11 +32,6 @@
                 <default>false</default>
                 <label>Inspector</label>
             </value>
-            <value>
-                <fullName>Inactive</fullName>
-                <default>false</default>
-                <label>Inactive</label>
-            </value>
         </valueSetDefinition>
     </valueSet>
     <visibleLines>4</visibleLines>
