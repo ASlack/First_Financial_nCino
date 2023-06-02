@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
-    <active>false</active>
+    <active>true</active>
     <allowRecall>true</allowRecall>
     <allowedSubmitters>
-        <type>owner</type>
+        <type>allInternalUsers</type>
     </allowedSubmitters>
     <approvalPageFields>
         <field>Name</field>
@@ -18,14 +18,15 @@
         <allowDelegate>true</allowDelegate>
         <assignedApprover>
             <approver>
-                <name>Adverse_Action_Queue</name>
-                <type>queue</type>
+                <name>cm_Loan_Officer__c</name>
+                <type>relatedUserField</type>
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
-        <label>Adverse Action 2nd Level Approval</label>
-        <name>Adverse_Action_2nd_Level_Approval</name>
+        <label>Loan Officer</label>
+        <name>Loan_Officer</name>
     </approvalStep>
+    <description>Used for non-Loan Officers who submitted AA record</description>
     <emailTemplate>PSO_Email_Templates/ET03_Adverse_Action_Submitted</emailTemplate>
     <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
     <finalApprovalActions>
@@ -60,12 +61,8 @@
             <type>FieldUpdate</type>
         </action>
     </initialSubmissionActions>
-    <label>Adverse Action Approval Process</label>
-    <nextAutomatedApprover>
-        <useApproverFieldOfRecordOwner>true</useApproverFieldOfRecordOwner>
-        <userHierarchyField>Manager</userHierarchyField>
-    </nextAutomatedApprover>
-    <processOrder>1</processOrder>
+    <label>Adverse Action Needs Approval</label>
+    <processOrder>2</processOrder>
     <recallActions>
         <action>
             <name>Adverse_Action_Set_Status_to_Recalled</name>

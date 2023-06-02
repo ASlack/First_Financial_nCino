@@ -12,14 +12,14 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
+                <fullName>Experian</fullName>
+                <default>true</default>
+                <label>Experian</label>
+            </value>
+            <value>
                 <fullName>Equifax</fullName>
                 <default>false</default>
                 <label>Equifax</label>
-            </value>
-            <value>
-                <fullName>Experian</fullName>
-                <default>false</default>
-                <label>Experian</label>
             </value>
             <value>
                 <fullName>TransUnion</fullName>
