@@ -285,7 +285,7 @@ NOT(ISBLANK({!myVariable_current.LLC_BI__User__c} )),
 {!myVariable_current.LLC_BI__Assigned_Role__r.Name} = &apos;Doc Prep Processor&apos;
 )</expression>
     </formulas>
-    <interviewLabel>PB02_nCino_PMB_Update_LTM_Lookup_Fields_on_Loan-5_InterviewLabel</interviewLabel>
+    <interviewLabel>PB02_nCino_PMB_Update_LTM_Lookup_Fields_on_Loan-6_InterviewLabel</interviewLabel>
     <label>PB02 - nCino - PMB - Update LTM Lookup Fields on Loan</label>
     <processMetadataValues>
         <name>ObjectType</name>
@@ -809,6 +809,42 @@ NOT(ISBLANK({!myVariable_current.LLC_BI__User__c} )),
                 <elementReference>myVariable_current.LLC_BI__Loan__c</elementReference>
             </value>
         </filters>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>ID</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Loan Processor</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue>User</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Reference</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>LLC_BI__Processor_Name__c</field>
+            <value>
+                <elementReference>myVariable_current.LLC_BI__User__c</elementReference>
+            </value>
+        </inputAssignments>
         <inputAssignments>
             <processMetadataValues>
                 <name>dataType</name>

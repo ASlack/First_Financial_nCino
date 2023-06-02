@@ -4,6 +4,7 @@
     <deprecated>false</deprecated>
     <description>This field is optional. It is manually populated. This is a free text field that can be used to describe the purpose of the loan.</description>
     <externalId>false</externalId>
+    <inlineHelpText>Used in LaserPro Field Mappings. This is a free text field that can be used to describe the purpose of the loan.</inlineHelpText>
     <label>Loan Purpose</label>
     <length>32000</length>
     <trackFeedHistory>false</trackFeedHistory>

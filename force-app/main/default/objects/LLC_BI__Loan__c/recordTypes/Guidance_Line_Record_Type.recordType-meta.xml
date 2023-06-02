@@ -6,130 +6,131 @@
     <description>This Record Type will Apply to Guidance Lines of Credit</description>
     <label>Guidance Line Record Type</label>
     <picklistValues>
-        <picklist>LLC_BI__Index__c</picklist>
+        <picklist>LLC_BI__Product_Type__c</picklist>
         <values>
-            <fullName>700</fullName>
+            <fullName>Agricultural</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>750</fullName>
+            <fullName>Commercial</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>777</fullName>
+            <fullName>Construction %26 Development RE</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>800</fullName>
+            <fullName>Consumer Auto</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>850</fullName>
+            <fullName>Consumer Non-Auto</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>860</fullName>
+            <fullName>Consumer Residential RE</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>880</fullName>
+            <fullName>Farm RE</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>901</fullName>
+            <fullName>Lease</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>902</fullName>
+            <fullName>Municipality</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>903</fullName>
+            <fullName>Non-Owner Occupied CRE</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>904</fullName>
+            <fullName>Owner Occupied CRE</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>905</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>907</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>908</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>909</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>910</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>999</fullName>
+            <fullName>Residential RE</fullName>
             <default>false</default>
         </values>
     </picklistValues>
     <picklistValues>
-        <picklist>LLC_BI__Risk_Grade__c</picklist>
+        <picklist>Lost_Reason__c</picklist>
         <values>
-            <fullName>1</fullName>
+            <fullName>Competitor- Other</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>2</fullName>
+            <fullName>Competitor- Price</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>3</fullName>
+            <fullName>Competitor- Product%2FService Set Gap%2C</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>4</fullName>
+            <fullName>Competitor-Product%2FService Functionality Gap</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>5</fullName>
+            <fullName>Does not need services</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>6</fullName>
+            <fullName>Lost Loan Relationship</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>7</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>cm_Method_of_Doc_Prep__c</picklist>
-        <values>
-            <fullName>Attorney Prepared</fullName>
+            <fullName>Lost to Another Bank</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Internally %26 Externally Prepared</fullName>
+            <fullName>Price</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Internally Prepared</fullName>
+            <fullName>Product%2FService Functionality Gap</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product%2FService Gap</fullName>
             <default>false</default>
         </values>
     </picklistValues>
     <picklistValues>
-        <picklist>ffin_Lender_Plans_to_Underwrite__c</picklist>
+        <picklist>ffin_Prepayment_Penalty_Setup__c</picklist>
         <values>
-            <fullName>No</fullName>
+            <fullName>3%2F2%2F1%2C first 3 years %28Any Principal Reduction%29</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Yes</fullName>
+            <fullName>3%2F2%2F1%2C first 3 years %28Refinance Only%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2F2%2F2%2C first 3 years %28Any Principal Reduction%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2F2%2F2%2C first 3 years %28Refinance Only%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2F3%2F2%2F1%2C first 4 years %28Any Principal Reduction%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2F3%2F2%2F1%2C first 4 years %28Refinance Only%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2F4%2F3%2F2%2F1%2C first 5 years %28Any Principal Reduction%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2F4%2F3%2F2%2F1%2C first 5 years %28Refinance Only%29</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -413,29 +414,6 @@
         </values>
         <values>
             <fullName>89</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>ffin_Request_Type__c</picklist>
-        <values>
-            <fullName>Cash Flow Only</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Full Loan Presentation</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Spreads %26 Cash Flow</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Spreads Only</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Streamlined Loan Presentation</fullName>
             <default>false</default>
         </values>
     </picklistValues>
