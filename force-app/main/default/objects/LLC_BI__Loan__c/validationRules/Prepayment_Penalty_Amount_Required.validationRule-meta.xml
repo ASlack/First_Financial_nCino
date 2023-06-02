@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prepayment_Penalty_Amount_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>and( 
+LLC_BI__Prepayment_Penalty__c = true,
+text(ffin_Prepayment_Penalty_Setup__c)=&quot;&quot;)</errorConditionFormula>
+    <errorMessage>You must select a prepayment penalty setup.</errorMessage>
+</ValidationRule>

@@ -9,6 +9,7 @@
     <trackHistory>false</trackHistory>
     <type>Picklist</type>
     <valueSet>
+        <controllingField>LLC_BI__Product_Type__c</controllingField>
         <restricted>true</restricted>
         <valueSetDefinition>
             <sorted>false</sorted>
@@ -363,5 +364,313 @@
                 <label>89 - Permanent financing of residential R/E (In-house)</label>
             </value>
         </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Owner Occupied CRE</controllingFieldValue>
+            <controllingFieldValue>Non-Owner Occupied CRE</controllingFieldValue>
+            <valueName>73</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Owner Occupied CRE</controllingFieldValue>
+            <controllingFieldValue>Non-Owner Occupied CRE</controllingFieldValue>
+            <valueName>74</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>7</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>8</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>10</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>11</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>13</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>15</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>16</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>17</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>18</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>20</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>21</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>22</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>23</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>24</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>25</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>26</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>27</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <controllingFieldValue>Municipality</controllingFieldValue>
+            <valueName>30</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <controllingFieldValue>Municipality</controllingFieldValue>
+            <valueName>31</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <controllingFieldValue>Municipality</controllingFieldValue>
+            <valueName>32</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <controllingFieldValue>Consumer Non-Auto</controllingFieldValue>
+            <valueName>33</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>34</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <controllingFieldValue>Consumer Non-Auto</controllingFieldValue>
+            <controllingFieldValue>Consumer Auto</controllingFieldValue>
+            <valueName>35</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <controllingFieldValue>Consumer Non-Auto</controllingFieldValue>
+            <controllingFieldValue>Consumer Auto</controllingFieldValue>
+            <valueName>36</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <controllingFieldValue>Consumer Non-Auto</controllingFieldValue>
+            <controllingFieldValue>Consumer Auto</controllingFieldValue>
+            <valueName>37</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>38</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>39</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>40</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>45</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>46</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>48</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <controllingFieldValue>Construction &amp; Development RE</controllingFieldValue>
+            <valueName>85</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Construction &amp; Development RE</controllingFieldValue>
+            <valueName>70</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Construction &amp; Development RE</controllingFieldValue>
+            <valueName>71</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Construction &amp; Development RE</controllingFieldValue>
+            <valueName>76</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Construction &amp; Development RE</controllingFieldValue>
+            <valueName>77</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Construction &amp; Development RE</controllingFieldValue>
+            <valueName>78</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Construction &amp; Development RE</controllingFieldValue>
+            <valueName>79</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Construction &amp; Development RE</controllingFieldValue>
+            <valueName>80</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Construction &amp; Development RE</controllingFieldValue>
+            <valueName>81</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Construction &amp; Development RE</controllingFieldValue>
+            <valueName>82</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Construction &amp; Development RE</controllingFieldValue>
+            <valueName>83</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Construction &amp; Development RE</controllingFieldValue>
+            <valueName>84</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Construction &amp; Development RE</controllingFieldValue>
+            <valueName>86</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consumer Residential RE</controllingFieldValue>
+            <controllingFieldValue>Consumer Non-Auto</controllingFieldValue>
+            <controllingFieldValue>Residential RE</controllingFieldValue>
+            <controllingFieldValue>Consumer Auto</controllingFieldValue>
+            <valueName>62</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consumer Residential RE</controllingFieldValue>
+            <controllingFieldValue>Consumer Non-Auto</controllingFieldValue>
+            <controllingFieldValue>Residential RE</controllingFieldValue>
+            <controllingFieldValue>Consumer Auto</controllingFieldValue>
+            <valueName>66</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consumer Residential RE</controllingFieldValue>
+            <controllingFieldValue>Consumer Non-Auto</controllingFieldValue>
+            <controllingFieldValue>Residential RE</controllingFieldValue>
+            <controllingFieldValue>Consumer Auto</controllingFieldValue>
+            <valueName>68</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consumer Residential RE</controllingFieldValue>
+            <controllingFieldValue>Residential RE</controllingFieldValue>
+            <valueName>87</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consumer Residential RE</controllingFieldValue>
+            <controllingFieldValue>Residential RE</controllingFieldValue>
+            <valueName>88</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consumer Residential RE</controllingFieldValue>
+            <controllingFieldValue>Residential RE</controllingFieldValue>
+            <valueName>89</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consumer Non-Auto</controllingFieldValue>
+            <controllingFieldValue>Consumer Auto</controllingFieldValue>
+            <valueName>60</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consumer Non-Auto</controllingFieldValue>
+            <controllingFieldValue>Consumer Auto</controllingFieldValue>
+            <valueName>64</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consumer Non-Auto</controllingFieldValue>
+            <controllingFieldValue>Consumer Auto</controllingFieldValue>
+            <valueName>65</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Agricultural</controllingFieldValue>
+            <valueName>50</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Agricultural</controllingFieldValue>
+            <valueName>51</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Agricultural</controllingFieldValue>
+            <valueName>52</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Agricultural</controllingFieldValue>
+            <valueName>53</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Agricultural</controllingFieldValue>
+            <valueName>55</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Agricultural</controllingFieldValue>
+            <valueName>56</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Agricultural</controllingFieldValue>
+            <valueName>57</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Agricultural</controllingFieldValue>
+            <valueName>58</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Agricultural</controllingFieldValue>
+            <valueName>59</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Agricultural</controllingFieldValue>
+            <valueName>75</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-Owner Occupied CRE</controllingFieldValue>
+            <valueName>72</valueName>
+        </valueSettings>
     </valueSet>
 </CustomField>

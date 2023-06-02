@@ -4,6 +4,7 @@
     <deprecated>false</deprecated>
     <description>This field is optional. It is manually populated. This field is used to identify individual loan portfolios.</description>
     <externalId>false</externalId>
+    <inlineHelpText>Used in LaserPro Field Mappings. This field is used to identify individual loan portfolios.</inlineHelpText>
     <label>Portfolio Number</label>
     <length>80</length>
     <required>false</required>

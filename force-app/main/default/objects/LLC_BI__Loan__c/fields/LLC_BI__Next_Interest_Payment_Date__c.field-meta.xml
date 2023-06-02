@@ -4,6 +4,7 @@
     <deprecated>false</deprecated>
     <description>This field is optional. It is manually populated. This date field is used to specify when the next interest payment is due.</description>
     <externalId>false</externalId>
+    <inlineHelpText>Used in LaserPro Field Mappings. This date field is used to specify when the next interest payment is due.</inlineHelpText>
     <label>Next Interest Payment Date</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>

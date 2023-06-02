@@ -4,6 +4,7 @@
     <deprecated>false</deprecated>
     <description>The field specifies the loan&apos;s dollar amount of new money. It is optional and manually populated.</description>
     <externalId>false</externalId>
+    <inlineHelpText>Only input if Increasing / Decreasing the loan amount during Renewal / Modification.</inlineHelpText>
     <label>New Money</label>
     <precision>18</precision>
     <required>false</required>
