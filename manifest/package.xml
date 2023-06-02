@@ -18111,6 +18111,7 @@
         <members>Condition__c.Condition_Status__c</members>
         <members>Condition__c.Description__c</members>
         <members>Condition__c.Loan__c</members>
+        <members>Condition__c.SecondaryAssignedTo__c</members>
         <members>Condition__c.Type__c</members>
         <members>Contact.AccountId</members>
         <members>Contact.AssistantName</members>
@@ -32267,6 +32268,7 @@
         <members>LLC_BI__Loan__c.Request_Type_Streamlined_Presentation</members>
         <members>LLC_BI__Loan__c.Right_To_Copy_Of_Appraisal_Sent_Date</members>
         <members>LLC_BI__Loan__c.Term_Sheet_RFI_Date</members>
+        <members>LLC_BI__Loan__c.Unsatisfied_Conditions</members>
         <members>LLC_BI__Loan__c.Withdrawn_Notification_Received_Date</members>
         <members>LLC_BI__Product_Type__c.LLC_BI__Product_State_Booked_Config_Count</members>
         <members>LLC_BI__Product_Type__c.LLC_BI__Product_State_Closed_Config_Count</members>

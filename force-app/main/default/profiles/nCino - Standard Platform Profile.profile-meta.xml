@@ -3100,6 +3100,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Condition__c.SecondaryAssignedTo__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Contact.AccountId</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -6597,6 +6602,11 @@
         <editable>false</editable>
         <field>LLC_BI__Loan__c.Term_Sheet_RFI_Due_Date__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LLC_BI__Loan__c.Unsatisfied_Conditions_Closing__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>

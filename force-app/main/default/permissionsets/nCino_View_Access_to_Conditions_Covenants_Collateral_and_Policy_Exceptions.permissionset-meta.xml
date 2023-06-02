@@ -23,6 +23,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Condition__c.SecondaryAssignedTo__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>LLC_BI__Account_Collateral__c.LLC_BI__Collateral_Association__c</field>
         <readable>true</readable>
     </fieldPermissions>

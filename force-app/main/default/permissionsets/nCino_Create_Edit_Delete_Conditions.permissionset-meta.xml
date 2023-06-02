@@ -21,6 +21,11 @@
         <field>Condition__c.Description__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Condition__c.SecondaryAssignedTo__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
     <label>nCino Create/Edit/Delete Conditions</label>
     <objectPermissions>
