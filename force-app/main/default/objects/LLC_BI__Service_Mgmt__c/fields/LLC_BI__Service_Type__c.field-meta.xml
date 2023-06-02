@@ -14,29 +14,24 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>Insurance</fullName>
-                <default>false</default>
-                <label>Insurance</label>
-            </value>
-            <value>
                 <fullName>Appraiser</fullName>
                 <default>false</default>
-                <label>Appraiser</label>
+                <label>Appraisal</label>
             </value>
             <value>
-                <fullName>Attorney</fullName>
+                <fullName>Certifications of Completion</fullName>
                 <default>false</default>
-                <label>Attorney</label>
+                <label>Certifications of Completion</label>
             </value>
             <value>
-                <fullName>Inspector</fullName>
+                <fullName>Evaluations</fullName>
                 <default>false</default>
-                <label>Inspector</label>
+                <label>Evaluations</label>
             </value>
             <value>
-                <fullName>Third Party Reports</fullName>
+                <fullName>Flood Approval Process</fullName>
                 <default>false</default>
-                <label>Third Party Reports</label>
+                <label>Flood Approval Process</label>
             </value>
         </valueSetDefinition>
     </valueSet>

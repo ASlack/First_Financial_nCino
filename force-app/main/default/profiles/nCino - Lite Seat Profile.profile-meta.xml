@@ -6775,6 +6775,41 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>LLC_BI__Service_Mgmt_Detail__c.LLC_BI__Sub_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Service_Mgmt_Detail__c.LLC_BI__Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Service_Mgmt__c.LLC_BI__Service_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Service_Mgmt__c.LLC_BI__Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Service_Mgmt__c.ffin_Internal_Servicer__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Service_Mgmt__c.ffin_Service_Sub_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Service_Mgmt__c.ffin_Service_Type_Category__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Lead.Address</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -10469,6 +10504,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>User.Internal_Servicer_Service_Mgmt__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>User.Is_nCino_User__c</field>
         <readable>true</readable>
@@ -11334,6 +11374,9 @@
         <layout>LLC_BI__Product__c-LLC_BI__Product Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>LLC_BI__Service_Mgmt__c-LLC_BI__Service Mgmt Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>LegalEntity-Legal Entity Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -11899,6 +11942,10 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>LLC_BI__Roll_Up_Column__c</tab>
+        <visibility>DefaultOff</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>LLC_BI__Service_Mgmt_Detail__c</tab>
         <visibility>DefaultOff</visibility>
     </tabVisibilities>
     <tabVisibilities>
