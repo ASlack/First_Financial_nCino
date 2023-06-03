@@ -1,8 +1,6 @@
 <template>
   <lightning-card title="Document Scan Review">
     <div class="slds-p-around_xx-large container">
-      <!-- <lightning-layout horizontal-align="space"> -->
-      <!-- TODO: use device-size property to adjust column size for larger screens -->
       <lightning-layout multiple-rows horizontal-align="space">
         <template for:item="document" for:each={documents}>
           <lightning-layout-item
@@ -15,18 +13,7 @@
           >
             <div class="header-column">
               <div class="column-flex">
-                <div class="doc-header-container">
-                  <p class="nowrap" title={document.fileName}>
-                    {document.fileName}
-                  </p>
-                  <lightning-button-icon
-                    icon-name="utility:edit"
-                    alternative-text="Edit document title"
-                    title="Edit"
-                    variant="container"
-                    class="slds-m-left_xx-small"
-                  ></lightning-button-icon>
-                </div>
+                <c-document-title document={document}></c-document-title>
 
                 <img
                   style="

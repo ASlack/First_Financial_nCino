@@ -32,6 +32,7 @@ const docs = [
 
 export default class DocumentScanReview extends LightningElement {
   documents;
+
   connectedCallback() {
     this.documents = docs;
   }

@@ -29871,6 +29871,9 @@
         <members>Contact_Create_Edit_Master</members>
         <members>Contact_Create_Edit_Primary_Contact_Update</members>
         <members>Create_Product_Package_Zen</members>
+        <members>Credit_Memo_Loan_Narrative</members>
+        <members>Credit_Memo_Narratives</members>
+        <members>Credit_Memo_PP_Narrative</members>
         <members>Employee_Loan_Reg_O_Invocable</members>
         <members>Entity_Involvement_Assign_Reg_0_and_Employee_on_Loan</members>
         <members>HMDA_Questionnaire_Rendering_Invocable</members>
@@ -29959,6 +29962,9 @@
         <members>Contact_Create_Edit_Master</members>
         <members>Contact_Create_Edit_Primary_Contact_Update</members>
         <members>Create_Product_Package_Zen</members>
+        <members>Credit_Memo_Loan_Narrative</members>
+        <members>Credit_Memo_Narratives</members>
+        <members>Credit_Memo_PP_Narrative</members>
         <members>Employee_Loan_Reg_O_Invocable</members>
         <members>Entity_Involvement_Assign_Reg_0_and_Employee_on_Loan</members>
         <members>HMDA_Questionnaire_Rendering_Invocable</members>
@@ -30881,6 +30887,7 @@
         <members>documentScanContainer</members>
         <members>documentScanReview</members>
         <members>documentScanSubmission</members>
+        <members>documentTitle</members>
         <members>externalDataSourceLoader</members>
         <members>externalDataSourceRemover</members>
         <members>externalDataSourceSaver</members>
@@ -31047,6 +31054,7 @@
         <members>relationshipProfitabilityPopover</members>
         <members>removeLoanModal</members>
         <members>removeLoanModalService</members>
+        <members>scanDocument</members>
         <members>searchableCombobox</members>
         <members>sectionHeader</members>
         <members>selectorKeyChooser</members>

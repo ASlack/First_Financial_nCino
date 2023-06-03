@@ -1,0 +1,41 @@
+<template>
+  <lightning-layout-item
+    size="3"
+    small-device-size="6"
+    medium-device-size="4"
+    large-device-size="2"
+    padding="around-small"
+  >
+    <!-- <div class="header-column"> -->
+    <!-- <div class="column-flex"> -->
+    <!-- <div class="doc-header-container"> -->
+    <template lwc:if={editing}>
+      <lightning-input
+        type="text"
+        value={document.fileName}
+        class="nowrap"
+      ></lightning-input>
+    </template>
+    <template lwc:else>
+      <!-- <p class="nowrap" title={document.fileName}>{document.fileName}</p> -->
+      <!-- <p title={document.fileName}>{document.fileName}</p> -->
+
+      <!-- <lightning-button-icon
+        icon-name="utility:edit"
+        alternative-text="Edit document title"
+        title="Edit"
+        variant="container"
+        class="slds-m-left_xx-small"
+        onclick={handleEditButton}
+      ></lightning-button-icon> -->
+    </template>
+    <!-- </div> -->
+
+    <img
+      style="width: 283.3px; height: 366.66px; border: 1px solid #d8dde6"
+      src={document.thumbnail}
+    />
+    <!-- </div> -->
+    <!-- </div> -->
+  </lightning-layout-item>
+</template>

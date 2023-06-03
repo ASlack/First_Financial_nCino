@@ -1,0 +1,19 @@
+<template>
+  <template lwc:if={editing}>
+    <input type="text" value={document.fileName} onblur={toggleEdit} />
+  </template>
+  <template lwc:else>
+    <div class="doc-header-container">
+      <input type="text" value={document.fileName} disabled />
+
+      <lightning-button-icon
+        icon-name="utility:edit"
+        alternative-text="Edit document title"
+        title="Edit"
+        variant="bare"
+        class="slds-m-left_xx-small"
+        onclick={toggleEdit}
+      ></lightning-button-icon>
+    </div>
+  </template>
+</template>
