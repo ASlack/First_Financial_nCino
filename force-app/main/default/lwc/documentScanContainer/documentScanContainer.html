@@ -1,10 +1,15 @@
+<!--
+  @description       : Parent component to all Document Scan UI components
+  @author            : Zennify
+  @group             : 
+  @last modified on  : 06-05-2023
+  @last modified by  : Cristiano Sinadino
+-->
 <template>
-  <template if:false={scanned}>
-    <c-document-scan-submission
-      onscanandsplit={handleScanAndSplit}
-    ></c-document-scan-submission>
-  </template>
-  <template if:true={scanned}>
-    <c-document-scan-review></c-document-scan-review>
-  </template>
+	<template if:false={scanned}>
+		<c-document-scan-submission onscanandsplit={handleScanAndSplit}></c-document-scan-submission>
+	</template>
+	<template if:true={scanned}>
+		<c-document-scan-review documents={documents}></c-document-scan-review>
+	</template>
 </template>

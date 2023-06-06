@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
     <customButtons>LLC_BI__New_Deposit</customButtons>
+    <excludeButtons>DataDotComAccountInsights</excludeButtons>
+    <excludeButtons>DataDotComClean</excludeButtons>
+    <excludeButtons>DataDotComCompanyHierarchy</excludeButtons>
     <excludeButtons>DisableCustomerPortalAccount</excludeButtons>
     <excludeButtons>IncludeOffline</excludeButtons>
     <excludeButtons>PartnerScorecard</excludeButtons>
@@ -94,6 +97,10 @@
             </layoutItems>
             <layoutItems>
                 <emptySpace>true</emptySpace>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>LLC_BI__Doing_Business_As__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -339,6 +346,11 @@
             <sortOrder>8</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
+            <actionName>LLC_BI__NewTask</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>29</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
             <actionName>StartOutboundConversation</actionName>
             <actionType>StandardButton</actionType>
             <sortOrder>9</sortOrder>
@@ -437,11 +449,6 @@
             <actionName>WebsiteHighlightAction</actionName>
             <actionType>ProductivityAction</actionType>
             <sortOrder>28</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
-            <actionName>LLC_BI__NewTask</actionName>
-            <actionType>QuickAction</actionType>
-            <sortOrder>29</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
             <actionName>LLC_BI__LogACall</actionName>

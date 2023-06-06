@@ -1,10 +1,11 @@
-import { LightningElement } from "lwc";
+import { LightningElement, api } from "lwc";
 
 export default class DocumentScanContainer extends LightningElement {
   scanned;
+  @api documents;
 
-  handleScanAndSplit() {
-    console.log(`in scan and split`);
+  handleScanAndSplit(event) {
     this.scanned = true;
+	this.documents = event.detail.documents;	
   }
 }

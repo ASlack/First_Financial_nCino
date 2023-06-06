@@ -1,5 +1,6 @@
 import { LightningElement } from "lwc";
 import queryLoans from "@salesforce/apex/DocumentScanController.queryLoans";
+import parseDocument from "@salesforce/apex/DocumentScanController.parseDocument";
 
 export default class DocumentScanSubmission extends LightningElement {
   loanNumber;
@@ -73,10 +74,37 @@ export default class DocumentScanSubmission extends LightningElement {
 
   handleUploadFinished(event) {
     this.fileUploaded = event.detail.files[0];
+	
+	parseDocument({ loanNumber: this.selectedLoan,document: this.fileUploaded })
+		.then((result) => {
+			console.log(' document parsing process succeed');
+		})
+		.catch((error) => {
+			console.log(error);
+		});
   }
 
   handleScanAndSplitButton() {
-    const scanAndSplitEvent = new CustomEvent("scanandsplit");
+    const scanAndSplitEvent = new CustomEvent('scanandsplit',{
+		detail: {
+			documents: [
+						{   filename: 'BankStatement.pdf',
+						    url: '/sfc/servlet.shepherd/document/download/069DO000000D7KtYAK'
+						},
+						{
+							filename: 'TaxReturns.pdf',
+							url: '/sfc/servlet.shepherd/document/download/069DO000000D7SmYAK'
+						},
+						{   filename: 'LoanStatement.pdf',
+						    url: '/sfc/servlet.shepherd/document/download/069DO000000D7khYAC'
+						},
+						{
+							filename: 'FinancialStatement.pdf',
+							url: '/sfc/servlet.shepherd/document/download/069DO000000D7oxYAC'
+						}
+					   ]
+				}
+	});
     this.dispatchEvent(scanAndSplitEvent);
   }
 }

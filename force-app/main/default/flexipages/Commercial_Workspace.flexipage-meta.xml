@@ -47,6 +47,33 @@
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
+                    <name>decorate</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;p&gt;&lt;span style=&quot;color: rgb(255, 0, 0); font-size: 14px;&quot;&gt;Underwriting details can be found in the &apos;Booked Information&apos; route for Booked / Complete Loans.&lt;/span&gt;&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:richText</componentName>
+                <identifier>flexipage_richText</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 OR 2</booleanFilter>
+                    <criteria>
+                        <leftValue>{!Record.LLC_BI__Stage__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Booked</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.LLC_BI__Stage__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Complete</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
                     <name>lookupFieldName</name>
                     <value>Id</value>
                 </componentInstanceProperties>
@@ -56,6 +83,19 @@
                 </componentInstanceProperties>
                 <componentName>console:relatedRecord</componentName>
                 <identifier>console_relatedRecord2</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 AND 2</booleanFilter>
+                    <criteria>
+                        <leftValue>{!Record.LLC_BI__Stage__c}</leftValue>
+                        <operator>NE</operator>
+                        <rightValue>Booked</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.LLC_BI__Stage__c}</leftValue>
+                        <operator>NE</operator>
+                        <rightValue>Complete</rightValue>
+                    </criteria>
+                </visibilityRule>
             </componentInstance>
         </itemInstances>
         <name>Facet-eb5989f3-3314-440b-b683-94615ad53c42</name>
@@ -90,6 +130,33 @@
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
+                    <name>decorate</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;p&gt;&lt;span style=&quot;font-size: 14px; color: rgb(255, 0, 0);&quot;&gt;Doc Prep details can be found in the &apos;Booked Information&apos; route for Booked / Complete Loans.&lt;/span&gt;&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:richText</componentName>
+                <identifier>flexipage_richText2</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 OR 2</booleanFilter>
+                    <criteria>
+                        <leftValue>{!Record.LLC_BI__Stage__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Booked</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.LLC_BI__Stage__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Complete</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
                     <name>lookupFieldName</name>
                     <value>Id</value>
                 </componentInstanceProperties>
@@ -99,6 +166,19 @@
                 </componentInstanceProperties>
                 <componentName>console:relatedRecord</componentName>
                 <identifier>console_relatedRecord3</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 AND 2</booleanFilter>
+                    <criteria>
+                        <leftValue>{!Record.LLC_BI__Stage__c}</leftValue>
+                        <operator>NE</operator>
+                        <rightValue>Booked</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.LLC_BI__Stage__c}</leftValue>
+                        <operator>NE</operator>
+                        <rightValue>Complete</rightValue>
+                    </criteria>
+                </visibilityRule>
             </componentInstance>
         </itemInstances>
         <name>Facet-6wjaruhj6j7</name>
@@ -315,7 +395,7 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>hideUpdateButton</name>
-                    <value>false</value>
+                    <value>true</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>variant</name>

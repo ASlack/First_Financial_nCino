@@ -17217,6 +17217,7 @@
         <members>LLC_BI__Credit_Memo_Modifcation__c.MAP100_Short_Term_Extension</members>
         <members>LLC_BI__Credit_Memo_Modifcation__c.MAP200_Change_Memo_AP_Not_Required</members>
         <members>LLC_BI__Credit_Memo_Modifcation__c.MAP200_Change_Memo_AP_Required</members>
+        <members>LLC_BI__Credit_Memo_Modifcation__c.Short_Term_Extension_All_Regions</members>
         <members>LLC_BI__Loan__c.FFIN_Loan_10_Rule</members>
         <members>LLC_BI__Loan__c.FFIN_Loan_Abilene</members>
         <members>LLC_BI__Loan__c.FFIN_Loan_Abilene_v2</members>
@@ -21961,6 +21962,7 @@
         <members>LLC_BI__Loan__c.Lost_Reason__c</members>
         <members>LLC_BI__Loan__c.Memo_Modification_Approved__c</members>
         <members>LLC_BI__Loan__c.Migration_ID__c</members>
+        <members>LLC_BI__Loan__c.Notes_for_Doc_Prep__c</members>
         <members>LLC_BI__Loan__c.Post_Closing_Review_Comments__c</members>
         <members>LLC_BI__Loan__c.Post_Closing_Review_Completed_By__c</members>
         <members>LLC_BI__Loan__c.Post_Closing_Review_Completed_Date__c</members>
@@ -28507,6 +28509,7 @@
         <members>LLC_BI__Service_Mgmt_Detail__c</members>
         <members>LLC_BI__Service_Mgmt__c</members>
         <members>LLC_BI__Spread_Statement_Record_Total__c</members>
+        <members>LLC_BI__Spread_Statement_Record__c</members>
         <members>LLC_BI__Spread_Statement_Type__c</members>
         <members>LLC_BI__Statistic__c</members>
         <members>LLC_BI__Strategy__c</members>
@@ -28538,6 +28541,7 @@
         <members>nFORCE__Screen__c</members>
         <members>nFORCE__Session__c</members>
         <members>nFORMS__FormManager</members>
+        <members>nFORMS__Form_Template__c</members>
         <members>nFUSE__Transaction_Log__c</members>
         <name>CustomTab</name>
     </types>
@@ -28546,6 +28550,7 @@
         <members>Company_Performance_Dashboard_Standard/CompanyPerformanceDashboard</members>
         <members>FirstFinancial</members>
         <members>FirstFinancial/CLNoZYywGtxdAySGNEFSZVnQxATADq</members>
+        <members>FirstFinancial/CLNoZYywGtxdAySGNEFSZVnQxATADq1</members>
         <members>FirstFinancial/NrIeUKKoZHGHdKSGiaVFLshGvSlsER</members>
         <members>LLC_BI__nCino_Dashboards</members>
         <members>LLC_BI__nCino_Dashboards/Marketing_Dashboard_nCino</members>
@@ -29507,6 +29512,8 @@
         <members>LLC_BI__Loan__c.UI_Lost_Information</members>
         <members>LLC_BI__Loan__c.UI_Post_Closing_Review</members>
         <members>LLC_BI__Loan__c.UI_Product_Selection</members>
+        <members>LLC_BI__Loan__c.UI_Requested_Doc_Prep_Details</members>
+        <members>LLC_BI__Loan__c.UI_Requested_Underwriting_Details</members>
         <members>LLC_BI__Loan__c.UI_Secondary_Market</members>
         <members>LLC_BI__Loan__c.UI_Structure_Information</members>
         <members>LLC_BI__Loan__c.cm_Review_Display</members>
@@ -31413,6 +31420,7 @@
         <members>LLC_BI__Service_Mgmt__c.All</members>
         <members>LLC_BI__Site_Visit_Memo__c.LLC_BI__All</members>
         <members>LLC_BI__Spread_Statement_Record_Total__c.LLC_BI__All</members>
+        <members>LLC_BI__Spread_Statement_Record__c.All</members>
         <members>LLC_BI__Spread_Statement_Type__c.LLC_BI__All</members>
         <members>LLC_BI__Statistic__c.All1</members>
         <members>LLC_BI__Statistic__c.LLC_BI__All</members>
@@ -31557,6 +31565,7 @@
         <members>nFORCE__View__c.nFORCE__All</members>
         <members>nFORCE__Workflow_Step__c.nFORCE__All_Workflow_Steps</members>
         <members>nFORCE__Workflow__c.nFORCE__All_Workflows</members>
+        <members>nFORMS__Form_Template__c.All1</members>
         <members>nFORMS__Form_Template__c.nFORMS__All</members>
         <members>nFUSE__Transaction_Log__c.All</members>
         <members>nFUSE__Transaction_Log__c.IDology</members>
@@ -32105,6 +32114,9 @@
         <members>FFinGroupReports/RegBReports/Incomplete_Application_Clock_V0i</members>
         <members>FFinGroupReports/RegBReports/Initial_Application_Clock_LYm</members>
         <members>FFinGroupReports/RegionalTemplateReports</members>
+        <members>FFinGroupReports/RegionalTemplateReports/Loans_In_ProgressAmtBranches_NSU</members>
+        <members>FFinGroupReports/RegionalTemplateReports/Maturing_Next_90_DaysBranch_yzR</members>
+        <members>FFinGroupReports/RegionalTemplateReports/Region_Pipeline_vhd</members>
         <members>FFinGroupReports/Stage_DurationNot_Booked_DAR</members>
         <members>FFinGroupReports/Stage_Duration_Report_Wcn</members>
         <members>LLC_BI__nCino_Compliance_Reports</members>

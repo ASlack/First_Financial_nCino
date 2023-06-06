@@ -13,14 +13,12 @@
               required
             ></lightning-input>
           </div>
-
           <template if:true={loanNumber}>
             <div class="slds-m-vertical_small">
               <div>{matchingLoansMessage}</div>
               <div>{actionMessage}</div>
             </div>
           </template>
-
           <template if:true={matchingLoans}>
             <div class="slds-m-vertical_small">
               <lightning-radio-group
@@ -33,7 +31,6 @@
               ></lightning-radio-group>
             </div>
           </template>
-
           <template if:true={selectedLoan}>
             <div class="slds-m-top_small slds-m-bottom_large">
               <div class="slds-align_absolute-center">

@@ -80369,6 +80369,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>LLC_BI__Loan__c.Notes_for_Doc_Prep__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>LLC_BI__Loan__c.Post_Closing_Review_Comments__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -103138,6 +103143,10 @@
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
+        <flow>Credit_Memo_Loan_Narrative</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
         <flow>Entity_Involvement_Assign_Reg_0_and_Employee_on_Loan</flow>
     </flowAccesses>
     <flowAccesses>
@@ -112310,6 +112319,10 @@
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
+        <tab>LLC_BI__Spread_Statement_Record__c</tab>
+        <visibility>DefaultOff</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>LLC_BI__Spread_Statement_Type__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
@@ -112432,6 +112445,10 @@
     <tabVisibilities>
         <tab>nFORMS__FormManager</tab>
         <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>nFORMS__Form_Template__c</tab>
+        <visibility>DefaultOff</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>nFUSE__Transaction_Log__c</tab>
