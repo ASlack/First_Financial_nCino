@@ -4,13 +4,13 @@
     <assignments>
         <name>Set_Narrative_Values</name>
         <label>Set Narrative Values</label>
-        <locationX>176</locationX>
-        <locationY>431</locationY>
+        <locationX>242</locationX>
+        <locationY>539</locationY>
         <assignmentItems>
-            <assignToReference>RequestNarrative</assignToReference>
+            <assignToReference>$Record.RequestSummaryNarrative__c</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>Get_Loan.RequestSummaryNarrative__c</elementReference>
+                <stringValue>&lt;div&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;____ has requested a note in the amount of $XXM to assist in the purchase of a ____ in ____. The borrowers are purchasing the &lt;/span&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;facility as an expansion of their existing business due to the growth seen in the DFW metroplex. The proposed request will represent &lt;/span&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;__% of the total cost ($XXM), with the down payment/injection coming from the principal/guarantor’s personal liquidity. Proposed &lt;/span&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;terms are a XX year fully amortizing note, calling for principal and interest payments monthly. Proposed pricing will continue to be &lt;/span&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;/ is increasing to / is decreasing to variable rate of WSJ Prime + X.XX%, adjusting daily, with a floor of X.XX%. The bank will also &lt;/span&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;collect a X% origination fee (equal to $XXX.XX).&lt;/span&gt;&lt;/div&gt; &lt;div&gt;&amp;nbsp;&lt;/div&gt; &lt;div&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;Notes to the Proposed Request:&lt;/span&gt;&lt;/div&gt; &lt;div&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;1.&lt;/span&gt;&lt;/div&gt;</stringValue>
             </value>
         </assignmentItems>
         <connector>
@@ -39,10 +39,61 @@
             <stringValue>New Credit Memo - DO NOT USE - PP - June 2023</stringValue>
         </value>
     </constants>
-    <description>Default narrative text for loan</description>
+    <decisions>
+        <name>Integration_Trigger_Kill_Switch</name>
+        <label>Integration Trigger Kill Switch</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <defaultConnector>
+            <targetReference>Loan_Narrative_Check</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Kill_Switch_True</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Permission.Integration_Trigger_Kill_Switch</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$User.No_Workflow__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Kill Switch = True</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Loan_Narrative_Check</name>
+        <label>Loan Narrative Check</label>
+        <locationX>374</locationX>
+        <locationY>431</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Request_Summary_Narrative_Null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RequestSummaryNarrative__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Narrative_Values</targetReference>
+            </connector>
+            <label>Request Summary Narrative Null</label>
+        </rules>
+    </decisions>
+    <description>When a loan is created, default narrative text for loan</description>
     <environments>Default</environments>
     <interviewLabel>Credit Memo Loan Narrative {!$Flow.CurrentDateTime}</interviewLabel>
-    <label>Credit Memo Loan Narrative</label>
+    <label>Loan Created - Set Credit Memo Loan Narratives</label>
     <processMetadataValues>
         <name>BuilderType</name>
         <value>
@@ -62,51 +113,32 @@
         </value>
     </processMetadataValues>
     <processType>AutoLaunchedFlow</processType>
-    <recordLookups>
-        <name>Get_Loan</name>
-        <label>Get Loan</label>
-        <locationX>176</locationX>
-        <locationY>323</locationY>
-        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
-        <connector>
-            <targetReference>Set_Narrative_Values</targetReference>
-        </connector>
-        <filterLogic>and</filterLogic>
-        <filters>
-            <field>Name</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>CreditMemoLoan</elementReference>
-            </value>
-        </filters>
-        <getFirstRecordOnly>true</getFirstRecordOnly>
-        <object>LLC_BI__Loan__c</object>
-        <storeOutputAutomatically>true</storeOutputAutomatically>
-    </recordLookups>
     <recordUpdates>
         <name>Update_Narratives</name>
         <label>Update Narratives</label>
-        <locationX>176</locationX>
-        <locationY>539</locationY>
-        <inputAssignments>
-            <field>RequestSummaryNarrative__c</field>
-            <value>
-                <elementReference>RequestNarrative</elementReference>
-            </value>
-        </inputAssignments>
+        <locationX>242</locationX>
+        <locationY>647</locationY>
         <inputReference>$Record</inputReference>
     </recordUpdates>
     <start>
         <locationX>50</locationX>
         <locationY>0</locationY>
         <connector>
-            <targetReference>Get_Loan</targetReference>
+            <targetReference>Integration_Trigger_Kill_Switch</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>LLC_BI__Is_Main__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
         <object>LLC_BI__Loan__c</object>
         <recordTriggerType>Create</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
     </start>
-    <status>Draft</status>
+    <status>Active</status>
     <variables>
         <name>FinancialReview</name>
         <dataType>String</dataType>

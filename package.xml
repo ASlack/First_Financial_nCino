@@ -32114,9 +32114,15 @@
         <members>FFinGroupReports/RegBReports/Incomplete_Application_Clock_V0i</members>
         <members>FFinGroupReports/RegBReports/Initial_Application_Clock_LYm</members>
         <members>FFinGroupReports/RegionalTemplateReports</members>
+        <members>FFinGroupReports/RegionalTemplateReports/Approved_Closing_Next_30_DaysBranch_Yt7</members>
+        <members>FFinGroupReports/RegionalTemplateReports/Booked_Totals_Current_FY_Region_sQs</members>
+        <members>FFinGroupReports/RegionalTemplateReports/Call_Report_Current_PreviousRegion_rGk</members>
         <members>FFinGroupReports/RegionalTemplateReports/Loans_In_ProgressAmtBranches_NSU</members>
         <members>FFinGroupReports/RegionalTemplateReports/Maturing_Next_90_DaysBranch_yzR</members>
         <members>FFinGroupReports/RegionalTemplateReports/Region_Pipeline_vhd</members>
+        <members>FFinGroupReports/RegionalTemplateReports/Stage_DurationBookedBy_Branch_Pvl</members>
+        <members>FFinGroupReports/RegionalTemplateReports/Stage_DurationNot_BookedBy_Branch_1Ma</members>
+        <members>FFinGroupReports/RegionalTemplateReports/Time_To_CloseBookedBranch_3hq</members>
         <members>FFinGroupReports/Stage_DurationNot_Booked_DAR</members>
         <members>FFinGroupReports/Stage_Duration_Report_Wcn</members>
         <members>LLC_BI__nCino_Compliance_Reports</members>
@@ -33002,6 +33008,7 @@
         <members>LLC_BI__Loan__c.Complete_Application_Date</members>
         <members>LLC_BI__Loan__c.Counter_Offer</members>
         <members>LLC_BI__Loan__c.Decline_Advised_Sent_Date</members>
+        <members>LLC_BI__Loan__c.Doc_Prep_Fields</members>
         <members>LLC_BI__Loan__c.First_Lien_On_Dwelling_Determined_Date</members>
         <members>LLC_BI__Loan__c.Incomplete_Application_Date</members>
         <members>LLC_BI__Loan__c.Joint_Intent</members>

@@ -38,6 +38,7 @@
                     <column>RowCount</column>
                 </chartSummary>
                 <componentType>Donut</componentType>
+                <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
@@ -50,10 +51,10 @@
                         <sortOrder>a</sortOrder>
                     </groupingSorts>
                 </groupingSortProperties>
-                <header>Call Report - Current &amp; Previous Month</header>
+                <header>Call Report - Current &amp; Previous Month-Region</header>
                 <legendPosition>Right</legendPosition>
                 <maxValuesDisplayed>6</maxValuesDisplayed>
-                <report>FFinGroupReports/Call_Report_Current_Previous_Month_oMk</report>
+                <report>FFinGroupReports/RegionalTemplateReports/Call_Report_Current_PreviousRegion_rGk</report>
                 <showPercentage>false</showPercentage>
                 <showTotal>true</showTotal>
                 <showValues>true</showValues>
@@ -61,7 +62,7 @@
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
             <rowIndex>0</rowIndex>
-            <rowSpan>11</rowSpan>
+            <rowSpan>10</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
             <colSpan>8</colSpan>
@@ -93,7 +94,7 @@
                 </groupingSortProperties>
                 <header>Pipeline by Branch</header>
                 <legendPosition>Bottom</legendPosition>
-                <report>FFinGroupReports/RegionalTemplateReports/Region_Pipeline_vhd</report>
+                <report>RegionalTemplateReports/Region_Pipeline_vhd</report>
                 <showPercentage>false</showPercentage>
                 <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>
@@ -118,13 +119,13 @@
                     <column>LLC_BI__Loan__c$LLC_BI__Product_Line__c</column>
                 </dashboardFilterColumns>
                 <decimalPrecision>-1</decimalPrecision>
-                <displayUnits>Integer</displayUnits>
+                <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
                 <enableHover>false</enableHover>
                 <expandOthers>false</expandOthers>
                 <groupingColumn>BucketField_2272292</groupingColumn>
-                <groupingColumn>LLC_BI__Loan__c$Region__c</groupingColumn>
+                <groupingColumn>LLC_BI__Loan__c$LLC_BI__Branch__c</groupingColumn>
                 <groupingSortProperties>
                     <groupingSorts>
                         <groupingLevel>g1</groupingLevel>
@@ -135,16 +136,16 @@
                         <sortOrder>a</sortOrder>
                     </groupingSorts>
                 </groupingSortProperties>
-                <header>Stage Duration-Not Booked</header>
+                <header>Stage Duration-Not Booked-By Branch</header>
                 <legendPosition>Right</legendPosition>
-                <report>FFinGroupReports/Stage_DurationNot_Booked_DAR</report>
+                <report>FFinGroupReports/RegionalTemplateReports/Stage_DurationNot_BookedBy_Branch_1Ma</report>
                 <showPercentage>false</showPercentage>
                 <showValues>false</showValues>
                 <sortBy>RowLabelAscending</sortBy>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
             <rowIndex>8</rowIndex>
-            <rowSpan>11</rowSpan>
+            <rowSpan>10</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
             <colSpan>4</colSpan>
@@ -177,14 +178,14 @@
                 <header>Loans In Progress-Amt-Branches</header>
                 <legendPosition>Right</legendPosition>
                 <maxValuesDisplayed>14</maxValuesDisplayed>
-                <report>FFinGroupReports/RegionalTemplateReports/Loans_In_ProgressAmtBranches_NSU</report>
+                <report>RegionalTemplateReports/Loans_In_ProgressAmtBranches_NSU</report>
                 <showPercentage>false</showPercentage>
                 <showTotal>true</showTotal>
                 <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
-            <rowIndex>11</rowIndex>
+            <rowIndex>10</rowIndex>
             <rowSpan>8</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
@@ -204,14 +205,14 @@
                 <expandOthers>false</expandOthers>
                 <groupingSortProperties/>
                 <header>Maturing Next 90 Days-Branch</header>
-                <report>FFinGroupReports/RegionalTemplateReports/Maturing_Next_90_DaysBranch_yzR</report>
+                <report>RegionalTemplateReports/Maturing_Next_90_DaysBranch_yzR</report>
                 <showPercentage>false</showPercentage>
                 <showPicturesOnCharts>false</showPicturesOnCharts>
                 <showValues>false</showValues>
                 <sortBy>RowLabelAscending</sortBy>
                 <useReportChart>true</useReportChart>
             </dashboardComponent>
-            <rowIndex>19</rowIndex>
+            <rowIndex>18</rowIndex>
             <rowSpan>8</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
@@ -230,13 +231,13 @@
                     <column>LLC_BI__Loan__c$LLC_BI__Product_Line__c</column>
                 </dashboardFilterColumns>
                 <decimalPrecision>-1</decimalPrecision>
-                <displayUnits>Integer</displayUnits>
+                <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
                 <enableHover>false</enableHover>
                 <expandOthers>false</expandOthers>
                 <groupingColumn>BucketField_2272292</groupingColumn>
-                <groupingColumn>LLC_BI__Loan__c$Region__c</groupingColumn>
+                <groupingColumn>LLC_BI__Loan__c$LLC_BI__Branch__c</groupingColumn>
                 <groupingSortProperties>
                     <groupingSorts>
                         <groupingLevel>g1</groupingLevel>
@@ -247,15 +248,15 @@
                         <sortOrder>a</sortOrder>
                     </groupingSorts>
                 </groupingSortProperties>
-                <header>Stage Duration-Booked</header>
+                <header>Stage Duration-Booked-By Branch</header>
                 <legendPosition>Right</legendPosition>
-                <report>FFinGroupReports/Stage_Duration_Report_Wcn</report>
+                <report>FFinGroupReports/RegionalTemplateReports/Stage_DurationBookedBy_Branch_Pvl</report>
                 <showPercentage>false</showPercentage>
                 <showValues>false</showValues>
                 <sortBy>RowLabelAscending</sortBy>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
-            <rowIndex>19</rowIndex>
+            <rowIndex>18</rowIndex>
             <rowSpan>10</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
@@ -279,23 +280,23 @@
                 <drillToDetailEnabled>false</drillToDetailEnabled>
                 <enableHover>false</enableHover>
                 <expandOthers>true</expandOthers>
-                <groupingColumn>LLC_BI__Loan__c$Region__c</groupingColumn>
+                <groupingColumn>LLC_BI__Loan__c$LLC_BI__Branch__c</groupingColumn>
                 <groupingSortProperties>
                     <groupingSorts>
                         <groupingLevel>g1</groupingLevel>
                         <sortOrder>a</sortOrder>
                     </groupingSorts>
                 </groupingSortProperties>
-                <header>Time To Close-Booked-Region</header>
+                <header>Time To Close-Booked-Branch</header>
                 <legendPosition>Right</legendPosition>
-                <report>FFinGroupReports/Stage_DurationBookedRegion_nLu</report>
+                <report>FFinGroupReports/RegionalTemplateReports/Time_To_CloseBookedBranch_3hq</report>
                 <showPercentage>false</showPercentage>
                 <showTotal>false</showTotal>
                 <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
-            <rowIndex>27</rowIndex>
+            <rowIndex>26</rowIndex>
             <rowSpan>10</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
@@ -319,7 +320,7 @@
                 <drillToDetailEnabled>false</drillToDetailEnabled>
                 <enableHover>false</enableHover>
                 <expandOthers>false</expandOthers>
-                <groupingColumn>LLC_BI__Loan__c.Region__c</groupingColumn>
+                <groupingColumn>LLC_BI__Loan__c.LLC_BI__Branch__c</groupingColumn>
                 <groupingColumn>LLC_BI__Loan__c.LLC_BI__Product_Line__c</groupingColumn>
                 <groupingSortProperties>
                     <groupingSorts>
@@ -331,15 +332,15 @@
                         <sortOrder>a</sortOrder>
                     </groupingSorts>
                 </groupingSortProperties>
-                <header>Approved &amp; Closing Next 30 Days-Regions</header>
+                <header>Approved &amp; Closing Next 30 Days-Branch</header>
                 <legendPosition>Right</legendPosition>
-                <report>FFinGroupReports/Closing_Next_30_DaysRegions_DMn</report>
+                <report>FFinGroupReports/RegionalTemplateReports/Approved_Closing_Next_30_DaysBranch_Yt7</report>
                 <showPercentage>false</showPercentage>
                 <showValues>false</showValues>
                 <sortBy>RowLabelAscending</sortBy>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
-            <rowIndex>29</rowIndex>
+            <rowIndex>28</rowIndex>
             <rowSpan>10</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
@@ -358,17 +359,17 @@
                 <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <groupingSortProperties/>
-                <header>Booked Totals Current FY</header>
+                <header>Booked Totals Current FY - Region</header>
                 <indicatorBreakpoint1>650000.0</indicatorBreakpoint1>
                 <indicatorBreakpoint2>1500000.0</indicatorBreakpoint2>
                 <indicatorHighColor>#00716B</indicatorHighColor>
                 <indicatorLowColor>#C23934</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
-                <report>FFinGroupReports/Booked_Totals_Current_FY_gb0</report>
+                <report>FFinGroupReports/RegionalTemplateReports/Booked_Totals_Current_FY_Region_sQs</report>
                 <showRange>false</showRange>
             </dashboardComponent>
-            <rowIndex>37</rowIndex>
-            <rowSpan>10</rowSpan>
+            <rowIndex>36</rowIndex>
+            <rowSpan>11</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
             <colSpan>8</colSpan>
@@ -391,23 +392,23 @@
                 <drillToDetailEnabled>false</drillToDetailEnabled>
                 <enableHover>false</enableHover>
                 <expandOthers>false</expandOthers>
-                <groupingColumn>LLC_BI__Loan__c.Region__c</groupingColumn>
+                <groupingColumn>LLC_BI__Loan__c.LLC_BI__Branch__c</groupingColumn>
                 <groupingSortProperties>
                     <groupingSorts>
                         <groupingLevel>g1</groupingLevel>
                         <sortOrder>a</sortOrder>
                     </groupingSorts>
                 </groupingSortProperties>
-                <header>Booked Totals Current FY</header>
+                <header>Booked Totals Current FY - Region</header>
                 <legendPosition>Bottom</legendPosition>
-                <report>FFinGroupReports/Booked_Totals_Current_FY_gb0</report>
+                <report>FFinGroupReports/RegionalTemplateReports/Booked_Totals_Current_FY_Region_sQs</report>
                 <showPercentage>false</showPercentage>
                 <showPicturesOnCharts>false</showPicturesOnCharts>
                 <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
-            <rowIndex>39</rowIndex>
+            <rowIndex>38</rowIndex>
             <rowSpan>10</rowSpan>
         </dashboardGridComponents>
         <numberOfColumns>12</numberOfColumns>

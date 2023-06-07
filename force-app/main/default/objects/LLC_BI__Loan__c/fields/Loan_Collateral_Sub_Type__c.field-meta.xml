@@ -593,6 +593,11 @@
                 <label>920 - General Intangibles</label>
             </value>
             <value>
+                <fullName>925</fullName>
+                <default>false</default>
+                <label>925 - Life Insurance - Term</label>
+            </value>
+            <value>
                 <fullName>930</fullName>
                 <default>false</default>
                 <label>930 - Cash Surrender Value Life Insurance</label>
