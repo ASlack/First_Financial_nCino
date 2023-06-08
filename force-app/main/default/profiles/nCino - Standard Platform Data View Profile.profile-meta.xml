@@ -70424,6 +70424,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>LLC_BI__Collateral_Type__c.Data_Migration_Collateral_Code__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>LLC_BI__Collateral_Type__c.LLCLP__Is_Excluded_From_LaserPro_Extract__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -103268,6 +103273,10 @@
     <flowAccesses>
         <enabled>false</enabled>
         <flow>Valuation_Auto_Submit</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>nCino_Record_Triggered_Total_Exposure_Async_Recalculation</flow>
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>

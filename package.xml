@@ -19880,6 +19880,7 @@
         <members>LLC_BI__Collateral_History__c.LLC_BI__Type__c</members>
         <members>LLC_BI__Collateral_Type_CCL__c.LLC_BI__Closing_Checklist__c</members>
         <members>LLC_BI__Collateral_Type_CCL__c.LLC_BI__Collateral_Type__c</members>
+        <members>LLC_BI__Collateral_Type__c.Data_Migration_Collateral_Code__c</members>
         <members>LLC_BI__Collateral_Type__c.LLCLP__Is_Excluded_From_LaserPro_Extract__c</members>
         <members>LLC_BI__Collateral_Type__c.LLC_BI__Active__c</members>
         <members>LLC_BI__Collateral_Type__c.LLC_BI__Advance_Rate__c</members>
@@ -29945,6 +29946,7 @@
         <members>Valuation_Auto_Submit</members>
         <members>X1st_Lien_On_Dwelling_Determined_Date</members>
         <members>Zen_Consumer_Loan_Creation_on_Relationship</members>
+        <members>nCino_Record_Triggered_Total_Exposure_Async_Recalculation</members>
         <members>nCino__IALAutoDecision</members>
         <members>nCino__ILCreditPreProcessing</members>
         <members>nCino__ILFindExistingValidCreditReport</members>
@@ -30036,6 +30038,7 @@
         <members>Valuation_Auto_Submit</members>
         <members>X1st_Lien_On_Dwelling_Determined_Date</members>
         <members>Zen_Consumer_Loan_Creation_on_Relationship</members>
+        <members>nCino_Record_Triggered_Total_Exposure_Async_Recalculation</members>
         <members>nCino__IALAutoDecision</members>
         <members>nCino__ILCreditPreProcessing</members>
         <members>nCino__ILFindExistingValidCreditReport</members>
@@ -33008,7 +33011,10 @@
         <members>LLC_BI__Loan__c.Complete_Application_Date</members>
         <members>LLC_BI__Loan__c.Counter_Offer</members>
         <members>LLC_BI__Loan__c.Decline_Advised_Sent_Date</members>
+        <members>LLC_BI__Loan__c.Doc_Prep_Close_Date</members>
         <members>LLC_BI__Loan__c.Doc_Prep_Fields</members>
+        <members>LLC_BI__Loan__c.Doc_Prep_Method</members>
+        <members>LLC_BI__Loan__c.Doc_Prep_Needed_By</members>
         <members>LLC_BI__Loan__c.First_Lien_On_Dwelling_Determined_Date</members>
         <members>LLC_BI__Loan__c.Incomplete_Application_Date</members>
         <members>LLC_BI__Loan__c.Joint_Intent</members>

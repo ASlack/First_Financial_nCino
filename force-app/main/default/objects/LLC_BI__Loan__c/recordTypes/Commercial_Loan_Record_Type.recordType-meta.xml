@@ -800,7 +800,7 @@
     <picklistValues>
         <picklist>Real_Estate_Sub_Type__c</picklist>
         <values>
-            <fullName>Car Dealerships</fullName>
+            <fullName>Assisted Living Facility</fullName>
             <default>false</default>
         </values>
         <values>
@@ -820,6 +820,10 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Dealership</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>For Profit Schools</fullName>
             <default>false</default>
         </values>
@@ -828,11 +832,11 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>General Commercial Warehouse</fullName>
+            <fullName>Gym%2FDance%2FSports Facility</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Gym%2FDance%2FSports Facility</fullName>
+            <fullName>Healthcare - Single-Tenant Office</fullName>
             <default>false</default>
         </values>
         <values>
@@ -844,23 +848,19 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Medical %E2%80%93 ER Facility %2F Surgery Centers</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Multi-Tenant Office Space %E2%80%93 Medical</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Multi-Tenant Office Space %E2%80%93 Non-Medical</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Multi-Tenant Shopping Center</fullName>
+            <fullName>Nonprofit School %2F College %2F University</fullName>
             <default>false</default>
         </values>
         <values>
             <fullName>Nursing Homes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Office - Single-Tenant Non-healthcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
             <default>false</default>
         </values>
         <values>
@@ -873,6 +873,14 @@
         </values>
         <values>
             <fullName>Restaurants %E2%80%93 Table Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail - Big box</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail - Single-Tenant %2F Free Standing</fullName>
             <default>false</default>
         </values>
         <values>

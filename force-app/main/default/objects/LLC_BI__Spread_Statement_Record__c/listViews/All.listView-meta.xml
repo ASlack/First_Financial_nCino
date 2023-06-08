@@ -8,16 +8,12 @@
     <columns>LLC_BI__Row_Number__c</columns>
     <columns>LLC_BI__Linked_Spread_Statement_Record__c</columns>
     <columns>LLC_BI__Linked_Spread_Statement_Total_Group__c</columns>
+    <columns>LLC_BI__Formula_Long_Text__c</columns>
     <filterScope>Everything</filterScope>
     <filters>
         <field>LLC_BI__Spread_Statement_Type__c</field>
         <operation>equals</operation>
-        <value>000003931</value>
-    </filters>
-    <filters>
-        <field>LLC_BI__Spread_Statement_Record_Total__c</field>
-        <operation>contains</operation>
-        <value>Operating Expense</value>
+        <value>000003929</value>
     </filters>
     <label>All</label>
 </ListView>

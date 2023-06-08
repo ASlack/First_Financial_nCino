@@ -14,89 +14,19 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>Church</fullName>
+                <fullName>Assisted Living Facility</fullName>
                 <default>false</default>
-                <label>Church</label>
-            </value>
-            <value>
-                <fullName>Self-Storage Facilities</fullName>
-                <default>false</default>
-                <label>Self-Storage Facilities</label>
+                <label>Assisted Living Facility</label>
             </value>
             <value>
                 <fullName>Car Washes</fullName>
                 <default>false</default>
-                <label>Car Washes</label>
+                <label>Car Wash</label>
             </value>
             <value>
-                <fullName>RV Parks</fullName>
+                <fullName>Church</fullName>
                 <default>false</default>
-                <label>RV Parks</label>
-            </value>
-            <value>
-                <fullName>Hotel / Motel</fullName>
-                <default>false</default>
-                <label>Hotel / Motel</label>
-            </value>
-            <value>
-                <fullName>Medical – ER Facility / Surgery Centers</fullName>
-                <default>false</default>
-                <label>Medical – ER Facility / Surgery Centers</label>
-            </value>
-            <value>
-                <fullName>Multi-Tenant Office Space – Medical</fullName>
-                <default>false</default>
-                <label>Multi-Tenant Office Space – Medical</label>
-            </value>
-            <value>
-                <fullName>Multi-Tenant Office Space – Non-Medical</fullName>
-                <default>false</default>
-                <label>Multi-Tenant Office Space – Non-Medical</label>
-            </value>
-            <value>
-                <fullName>Multi-Tenant Shopping Center</fullName>
-                <default>false</default>
-                <label>Multi-Tenant Shopping Center</label>
-            </value>
-            <value>
-                <fullName>General Commercial Warehouse</fullName>
-                <default>false</default>
-                <label>General Commercial Warehouse</label>
-            </value>
-            <value>
-                <fullName>Funeral Homes</fullName>
-                <default>false</default>
-                <label>Funeral Homes</label>
-            </value>
-            <value>
-                <fullName>Restaurants – Fast Food / Fast Casual</fullName>
-                <default>false</default>
-                <label>Restaurants – Fast Food / Fast Casual</label>
-            </value>
-            <value>
-                <fullName>Restaurants – Table Service</fullName>
-                <default>false</default>
-                <label>Restaurants – Table Service</label>
-            </value>
-            <value>
-                <fullName>Convenience Stores</fullName>
-                <default>false</default>
-                <label>Convenience Stores</label>
-            </value>
-            <value>
-                <fullName>For Profit Schools</fullName>
-                <default>false</default>
-                <label>For Profit Schools</label>
-            </value>
-            <value>
-                <fullName>Car Dealerships</fullName>
-                <default>false</default>
-                <label>Car Dealerships</label>
-            </value>
-            <value>
-                <fullName>Nursing Homes</fullName>
-                <default>false</default>
-                <label>Nursing Homes</label>
+                <label>Church / Religious Facility</label>
             </value>
             <value>
                 <fullName>Daycare Facility</fullName>
@@ -104,26 +34,127 @@
                 <label>Daycare Facility</label>
             </value>
             <value>
+                <fullName>Dealership</fullName>
+                <default>false</default>
+                <label>Dealership</label>
+            </value>
+            <value>
+                <fullName>Funeral Homes</fullName>
+                <default>false</default>
+                <label>Funeral Home</label>
+            </value>
+            <value>
+                <fullName>Convenience Stores</fullName>
+                <default>false</default>
+                <label>Gas Station / Convenience Store</label>
+            </value>
+            <value>
                 <fullName>Gym/Dance/Sports Facility</fullName>
                 <default>false</default>
-                <label>Gym/Dance/Sports Facility</label>
+                <label>Gym / Dance / Sports Facility</label>
+            </value>
+            <value>
+                <fullName>Medical – ER Facility / Surgery Centers</fullName>
+                <default>false</default>
+                <label>Healthcare - Hospital / ER / Surgery Center</label>
+            </value>
+            <value>
+                <fullName>Multi-Tenant Office Space – Medical</fullName>
+                <default>false</default>
+                <label>Healthcare - Multi-Tenant Office</label>
+            </value>
+            <value>
+                <fullName>Healthcare - Single-Tenant Office</fullName>
+                <default>false</default>
+                <label>Healthcare - Single-Tenant Office</label>
+            </value>
+            <value>
+                <fullName>Hotel / Motel</fullName>
+                <default>false</default>
+                <label>Hotel / Motel</label>
+            </value>
+            <value>
+                <fullName>General Commercial Warehouse</fullName>
+                <default>false</default>
+                <label>Industrial / Warehouse</label>
             </value>
             <value>
                 <fullName>Manufacturing Plant</fullName>
                 <default>false</default>
                 <label>Manufacturing Plant</label>
             </value>
+            <value>
+                <fullName>Nursing Homes</fullName>
+                <default>false</default>
+                <label>Nursing Home</label>
+            </value>
+            <value>
+                <fullName>Multi-Tenant Office Space – Non-Medical</fullName>
+                <default>false</default>
+                <label>Office - Multi-Tenant Non-healthcare</label>
+            </value>
+            <value>
+                <fullName>Office - Single-Tenant Non-healthcare</fullName>
+                <default>false</default>
+                <label>Office - Single-Tenant Non-healthcare</label>
+            </value>
+            <value>
+                <fullName>Restaurants – Fast Food / Fast Casual</fullName>
+                <default>false</default>
+                <label>Restaurant - Fast Food / Casual</label>
+            </value>
+            <value>
+                <fullName>Restaurants – Table Service</fullName>
+                <default>false</default>
+                <label>Restaurant - Table Service</label>
+            </value>
+            <value>
+                <fullName>Retail - Big box</fullName>
+                <default>false</default>
+                <label>Retail - Big box</label>
+            </value>
+            <value>
+                <fullName>Multi-Tenant Shopping Center</fullName>
+                <default>false</default>
+                <label>Retail - Multi-Tenant Shopping Center</label>
+            </value>
+            <value>
+                <fullName>Retail - Single-Tenant / Free Standing</fullName>
+                <default>false</default>
+                <label>Retail - Single-Tenant / Free Standing</label>
+            </value>
+            <value>
+                <fullName>RV Parks</fullName>
+                <default>false</default>
+                <label>RV Park</label>
+            </value>
+            <value>
+                <fullName>For Profit Schools</fullName>
+                <default>false</default>
+                <label>For-Profit School / College / University</label>
+            </value>
+            <value>
+                <fullName>Nonprofit School / College / University</fullName>
+                <default>false</default>
+                <label>Nonprofit School / College / University</label>
+            </value>
+            <value>
+                <fullName>Self-Storage Facilities</fullName>
+                <default>false</default>
+                <label>Self-Storage Facility</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Car Dealerships</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Car Dealerships</label>
+            </value>
         </valueSetDefinition>
-        <valueSettings>
-            <controllingFieldValue>1E1</controllingFieldValue>
-            <controllingFieldValue>1E2</controllingFieldValue>
-            <valueName>Church</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>1E1</controllingFieldValue>
-            <controllingFieldValue>1E2</controllingFieldValue>
-            <valueName>Self-Storage Facilities</valueName>
-        </valueSettings>
         <valueSettings>
             <controllingFieldValue>1E1</controllingFieldValue>
             <controllingFieldValue>1E2</controllingFieldValue>
@@ -132,7 +163,27 @@
         <valueSettings>
             <controllingFieldValue>1E1</controllingFieldValue>
             <controllingFieldValue>1E2</controllingFieldValue>
-            <valueName>RV Parks</valueName>
+            <valueName>Church</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1E1</controllingFieldValue>
+            <controllingFieldValue>1E2</controllingFieldValue>
+            <valueName>Daycare Facility</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1E1</controllingFieldValue>
+            <controllingFieldValue>1E2</controllingFieldValue>
+            <valueName>Funeral Homes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1E1</controllingFieldValue>
+            <controllingFieldValue>1E2</controllingFieldValue>
+            <valueName>Convenience Stores</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1E1</controllingFieldValue>
+            <controllingFieldValue>1E2</controllingFieldValue>
+            <valueName>Gym/Dance/Sports Facility</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>1E1</controllingFieldValue>
@@ -142,32 +193,12 @@
         <valueSettings>
             <controllingFieldValue>1E1</controllingFieldValue>
             <controllingFieldValue>1E2</controllingFieldValue>
-            <valueName>Medical – ER Facility / Surgery Centers</valueName>
+            <valueName>Manufacturing Plant</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>1E1</controllingFieldValue>
             <controllingFieldValue>1E2</controllingFieldValue>
-            <valueName>Multi-Tenant Office Space – Medical</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>1E1</controllingFieldValue>
-            <controllingFieldValue>1E2</controllingFieldValue>
-            <valueName>Multi-Tenant Office Space – Non-Medical</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>1E1</controllingFieldValue>
-            <controllingFieldValue>1E2</controllingFieldValue>
-            <valueName>Multi-Tenant Shopping Center</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>1E1</controllingFieldValue>
-            <controllingFieldValue>1E2</controllingFieldValue>
-            <valueName>General Commercial Warehouse</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>1E1</controllingFieldValue>
-            <controllingFieldValue>1E2</controllingFieldValue>
-            <valueName>Funeral Homes</valueName>
+            <valueName>Nursing Homes</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>1E1</controllingFieldValue>
@@ -182,7 +213,7 @@
         <valueSettings>
             <controllingFieldValue>1E1</controllingFieldValue>
             <controllingFieldValue>1E2</controllingFieldValue>
-            <valueName>Convenience Stores</valueName>
+            <valueName>RV Parks</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>1E1</controllingFieldValue>
@@ -192,27 +223,7 @@
         <valueSettings>
             <controllingFieldValue>1E1</controllingFieldValue>
             <controllingFieldValue>1E2</controllingFieldValue>
-            <valueName>Car Dealerships</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>1E1</controllingFieldValue>
-            <controllingFieldValue>1E2</controllingFieldValue>
-            <valueName>Nursing Homes</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>1E1</controllingFieldValue>
-            <controllingFieldValue>1E2</controllingFieldValue>
-            <valueName>Daycare Facility</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>1E1</controllingFieldValue>
-            <controllingFieldValue>1E2</controllingFieldValue>
-            <valueName>Gym/Dance/Sports Facility</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>1E1</controllingFieldValue>
-            <controllingFieldValue>1E2</controllingFieldValue>
-            <valueName>Manufacturing Plant</valueName>
+            <valueName>Self-Storage Facilities</valueName>
         </valueSettings>
     </valueSet>
 </CustomField>
