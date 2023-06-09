@@ -4,6 +4,8 @@
     <columns>NAME</columns>
     <columns>LLC_BI__Description__c</columns>
     <columns>LLC_BI__Is_Template__c</columns>
+    <columns>LLC_BI__Is_Disabled__c</columns>
+    <columns>LLC_BI__lookupKey__c</columns>
     <columns>CREATEDBY_USER</columns>
     <columns>CREATED_DATE</columns>
     <filterScope>Everything</filterScope>
