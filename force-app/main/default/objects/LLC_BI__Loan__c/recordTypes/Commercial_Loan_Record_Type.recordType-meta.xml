@@ -927,6 +927,21 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>TakeoutCommitmentonPermanentMtg__c</picklist>
+        <values>
+            <fullName>First Financial In-House</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>First Financial Mortgage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>Tertiary_Source_of_Repayment__c</picklist>
         <values>
             <fullName>Cash flow from Operations</fullName>

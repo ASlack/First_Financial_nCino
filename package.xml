@@ -21980,6 +21980,8 @@
         <members>LLC_BI__Loan__c.Secondary_Market_Buyer__c</members>
         <members>LLC_BI__Loan__c.Secondary_Source_of_Repayment__c</members>
         <members>LLC_BI__Loan__c.Submitted_for_Approval_Date__c</members>
+        <members>LLC_BI__Loan__c.TakeoutCommitmentFrom__c</members>
+        <members>LLC_BI__Loan__c.TakeoutCommitmentonPermanentMtg__c</members>
         <members>LLC_BI__Loan__c.Term_Sheet_RFI_Date__c</members>
         <members>LLC_BI__Loan__c.Term_Sheet_RFI_Due_Date__c</members>
         <members>LLC_BI__Loan__c.Tertiary_Source_of_Repayment__c</members>
@@ -29489,6 +29491,7 @@
         <members>LLC_BI__Loan__c.RequiredLoanFieldsToCreateRateOrPayment</members>
         <members>LLC_BI__Loan__c.Standard_Product_Package_Credit_Memo</members>
         <members>LLC_BI__Loan__c.Standard_Product_Package_Credit_Memo_Exp</members>
+        <members>LLC_BI__Loan__c.Takeout_Commitment</members>
         <members>LLC_BI__Loan__c.UIEscrowCondRendered</members>
         <members>LLC_BI__Loan__c.UI_Adverse_Action_Dates</members>
         <members>LLC_BI__Loan__c.UI_Approval_Fields</members>
@@ -32102,6 +32105,7 @@
         <members>FFinGroupReports</members>
         <members>FFinGroupReports/Call_Report_Current_Previous_Month_oMk</members>
         <members>FFinGroupReports/ClosingandBookingReports</members>
+        <members>FFinGroupReports/ClosingandBookingReports/Loans_Needing_Loan_Ops_Processor_SrH</members>
         <members>FFinGroupReports/CreditAnalystReports</members>
         <members>FFinGroupReports/CreditAnalystReports/Loans_Needing_Credit_Analyst_akR</members>
         <members>FFinGroupReports/DocPrepReports</members>
@@ -32954,6 +32958,7 @@
         <members>Account.JHJX__Allow_Duplicate_CIF_Creation</members>
         <members>Account.LLC_BI__Tax_Identification_Max_Length</members>
         <members>Account.LLC_BI__To_date_cannot_be_before_from_d_ate</members>
+        <members>Account.PO_Box_not_Allowd_on_Physical_Address_PA</members>
         <members>Account.PO_Box_not_Allowed_on_Physical_Address</members>
         <members>Contact.LLC_BI__Prevent_Reassigning_Individual_Contacts</members>
         <members>Contact.LLC_BI__Require_Country_of_Citizenship</members>
@@ -33046,6 +33051,7 @@
         <members>LLC_BI__Loan__c.Request_Type_Spreads_n_Cash_Flow</members>
         <members>LLC_BI__Loan__c.Request_Type_Streamlined_Presentation</members>
         <members>LLC_BI__Loan__c.Right_To_Copy_Of_Appraisal_Sent_Date</members>
+        <members>LLC_BI__Loan__c.Takeout_Commitment</members>
         <members>LLC_BI__Loan__c.Term_Sheet_RFI_Date</members>
         <members>LLC_BI__Loan__c.Unsatisfied_Conditions</members>
         <members>LLC_BI__Loan__c.Withdrawn_Notification_Received_Date</members>

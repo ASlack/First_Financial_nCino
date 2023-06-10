@@ -10,21 +10,61 @@
     <dashboardFilters>
         <dashboardFilterOptions>
             <operator>equals</operator>
-            <values>Commercial</values>
+            <values>Abilene</values>
         </dashboardFilterOptions>
         <dashboardFilterOptions>
             <operator>equals</operator>
-            <values>Agricultural</values>
+            <values>Bryan/College Station</values>
         </dashboardFilterOptions>
         <dashboardFilterOptions>
             <operator>equals</operator>
-            <values>Construction</values>
+            <values>Cleburne</values>
         </dashboardFilterOptions>
         <dashboardFilterOptions>
             <operator>equals</operator>
-            <values>Municipality</values>
+            <values>Conroe</values>
         </dashboardFilterOptions>
-        <name>Product Line</name>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Eastland</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Fort Worth</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Hereford</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Kingwood</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Orange</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>San Angelo</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Southlake</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Stephenville</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Sweetwater</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Weatherford</values>
+        </dashboardFilterOptions>
+        <name>Region</name>
     </dashboardFilters>
     <dashboardGridLayout>
         <dashboardGridComponents>
@@ -38,6 +78,9 @@
                     <column>RowCount</column>
                 </chartSummary>
                 <componentType>Donut</componentType>
+                <dashboardFilterColumns>
+                    <column>Account.Region__c</column>
+                </dashboardFilterColumns>
                 <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
@@ -54,7 +97,7 @@
                 <header>Call Report - Current &amp; Previous Month-Region</header>
                 <legendPosition>Right</legendPosition>
                 <maxValuesDisplayed>6</maxValuesDisplayed>
-                <report>FFinGroupReports/RegionalTemplateReports/Call_Report_Current_PreviousRegion_rGk</report>
+                <report>RegionalTemplateReports/Call_Report_Current_PreviousRegion_rGk</report>
                 <showPercentage>false</showPercentage>
                 <showTotal>true</showTotal>
                 <showValues>true</showValues>
@@ -77,7 +120,7 @@
                 </chartSummary>
                 <componentType>Column</componentType>
                 <dashboardFilterColumns>
-                    <column>LLC_BI__Loan__c.LLC_BI__Product_Line__c</column>
+                    <column>LLC_BI__Loan__c.Region__c</column>
                 </dashboardFilterColumns>
                 <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
@@ -116,7 +159,7 @@
                 </chartSummary>
                 <componentType>ColumnStacked</componentType>
                 <dashboardFilterColumns>
-                    <column>LLC_BI__Loan__c$LLC_BI__Product_Line__c</column>
+                    <column>LLC_BI__Loan__c$Region__c</column>
                 </dashboardFilterColumns>
                 <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
@@ -138,7 +181,7 @@
                 </groupingSortProperties>
                 <header>Stage Duration-Not Booked-By Branch</header>
                 <legendPosition>Right</legendPosition>
-                <report>FFinGroupReports/RegionalTemplateReports/Stage_DurationNot_BookedBy_Branch_1Ma</report>
+                <report>RegionalTemplateReports/Stage_DurationNot_BookedBy_Branch_1Ma</report>
                 <showPercentage>false</showPercentage>
                 <showValues>false</showValues>
                 <sortBy>RowLabelAscending</sortBy>
@@ -160,7 +203,7 @@
                 </chartSummary>
                 <componentType>Donut</componentType>
                 <dashboardFilterColumns>
-                    <column>LLC_BI__Loan__c.LLC_BI__Product_Line__c</column>
+                    <column>LLC_BI__Loan__c.Region__c</column>
                 </dashboardFilterColumns>
                 <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
@@ -196,7 +239,7 @@
                 <chartAxisRange>Auto</chartAxisRange>
                 <componentType>Bar</componentType>
                 <dashboardFilterColumns>
-                    <column>LLC_BI__Loan__c.LLC_BI__Product_Line__c</column>
+                    <column>LLC_BI__Loan__c.Region__c</column>
                 </dashboardFilterColumns>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
@@ -228,7 +271,7 @@
                 </chartSummary>
                 <componentType>ColumnStacked</componentType>
                 <dashboardFilterColumns>
-                    <column>LLC_BI__Loan__c$LLC_BI__Product_Line__c</column>
+                    <column>LLC_BI__Loan__c$Region__c</column>
                 </dashboardFilterColumns>
                 <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
@@ -250,7 +293,7 @@
                 </groupingSortProperties>
                 <header>Stage Duration-Booked-By Branch</header>
                 <legendPosition>Right</legendPosition>
-                <report>FFinGroupReports/RegionalTemplateReports/Stage_DurationBookedBy_Branch_Pvl</report>
+                <report>RegionalTemplateReports/Stage_DurationBookedBy_Branch_Pvl</report>
                 <showPercentage>false</showPercentage>
                 <showValues>false</showValues>
                 <sortBy>RowLabelAscending</sortBy>
@@ -272,7 +315,7 @@
                 </chartSummary>
                 <componentType>Donut</componentType>
                 <dashboardFilterColumns>
-                    <column>LLC_BI__Loan__c$LLC_BI__Product_Line__c</column>
+                    <column>LLC_BI__Loan__c$Region__c</column>
                 </dashboardFilterColumns>
                 <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
@@ -289,7 +332,7 @@
                 </groupingSortProperties>
                 <header>Time To Close-Booked-Branch</header>
                 <legendPosition>Right</legendPosition>
-                <report>FFinGroupReports/RegionalTemplateReports/Time_To_CloseBookedBranch_3hq</report>
+                <report>RegionalTemplateReports/Time_To_CloseBookedBranch_3hq</report>
                 <showPercentage>false</showPercentage>
                 <showTotal>false</showTotal>
                 <showValues>true</showValues>
@@ -312,7 +355,7 @@
                 </chartSummary>
                 <componentType>BarStacked</componentType>
                 <dashboardFilterColumns>
-                    <column>LLC_BI__Loan__c.LLC_BI__Product_Line__c</column>
+                    <column>LLC_BI__Loan__c.Region__c</column>
                 </dashboardFilterColumns>
                 <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
@@ -334,7 +377,7 @@
                 </groupingSortProperties>
                 <header>Approved &amp; Closing Next 30 Days-Branch</header>
                 <legendPosition>Right</legendPosition>
-                <report>FFinGroupReports/RegionalTemplateReports/Approved_Closing_Next_30_DaysBranch_Yt7</report>
+                <report>RegionalTemplateReports/Approved_Closing_Next_30_DaysBranch_Yt7</report>
                 <showPercentage>false</showPercentage>
                 <showValues>false</showValues>
                 <sortBy>RowLabelAscending</sortBy>
@@ -354,7 +397,7 @@
                 </chartSummary>
                 <componentType>Metric</componentType>
                 <dashboardFilterColumns>
-                    <column>LLC_BI__Loan__c.LLC_BI__Product_Line__c</column>
+                    <column>LLC_BI__Loan__c.Region__c</column>
                 </dashboardFilterColumns>
                 <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
@@ -365,7 +408,7 @@
                 <indicatorHighColor>#00716B</indicatorHighColor>
                 <indicatorLowColor>#C23934</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
-                <report>FFinGroupReports/RegionalTemplateReports/Booked_Totals_Current_FY_Region_sQs</report>
+                <report>RegionalTemplateReports/Booked_Totals_Current_FY_Region_sQs</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>36</rowIndex>
@@ -384,7 +427,7 @@
                 </chartSummary>
                 <componentType>Bar</componentType>
                 <dashboardFilterColumns>
-                    <column>LLC_BI__Loan__c.LLC_BI__Product_Line__c</column>
+                    <column>LLC_BI__Loan__c.Region__c</column>
                 </dashboardFilterColumns>
                 <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
@@ -401,7 +444,7 @@
                 </groupingSortProperties>
                 <header>Booked Totals Current FY - Region</header>
                 <legendPosition>Bottom</legendPosition>
-                <report>FFinGroupReports/RegionalTemplateReports/Booked_Totals_Current_FY_Region_sQs</report>
+                <report>RegionalTemplateReports/Booked_Totals_Current_FY_Region_sQs</report>
                 <showPercentage>false</showPercentage>
                 <showPicturesOnCharts>false</showPicturesOnCharts>
                 <showValues>true</showValues>

@@ -158,6 +158,11 @@
         <valueSettings>
             <controllingFieldValue>1E1</controllingFieldValue>
             <controllingFieldValue>1E2</controllingFieldValue>
+            <valueName>Assisted Living Facility</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1E1</controllingFieldValue>
+            <controllingFieldValue>1E2</controllingFieldValue>
             <valueName>Car Washes</valueName>
         </valueSettings>
         <valueSettings>
@@ -169,6 +174,11 @@
             <controllingFieldValue>1E1</controllingFieldValue>
             <controllingFieldValue>1E2</controllingFieldValue>
             <valueName>Daycare Facility</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1E1</controllingFieldValue>
+            <controllingFieldValue>1E2</controllingFieldValue>
+            <valueName>Dealership</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>1E1</controllingFieldValue>
@@ -188,7 +198,27 @@
         <valueSettings>
             <controllingFieldValue>1E1</controllingFieldValue>
             <controllingFieldValue>1E2</controllingFieldValue>
+            <valueName>Medical – ER Facility / Surgery Centers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1E1</controllingFieldValue>
+            <controllingFieldValue>1E2</controllingFieldValue>
+            <valueName>Multi-Tenant Office Space – Medical</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1E1</controllingFieldValue>
+            <controllingFieldValue>1E2</controllingFieldValue>
+            <valueName>Healthcare - Single-Tenant Office</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1E1</controllingFieldValue>
+            <controllingFieldValue>1E2</controllingFieldValue>
             <valueName>Hotel / Motel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1E1</controllingFieldValue>
+            <controllingFieldValue>1E2</controllingFieldValue>
+            <valueName>General Commercial Warehouse</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>1E1</controllingFieldValue>
@@ -203,12 +233,37 @@
         <valueSettings>
             <controllingFieldValue>1E1</controllingFieldValue>
             <controllingFieldValue>1E2</controllingFieldValue>
+            <valueName>Multi-Tenant Office Space – Non-Medical</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1E1</controllingFieldValue>
+            <controllingFieldValue>1E2</controllingFieldValue>
+            <valueName>Office - Single-Tenant Non-healthcare</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1E1</controllingFieldValue>
+            <controllingFieldValue>1E2</controllingFieldValue>
             <valueName>Restaurants – Fast Food / Fast Casual</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>1E1</controllingFieldValue>
             <controllingFieldValue>1E2</controllingFieldValue>
             <valueName>Restaurants – Table Service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1E1</controllingFieldValue>
+            <controllingFieldValue>1E2</controllingFieldValue>
+            <valueName>Retail - Big box</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1E1</controllingFieldValue>
+            <controllingFieldValue>1E2</controllingFieldValue>
+            <valueName>Multi-Tenant Shopping Center</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1E1</controllingFieldValue>
+            <controllingFieldValue>1E2</controllingFieldValue>
+            <valueName>Retail - Single-Tenant / Free Standing</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>1E1</controllingFieldValue>
@@ -223,7 +278,17 @@
         <valueSettings>
             <controllingFieldValue>1E1</controllingFieldValue>
             <controllingFieldValue>1E2</controllingFieldValue>
+            <valueName>Nonprofit School / College / University</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1E1</controllingFieldValue>
+            <controllingFieldValue>1E2</controllingFieldValue>
             <valueName>Self-Storage Facilities</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1E1</controllingFieldValue>
+            <controllingFieldValue>1E2</controllingFieldValue>
+            <valueName>Other</valueName>
         </valueSettings>
     </valueSet>
 </CustomField>
