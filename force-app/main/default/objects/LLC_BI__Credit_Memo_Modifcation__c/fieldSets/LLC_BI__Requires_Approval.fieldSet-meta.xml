@@ -38,11 +38,6 @@
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>CollateralAdded__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </displayedFields>
-    <displayedFields>
         <field>CollateralReleasePriceChange__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
@@ -69,11 +64,6 @@
     </displayedFields>
     <displayedFields>
         <field>InterestRateDecrease__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </displayedFields>
-    <displayedFields>
-        <field>InterestRateIncrease__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>

@@ -14,11 +14,6 @@
         <operation>equals</operation>
         <value>1</value>
     </filters>
-    <filters>
-        <field>LLC_BI__Is_Disabled__c</field>
-        <operation>equals</operation>
-        <value>0</value>
-    </filters>
     <label>Templates</label>
     <sharedTo>
         <role>nCino_Administrator</role>

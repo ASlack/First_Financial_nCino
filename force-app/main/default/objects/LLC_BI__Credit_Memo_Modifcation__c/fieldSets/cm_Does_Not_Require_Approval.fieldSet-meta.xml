@@ -13,6 +13,11 @@
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
+        <field>InterestRateIncrease__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
         <field>LoanAmountDecrease__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>

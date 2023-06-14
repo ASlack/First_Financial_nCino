@@ -832,6 +832,10 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>General Commercial Warehouse</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Gym%2FDance%2FSports Facility</fullName>
             <default>false</default>
         </values>
@@ -845,6 +849,22 @@
         </values>
         <values>
             <fullName>Manufacturing Plant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medical %E2%80%93 ER Facility %2F Surgery Centers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multi-Tenant Office Space %E2%80%93 Medical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multi-Tenant Office Space %E2%80%93 Non-Medical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multi-Tenant Shopping Center</fullName>
             <default>false</default>
         </values>
         <values>
