@@ -21619,6 +21619,7 @@
         <members>LLC_BI__Loan__c.Do_you_own_the_property_that_is_going_to__c</members>
         <members>LLC_BI__Loan__c.Due_Date_for_Client_to_Respond_Counter__c</members>
         <members>LLC_BI__Loan__c.EarliestClosingDate__c</members>
+        <members>LLC_BI__Loan__c.EscrowItems__c</members>
         <members>LLC_BI__Loan__c.First_Lien_On_Dwelling_Determined_Date__c</members>
         <members>LLC_BI__Loan__c.Full_Product_Name__c</members>
         <members>LLC_BI__Loan__c.Funding_Date__c</members>
@@ -28410,6 +28411,8 @@
         <name>CustomPageWebLink</name>
     </types>
     <types>
+        <members>Credit_Home_Page_Permission</members>
+        <members>Doc_Prep_Home_Page_Permission</members>
         <members>EFPIO__Package_Registry_View_Access</members>
         <members>LLC_BI__Collateral_Groups_Add_Collateral</members>
         <members>LLC_BI__Collateral_Groups_Add_Group_Members</members>
@@ -28432,6 +28435,7 @@
         <members>LLC_BI__Smart_Checklists_Edit_Assignee_Requirements</members>
         <members>LLC_BI__Smart_Checklists_Waive_Task_Requirements</members>
         <members>LLC_BI__TRID_Tolerances_Delete_Fees_After_Disclosure</members>
+        <members>Loan_Ops_Home_Page_Permission</members>
         <members>NDOC__Document_Manager_Create_Placeholder_Name</members>
         <members>NDOC__Document_Manager_Delete_Deposit_Files</members>
         <members>NDOC__Document_Manager_Delete_Deposit_Placeholders</members>
@@ -31668,8 +31672,10 @@
     <types>
         <members>AutoRABIT_User_Permission_Set</members>
         <members>Conditions_CRED</members>
+        <members>Credit_Home_Page_Permission_Set</members>
         <members>Data_Services_PS</members>
         <members>Deal_Management</members>
+        <members>Doc_Prep_Home_Page_Permission_Set</members>
         <members>EFPIO__Package_Registry_Info_Access</members>
         <members>EXUS__EXUS_Credit_View_Requests</members>
         <members>EXUS__EXUS_Credit_View_Responses</members>
@@ -31699,6 +31705,7 @@
         <members>LLC_BI__Retail_Run_Auto_Decision_Permissions</members>
         <members>LLC_BI__Smart_Checklists_Waive_Task_Requirements</members>
         <members>LLC_BI__Underwriting_Edit_Debt_Schedule</members>
+        <members>Loan_Ops_Home_Page_Permission_Set</members>
         <members>Log_in_as_Community_User</members>
         <members>MTRNS__MIM</members>
         <members>Manage_Encryption_Keys</members>
@@ -31813,6 +31820,8 @@
         <members>nCino_Credit_Underwriter_Persona</members>
         <members>nCino_Delete_Participations</members>
         <members>nCino_Delete_Policy_Exceptions</members>
+        <members>nCino_Doc_Prep_Quality_Control_Required_Edit_Access</members>
+        <members>nCino_Doc_Prep_Quality_Control_Required_View_Access</members>
         <members>nCino_Policy_Exception_Status</members>
         <members>nCino_Read_Create_Edit</members>
         <members>nCino_Read_Create_Edit_Delete_Rate_Payment_Streams</members>

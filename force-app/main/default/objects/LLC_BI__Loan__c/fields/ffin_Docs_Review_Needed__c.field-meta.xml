@@ -3,8 +3,8 @@
     <fullName>ffin_Docs_Review_Needed__c</fullName>
     <defaultValue>false</defaultValue>
     <externalId>false</externalId>
-    <inlineHelpText>Used for Doc Prep Manager to fill in if Internal Document Review is needed</inlineHelpText>
-    <label>Docs Review Needed</label>
+    <inlineHelpText>For Internal Doc Prep Use Only</inlineHelpText>
+    <label>Doc Prep Quality Control Required</label>
     <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>
     <type>Checkbox</type>

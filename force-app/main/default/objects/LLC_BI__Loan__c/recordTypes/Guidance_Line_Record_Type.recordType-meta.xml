@@ -108,6 +108,29 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>EscrowItems__c</picklist>
+        <values>
+            <fullName>FL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WI</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>IcertifythisloanhasJointIntent__c</picklist>
         <values>
             <fullName>No</fullName>
