@@ -80473,6 +80473,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>LLC_BI__Loan__c.RE_Sub_Type_Additional_Info__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>LLC_BI__Loan__c.Real_Estate_Sub_Type__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -103177,6 +103182,10 @@
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
+        <flow>Account_Relationship_Created_Fast_Field_Updates</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
         <flow>Advance_Deal</flow>
     </flowAccesses>
     <flowAccesses>
@@ -103258,6 +103267,10 @@
     <flowAccesses>
         <enabled>false</enabled>
         <flow>Loan_Set_Prepayment_Penalty_Description</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Loan_Team_Member_Assignment</flow>
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>

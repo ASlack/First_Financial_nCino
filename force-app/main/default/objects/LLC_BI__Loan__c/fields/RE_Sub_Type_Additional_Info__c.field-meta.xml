@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RE_Sub_Type_Additional_Info__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Required if RE Sub-Type is Other</inlineHelpText>
+    <label>RE Sub-Type Additional Info</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>TextArea</type>
+</CustomField>
