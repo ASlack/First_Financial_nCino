@@ -76807,6 +76807,11 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>LLC_BI__Legal_Entities__c.ffin_Borrower_Type_Code__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>LLC_BI__Legal_Entities__c.nMONITOR__Unique_Identifier__c</field>
         <readable>true</readable>

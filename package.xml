@@ -21244,6 +21244,7 @@
         <members>LLC_BI__Legal_Entities__c.LLC_BI__lookupKey__c</members>
         <members>LLC_BI__Legal_Entities__c.Migration_ID__c</members>
         <members>LLC_BI__Legal_Entities__c.cm_Has_Deposit__c</members>
+        <members>LLC_BI__Legal_Entities__c.ffin_Borrower_Type_Code__c</members>
         <members>LLC_BI__Legal_Entities__c.nMONITOR__Unique_Identifier__c</members>
         <members>LLC_BI__Lien__c.LLC_BI__Active__c</members>
         <members>LLC_BI__Lien__c.LLC_BI__Amount__c</members>
@@ -31436,6 +31437,7 @@
         <members>LLC_BI__Reconciliation_Service__c.LLC_BI__All</members>
         <members>LLC_BI__Requirement__c.ChecklistTeamQueue_Requirement</members>
         <members>LLC_BI__Requirement__c.LLC_BI__All</members>
+        <members>LLC_BI__Requirement__c.Post_Booking_Queue_Requirement</members>
         <members>LLC_BI__Review__c.LLC_BI__All</members>
         <members>LLC_BI__Review__c.cm_Review_Committee_Approval_Queue_Review</members>
         <members>LLC_BI__Risk_Grade_Group__c.LLC_BI__All</members>
@@ -31968,6 +31970,7 @@
         <members>ChecklistTeamQueue</members>
         <members>Loan_Approval_Queue</members>
         <members>Loan_Committee</members>
+        <members>Post_Booking_Queue</members>
         <members>RDLC_Change_Memo_Queue</members>
         <members>cm_Review_Committee_Approval_Queue</members>
         <name>Queue</name>
@@ -32151,9 +32154,14 @@
         <members>FFinGroupReports/RegBReports/Initial_Application_Clock_LYm</members>
         <members>FFinGroupReports/RegionalTemplateReports</members>
         <members>FFinGroupReports/RegionalTemplateReports/Approved_Closing_Next_30_DaysBranch_Yt7</members>
+        <members>FFinGroupReports/RegionalTemplateReports/Booked_Loans_CY_by_NAICS_960</members>
+        <members>FFinGroupReports/RegionalTemplateReports/Booked_Loans_CY_by_NAICS_Classification_pHS</members>
+        <members>FFinGroupReports/RegionalTemplateReports/Booked_Loans_CY_by_Risk_Grade_Branch_kRO</members>
+        <members>FFinGroupReports/RegionalTemplateReports/Booked_Loans_CY_by_Risk_Grade_VqX</members>
         <members>FFinGroupReports/RegionalTemplateReports/Booked_Totals_Current_FY_Region_sQs</members>
         <members>FFinGroupReports/RegionalTemplateReports/Call_Report_Current_PreviousRegion_rGk</members>
         <members>FFinGroupReports/RegionalTemplateReports/DeclineWithdrawn_Last_90_Days_6YK</members>
+        <members>FFinGroupReports/RegionalTemplateReports/Delinquency_Report_S8j</members>
         <members>FFinGroupReports/RegionalTemplateReports/Loans_In_ProgressAmtBranches_NSU</members>
         <members>FFinGroupReports/RegionalTemplateReports/Lost_Loans_within_last_90_days_6AV</members>
         <members>FFinGroupReports/RegionalTemplateReports/Maturing_Next_90_DaysBranch_yzR</members>
@@ -32161,6 +32169,8 @@
         <members>FFinGroupReports/RegionalTemplateReports/Stage_DurationBookedBy_Branch_Pvl</members>
         <members>FFinGroupReports/RegionalTemplateReports/Stage_DurationNot_BookedBy_Branch_1Ma</members>
         <members>FFinGroupReports/RegionalTemplateReports/Time_To_CloseBookedBranch_3hq</members>
+        <members>FFinGroupReports/RegionalTemplateReports/Top_Clients_Region_Level_gk0</members>
+        <members>FFinGroupReports/RegionalTemplateReports/Top_Clients_mtq</members>
         <members>FFinGroupReports/Stage_DurationNot_Booked_DAR</members>
         <members>FFinGroupReports/Stage_Duration_Report_Wcn</members>
         <members>LLC_BI__nCino_Compliance_Reports</members>
@@ -32298,6 +32308,7 @@
     </types>
     <types>
         <members>Account_Documents2</members>
+        <members>Account_and_Loan</members>
         <members>Application_with_Contexts</members>
         <members>Approval_Reports</members>
         <members>CFG_CKJ_with_CFG_ConfigValue_and_CFG_ConfigKey</members>
@@ -32997,6 +33008,7 @@
         <members>Contact.Social_Security_Max_Length_9</members>
         <members>Contact.Social_Security_Minimum_Length</members>
         <members>LLC_BI__AccountDocument__c.NDOC__Invalid_Year_Syntax</members>
+        <members>LLC_BI__AccountDocument__c.Year_Required_Financial_Docs</members>
         <members>LLC_BI__Adverse_Action__c.Adverse_Action_Validation_01</members>
         <members>LLC_BI__Annual_Review__c.LLC_BI__Mandatory_comment</members>
         <members>LLC_BI__Budget_Line_Item__c.LLC_BI__Tpl_LineItem_Config_Defaults_Clash</members>
