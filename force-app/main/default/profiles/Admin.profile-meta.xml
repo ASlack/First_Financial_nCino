@@ -6504,6 +6504,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>LLC_BI__Loan__c.Due_Date_for_Client_to_Respond_Counter__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>LLC_BI__Loan__c.EarliestClosingDate__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -7029,6 +7034,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>LLC_BI__Product_Package__c.Household__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>LLC_BI__Product_Package__c.LLC_BI__Risk_Rating__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -7100,6 +7110,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>LLC_BI__Product__c.ffin_Product_Bucket__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Requirement__c.LLC_BI__Needed_By__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
