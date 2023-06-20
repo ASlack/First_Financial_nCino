@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RE_Sub_Type_Additional_Info_Required</fullName>
+    <active>true</active>
+    <description>RE Sub-Type Additional Info is required when Real Estate Sub-Type is Other</description>
+    <errorConditionFormula>AND(
+$User.No_Validation__c = False,
+ISPICKVAL(Real_Estate_Sub_Type__c, &quot;Other&quot;),
+ISBLANK(RE_Sub_Type_Additional_Info__c),
+NOT(ISPICKVAL(LLC_BI__Stage__c, &quot;Booked&quot;)),
+NOT(ISPICKVAL(LLC_BI__Stage__c, &quot;Complete&quot;))
+)</errorConditionFormula>
+    <errorMessage>RE Sub-Type Additional Info is required when Real Estate Sub-Type is Other</errorMessage>
+</ValidationRule>

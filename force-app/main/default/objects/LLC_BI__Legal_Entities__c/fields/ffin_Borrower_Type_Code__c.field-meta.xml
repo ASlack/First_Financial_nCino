@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ffin_Borrower_Type_Code__c</fullName>
+    <description>Custom field used to capture the Borrower Type code via nightly sync</description>
+    <externalId>false</externalId>
+    <label>Borrower Type Code</label>
+    <length>2</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

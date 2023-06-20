@@ -2,6 +2,7 @@
 <PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
     <hasActivationRequired>false</hasActivationRequired>
     <label>Lender with Credit Experience Persona</label>
+    <permissionSets>Credit_Home_Page_Permission_Set</permissionSets>
     <permissionSets>LLC_BI__Product_Package_Pending_Loan_Edit_Permission</permissionSets>
     <permissionSets>LLC_BI__Underwriting_Edit_Debt_Schedule</permissionSets>
     <permissionSets>NDOC__Document_Manager_Delete_Placeholders</permissionSets>
@@ -33,6 +34,7 @@
     <permissionSets>nCino_Create_Edit_Policy_Exceptions</permissionSets>
     <permissionSets>nCino_Create_Memos</permissionSets>
     <permissionSets>nCino_Credit_Manager_Review_View_Access</permissionSets>
+    <permissionSets>nCino_Doc_Prep_Quality_Control_Required_View_Access</permissionSets>
     <permissionSets>nCino_Read_Create_Edit_Delete_Rate_Payment_Streams</permissionSets>
     <permissionSets>nCino_Read_Edit_Service_Mgmt</permissionSets>
     <permissionSets>nFORCE__UI_Framework_User</permissionSets>

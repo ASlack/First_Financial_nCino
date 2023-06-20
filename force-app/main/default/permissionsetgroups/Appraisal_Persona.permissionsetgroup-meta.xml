@@ -3,6 +3,7 @@
     <hasActivationRequired>false</hasActivationRequired>
     <label>Appraisal Persona</label>
     <permissionSets>nCino_Credit_Manager_Review_View_Access</permissionSets>
+    <permissionSets>nCino_Doc_Prep_Quality_Control_Required_View_Access</permissionSets>
     <permissionSets>nCino_Read_Edit_Service_Mgmt</permissionSets>
     <permissionSets>nCino_Read_Rate_Payment_Streams</permissionSets>
     <permissionSets>nCino_View_Access_to_Conditions_Covenants_Collateral_and_Policy_Exceptions</permissionSets>

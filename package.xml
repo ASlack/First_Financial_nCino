@@ -20926,6 +20926,7 @@
         <members>LLC_BI__Legal_Entities__c.LLC_BI__lookupKey__c</members>
         <members>LLC_BI__Legal_Entities__c.Migration_ID__c</members>
         <members>LLC_BI__Legal_Entities__c.cm_Has_Deposit__c</members>
+        <members>LLC_BI__Legal_Entities__c.ffin_Borrower_Type_Code__c</members>
         <members>LLC_BI__Lien__c.LLC_BI__Active__c</members>
         <members>LLC_BI__Lien__c.LLC_BI__Amount__c</members>
         <members>LLC_BI__Lien__c.LLC_BI__Collateral__c</members>
@@ -21299,6 +21300,7 @@
         <members>LLC_BI__Loan__c.Do_you_own_the_property_that_is_going_to__c</members>
         <members>LLC_BI__Loan__c.Due_Date_for_Client_to_Respond_Counter__c</members>
         <members>LLC_BI__Loan__c.EarliestClosingDate__c</members>
+        <members>LLC_BI__Loan__c.EscrowItems__c</members>
         <members>LLC_BI__Loan__c.First_Lien_On_Dwelling_Determined_Date__c</members>
         <members>LLC_BI__Loan__c.Full_Product_Name__c</members>
         <members>LLC_BI__Loan__c.Funding_Date__c</members>
@@ -21640,12 +21642,14 @@
         <members>LLC_BI__Loan__c.Lost_Reason__c</members>
         <members>LLC_BI__Loan__c.Memo_Modification_Approved__c</members>
         <members>LLC_BI__Loan__c.Migration_ID__c</members>
+        <members>LLC_BI__Loan__c.Notes_for_Doc_Prep__c</members>
         <members>LLC_BI__Loan__c.Post_Closing_Review_Comments__c</members>
         <members>LLC_BI__Loan__c.Post_Closing_Review_Completed_By__c</members>
         <members>LLC_BI__Loan__c.Post_Closing_Review_Completed_Date__c</members>
         <members>LLC_BI__Loan__c.Primary_Source_of_Repayment__c</members>
         <members>LLC_BI__Loan__c.Property_Subtype__c</members>
         <members>LLC_BI__Loan__c.Property_Type__c</members>
+        <members>LLC_BI__Loan__c.RE_Sub_Type_Additional_Info__c</members>
         <members>LLC_BI__Loan__c.Real_Estate_Sub_Type__c</members>
         <members>LLC_BI__Loan__c.Reg_W_Reportable__c</members>
         <members>LLC_BI__Loan__c.Region__c</members>
@@ -21655,6 +21659,8 @@
         <members>LLC_BI__Loan__c.Secondary_Market_Buyer__c</members>
         <members>LLC_BI__Loan__c.Secondary_Source_of_Repayment__c</members>
         <members>LLC_BI__Loan__c.Submitted_for_Approval_Date__c</members>
+        <members>LLC_BI__Loan__c.TakeoutCommitmentFrom__c</members>
+        <members>LLC_BI__Loan__c.TakeoutCommitmentonPermanentMtg__c</members>
         <members>LLC_BI__Loan__c.Term_Sheet_RFI_Date__c</members>
         <members>LLC_BI__Loan__c.Term_Sheet_RFI_Due_Date__c</members>
         <members>LLC_BI__Loan__c.Tertiary_Source_of_Repayment__c</members>
@@ -28960,6 +28966,7 @@
         <members>LLC_BI__Loan__c.RequiredLoanFieldsToCreateRateOrPayment</members>
         <members>LLC_BI__Loan__c.Standard_Product_Package_Credit_Memo</members>
         <members>LLC_BI__Loan__c.Standard_Product_Package_Credit_Memo_Exp</members>
+        <members>LLC_BI__Loan__c.Takeout_Commitment</members>
         <members>LLC_BI__Loan__c.UIEscrowCondRendered</members>
         <members>LLC_BI__Loan__c.UI_Adverse_Action_Dates</members>
         <members>LLC_BI__Loan__c.UI_Approval_Fields</members>
@@ -28984,6 +28991,7 @@
         <members>LLC_BI__Loan__c.UI_Lost_Information</members>
         <members>LLC_BI__Loan__c.UI_Post_Closing_Review</members>
         <members>LLC_BI__Loan__c.UI_Product_Selection</members>
+        <members>LLC_BI__Loan__c.UI_Requested_Doc_Prep_Details</members>
         <members>LLC_BI__Loan__c.UI_Secondary_Market</members>
         <members>LLC_BI__Loan__c.UI_Structure_Information</members>
         <members>LLC_BI__Loan__c.cm_Review_Display</members>
@@ -29321,6 +29329,7 @@
         <members>Account_Created_Updates</members>
         <members>Account_Document_Portal_Enabled_Notification</members>
         <members>Account_NAICS_Code_is_Changed</members>
+        <members>Account_Relationship_Created_Fast_Field_Updates</members>
         <members>Advance_Deal</members>
         <members>Adverse_Action_Created_Quick_Field_Updates</members>
         <members>Adverse_Action_Declination_Submit_for_Approval</members>
@@ -29349,6 +29358,7 @@
         <members>Loan_Created_Updated_Update_Application_Date</members>
         <members>Loan_Document_Portal_Enabled_Notification</members>
         <members>Loan_ECOA_Notifications</members>
+        <members>Loan_Fast_Update_Update_Status_to_Open</members>
         <members>Loan_Is_Ready_For_Review</members>
         <members>Loan_LO_or_LA_Changed_Update_Portal_Docs</members>
         <members>Loan_Lost_Reason_Set_Update_Status</members>
@@ -31099,6 +31109,8 @@
         <members>nCino_Credit_Underwriter_Persona</members>
         <members>nCino_Delete_Participations</members>
         <members>nCino_Delete_Policy_Exceptions</members>
+        <members>nCino_Doc_Prep_Quality_Control_Required_Edit_Access</members>
+        <members>nCino_Doc_Prep_Quality_Control_Required_View_Access</members>
         <members>nCino_Policy_Exception_Status</members>
         <members>nCino_Read_Create_Edit</members>
         <members>nCino_Read_Create_Edit_Delete_Rate_Payment_Streams</members>
@@ -32275,6 +32287,9 @@
         <members>LLC_BI__Loan__c.Complete_Application_Date</members>
         <members>LLC_BI__Loan__c.Counter_Offer</members>
         <members>LLC_BI__Loan__c.Decline_Advised_Sent_Date</members>
+        <members>LLC_BI__Loan__c.Doc_Prep_Close_Date</members>
+        <members>LLC_BI__Loan__c.Doc_Prep_Method</members>
+        <members>LLC_BI__Loan__c.Doc_Prep_Needed_By</members>
         <members>LLC_BI__Loan__c.First_Lien_On_Dwelling_Determined_Date</members>
         <members>LLC_BI__Loan__c.Incomplete_Application_Date</members>
         <members>LLC_BI__Loan__c.Joint_Intent</members>
@@ -32300,11 +32315,13 @@
         <members>LLC_BI__Loan__c.Loan_Validation_09</members>
         <members>LLC_BI__Loan__c.Loan_Validation_10</members>
         <members>LLC_BI__Loan__c.Prepayment_Penalty_Amount_Required</members>
+        <members>LLC_BI__Loan__c.RE_Sub_Type_Additional_Info_Required</members>
         <members>LLC_BI__Loan__c.Request_Type_Full_Presentation</members>
         <members>LLC_BI__Loan__c.Request_Type_Loan_Amount_Validation</members>
         <members>LLC_BI__Loan__c.Request_Type_Spreads_n_Cash_Flow</members>
         <members>LLC_BI__Loan__c.Request_Type_Streamlined_Presentation</members>
         <members>LLC_BI__Loan__c.Right_To_Copy_Of_Appraisal_Sent_Date</members>
+        <members>LLC_BI__Loan__c.Takeout_Commitment</members>
         <members>LLC_BI__Loan__c.Term_Sheet_RFI_Date</members>
         <members>LLC_BI__Loan__c.Unsatisfied_Conditions</members>
         <members>LLC_BI__Loan__c.Withdrawn_Notification_Received_Date</members>

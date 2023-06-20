@@ -108,14 +108,15 @@
                 <label>Restricted report from an appraiser</label>
             </value>
             <value>
-                <fullName>Not in Flood Zone</fullName>
-                <default>false</default>
-                <label>Not in Flood Zone</label>
-            </value>
-            <value>
                 <fullName>In Flood Zone</fullName>
                 <default>false</default>
                 <label>In Flood Zone</label>
+            </value>
+            <value>
+                <fullName>Not in Flood Zone</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Not in Flood Zone</label>
             </value>
         </valueSetDefinition>
         <valueSettings>
@@ -193,10 +194,6 @@
         <valueSettings>
             <controllingFieldValue>Evaluations</controllingFieldValue>
             <valueName>Restricted report from an appraiser</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Flood Approval Process</controllingFieldValue>
-            <valueName>Not in Flood Zone</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Flood Approval Process</controllingFieldValue>

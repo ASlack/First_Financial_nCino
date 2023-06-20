@@ -6,21 +6,144 @@
     <description>This Record Type will Apply to Commercial Loans</description>
     <label>Commercial Loan Record Type</label>
     <picklistValues>
-        <picklist>LLC_BI__Loan_Class__c</picklist>
+        <picklist>EscrowItems__c</picklist>
         <values>
-            <fullName>New Loan</fullName>
+            <fullName>FL</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Refinance Existing Loan With Lender</fullName>
+            <fullName>HO</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Secured Renewal</fullName>
+            <fullName>MD</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Unsecured Renewal</fullName>
+            <fullName>TX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WI</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>JHJX__CallReportCode__c</picklist>
+        <values>
+            <fullName>10A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1A1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1A2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1C1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1C2A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1C2B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1E1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1E2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2A1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2C1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2C2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>99</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9B1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9B2</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -76,80 +199,431 @@
         </values>
     </picklistValues>
     <picklistValues>
-        <picklist>Lost_Reason__c</picklist>
+        <picklist>LLC_BI__Product__c</picklist>
         <values>
-            <fullName>Competitor- Other</fullName>
+            <fullName>1-4 Fam Inv Prop 15F</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Competitor- Price</fullName>
+            <fullName>1-4 Fam Inv Prop 20Y</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Competitor- Product%2FService Set Gap%2C</fullName>
+            <fullName>ACH Cr Risk Limits</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Competitor-Product%2FService Functionality Gap</fullName>
+            <fullName>Agricultural 360</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Does not need services</fullName>
+            <fullName>Agricultural 365</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Lost Loan Relationship</fullName>
+            <fullName>C%26I 30%2F360</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Lost to Another Bank</fullName>
+            <fullName>C%26I 360</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Price</fullName>
+            <fullName>C%26I 365</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Product%2FService Functionality Gap</fullName>
+            <fullName>C%26I Precomp</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Product%2FService Gap</fullName>
+            <fullName>CV19 Bus 360 2nd Funding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Comm Long Amort</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial 1-4 360</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial 1-4 365</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial 1-4 MMCT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial Indirect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial LT fixed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial RE 10 Y Fixed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cons %26 Dev LT Fixed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cons %26 Dev Long Amtz</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cons 1-4 365 Fix P%26I - SR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cons C%26L 365 Fix Int</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cons C%26L 365 Fix Mat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cons C%26L 365 Fix P%26I</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cons C%26L 365 Fix P%26I - Long Term</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cons C%26L 365 Fix P%2BI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cons C%26L 365 Fix Pri</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cons C%26L 365 Var Int</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cons C%26L 365 Var Mat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cons C%26L 365 Var P%26I</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cons C%26L 365 Var P%2BI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cons Lot Var 365 P%26I</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cons Non Auto 365 - XX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Const %26 Dev 360 %28Consumer Lot%2FLand%2C Comm%27l%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Const %26 Dev 365 %28Consumer Lot%2FLand%2C Comm%27l%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dealer Draft Line</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Farm RE 360</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Farm RE 360 - FW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Farm RE 365</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Farm RE LT Fixed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HE Land Fixed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HE Land Var</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HELOC Land</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HELOC Repayment Land</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IRB 30%2F360</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IRB 360%2F30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IRB 360%2F360</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IRB Actual 365%2F360</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IRB Actual 365%2F365</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lease - Indian Ink</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lease Deprecation - Indian Ink</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Municipality 360</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Municipality 365</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Municipality LT Fix</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NO Occup LT Fixed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NO Occup Long Amtz</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Own Occ CRE 360</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Own Occ CRE 365</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Loans 30%2F360</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Loans 360</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Loans 365</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Own Occup LT Fixed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Own Occup Long Amtz</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Owner Occ CRE 360</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Owner Occ CRE 365</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QSCB 30%2F360</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QSCB A%2F365 Fix P%26I</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>R%2FE 30%2F360 FIXED P%26I - RS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>R%2FE 30%2F360 FIXED P%26I - RW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rural Farm Land 360</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rural Farm Land 365</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rural Land 360</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rural Land 365</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SBA 30%2F360 NON RE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Secondary Affor MMCT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tax Exempt Lease</fullName>
             <default>false</default>
         </values>
     </picklistValues>
     <picklistValues>
-        <picklist>ffin_Prepayment_Penalty_Setup__c</picklist>
+        <picklist>Real_Estate_Sub_Type__c</picklist>
         <values>
-            <fullName>3%2F2%2F1%2C first 3 years %28Any Principal Reduction%29</fullName>
+            <fullName>Assisted Living Facility</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>3%2F2%2F1%2C first 3 years %28Refinance Only%29</fullName>
+            <fullName>Car Washes</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>3%2F2%2F2%2C first 3 years %28Any Principal Reduction%29</fullName>
+            <fullName>Church</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>3%2F2%2F2%2C first 3 years %28Refinance Only%29</fullName>
+            <fullName>Convenience Stores</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>3%2F3%2F2%2F1%2C first 4 years %28Any Principal Reduction%29</fullName>
+            <fullName>Daycare Facility</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>3%2F3%2F2%2F1%2C first 4 years %28Refinance Only%29</fullName>
+            <fullName>Dealership</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>5%2F4%2F3%2F2%2F1%2C first 5 years %28Any Principal Reduction%29</fullName>
+            <fullName>For Profit Schools</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>5%2F4%2F3%2F2%2F1%2C first 5 years %28Refinance Only%29</fullName>
+            <fullName>Funeral Homes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Commercial Warehouse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gym%2FDance%2FSports Facility</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare - Single-Tenant Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hotel %2F Motel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturing Plant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medical %E2%80%93 ER Facility %2F Surgery Centers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multi-Tenant Office Space %E2%80%93 Medical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multi-Tenant Office Space %E2%80%93 Non-Medical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multi-Tenant Shopping Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nonprofit School %2F College %2F University</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nursing Homes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Office - Single-Tenant Non-healthcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RV Parks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Restaurants %E2%80%93 Fast Food %2F Fast Casual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Restaurants %E2%80%93 Table Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail - Big box</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail - Single-Tenant %2F Free Standing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Self-Storage Facilities</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TakeoutCommitmentonPermanentMtg__c</picklist>
+        <values>
+            <fullName>First Financial In-House</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>First Financial Mortgage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
             <default>false</default>
         </values>
     </picklistValues>
