@@ -29396,6 +29396,7 @@
         <members>Sub_Loan_Update_Stage_when_Parent_Loan_Stage_is_Updated</members>
         <members>Valuation_Auto_Submit</members>
         <members>X1st_Lien_On_Dwelling_Determined_Date</members>
+        <members>nCino_Record_Triggered_Total_Exposure_Async_Recalculation</members>
         <members>nCino__IALAutoDecision</members>
         <members>nCino__ILCreditPreProcessing</members>
         <members>nCino__ILFindExistingValidCreditReport</members>
