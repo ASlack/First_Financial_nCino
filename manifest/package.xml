@@ -17009,6 +17009,7 @@
         <members>LLC_BI__Credit_Memo_Modifcation__c.MAP100_Short_Term_Extension</members>
         <members>LLC_BI__Credit_Memo_Modifcation__c.MAP200_Change_Memo_AP_Not_Required</members>
         <members>LLC_BI__Credit_Memo_Modifcation__c.MAP200_Change_Memo_AP_Required</members>
+        <members>LLC_BI__Credit_Memo_Modifcation__c.Short_Term_Extension_All_Regions</members>
         <members>LLC_BI__Loan__c.FFIN_Loan_10_Rule</members>
         <members>LLC_BI__Loan__c.FFIN_Loan_Abilene</members>
         <members>LLC_BI__Loan__c.FFIN_Loan_Abilene_v2</members>
@@ -20017,7 +20018,14 @@
         <members>LLC_BI__Credit_Memo_Modifcation__c.Borrower_Removed__c</members>
         <members>LLC_BI__Credit_Memo_Modifcation__c.CLA_Budget_Amount_Change__c</members>
         <members>LLC_BI__Credit_Memo_Modifcation__c.CLA_Budget_Line_Item_Change__c</members>
+        <members>LLC_BI__Credit_Memo_Modifcation__c.CollateralAdded__c</members>
+        <members>LLC_BI__Credit_Memo_Modifcation__c.CollateralReleasePriceChange__c</members>
+        <members>LLC_BI__Credit_Memo_Modifcation__c.CollateralRemoved__c</members>
         <members>LLC_BI__Credit_Memo_Modifcation__c.CovenantChange__c</members>
+        <members>LLC_BI__Credit_Memo_Modifcation__c.CurtailmentStructureChange__c</members>
+        <members>LLC_BI__Credit_Memo_Modifcation__c.GuarantyStructureChange__c</members>
+        <members>LLC_BI__Credit_Memo_Modifcation__c.InterestRateDecrease__c</members>
+        <members>LLC_BI__Credit_Memo_Modifcation__c.InterestRateIncrease__c</members>
         <members>LLC_BI__Credit_Memo_Modifcation__c.LLC_BI__Amount_Change__c</members>
         <members>LLC_BI__Credit_Memo_Modifcation__c.LLC_BI__Approval_Required__c</members>
         <members>LLC_BI__Credit_Memo_Modifcation__c.LLC_BI__Approval_Status__c</members>
@@ -20046,11 +20054,15 @@
         <members>LLC_BI__Credit_Memo_Modifcation__c.LLC_BI__lookupKey__c</members>
         <members>LLC_BI__Credit_Memo_Modifcation__c.Last_Approver_from_Loan__c</members>
         <members>LLC_BI__Credit_Memo_Modifcation__c.Length_of_Short_Term_Extension__c</members>
+        <members>LLC_BI__Credit_Memo_Modifcation__c.LoanAgreementChanges__c</members>
         <members>LLC_BI__Credit_Memo_Modifcation__c.LoanAmountDecrease__c</members>
         <members>LLC_BI__Credit_Memo_Modifcation__c.LoanAmountIncrease__c</members>
+        <members>LLC_BI__Credit_Memo_Modifcation__c.LoanFeeChanges__c</members>
         <members>LLC_BI__Credit_Memo_Modifcation__c.Loan_Information_Change__c</members>
         <members>LLC_BI__Credit_Memo_Modifcation__c.Loan_Officer__c</members>
         <members>LLC_BI__Credit_Memo_Modifcation__c.Maturity_Date_at_time_of_Creation__c</members>
+        <members>LLC_BI__Credit_Memo_Modifcation__c.PaymentStructure__c</members>
+        <members>LLC_BI__Credit_Memo_Modifcation__c.PolicyExceptionsChanges__c</members>
         <members>LLC_BI__Credit_Memo_Modifcation__c.ReApprovalAfter90Days__c</members>
         <members>LLC_BI__Credit_Memo_Modifcation__c.Region__c</members>
         <members>LLC_BI__Credit_Memo_Modifcation__c.cm_Approval_Required_Formula__c</members>
@@ -28951,6 +28963,7 @@
         <members>LLC_BI__Loan__c.Loan_Deal_Proposal_Edit_Card</members>
         <members>LLC_BI__Loan__c.MemoCategoryLoanInformation</members>
         <members>LLC_BI__Loan__c.MemoNewRateRequested</members>
+        <members>LLC_BI__Loan__c.MemoPayment</members>
         <members>LLC_BI__Loan__c.Participation_Bought_Details</members>
         <members>LLC_BI__Loan__c.Participation_Details_Custom</members>
         <members>LLC_BI__Loan__c.PricingReadOnly</members>
