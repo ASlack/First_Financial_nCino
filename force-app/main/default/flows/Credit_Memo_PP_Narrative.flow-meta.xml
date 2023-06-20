@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>58.0</apiVersion>
+    <assignments>
+        <name>Assign_Financial_Review</name>
+        <label>Assign Financial Review</label>
+        <locationX>165</locationX>
+        <locationY>1163</locationY>
+        <assignmentItems>
+            <assignToReference>Get_Primary_Relationship.FinancialReviewNarrative__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>&lt;div&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;The borrower has provided the bank with tax returns for 2019 – 2021 as well as interim company prepared financial statements for &lt;/span&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;the 1&lt;/span&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;st &lt;/span&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;quarter 2022 and 2023. The provided financial statements have been spread (attached) and summarized below for review:&lt;/span&gt;&lt;/div&gt;</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Impact_from_Potential_Economic_Recession</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Impact_Economic_Recession</name>
+        <label>Assign Impact Economic Recession</label>
+        <locationX>165</locationX>
+        <locationY>1463</locationY>
+        <assignmentItems>
+            <assignToReference>Get_Primary_Relationship.ImpactfromPotentialEconomicRecession__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>&lt;div&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;Based on the servicing officer’s conversations with the borrower,...&lt;/span&gt;&lt;/div&gt; &lt;div&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;Here are a few potential follow up questions:&lt;/span&gt;&lt;/div&gt; &lt;div&gt;&amp;nbsp;&lt;/div&gt; &lt;div&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;General questions:&lt;/span&gt;&lt;/div&gt; &lt;div&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;1. Comfortable with the cash position to cover and short-term deficits?&lt;/span&gt;&lt;/div&gt; &lt;div&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;2. Plans to cut expenses / temporarily improve cash flow (layoffs, reduced operating hours, apply for SBA loan, etc.)&lt;/span&gt;&lt;/div&gt; &lt;div&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;3. Comfortable with Guarantor’s liquidity and other business interests / contingent debt?&lt;/span&gt;&lt;/div&gt; &lt;div&gt;&amp;nbsp;&lt;/div&gt; &lt;div&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;For leased real estate (includes residential, self-storage, and commercial):&lt;/span&gt;&lt;/div&gt; &lt;div&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;1. Concern with tenants being unable to pay rent?&lt;/span&gt;&lt;/div&gt; &lt;div&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;2. Any plan to offer “rent relief” (i.e. late payment forgiveness, payment deferral, etc.)?&lt;/span&gt;&lt;/div&gt; &lt;div&gt;&amp;nbsp;&lt;/div&gt; &lt;div&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;Operating lines:&lt;/span&gt;&lt;/div&gt; &lt;div&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;1. Is there any concern with the borrower’s customer base (i.e. trade obligors who might no longer be able to pay)?&lt;/span&gt;&lt;/div&gt; &lt;div&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;2. Expecting accounts receivable turnover to start to lengthen?&lt;/span&gt;&lt;/div&gt; &lt;div&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;3. Inventory spoilage / obsolesce?&lt;/span&gt;&lt;/div&gt;</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Leverage_Narrative_Check</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Leverage_Narrative</name>
+        <label>Assign Leverage Narrative</label>
+        <locationX>165</locationX>
+        <locationY>1763</locationY>
+        <assignmentItems>
+            <assignToReference>Get_Primary_Relationship.LeverageNarrative__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>&lt;ul&gt; &lt;li&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;___ reports ______ leverage with a ____ trend over the periods analyzed.&lt;/span&gt;&lt;/li&gt; &lt;li&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;Non-current assets are centered in ____, ____, and ____. Non-current liabilities are centered in ____, ____, and ____.&lt;/span&gt;&lt;/li&gt; &lt;li&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;Detail changes in leverage (includes both the current ratio and working capital).&lt;/span&gt;&lt;/li&gt; &lt;/ul&gt;</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Liquidity_Narrative_Check</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Liquidity_Narrative</name>
+        <label>Assign Liquidity Narrative</label>
+        <locationX>165</locationX>
+        <locationY>2063</locationY>
+        <assignmentItems>
+            <assignToReference>Get_Primary_Relationship.LiquidityNarrative__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>&lt;ul&gt; &lt;li&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;___ reports_____ liquidity with a ____ trend over the periods analyzed.&lt;/span&gt;&lt;/li&gt; &lt;li&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;Current assets are centered in ____, ____, and ____. Current liabilities are centered in ____, ____, and ____.&lt;/span&gt;&lt;/li&gt; &lt;li&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;Detail changes in liquidity (includes both the current ratio and working capital).&lt;/span&gt;&lt;/li&gt; &lt;/ul&gt;</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Profitability_Narrative_Check</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Loan_Review_Comments</name>
+        <label>Assign Loan Review Comments</label>
+        <locationX>165</locationX>
+        <locationY>2663</locationY>
+        <assignmentItems>
+            <assignToReference>Get_Primary_Relationship.LoanReviewCommentsNarrative__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>&lt;p&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;A Loan Review analysis was most recently conducted on the subject relationship as of XX. No material deficiencies were noted &lt;/span&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;during the analysis, as a result, the credit rating remained at pass subsequent to the review. The credit was not discussed during &lt;/span&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;the onsite discussion.&lt;/span&gt;&lt;/p&gt; &lt;div&gt;&amp;nbsp;&lt;/div&gt; &lt;div&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;Due to the fact that the proposed request represents a potential new relationship to the bank, there is no historical Loan Review &lt;/span&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;analysis for the borrower or guarantors.&lt;/span&gt;&lt;/div&gt; &lt;div&gt;&amp;nbsp;&lt;/div&gt; &lt;div&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;The relationship’s total committed debt has historically been below Loan Review’s threshold, accordingly, there is no historical Loan &lt;/span&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;Review analysis for the borrower or guarantors.&lt;/span&gt;&lt;/div&gt;</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Account</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Profitability_Narrative</name>
+        <label>Assign Profitability Narrative</label>
+        <locationX>165</locationX>
+        <locationY>2363</locationY>
+        <assignmentItems>
+            <assignToReference>Get_Primary_Relationship.ProfitabilityNarrative__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>&lt;ul&gt; &lt;li&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;___ reports ______ revenue and profitability with a ____ trend over the periods analyzed.&lt;/span&gt;&lt;/li&gt; &lt;li&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;Note fluctuations in revenue and the cause(s).&lt;/span&gt;&lt;/li&gt; &lt;li&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;Operating expenses and centered in ____, ____, &amp;amp; ____ and reflect a ____ trend over the periods analyzed.&lt;/span&gt;&lt;/li&gt; &lt;li&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;The difference in operating and net profit is ____&lt;/span&gt;&lt;/li&gt; &lt;/ul&gt;</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loan_Review_Comments_Check</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Narrative_Values</name>
+        <label>Set Narrative Values</label>
+        <locationX>165</locationX>
+        <locationY>647</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.GuarantorComakerCommentsNarrative__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>&lt;div&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;____ has provided the bank with a personal financial statement as of 00/00/00, which is summarized below (along with previously provided financial statements):&lt;/span&gt;&lt;/div&gt; &lt;div&gt;&amp;nbsp;&lt;/div&gt; &lt;div&gt; &lt;div&gt; &lt;div&gt; &lt;div id=&quot;mce_0&quot; contenteditable=&quot;true&quot;&gt; &lt;p&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;&lt;strong&gt;Life Insurance&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;div&gt; &lt;div&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;The provided personal financial statement(s) do not indicate if any life insurance policies are currently held by _____ and no further inquiry was made by the officer.&lt;/span&gt;&lt;/div&gt; &lt;div&gt;&amp;nbsp;&lt;/div&gt; &lt;div&gt; &lt;div&gt; &lt;div&gt; &lt;div id=&quot;mce_4&quot; contenteditable=&quot;true&quot;&gt; &lt;div&gt; &lt;div&gt; &lt;div id=&quot;mce_4&quot; contenteditable=&quot;true&quot;&gt; &lt;div&gt; &lt;div&gt; &lt;div id=&quot;mce_4&quot; contenteditable=&quot;true&quot;&gt; &lt;p&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;&lt;strong&gt;Notes to the Personal Financial Statement(s) above:&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt; &lt;p&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;1. The provided statements are joint (with wife,___), however, only Jim will guarantee the subject request.&lt;/span&gt;&lt;/p&gt; &lt;p&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;2. Account statements for reported liquidity were not provided to verify balances and/or account styling. Cash is primarily held by _____. If their accounts are with FFB – the verification note doesn’t apply – but state their FFB current balances.&lt;/span&gt;&lt;/p&gt; &lt;p&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;3. See the table below for further details of the Closely Held Securities:&lt;/span&gt;&lt;/p&gt; &lt;p&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;4. See the table below for further details on Real Estate Investments:&lt;/span&gt;&lt;/p&gt; &lt;p&gt;&amp;nbsp;&lt;/p&gt; &lt;div&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;Note: The principal’s equity position reported in the provided financial statement assumes 100% ownership of the real estate; however, based on information provided by _____, the principal does not have full ownership of the property(s) resulting in overstated values. Accordingly, an adjusted equity calculation has been included based on the principal’s actual ownership percentage with the adjusted value reflected in the financial statement summary above.&lt;/span&gt;&lt;/div&gt; &lt;div&gt;&amp;nbsp;&lt;/div&gt; &lt;div&gt; &lt;div&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;&lt;strong&gt;Contingent Debt&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt; &lt;div&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;The provided personal financial statement did not include a contingent debt listing, which is a noted policy exception. The provided personal financial statement included a contingent debt listing, which is summarized below:&lt;/span&gt;&lt;/div&gt; &lt;div&gt;&amp;nbsp;&lt;/div&gt; &lt;div&gt; &lt;div&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;&lt;strong&gt;Tax Returns:&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt; &lt;div&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;____ has also provided the bank with personal tax returns for 2015 – 2018 reflecting AGIs of $000M, $000M, $000M and $000M, respectively. A summary of the provided tax returns is below:&lt;/span&gt;&lt;/div&gt; &lt;div&gt;&amp;nbsp;&lt;/div&gt; &lt;div&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;&lt;strong&gt;Notes to the Personal Tax Return(s) above:&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt; &lt;div&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;1. The provided tax returns are joint (with wife,___), however, only ____ will guarantee the subject request due to....&lt;/span&gt;&lt;/div&gt; &lt;div&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;2. Wages are primarily...&lt;/span&gt;&lt;/div&gt; &lt;div&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;3. Schedule E Income is centered in pass through income from related entities. A chart summarizing the borrower’s / guarantor’s Schedule E income is below for review:&lt;/span&gt;&lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt;</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Narratives</targetReference>
+        </connector>
+    </assignments>
+    <constants>
+        <description>Credit Memo - Do Not Use account</description>
+        <name>CreditMemoDoNotUse</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Credit Memo - Do Not Use</stringValue>
+        </value>
+    </constants>
+    <constants>
+        <name>CreditMemoPP</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>New Credit Memo - DO NOT USE - PP - June 2023</stringValue>
+        </value>
+    </constants>
+    <decisions>
+        <name>Account_Changed</name>
+        <label>Account Changed</label>
+        <locationX>451</locationX>
+        <locationY>431</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Account_Is_Changed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.LLC_BI__Account__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record__Prior.LLC_BI__Account__c</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Product_Package_Narrative_Check</targetReference>
+            </connector>
+            <label>Account Is Changed</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Financial_Review_Check</name>
+        <label>Financial Review Check</label>
+        <locationX>297</locationX>
+        <locationY>1055</locationY>
+        <defaultConnector>
+            <targetReference>Impact_from_Potential_Economic_Recession</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Financial_Review_Narrative</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Primary_Relationship.FinancialReviewNarrative__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Financial_Review</targetReference>
+            </connector>
+            <label>Financial Review Narrative</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Impact_from_Potential_Economic_Recession</name>
+        <label>Impact from Potential Economic Recession</label>
+        <locationX>297</locationX>
+        <locationY>1355</locationY>
+        <defaultConnector>
+            <targetReference>Leverage_Narrative_Check</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Impact_from_Potential_Economic_Recession_Null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Primary_Relationship.ImpactfromPotentialEconomicRecession__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Impact_Economic_Recession</targetReference>
+            </connector>
+            <label>Impact from Potential Economic Recession Null</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Integration_Trigger_Kill_Switch</name>
+        <label>Integration Trigger Kill Switch</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <defaultConnector>
+            <targetReference>Account_Changed</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Kill_Switch_True</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Permission.Integration_Trigger_Kill_Switch</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$User.No_Workflow__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Kill Switch = True</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Leverage_Narrative_Check</name>
+        <label>Leverage Narrative Check</label>
+        <locationX>297</locationX>
+        <locationY>1655</locationY>
+        <defaultConnector>
+            <targetReference>Liquidity_Narrative_Check</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Leverage_Narrative_Null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Primary_Relationship.LeverageNarrative__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Leverage_Narrative</targetReference>
+            </connector>
+            <label>Leverage Narrative Null</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Liquidity_Narrative_Check</name>
+        <label>Liquidity Narrative Check</label>
+        <locationX>297</locationX>
+        <locationY>1955</locationY>
+        <defaultConnector>
+            <targetReference>Profitability_Narrative_Check</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Liquidity_Narrative_Null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Primary_Relationship.LiquidityNarrative__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Liquidity_Narrative</targetReference>
+            </connector>
+            <label>Liquidity Narrative Null</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Loan_Review_Comments_Check</name>
+        <label>Loan Review Comments Check</label>
+        <locationX>297</locationX>
+        <locationY>2555</locationY>
+        <defaultConnector>
+            <targetReference>Update_Account</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Loan_Review_Comments_Null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Primary_Relationship.LoanReviewCommentsNarrative__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Loan_Review_Comments</targetReference>
+            </connector>
+            <label>Loan Review Comments Null</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Product_Package_Narrative_Check</name>
+        <label>Product Package Narrative Check</label>
+        <locationX>297</locationX>
+        <locationY>539</locationY>
+        <defaultConnector>
+            <targetReference>Update_Narratives</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Set_Guarantor_CoMaker_Comments</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.GuarantorComakerCommentsNarrative__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Narrative_Values</targetReference>
+            </connector>
+            <label>Set Guarantor CoMaker Comments</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Profitability_Narrative_Check</name>
+        <label>Profitability Narrative Check</label>
+        <locationX>297</locationX>
+        <locationY>2255</locationY>
+        <defaultConnector>
+            <targetReference>Loan_Review_Comments_Check</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Profitability_Narrative_Null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Primary_Relationship.ProfitabilityNarrative__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Profitability_Narrative</targetReference>
+            </connector>
+            <label>Profitability Narrative Null</label>
+        </rules>
+    </decisions>
+    <description>When a Product Package is created or if the Account is changed, flow will fire to set default credit memo narratives</description>
+    <environments>Default</environments>
+    <interviewLabel>Credit Memo PP Narrative {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Product Package Created/Updated - Set Credit Memo Narratives</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Primary_Relationship</name>
+        <label>Get Primary Relationship</label>
+        <locationX>297</locationX>
+        <locationY>947</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Financial_Review_Check</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.LLC_BI__Account__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Account</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>FinancialReviewNarrative__c</queriedFields>
+        <queriedFields>ImpactfromPotentialEconomicRecession__c</queriedFields>
+        <queriedFields>LeverageNarrative__c</queriedFields>
+        <queriedFields>LiquidityNarrative__c</queriedFields>
+        <queriedFields>LoanReviewCommentsNarrative__c</queriedFields>
+        <queriedFields>ProfitabilityNarrative__c</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Account</name>
+        <label>Update Account</label>
+        <locationX>297</locationX>
+        <locationY>2855</locationY>
+        <inputReference>Get_Primary_Relationship</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Narratives</name>
+        <label>Update Narratives</label>
+        <locationX>297</locationX>
+        <locationY>839</locationY>
+        <connector>
+            <targetReference>Get_Primary_Relationship</targetReference>
+        </connector>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Integration_Trigger_Kill_Switch</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>LLC_BI__Account__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <object>LLC_BI__Product_Package__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>FinancialReview</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>GuarantorComakerComments</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>ImpactFromPotentialEconomic</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>Leverage</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>Liquidity</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>LoanReviewComments</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>Profitability</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>
