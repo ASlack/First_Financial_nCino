@@ -3,6 +3,7 @@
     <hasActivationRequired>false</hasActivationRequired>
     <label>Loan Ops Persona</label>
     <permissionSets>LLCLP__Laser_Pro</permissionSets>
+    <permissionSets>Loan_Ops_Home_Page_Permission_Set</permissionSets>
     <permissionSets>NDOC__Document_Manager_Delete_Placeholders</permissionSets>
     <permissionSets>NDOC__Document_Manager_Review_Documents</permissionSets>
     <permissionSets>NDOC__Import_Relationship_Docs_to_Loan_DocMan</permissionSets>
@@ -13,6 +14,7 @@
     <permissionSets>nCino_Create_Edit_Policy_Exceptions</permissionSets>
     <permissionSets>nCino_Create_Memos</permissionSets>
     <permissionSets>nCino_Credit_Manager_Review_View_Access</permissionSets>
+    <permissionSets>nCino_Doc_Prep_Quality_Control_Required_View_Access</permissionSets>
     <permissionSets>nCino_Read_Create_Edit_Rate_Payment_Streams</permissionSets>
     <permissionSets>nCino_Read_Create_Edit_Service_Mgmt</permissionSets>
     <permissionSets>nFORCE__UI_Framework_User</permissionSets>

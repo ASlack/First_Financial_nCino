@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>UIEscrowCondRendered</fullName>
-    <description>Escrow checkbox for Residential Real Estate product types</description>
+    <fullName>Takeout_Commitment</fullName>
+    <description>Takeout Commitment fields for Construction &amp; Development RE subtypes</description>
     <displayedFields>
-        <field>ffin_Escrow__c</field>
+        <field>TakeoutCommitmentonPermanentMtg__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>EscrowItems__c</field>
+        <field>TakeoutCommitmentFrom__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
-    <label>UI - Escrow Cond Rendered</label>
+    <label>Takeout Commitment</label>
 </FieldSet>

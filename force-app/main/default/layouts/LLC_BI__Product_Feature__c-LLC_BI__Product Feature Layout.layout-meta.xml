@@ -44,6 +44,10 @@
                 <behavior>Edit</behavior>
                 <field>LLC_BI__Exclude_From_LoanProducts__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>LLC_BI__Interest_Accrual_Method__c</field>
+            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>

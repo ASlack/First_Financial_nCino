@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Copy_1_of_Notify_Lender_Assistant_of_Stage_Change</name>
+        <label>Copy 1 of Notify Lender &amp; Assistant of Stage Change</label>
+        <locationX>314</locationX>
+        <locationY>431</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <elementReference>LoanStageChangeNotificationMessage</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <actionCalls>
+        <name>Notify_Lender_Assistant_of_Stage_Change</name>
+        <label>Notify Lender &amp; Assistant of Stage Change</label>
+        <locationX>50</locationX>
+        <locationY>539</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <elementReference>LoanStageChangeNotificationMessage</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <apiVersion>57.0</apiVersion>
+    <decisions>
+        <name>Stage_Check</name>
+        <label>Stage Check</label>
+        <locationX>446</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Stage_Final_Review</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.LLC_BI__Stage__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Final Review</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Loan_Status</targetReference>
+            </connector>
+            <label>Stage = Final Review</label>
+        </rules>
+        <rules>
+            <name>Stage_Doc_Prep</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.LLC_BI__Stage__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Doc Prep</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_1_of_Notify_Lender_Assistant_of_Stage_Change</targetReference>
+            </connector>
+            <label>Stage = Doc Prep</label>
+        </rules>
+        <rules>
+            <name>Stage_Closing</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.LLC_BI__Stage__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Closing</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_2_of_Update_Loan_Status</targetReference>
+            </connector>
+            <label>Stage = Closing</label>
+        </rules>
+    </decisions>
+    <description>When Loan is moved to Final Review or Closing, update status to Open</description>
+    <environments>Default</environments>
+    <interviewLabel>Loan Fast Update - Update Status to Open {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Loan Fast Update - Update Status to Open</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Copy_2_of_Update_Loan_Status</name>
+        <label>Copy 2 of Update Loan Status</label>
+        <locationX>578</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>LLC_BI__Status__c</field>
+            <value>
+                <stringValue>Open</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Loan_Status</name>
+        <label>Update Loan Status</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <connector>
+            <targetReference>Notify_Lender_Assistant_of_Stage_Change</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>LLC_BI__Status__c</field>
+            <value>
+                <stringValue>Open</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>320</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Stage_Check</targetReference>
+        </connector>
+        <filterLogic>1 AND (2 OR 3 OR 4)</filterLogic>
+        <filters>
+            <field>LLC_BI__Stage__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>LLC_BI__Stage__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Final Review</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>LLC_BI__Stage__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Closing</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>LLC_BI__Stage__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Doc Prep</stringValue>
+            </value>
+        </filters>
+        <object>LLC_BI__Loan__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>LoanStageChangeNotificationMessage</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>@[{!$Record.LLC_BI__Loan_Officer__c}] @[{!$Record.cm_Loan_Assistant__c}] - Loan {!$Record.Name} has been moved to {!$Record.LLC_BI__Stage__c}.</text>
+    </textTemplates>
+</Flow>
