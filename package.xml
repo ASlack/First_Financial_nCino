@@ -19629,6 +19629,7 @@
         <members>LLC_BI__Collateral_History__c.LLC_BI__Type__c</members>
         <members>LLC_BI__Collateral_Type_CCL__c.LLC_BI__Closing_Checklist__c</members>
         <members>LLC_BI__Collateral_Type_CCL__c.LLC_BI__Collateral_Type__c</members>
+        <members>LLC_BI__Collateral_Type__c.Data_Migration_Collateral_Code__c</members>
         <members>LLC_BI__Collateral_Type__c.LLCLP__Is_Excluded_From_LaserPro_Extract__c</members>
         <members>LLC_BI__Collateral_Type__c.LLC_BI__Active__c</members>
         <members>LLC_BI__Collateral_Type__c.LLC_BI__Advance_Rate__c</members>

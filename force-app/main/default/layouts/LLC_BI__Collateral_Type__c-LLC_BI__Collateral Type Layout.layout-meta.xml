@@ -27,6 +27,10 @@
                 <behavior>Edit</behavior>
                 <field>LLC_BI__Collateral_Code__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Data_Migration_Collateral_Code__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

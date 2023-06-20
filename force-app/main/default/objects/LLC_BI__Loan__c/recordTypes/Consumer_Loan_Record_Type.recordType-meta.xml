@@ -6,136 +6,7 @@
     <description>This Record Type will Apply to Consumer Loans</description>
     <label>Consumer Loan Record Type</label>
     <picklistValues>
-        <picklist>LLC_BI__Product_Type__c</picklist>
-        <values>
-            <fullName>Agricultural</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Commercial</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Construction %26 Development RE</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Consumer Auto</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Consumer Non-Auto</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Consumer Residential RE</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Farm RE</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Lease</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Municipality</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Non-Owner Occupied CRE</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Owner Occupied CRE</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Residential RE</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>Lost_Reason__c</picklist>
-        <values>
-            <fullName>Competitor- Other</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Competitor- Price</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Competitor- Product%2FService Set Gap%2C</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Competitor-Product%2FService Functionality Gap</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Does not need services</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Lost Loan Relationship</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Lost to Another Bank</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Price</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Product%2FService Functionality Gap</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Product%2FService Gap</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>ffin_Prepayment_Penalty_Setup__c</picklist>
-        <values>
-            <fullName>3%2F2%2F1%2C first 3 years %28Any Principal Reduction%29</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>3%2F2%2F1%2C first 3 years %28Refinance Only%29</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>3%2F2%2F2%2C first 3 years %28Any Principal Reduction%29</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>3%2F2%2F2%2C first 3 years %28Refinance Only%29</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>3%2F3%2F2%2F1%2C first 4 years %28Any Principal Reduction%29</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>3%2F3%2F2%2F1%2C first 4 years %28Refinance Only%29</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>5%2F4%2F3%2F2%2F1%2C first 5 years %28Any Principal Reduction%29</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>5%2F4%2F3%2F2%2F1%2C first 5 years %28Refinance Only%29</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>ffin_Purpose_Code__c</picklist>
+        <picklist>Loan_Collateral_Sub_Type__c</picklist>
         <values>
             <fullName>1</fullName>
             <default>false</default>
@@ -145,31 +16,35 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>11</fullName>
+            <fullName>100</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>13</fullName>
+            <fullName>110</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>15</fullName>
+            <fullName>130</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>16</fullName>
+            <fullName>140</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>17</fullName>
+            <fullName>150</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>18</fullName>
+            <fullName>160</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>2</fullName>
+            <fullName>170</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>180</fullName>
             <default>false</default>
         </values>
         <values>
@@ -177,35 +52,39 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>21</fullName>
+            <fullName>200</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>22</fullName>
+            <fullName>210</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>23</fullName>
+            <fullName>220</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>24</fullName>
+            <fullName>230</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>25</fullName>
+            <fullName>240</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>26</fullName>
+            <fullName>260</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>27</fullName>
+            <fullName>270</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>3</fullName>
+            <fullName>280</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>290</fullName>
             <default>false</default>
         </values>
         <values>
@@ -213,39 +92,59 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>31</fullName>
+            <fullName>300</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>32</fullName>
+            <fullName>320</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>33</fullName>
+            <fullName>330</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>34</fullName>
+            <fullName>340</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>35</fullName>
+            <fullName>350</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>36</fullName>
+            <fullName>355</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>37</fullName>
+            <fullName>360</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>38</fullName>
+            <fullName>370</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>39</fullName>
+            <fullName>372</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>374</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>375</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>380</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>385</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>390</fullName>
             <default>false</default>
         </values>
         <values>
@@ -253,55 +152,95 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>45</fullName>
+            <fullName>400</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>46</fullName>
+            <fullName>410</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>48</fullName>
+            <fullName>420</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>5</fullName>
+            <fullName>430</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>50</fullName>
+            <fullName>440</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>51</fullName>
+            <fullName>450</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>52</fullName>
+            <fullName>460</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>53</fullName>
+            <fullName>470</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>55</fullName>
+            <fullName>480</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>56</fullName>
+            <fullName>485</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>57</fullName>
+            <fullName>490</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>58</fullName>
+            <fullName>500</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>59</fullName>
+            <fullName>510</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>520</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>525</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>530</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>535</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>540</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>550</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>560</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>570</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>580</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>590</fullName>
             <default>false</default>
         </values>
         <values>
@@ -309,27 +248,35 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>62</fullName>
+            <fullName>600</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>64</fullName>
+            <fullName>620</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>65</fullName>
+            <fullName>630</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>66</fullName>
+            <fullName>640</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>68</fullName>
+            <fullName>650</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>7</fullName>
+            <fullName>670</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>680</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>690</fullName>
             <default>false</default>
         </values>
         <values>
@@ -337,43 +284,91 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>71</fullName>
+            <fullName>700</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>72</fullName>
+            <fullName>710</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>73</fullName>
+            <fullName>711</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>74</fullName>
+            <fullName>720</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>75</fullName>
+            <fullName>722</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>76</fullName>
+            <fullName>723</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>77</fullName>
+            <fullName>730</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>78</fullName>
+            <fullName>740</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>79</fullName>
+            <fullName>741</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>8</fullName>
+            <fullName>742</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>743</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>744</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>745</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>746</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>747</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>748</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>750</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>760</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>770</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>771</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>780</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>790</fullName>
             <default>false</default>
         </values>
         <values>
@@ -381,39 +376,174 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>81</fullName>
+            <fullName>800</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>82</fullName>
+            <fullName>802</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>83</fullName>
+            <fullName>803</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>84</fullName>
+            <fullName>804</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>85</fullName>
+            <fullName>805</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>86</fullName>
+            <fullName>806</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>87</fullName>
+            <fullName>807</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>88</fullName>
+            <fullName>809</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>89</fullName>
+            <fullName>810</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>820</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>830</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>840</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>850</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>860</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>862</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>864</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>870</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>880</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>890</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>90</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>900</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>910</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>911</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>920</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>925</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>930</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>935</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>940</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>950</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>960</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>970</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>980</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>99</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>999</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Loan_Collateral_Type__c</picklist>
+        <values>
+            <fullName>Agricultural</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Automotive%2C Equipment%2C Etc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Depository Accounts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mineral Interests</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non Real Estate Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Real Estate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Securities</fullName>
             <default>false</default>
         </values>
     </picklistValues>

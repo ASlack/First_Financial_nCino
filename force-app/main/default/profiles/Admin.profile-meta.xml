@@ -6423,6 +6423,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Collateral_Type__c.Data_Migration_Collateral_Code__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>LLC_BI__Covenant2__c.ffin_Description__c</field>
         <readable>true</readable>
@@ -6580,6 +6585,16 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>LLC_BI__Loan__c.Last_Approver_for_Memo__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Loan__c.Loan_Collateral_Sub_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Loan__c.Loan_Collateral_Type__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -11612,6 +11627,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Integration_Default_Values__mdt-Integration Default Values Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>LLC_BI__Collateral_Type__c-LLC_BI__Collateral Type Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>LLC_BI__Collateral__c-Other</layout>
