@@ -6723,6 +6723,7 @@
         <members>LightningSelfRegisterController</members>
         <members>LightningSelfRegisterControllerTest</members>
         <members>LoanExtensionsDTO</members>
+        <members>LoanRoundRobinAssignInvocable</members>
         <members>MTRNS__ACompilableBase_v1</members>
         <members>MTRNS__ACompilableBase_v1Tests</members>
         <members>MTRNS__AFunctionBase_v1</members>
@@ -7816,6 +7817,8 @@
         <members>RecalculateRelationshipStatsTest</members>
         <members>RecordAssign__RoundRobinAssignInvocable</members>
         <members>RecordAssign__RoundRobinAssignTest</members>
+        <members>RoundRobinAssignInvocable</members>
+        <members>RoundRobinAssignTest</members>
         <members>RouteDeepClone</members>
         <members>RouteDeepCloneTest</members>
         <members>RouteGroupsWrapper</members>
@@ -17400,6 +17403,7 @@
         <members>MTRNS__nCino_MIM</members>
         <members>MTRNS__nCino_MTRNS</members>
         <members>RecordAssign__Record_Assigner</members>
+        <members>Record_Assigner</members>
         <members>nCino_LOS</members>
         <members>nFORCE__Data_Management_Administration</members>
         <members>nFORCE__nCino_User_Interface</members>
@@ -24731,6 +24735,16 @@
         <members>RecordAlert.Subject</members>
         <members>RecordAlert.ValidUntilDate</members>
         <members>RecordAlert.WhatId</members>
+        <members>RecordAssignConfiguration__c.Queue_Name__c</members>
+        <members>RecordAssignConfiguration__c.Routing_Method__c</members>
+        <members>RecordAssignMember__c.Active__c</members>
+        <members>RecordAssignMember__c.Last_Assignment__c</members>
+        <members>RecordAssignMember__c.Limit_Frequency__c</members>
+        <members>RecordAssignMember__c.Limit__c</members>
+        <members>RecordAssignMember__c.RecordAssignConfiguration__c</members>
+        <members>RecordAssignMember__c.Records_Assigned__c</members>
+        <members>RecordAssignMember__c.Under_Limit__c</members>
+        <members>RecordAssignMember__c.User__c</members>
         <members>RecordAssign__RecordAssignConfiguration__c.RecordAssign__Queue_Name__c</members>
         <members>RecordAssign__RecordAssignConfiguration__c.RecordAssign__Routing_Method__c</members>
         <members>RecordAssign__RecordAssignMember__c.RecordAssign__Active__c</members>
@@ -27735,6 +27749,8 @@
         <members>Recommendation</members>
         <members>RecordAction</members>
         <members>RecordAlert</members>
+        <members>RecordAssignConfiguration__c</members>
+        <members>RecordAssignMember__c</members>
         <members>RecordAssign__RecordAssignConfiguration__c</members>
         <members>RecordAssign__RecordAssignMember__c</members>
         <members>RecordMergeHistory</members>
@@ -28544,6 +28560,7 @@
         <members>MTRNS__mim2Home</members>
         <members>NAICS__c</members>
         <members>Onboard_New_Customer</members>
+        <members>RecordAssignConfiguration__c</members>
         <members>RecordAssign__RecordAssignConfiguration__c</members>
         <members>nArchive__nArchive__c</members>
         <members>nCino__CustomerOnboarding</members>
@@ -29845,6 +29862,8 @@
         <members>RecordAssign__Record_Assign_Configuration_Record_Page</members>
         <members>RecordAssign__Record_Assigner_UtilityBar</members>
         <members>RecordAssign__Record_Assignment_Member_Record_Page</members>
+        <members>Record_Assign_Configuration_Record_Page</members>
+        <members>Record_Assignment_Member_Record_Page</members>
         <members>Relationship_Layout</members>
         <members>Review_Layout</members>
         <members>Risk_Grade_Criteria_Layout</members>
@@ -29924,6 +29943,7 @@
         <members>Loan_Is_Ready_For_Review</members>
         <members>Loan_LO_or_LA_Changed_Update_Portal_Docs</members>
         <members>Loan_Lost_Reason_Set_Update_Status</members>
+        <members>Loan_On_Stage_Update_Assign_Loan_Team_Members</members>
         <members>Loan_RFI_Received</members>
         <members>Loan_Scheduled_Loan_Team_Chatter_Notifications</members>
         <members>Loan_Set_Initial_Application_Date</members>
@@ -30018,6 +30038,7 @@
         <members>Loan_Is_Ready_For_Review</members>
         <members>Loan_LO_or_LA_Changed_Update_Portal_Docs</members>
         <members>Loan_Lost_Reason_Set_Update_Status</members>
+        <members>Loan_On_Stage_Update_Assign_Loan_Team_Members</members>
         <members>Loan_RFI_Received</members>
         <members>Loan_Scheduled_Loan_Team_Chatter_Notifications</members>
         <members>Loan_Set_Initial_Application_Date</members>
@@ -30613,6 +30634,8 @@
         <members>Product2-LLC_BI__Product Layout</members>
         <members>Product2-Product Layout</members>
         <members>QuickText-Quick Text Layout</members>
+        <members>RecordAssignConfiguration__c-Record Assignment Configuration Layout</members>
+        <members>RecordAssignMember__c-Record Assignment Member Layout</members>
         <members>RecordAssign__RecordAssignConfiguration__c-RecordAssign__Record Assignment Configuration Layout</members>
         <members>RecordAssign__RecordAssignMember__c-RecordAssign__Record Assignment Member Layout</members>
         <members>Region__c-Region Layout</members>
@@ -31525,6 +31548,7 @@
         <members>Product2.LLC_BI__AllProducts</members>
         <members>Recommendation.All_Recommendations</members>
         <members>RecordAlert.all_record_alerts</members>
+        <members>RecordAssignConfiguration__c.All</members>
         <members>RecordAssign__RecordAssignConfiguration__c.RecordAssign__All</members>
         <members>ResidentialLoanApplication.All_ResidentialLoanApplications</members>
         <members>SCOC__LCREntity__c.SCOC__All</members>
@@ -31756,6 +31780,7 @@
         <members>NDOC__Universal_Document_Manager_Edit_Details_Permission</members>
         <members>Password_Does_Not_Expire</members>
         <members>RecordAssign__Record_Assigner</members>
+        <members>Record_Assigner</members>
         <members>Relationship_Officer_Loan_access</members>
         <members>SCOC__SCOC_Interaction_Fields</members>
         <members>SCOC__SCOC_create</members>
@@ -32163,8 +32188,11 @@
         <members>FFinGroupReports/RegionalTemplateReports/DeclineWithdrawn_Last_90_Days_6YK</members>
         <members>FFinGroupReports/RegionalTemplateReports/Delinquency_Report_S8j</members>
         <members>FFinGroupReports/RegionalTemplateReports/Loans_In_ProgressAmtBranches_NSU</members>
+        <members>FFinGroupReports/RegionalTemplateReports/Loans_with_Policy_Exceptions_09C</members>
+        <members>FFinGroupReports/RegionalTemplateReports/Loans_with_Policy_Exceptions_Full_Org_OyO</members>
         <members>FFinGroupReports/RegionalTemplateReports/Lost_Loans_within_last_90_days_6AV</members>
         <members>FFinGroupReports/RegionalTemplateReports/Maturing_Next_90_DaysBranch_yzR</members>
+        <members>FFinGroupReports/RegionalTemplateReports/Outstanding_Conditions_i4y</members>
         <members>FFinGroupReports/RegionalTemplateReports/Region_Pipeline_vhd</members>
         <members>FFinGroupReports/RegionalTemplateReports/Stage_DurationBookedBy_Branch_Pvl</members>
         <members>FFinGroupReports/RegionalTemplateReports/Stage_DurationNot_BookedBy_Branch_1Ma</members>
@@ -32334,10 +32362,12 @@
         <members>LLC_BI__Spread_Statement_Templates_with_Spread_Statement_Period_with_Spread_Statement</members>
         <members>LLC_BI__Spread_Statement_Templates_with_Spread_Statement_Records_with_Spread_Statement</members>
         <members>LLC_BI__Spread_Statement_Templates_with_Spread_Statement_Records_with_Spread_Statement1</members>
+        <members>Loan_Compliances_with_Relationship</members>
         <members>Loan_Documents2</members>
         <members>Loans_unmanaged</members>
         <members>Loans_with_Loan_Covenants</members>
         <members>Loans_with_Opportunity_History</members>
+        <members>Loans_with_Policy_Exceptions</members>
         <members>Product_Types_with_and_without_PSC</members>
         <members>Products_with_and_without_Product_Features</members>
         <members>Relationships_with_or_without_Connections2</members>
@@ -32359,6 +32389,7 @@
     </types>
     <types>
         <members>AdminCustomerPersonAccount</members>
+        <members>Appraisal_Services</members>
         <members>CEO</members>
         <members>Chief_Credit_Officer</members>
         <members>Chief_Operating_Officer</members>
@@ -32366,10 +32397,17 @@
         <members>Credit</members>
         <members>Credit_Analyst_Underwriter</members>
         <members>Customer_Portal_Account_Owner_User_Role</members>
+        <members>Doc_Prep_Manager</members>
+        <members>Flood_Services</members>
+        <members>Lending_Assistant</members>
         <members>Loan_Officer</members>
         <members>Loan_Operations</members>
         <members>Loan_Ops_DM_Reviewer</members>
+        <members>Loan_Processor</members>
+        <members>Loan_Support_Manager</members>
+        <members>Loan_Support_Specialist</members>
         <members>Portfolio_Manager</members>
+        <members>Review_Only_All</members>
         <members>Senior_Credit_Officer</members>
         <members>UserACustomerPersonAccount</members>
         <members>ZenCustomerPersonAccount</members>
@@ -33114,6 +33152,7 @@
         <members>LLC_BI__Underwriting_Bundle__c.LLC_BI__Date_Range_Must_Be_Valid</members>
         <members>LLC_BI__Underwriting_Bundle__c.LLC_BI__Template_Cannot_Have_Relationship</members>
         <members>LLC_BI__Underwriting_Summary__c.LLC_BI__start_date_cannot_be_after_end_date</members>
+        <members>RecordAssignMember__c.Chatter_User_Not_Allowed</members>
         <members>RecordAssign__RecordAssignMember__c.RecordAssign__Chatter_User_Not_Allowed</members>
         <members>SCOC__CreditBureau__c.SCOC__Enforce_Unique_Bureau_Name</members>
         <members>nDESIGN__Screen_Section__c.nDESIGN__Mandatory</members>
