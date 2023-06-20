@@ -31,10 +31,6 @@
     <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
     <finalApprovalActions>
         <action>
-            <name>Adverse_Action_Approved_Alert</name>
-            <type>Alert</type>
-        </action>
-        <action>
             <name>Adverse_Action_Set_Loan_Flag_to_1</name>
             <type>FieldUpdate</type>
         </action>
@@ -45,10 +41,6 @@
     </finalApprovalActions>
     <finalApprovalRecordLock>true</finalApprovalRecordLock>
     <finalRejectionActions>
-        <action>
-            <name>Adverse_Action_Rejected_Alert</name>
-            <type>Alert</type>
-        </action>
         <action>
             <name>Adverse_Action_Set_Status_to_Rejected</name>
             <type>FieldUpdate</type>
