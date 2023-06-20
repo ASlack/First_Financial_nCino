@@ -29344,6 +29344,8 @@
         <members>Contact_Create_Edit_Primary_Contact_Update</members>
         <members>Covenant_Update_Region_and_Account_upon_Account_Covenant_Creation</members>
         <members>Create_Product_Package_Zen</members>
+        <members>Credit_Memo_Loan_Narrative</members>
+        <members>Credit_Memo_PP_Narrative</members>
         <members>Employee_Loan_Reg_O_Invocable</members>
         <members>Entity_Involvement_Assign_Reg_0_and_Employee_on_Loan</members>
         <members>HMDA_Questionnaire_Rendering_Invocable</members>
