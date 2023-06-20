@@ -226,42 +226,25 @@
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
-                    <name>showLegacyActivityComposer</name>
+                    <name>height</name>
+                    <value>600</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>pageName</name>
+                    <value>nCino__ChecklistRelationship</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>showLabel</name>
                     <value>false</value>
                 </componentInstanceProperties>
-                <componentName>runtime_sales_activities:activityPanel</componentName>
-                <identifier>runtime_sales_activities_activityPanel</identifier>
+                <componentName>flexipage:visualforcePage</componentName>
+                <identifier>flexipage_visualforcePage6</identifier>
             </componentInstance>
         </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentName>forceChatter:recordFeedContainer</componentName>
-                <identifier>forceChatter_recordFeedContainer</identifier>
-            </componentInstance>
-        </itemInstances>
-        <name>Facet-30c0af5e-ccbe-47ef-9e86-04bcf2687e58</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>relatedListComponentOverride</name>
-                    <value>NONE</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>rowsToDisplay</name>
-                    <value>10</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>showActionBar</name>
-                    <value>true</value>
-                </componentInstanceProperties>
-                <componentName>force:relatedListContainer</componentName>
-                <identifier>force_relatedListContainer</identifier>
-            </componentInstance>
-        </itemInstances>
-        <name>Facet-08788620-793c-43f1-8ac6-daefdd726620</name>
+        <name>Facet-83b37890-569e-4072-aa84-3bb733d52ba0</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -291,6 +274,62 @@
             </componentInstance>
         </itemInstances>
         <name>Facet-e7c8ac17-2d94-4027-9047-9649fc5f8701</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>showLegacyActivityComposer</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentName>runtime_sales_activities:activityPanel</componentName>
+                <identifier>runtime_sales_activities_activityPanel</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!$Permission.CustomPermission.nCino_Audit_Restrictions}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>false</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentName>forceChatter:recordFeedContainer</componentName>
+                <identifier>forceChatter_recordFeedContainer</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!$Permission.CustomPermission.nCino_Audit_Restrictions}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>false</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </componentInstance>
+        </itemInstances>
+        <name>Facet-30c0af5e-ccbe-47ef-9e86-04bcf2687e58</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>relatedListComponentOverride</name>
+                    <value>NONE</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>rowsToDisplay</name>
+                    <value>10</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>showActionBar</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentName>force:relatedListContainer</componentName>
+                <identifier>force_relatedListContainer</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>Facet-08788620-793c-43f1-8ac6-daefdd726620</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -438,6 +477,34 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>body</name>
+                    <value>Facet-83b37890-569e-4072-aa84-3bb733d52ba0</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>Smart Checklist</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>flexipage_tab8</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-e7c8ac17-2d94-4027-9047-9649fc5f8701</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>Book Customer to Core</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>flexipage_tab7</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
                     <value>Facet-30c0af5e-ccbe-47ef-9e86-04bcf2687e58</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
@@ -460,20 +527,6 @@
                 </componentInstanceProperties>
                 <componentName>flexipage:tab</componentName>
                 <identifier>flexipage_tab2</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>body</name>
-                    <value>Facet-e7c8ac17-2d94-4027-9047-9649fc5f8701</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>title</name>
-                    <value>Book Customer to Core</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:tab</componentName>
-                <identifier>flexipage_tab7</identifier>
             </componentInstance>
         </itemInstances>
         <name>facet-8993e63b-0c37-4a46-970f-8bcd88ebf389</name>
@@ -564,6 +617,13 @@
             <componentInstance>
                 <componentName>forceChatter:recordFeedContainer</componentName>
                 <identifier>forceChatter_recordFeedContainer2</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!$Permission.CustomPermission.nCino_Audit_Restrictions}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>false</rightValue>
+                    </criteria>
+                </visibilityRule>
             </componentInstance>
         </itemInstances>
         <name>Facet-4b7d0cad-504f-4325-81c3-84f171151cdf</name>

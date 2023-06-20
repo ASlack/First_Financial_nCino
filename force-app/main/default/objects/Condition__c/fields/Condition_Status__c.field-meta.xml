@@ -13,7 +13,7 @@
             <value>
                 <fullName>Unsatisfied</fullName>
                 <default>true</default>
-                <label>Unsatisfied</label>
+                <label>Not Satisfied</label>
             </value>
             <value>
                 <fullName>Satisfied</fullName>

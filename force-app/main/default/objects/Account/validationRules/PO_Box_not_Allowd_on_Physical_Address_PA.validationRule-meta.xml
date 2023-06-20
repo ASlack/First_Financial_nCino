@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PO_Box_not_Allowd_on_Physical_Address_PA</fullName>
+    <active>true</active>
+    <errorConditionFormula>REGEX(PersonMailingStreet, &quot;(?si).*\\b(p\\.?\\s*o\\.?\\s*|.*post\\s+office)\\s+box.*&quot;)</errorConditionFormula>
+    <errorMessage>PO Boxes are only allowed in the Shipping Address field, Please provide your Physical Address</errorMessage>
+</ValidationRule>

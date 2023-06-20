@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Grants view access to Doc Prep Quality Control Required field</description>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LLC_BI__Loan__c.ffin_Docs_Review_Needed__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>nCino - Doc Prep Quality Control Required View Access</label>
+</PermissionSet>

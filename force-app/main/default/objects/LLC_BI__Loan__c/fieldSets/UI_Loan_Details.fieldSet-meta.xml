@@ -68,17 +68,7 @@
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>JHJX__OriginationDate__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </displayedFields>
-    <displayedFields>
         <field>LLC_BI__Risk_Grade__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </displayedFields>
-    <displayedFields>
-        <field>LLC_BI__Maturity_Date__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>

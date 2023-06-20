@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>true</allowRecall>
+    <allowedSubmitters>
+        <type>allInternalUsers</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Name</field>
+        <field>LLC_BI__Loan__c</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>cm_Loan_Approver__c</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>OR(
+ISPICKVAL(Last_Approver_from_Loan__c, &quot;Lender&quot;),
+ISPICKVAL(Last_Approver_from_Loan__c, &quot;Senior Lender&quot;))</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Last Approver from Loan</label>
+        <name>Last_Approver_from_Loan</name>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Abilene_CLC</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>AND(
+Region__r.Name = &apos;Abilene&apos;,
+OR(
+ISPICKVAL(Last_Approver_from_Loan__c, &quot;CLC&quot;),
+ISBLANK(TEXT(Last_Approver_from_Loan__c))
+))</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>CLC - Abilene</label>
+        <name>CLC_Abilene</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>B_College_Station_CLC</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>AND(
+Region__r.Name = &apos;Bryan/College Station&apos;,
+OR(
+ISPICKVAL(Last_Approver_from_Loan__c, &quot;CLC&quot;),
+ISBLANK(TEXT(Last_Approver_from_Loan__c))
+))</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>CLC - Bryan/College Station</label>
+        <name>CLC_Bryan_College_Station</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Cleburne_CLC</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>AND(
+Region__r.Name = &apos;Cleburne&apos;,
+OR(
+ISPICKVAL(Last_Approver_from_Loan__c, &quot;CLC&quot;),
+ISBLANK(TEXT(Last_Approver_from_Loan__c))
+))</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>CLC - Cleburne</label>
+        <name>CLC_Cleburne</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Conroe_CLC</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>AND(
+Region__r.Name = &apos;Conroe&apos;,
+OR(
+ISPICKVAL(Last_Approver_from_Loan__c, &quot;CLC&quot;),
+ISBLANK(TEXT(Last_Approver_from_Loan__c))
+))</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>CLC - Conroe</label>
+        <name>CLC_Conroe</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Eastland_CLC</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>AND(
+Region__r.Name = &apos;Eastland&apos;,
+OR(
+ISPICKVAL(Last_Approver_from_Loan__c, &quot;CLC&quot;),
+ISBLANK(TEXT(Last_Approver_from_Loan__c))
+))</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>CLC - Eastland</label>
+        <name>CLC_Eastland</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Fort_Worth_CLC</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>AND(
+Region__r.Name = &apos;Fort Worth&apos;,
+OR(
+ISPICKVAL(Last_Approver_from_Loan__c, &quot;CLC&quot;),
+ISBLANK(TEXT(Last_Approver_from_Loan__c))
+))</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>CLC - Fort Worth</label>
+        <name>CLC_Fort_Worth</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Hereford_CLC</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>AND(
+Region__r.Name = &apos;Hereford&apos;,
+OR(
+ISPICKVAL(Last_Approver_from_Loan__c, &quot;CLC&quot;),
+ISBLANK(TEXT(Last_Approver_from_Loan__c))
+))</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>CLC - Hereford</label>
+        <name>CLC_Hereford</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Kingwood_CLC</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>AND(
+Region__r.Name = &apos;Kingwood&apos;,
+OR(
+ISPICKVAL(Last_Approver_from_Loan__c, &quot;CLC&quot;),
+ISBLANK(TEXT(Last_Approver_from_Loan__c))
+))</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>CLC - Kingwood</label>
+        <name>CLC_Kingwood</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Orange_CLC</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>AND(
+Region__r.Name = &apos;Orange&apos;,
+OR(
+ISPICKVAL(Last_Approver_from_Loan__c, &quot;CLC&quot;),
+ISBLANK(TEXT(Last_Approver_from_Loan__c))
+))</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>CLC - Orange</label>
+        <name>CLC_Orange</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>San_Angelo_CLC</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>AND(
+Region__r.Name = &apos;San Angelo&apos;,
+OR(
+ISPICKVAL(Last_Approver_from_Loan__c, &quot;CLC&quot;),
+ISBLANK(TEXT(Last_Approver_from_Loan__c))
+))</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>CLC - San Angelo</label>
+        <name>CLC_San_Angelo</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Southlake_CLC</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>AND(
+Region__r.Name = &apos;Southlake&apos;,
+OR(
+ISPICKVAL(Last_Approver_from_Loan__c, &quot;CLC&quot;),
+ISBLANK(TEXT(Last_Approver_from_Loan__c))
+))</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>CLC - Southlake</label>
+        <name>CLC_Southlake</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Stephenville_CLC</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>AND(
+Region__r.Name = &apos;Stephenville&apos;,
+OR(
+ISPICKVAL(Last_Approver_from_Loan__c, &quot;CLC&quot;),
+ISBLANK(TEXT(Last_Approver_from_Loan__c))
+))</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>CLC - Stephenville</label>
+        <name>CLC_Stephenville</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Sweetwater_CLC</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>AND(
+Region__r.Name = &apos;Sweetwater&apos;,
+OR(
+ISPICKVAL(Last_Approver_from_Loan__c, &quot;CLC&quot;),
+ISBLANK(TEXT(Last_Approver_from_Loan__c))
+))</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>CLC - Sweetwater</label>
+        <name>CLC_Sweetwater</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Weatherford_CLC</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>AND(
+Region__r.Name = &apos;Weatherford&apos;,
+OR(
+ISPICKVAL(Last_Approver_from_Loan__c, &quot;CLC&quot;),
+ISBLANK(TEXT(Last_Approver_from_Loan__c))
+))</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>CLC - Weatherford</label>
+        <name>CLC_Weatherford</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>RDLC_Change_Memo_Queue</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>ISPICKVAL(Last_Approver_from_Loan__c, &quot;RDLC&quot;)</formula>
+        </entryCriteria>
+        <label>Regional Directors Loan Committee</label>
+        <name>Regional_Directors_Loan_Committee</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <description>Memo approval process for short term extensions</description>
+    <emailTemplate>PSO_Email_Templates/ET09_Change_Memo_Submitted</emailTemplate>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <formula>AND(
+NOT(ISBLANK(Region__c)),
+ISPICKVAL(LLC_BI__Memo_Type__c, &apos;Short Term Extension&apos;),
+LLC_BI__Loan__r.Cumulative_Days_of_Extensions__c &lt;= 90,
+OR(
+ISPICKVAL(LLC_BI__Approval_Status__c, &apos;New&apos;),
+ISPICKVAL(LLC_BI__Approval_Status__c, &apos;Recalled&apos;))
+)</formula>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Change_Memo_Approved</name>
+            <type>Alert</type>
+        </action>
+        <action>
+            <name>Change_Memo_Set_Status_to_Approved</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>true</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>Change_Memo_Rejected</name>
+            <type>Alert</type>
+        </action>
+        <action>
+            <name>Change_Memo_Set_Status_to_Rejected</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <initialSubmissionActions>
+        <action>
+            <name>Change_Memo_Set_Status_to_Under_Review</name>
+            <type>FieldUpdate</type>
+        </action>
+    </initialSubmissionActions>
+    <label>Short Term Extension - All Regions</label>
+    <nextAutomatedApprover>
+        <useApproverFieldOfRecordOwner>false</useApproverFieldOfRecordOwner>
+        <userHierarchyField>Manager</userHierarchyField>
+    </nextAutomatedApprover>
+    <processOrder>1</processOrder>
+    <recallActions>
+        <action>
+            <name>Change_Memo_Set_Status_to_Recalled</name>
+            <type>FieldUpdate</type>
+        </action>
+    </recallActions>
+    <recordEditability>AdminOnly</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>

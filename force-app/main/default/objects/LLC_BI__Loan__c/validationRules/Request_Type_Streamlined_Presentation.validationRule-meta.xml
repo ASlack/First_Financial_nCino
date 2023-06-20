@@ -6,7 +6,10 @@
     <errorConditionFormula>AND(
 $User.No_Validation__c = False,
 ISPICKVAL(ffin_Request_Type__c, &quot;Streamlined Loan Presentation&quot;),
+OR(
 ISCHANGED(LLC_BI__Stage__c),
+ISCHANGED(ffin_Request_Needed_By__c)
+),
 ISPICKVAL(LLC_BI__Stage__c, &quot;Credit Underwriting&quot;),
 LLC_BI__Is_Main__c = TRUE,
 

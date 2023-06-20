@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MemoPayment</fullName>
+    <description>Payment fields for change memo</description>
+    <displayedFields>
+        <field>LLC_BI__Payment_Type__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>LLC_BI__Payment_Schedule__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>MemoPayment</label>
+</FieldSet>

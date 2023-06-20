@@ -5,7 +5,7 @@
         <name>Assign_AP1</name>
         <label>Assign AP1</label>
         <locationX>314</locationX>
-        <locationY>600</locationY>
+        <locationY>708</locationY>
         <assignmentItems>
             <assignToReference>$Record.Last_Approver_from_Loan__c</assignToReference>
             <operator>Assign</operator>
@@ -35,7 +35,7 @@
         <name>Assign_AP2</name>
         <label>Assign AP2</label>
         <locationX>578</locationX>
-        <locationY>600</locationY>
+        <locationY>708</locationY>
         <assignmentItems>
             <assignToReference>$Record.Last_Approver_from_Loan__c</assignToReference>
             <operator>Assign</operator>
@@ -65,7 +65,7 @@
         <name>Assign_CLC</name>
         <label>Assign CLC</label>
         <locationX>842</locationX>
-        <locationY>600</locationY>
+        <locationY>708</locationY>
         <assignmentItems>
             <assignToReference>$Record.Last_Approver_from_Loan__c</assignToReference>
             <operator>Assign</operator>
@@ -110,7 +110,7 @@
     <assignments>
         <name>Assign_Proposed_Maturity_Date</name>
         <label>Assign Proposed Maturity Date</label>
-        <locationX>1898</locationX>
+        <locationX>3218</locationX>
         <locationY>600</locationY>
         <assignmentItems>
             <assignToReference>$Record.cm_Proposed_Maturity_Date__c</assignToReference>
@@ -127,7 +127,7 @@
         <name>Assign_RDLC</name>
         <label>Assign RDLC</label>
         <locationX>1106</locationX>
-        <locationY>600</locationY>
+        <locationY>708</locationY>
         <assignmentItems>
             <assignToReference>$Record.Last_Approver_from_Loan__c</assignToReference>
             <operator>Assign</operator>
@@ -146,10 +146,134 @@
             <targetReference>Copy_1_of_Update_Memo</targetReference>
         </connector>
     </assignments>
+    <assignments>
+        <name>Assign_Region</name>
+        <label>Assign Region</label>
+        <locationX>2690</locationX>
+        <locationY>708</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Region__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.LLC_BI__Loan__r.Region__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copy_1_of_Update_Memo</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Copy_1_of_Assign_AP1</name>
+        <label>Copy 1 of Assign AP1</label>
+        <locationX>1634</locationX>
+        <locationY>708</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Last_Approver_from_Loan__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Lender</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Region__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.LLC_BI__Loan__r.Region__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copy_1_of_Update_Memo</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Copy_1_of_Assign_AP2</name>
+        <label>Copy 1 of Assign AP2</label>
+        <locationX>1898</locationX>
+        <locationY>708</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Last_Approver_from_Loan__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Senior Lender</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Region__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.LLC_BI__Loan__r.Region__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copy_1_of_Update_Memo</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Copy_1_of_Assign_CLC</name>
+        <label>Copy 1 of Assign CLC</label>
+        <locationX>2162</locationX>
+        <locationY>708</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Last_Approver_from_Loan__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>CLC</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Region__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.LLC_BI__Loan__r.Region__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copy_1_of_Update_Memo</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Copy_1_of_Assign_RDLC</name>
+        <label>Copy 1 of Assign RDLC</label>
+        <locationX>2426</locationX>
+        <locationY>708</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Last_Approver_from_Loan__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>RDLC</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Region__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.LLC_BI__Loan__r.Region__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copy_1_of_Update_Memo</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Copy_1_of_Assign_Region</name>
+        <label>Copy 1 of Assign Region</label>
+        <locationX>1370</locationX>
+        <locationY>708</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Region__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.LLC_BI__Loan__r.Region__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copy_1_of_Update_Memo</targetReference>
+        </connector>
+    </assignments>
     <decisions>
         <name>Copy_1_of_Kill_Switch</name>
         <label>Copy 1 of Kill Switch</label>
-        <locationX>1832</locationX>
+        <locationX>3152</locationX>
         <locationY>276</locationY>
         <defaultConnector>
             <targetReference>Copy_1_of_Short_Term_Extension_Check</targetReference>
@@ -176,9 +300,79 @@
         </rules>
     </decisions>
     <decisions>
+        <name>Copy_1_of_Last_Approver_from_Loan</name>
+        <label>Copy 1 of Last Approver from Loan</label>
+        <locationX>2162</locationX>
+        <locationY>600</locationY>
+        <defaultConnector>
+            <targetReference>Assign_Region</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_1_of_Approver_1_Lender</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.LLC_BI__Loan__r.Last_Approver_for_Memo__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Lender</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_1_of_Assign_AP1</targetReference>
+            </connector>
+            <label>Copy 1 of Approver 1 (Lender)</label>
+        </rules>
+        <rules>
+            <name>Copy_1_of_Approver_2_Sr_Lender</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.LLC_BI__Loan__r.Last_Approver_for_Memo__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Senior Lender</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_1_of_Assign_AP2</targetReference>
+            </connector>
+            <label>Copy 1 of Approver 2 (Sr Lender)</label>
+        </rules>
+        <rules>
+            <name>Copy_1_of_Approver_CLC</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.LLC_BI__Loan__r.Last_Approver_for_Memo__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>CLC</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_1_of_Assign_CLC</targetReference>
+            </connector>
+            <label>Copy 1 of Approver CLC</label>
+        </rules>
+        <rules>
+            <name>Copy_1_of_Approver_RDLC</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.LLC_BI__Loan__r.Last_Approver_for_Memo__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>RDLC</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_1_of_Assign_RDLC</targetReference>
+            </connector>
+            <label>Copy 1 of Approver RDLC</label>
+        </rules>
+    </decisions>
+    <decisions>
         <name>Copy_1_of_Short_Term_Extension_Check</name>
         <label>Copy 1 of Short-Term Extension Check</label>
-        <locationX>2030</locationX>
+        <locationX>3350</locationX>
         <locationY>384</locationY>
         <defaultConnector>
             <targetReference>Update_Memo_Async</targetReference>
@@ -203,7 +397,7 @@
     <decisions>
         <name>Kill_Switch</name>
         <label>Kill Switch</label>
-        <locationX>116</locationX>
+        <locationX>281</locationX>
         <locationY>276</locationY>
         <defaultConnector>
             <targetReference>Short_Term_Extension_Check</targetReference>
@@ -233,7 +427,10 @@
         <name>Last_Approver_from_Loan</name>
         <label>Last Approver from Loan</label>
         <locationX>842</locationX>
-        <locationY>492</locationY>
+        <locationY>600</locationY>
+        <defaultConnector>
+            <targetReference>Copy_1_of_Assign_Region</targetReference>
+        </defaultConnector>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>Approver_1_Lender</name>
@@ -297,12 +494,37 @@
         </rules>
     </decisions>
     <decisions>
+        <name>Product_Package_Check</name>
+        <label>Product Package Check</label>
+        <locationX>1502</locationX>
+        <locationY>492</locationY>
+        <defaultConnector>
+            <targetReference>Copy_1_of_Last_Approver_from_Loan</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No Product Package</defaultConnectorLabel>
+        <rules>
+            <name>Loan_has_Product_Package</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.LLC_BI__Loan__r.LLC_BI__Product_Package__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Last_Approver_from_Loan</targetReference>
+            </connector>
+            <label>Loan has Product Package</label>
+        </rules>
+    </decisions>
+    <decisions>
         <name>Short_Term_Extension_Check</name>
         <label>Short-Term Extension Check</label>
-        <locationX>446</locationX>
+        <locationX>776</locationX>
         <locationY>384</locationY>
         <defaultConnector>
-            <targetReference>Last_Approver_from_Loan</targetReference>
+            <targetReference>Product_Package_Check</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -352,7 +574,7 @@
     <recordLookups>
         <name>Get_Memo_Data_Record</name>
         <label>Get Memo Data Record</label>
-        <locationX>1898</locationX>
+        <locationX>3218</locationX>
         <locationY>492</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -387,8 +609,8 @@
     <recordUpdates>
         <name>Copy_1_of_Update_Memo</name>
         <label>Copy 1 of Update Memo</label>
-        <locationX>842</locationX>
-        <locationY>792</locationY>
+        <locationX>1502</locationX>
+        <locationY>984</locationY>
         <inputReference>$Record</inputReference>
     </recordUpdates>
     <recordUpdates>
@@ -401,12 +623,12 @@
     <recordUpdates>
         <name>Update_Memo_Async</name>
         <label>Update Memo</label>
-        <locationX>2030</locationX>
+        <locationX>3350</locationX>
         <locationY>792</locationY>
         <inputReference>$Record</inputReference>
     </recordUpdates>
     <start>
-        <locationX>848</locationX>
+        <locationX>1590</locationX>
         <locationY>0</locationY>
         <connector>
             <targetReference>Kill_Switch</targetReference>

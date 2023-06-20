@@ -5,7 +5,7 @@
         <name>Assign_Lending_Assistant_Role_Id</name>
         <label>Assign Lending Assistant Role Id</label>
         <locationX>440</locationX>
-        <locationY>1055</locationY>
+        <locationY>971</locationY>
         <assignmentItems>
             <assignToReference>SingleLTMRole.LLC_BI__Assigned_Role__c</assignToReference>
             <operator>Assign</operator>
@@ -35,7 +35,7 @@
         <name>Assign_Loan_Officer_Role_Id</name>
         <label>Assign Loan Officer Role Id</label>
         <locationX>704</locationX>
-        <locationY>1055</locationY>
+        <locationY>971</locationY>
         <assignmentItems>
             <assignToReference>SingleLTMRole.LLC_BI__Assigned_Role__c</assignToReference>
             <operator>Assign</operator>
@@ -65,7 +65,7 @@
         <name>Assign_Only_Loan_Officer_Role_Id</name>
         <label>Assign Only Loan Officer Role Id</label>
         <locationX>616</locationX>
-        <locationY>815</locationY>
+        <locationY>755</locationY>
         <assignmentItems>
             <assignToReference>SingleLTMRole.LLC_BI__Assigned_Role__c</assignToReference>
             <operator>Assign</operator>
@@ -95,7 +95,7 @@
         <name>AssignToLTMCollection</name>
         <label>AssignToLTMCollection</label>
         <locationX>572</locationX>
-        <locationY>1271</locationY>
+        <locationY>1163</locationY>
         <assignmentItems>
             <assignToReference>cvar_LoanTeamMember</assignToReference>
             <operator>Add</operator>
@@ -111,16 +111,23 @@
         <name>Integration_Trigger_Kill_Switch</name>
         <label>Integration Trigger Kill Switch</label>
         <locationX>176</locationX>
-        <locationY>335</locationY>
+        <locationY>323</locationY>
         <defaultConnector>
             <targetReference>Get_Product_Package</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>Kill_Switch_True</name>
-            <conditionLogic>and</conditionLogic>
+            <conditionLogic>or</conditionLogic>
             <conditions>
                 <leftValueReference>$Permission.Integration_Trigger_Kill_Switch</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$User.No_Workflow__c</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
                     <booleanValue>true</booleanValue>
@@ -133,7 +140,7 @@
         <name>Lending_Assistant_Path</name>
         <label>Lending Assistant Path</label>
         <locationX>572</locationX>
-        <locationY>935</locationY>
+        <locationY>863</locationY>
         <defaultConnector>
             <targetReference>Assign_Loan_Officer_Role_Id</targetReference>
         </defaultConnector>
@@ -158,7 +165,7 @@
         <name>Lookup_Check</name>
         <label>Lookup Check</label>
         <locationX>616</locationX>
-        <locationY>575</locationY>
+        <locationY>539</locationY>
         <defaultConnector>
             <targetReference>Update_Loan_Simple</targetReference>
         </defaultConnector>
@@ -209,7 +216,7 @@
         <name>Loop_LTM_Roles</name>
         <label>Loop LTM Roles</label>
         <locationX>352</locationX>
-        <locationY>815</locationY>
+        <locationY>755</locationY>
         <collectionReference>Get_Loan_Officer_LTM</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
@@ -242,7 +249,7 @@
         <name>Create_Loan_Team_Roles</name>
         <label>Create Loan Team Roles</label>
         <locationX>352</locationX>
-        <locationY>1487</locationY>
+        <locationY>1355</locationY>
         <connector>
             <targetReference>Update_Loan</targetReference>
         </connector>
@@ -252,7 +259,7 @@
         <name>Create_Single_LTM</name>
         <label>Create Single LTM</label>
         <locationX>616</locationX>
-        <locationY>935</locationY>
+        <locationY>863</locationY>
         <connector>
             <targetReference>Update_Loan</targetReference>
         </connector>
@@ -262,7 +269,7 @@
         <name>Get_Loan_Officer_LTM</name>
         <label>Get Loan Team Roles</label>
         <locationX>352</locationX>
-        <locationY>695</locationY>
+        <locationY>647</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Loop_LTM_Roles</targetReference>
@@ -292,7 +299,7 @@
         <name>Get_Loan_Officer_Role</name>
         <label>Get Loan Officer Role</label>
         <locationX>616</locationX>
-        <locationY>695</locationY>
+        <locationY>647</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Assign_Only_Loan_Officer_Role_Id</targetReference>
@@ -315,7 +322,7 @@
         <name>Get_Product_Package</name>
         <label>Get Product Package</label>
         <locationX>616</locationX>
-        <locationY>455</locationY>
+        <locationY>431</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Lookup_Check</targetReference>
@@ -340,7 +347,7 @@
         <name>Update_Loan</name>
         <label>Update Loan</label>
         <locationX>616</locationX>
-        <locationY>1703</locationY>
+        <locationY>1547</locationY>
         <inputAssignments>
             <field>LLC_BI__Loan_Officer__c</field>
             <value>
@@ -359,7 +366,7 @@
         <name>Update_Loan_Simple</name>
         <label>Update Loan - Simple</label>
         <locationX>880</locationX>
-        <locationY>695</locationY>
+        <locationY>647</locationY>
         <inputAssignments>
             <field>Region__c</field>
             <value>

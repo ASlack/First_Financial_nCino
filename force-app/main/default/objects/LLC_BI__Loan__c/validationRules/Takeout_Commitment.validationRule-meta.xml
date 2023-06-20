@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Takeout_Commitment</fullName>
+    <active>true</active>
+    <description>&apos;Takeout Commitment From&apos; must be filled in if &apos;Takeout Commitment on Permanent Mtg&apos; is Other</description>
+    <errorConditionFormula>AND($User.No_Validation__c = false,
+ ISPICKVAL(TakeoutCommitmentonPermanentMtg__c , &apos;Other&apos;),
+ TakeoutCommitmentFrom__c = &apos;&apos;
+)</errorConditionFormula>
+    <errorMessage>&apos;Takeout Commitment From&apos; must be filled in if &apos;Takeout Commitment on Permanent Mtg&apos; is Other</errorMessage>
+</ValidationRule>

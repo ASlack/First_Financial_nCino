@@ -24,7 +24,17 @@ LLC_BI__Collateral_Change__c= true,
  LLC_BI__Other__c = true,
  LLC_BI__Post_Close_Items__c = true,
  LLC_BI__Seller_Note_Change__c = true,
- LLC_BI__Use_of_Proceeds_Change__c = true
+ LLC_BI__Use_of_Proceeds_Change__c = true,
+ InterestRateDecrease__c = true,
+ LoanAgreementChanges__c = true,
+ CollateralAdded__c = true,
+ CollateralRemoved__c = true,
+ CollateralReleasePriceChange__c = true,
+ CurtailmentStructureChange__c = true,
+ GuarantyStructureChange__c = true,
+ PolicyExceptionsChanges__c = true,
+ PaymentStructure__c = true,
+ LoanFeeChanges__c = true
 ))</errorConditionFormula>
-    <errorMessage>Only Maturity Date can be changed on a Short Term Extension</errorMessage>
+    <errorMessage>Only Maturity Date and Interest Rate Increase can be changed on a Short Term Extension</errorMessage>
 </ValidationRule>
