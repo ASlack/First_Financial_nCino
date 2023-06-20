@@ -32220,6 +32220,7 @@
     <types>
         <members>Account.LLC_BI__Tax_Identification_Max_Length</members>
         <members>Account.LLC_BI__To_date_cannot_be_before_from_d_ate</members>
+        <members>Account.PO_Box_not_Allowd_on_Physical_Address_PA</members>
         <members>Account.PO_Box_not_Allowed_on_Physical_Address</members>
         <members>Contact.LLC_BI__Prevent_Reassigning_Individual_Contacts</members>
         <members>Contact.LLC_BI__Require_Country_of_Citizenship</members>
