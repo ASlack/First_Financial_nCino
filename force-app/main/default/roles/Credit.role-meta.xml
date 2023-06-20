@@ -4,7 +4,7 @@
     <contactAccessLevel>Edit</contactAccessLevel>
     <description>Credit</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>Credit</name>
+    <name>Credit Admin Approvers</name>
     <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>CEO</parentRole>
 </Role>

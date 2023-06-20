@@ -6,5 +6,5 @@
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Loan Ops - DM Reviewer</name>
     <opportunityAccessLevel>Edit</opportunityAccessLevel>
-    <parentRole>Chief_Operating_Officer</parentRole>
+    <parentRole>Portfolio_Manager</parentRole>
 </Role>

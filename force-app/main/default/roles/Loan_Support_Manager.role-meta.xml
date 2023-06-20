@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Role xmlns="http://soap.sforce.com/2006/04/metadata">
-    <caseAccessLevel>Edit</caseAccessLevel>
+    <caseAccessLevel>None</caseAccessLevel>
     <contactAccessLevel>Edit</contactAccessLevel>
-    <description>Loan Ops Manager</description>
+    <description>Loan Support Manager</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>Loan Ops Manager</name>
+    <name>Loan Support Manager</name>
     <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>Chief_Credit_Officer</parentRole>
 </Role>

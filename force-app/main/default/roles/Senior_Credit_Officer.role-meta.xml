@@ -2,9 +2,9 @@
 <Role xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseAccessLevel>Edit</caseAccessLevel>
     <contactAccessLevel>Edit</contactAccessLevel>
-    <description>SCO</description>
+    <description>CAM</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>Senior Credit Officer</name>
+    <name>Credit Analyst Manager</name>
     <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>Chief_Credit_Officer</parentRole>
 </Role>

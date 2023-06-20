@@ -47,6 +47,33 @@
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
+                    <name>decorate</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;p&gt;&lt;span style=&quot;color: rgb(255, 0, 0); font-size: 14px;&quot;&gt;Underwriting details can be found in the &apos;Booked Information&apos; route for Booked / Complete Loans.&lt;/span&gt;&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:richText</componentName>
+                <identifier>flexipage_richText</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 OR 2</booleanFilter>
+                    <criteria>
+                        <leftValue>{!Record.LLC_BI__Stage__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Booked</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.LLC_BI__Stage__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Complete</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
                     <name>lookupFieldName</name>
                     <value>Id</value>
                 </componentInstanceProperties>
@@ -56,6 +83,19 @@
                 </componentInstanceProperties>
                 <componentName>console:relatedRecord</componentName>
                 <identifier>console_relatedRecord2</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 AND 2</booleanFilter>
+                    <criteria>
+                        <leftValue>{!Record.LLC_BI__Stage__c}</leftValue>
+                        <operator>NE</operator>
+                        <rightValue>Booked</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.LLC_BI__Stage__c}</leftValue>
+                        <operator>NE</operator>
+                        <rightValue>Complete</rightValue>
+                    </criteria>
+                </visibilityRule>
             </componentInstance>
         </itemInstances>
         <name>Facet-eb5989f3-3314-440b-b683-94615ad53c42</name>
@@ -90,8 +130,80 @@
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
+                    <name>decorate</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;p&gt;&lt;span style=&quot;font-size: 14px; color: rgb(255, 0, 0);&quot;&gt;Doc Prep details can be found in the &apos;Booked Information&apos; route for Booked / Complete Loans.&lt;/span&gt;&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:richText</componentName>
+                <identifier>flexipage_richText2</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 OR 2</booleanFilter>
+                    <criteria>
+                        <leftValue>{!Record.LLC_BI__Stage__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Booked</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.LLC_BI__Stage__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Complete</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>decorate</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;p&gt;&lt;span style=&quot;font-size: 14px; color: rgb(255, 0, 0);&quot;&gt;Doc Prep details will be available once the loan is Approved.&lt;/span&gt;&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:richText</componentName>
+                <identifier>flexipage_richText3</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 OR 2 OR 3 OR 4 OR 5</booleanFilter>
+                    <criteria>
+                        <leftValue>{!Record.LLC_BI__Stage__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Qualification</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.LLC_BI__Stage__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Proposal</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.LLC_BI__Stage__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Credit Underwriting</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.LLC_BI__Stage__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Final Review</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.LLC_BI__Stage__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Approval / Loan Committee</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
                     <name>lookupFieldName</name>
                     <value>Id</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>titleFieldName</name>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>updateQuickActionName</name>
@@ -99,6 +211,44 @@
                 </componentInstanceProperties>
                 <componentName>console:relatedRecord</componentName>
                 <identifier>console_relatedRecord3</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7</booleanFilter>
+                    <criteria>
+                        <leftValue>{!Record.LLC_BI__Stage__c}</leftValue>
+                        <operator>NE</operator>
+                        <rightValue>Booked</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.LLC_BI__Stage__c}</leftValue>
+                        <operator>NE</operator>
+                        <rightValue>Complete</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.LLC_BI__Stage__c}</leftValue>
+                        <operator>NE</operator>
+                        <rightValue>Qualification</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.LLC_BI__Stage__c}</leftValue>
+                        <operator>NE</operator>
+                        <rightValue>Proposal</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.LLC_BI__Stage__c}</leftValue>
+                        <operator>NE</operator>
+                        <rightValue>Credit Underwriting</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.LLC_BI__Stage__c}</leftValue>
+                        <operator>NE</operator>
+                        <rightValue>Final Review</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.LLC_BI__Stage__c}</leftValue>
+                        <operator>NE</operator>
+                        <rightValue>Approval / Loan Committee</rightValue>
+                    </criteria>
+                </visibilityRule>
             </componentInstance>
         </itemInstances>
         <name>Facet-6wjaruhj6j7</name>
@@ -118,17 +268,53 @@
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
+                    <name>height</name>
+                    <value>600</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>pageName</name>
+                    <value>nCino__ChecklistLoan</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>showLabel</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:visualforcePage</componentName>
+                <identifier>flexipage_visualforcePage3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>Facet-fad0ae9e-a062-4518-94ec-da8baaef48ed</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
                     <name>showLegacyActivityComposer</name>
                     <value>false</value>
                 </componentInstanceProperties>
                 <componentName>runtime_sales_activities:activityPanel</componentName>
                 <identifier>runtime_sales_activities_activityPanel</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!$Permission.CustomPermission.nCino_Audit_Restrictions}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>false</rightValue>
+                    </criteria>
+                </visibilityRule>
             </componentInstance>
         </itemInstances>
         <itemInstances>
             <componentInstance>
                 <componentName>forceChatter:recordFeedContainer</componentName>
                 <identifier>forceChatter_recordFeedContainer</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!$Permission.CustomPermission.nCino_Audit_Restrictions}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>false</rightValue>
+                    </criteria>
+                </visibilityRule>
             </componentInstance>
         </itemInstances>
         <name>Facet-8048e697-9c30-4f35-a427-ace8a4db0a78</name>
@@ -257,6 +443,20 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>body</name>
+                    <value>Facet-fad0ae9e-a062-4518-94ec-da8baaef48ed</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>Smart Checklist</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>flexipage_tab6</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
                     <value>Facet-8048e697-9c30-4f35-a427-ace8a4db0a78</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
@@ -315,7 +515,7 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>hideUpdateButton</name>
-                    <value>false</value>
+                    <value>true</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>variant</name>
