@@ -7,6 +7,11 @@
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
+        <field>LLC_BI__Collateral_Change__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <availableFields>
         <field>LLC_BI__Equity_Injection_Change__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
@@ -33,7 +38,17 @@
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>LLC_BI__Collateral_Change__c</field>
+        <field>CollateralReleasePriceChange__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>CollateralRemoved__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>CurtailmentStructureChange__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
@@ -43,7 +58,27 @@
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
+        <field>GuarantyStructureChange__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>InterestRateDecrease__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>LoanAgreementChanges__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
         <field>LoanAmountIncrease__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>LoanFeeChanges__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
@@ -69,6 +104,16 @@
     </displayedFields>
     <displayedFields>
         <field>LLC_BI__Other__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>PaymentStructure__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>PolicyExceptionsChanges__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>

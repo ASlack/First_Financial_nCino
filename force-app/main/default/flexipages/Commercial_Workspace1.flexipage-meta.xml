@@ -88,6 +88,13 @@
             <componentInstance>
                 <componentName>forceChatter:recordFeedContainer</componentName>
                 <identifier>forceChatter_recordFeedContainer</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!$Permission.CustomPermission.nCino_Audit_Restrictions}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>false</rightValue>
+                    </criteria>
+                </visibilityRule>
             </componentInstance>
         </itemInstances>
         <name>Facet-2065e6e1-d43b-492e-84d3-e752ed57fe6d</name>

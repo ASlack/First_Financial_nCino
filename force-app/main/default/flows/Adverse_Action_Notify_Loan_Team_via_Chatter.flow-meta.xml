@@ -3,8 +3,8 @@
     <actionCalls>
         <name>Notify_Loan_Officer_via_Chatter</name>
         <label>Notify Loan Officer via Chatter</label>
-        <locationX>176</locationX>
-        <locationY>431</locationY>
+        <locationX>50</locationX>
+        <locationY>539</locationY>
         <actionName>chatterPost</actionName>
         <actionType>chatterPost</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -22,7 +22,73 @@
         </inputParameters>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </actionCalls>
+    <actionCalls>
+        <name>Notify_Loan_Officer_via_Chatter_Rejection</name>
+        <label>Notify Loan Officer via Chatter - Rejection</label>
+        <locationX>314</locationX>
+        <locationY>431</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <elementReference>RejectedMessage</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>$Record.LLC_BI__Loan__c</elementReference>
+            </value>
+        </inputParameters>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
     <apiVersion>58.0</apiVersion>
+    <decisions>
+        <name>Status_Check</name>
+        <label>Status Check</label>
+        <locationX>314</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Withdrawn_or_Declined</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.AA_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Loan Declined</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.AA_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Loan Withdrawn</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Adverse_Action_Date_on_Loan</targetReference>
+            </connector>
+            <label>Withdrawn or Declined</label>
+        </rules>
+        <rules>
+            <name>Rejected</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.AA_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Rejected</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Notify_Loan_Officer_via_Chatter_Rejection</targetReference>
+            </connector>
+            <label>Rejected</label>
+        </rules>
+    </decisions>
     <description>Automatically posts a notification to chatter when an adverse action record is completed</description>
     <environments>Default</environments>
     <interviewLabel>Adverse Action - Notify Loan Team via Chatter {!$Flow.CurrentDateTime}</interviewLabel>
@@ -49,8 +115,8 @@
     <recordUpdates>
         <name>Set_Adverse_Action_Date_on_Loan</name>
         <label>Set Adverse Action Date on Loan</label>
-        <locationX>176</locationX>
-        <locationY>323</locationY>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
         <connector>
             <targetReference>Notify_Loan_Officer_via_Chatter</targetReference>
         </connector>
@@ -71,10 +137,10 @@
         <inputReference>$Record.LLC_BI__Loan__r</inputReference>
     </recordUpdates>
     <start>
-        <locationX>50</locationX>
+        <locationX>188</locationX>
         <locationY>0</locationY>
         <connector>
-            <targetReference>Set_Adverse_Action_Date_on_Loan</targetReference>
+            <targetReference>Status_Check</targetReference>
         </connector>
         <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
         <filterLogic>or</filterLogic>
@@ -92,6 +158,13 @@
                 <stringValue>Loan Withdrawn</stringValue>
             </value>
         </filters>
+        <filters>
+            <field>AA_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Rejected</stringValue>
+            </value>
+        </filters>
         <object>LLC_BI__Adverse_Action__c</object>
         <recordTriggerType>CreateAndUpdate</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
@@ -101,5 +174,10 @@
         <name>ChatterMessage</name>
         <isViewedAsPlainText>true</isViewedAsPlainText>
         <text>@[{!$Record.LLC_BI__Loan__r.LLC_BI__Loan_Officer__c}] @[{!$Record.LLC_BI__Loan__r.cm_Loan_Assistant__c}] This loan was decisioned via an Adverse Action. Please notify the customer and input the necessary Reg B information.</text>
+    </textTemplates>
+    <textTemplates>
+        <name>RejectedMessage</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>@[{!$Record.LLC_BI__Loan__r.LLC_BI__Loan_Officer__c}] @[{!$Record.LLC_BI__Loan__r.cm_Loan_Assistant__c}] The Adverse Action created for this record was Rejected, so the loan has not been declined.</text>
     </textTemplates>
 </Flow>

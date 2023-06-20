@@ -29,6 +29,11 @@
                 <label>Farm RE 365</label>
             </value>
             <value>
+                <fullName>Farm RE 360 - FW</fullName>
+                <default>false</default>
+                <label>Farm RE 360 - FW</label>
+            </value>
+            <value>
                 <fullName>Rural Farm Land 360</fullName>
                 <default>false</default>
                 <label>Rural Farm Land 360</label>
@@ -119,6 +124,16 @@
                 <label>Commercial Indirect</label>
             </value>
             <value>
+                <fullName>CV19 Bus 360 2nd Funding</fullName>
+                <default>false</default>
+                <label>CV19 Bus 360 2nd Funding</label>
+            </value>
+            <value>
+                <fullName>Commercial RE 10 Y Fixed</fullName>
+                <default>false</default>
+                <label>Commercial RE 10 Y Fixed</label>
+            </value>
+            <value>
                 <fullName>ACH Cr Risk Limits</fullName>
                 <default>false</default>
                 <label>ACH Cr Risk Limits</label>
@@ -174,6 +189,26 @@
                 <label>Commercial 1-4 360</label>
             </value>
             <value>
+                <fullName>1-4 Fam Inv Prop 15F</fullName>
+                <default>false</default>
+                <label>1-4 Fam Inv Prop 15F</label>
+            </value>
+            <value>
+                <fullName>1-4 Fam Inv Prop 20Y</fullName>
+                <default>false</default>
+                <label>1-4 Fam Inv Prop 20Y</label>
+            </value>
+            <value>
+                <fullName>Commercial 1-4 MMCT</fullName>
+                <default>false</default>
+                <label>Commercial 1-4 MMCT</label>
+            </value>
+            <value>
+                <fullName>Cons C&amp;L 365 Fix P&amp;I - Long Term</fullName>
+                <default>false</default>
+                <label>Cons C&amp;L 365 Fix P&amp;I - Long Term</label>
+            </value>
+            <value>
                 <fullName>Cons C&amp;L 365 Fix Int</fullName>
                 <default>false</default>
                 <label>Cons C&amp;L 365 Fix Int</label>
@@ -224,14 +259,14 @@
                 <label>Cons &amp; Dev Long Amtz</label>
             </value>
             <value>
-                <fullName>Const &amp; Dev 365 (Nonconsumer)</fullName>
+                <fullName>Const &amp; Dev 365 (Consumer Lot/Land, Comm&apos;l)</fullName>
                 <default>false</default>
-                <label>Const &amp; Dev 365 (Nonconsumer)</label>
+                <label>Const &amp; Dev 365 (Consumer Lot/Land, Comm&apos;l)</label>
             </value>
             <value>
-                <fullName>Const &amp; Dev 360 (Nonconsumer)</fullName>
+                <fullName>Const &amp; Dev 360 (Consumer Lot/Land, Comm&apos;l)</fullName>
                 <default>false</default>
-                <label>Const &amp; Dev 360 (Nonconsumer)</label>
+                <label>Const &amp; Dev 360 (Consumer Lot/Land, Comm&apos;l)</label>
             </value>
             <value>
                 <fullName>Cons &amp; Dev LT Fixed</fullName>
@@ -312,6 +347,21 @@
                 <fullName>IRB Actual 365/365</fullName>
                 <default>false</default>
                 <label>IRB Actual 365/365</label>
+            </value>
+            <value>
+                <fullName>QSCB 30/360</fullName>
+                <default>false</default>
+                <label>QSCB 30/360</label>
+            </value>
+            <value>
+                <fullName>QSCB A/365 Fix P&amp;I</fullName>
+                <default>false</default>
+                <label>QSCB A/365 Fix P&amp;I</label>
+            </value>
+            <value>
+                <fullName>Tax Exempt Lease</fullName>
+                <default>false</default>
+                <label>Tax Exempt Lease</label>
             </value>
             <value>
                 <fullName>HE Residential Fixed</fullName>
@@ -424,6 +474,11 @@
                 <label>Rural Land W Res 365</label>
             </value>
             <value>
+                <fullName>Cons Non Auto 365 - XX</fullName>
+                <default>false</default>
+                <label>Cons Non Auto 365 - XX</label>
+            </value>
+            <value>
                 <fullName>Retail Finance</fullName>
                 <default>false</default>
                 <label>Retail Finance</label>
@@ -477,6 +532,26 @@
                 <fullName>Afford Home LN MMCT</fullName>
                 <default>false</default>
                 <label>Afford Home LN MMCT</label>
+            </value>
+            <value>
+                <fullName>R/E 30/360 FIXED P&amp;I - RW</fullName>
+                <default>false</default>
+                <label>R/E 30/360 FIXED P&amp;I - RW</label>
+            </value>
+            <value>
+                <fullName>R/E 30/360 FIXED P&amp;I - RS</fullName>
+                <default>false</default>
+                <label>R/E 30/360 FIXED P&amp;I - RS</label>
+            </value>
+            <value>
+                <fullName>Secondary Affor MMCT</fullName>
+                <default>false</default>
+                <label>Secondary Affor MMCT</label>
+            </value>
+            <value>
+                <fullName>Cons 1-4 365 Fix P&amp;I - SR</fullName>
+                <default>false</default>
+                <label>Cons 1-4 365 Fix P&amp;I - SR</label>
             </value>
             <value>
                 <fullName>Cons. Indirect 365</fullName>
@@ -540,6 +615,14 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>CV19 Bus 360 2nd Funding</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <valueName>Commercial RE 10 Y Fixed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
             <valueName>Other Loans 360</valueName>
         </valueSettings>
         <valueSettings>
@@ -551,12 +634,28 @@
             <valueName>Other Loans 365</valueName>
         </valueSettings>
         <valueSettings>
+            <controllingFieldValue>ACH</controllingFieldValue>
+            <valueName>ACH Cr Risk Limits</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SBA</controllingFieldValue>
+            <valueName>SBA 30/360 NON RE</valueName>
+        </valueSettings>
+        <valueSettings>
             <controllingFieldValue>Lease</controllingFieldValue>
             <valueName>Lease - Indian Ink</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Lease</controllingFieldValue>
             <valueName>Lease Deprecation - Indian Ink</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dealer Draft</controllingFieldValue>
+            <valueName>Dealer Draft Line</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Construction &amp; Development RE</controllingFieldValue>
+            <valueName>Cons C&amp;L 365 Fix P&amp;I - Long Term</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Construction &amp; Development RE</controllingFieldValue>
@@ -600,11 +699,11 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Construction &amp; Development RE</controllingFieldValue>
-            <valueName>Const &amp; Dev 365 (Nonconsumer)</valueName>
+            <valueName>Const &amp; Dev 365 (Consumer Lot/Land, Comm&apos;l)</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Construction &amp; Development RE</controllingFieldValue>
-            <valueName>Const &amp; Dev 360 (Nonconsumer)</valueName>
+            <valueName>Const &amp; Dev 360 (Consumer Lot/Land, Comm&apos;l)</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Construction &amp; Development RE</controllingFieldValue>
@@ -637,14 +736,6 @@
         <valueSettings>
             <controllingFieldValue>Construction &amp; Development RE</controllingFieldValue>
             <valueName>Cons Lot Var 365 P&amp;I</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Residential RE</controllingFieldValue>
-            <valueName>Commercial 1-4 365</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Residential RE</controllingFieldValue>
-            <valueName>Commercial 1-4 360</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Consumer Residential RE</controllingFieldValue>
@@ -739,24 +830,20 @@
             <valueName>Afford Home LN MMCT</valueName>
         </valueSettings>
         <valueSettings>
-            <controllingFieldValue>Farm RE</controllingFieldValue>
-            <valueName>Farm RE LT Fixed</valueName>
+            <controllingFieldValue>Consumer Residential RE</controllingFieldValue>
+            <valueName>R/E 30/360 FIXED P&amp;I - RW</valueName>
         </valueSettings>
         <valueSettings>
-            <controllingFieldValue>Farm RE</controllingFieldValue>
-            <valueName>Farm RE 360</valueName>
+            <controllingFieldValue>Consumer Residential RE</controllingFieldValue>
+            <valueName>R/E 30/360 FIXED P&amp;I - RS</valueName>
         </valueSettings>
         <valueSettings>
-            <controllingFieldValue>Farm RE</controllingFieldValue>
-            <valueName>Farm RE 365</valueName>
+            <controllingFieldValue>Consumer Residential RE</controllingFieldValue>
+            <valueName>Secondary Affor MMCT</valueName>
         </valueSettings>
         <valueSettings>
-            <controllingFieldValue>Farm RE</controllingFieldValue>
-            <valueName>Rural Farm Land 360</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Farm RE</controllingFieldValue>
-            <valueName>Rural Farm Land 365</valueName>
+            <controllingFieldValue>Consumer Residential RE</controllingFieldValue>
+            <valueName>Cons 1-4 365 Fix P&amp;I - SR</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Consumer Non-Auto</controllingFieldValue>
@@ -792,7 +879,55 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Consumer Non-Auto</controllingFieldValue>
+            <valueName>Cons Non Auto 365 - XX</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consumer Non-Auto</controllingFieldValue>
             <valueName>Retail Finance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Residential RE</controllingFieldValue>
+            <valueName>Commercial 1-4 365</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Residential RE</controllingFieldValue>
+            <valueName>Commercial 1-4 360</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Residential RE</controllingFieldValue>
+            <valueName>1-4 Fam Inv Prop 15F</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Residential RE</controllingFieldValue>
+            <valueName>1-4 Fam Inv Prop 20Y</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Residential RE</controllingFieldValue>
+            <valueName>Commercial 1-4 MMCT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Farm RE</controllingFieldValue>
+            <valueName>Farm RE LT Fixed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Farm RE</controllingFieldValue>
+            <valueName>Farm RE 360</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Farm RE</controllingFieldValue>
+            <valueName>Farm RE 365</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Farm RE</controllingFieldValue>
+            <valueName>Farm RE 360 - FW</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Farm RE</controllingFieldValue>
+            <valueName>Rural Farm Land 360</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Farm RE</controllingFieldValue>
+            <valueName>Rural Farm Land 365</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Agricultural</controllingFieldValue>
@@ -865,6 +1000,18 @@
         <valueSettings>
             <controllingFieldValue>Municipality</controllingFieldValue>
             <valueName>IRB Actual 365/365</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Municipality</controllingFieldValue>
+            <valueName>QSCB 30/360</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Municipality</controllingFieldValue>
+            <valueName>QSCB A/365 Fix P&amp;I</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Municipality</controllingFieldValue>
+            <valueName>Tax Exempt Lease</valueName>
         </valueSettings>
     </valueSet>
 </CustomField>

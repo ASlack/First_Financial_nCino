@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Audit Persona</label>
+    <permissionSets>nCino_Audit_Restrictions</permissionSets>
+    <permissionSets>nCino_Credit_Manager_Review_View_Access</permissionSets>
+    <permissionSets>nCino_Doc_Prep_Quality_Control_Required_View_Access</permissionSets>
+    <permissionSets>nCino_Read_Edit_Service_Mgmt</permissionSets>
+    <permissionSets>nCino_View_Access_to_Conditions_Covenants_Collateral_and_Policy_Exceptions</permissionSets>
+    <permissionSets>nFORCE__UI_Framework_User</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

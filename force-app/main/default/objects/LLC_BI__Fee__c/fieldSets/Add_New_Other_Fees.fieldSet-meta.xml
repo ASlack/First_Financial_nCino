@@ -33,11 +33,6 @@
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>LLC_BI__Add_To_Finance_Charge__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </displayedFields>
-    <displayedFields>
         <field>LLC_BI__Collection_Method__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>

@@ -6429,6 +6429,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Collateral_Type__c.Data_Migration_Collateral_Code__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>LLC_BI__Covenant2__c.ffin_Description__c</field>
         <readable>true</readable>
@@ -6490,6 +6495,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>LLC_BI__Legal_Entities__c.ffin_Borrower_Type_Code__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>LLC_BI__Loan_Detail__c.LLC_BI__Mod_Type__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -6505,12 +6515,27 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>LLC_BI__Loan__c.Due_Date_for_Client_to_Respond_Counter__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>LLC_BI__Loan__c.EarliestClosingDate__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Loan__c.EscrowItems__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>LLC_BI__Loan__c.IncompleteCompleteClock__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Loan__c.JHJX__CallReportCode__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -6531,6 +6556,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>LLC_BI__Loan__c.LLC_BI__Index__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Loan__c.LLC_BI__Is_Review_Ready__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -6575,6 +6605,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>LLC_BI__Loan__c.LLC_BI__Product__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>LLC_BI__Loan__c.LLC_BI__Risk_Grade__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -6600,12 +6635,47 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>LLC_BI__Loan__c.Loan_Collateral_Sub_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Loan__c.Loan_Collateral_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>LLC_BI__Loan__c.Lost_Reason__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>LLC_BI__Loan__c.Notes_for_Doc_Prep__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Loan__c.RE_Sub_Type_Additional_Info__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Loan__c.Real_Estate_Sub_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>LLC_BI__Loan__c.RequestSummaryNarrative__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Loan__c.TakeoutCommitmentFrom__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Loan__c.TakeoutCommitmentonPermanentMtg__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -6644,9 +6714,9 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>LLC_BI__Loan__c.ffin_Docs_Review_Needed__c</field>
-        <readable>true</readable>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -6994,6 +7064,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>LLC_BI__Product_Package__c.Household__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>LLC_BI__Product_Package__c.LLC_BI__Risk_Rating__c</field>
         <readable>true</readable>
@@ -7066,6 +7141,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>LLC_BI__Product__c.ffin_Product_Bucket__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Requirement__c.LLC_BI__Needed_By__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -11628,6 +11708,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Integration_Default_Values__mdt-Integration Default Values Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>LLC_BI__Collateral_Type__c-LLC_BI__Collateral Type Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>LLC_BI__Collateral__c-Other</layout>

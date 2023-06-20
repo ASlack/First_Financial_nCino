@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>UI_Requested_Underwriting_Details</fullName>
+    <description>UI &gt; Approved Details &gt; Booked Information</description>
+    <displayedFields>
+        <field>ffin_Lender_Plans_to_Underwrite__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>ffin_Request_Type__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>ffin_Credit_Manager_Reviewer__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>ffin_Request_Needed_By__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>UI - Requested Underwriting Details</label>
+</FieldSet>

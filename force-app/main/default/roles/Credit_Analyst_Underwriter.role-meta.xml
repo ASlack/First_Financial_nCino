@@ -6,5 +6,5 @@
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Credit Analyst / Underwriter</name>
     <opportunityAccessLevel>Edit</opportunityAccessLevel>
-    <parentRole>Portfolio_Manager</parentRole>
+    <parentRole>Senior_Credit_Officer</parentRole>
 </Role>

@@ -325,6 +325,13 @@
                 </componentInstanceProperties>
                 <componentName>runtime_sales_activities:activityPanel</componentName>
                 <identifier>runtime_sales_activities_activityPanel</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!$Permission.CustomPermission.nCino_Audit_Restrictions}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>false</rightValue>
+                    </criteria>
+                </visibilityRule>
             </componentInstance>
         </itemInstances>
         <name>Facet-fc94c3f6-32f5-4da8-9745-9eb37c641da1</name>
@@ -335,6 +342,13 @@
             <componentInstance>
                 <componentName>forceChatter:recordFeedContainer</componentName>
                 <identifier>forceChatter_recordFeedContainer</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!$Permission.CustomPermission.nCino_Audit_Restrictions}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>false</rightValue>
+                    </criteria>
+                </visibilityRule>
             </componentInstance>
         </itemInstances>
         <name>Facet-b53fa936-7b55-4bb3-baf0-b14b5afcda15</name>

@@ -5,6 +5,7 @@
     <deprecated>false</deprecated>
     <description>This field can be set to be automatically selected via workflow. When enabled, it indicates a loan is ready to review. When disabled, a loan is not ready for review. By default, it is disabled.</description>
     <externalId>false</externalId>
+    <inlineHelpText>This is to be checked when the loan is ready to be submitted for approval.</inlineHelpText>
     <label>Is Review Ready</label>
     <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>

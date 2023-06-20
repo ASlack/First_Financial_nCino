@@ -28,7 +28,7 @@
         <name>Get_Loans</name>
         <label>Get Loans</label>
         <locationX>176</locationX>
-        <locationY>158</locationY>
+        <locationY>134</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Get_Record_Type</targetReference>
@@ -49,7 +49,7 @@
         <name>Get_Record_Type</name>
         <label>Get Record Type</label>
         <locationX>176</locationX>
-        <locationY>278</locationY>
+        <locationY>242</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Advance_Deal</targetReference>
@@ -77,10 +77,15 @@
         <name>Advance_Deal</name>
         <label>Advance Deal</label>
         <locationX>176</locationX>
-        <locationY>398</locationY>
+        <locationY>350</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
+        <fields>
+            <name>Advance_Deal_Message</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;color: rgb(255, 0, 0);&quot;&gt;Advancing this deal will start the Reg B timer.&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
         <fields>
             <name>Advance_Deal_Proposal</name>
             <extensionName>LLC_BI:advanceDealProposalModal</extensionName>
