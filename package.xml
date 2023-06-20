@@ -28071,6 +28071,10 @@
     <types>
         <members>Company_Performance_Dashboard_Standard</members>
         <members>Company_Performance_Dashboard_Standard/CompanyPerformanceDashboard</members>
+        <members>FirstFinancial</members>
+        <members>FirstFinancial/CLNoZYywGtxdAySGNEFSZVnQxATADq</members>
+        <members>FirstFinancial/CLNoZYywGtxdAySGNEFSZVnQxATADq1</members>
+        <members>FirstFinancial/NrIeUKKoZHGHdKSGiaVFLshGvSlsER</members>
         <members>LLC_BI__nCino_Dashboards</members>
         <members>LLC_BI__nCino_Dashboards/Marketing_Dashboard_nCino</members>
         <members>LLC_BI__nCino_Dashboards/awmZqurFRyHaPQfwltTpqQeACqXzRZ</members>
@@ -31407,6 +31411,51 @@
         <members>ExecutiveDashboard/Stage_Duration_Booked_Loans_New_Ene</members>
         <members>ExecutiveDashboard/Time_from_Approval_to_Booking_Ajo</members>
         <members>ExecutiveDashboard/Time_to_Close_New_Money_NTo</members>
+        <members>FFinGroupReports</members>
+        <members>FFinGroupReports/Booked_Totals_Current_FY_gb0</members>
+        <members>FFinGroupReports/Call_Report_Current_Previous_Month_oMk</members>
+        <members>FFinGroupReports/Closing_Next_30_DaysRegions_DMn</members>
+        <members>FFinGroupReports/ClosingandBookingReports</members>
+        <members>FFinGroupReports/ClosingandBookingReports/Loans_Needing_Loan_Ops_Processor_SrH</members>
+        <members>FFinGroupReports/CreditAnalystReports</members>
+        <members>FFinGroupReports/CreditAnalystReports/Loans_Needing_Credit_Analyst_akR</members>
+        <members>FFinGroupReports/DocPrepReports</members>
+        <members>FFinGroupReports/DocPrepReports/New_Loans_Report_EnG</members>
+        <members>FFinGroupReports/Loans_In_ProgressAmtRegions_snn</members>
+        <members>FFinGroupReports/Lost_Loans_By_Lender_VOc</members>
+        <members>FFinGroupReports/Lost_Loans_By_Region_31Z</members>
+        <members>FFinGroupReports/Maturing_Next_90_DaysRegion_890</members>
+        <members>FFinGroupReports/Pipeline_By_Region_dpw</members>
+        <members>FFinGroupReports/RegBReports</members>
+        <members>FFinGroupReports/RegBReports/Complete_Application_Clock_LIL</members>
+        <members>FFinGroupReports/RegBReports/Counter_Offer_Expired_Clock_VDK</members>
+        <members>FFinGroupReports/RegBReports/Incomplete_Application_Clock_V0i</members>
+        <members>FFinGroupReports/RegBReports/Initial_Application_Clock_LYm</members>
+        <members>FFinGroupReports/RegionalTemplateReports</members>
+        <members>FFinGroupReports/RegionalTemplateReports/Approved_Closing_Next_30_DaysBranch_Yt7</members>
+        <members>FFinGroupReports/RegionalTemplateReports/Booked_Loans_CY_by_NAICS_960</members>
+        <members>FFinGroupReports/RegionalTemplateReports/Booked_Loans_CY_by_NAICS_Classification_pHS</members>
+        <members>FFinGroupReports/RegionalTemplateReports/Booked_Loans_CY_by_Risk_Grade_Branch_kRO</members>
+        <members>FFinGroupReports/RegionalTemplateReports/Booked_Loans_CY_by_Risk_Grade_VqX</members>
+        <members>FFinGroupReports/RegionalTemplateReports/Booked_Totals_Current_FY_Region_sQs</members>
+        <members>FFinGroupReports/RegionalTemplateReports/Call_Report_Current_PreviousRegion_rGk</members>
+        <members>FFinGroupReports/RegionalTemplateReports/DeclineWithdrawn_Last_90_Days_6YK</members>
+        <members>FFinGroupReports/RegionalTemplateReports/Delinquency_Report_S8j</members>
+        <members>FFinGroupReports/RegionalTemplateReports/Loans_In_ProgressAmtBranches_NSU</members>
+        <members>FFinGroupReports/RegionalTemplateReports/Loans_with_Policy_Exceptions_09C</members>
+        <members>FFinGroupReports/RegionalTemplateReports/Loans_with_Policy_Exceptions_Full_Org_OyO</members>
+        <members>FFinGroupReports/RegionalTemplateReports/Lost_Loans_within_last_90_days_6AV</members>
+        <members>FFinGroupReports/RegionalTemplateReports/Maturing_Next_90_DaysBranch_yzR</members>
+        <members>FFinGroupReports/RegionalTemplateReports/Outstanding_Conditions_i4y</members>
+        <members>FFinGroupReports/RegionalTemplateReports/Region_Pipeline_vhd</members>
+        <members>FFinGroupReports/RegionalTemplateReports/Stage_DurationBookedBy_Branch_Pvl</members>
+        <members>FFinGroupReports/RegionalTemplateReports/Stage_DurationNot_BookedBy_Branch_1Ma</members>
+        <members>FFinGroupReports/RegionalTemplateReports/Time_To_CloseBookedBranch_3hq</members>
+        <members>FFinGroupReports/RegionalTemplateReports/Top_Clients_Region_Level_gk0</members>
+        <members>FFinGroupReports/RegionalTemplateReports/Top_Clients_mtq</members>
+        <members>FFinGroupReports/Stage_DurationBookedRegion_nLu</members>
+        <members>FFinGroupReports/Stage_DurationNot_Booked_DAR</members>
+        <members>FFinGroupReports/Stage_Duration_Report_Wcn</members>
         <members>LLC_BI__nCino_Compliance_Reports</members>
         <members>LLC_BI__nCino_Reports</members>
         <members>LLC_BI__nCino_Reports/Approval_Process_History_Report</members>
@@ -31542,6 +31591,7 @@
     </types>
     <types>
         <members>Account_Documents2</members>
+        <members>Account_and_Loan</members>
         <members>Application_with_Contexts</members>
         <members>Approval_Reports</members>
         <members>CFG_CKJ_with_CFG_ConfigValue_and_CFG_ConfigKey</members>
@@ -31571,6 +31621,7 @@
         <members>Loans_unmanaged</members>
         <members>Loans_with_Loan_Covenants</members>
         <members>Loans_with_Opportunity_History</members>
+        <members>Loans_with_Policy_Exceptions</members>
         <members>Product_Types_with_and_without_PSC</members>
         <members>Products_with_and_without_Product_Features</members>
         <members>Relationships_with_or_without_Connections2</members>
