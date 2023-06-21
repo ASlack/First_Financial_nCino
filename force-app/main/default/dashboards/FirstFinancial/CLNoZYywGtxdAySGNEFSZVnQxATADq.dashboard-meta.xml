@@ -7,25 +7,6 @@
     <colorPalette>unity</colorPalette>
     <dashboardChartTheme>dark</dashboardChartTheme>
     <dashboardColorPalette>unity</dashboardColorPalette>
-    <dashboardFilters>
-        <dashboardFilterOptions>
-            <operator>equals</operator>
-            <values>Commercial</values>
-        </dashboardFilterOptions>
-        <dashboardFilterOptions>
-            <operator>equals</operator>
-            <values>Agricultural</values>
-        </dashboardFilterOptions>
-        <dashboardFilterOptions>
-            <operator>equals</operator>
-            <values>Construction</values>
-        </dashboardFilterOptions>
-        <dashboardFilterOptions>
-            <operator>equals</operator>
-            <values>Municipality</values>
-        </dashboardFilterOptions>
-        <name>Product Line</name>
-    </dashboardFilters>
     <dashboardGridLayout>
         <dashboardGridComponents>
             <colSpan>4</colSpan>
@@ -75,9 +56,6 @@
                     <column>LLC_BI__Loan__c.LLC_BI__Amount__c</column>
                 </chartSummary>
                 <componentType>Column</componentType>
-                <dashboardFilterColumns>
-                    <column>LLC_BI__Loan__c.LLC_BI__Product_Line__c</column>
-                </dashboardFilterColumns>
                 <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
@@ -114,9 +92,6 @@
                     <column>LLC_BI__Loan__c.LLC_BI__Amount__c</column>
                 </chartSummary>
                 <componentType>Donut</componentType>
-                <dashboardFilterColumns>
-                    <column>LLC_BI__Loan__c.LLC_BI__Product_Line__c</column>
-                </dashboardFilterColumns>
                 <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
@@ -155,9 +130,6 @@
                     <column>LLC_BI__Loan__c.LLC_BI__Opportunity_History__r$LLC_BI__Stage_Duration__c</column>
                 </chartSummary>
                 <componentType>ColumnStacked</componentType>
-                <dashboardFilterColumns>
-                    <column>LLC_BI__Loan__c$LLC_BI__Product_Line__c</column>
-                </dashboardFilterColumns>
                 <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Integer</displayUnits>
                 <drillEnabled>false</drillEnabled>
@@ -194,9 +166,6 @@
                 <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
                 <chartAxisRange>Auto</chartAxisRange>
                 <componentType>Bar</componentType>
-                <dashboardFilterColumns>
-                    <column>LLC_BI__Loan__c.LLC_BI__Product_Line__c</column>
-                </dashboardFilterColumns>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
@@ -226,9 +195,6 @@
                     <column>LLC_BI__Loan__c.LLC_BI__Opportunity_History__r$LLC_BI__Stage_Duration__c</column>
                 </chartSummary>
                 <componentType>ColumnStacked</componentType>
-                <dashboardFilterColumns>
-                    <column>LLC_BI__Loan__c$LLC_BI__Product_Line__c</column>
-                </dashboardFilterColumns>
                 <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Integer</displayUnits>
                 <drillEnabled>false</drillEnabled>
@@ -270,9 +236,6 @@
                     <column>LLC_BI__Loan__c.LLC_BI__Opportunity_History__r$LLC_BI__Stage_Duration__c</column>
                 </chartSummary>
                 <componentType>Donut</componentType>
-                <dashboardFilterColumns>
-                    <column>LLC_BI__Loan__c$LLC_BI__Product_Line__c</column>
-                </dashboardFilterColumns>
                 <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
@@ -310,9 +273,6 @@
                     <column>LLC_BI__Loan__c.LLC_BI__Amount__c</column>
                 </chartSummary>
                 <componentType>BarStacked</componentType>
-                <dashboardFilterColumns>
-                    <column>LLC_BI__Loan__c.LLC_BI__Product_Line__c</column>
-                </dashboardFilterColumns>
                 <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
@@ -353,9 +313,6 @@
                     <column>LLC_BI__Loan__c.LLC_BI__Amount__c</column>
                 </chartSummary>
                 <componentType>Metric</componentType>
-                <dashboardFilterColumns>
-                    <column>LLC_BI__Loan__c.LLC_BI__Product_Line__c</column>
-                </dashboardFilterColumns>
                 <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <groupingSortProperties/>
@@ -383,9 +340,6 @@
                     <column>LLC_BI__Loan__c.LLC_BI__Amount__c</column>
                 </chartSummary>
                 <componentType>Bar</componentType>
-                <dashboardFilterColumns>
-                    <column>LLC_BI__Loan__c.LLC_BI__Product_Line__c</column>
-                </dashboardFilterColumns>
                 <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
@@ -422,9 +376,6 @@
                     <column>RowCount</column>
                 </chartSummary>
                 <componentType>BarStacked</componentType>
-                <dashboardFilterColumns>
-                    <column>LLC_BI__Loan__c.LLC_BI__Product_Line__c</column>
-                </dashboardFilterColumns>
                 <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
@@ -445,7 +396,7 @@
                 </groupingSortProperties>
                 <header>Booked Loans CY by Risk Grade</header>
                 <legendPosition>Right</legendPosition>
-                <report>FFinGroupReports/RegionalTemplateReports/Booked_Loans_CY_by_Risk_Grade_VqX</report>
+                <report>RegionalTemplateReports/Booked_Loans_CY_by_Risk_Grade_VqX</report>
                 <showPercentage>false</showPercentage>
                 <showValues>false</showValues>
                 <sortBy>RowLabelAscending</sortBy>
@@ -465,9 +416,6 @@
                     <column>RowCount</column>
                 </chartSummary>
                 <componentType>Donut</componentType>
-                <dashboardFilterColumns>
-                    <column>LLC_BI__Loan__c.LLC_BI__Product_Line__c</column>
-                </dashboardFilterColumns>
                 <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
@@ -503,9 +451,6 @@
                     <column>RowCount</column>
                 </chartSummary>
                 <componentType>Metric</componentType>
-                <dashboardFilterColumns>
-                    <column>LLC_BI__Loan__c.LLC_BI__Product_Line__c</column>
-                </dashboardFilterColumns>
                 <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <groupingSortProperties/>

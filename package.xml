@@ -31318,6 +31318,7 @@
         <members>LLC_BI__Cash_Service__c.LLC_BI__All</members>
         <members>LLC_BI__Checklist__c.ChecklistTeamQueue_Checklist</members>
         <members>LLC_BI__Checklist__c.LLC_BI__All</members>
+        <members>LLC_BI__Checklist__c.Post_Booking_Queue_Checklist</members>
         <members>LLC_BI__Classification__c.All</members>
         <members>LLC_BI__Collateral_Type__c.LLC_BI__All</members>
         <members>LLC_BI__Collateral__c.LLC_BI__All</members>

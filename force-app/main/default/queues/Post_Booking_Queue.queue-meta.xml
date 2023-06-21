@@ -8,6 +8,9 @@
         </users>
     </queueMembers>
     <queueSobject>
+        <sobjectType>LLC_BI__Checklist__c</sobjectType>
+    </queueSobject>
+    <queueSobject>
         <sobjectType>LLC_BI__Requirement__c</sobjectType>
     </queueSobject>
 </Queue>
