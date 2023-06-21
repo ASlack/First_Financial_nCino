@@ -6444,12 +6444,52 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>LLC_BI__Credit_Memo_Modifcation__c.CollateralAdded__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Credit_Memo_Modifcation__c.CollateralReleasePriceChange__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Credit_Memo_Modifcation__c.CollateralRemoved__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Credit_Memo_Modifcation__c.CurtailmentStructureChange__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Credit_Memo_Modifcation__c.GuarantyStructureChange__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Credit_Memo_Modifcation__c.InterestRateDecrease__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Credit_Memo_Modifcation__c.InterestRateIncrease__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>LLC_BI__Credit_Memo_Modifcation__c.Last_Approver_from_Loan__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>LLC_BI__Credit_Memo_Modifcation__c.Length_of_Short_Term_Extension__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Credit_Memo_Modifcation__c.LoanAgreementChanges__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -6464,7 +6504,22 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>LLC_BI__Credit_Memo_Modifcation__c.LoanFeeChanges__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>LLC_BI__Credit_Memo_Modifcation__c.Maturity_Date_at_time_of_Creation__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Credit_Memo_Modifcation__c.PaymentStructure__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Credit_Memo_Modifcation__c.PolicyExceptionsChanges__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
