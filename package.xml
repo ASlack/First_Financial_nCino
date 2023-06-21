@@ -27941,6 +27941,8 @@
         <name>CustomPageWebLink</name>
     </types>
     <types>
+        <members>Credit_Home_Page_Permission</members>
+        <members>Doc_Prep_Home_Page_Permission</members>
         <members>EFPIO__Package_Registry_View_Access</members>
         <members>Integration_Trigger_Kill_Switch</members>
         <members>LLC_BI__Collateral_Groups_Add_Collateral</members>
@@ -27964,6 +27966,7 @@
         <members>LLC_BI__Smart_Checklists_Edit_Assignee_Requirements</members>
         <members>LLC_BI__Smart_Checklists_Waive_Task_Requirements</members>
         <members>LLC_BI__TRID_Tolerances_Delete_Fees_After_Disclosure</members>
+        <members>Loan_Ops_Home_Page_Permission</members>
         <members>NDOC__Document_Manager_Create_Placeholder_Name</members>
         <members>NDOC__Document_Manager_Delete_Deposit_Files</members>
         <members>NDOC__Document_Manager_Delete_Deposit_Placeholders</members>
@@ -27997,6 +28000,7 @@
         <members>SIOC__Run_BV</members>
         <members>SIOC__Run_IAV</members>
         <members>nCRED__Spreads_Edit</members>
+        <members>nCino_Audit_Restrictions</members>
         <members>nCino_Covenant_Mgmt_Update_Next_Evaluation_Date</members>
         <members>nFORCE__Bulk_Field_Updates_User</members>
         <members>nFORCE__Describes_Cache_SObject_Lookup_Field_Access</members>
@@ -29010,6 +29014,7 @@
         <members>LLC_BI__Loan__c.UI_Post_Closing_Review</members>
         <members>LLC_BI__Loan__c.UI_Product_Selection</members>
         <members>LLC_BI__Loan__c.UI_Requested_Doc_Prep_Details</members>
+        <members>LLC_BI__Loan__c.UI_Requested_Underwriting_Details</members>
         <members>LLC_BI__Loan__c.UI_Secondary_Market</members>
         <members>LLC_BI__Loan__c.UI_Structure_Information</members>
         <members>LLC_BI__Loan__c.cm_Review_Display</members>
@@ -30987,8 +30992,10 @@
     <types>
         <members>AutoRABIT_User_Permission_Set</members>
         <members>Conditions_CRED</members>
+        <members>Credit_Home_Page_Permission_Set</members>
         <members>Data_Services_PS</members>
         <members>Deal_Management</members>
+        <members>Doc_Prep_Home_Page_Permission_Set</members>
         <members>EFPIO__Package_Registry_Info_Access</members>
         <members>EXUS__EXUS_Credit_View_Requests</members>
         <members>EXUS__EXUS_Credit_View_Responses</members>
@@ -31017,6 +31024,7 @@
         <members>LLC_BI__Retail_Run_Auto_Decision_Permissions</members>
         <members>LLC_BI__Smart_Checklists_Waive_Task_Requirements</members>
         <members>LLC_BI__Underwriting_Edit_Debt_Schedule</members>
+        <members>Loan_Ops_Home_Page_Permission_Set</members>
         <members>Log_in_as_Community_User</members>
         <members>MTRNS__MIM</members>
         <members>Manage_Encryption_Keys</members>
@@ -31112,6 +31120,7 @@
         <members>nCRED__Spreads_Show_Hide_Rows</members>
         <members>nCRED__Spreads_View</members>
         <members>nCino_Advance_Rate_Override</members>
+        <members>nCino_Audit_Restrictions</members>
         <members>nCino_Covenants_Update_Next_Eval_Date</members>
         <members>nCino_Create_Adverse_Actions</members>
         <members>nCino_Create_Credit_Actions</members>
@@ -31160,6 +31169,7 @@
     <types>
         <members>Admin_Persona</members>
         <members>Appraisal_Persona</members>
+        <members>Audit_Persona</members>
         <members>Credit_Analyst_Persona</members>
         <members>Credit_Manager_Persona</members>
         <members>Customer_User_Permission_Set_Group</members>
@@ -31672,6 +31682,7 @@
     </types>
     <types>
         <members>AdminCustomerPersonAccount</members>
+        <members>Appraisal_Services</members>
         <members>CEO</members>
         <members>Chief_Credit_Officer</members>
         <members>Chief_Operating_Officer</members>
@@ -31679,10 +31690,17 @@
         <members>Credit</members>
         <members>Credit_Analyst_Underwriter</members>
         <members>Customer_Portal_Account_Owner_User_Role</members>
+        <members>Doc_Prep_Manager</members>
+        <members>Flood_Services</members>
+        <members>Lending_Assistant</members>
         <members>Loan_Officer</members>
         <members>Loan_Operations</members>
         <members>Loan_Ops_DM_Reviewer</members>
+        <members>Loan_Processor</members>
+        <members>Loan_Support_Manager</members>
+        <members>Loan_Support_Specialist</members>
         <members>Portfolio_Manager</members>
+        <members>Review_Only_All</members>
         <members>Senior_Credit_Officer</members>
         <members>UserACustomerPersonAccount</members>
         <members>nCino_Administrator</members>
