@@ -39,7 +39,7 @@
                 <leftValueReference>$UserRole.Name</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
-                    <stringValue>Loan Officer</stringValue>
+                    <stringValue>Lender</stringValue>
                 </rightValue>
             </conditions>
             <label>Loan Officer</label>
