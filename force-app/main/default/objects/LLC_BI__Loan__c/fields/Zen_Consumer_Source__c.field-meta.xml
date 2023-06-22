@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Zen_Consumer_Source__c</fullName>
+    <externalId>false</externalId>
+    <label>Consumer Source</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Encompass</fullName>
+                <default>false</default>
+                <label>Encompass</label>
+            </value>
+            <value>
+                <fullName>Defi</fullName>
+                <default>false</default>
+                <label>Defi</label>
+            </value>
+            <value>
+                <fullName>LaserPro</fullName>
+                <default>false</default>
+                <label>LaserPro</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
