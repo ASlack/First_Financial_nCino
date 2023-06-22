@@ -3,7 +3,7 @@
     <actionCalls>
         <name>Assign_Attorney_Preped_Funding</name>
         <label>Assign Attorney Preped Funding</label>
-        <locationX>1018</locationX>
+        <locationX>1106</locationX>
         <locationY>647</locationY>
         <actionName>LoanRoundRobinAssignInvocable</actionName>
         <actionType>apex</actionType>
@@ -30,7 +30,7 @@
     <actionCalls>
         <name>Assign_Consumer_Laserpro_Booking</name>
         <label>Assign Consumer Laserpro Booking</label>
-        <locationX>1282</locationX>
+        <locationX>1370</locationX>
         <locationY>755</locationY>
         <actionName>LoanRoundRobinAssignInvocable</actionName>
         <actionType>apex</actionType>
@@ -57,7 +57,7 @@
     <actionCalls>
         <name>Assign_Consumer_Laserpro_Funding</name>
         <label>Assign Consumer Laserpro Funding</label>
-        <locationX>1282</locationX>
+        <locationX>1370</locationX>
         <locationY>647</locationY>
         <actionName>LoanRoundRobinAssignInvocable</actionName>
         <actionType>apex</actionType>
@@ -87,7 +87,7 @@
     <actionCalls>
         <name>Assign_Defi_Booking</name>
         <label>Assign Defi Booking</label>
-        <locationX>1810</locationX>
+        <locationX>1898</locationX>
         <locationY>755</locationY>
         <actionName>LoanRoundRobinAssignInvocable</actionName>
         <actionType>apex</actionType>
@@ -114,7 +114,7 @@
     <actionCalls>
         <name>Assign_Defi_Funding</name>
         <label>Assign Defi Funding</label>
-        <locationX>1810</locationX>
+        <locationX>1898</locationX>
         <locationY>647</locationY>
         <actionName>LoanRoundRobinAssignInvocable</actionName>
         <actionType>apex</actionType>
@@ -144,7 +144,7 @@
     <actionCalls>
         <name>Assign_Encompass_Booking</name>
         <label>Assign Encompass Booking</label>
-        <locationX>1546</locationX>
+        <locationX>1634</locationX>
         <locationY>755</locationY>
         <actionName>LoanRoundRobinAssignInvocable</actionName>
         <actionType>apex</actionType>
@@ -171,7 +171,7 @@
     <actionCalls>
         <name>Assign_Encompass_Funding</name>
         <label>Assign Encompass Funding</label>
-        <locationX>1546</locationX>
+        <locationX>1634</locationX>
         <locationY>647</locationY>
         <actionName>LoanRoundRobinAssignInvocable</actionName>
         <actionType>apex</actionType>
@@ -201,7 +201,7 @@
     <actionCalls>
         <name>Assign_LaserPro_Commercial_Funding</name>
         <label>Assign LaserPro Commercial Funding</label>
-        <locationX>754</locationX>
+        <locationX>842</locationX>
         <locationY>647</locationY>
         <actionName>LoanRoundRobinAssignInvocable</actionName>
         <actionType>apex</actionType>
@@ -283,7 +283,7 @@
     <decisions>
         <name>Check_Funding_and_Booking_Path</name>
         <label>Check Funding and Booking Path</label>
-        <locationX>1414</locationX>
+        <locationX>1502</locationX>
         <locationY>539</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -347,6 +347,13 @@
                     <stringValue>Consumer Residential RE</stringValue>
                 </rightValue>
             </conditions>
+            <conditions>
+                <leftValueReference>$Record.Zen_Consumer_Source__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>LaserPro</stringValue>
+                </rightValue>
+            </conditions>
             <connector>
                 <targetReference>Assign_Consumer_Laserpro_Funding</targetReference>
             </connector>
@@ -367,6 +374,13 @@
                 <operator>EqualTo</operator>
                 <rightValue>
                     <stringValue>Consumer</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Zen_Consumer_Source__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Encompass</stringValue>
                 </rightValue>
             </conditions>
             <connector>
@@ -391,6 +405,13 @@
                     <stringValue>Consumer Residential RE</stringValue>
                 </rightValue>
             </conditions>
+            <conditions>
+                <leftValueReference>$Record.Zen_Consumer_Source__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Defi</stringValue>
+                </rightValue>
+            </conditions>
             <connector>
                 <targetReference>Assign_Defi_Funding</targetReference>
             </connector>
@@ -400,7 +421,7 @@
     <decisions>
         <name>Check_Loan_Stage</name>
         <label>Check Loan Stage</label>
-        <locationX>1282</locationX>
+        <locationX>1370</locationX>
         <locationY>323</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -573,7 +594,7 @@
     <recordLookups>
         <name>Retrieve_Team_Role_Id_Loan_Ops</name>
         <label>Retrieve Team Role Id Loan Ops</label>
-        <locationX>1414</locationX>
+        <locationX>1502</locationX>
         <locationY>431</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -592,14 +613,30 @@
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <start>
-        <locationX>1156</locationX>
+        <locationX>1244</locationX>
         <locationY>0</locationY>
         <connector>
             <targetReference>Check_Loan_Stage</targetReference>
         </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>or</filterLogic>
+        <filters>
+            <field>LLC_BI__Stage__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Doc Prep</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>LLC_BI__Stage__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Booking &amp; Funding</stringValue>
+            </value>
+        </filters>
         <object>LLC_BI__Loan__c</object>
-        <recordTriggerType>Update</recordTriggerType>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
     </start>
-    <status>Draft</status>
+    <status>Active</status>
 </Flow>

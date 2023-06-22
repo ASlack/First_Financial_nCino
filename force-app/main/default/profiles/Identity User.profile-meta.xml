@@ -80557,6 +80557,11 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Loan__c.Zen_Consumer_Source__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>LLC_BI__Loan__c.Zen_Owner_Occupied__c</field>
         <readable>false</readable>
@@ -92708,6 +92713,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>RecordAssignMember__c.Limit_Frequency__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>RecordAssign__RecordAssignMember__c.RecordAssign__Active__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -103223,6 +103233,10 @@
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
+        <flow>Loan_On_Stage_Update_Assign_Loan_Team_Members</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
         <flow>Loan_Scheduled_Loan_Team_Chatter_Notifications</flow>
     </flowAccesses>
     <flowAccesses>
@@ -103320,6 +103334,10 @@
     <flowAccesses>
         <enabled>false</enabled>
         <flow>Valuation_Auto_Submit</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Zen_Consumer_Loan_Creation_on_Relationship</flow>
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>

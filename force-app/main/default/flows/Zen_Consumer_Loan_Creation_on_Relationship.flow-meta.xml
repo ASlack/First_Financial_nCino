@@ -4,8 +4,8 @@
     <assignments>
         <name>Assign_fields_to_the_Loan</name>
         <label>Assign fields to the Loan</label>
-        <locationX>176</locationX>
-        <locationY>350</locationY>
+        <locationX>182</locationX>
+        <locationY>866</locationY>
         <assignmentItems>
             <assignToReference>LoanRecordToCreate.LLC_BI__Amount__c</assignToReference>
             <operator>Assign</operator>
@@ -17,9 +17,50 @@
             <assignToReference>LoanRecordToCreate.LLC_BI__Account__c</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>RecordId</elementReference>
+                <elementReference>recordId</elementReference>
             </value>
         </assignmentItems>
+        <connector>
+            <targetReference>Create_Loan_Record</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Loan_Officer</name>
+        <label>Assign Loan Officer</label>
+        <locationX>182</locationX>
+        <locationY>350</locationY>
+        <assignmentItems>
+            <assignToReference>LoanRecordToCreate.LLC_BI__Loan_Officer__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>RelationshipManagerId</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loan_Creation_Screen</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_to_Booking_and_Funding</name>
+        <label>Assign to Booking and Funding</label>
+        <locationX>50</locationX>
+        <locationY>674</locationY>
+        <assignmentItems>
+            <assignToReference>LoanRecordToCreate.LLC_BI__Stage__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Booking &amp; Funding</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Assign_fields_to_the_Loan</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_to_Processing</name>
+        <label>Assign to Processing</label>
+        <locationX>314</locationX>
+        <locationY>674</locationY>
         <assignmentItems>
             <assignToReference>LoanRecordToCreate.LLC_BI__Stage__c</assignToReference>
             <operator>Assign</operator>
@@ -28,7 +69,7 @@
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>Create_Loan_Record</targetReference>
+            <targetReference>Assign_fields_to_the_Loan</targetReference>
         </connector>
     </assignments>
     <choices>
@@ -71,6 +112,31 @@
             <booleanValue>true</booleanValue>
         </value>
     </choices>
+    <decisions>
+        <name>Check_if_Docs_have_been_prepared</name>
+        <label>Check if Docs have been prepared</label>
+        <locationX>182</locationX>
+        <locationY>566</locationY>
+        <defaultConnector>
+            <targetReference>Assign_to_Processing</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Docs_have_been_prepared</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Have_Documents_Already_Been_Created_Signed</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>Yes</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_to_Booking_and_Funding</targetReference>
+            </connector>
+            <label>Docs have been prepared</label>
+        </rules>
+    </decisions>
     <dynamicChoiceSets>
         <name>BorrowerTypes</name>
         <dataType>Picklist</dataType>
@@ -206,12 +272,12 @@
     <recordCreates>
         <name>Create_Entity_Involvement</name>
         <label>Create Entity Involvement</label>
-        <locationX>176</locationX>
-        <locationY>566</locationY>
+        <locationX>182</locationX>
+        <locationY>1082</locationY>
         <inputAssignments>
             <field>LLC_BI__Account__c</field>
             <value>
-                <elementReference>RecordId</elementReference>
+                <elementReference>recordId</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -229,7 +295,7 @@
         <inputAssignments>
             <field>LLC_BI__Loan__c</field>
             <value>
-                <elementReference>Create_Loan_Record</elementReference>
+                <elementReference>LoanRecordToCreate.Id</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -244,24 +310,47 @@
     <recordCreates>
         <name>Create_Loan_Record</name>
         <label>Create Loan Record</label>
-        <locationX>176</locationX>
-        <locationY>458</locationY>
+        <locationX>182</locationX>
+        <locationY>974</locationY>
         <connector>
             <targetReference>Create_Entity_Involvement</targetReference>
         </connector>
         <inputReference>LoanRecordToCreate</inputReference>
     </recordCreates>
+    <recordLookups>
+        <name>Get_Relationship_Manager</name>
+        <label>Get Relationship Manager</label>
+        <locationX>182</locationX>
+        <locationY>242</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Assign_Loan_Officer</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <object>Account</object>
+        <outputAssignments>
+            <assignToReference>RelationshipManagerId</assignToReference>
+            <field>ffin_Relationship_Manager__c</field>
+        </outputAssignments>
+    </recordLookups>
     <runInMode>SystemModeWithSharing</runInMode>
     <screens>
         <name>Loan_Creation_Screen</name>
         <label>Loan Creation Screen</label>
-        <locationX>176</locationX>
-        <locationY>242</locationY>
+        <locationX>182</locationX>
+        <locationY>458</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
         <connector>
-            <targetReference>Assign_fields_to_the_Loan</targetReference>
+            <targetReference>Check_if_Docs_have_been_prepared</targetReference>
         </connector>
         <fields>
             <name>Loan_Creation_Screen_Section1</name>
@@ -302,11 +391,17 @@
                 <name>Loan_Creation_Screen_Section1_Column2</name>
                 <fieldType>Region</fieldType>
                 <fields>
+                    <fieldType>ObjectProvided</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>false</isRequired>
+                    <objectFieldReference>LoanRecordToCreate.Zen_Consumer_Source__c</objectFieldReference>
+                </fields>
+                <fields>
                     <name>Consumer_RE_Product</name>
                     <choiceReferences>ConsumerResidentialREChoices</choiceReferences>
                     <dataType>String</dataType>
                     <fieldText>Select Consumer RE Product</fieldText>
-                    <fieldType>RadioButtons</fieldType>
+                    <fieldType>DropdownBox</fieldType>
                     <isRequired>true</isRequired>
                     <visibilityRule>
                         <conditionLogic>and</conditionLogic>
@@ -324,7 +419,7 @@
                     <choiceReferences>ConsumerNonAutoChoices</choiceReferences>
                     <dataType>String</dataType>
                     <fieldText>Select Consumer Non Auto Product</fieldText>
-                    <fieldType>RadioButtons</fieldType>
+                    <fieldType>DropdownBox</fieldType>
                     <isRequired>true</isRequired>
                     <visibilityRule>
                         <conditionLogic>and</conditionLogic>
@@ -342,7 +437,7 @@
                     <choiceReferences>ConsumerAutoChoices</choiceReferences>
                     <dataType>String</dataType>
                     <fieldText>Select Consumer Auto Product</fieldText>
-                    <fieldType>RadioButtons</fieldType>
+                    <fieldType>DropdownBox</fieldType>
                     <isRequired>true</isRequired>
                     <visibilityRule>
                         <conditionLogic>and</conditionLogic>
@@ -387,6 +482,12 @@
                     <isRequired>false</isRequired>
                     <scale>2</scale>
                 </fields>
+                <fields>
+                    <fieldType>ObjectProvided</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>false</isRequired>
+                    <objectFieldReference>LoanRecordToCreate.LLC_BI__Credit_Approval_Date__c</objectFieldReference>
+                </fields>
                 <inputParameters>
                     <name>width</name>
                     <value>
@@ -402,13 +503,13 @@
                     <fieldType>ObjectProvided</fieldType>
                     <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
                     <isRequired>false</isRequired>
-                    <objectFieldReference>LoanRecordToCreate.cm_Loan_Assistant__c</objectFieldReference>
+                    <objectFieldReference>LoanRecordToCreate.LLC_BI__Loan_Officer__c</objectFieldReference>
                 </fields>
                 <fields>
                     <fieldType>ObjectProvided</fieldType>
                     <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
                     <isRequired>false</isRequired>
-                    <objectFieldReference>LoanRecordToCreate.LLC_BI__Credit_Approval_Date__c</objectFieldReference>
+                    <objectFieldReference>LoanRecordToCreate.cm_Loan_Assistant__c</objectFieldReference>
                 </fields>
                 <inputParameters>
                     <name>width</name>
@@ -456,13 +557,13 @@
     <screens>
         <name>Qualification_Page</name>
         <label>Qualification Page</label>
-        <locationX>176</locationX>
+        <locationX>182</locationX>
         <locationY>134</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
         <connector>
-            <targetReference>Loan_Creation_Screen</targetReference>
+            <targetReference>Get_Relationship_Manager</targetReference>
         </connector>
         <fields>
             <name>Qualification_Text</name>
@@ -474,13 +575,13 @@
         <showHeader>false</showHeader>
     </screens>
     <start>
-        <locationX>50</locationX>
+        <locationX>56</locationX>
         <locationY>0</locationY>
         <connector>
             <targetReference>Qualification_Page</targetReference>
         </connector>
     </start>
-    <status>Draft</status>
+    <status>Active</status>
     <variables>
         <name>currentItemFromSourceCollection</name>
         <dataType>SObject</dataType>
@@ -498,10 +599,17 @@
         <objectType>LLC_BI__Loan__c</objectType>
     </variables>
     <variables>
-        <name>RecordId</name>
+        <name>recordId</name>
         <dataType>String</dataType>
         <isCollection>false</isCollection>
         <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>RelationshipManagerId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
         <isOutput>false</isOutput>
     </variables>
 </Flow>

@@ -22012,6 +22012,7 @@
         <members>LLC_BI__Loan__c.Unsatisfied_Conditions__c</members>
         <members>LLC_BI__Loan__c.What_is_the_purpose_of_the_loan__c</members>
         <members>LLC_BI__Loan__c.Withdrawn_Date__c</members>
+        <members>LLC_BI__Loan__c.Zen_Consumer_Source__c</members>
         <members>LLC_BI__Loan__c.Zen_Owner_Occupied__c</members>
         <members>LLC_BI__Loan__c.Zen_Total_Percent_Participation__c</members>
         <members>LLC_BI__Loan__c.cm_Available_Amount__c</members>
@@ -32004,6 +32005,7 @@
     <types>
         <members>Account.New_Product_Package</members>
         <members>Account.Relationship_Type_Update</members>
+        <members>Account.Zen_Create_Consumer_Loan</members>
         <members>Add_Product_Package</members>
         <members>Case.NewChildCase</members>
         <members>CollaborationGroup.NewGroupMember</members>

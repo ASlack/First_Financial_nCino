@@ -995,6 +995,21 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>Zen_Consumer_Source__c</picklist>
+        <values>
+            <fullName>Defi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Encompass</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LaserPro</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>cm_Method_of_Doc_Prep__c</picklist>
         <values>
             <fullName>Attorney Prepared</fullName>
