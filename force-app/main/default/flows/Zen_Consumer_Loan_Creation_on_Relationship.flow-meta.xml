@@ -20,6 +20,13 @@
                 <elementReference>recordId</elementReference>
             </value>
         </assignmentItems>
+        <assignmentItems>
+            <assignToReference>LoanRecordToCreate.LLC_BI__Credit_Approval_Date__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Credit_Approval_Date</elementReference>
+            </value>
+        </assignmentItems>
         <connector>
             <targetReference>Create_Loan_Record</targetReference>
         </connector>
@@ -483,10 +490,11 @@
                     <scale>2</scale>
                 </fields>
                 <fields>
-                    <fieldType>ObjectProvided</fieldType>
-                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
-                    <isRequired>false</isRequired>
-                    <objectFieldReference>LoanRecordToCreate.LLC_BI__Credit_Approval_Date__c</objectFieldReference>
+                    <name>Credit_Approval_Date</name>
+                    <dataType>Date</dataType>
+                    <fieldText>Credit Approval Date</fieldText>
+                    <fieldType>InputField</fieldType>
+                    <isRequired>true</isRequired>
                 </fields>
                 <inputParameters>
                     <name>width</name>
