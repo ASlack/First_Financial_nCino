@@ -6,7 +6,7 @@
         <name>Individual_or_Business_In_Process</name>
         <label>Individual or Business In Process</label>
         <locationX>770</locationX>
-        <locationY>575</locationY>
+        <locationY>539</locationY>
         <defaultConnector>
             <targetReference>loanNameUpdateBusinessInProcess</targetReference>
         </defaultConnector>
@@ -32,7 +32,7 @@
         <name>Individual_or_Business_Not_In_Process</name>
         <label>Individual or Business Not In Process</label>
         <locationX>242</locationX>
-        <locationY>575</locationY>
+        <locationY>539</locationY>
         <defaultConnector>
             <targetReference>loanNameUpdateBusinessNotInProcess</targetReference>
         </defaultConnector>
@@ -57,7 +57,7 @@
         <name>Integration_Trigger_Kill_Switch</name>
         <label>Integration Trigger Kill Switch</label>
         <locationX>176</locationX>
-        <locationY>335</locationY>
+        <locationY>323</locationY>
         <defaultConnector>
             <targetReference>What_is_the_loan_stage</targetReference>
         </defaultConnector>
@@ -87,7 +87,7 @@
         <name>What_is_the_loan_stage</name>
         <label>What is the loan stage</label>
         <locationX>506</locationX>
-        <locationY>455</locationY>
+        <locationY>431</locationY>
         <defaultConnector>
             <targetReference>Individual_or_Business_In_Process</targetReference>
         </defaultConnector>
@@ -121,13 +121,13 @@
         <description>Updates loan name for business relationship on booked loans</description>
         <name>loanNameFormulaBusinessBooked</name>
         <dataType>String</dataType>
-        <expression>{!$Record.LLC_BI__Account__r.Name} &amp; &apos; - &apos; &amp; TEXT({!$Record.LLC_BI__Product__c}) &amp; &apos; - &apos; &amp; {!$Record.LLC_BI__lookupKey__c}</expression>
+        <expression>{!$Record.LLC_BI__Account__r.Name} &amp; &apos; - &apos; &amp; LEFT(TEXT({!$Record.LLC_BI__Product__c}), 20) &amp; &apos; - &apos; &amp; {!$Record.LLC_BI__lookupKey__c}</expression>
     </formulas>
     <formulas>
         <description>Loan name formula for in process loans for business relationships</description>
         <name>loanNameFormulaBusinessInProcess</name>
         <dataType>String</dataType>
-        <expression>{!$Record.LLC_BI__Account__r.Name} &amp; &apos; - &apos; &amp; TEXT({!$Record.LLC_BI__Product__c}) &amp; &apos; - &apos; &amp; &apos;$&apos; &amp; IF( 
+        <expression>{!$Record.LLC_BI__Account__r.Name} &amp; &apos; - &apos; &amp; LEFT(TEXT({!$Record.LLC_BI__Product__c}), 20) &amp; &apos; - &apos; &amp; &apos;$&apos; &amp; IF( 
   {!$Record.LLC_BI__Amount__c} &gt;= 1000000, 
   TEXT(FLOOR({!$Record.LLC_BI__Amount__c} / 1000000)) &amp; &quot;,&quot;, 
   &quot;&quot;) &amp; 
@@ -146,13 +146,13 @@ IF(
         <description>Loan name formula for non-booked/complete loans for individuals</description>
         <name>loanNameFormulaIndividualBooked</name>
         <dataType>String</dataType>
-        <expression>{!$Record.LLC_BI__Account__r.FirstName} &amp; &apos; &apos; &amp; {!$Record.LLC_BI__Account__r.LastName} &amp; &apos; - &apos; &amp; TEXT({!$Record.LLC_BI__Product__c}) &amp; &apos; - &apos; &amp; {!$Record.LLC_BI__lookupKey__c}</expression>
+        <expression>{!$Record.LLC_BI__Account__r.FirstName} &amp; &apos; &apos; &amp; {!$Record.LLC_BI__Account__r.LastName} &amp; &apos; - &apos; &amp; LEFT(TEXT({!$Record.LLC_BI__Product__c}), 20) &amp; &apos; - &apos; &amp; {!$Record.LLC_BI__lookupKey__c}</expression>
     </formulas>
     <formulas>
         <description>Formula for loan name update for in process loans for individuals</description>
         <name>loanNameFormulaIndividualInProcess</name>
         <dataType>String</dataType>
-        <expression>{!$Record.LLC_BI__Account__r.FirstName} &amp; &apos; &apos; &amp;{!$Record.LLC_BI__Account__r.LastName} &amp; &apos; - &apos; &amp; TEXT({!$Record.LLC_BI__Product__c}) &amp; &apos; - &apos; &amp; &apos;$&apos; &amp; IF( 
+        <expression>{!$Record.LLC_BI__Account__r.FirstName} &amp; &apos; &apos; &amp;{!$Record.LLC_BI__Account__r.LastName} &amp; &apos; - &apos; &amp; LEFT(TEXT({!$Record.LLC_BI__Product__c}), 20) &amp; &apos; - &apos; &amp; &apos;$&apos; &amp; IF( 
   {!$Record.LLC_BI__Amount__c} &gt;= 1000000, 
   TEXT(FLOOR({!$Record.LLC_BI__Amount__c} / 1000000)) &amp; &quot;,&quot;, 
   &quot;&quot;) &amp; 
@@ -193,7 +193,7 @@ IF(
         <name>loanNameUpdateBusinessInProcess</name>
         <label>loanNameUpdateBusinessInProcess</label>
         <locationX>902</locationX>
-        <locationY>695</locationY>
+        <locationY>647</locationY>
         <inputAssignments>
             <field>Name</field>
             <value>
@@ -207,7 +207,7 @@ IF(
         <name>loanNameUpdateBusinessNotInProcess</name>
         <label>loanNameUpdateBusinessNotInProcess</label>
         <locationX>374</locationX>
-        <locationY>695</locationY>
+        <locationY>647</locationY>
         <inputAssignments>
             <field>Name</field>
             <value>
@@ -221,7 +221,7 @@ IF(
         <name>loanNameUpdateIndividualInProcess</name>
         <label>loanNameUpdateIndividualInProcess</label>
         <locationX>638</locationX>
-        <locationY>695</locationY>
+        <locationY>647</locationY>
         <inputAssignments>
             <field>Name</field>
             <value>
@@ -235,7 +235,7 @@ IF(
         <name>loanNameUpdateIndividualNotInProcess</name>
         <label>loanNameUpdateIndividualNotInProcess</label>
         <locationX>110</locationX>
-        <locationY>695</locationY>
+        <locationY>647</locationY>
         <inputAssignments>
             <field>Name</field>
             <value>

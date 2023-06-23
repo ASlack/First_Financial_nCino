@@ -819,6 +819,9 @@
                         <valueListItems>
                             <value>Account.Zen_Create_Consumer_Loan</value>
                         </valueListItems>
+                        <valueListItems>
+                            <value>CustomButton.Account.nBRIDGER__WatchlistReport</value>
+                        </valueListItems>
                     </valueList>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
