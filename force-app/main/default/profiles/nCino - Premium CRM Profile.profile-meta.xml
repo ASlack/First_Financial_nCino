@@ -6559,6 +6559,31 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Loan__c.Auto_Pay_Account_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Loan__c.Auto_Pay_Routing_Number__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Loan__c.CRA_Comments__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Loan__c.Closing_Specialist_Review_Comments__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Loan__c.Closing_Specialist_Review_Completed_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>LLC_BI__Loan__c.Cumulative_Days_of_Extensions__c</field>
         <readable>true</readable>
@@ -6670,6 +6695,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>LLC_BI__Loan__c.LLC_BI__Stage__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>LLC_BI__Loan__c.LLC_BI__Structure_Hierarchy__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -6701,6 +6731,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>LLC_BI__Loan__c.Lost_Reason__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LLC_BI__Loan__c.Memo_Modification_Approved__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -6741,7 +6776,7 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>LLC_BI__Loan__c.Unsatisfied_Conditions_Closing__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -6761,6 +6796,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>LLC_BI__Loan__c.cm_Method_of_Doc_Prep__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LLC_BI__Loan__c.cm_Today_s_Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -6806,6 +6846,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>LLC_BI__Loan__c.ffin_Request_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Loan__c.zen_Compliance_Officer__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -7124,9 +7169,9 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>LLC_BI__Product_Package__c.Household__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -11781,6 +11826,9 @@
         <recordType>LLC_BI__Collateral__c.Possessory_Jewelry_Gold_Silve</recordType>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>LLC_BI__Connection__c-LLC_BI__Connection Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>LLC_BI__Covenant2__c-LLC_BI__Covenant2 Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -11801,6 +11849,13 @@
     <layoutAssignments>
         <layout>LLC_BI__Loan__c-Classic Layout</layout>
         <recordType>LLC_BI__Loan__c.Guidance_Line_Record_Type</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>LLC_BI__Loan__c-LLC_BI__nCino UI Hybrid</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>LLC_BI__Loan__c-LLC_BI__nCino UI Hybrid</layout>
+        <recordType>LLC_BI__Loan__c.Commercial_Loan_Record_Type</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>LLC_BI__Product_Feature__c-LLC_BI__Product Feature Layout</layout>
