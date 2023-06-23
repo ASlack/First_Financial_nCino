@@ -3,6 +3,11 @@
     <fullName>UI_Approval_Fields</fullName>
     <description>Fields that are editable after approval.</description>
     <displayedFields>
+        <field>LLC_BI__Stage__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
         <field>LLC_BI__Status__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
@@ -74,6 +79,16 @@
     </displayedFields>
     <displayedFields>
         <field>LLC_BI__Close_Date_Hard__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>Region__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>LLC_BI__Branch__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
