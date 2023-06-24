@@ -13,6 +13,9 @@
                             <value>Delete</value>
                         </valueListItems>
                         <valueListItems>
+                            <value>CustomButton.LLC_BI__Product_Package__c.nBRIDGER__Watchlist_Report</value>
+                        </valueListItems>
+                        <valueListItems>
                             <value>FeedItem.TextPost</value>
                         </valueListItems>
                         <valueListItems>

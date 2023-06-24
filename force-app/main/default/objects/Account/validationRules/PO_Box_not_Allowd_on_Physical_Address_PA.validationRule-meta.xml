@@ -3,5 +3,5 @@
     <fullName>PO_Box_not_Allowd_on_Physical_Address_PA</fullName>
     <active>true</active>
     <errorConditionFormula>REGEX(PersonMailingStreet, &quot;(?si).*\\b(p\\.?\\s*o\\.?\\s*|.*post\\s+office)\\s+box.*&quot;)</errorConditionFormula>
-    <errorMessage>PO Boxes are only allowed in the Shipping Address field, Please provide your Physical Address</errorMessage>
+    <errorMessage>PO Boxes are only allowed in the Mailing Address field, Please provide your Physical Address</errorMessage>
 </ValidationRule>

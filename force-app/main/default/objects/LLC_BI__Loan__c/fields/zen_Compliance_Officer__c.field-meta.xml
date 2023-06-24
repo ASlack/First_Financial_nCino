@@ -10,7 +10,7 @@
         <filterItems>
             <field>User.UserRole.DeveloperName</field>
             <operation>equals</operation>
-            <value>Chief_Compliance_Officer</value>
+            <value>Review_Only_All</value>
         </filterItems>
         <isOptional>false</isOptional>
     </lookupFilter>

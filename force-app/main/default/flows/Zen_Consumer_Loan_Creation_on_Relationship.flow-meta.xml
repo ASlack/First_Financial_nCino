@@ -56,7 +56,7 @@
             <assignToReference>LoanRecordToCreate.LLC_BI__Stage__c</assignToReference>
             <operator>Assign</operator>
             <value>
-                <stringValue>Booking &amp; Funding</stringValue>
+                <stringValue>Closing</stringValue>
             </value>
         </assignmentItems>
         <connector>
