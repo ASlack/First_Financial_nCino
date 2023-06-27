@@ -3,7 +3,7 @@
     <fullName>Entity_Involvement_New_Individual_Custom</fullName>
     <description>OVERRIDE: This contact field set groups the individual relationship fields displayed in the add new entity workflow of Entity Involvement.</description>
     <displayedFields>
-        <field>Middle_Name__c</field>
+        <field>MiddleName</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>

@@ -28489,6 +28489,7 @@
         <members>SIOC__Run_IAV</members>
         <members>nCRED__Spreads_Edit</members>
         <members>nCino_Audit_Restrictions</members>
+        <members>nCino_Book_Customer_to_Core</members>
         <members>nCino_Covenant_Mgmt_Update_Next_Evaluation_Date</members>
         <members>nFORCE__Bulk_Field_Updates_User</members>
         <members>nFORCE__Describes_Cache_SObject_Lookup_Field_Access</members>
@@ -29916,6 +29917,7 @@
         <members>Book_Customer_to_Core</members>
         <members>CLA_Draw_Auto_Submit_for_Approval</members>
         <members>CRA_Reportable_Invocable</members>
+        <members>Collateral_Pledge_on_Create_Create_Loan_Docs</members>
         <members>Collateral_Valuation_On_Create_Update_Coll_Mgmt</members>
         <members>Commercial_LoanAutoDecision</members>
         <members>Contact_Create_Edit_All_LOB_Baseline</members>
@@ -30011,6 +30013,7 @@
         <members>Book_Customer_to_Core</members>
         <members>CLA_Draw_Auto_Submit_for_Approval</members>
         <members>CRA_Reportable_Invocable</members>
+        <members>Collateral_Pledge_on_Create_Create_Loan_Docs</members>
         <members>Collateral_Valuation_On_Create_Update_Coll_Mgmt</members>
         <members>Commercial_LoanAutoDecision</members>
         <members>Contact_Create_Edit_All_LOB_Baseline</members>
@@ -31807,6 +31810,7 @@
         <members>Service_Mgmt_Edit_Delete</members>
         <members>Smart_Checklist_Edit_Assignee_Requirements</members>
         <members>Smart_Checklist_Waive_Task_Requirements</members>
+        <members>Zen_nCino_Book_Customer_to_Core</members>
         <members>nArchive__DES_permissions</members>
         <members>nCRED__CRE_Add_Edit_Delete_Groups</members>
         <members>nCRED__CRE_Add_Edit_Delete_Rows</members>
