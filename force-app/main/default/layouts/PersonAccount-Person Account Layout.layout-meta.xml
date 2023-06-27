@@ -44,7 +44,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>LLC_BI__SS_PE__pc</field>
+                <field>LLC_BI__SS__pc</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
