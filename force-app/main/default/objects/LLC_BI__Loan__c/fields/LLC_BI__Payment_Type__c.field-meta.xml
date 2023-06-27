@@ -38,11 +38,6 @@
                 <label>Irregular</label>
             </value>
             <value>
-                <fullName>Generic Non-Disclosable</fullName>
-                <default>false</default>
-                <label>Generic Non-Disclosable</label>
-            </value>
-            <value>
                 <fullName>Construction Permanent</fullName>
                 <default>false</default>
                 <label>Construction Permanent</label>

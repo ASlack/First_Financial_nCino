@@ -6,7 +6,7 @@
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>
-    <type>Picklist</type>
+    <type>MultiselectPicklist</type>
     <valueSet>
         <restricted>true</restricted>
         <valueSetDefinition>
@@ -19,7 +19,7 @@
             <value>
                 <fullName>HO</fullName>
                 <default>false</default>
-                <label>Insurance</label>
+                <label>Homeowners Insurance</label>
             </value>
             <value>
                 <fullName>FL</fullName>
@@ -38,4 +38,5 @@
             </value>
         </valueSetDefinition>
     </valueSet>
+    <visibleLines>5</visibleLines>
 </CustomField>
