@@ -1,6 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>58.0</apiVersion>
+    <assignments>
+        <name>Set_Withdrawn_Status</name>
+        <label>Set Withdrawn Status</label>
+        <locationX>50</locationX>
+        <locationY>503</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.AA_Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Loan Withdrawn</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <name>Withdrawn</name>
+        <label>Withdrawn</label>
+        <locationX>182</locationX>
+        <locationY>395</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Loan_Withdrawn</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.LLC_BI__Withdraw_Reason__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Withdrawn_Status</targetReference>
+            </connector>
+            <label>Loan Withdrawn</label>
+        </rules>
+    </decisions>
     <description>When an Adverse Action Record is created, update Fields (ie. Loan Officer)</description>
     <environments>Default</environments>
     <interviewLabel>Adverse Action Created - Quick Field Updates {!$Flow.CurrentDateTime}</interviewLabel>
@@ -27,8 +62,11 @@
     <recordUpdates>
         <name>Update_AA_Record</name>
         <label>Update AA Record</label>
-        <locationX>176</locationX>
+        <locationX>182</locationX>
         <locationY>287</locationY>
+        <connector>
+            <targetReference>Withdrawn</targetReference>
+        </connector>
         <inputAssignments>
             <field>cm_Loan_Officer__c</field>
             <value>
@@ -38,7 +76,7 @@
         <inputReference>$Record</inputReference>
     </recordUpdates>
     <start>
-        <locationX>50</locationX>
+        <locationX>56</locationX>
         <locationY>0</locationY>
         <connector>
             <targetReference>Update_AA_Record</targetReference>
