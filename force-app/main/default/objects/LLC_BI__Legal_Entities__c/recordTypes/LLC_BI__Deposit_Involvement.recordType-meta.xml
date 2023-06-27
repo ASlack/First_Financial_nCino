@@ -6,7 +6,11 @@
     <picklistValues>
         <picklist>LLC_BI__Guaranty_Amount__c</picklist>
         <values>
-            <fullName>Full</fullName>
+            <fullName>Limited</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unlimited</fullName>
             <default>false</default>
         </values>
     </picklistValues>

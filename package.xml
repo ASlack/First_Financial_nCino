@@ -31138,6 +31138,7 @@
         <members>Loan_Committee</members>
         <members>Orange_CLC</members>
         <members>Orange_RDLC</members>
+        <members>Post_Booking_Queue</members>
         <members>RDLC_Change_Memo_Queue</members>
         <members>San_Angelo_CLC</members>
         <members>San_Angelo_RDLC</members>
