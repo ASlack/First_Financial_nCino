@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Post-Booking Queue</name>
+    <queueMembers>
+        <users>
+            <user>zennify@firstfinancialbank.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>LLC_BI__Checklist__c</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>LLC_BI__Requirement__c</sobjectType>
+    </queueSobject>
+</Queue>

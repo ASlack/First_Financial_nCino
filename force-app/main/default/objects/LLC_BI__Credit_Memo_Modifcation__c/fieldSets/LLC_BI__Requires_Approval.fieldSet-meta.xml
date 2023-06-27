@@ -7,11 +7,6 @@
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>LLC_BI__Collateral_Change__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </availableFields>
-    <availableFields>
         <field>LLC_BI__Equity_Injection_Change__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
@@ -34,6 +29,11 @@
     <description>Field set that appears in second section of Memo Details</description>
     <displayedFields>
         <field>Borrower_Removed__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>LLC_BI__Collateral_Change__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
