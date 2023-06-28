@@ -74,8 +74,17 @@ export default class DocumentScanSubmission extends LightningElement {
 
   handleUploadFinished(event) {
     this.fileUploaded = event.detail.files[0];
+    console.log('file uploaded');
+    console.log(this.fileUploaded); 
+    console.log(this.fileUploaded.name);
+    console.log(this.fileUploaded.documentId);  
+    console.log(this.matchingLoans[0].Id);
+    console.log(this.matchingLoans[0].Name);
+    console.log(this.matchingLoans[0].Loan_Number__c);
+
+    // find the loan id that matches the selected loan name
 	
-	parseDocument({ loanNumber: this.selectedLoan,document: this.fileUploaded })
+	parseDocument({ loanNumber: this.selectedLoan,document: this.fileUploaded.contentVersionId })
 		.then((result) => {
 			console.log(' document parsing process succeed');
 		})

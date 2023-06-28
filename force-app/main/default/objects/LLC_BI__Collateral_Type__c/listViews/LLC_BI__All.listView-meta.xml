@@ -10,6 +10,8 @@
     <columns>NAME</columns>
     <columns>LLC_BI__Screen__c</columns>
     <columns>LLC_BI__Group_Type__c</columns>
+    <columns>Data_Migration_Collateral_Code__c</columns>
+    <columns>LLC_BI__Expire_Date__c</columns>
     <filterScope>Everything</filterScope>
     <label>All</label>
 </ListView>

@@ -3,7 +3,7 @@
     <fullName>Auto_Pay_Routing_Number__c</fullName>
     <externalId>false</externalId>
     <label>Auto Pay Routing Number</label>
-    <length>18</length>
+    <length>9</length>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>

@@ -25849,6 +25849,9 @@
         <members>Solution.SolutionName</members>
         <members>Solution.SolutionNote</members>
         <members>Solution.Status</members>
+        <members>Standard_EI_Covenant_Configuration__mdt.Borrower_Type__c</members>
+        <members>Standard_EI_Covenant_Configuration__mdt.Product_Line__c</members>
+        <members>Standard_EI_Covenant_Configuration__mdt.Product_Type__c</members>
         <members>StreamActivityAccess.ActivityTeamId</members>
         <members>StreamActivityAccess.ExternalResource</members>
         <members>StreamActivityAccess.IsContentShared</members>
@@ -27263,6 +27266,7 @@
         <members>LLC_BI__Index.US_T_BILL_mo_12</members>
         <members>LLC_BI__Index.Zero_Int_Rate</members>
         <members>LLC_BI__Index.private_Line_Rate</members>
+        <members>Standard_EI_Covenant_Configuration.Commercial_Borrower</members>
         <name>CustomMetadata</name>
     </types>
     <types>
@@ -27838,6 +27842,7 @@
         <members>SocialPersona</members>
         <members>SocialPost</members>
         <members>Solution</members>
+        <members>Standard_EI_Covenant_Configuration__mdt</members>
         <members>StreamActivityAccess</members>
         <members>StreamingChannel</members>
         <members>Task</members>
@@ -30715,6 +30720,7 @@
         <members>Seller-Seller Layout</members>
         <members>ServiceContract-Service Contract Layout</members>
         <members>Solution-Solution Layout</members>
+        <members>Standard_EI_Covenant_Configuration__mdt-Standard EI Covenant Configuration Layout</members>
         <members>Task-LLC_BI__Task Layout</members>
         <members>Task-Task Layout</members>
         <members>TriggerClassKillSwitchSettings__mdt-Trigger Class Kill Switch Setting Layout</members>
@@ -32146,6 +32152,7 @@
         <members>REST_Analytics_Communicator</members>
         <members>Sherman</members>
         <members>customer_portal</members>
+        <members>heroku</members>
         <members>llc_bi</members>
         <members>nFORCE__ApexDevNet</members>
         <members>nFORCE__salesforce</members>

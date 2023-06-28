@@ -130,6 +130,10 @@
                 <behavior>Edit</behavior>
                 <field>LLC_BI__Manufactured_Home__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>LLCLP__Is_Excluded_From_LaserPro_Extract__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -207,11 +211,6 @@
     <platformActionList>
         <actionListContext>Record</actionListContext>
         <platformActionListItems>
-            <actionName>Edit</actionName>
-            <actionType>StandardButton</actionType>
-            <sortOrder>0</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
             <actionName>Delete</actionName>
             <actionType>StandardButton</actionType>
             <sortOrder>1</sortOrder>
@@ -225,6 +224,11 @@
             <actionName>Clone</actionName>
             <actionType>StandardButton</actionType>
             <sortOrder>3</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>Edit</actionName>
+            <actionType>StandardButton</actionType>
+            <sortOrder>0</sortOrder>
         </platformActionListItems>
     </platformActionList>
     <quickActionList>
