@@ -19864,6 +19864,7 @@
         <members>LLC_BI__Collateral__c.LetterofCreditMaturityDate__c</members>
         <members>LLC_BI__Collateral__c.Migration_ID__c</members>
         <members>LLC_BI__Collateral__c.NameoftheAgency__c</members>
+        <members>LLC_BI__Collateral__c.OwnerInformationGrantor__c</members>
         <members>LLC_BI__Collateral__c.PMSI_Rollup__c</members>
         <members>LLC_BI__Collateral__c.Property_Tax__c</members>
         <members>LLC_BI__Collateral__c.cm_Abundance_of_Caution__c</members>

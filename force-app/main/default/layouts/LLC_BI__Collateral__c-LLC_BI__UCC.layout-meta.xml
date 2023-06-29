@@ -16,6 +16,10 @@
                 <behavior>Required</behavior>
                 <field>LLC_BI__Collateral_Type__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>OwnerInformationGrantor__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
