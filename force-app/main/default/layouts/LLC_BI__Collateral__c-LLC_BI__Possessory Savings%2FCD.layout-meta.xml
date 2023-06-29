@@ -136,10 +136,6 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>LLC_BI__Deposit_Account_Number__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
                 <field>LLC_BI__State__c</field>
             </layoutItems>
         </layoutColumns>
