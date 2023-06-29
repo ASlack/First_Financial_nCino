@@ -6434,6 +6434,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Collateral__c.OwnerInformationGrantor__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>LLC_BI__Covenant2__c.ffin_Description__c</field>
         <readable>true</readable>
