@@ -71638,6 +71638,11 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Collateral__c.OtherRealEstateSubtype__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>LLC_BI__Collateral__c.PMSI_Rollup__c</field>
         <readable>true</readable>
@@ -103250,6 +103255,10 @@
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
+        <flow>Flow_on_Create_Assign_Appraisal_Date_and_Source</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
         <flow>LLC_BI__Update_Deposit_Is_Booked</flow>
     </flowAccesses>
     <flowAccesses>
@@ -103367,6 +103376,10 @@
     <flowAccesses>
         <enabled>false</enabled>
         <flow>Relationship_RM_Changed_Update_Portal_Docs</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Reserve_Loan_Number_Save_to_Loan_Record</flow>
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>

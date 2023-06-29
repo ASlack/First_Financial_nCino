@@ -20129,6 +20129,7 @@
         <members>LLC_BI__Collateral__c.LetterofCreditMaturityDate__c</members>
         <members>LLC_BI__Collateral__c.Migration_ID__c</members>
         <members>LLC_BI__Collateral__c.NameoftheAgency__c</members>
+        <members>LLC_BI__Collateral__c.OtherRealEstateSubtype__c</members>
         <members>LLC_BI__Collateral__c.PMSI_Rollup__c</members>
         <members>LLC_BI__Collateral__c.Property_Tax__c</members>
         <members>LLC_BI__Collateral__c.cm_Abundance_of_Caution__c</members>
@@ -29934,6 +29935,7 @@
         <members>Credit_Memo_PP_Narrative</members>
         <members>Employee_Loan_Reg_O_Invocable</members>
         <members>Entity_Involvement_Assign_Reg_0_and_Employee_on_Loan</members>
+        <members>Flow_on_Create_Assign_Appraisal_Date_and_Source</members>
         <members>HMDA_Questionnaire_Rendering_Invocable</members>
         <members>HVCRE_Questionnaire_Rendering_Invocable</members>
         <members>InspectionPlaceholder</members>
@@ -29985,6 +29987,7 @@
         <members>REG_W_Questionnaire_Rendering_Invocable</members>
         <members>Relationship_Evaluation_LoanAutoDecision</members>
         <members>Relationship_RM_Changed_Update_Portal_Docs</members>
+        <members>Reserve_Loan_Number_Save_to_Loan_Record</members>
         <members>Retail_LoanAutoDecision</members>
         <members>Review_Created_Update_Record</members>
         <members>SCOC__Credit_Pass_Review_SCOC</members>
@@ -30030,6 +30033,7 @@
         <members>Credit_Memo_PP_Narrative</members>
         <members>Employee_Loan_Reg_O_Invocable</members>
         <members>Entity_Involvement_Assign_Reg_0_and_Employee_on_Loan</members>
+        <members>Flow_on_Create_Assign_Appraisal_Date_and_Source</members>
         <members>HMDA_Questionnaire_Rendering_Invocable</members>
         <members>HVCRE_Questionnaire_Rendering_Invocable</members>
         <members>InspectionPlaceholder</members>
@@ -30081,6 +30085,7 @@
         <members>REG_W_Questionnaire_Rendering_Invocable</members>
         <members>Relationship_Evaluation_LoanAutoDecision</members>
         <members>Relationship_RM_Changed_Update_Portal_Docs</members>
+        <members>Reserve_Loan_Number_Save_to_Loan_Record</members>
         <members>Retail_LoanAutoDecision</members>
         <members>Review_Created_Update_Record</members>
         <members>SCOC__Credit_Pass_Review_SCOC</members>

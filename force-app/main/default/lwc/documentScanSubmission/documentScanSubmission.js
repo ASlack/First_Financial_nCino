@@ -10,6 +10,9 @@ export default class DocumentScanSubmission extends LightningElement {
   actionMessage;
   selectedLoan;
   fileUploaded;
+  documentId;
+  loandId;
+  isLoading = false;
 
   get acceptedFormats() {
     return [".pdf"];
@@ -74,46 +77,31 @@ export default class DocumentScanSubmission extends LightningElement {
 
   handleUploadFinished(event) {
     this.fileUploaded = event.detail.files[0];
-    console.log('file uploaded');
-    console.log(this.fileUploaded); 
-    console.log(this.fileUploaded.name);
-    console.log(this.fileUploaded.documentId);  
-    console.log(this.matchingLoans[0].Id);
-    console.log(this.matchingLoans[0].Name);
-    console.log(this.matchingLoans[0].Loan_Number__c);
-
-    // find the loan id that matches the selected loan name
-	
-	parseDocument({ loanNumber: this.selectedLoan,document: this.fileUploaded.contentVersionId })
-		.then((result) => {
-			console.log(' document parsing process succeed');
-		})
-		.catch((error) => {
-			console.log(error);
-		});
+    this.documentId = this.fileUploaded.contentVersionId;
+    this.loanId = this.matchingLoans[0].Id;
   }
 
   handleScanAndSplitButton() {
-    const scanAndSplitEvent = new CustomEvent('scanandsplit',{
-		detail: {
-			documents: [
-						{   filename: 'BankStatement.pdf',
-						    url: '/sfc/servlet.shepherd/document/download/069DO000000D7KtYAK'
-						},
-						{
-							filename: 'TaxReturns.pdf',
-							url: '/sfc/servlet.shepherd/document/download/069DO000000D7SmYAK'
-						},
-						{   filename: 'LoanStatement.pdf',
-						    url: '/sfc/servlet.shepherd/document/download/069DO000000D7khYAC'
-						},
-						{
-							filename: 'FinancialStatement.pdf',
-							url: '/sfc/servlet.shepherd/document/download/069DO000000D7oxYAC'
-						}
-					   ]
-				}
-	});
-    this.dispatchEvent(scanAndSplitEvent);
+    this.isLoading = true;
+    parseDocument({ loanNumber: this.loanId,documentId: this.documentId })
+      .then((result) => {
+        const documents = result.map((id) => {
+          return {
+            filename: `Document${id}.pdf`,
+            url: `/sfc/servlet.shepherd/document/download/${id}`
+          };
+        });
+
+      const scanAndSplitEvent = new CustomEvent('scanandsplit',{
+        detail: {
+          documents: documents
+        }
+      });
+      this.isLoading = false;
+      this.dispatchEvent(scanAndSplitEvent);
+      })
+      .catch((error) => {
+        console.log(error);
+    });
   }
 }

@@ -6,21 +6,6 @@
     <description>Record Type for Possessory Life Insurance Page Layout</description>
     <label>Possessory Life Insurance</label>
     <picklistValues>
-        <picklist>JHJX__HldAcctType__c</picklist>
-        <values>
-            <fullName>D</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>S</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>T</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
         <picklist>NameoftheAgency__c</picklist>
         <values>
             <fullName>AAFAF</fullName>
@@ -88,6 +73,125 @@
         </values>
         <values>
             <fullName>University of Puerto Rico %28UPR%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OtherRealEstateSubtype__c</picklist>
+        <values>
+            <fullName>Assisted Living Facility</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Car Wash</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Church %2F Religious Facility</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Condo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Daycare Facility</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dealership</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>For-Profit School %2F College %2F University</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Funeral Home</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gas Station %2F Convenience Store</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gym %2F Dance %2F Sports Facility</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare - Hospital %2F ER  %2F Surgery Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare - Multi-Tenant Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare - Single-Tenant Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hotel %2F Motel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial %2F Warehouse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturing Plant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobile Home w%2F Real Estate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nonprofit School %2F College %2F University</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nursing Home</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Office - Multi-Tenant Non-healthcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Office - Single-Tenant Non-healthcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RV Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Restaurant - Fast Food %2F Casual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Restaurant - Table Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail - Big box</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail - Multi-Tenant Shopping Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail - Single-Tenant %2F Free Standing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Self-Storage Facility</fullName>
             <default>false</default>
         </values>
     </picklistValues>

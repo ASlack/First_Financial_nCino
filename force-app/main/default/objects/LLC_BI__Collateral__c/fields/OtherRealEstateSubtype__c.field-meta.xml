@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OtherRealEstateSubtype__c</fullName>
+    <externalId>false</externalId>
+    <label>Other Real Estate Subtype</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Assisted Living Facility</fullName>
+                <default>false</default>
+                <label>Assisted Living Facility</label>
+            </value>
+            <value>
+                <fullName>Car Wash</fullName>
+                <default>false</default>
+                <label>Car Wash</label>
+            </value>
+            <value>
+                <fullName>Church / Religious Facility</fullName>
+                <default>false</default>
+                <label>Church / Religious Facility</label>
+            </value>
+            <value>
+                <fullName>Condo</fullName>
+                <default>false</default>
+                <label>Condo</label>
+            </value>
+            <value>
+                <fullName>Daycare Facility</fullName>
+                <default>false</default>
+                <label>Daycare Facility</label>
+            </value>
+            <value>
+                <fullName>Dealership</fullName>
+                <default>false</default>
+                <label>Dealership</label>
+            </value>
+            <value>
+                <fullName>Funeral Home</fullName>
+                <default>false</default>
+                <label>Funeral Home</label>
+            </value>
+            <value>
+                <fullName>Gas Station / Convenience Store</fullName>
+                <default>false</default>
+                <label>Gas Station / Convenience Store</label>
+            </value>
+            <value>
+                <fullName>Gym / Dance / Sports Facility</fullName>
+                <default>false</default>
+                <label>Gym / Dance / Sports Facility</label>
+            </value>
+            <value>
+                <fullName>Healthcare - Hospital / ER  / Surgery Center</fullName>
+                <default>false</default>
+                <label>Healthcare - Hospital / ER  / Surgery Center</label>
+            </value>
+            <value>
+                <fullName>Healthcare - Multi-Tenant Office</fullName>
+                <default>false</default>
+                <label>Healthcare - Multi-Tenant Office</label>
+            </value>
+            <value>
+                <fullName>Healthcare - Single-Tenant Office</fullName>
+                <default>false</default>
+                <label>Healthcare - Single-Tenant Office</label>
+            </value>
+            <value>
+                <fullName>Hotel / Motel</fullName>
+                <default>false</default>
+                <label>Hotel / Motel</label>
+            </value>
+            <value>
+                <fullName>Industrial / Warehouse</fullName>
+                <default>false</default>
+                <label>Industrial / Warehouse</label>
+            </value>
+            <value>
+                <fullName>Manufacturing Plant</fullName>
+                <default>false</default>
+                <label>Manufacturing Plant</label>
+            </value>
+            <value>
+                <fullName>Mobile Home w/ Real Estate</fullName>
+                <default>false</default>
+                <label>Mobile Home w/ Real Estate</label>
+            </value>
+            <value>
+                <fullName>Nursing Home</fullName>
+                <default>false</default>
+                <label>Nursing Home</label>
+            </value>
+            <value>
+                <fullName>Office - Multi-Tenant Non-healthcare</fullName>
+                <default>false</default>
+                <label>Office - Multi-Tenant Non-healthcare</label>
+            </value>
+            <value>
+                <fullName>Office - Single-Tenant Non-healthcare</fullName>
+                <default>false</default>
+                <label>Office - Single-Tenant Non-healthcare</label>
+            </value>
+            <value>
+                <fullName>Restaurant - Fast Food / Casual</fullName>
+                <default>false</default>
+                <label>Restaurant - Fast Food / Casual</label>
+            </value>
+            <value>
+                <fullName>Restaurant - Table Service</fullName>
+                <default>false</default>
+                <label>Restaurant - Table Service</label>
+            </value>
+            <value>
+                <fullName>Retail - Big box</fullName>
+                <default>false</default>
+                <label>Retail - Big box</label>
+            </value>
+            <value>
+                <fullName>Retail - Multi-Tenant Shopping Center</fullName>
+                <default>false</default>
+                <label>Retail - Multi-Tenant Shopping Center</label>
+            </value>
+            <value>
+                <fullName>Retail - Single-Tenant / Free Standing</fullName>
+                <default>false</default>
+                <label>Retail - Single-Tenant / Free Standing</label>
+            </value>
+            <value>
+                <fullName>RV Park</fullName>
+                <default>false</default>
+                <label>RV Park</label>
+            </value>
+            <value>
+                <fullName>For-Profit School / College / University</fullName>
+                <default>false</default>
+                <label>For-Profit School / College / University</label>
+            </value>
+            <value>
+                <fullName>Nonprofit School / College / University</fullName>
+                <default>false</default>
+                <label>Nonprofit School / College / University</label>
+            </value>
+            <value>
+                <fullName>Self-Storage Facility</fullName>
+                <default>false</default>
+                <label>Self-Storage Facility</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

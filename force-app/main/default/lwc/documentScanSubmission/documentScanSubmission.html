@@ -1,3 +1,10 @@
+<!--
+  @description       : Document Scan Submission component
+  @author            : Zennify
+  @group             : Development
+  @last modified on  : 06-28-2023
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
 <template>
   <lightning-card title="Document Scan Submission">
     <div class="slds-p-around_xx-large">
@@ -74,6 +81,9 @@
                   variant="brand"
                   stretch
                 ></lightning-button>
+              </template>
+              <template if:true={isLoading}>
+                <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
               </template>
             </div>
           </template>
