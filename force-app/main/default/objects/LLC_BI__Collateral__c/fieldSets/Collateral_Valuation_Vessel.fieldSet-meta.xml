@@ -3,12 +3,12 @@
     <fullName>Collateral_Valuation_Vessel</fullName>
     <description>Collateral Valuation-Vessel</description>
     <displayedFields>
-        <field>LLC_BI__Assessment_Method__c</field>
+        <field>LLC_BI__Value__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>LLC_BI__Value__c</field>
+        <field>LLC_BI__Assessment_Method__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
