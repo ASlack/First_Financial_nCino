@@ -2,7 +2,7 @@
  * @description       : Controller to provide backend services to Document Scan UI components
  * @author            : Zennify
  * @group             : 
- * @last modified on  : 06-28-2023
+ * @last modified on  : 06-29-2023
  * @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
 **/
 public with sharing class DocumentScanController {
@@ -26,17 +26,16 @@ public with sharing class DocumentScanController {
   }
 
   @AuraEnabled
-  public static List<String> parseDocument(String loanNumber, String documentId){
+  public static List<DocumentScanControllerWrapper> parseDocument(String loanNumber, String documentId){
     try {
-      System.debug(' controller document : ' + documentId);
-      System.debug(' loan : ' + loanNumber);
+
         String endpointUrl = 'https://calm-escarpment-43807-8fc0d96ffcfb.herokuapp.com/api/data?contentVersionId='+documentId+'&entityId='+loanNumber; 
-        List<String> contentVersionidList = new List<String>();
-        List<String> contentDocumentIdList = new List<String>();
+        Map<String, String> documentIdToNameMap = new Map<String, String>();
+        List<DocumentScanControllerWrapper> wrapperList = new List<DocumentScanControllerWrapper>();  
         HttpRequest httpRequest = new HttpRequest();
         httpRequest.setEndpoint(endpointUrl);
         httpRequest.setTimeout(120000);
-        httpRequest.setMethod('GET');  // Replace with the appropriate HTTP method (GET, POST, etc.)
+        httpRequest.setMethod('GET'); 
     
         HttpResponse httpResponse = new HttpResponse();
     
@@ -54,10 +53,8 @@ public with sharing class DocumentScanController {
 
                 for (Object obj : parsedResponse) {
                     Map<String, Object> item = (Map<String, Object>) obj;
-                    Boolean success = (Boolean) item.get('success');
-                    if (success) {
-                        String id = (String) item.get('id');
-                        contentVersionidList.add(id);
+                    if ((Boolean) item.get('success')) {
+                        documentIdToNameMap.put((String) item.get('id'), (String) item.get('file_name'));
                     }
                 }
                 
@@ -67,17 +64,27 @@ public with sharing class DocumentScanController {
                 System.debug('Callout error: message ' + httpResponse.getBody());
             }
 
-            List<ContentVersion> docs = [ Select contentdocumentId from ContentVersion Where Id IN :contentVersionidList ];
+            List<ContentVersion> docs = [ Select contentdocumentId from ContentVersion Where Id IN :documentIdToNameMap.keySet()];
             if(docs.size() > 0){
                 for(ContentVersion doc : docs){
-                  contentDocumentIdList.add(String.valueOf(doc.contentdocumentId));
+                  DocumentScanControllerWrapper wrapper = new DocumentScanControllerWrapper();
+                  wrapper.documentId = doc.ContentDocumentId;
+                  wrapper.documentName = documentIdToNameMap.get(doc.Id);
+                  wrapperList.add(wrapper);
                 }
             }
             
-            return contentDocumentIdList;
+            return wrapperList;
 
     } catch (Exception e) {
       throw new AuraHandledException(e.getMessage());
     }
+  }
+
+  public class DocumentScanControllerWrapper {
+    @AuraEnabled
+    public String documentId { get; set; }
+    @AuraEnabled
+    public String documentName { get; set; }
   }
 }

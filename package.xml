@@ -20130,6 +20130,7 @@
         <members>LLC_BI__Collateral__c.Migration_ID__c</members>
         <members>LLC_BI__Collateral__c.NameoftheAgency__c</members>
         <members>LLC_BI__Collateral__c.OtherRealEstateSubtype__c</members>
+        <members>LLC_BI__Collateral__c.OwnerInformationGrantor__c</members>
         <members>LLC_BI__Collateral__c.PMSI_Rollup__c</members>
         <members>LLC_BI__Collateral__c.Property_Tax__c</members>
         <members>LLC_BI__Collateral__c.cm_Abundance_of_Caution__c</members>
@@ -33403,6 +33404,8 @@
     <types>
         <members>LLC_BI__Collateral__c.Possessory Life Insurance3</members>
         <members>LLC_BI__Collateral__c.Possessory Life Insurance4</members>
+        <members>LLC_BI__Collateral__c.Titled Boat2</members>
+        <members>LLC_BI__Collateral__c.Titled Trailer2</members>
         <members>LLC_BI__Covenant_Compliance2__c.LLC_BI__Set_Historic_Financial_Indicator_Value</members>
         <members>LLC_BI__Loan__c.CAB_Default Loan Name</members>
         <members>LLC_BI__Loan__c.Commercial Product Line-Record Type</members>

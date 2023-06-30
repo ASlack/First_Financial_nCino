@@ -85,10 +85,10 @@ export default class DocumentScanSubmission extends LightningElement {
     this.isLoading = true;
     parseDocument({ loanNumber: this.loanId,documentId: this.documentId })
       .then((result) => {
-        const documents = result.map((id) => {
+        const documents = result.map((item) => {
           return {
-            filename: `Document${id}.pdf`,
-            url: `/sfc/servlet.shepherd/document/download/${id}`
+            filename: `${item.documentName}.pdf`,
+            url: `/sfc/servlet.shepherd/document/download/${item.documentId}`
           };
         });
 
