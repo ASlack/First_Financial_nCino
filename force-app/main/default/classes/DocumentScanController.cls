@@ -28,7 +28,7 @@ public with sharing class DocumentScanController {
   @AuraEnabled
   public static List<DocumentScanControllerWrapper> parseDocument(String loanNumber, String documentId){
     try {
-
+		System.debug(' loan id : ' + loanNumber + ' doc id : ' + documentId);
         String endpointUrl = 'https://calm-escarpment-43807-8fc0d96ffcfb.herokuapp.com/api/data?contentVersionId='+documentId+'&entityId='+loanNumber; 
         Map<String, String> documentIdToNameMap = new Map<String, String>();
         List<DocumentScanControllerWrapper> wrapperList = new List<DocumentScanControllerWrapper>();  

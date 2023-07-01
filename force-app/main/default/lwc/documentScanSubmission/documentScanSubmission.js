@@ -83,6 +83,14 @@ export default class DocumentScanSubmission extends LightningElement {
 
   handleScanAndSplitButton() {
     this.isLoading = true;
+    const toastEvent = new ShowToastEvent({
+      title: "Hang tight!", 
+      message: "We are processing your document, please wait...it may take a few minutes.",
+      variant: "info",
+      mode: "dismissable"
+    });
+    this.dispatchEvent(toastEvent);
+    
     parseDocument({ loanNumber: this.loanId,documentId: this.documentId })
       .then((result) => {
         const documents = result.map((item) => {
@@ -99,6 +107,11 @@ export default class DocumentScanSubmission extends LightningElement {
       });
       this.isLoading = false;
       this.dispatchEvent(scanAndSplitEvent);
+
+      // console.log(toastEvent);
+      // this.dispatchEvent(toastEvent);
+      // this.isLoading = false;
+      // this.handleResetButton();
       })
       .catch((error) => {
         console.log(error);
