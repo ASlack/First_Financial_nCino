@@ -6572,6 +6572,7 @@
         <members>LightningLoginFormControllerTest</members>
         <members>LightningSelfRegisterController</members>
         <members>LightningSelfRegisterControllerTest</members>
+        <members>LoanRoundRobinAssignInvocable</members>
         <members>MTRNS__ACompilableBase_v1</members>
         <members>MTRNS__ACompilableBase_v1Tests</members>
         <members>MTRNS__AFunctionBase_v1</members>
@@ -29390,6 +29391,7 @@
         <members>Loan_Is_Ready_For_Review</members>
         <members>Loan_LO_or_LA_Changed_Update_Portal_Docs</members>
         <members>Loan_Lost_Reason_Set_Update_Status</members>
+        <members>Loan_On_Stage_Update_Assign_Loan_Team_Members</members>
         <members>Loan_RFI_Received</members>
         <members>Loan_Scheduled_Loan_Team_Chatter_Notifications</members>
         <members>Loan_Set_Initial_Application_Date</members>
