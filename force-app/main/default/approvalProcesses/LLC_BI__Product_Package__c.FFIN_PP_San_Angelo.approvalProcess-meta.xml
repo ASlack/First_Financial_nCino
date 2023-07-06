@@ -243,7 +243,8 @@ Total_Relationship_Exposure__c &gt; Region__r.SLC_Total_Relationship_Max_Authori
     NOT(ISBLANK(Household__c)),
     NOT(ISBLANK(Approver_1__c)),
     NOT(ISPICKVAL(Package_Secure_Type__c, &quot;&quot;)),
-    NOT(ISPICKVAL(LLC_BI__Risk_Rating__c, &quot;&quot;))
+    NOT(ISPICKVAL(LLC_BI__Risk_Rating__c, &quot;&quot;)),
+    LLC_BI__Reviewable_Loan_Facilities_Count__c &gt; 0
 )</formula>
     </entryCriteria>
     <finalApprovalActions>
