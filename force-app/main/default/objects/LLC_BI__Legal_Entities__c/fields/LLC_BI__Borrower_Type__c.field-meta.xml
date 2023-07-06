@@ -44,12 +44,12 @@
             <value>
                 <fullName>Guarantor Credit Group</fullName>
                 <default>false</default>
-                <label>Guarantor Credit Group</label>
+                <label>Guarantor HOUSEHOLD</label>
             </value>
             <value>
                 <fullName>Borrower Credit Group</fullName>
                 <default>false</default>
-                <label>Borrower Credit Group</label>
+                <label>Borrower HOUSEHOLD</label>
             </value>
         </valueSetDefinition>
     </valueSet>
