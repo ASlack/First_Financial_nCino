@@ -1,6 +1,7 @@
 import { LightningElement } from "lwc";
 import queryLoans from "@salesforce/apex/DocumentScanController.queryLoans";
 import parseDocument from "@salesforce/apex/DocumentScanController.parseDocument";
+import { ShowToastEvent } from "lightning/platformShowToastEvent";
 
 export default class DocumentScanSubmission extends LightningElement {
   loanNumber;
@@ -83,38 +84,33 @@ export default class DocumentScanSubmission extends LightningElement {
 
   handleScanAndSplitButton() {
     this.isLoading = true;
-    const toastEvent = new ShowToastEvent({
-      title: "Hang tight!", 
-      message: "We are processing your document, please wait...it may take a few minutes.",
-      variant: "info",
-      mode: "dismissable"
-    });
-    this.dispatchEvent(toastEvent);
-    
-    parseDocument({ loanNumber: this.loanId,documentId: this.documentId })
+    parseDocument({ loanNumber: this.loanId, documentId: this.documentId })
       .then((result) => {
-        const documents = result.map((item) => {
-          return {
-            filename: `${item.documentName}.pdf`,
-            url: `/sfc/servlet.shepherd/document/download/${item.documentId}`
-          };
-        });
-
-      const scanAndSplitEvent = new CustomEvent('scanandsplit',{
-        detail: {
-          documents: documents
-        }
-      });
-      this.isLoading = false;
-      this.dispatchEvent(scanAndSplitEvent);
-
-      // console.log(toastEvent);
-      // this.dispatchEvent(toastEvent);
-      // this.isLoading = false;
-      // this.handleResetButton();
+        console.log('success');
+        setTimeout(function() {
+          //your code to be executed after 1 second
+        }, 2000);
       })
       .catch((error) => {
         console.log(error);
     });
+   // this.dispatchEvent(scanAndSplitEvent);
+    const toastEvent = new ShowToastEvent({
+      title: "Success!", 
+      message: `Document has been processed. Visit {1} shortly to view the documents.`,
+      variant: "success",
+      mode: "dismissable",
+      messageData: [
+      'view',
+      {
+        url: '/lightning/r/LLC_BI__Loan__c/' + this.loanId + '/view',
+        label: 'record'
+      }]
+    });
+
+    this.dispatchEvent(toastEvent);
+    console.log(toastEvent)
+    this.isLoading = false;
+    this.handleResetButton();
   }
 }

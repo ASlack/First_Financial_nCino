@@ -2,7 +2,7 @@
  * @description       : Controller to provide backend services to Document Scan UI components
  * @author            : Zennify
  * @group             : 
- * @last modified on  : 06-29-2023
+ * @last modified on  : 07-05-2023
  * @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
 **/
 public with sharing class DocumentScanController {
@@ -26,11 +26,11 @@ public with sharing class DocumentScanController {
   }
 
   @AuraEnabled
-  public static List<DocumentScanControllerWrapper> parseDocument(String loanNumber, String documentId){
+  public static void parseDocument(String loanNumber, String documentId){
     try {
-		System.debug(' loan id : ' + loanNumber + ' doc id : ' + documentId);
-        String endpointUrl = 'https://calm-escarpment-43807-8fc0d96ffcfb.herokuapp.com/api/data?contentVersionId='+documentId+'&entityId='+loanNumber; 
-        Map<String, String> documentIdToNameMap = new Map<String, String>();
+		    System.debug(' loan id : ' + loanNumber + ' doc id : ' + documentId);
+        String endpointUrl = 'https://ffin-celery-server-ba90c5b6c33e.herokuapp.com/api/pdf-parser/barcode?contentVersionId='+documentId+'&entityId='+loanNumber; 
+        List<String> taskIds = new List<String>();
         List<DocumentScanControllerWrapper> wrapperList = new List<DocumentScanControllerWrapper>();  
         HttpRequest httpRequest = new HttpRequest();
         httpRequest.setEndpoint(endpointUrl);
@@ -44,37 +44,26 @@ public with sharing class DocumentScanController {
             httpResponse = new Http().send(httpRequest);
     
             // Process the response
-            if (httpResponse.getStatusCode() == 200) {
+            if (httpResponse.getStatusCode() == 202) {
                 // Callout succeeded, handle the response data
                 String responseText = httpResponse.getBody();
                 System.debug('Response: ' + responseText);
 
-                List<Object> parsedResponse = (List<Object>) JSON.deserializeUntyped(httpResponse.getBody());
-
-                for (Object obj : parsedResponse) {
-                    Map<String, Object> item = (Map<String, Object>) obj;
-                    if ((Boolean) item.get('success')) {
-                        documentIdToNameMap.put((String) item.get('id'), (String) item.get('file_name'));
-                    }
+                Map<String, Object> parsedResponse = (Map<String, Object>) JSON.deserializeUntyped(httpResponse.getBody());
+                if (parsedResponse.containsKey('task_id')) {
+                    taskIds.add((String) parsedResponse.get('task_id'));
                 }
+                
                 
             } else {
                 // Callout failed, handle the error
                 System.debug('Callout error: HTTP status code ' + httpResponse.getStatusCode());
                 System.debug('Callout error: message ' + httpResponse.getBody());
             }
-
-            List<ContentVersion> docs = [ Select contentdocumentId from ContentVersion Where Id IN :documentIdToNameMap.keySet()];
-            if(docs.size() > 0){
-                for(ContentVersion doc : docs){
-                  DocumentScanControllerWrapper wrapper = new DocumentScanControllerWrapper();
-                  wrapper.documentId = doc.ContentDocumentId;
-                  wrapper.documentName = documentIdToNameMap.get(doc.Id);
-                  wrapperList.add(wrapper);
-                }
+            System.debug('taskIds : ' + taskIds);
+            if (taskIds.size() > 0) {
+                System.enqueueJob(new DocumentScanControllerAsync(taskIds, 0));
             }
-            
-            return wrapperList;
 
     } catch (Exception e) {
       throw new AuraHandledException(e.getMessage());
@@ -86,5 +75,60 @@ public with sharing class DocumentScanController {
     public String documentId { get; set; }
     @AuraEnabled
     public String documentName { get; set; }
+  }
+
+  public class DocumentScanControllerAsync implements Queueable , Database.AllowsCallouts {
+    public List<String> taskIds { get; set; }
+    public Integer attempts { get; set; }
+
+    public DocumentScanControllerAsync(List<String> taskIds, Integer attempts) {
+      this.taskIds = taskIds;
+      this.attempts = attempts;
+    } 
+
+    public void execute(QueueableContext context) {
+      System.debug('taskIds : ' + taskIds);
+      System.debug('attempts : ' + attempts);
+      if (attempts > 5) {
+        return;
+      }
+
+      attempts++;
+
+      String endpointUrl = 'https://ffin-celery-server-ba90c5b6c33e.herokuapp.com/status?task_id='+taskIds[0]; 
+
+      HttpRequest httpRequest = new HttpRequest();
+      httpRequest.setEndpoint(endpointUrl);
+      httpRequest.setTimeout(120000);
+      httpRequest.setMethod('GET'); 
+  
+      HttpResponse httpResponse = new HttpResponse();
+      httpResponse = new Http().send(httpRequest);
+        
+      if (httpResponse.getStatusCode() == 500){
+        System.debug(LoggingLevel.ERROR, 'Callout error: HTTP status code ' + httpResponse.getStatusCode());
+        return;
+      }
+      
+      if (httpResponse.getStatusCode() == 200) {
+        // Callout succeeded, handle the response data
+          List<ContentVersion> contentVersions = [select Id, Title from ContentVersion where ExternalJobId__c in :taskIds];
+          for ( ContentVersion c : contentVersions){
+            System.debug('contentVersions : ' + c.Id);
+            System.debug('contentVersions : ' + c.Title);
+          }
+      } else if(httpResponse.getStatusCode() == 202) {
+        System.debug('Callout error: HTTP status code ' + httpResponse.getStatusCode());
+        System.debug('Callout error: message ' + httpResponse.getBody());
+		Long startTimerTime = DateTime.now().getTime();
+		Long finishTimerTime = DateTime.now().getTime();
+
+		while ((finishTimerTime - startTimerTime ) < 30000) {
+		//delay for 12 seconds
+    		finishTimerTime = DateTime.now().getTime();
+		} 
+        System.enqueueJob(new DocumentScanControllerAsync(taskIds, attempts));
+      } 
+    }
   }
 }

@@ -26,7 +26,7 @@ global without sharing class LoanRoundRobinAssignInvocable {
                 }
                 if (String.isNotBlank(r.teamRole)) {
                     roleIds.add(r.teamRole);
-                    recordIdQueueNameMap.put(r.recordId, r.teamRole);
+                    recordIdRoleIdMap.put(r.recordId, r.teamRole);
                 }
             }
 

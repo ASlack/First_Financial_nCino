@@ -27000,6 +27000,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>LoanRoundRobinAssignInvocable</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>MTRNS__ACompilableBase_v1</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -65578,6 +65582,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>ContentVersion.ExternalJobId__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Contract.ActivatedById</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -68339,6 +68348,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>LLC_BI__AccountDocument__c.Uploaded_Notified_User__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__AccountDocument__c.Zen_Trend__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -76644,6 +76658,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>LLC_BI__LLC_LoanDocument__c.Uploaded_Notified_User__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__LLC_LoanDocument__c.Zen_Trend__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

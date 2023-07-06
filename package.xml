@@ -18582,6 +18582,7 @@
         <members>ContactRequest.WhoId</members>
         <members>ContentVersion.ContentSize</members>
         <members>ContentVersion.Description</members>
+        <members>ContentVersion.ExternalJobId__c</members>
         <members>ContentVersion.FileExtension</members>
         <members>ContentVersion.FileType</members>
         <members>ContentVersion.IsAssetEnabled</members>
@@ -19435,6 +19436,7 @@
         <members>LLC_BI__AccountDocument__c.NDOC__fileName__c</members>
         <members>LLC_BI__AccountDocument__c.NDOC__isTrash__c</members>
         <members>LLC_BI__AccountDocument__c.Uploaded_Notified_User__c</members>
+        <members>LLC_BI__AccountDocument__c.Zen_Trend__c</members>
         <members>LLC_BI__Account_Collateral__c.LLC_BI__Account__c</members>
         <members>LLC_BI__Account_Collateral__c.LLC_BI__Collateral_Association__c</members>
         <members>LLC_BI__Account_Collateral__c.LLC_BI__Collateral__c</members>
@@ -21207,6 +21209,7 @@
         <members>LLC_BI__LLC_LoanDocument__c.NDOC__neededByStage__c</members>
         <members>LLC_BI__LLC_LoanDocument__c.NDOC__year__c</members>
         <members>LLC_BI__LLC_LoanDocument__c.Uploaded_Notified_User__c</members>
+        <members>LLC_BI__LLC_LoanDocument__c.Zen_Trend__c</members>
         <members>LLC_BI__Legal_Entities__c.Integration_Source__c</members>
         <members>LLC_BI__Legal_Entities__c.LLC_BI__Account__c</members>
         <members>LLC_BI__Legal_Entities__c.LLC_BI__Address__c</members>

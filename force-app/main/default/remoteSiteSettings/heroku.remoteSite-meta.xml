@@ -2,5 +2,5 @@
 <RemoteSiteSetting xmlns="http://soap.sforce.com/2006/04/metadata">
     <disableProtocolSecurity>false</disableProtocolSecurity>
     <isActive>true</isActive>
-    <url>https://calm-escarpment-43807-8fc0d96ffcfb.herokuapp.com</url>
+    <url>https://ffin-celery-server-ba90c5b6c33e.herokuapp.com</url>
 </RemoteSiteSetting>
