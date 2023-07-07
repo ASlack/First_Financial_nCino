@@ -3,7 +3,7 @@
     <actionCalls>
         <name>Assign_Attorney_Preped_Funding</name>
         <label>Assign Attorney Preped Funding</label>
-        <locationX>1106</locationX>
+        <locationX>1370</locationX>
         <locationY>647</locationY>
         <actionName>LoanRoundRobinAssignInvocable</actionName>
         <actionType>apex</actionType>
@@ -30,7 +30,7 @@
     <actionCalls>
         <name>Assign_Consumer_Laserpro_Booking</name>
         <label>Assign Consumer Laserpro Booking</label>
-        <locationX>1370</locationX>
+        <locationX>1634</locationX>
         <locationY>755</locationY>
         <actionName>LoanRoundRobinAssignInvocable</actionName>
         <actionType>apex</actionType>
@@ -57,7 +57,7 @@
     <actionCalls>
         <name>Assign_Consumer_Laserpro_Funding</name>
         <label>Assign Consumer Laserpro Funding</label>
-        <locationX>1370</locationX>
+        <locationX>1634</locationX>
         <locationY>647</locationY>
         <actionName>LoanRoundRobinAssignInvocable</actionName>
         <actionType>apex</actionType>
@@ -87,7 +87,7 @@
     <actionCalls>
         <name>Assign_Defi_Booking</name>
         <label>Assign Defi Booking</label>
-        <locationX>1898</locationX>
+        <locationX>2162</locationX>
         <locationY>755</locationY>
         <actionName>LoanRoundRobinAssignInvocable</actionName>
         <actionType>apex</actionType>
@@ -114,7 +114,7 @@
     <actionCalls>
         <name>Assign_Defi_Funding</name>
         <label>Assign Defi Funding</label>
-        <locationX>1898</locationX>
+        <locationX>2162</locationX>
         <locationY>647</locationY>
         <actionName>LoanRoundRobinAssignInvocable</actionName>
         <actionType>apex</actionType>
@@ -144,7 +144,7 @@
     <actionCalls>
         <name>Assign_Encompass_Booking</name>
         <label>Assign Encompass Booking</label>
-        <locationX>1634</locationX>
+        <locationX>1898</locationX>
         <locationY>755</locationY>
         <actionName>LoanRoundRobinAssignInvocable</actionName>
         <actionType>apex</actionType>
@@ -171,7 +171,7 @@
     <actionCalls>
         <name>Assign_Encompass_Funding</name>
         <label>Assign Encompass Funding</label>
-        <locationX>1634</locationX>
+        <locationX>1898</locationX>
         <locationY>647</locationY>
         <actionName>LoanRoundRobinAssignInvocable</actionName>
         <actionType>apex</actionType>
@@ -201,7 +201,7 @@
     <actionCalls>
         <name>Assign_LaserPro_Commercial_Funding</name>
         <label>Assign LaserPro Commercial Funding</label>
-        <locationX>842</locationX>
+        <locationX>1106</locationX>
         <locationY>647</locationY>
         <actionName>LoanRoundRobinAssignInvocable</actionName>
         <actionType>apex</actionType>
@@ -226,8 +226,8 @@
         </inputParameters>
     </actionCalls>
     <actionCalls>
-        <name>Copy_1_of_Create_Commercial_Real_Estate_Doc_Prep_Loan_Team</name>
-        <label>Copy 1 of Create Commercial Real Estate Doc Prep Loan Team</label>
+        <name>Create_Commercial_Non_Real_Estate_Doc_Prep_Loan_Team</name>
+        <label>Create Commercial Non-Real Estate Doc Prep Loan Team</label>
         <locationX>314</locationX>
         <locationY>647</locationY>
         <actionName>LoanRoundRobinAssignInvocable</actionName>
@@ -279,11 +279,38 @@
             </value>
         </inputParameters>
     </actionCalls>
+    <actionCalls>
+        <name>Create_Consumer_Non_Real_Estate_Doc_Prep_Loan_Team</name>
+        <label>Create Consumer Non-Real Estate Doc Prep Loan Team</label>
+        <locationX>578</locationX>
+        <locationY>647</locationY>
+        <actionName>LoanRoundRobinAssignInvocable</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>queueName</name>
+            <value>
+                <stringValue>Consumer Non-Real Estate Doc Prep</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>teamRole</name>
+            <value>
+                <elementReference>Retrieve_Doc_Prep_Team_Role_Id.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
     <apiVersion>58.0</apiVersion>
     <decisions>
         <name>Check_Funding_and_Booking_Path</name>
         <label>Check Funding and Booking Path</label>
-        <locationX>1502</locationX>
+        <locationX>1766</locationX>
         <locationY>539</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -421,11 +448,11 @@
     <decisions>
         <name>Check_Loan_Stage</name>
         <label>Check Loan Stage</label>
-        <locationX>1370</locationX>
+        <locationX>1568</locationX>
         <locationY>323</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
-            <name>Commercial_Real_Estate_Doc_Prep</name>
+            <name>Doc_Prep</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
                 <leftValueReference>$Record.LLC_BI__Stage__c</leftValueReference>
@@ -434,17 +461,10 @@
                     <stringValue>Doc Prep</stringValue>
                 </rightValue>
             </conditions>
-            <conditions>
-                <leftValueReference>$Record.LLC_BI__Product_Line__c</leftValueReference>
-                <operator>NotEqualTo</operator>
-                <rightValue>
-                    <stringValue>Consumer</stringValue>
-                </rightValue>
-            </conditions>
             <connector>
                 <targetReference>Retrieve_Doc_Prep_Team_Role_Id</targetReference>
             </connector>
-            <label>Commercial Real Estate Doc Prep</label>
+            <label>Doc Prep</label>
         </rules>
         <rules>
             <name>Booking_Funding</name>
@@ -465,12 +485,12 @@
     <decisions>
         <name>Check_Product_Type</name>
         <label>Check Product Type</label>
-        <locationX>314</locationX>
+        <locationX>446</locationX>
         <locationY>539</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>Commercial_Real_Estate</name>
-            <conditionLogic>1 OR 2 OR 3 OR 4 OR 5</conditionLogic>
+            <conditionLogic>(1 OR 2 OR 3 OR 4 OR 5) AND 6</conditionLogic>
             <conditions>
                 <leftValueReference>$Record.LLC_BI__Product_Type__c</leftValueReference>
                 <operator>EqualTo</operator>
@@ -506,6 +526,13 @@
                     <stringValue>Construction &amp; Development RE</stringValue>
                 </rightValue>
             </conditions>
+            <conditions>
+                <leftValueReference>$Record.LLC_BI__Product_Line__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Consumer</stringValue>
+                </rightValue>
+            </conditions>
             <connector>
                 <targetReference>Create_Commercial_Real_Estate_Doc_Prep_Loan_Team</targetReference>
             </connector>
@@ -513,7 +540,7 @@
         </rules>
         <rules>
             <name>Commercial_Non_Real_Estate</name>
-            <conditionLogic>1 OR 2 OR 3 OR 4</conditionLogic>
+            <conditionLogic>(1 OR 2 OR 3 OR 4) AND 5</conditionLogic>
             <conditions>
                 <leftValueReference>$Record.LLC_BI__Product_Type__c</leftValueReference>
                 <operator>EqualTo</operator>
@@ -542,10 +569,46 @@
                     <stringValue>Municipality</stringValue>
                 </rightValue>
             </conditions>
+            <conditions>
+                <leftValueReference>$Record.LLC_BI__Product_Line__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Consumer</stringValue>
+                </rightValue>
+            </conditions>
             <connector>
-                <targetReference>Copy_1_of_Create_Commercial_Real_Estate_Doc_Prep_Loan_Team</targetReference>
+                <targetReference>Create_Commercial_Non_Real_Estate_Doc_Prep_Loan_Team</targetReference>
             </connector>
             <label>Commercial Non Real Estate</label>
+        </rules>
+        <rules>
+            <name>Consumer_Non_Real_Estate_Doc_Prep</name>
+            <conditionLogic>1 AND (2 OR 3)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.LLC_BI__Product_Line__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Consumer</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.LLC_BI__Product_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Consumer Non-Auto</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.LLC_BI__Product_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Consumer Auto</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Create_Consumer_Non_Real_Estate_Doc_Prep_Loan_Team</targetReference>
+            </connector>
+            <label>Consumer Non-Real Estate Doc Prep</label>
         </rules>
     </decisions>
     <environments>Default</environments>
@@ -573,7 +636,7 @@
     <recordLookups>
         <name>Retrieve_Doc_Prep_Team_Role_Id</name>
         <label>Retrieve Doc Prep Team Role Id</label>
-        <locationX>314</locationX>
+        <locationX>446</locationX>
         <locationY>431</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -594,7 +657,7 @@
     <recordLookups>
         <name>Retrieve_Team_Role_Id_Loan_Ops</name>
         <label>Retrieve Team Role Id Loan Ops</label>
-        <locationX>1502</locationX>
+        <locationX>1766</locationX>
         <locationY>431</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -613,7 +676,7 @@
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <start>
-        <locationX>1244</locationX>
+        <locationX>1442</locationX>
         <locationY>0</locationY>
         <connector>
             <targetReference>Check_Loan_Stage</targetReference>

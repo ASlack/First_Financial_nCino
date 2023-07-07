@@ -84,33 +84,33 @@ export default class DocumentScanSubmission extends LightningElement {
 
   handleScanAndSplitButton() {
     this.isLoading = true;
+
     parseDocument({ loanNumber: this.loanId, documentId: this.documentId })
       .then((result) => {
         console.log('success');
-        setTimeout(function() {
-          //your code to be executed after 1 second
-        }, 2000);
       })
       .catch((error) => {
         console.log(error);
     });
-   // this.dispatchEvent(scanAndSplitEvent);
-    const toastEvent = new ShowToastEvent({
-      title: "Success!", 
-      message: `Document has been processed. Visit {1} shortly to view the documents.`,
-      variant: "success",
-      mode: "dismissable",
-      messageData: [
-      'view',
-      {
-        url: '/lightning/r/LLC_BI__Loan__c/' + this.loanId + '/view',
-        label: 'record'
-      }]
-    });
 
-    this.dispatchEvent(toastEvent);
-    console.log(toastEvent)
-    this.isLoading = false;
-    this.handleResetButton();
+    setTimeout(() => { 
+      const toastEvent = new ShowToastEvent({
+        title: "Success!", 
+        message: `Document has been processed. Visit {1} shortly to view the documents.`,
+        variant: "success",
+        mode: "sticky",
+        messageData: [
+        'view',
+        {
+          url: '/lightning/r/LLC_BI__Loan__c/' + this.loanId + '/view',
+          label: 'Document Manager Tab'
+        }]
+      });
+
+      this.dispatchEvent(toastEvent);
+      this.isLoading = false;
+      this.handleResetButton();
+    }, 3000);
+
   }
 }

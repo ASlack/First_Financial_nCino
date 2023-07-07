@@ -52,6 +52,7 @@
         <members>CommunitiesSelfRegConfirmControllerTest</members>
         <members>CommunitiesSelfRegController</members>
         <members>CommunitiesSelfRegControllerTest</members>
+        <members>ContentVersionUtil</members>
         <members>DMAdmin__CollateralTypeCCL</members>
         <members>DMAdmin__DMConfigController</members>
         <members>DMAdmin__DMDevelop</members>
@@ -32052,6 +32053,7 @@
         <members>Account.Business_Client</members>
         <members>Account.Business_Prospect</members>
         <members>Account.Credit_Group</members>
+        <members>Account.HOUSEHOLD</members>
         <members>Account.LLC_BI__Business</members>
         <members>Account.LLC_BI__Household</members>
         <members>Account.LLC_BI__Individual</members>
