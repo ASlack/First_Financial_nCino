@@ -13,6 +13,7 @@ public without sharing class ContentVersionUtil {
 
     public void processContVerRecs(){
         for(ContentVersion c : newItemsMap.values()) {
+            System.debug('ContentVersionUtil var c: ' + c);
             DocManBase docManBaseItem                       = new DocManBase();
             DocManAttributes versionAttribute               = new DocManAttributes();
             docManBaseItem.document.versions                = new List<DocManVersionAttributes>();

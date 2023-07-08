@@ -30964,6 +30964,7 @@
         <members>dmwFieldService</members>
         <members>dmwWorkspace</members>
         <members>documentScanContainer</members>
+        <members>documentScanProgressBar</members>
         <members>documentScanReview</members>
         <members>documentScanSubmission</members>
         <members>documentTitle</members>
@@ -31144,6 +31145,7 @@
         <members>summarytiles</members>
         <members>systemPropertiesService</members>
         <members>tableOfContents</members>
+        <members>test</members>
         <members>toastMessageHandler</members>
         <members>topbar</members>
         <members>treasuryMaintenanceBanner</members>
@@ -31800,6 +31802,7 @@
         <members>NDOC__Universal_Document_Manager_Delete_Permission</members>
         <members>NDOC__Universal_Document_Manager_Edit_Details_Permission</members>
         <members>Password_Does_Not_Expire</members>
+        <members>Query_Documents</members>
         <members>RecordAssign__Record_Assigner</members>
         <members>Record_Assigner</members>
         <members>Relationship_Officer_Loan_access</members>

@@ -5,7 +5,7 @@
  * @last modified on  : 07-06-2023
  * @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
 **/
-public with sharing class DocumentScanController {
+public without sharing class DocumentScanController {
   @AuraEnabled
   public static List<LLC_BI__Loan__c> queryLoans(String loanNumber) {
     List<LLC_BI__Loan__c> matchingLoans = new List<LLC_BI__Loan__c>();
@@ -26,7 +26,7 @@ public with sharing class DocumentScanController {
   }
 
   @AuraEnabled
-  public static void parseDocument(String loanNumber, String documentId){
+  public static String parseDocument(String loanNumber, String documentId){
     try {
 		    System.debug(' loan id : ' + loanNumber + ' doc id : ' + documentId);
         String endpointUrl = 'https://ffin-celery-server-ba90c5b6c33e.herokuapp.com/api/pdf-parser/barcode?contentVersionId='+documentId+'&entityId='+loanNumber; 
@@ -54,10 +54,30 @@ public with sharing class DocumentScanController {
             if (taskIds.size() > 0) {
                 System.enqueueJob(new DocumentScanControllerAsync(taskIds, 1), 1);
             }
+        
+        return taskIds[0];
 
     } catch (Exception e) {
       throw new AuraHandledException(e.getMessage());
     }
+  }
+    
+  @AuraEnabled
+  public static List<ContentDocument> getContentDocuments(String taskid) {
+      System.debug(' backend task id : ' + taskId);
+    List<ContentDocument> docs = new List<ContentDocument>();
+    try {
+      docs = [
+        SELECT Id, 
+               Title
+        FROM ContentDocument 
+        WHERE Id IN (SELECT ContentDocumentId FROM ContentVersion WHERE ExternalJobId__c = :taskId)
+      ];
+    } catch (Exception e) {
+      throw new AuraHandledException(e.getMessage());
+    }
+	System.debug(' list of docs : ' + docs);
+    return docs;
   }
 
   public class DocumentScanControllerAsync implements Queueable , Database.AllowsCallouts {
@@ -93,10 +113,14 @@ public with sharing class DocumentScanController {
       }
       
       if (httpResponse.getStatusCode() == 200) {
-          List<ContentVersion> contentVersions = [select Id, Title from ContentVersion where ExternalJobId__c in :taskIds];
+        Map<Id, ContentVersion> idToContentVersionMap = new Map<Id, ContentVersion>();
+          List<ContentVersion> contentVersions = [select Id, Title, FirstPublishLocationId, PathOnClient from ContentVersion where ExternalJobId__c in :taskIds];
           for ( ContentVersion c : contentVersions){
-            System.debug('contentVersions : ' + c.Id);
-            System.debug('contentVersions : ' + c.Title);
+            idToContentVersionMap.put(c.Id, c);
+          }
+          if(idToContentVersionMap.size() > 0){
+            new ContentVersionUtil(idToContentVersionMap).processContVerRecs();
+           System.debug(' submit to doc man content versions : ' + idToContentVersionMap);
           }
       } else if(httpResponse.getStatusCode() == 202) {
                 System.enqueueJob(new DocumentScanControllerAsync(taskIds, attempts), 2);

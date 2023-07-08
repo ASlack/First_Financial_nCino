@@ -2,14 +2,21 @@
   @description       : Parent component to all Document Scan UI components
   @author            : Zennify
   @group             : 
-  @last modified on  : 06-30-2023
+  @last modified on  : 07-07-2023
   @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
 -->
 <template>
 	<template if:false={scanned}>
-		<c-document-scan-submission onscanandsplit={handleScanAndSplit}></c-document-scan-submission>
+		<c-document-scan-submission 
+			onscanandsplit={handleScanAndSplit} 
+			onscansubmission={handleDocumentSubmission} 
+			ondocumentsreceived={handleDocumentsReceived}>
+		</c-document-scan-submission>
 	</template>
-	<template if:true={scanned}>
-		<c-document-scan-review documents={documents}></c-document-scan-review>
+	<template if:true={received}>
+		<c-document-scan-review documents={documents} ></c-document-scan-review>
+	</template>
+	<template if:true={submitted}>
+		<c-document-scan-progress-bar taskid={taskid}></c-document-scan-progress-bar>
 	</template>
 </template>

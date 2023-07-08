@@ -14,6 +14,7 @@ export default class DocumentScanSubmission extends LightningElement {
   documentId;
   loandId;
   isLoading = false;
+  taskid;
 
   get acceptedFormats() {
     return [".pdf"];
@@ -87,7 +88,7 @@ export default class DocumentScanSubmission extends LightningElement {
 
     parseDocument({ loanNumber: this.loanId, documentId: this.documentId })
       .then((result) => {
-        console.log('success');
+        this.taskid = result;
       })
       .catch((error) => {
         console.log(error);
@@ -96,21 +97,24 @@ export default class DocumentScanSubmission extends LightningElement {
     setTimeout(() => { 
       const toastEvent = new ShowToastEvent({
         title: "Success!", 
-        message: `Document has been processed. Visit {1} shortly to view the documents.`,
+        message: `Document has been submitted for processing.`,
         variant: "success",
-        mode: "sticky",
-        messageData: [
-        'view',
-        {
-          url: '/lightning/r/LLC_BI__Loan__c/' + this.loanId + '/view',
-          label: 'Document Manager Tab'
-        }]
+        mode: "dismissable",
       });
-
+  
       this.dispatchEvent(toastEvent);
+      
+      const submitEvent = new CustomEvent('scansubmission', {
+        detail: this.taskid
+      });
+  
+      this.dispatchEvent(submitEvent);
+  
       this.isLoading = false;
-      this.handleResetButton();
+      
     }, 3000);
 
   }
 }
+
+``
