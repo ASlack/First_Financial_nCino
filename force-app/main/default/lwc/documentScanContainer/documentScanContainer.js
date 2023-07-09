@@ -25,7 +25,7 @@ export default class DocumentScanContainer extends LightningElement {
   handleDocumentsReceived(event) {
     console.log("handleDocumentsReceived called");
     this.received = true;
-    this.submitted = true;
+    this.submitted = false;
     this.scanned = true;
     this.taskid = event.detail;
     console.log("received container task id: " + this.taskid);

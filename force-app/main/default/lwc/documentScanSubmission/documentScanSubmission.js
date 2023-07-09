@@ -81,6 +81,9 @@ export default class DocumentScanSubmission extends LightningElement {
     this.fileUploaded = event.detail.files[0];
     this.documentId = this.fileUploaded.contentVersionId;
     this.loanId = this.matchingLoans[0].Id;
+    this.matchingLoans.forEach(loan => { console.log( 'loan' + loan.Id )});
+
+    console.log(' loand id ' + this.loanId);
   }
 
   handleScanAndSplitButton() {
