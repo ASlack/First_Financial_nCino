@@ -6783,6 +6783,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Loan__c.Zen_Hold_Mail_Code__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>LLC_BI__Loan__c.cm_Exposure_Calculation__c</field>
         <readable>true</readable>

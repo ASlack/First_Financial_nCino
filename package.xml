@@ -21690,6 +21690,7 @@
         <members>LLC_BI__Loan__c.What_is_the_purpose_of_the_loan__c</members>
         <members>LLC_BI__Loan__c.Withdrawn_Date__c</members>
         <members>LLC_BI__Loan__c.Zen_Consumer_Source__c</members>
+        <members>LLC_BI__Loan__c.Zen_Hold_Mail_Code__c</members>
         <members>LLC_BI__Loan__c.Zen_Owner_Occupied__c</members>
         <members>LLC_BI__Loan__c.Zen_Total_Percent_Participation__c</members>
         <members>LLC_BI__Loan__c.cm_Available_Amount__c</members>
