@@ -31005,6 +31005,7 @@
         <members>Data_Services_PS</members>
         <members>Deal_Management</members>
         <members>Doc_Prep_Home_Page_Permission_Set</members>
+        <members>Document_Manager_Edit_Trend</members>
         <members>EFPIO__Package_Registry_Info_Access</members>
         <members>EXUS__EXUS_Credit_View_Requests</members>
         <members>EXUS__EXUS_Credit_View_Responses</members>
