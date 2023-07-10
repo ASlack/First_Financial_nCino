@@ -2,7 +2,7 @@
  * @description       : Controller to provide backend services to Document Scan UI components
  * @author            : Zennify
  * @group             : 
- * @last modified on  : 07-06-2023
+ * @last modified on  : 07-09-2023
  * @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
 **/
 public without sharing class DocumentScanController {
@@ -64,7 +64,6 @@ public without sharing class DocumentScanController {
     
   @AuraEnabled
   public static List<ContentDocument> getContentDocuments(String taskid) {
-      System.debug(' backend task id : ' + taskId);
     List<ContentDocument> docs = new List<ContentDocument>();
     try {
       docs = [
@@ -119,7 +118,7 @@ public without sharing class DocumentScanController {
             idToContentVersionMap.put(c.Id, c);
           }
           if(idToContentVersionMap.size() > 0){
-            new ContentVersionUtil(idToContentVersionMap).processContVerRecs();
+          //  new ContentVersionUtil(idToContentVersionMap).processContVerRecs();
            System.debug(' submit to doc man content versions : ' + idToContentVersionMap);
           }
       } else if(httpResponse.getStatusCode() == 202) {

@@ -33,15 +33,15 @@ export default class DocumentScanProgressBar extends LightningElement {
                         result.forEach(record => {
                             // Access fields of each sObject
                             console.log("Record Name: ", record.Title);
-                            console.log("Record Name: ", record.Id);
+                            console.log("Record Id: ", record.Id);
                             // Process other fields as per your requirement
                         });
-                        this.documents = result;
-                        this.eventPublisher(this.documents);
-                        const event = new CustomEvent('documentsreceived', { 
-                            detail: result
-                        });
-                        console.log("event: " + event.detail);
+                       // this.documents = result;
+                        this.eventPublisher(result);
+                        // const event = new CustomEvent('documentsreceived', { 
+                        //     detail: result
+                        // });
+                        // console.log("event: " + event.detail);
                         this.dispatchEvent(event);
                     }
                     
@@ -54,12 +54,14 @@ export default class DocumentScanProgressBar extends LightningElement {
         }, 45000); // Query every 5 seconds (adjust as per your requirement)
     }
 
-    eventPublisher(documents) {
+    eventPublisher(result) {
+        const documents = result.map(record => ({
+            filename: record.Title,
+            url: `/sfc/servlet.shepherd/version/download/${record.Id}`
+        }));
         const event = new CustomEvent('documentsreceived', { 
-            detail: this.taskid
+            detail: documents
         });
-        console.log("event: " + event.detail);
-        console.log("documents: " + documents);
         this.dispatchEvent(event);
     }
 }
