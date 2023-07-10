@@ -6389,7 +6389,7 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>LLC_BI__AccountDocument__c.Zen_Trend__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -6554,7 +6554,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>LLC_BI__LLC_LoanDocument__c.Zen_Trend__c</field>
         <readable>true</readable>
     </fieldPermissions>
