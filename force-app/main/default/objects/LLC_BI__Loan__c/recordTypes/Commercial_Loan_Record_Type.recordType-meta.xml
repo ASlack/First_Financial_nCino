@@ -6,167 +6,21 @@
     <description>This Record Type will Apply to Commercial Loans</description>
     <label>Commercial Loan Record Type</label>
     <picklistValues>
-        <picklist>Auto_Pay_Account_Type__c</picklist>
+        <picklist>Zen_Hold_Mail_Code__c</picklist>
         <values>
-            <fullName>Checking</fullName>
+            <fullName>A</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Savings</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>LLC_BI__Stage__c</picklist>
-        <values>
-            <fullName>Approval %2F Loan Committee</fullName>
+            <fullName>H</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Booked</fullName>
+            <fullName>I</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Booking %26 Funding</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Closing</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Credit Underwriting</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Doc Prep</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Final Review</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Processing</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Proposal</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Qualification</fullName>
-            <default>true</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>Real_Estate_Sub_Type__c</picklist>
-        <values>
-            <fullName>Assisted Living Facility</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Car Washes</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Church</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Convenience Stores</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Daycare Facility</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Dealership</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>For Profit Schools</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Funeral Homes</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>General Commercial Warehouse</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Gym%2FDance%2FSports Facility</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Healthcare - Single-Tenant Office</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Hotel %2F Motel</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Manufacturing Plant</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Medical %E2%80%93 ER Facility %2F Surgery Centers</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Multi-Tenant Office Space %E2%80%93 Medical</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Multi-Tenant Office Space %E2%80%93 Non-Medical</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Multi-Tenant Shopping Center</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Nonprofit School %2F College %2F University</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Nursing Homes</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Office - Single-Tenant Non-healthcare</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Other</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>RV Parks</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Restaurants %E2%80%93 Fast Food %2F Fast Casual</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Restaurants %E2%80%93 Table Service</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Retail - Big box</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Retail - Single-Tenant %2F Free Standing</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Self-Storage Facilities</fullName>
+            <fullName>Y</fullName>
             <default>false</default>
         </values>
     </picklistValues>
