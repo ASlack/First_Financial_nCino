@@ -2,7 +2,7 @@
  * @description       : Controller to provide backend services to Document Scan UI components
  * @author            : Zennify
  * @group             : 
- * @last modified on  : 07-09-2023
+ * @last modified on  : 07-10-2023
  * @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
 **/
 public without sharing class DocumentScanController {
@@ -63,20 +63,13 @@ public without sharing class DocumentScanController {
   }
     
   @AuraEnabled
-  public static List<ContentDocument> getContentDocuments(String taskid) {
-    List<ContentDocument> docs = new List<ContentDocument>();
+  public static List<ContentVersion> getContentVersion(String taskid) {
     try {
-      docs = [
-        SELECT Id, 
-               Title
-        FROM ContentDocument 
-        WHERE Id IN (SELECT ContentDocumentId FROM ContentVersion WHERE ExternalJobId__c = :taskId)
-      ];
+        System.debug( ' controller getCOntentDocuments : ' + taskid  + ' size : ' + [ SELECT Id, Title FROM ContentVersion WHERE ExternalJobId__c = :taskid].size());
+      return [ SELECT Id, Title FROM ContentVersion WHERE ExternalJobId__c = :taskid];
     } catch (Exception e) {
       throw new AuraHandledException(e.getMessage());
     }
-	System.debug(' list of docs : ' + docs);
-    return docs;
   }
 
   public class DocumentScanControllerAsync implements Queueable , Database.AllowsCallouts {
@@ -118,7 +111,7 @@ public without sharing class DocumentScanController {
             idToContentVersionMap.put(c.Id, c);
           }
           if(idToContentVersionMap.size() > 0){
-          //  new ContentVersionUtil(idToContentVersionMap).processContVerRecs();
+           new ContentVersionUtil(idToContentVersionMap).processContVerRecs();
            System.debug(' submit to doc man content versions : ' + idToContentVersionMap);
           }
       } else if(httpResponse.getStatusCode() == 202) {

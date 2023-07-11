@@ -2,6 +2,7 @@
 <PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
     <hasActivationRequired>false</hasActivationRequired>
     <label>Lender Persona</label>
+    <permissionSets>Document_Manager_Edit_Trend</permissionSets>
     <permissionSets>LLC_BI__Product_Package_Pending_Loan_Edit_Permission</permissionSets>
     <permissionSets>NDOC__Document_Manager_Delete_Placeholders</permissionSets>
     <permissionSets>NDOC__Document_Manager_Grant_Viewer_Permissions</permissionSets>

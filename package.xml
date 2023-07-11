@@ -21619,6 +21619,7 @@
         <members>LLC_BI__Loan__c.Counter_Offer_Letter_Sent__c</members>
         <members>LLC_BI__Loan__c.Counter_Offer_Verbally_Advised__c</members>
         <members>LLC_BI__Loan__c.Counteroffer_Received__c</members>
+        <members>LLC_BI__Loan__c.CreditLife__c</members>
         <members>LLC_BI__Loan__c.Cumulative_Days_of_Extensions__c</members>
         <members>LLC_BI__Loan__c.Date_of_Adverse_Action_and_Counter__c</members>
         <members>LLC_BI__Loan__c.Decision_Due_Date__c</members>
@@ -21627,6 +21628,7 @@
         <members>LLC_BI__Loan__c.Decision_Hold_Reason__c</members>
         <members>LLC_BI__Loan__c.Decision_Resume_Date__c</members>
         <members>LLC_BI__Loan__c.Declined_Date__c</members>
+        <members>LLC_BI__Loan__c.Disability__c</members>
         <members>LLC_BI__Loan__c.Do_you_own_the_property_that_is_going_to__c</members>
         <members>LLC_BI__Loan__c.Due_Date_for_Client_to_Respond_Counter__c</members>
         <members>LLC_BI__Loan__c.EarliestClosingDate__c</members>
@@ -22013,12 +22015,14 @@
         <members>LLC_BI__Loan__c.UW_RFI_Date__c</members>
         <members>LLC_BI__Loan__c.UW_RFI_Due_Date__c</members>
         <members>LLC_BI__Loan__c.UW_RFI_Received_Date__c</members>
+        <members>LLC_BI__Loan__c.Unemployment__c</members>
         <members>LLC_BI__Loan__c.Unsatisfied_Conditions_Booked__c</members>
         <members>LLC_BI__Loan__c.Unsatisfied_Conditions_Closing__c</members>
         <members>LLC_BI__Loan__c.Unsatisfied_Conditions__c</members>
         <members>LLC_BI__Loan__c.What_is_the_purpose_of_the_loan__c</members>
         <members>LLC_BI__Loan__c.Withdrawn_Date__c</members>
         <members>LLC_BI__Loan__c.Zen_Consumer_Source__c</members>
+        <members>LLC_BI__Loan__c.Zen_Hold_Mail_Code__c</members>
         <members>LLC_BI__Loan__c.Zen_Owner_Occupied__c</members>
         <members>LLC_BI__Loan__c.Zen_Total_Percent_Participation__c</members>
         <members>LLC_BI__Loan__c.cm_Available_Amount__c</members>
@@ -23449,6 +23453,7 @@
         <members>LLC_BI__Service_Mgmt_Detail__c.cm_Zoning__c</members>
         <members>LLC_BI__Service_Mgmt_Detail__c.zen_Other_Insurance_Company__c</members>
         <members>LLC_BI__Service_Mgmt_Detail__c.zen_Renewed_Date__c</members>
+        <members>LLC_BI__Service_Mgmt__c.Flood_Process_Notes__c</members>
         <members>LLC_BI__Service_Mgmt__c.LLC_BI__Account__c</members>
         <members>LLC_BI__Service_Mgmt__c.LLC_BI__Collateral__c</members>
         <members>LLC_BI__Service_Mgmt__c.LLC_BI__Contact__c</members>
@@ -29999,6 +30004,7 @@
         <members>SCOC__Credit_Pass_Review_Template_SCOC</members>
         <members>SCOC__Credit_Report_Type_SCOC</members>
         <members>SCOC__Credit_Report_Type_Template_SCOC</members>
+        <members>Service_Mgmt_Chatter</members>
         <members>Service_Mgmt_Record_Created_Chatter_Notification</members>
         <members>Set_Initial_Application_Date</members>
         <members>Sub_Loan_Created_Update_Stage</members>
@@ -30097,6 +30103,7 @@
         <members>SCOC__Credit_Pass_Review_Template_SCOC</members>
         <members>SCOC__Credit_Report_Type_SCOC</members>
         <members>SCOC__Credit_Report_Type_Template_SCOC</members>
+        <members>Service_Mgmt_Chatter</members>
         <members>Service_Mgmt_Record_Created_Chatter_Notification</members>
         <members>Set_Initial_Application_Date</members>
         <members>Sub_Loan_Created_Update_Stage</members>
@@ -31731,6 +31738,7 @@
         <members>Data_Services_PS</members>
         <members>Deal_Management</members>
         <members>Doc_Prep_Home_Page_Permission_Set</members>
+        <members>Document_Manager_Edit_Trend</members>
         <members>EFPIO__Package_Registry_Info_Access</members>
         <members>EXUS__EXUS_Credit_View_Requests</members>
         <members>EXUS__EXUS_Credit_View_Responses</members>

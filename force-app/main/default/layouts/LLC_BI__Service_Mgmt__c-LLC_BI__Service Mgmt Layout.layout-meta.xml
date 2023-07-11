@@ -20,7 +20,7 @@
                 <field>ffin_Service_Type_Category__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Required</behavior>
+                <behavior>Edit</behavior>
                 <field>ffin_Internal_Servicer__c</field>
             </layoutItems>
         </layoutColumns>
@@ -37,6 +37,10 @@
                 <behavior>Edit</behavior>
                 <field>LLC_BI__Service_Provider_Contact__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Flood_Process_Notes__c</field>
+            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
@@ -47,7 +51,7 @@
         <label>Service Related To</label>
         <layoutColumns>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Required</behavior>
                 <field>LLC_BI__Loan__c</field>
             </layoutItems>
             <layoutItems>

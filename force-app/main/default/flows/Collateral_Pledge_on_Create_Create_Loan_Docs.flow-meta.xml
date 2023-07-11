@@ -128,7 +128,7 @@
         <recordTriggerType>Create</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
     </start>
-    <status>Draft</status>
+    <status>Obsolete</status>
     <variables>
         <name>LoanDocsToInsert</name>
         <dataType>SObject</dataType>

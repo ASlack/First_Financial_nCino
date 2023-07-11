@@ -2,8 +2,8 @@
   @description       : Component to display parsed pdf files
   @author            : Zennify
   @group             : 
-  @last modified on  : 06-05-2023
-  @last modified by  : Cristiano Sinadino
+  @last modified on  : 07-10-2023
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
 -->
 <template>
 	<lightning-card title="Document Scan Review">
@@ -16,9 +16,9 @@
 							<div class="column-flex">
 								<div class="doc-header-container">
 									<p class="nowrap" title={document.filename}> {document.filename} </p>
-									<lightning-button-icon icon-name="utility:edit"
+									<!-- <lightning-button-icon icon-name="utility:edit"
 										alternative-text="Edit document title" title="Edit" variant="container"
-										class="slds-m-left_xx-small"></lightning-button-icon>
+										class="slds-m-left_xx-small"></lightning-button-icon> -->
 								</div>
 								<iframe class="iframe-style" src={document.url}></iframe>
 							</div>

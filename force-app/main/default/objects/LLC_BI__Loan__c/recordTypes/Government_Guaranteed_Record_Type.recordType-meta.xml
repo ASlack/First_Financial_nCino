@@ -108,29 +108,6 @@
         </values>
     </picklistValues>
     <picklistValues>
-        <picklist>EscrowItems__c</picklist>
-        <values>
-            <fullName>FL</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>HO</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>MD</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>TX</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>WI</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
         <picklist>IcertifythisloanhasJointIntent__c</picklist>
         <values>
             <fullName>No</fullName>
@@ -1014,6 +991,25 @@
         </values>
         <values>
             <fullName>LaserPro</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Zen_Hold_Mail_Code__c</picklist>
+        <values>
+            <fullName>A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>H</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Y</fullName>
             <default>false</default>
         </values>
     </picklistValues>

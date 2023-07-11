@@ -61,6 +61,7 @@ export default class DocumentScanSubmission extends LightningElement {
   }
 
   handleLoanRadioGroupChange(event) {
+    console.log(' selected event ' + event.target.value);
     this.selectedLoan = event.target.value;
   }
 
@@ -80,18 +81,15 @@ export default class DocumentScanSubmission extends LightningElement {
   handleUploadFinished(event) {
     this.fileUploaded = event.detail.files[0];
     this.documentId = this.fileUploaded.contentVersionId;
-    this.loanId = this.matchingLoans[0].Id;
-    this.matchingLoans.forEach(loan => { console.log( 'loan' + loan.Id )});
-
-    console.log(' loand id ' + this.loanId);
   }
 
   handleScanAndSplitButton() {
     this.isLoading = true;
 
-    parseDocument({ loanNumber: this.loanId, documentId: this.documentId })
+    parseDocument({ loanNumber: this.selectedLoan, documentId: this.documentId })
       .then((result) => {
         this.taskid = result;
+        console.log('taskid ' + this.taskid);
       })
       .catch((error) => {
         console.log(error);
@@ -119,5 +117,3 @@ export default class DocumentScanSubmission extends LightningElement {
 
   }
 }
-
-``

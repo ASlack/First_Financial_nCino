@@ -320,6 +320,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>ContentVersionUtil</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>DMAdmin__CollateralTypeCCL</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -78303,6 +78307,11 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Loan__c.CreditLife__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>LLC_BI__Loan__c.Cumulative_Days_of_Extensions__c</field>
         <readable>true</readable>
@@ -78341,6 +78350,11 @@
         <editable>false</editable>
         <field>LLC_BI__Loan__c.Declined_Date__c</field>
         <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Loan__c.Disability__c</field>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -80273,6 +80287,11 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Loan__c.Unemployment__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>LLC_BI__Loan__c.Unsatisfied_Conditions_Booked__c</field>
         <readable>false</readable>
@@ -80300,6 +80319,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>LLC_BI__Loan__c.Zen_Consumer_Source__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Loan__c.Zen_Hold_Mail_Code__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -86951,6 +86975,11 @@
         <editable>false</editable>
         <field>LLC_BI__Service_Mgmt_Detail__c.zen_Renewed_Date__c</field>
         <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Service_Mgmt__c.Flood_Process_Notes__c</field>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -102926,6 +102955,10 @@
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
+        <flow>Collateral_Pledge_on_Create_Create_Loan_Docs</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
         <flow>Contact_Create_Edit_All_LOB_Baseline</flow>
     </flowAccesses>
     <flowAccesses>
@@ -103075,6 +103108,10 @@
     <flowAccesses>
         <enabled>false</enabled>
         <flow>Review_Created_Update_Record</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Service_Mgmt_Chatter</flow>
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
