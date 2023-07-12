@@ -21306,6 +21306,7 @@
         <members>LLC_BI__Loan__c.Counter_Offer_Letter_Sent__c</members>
         <members>LLC_BI__Loan__c.Counter_Offer_Verbally_Advised__c</members>
         <members>LLC_BI__Loan__c.Counteroffer_Received__c</members>
+        <members>LLC_BI__Loan__c.CreditLife__c</members>
         <members>LLC_BI__Loan__c.Cumulative_Days_of_Extensions__c</members>
         <members>LLC_BI__Loan__c.Date_of_Adverse_Action_and_Counter__c</members>
         <members>LLC_BI__Loan__c.Decision_Due_Date__c</members>
@@ -21314,6 +21315,7 @@
         <members>LLC_BI__Loan__c.Decision_Hold_Reason__c</members>
         <members>LLC_BI__Loan__c.Decision_Resume_Date__c</members>
         <members>LLC_BI__Loan__c.Declined_Date__c</members>
+        <members>LLC_BI__Loan__c.Disability__c</members>
         <members>LLC_BI__Loan__c.Do_you_own_the_property_that_is_going_to__c</members>
         <members>LLC_BI__Loan__c.Due_Date_for_Client_to_Respond_Counter__c</members>
         <members>LLC_BI__Loan__c.EarliestClosingDate__c</members>
@@ -21653,6 +21655,7 @@
         <members>LLC_BI__Loan__c.Last_Approver_for_Memo__c</members>
         <members>LLC_BI__Loan__c.Lead_Referral_Comments__c</members>
         <members>LLC_BI__Loan__c.Legal_Firm_Customer__c</members>
+        <members>LLC_BI__Loan__c.Loan_Agreement__c</members>
         <members>LLC_BI__Loan__c.Loan_Collateral_Sub_Type__c</members>
         <members>LLC_BI__Loan__c.Loan_Collateral_Type__c</members>
         <members>LLC_BI__Loan__c.Loan_Secured_by_1st_Lien_on_Dwelling__c</members>
@@ -21684,6 +21687,7 @@
         <members>LLC_BI__Loan__c.UW_RFI_Date__c</members>
         <members>LLC_BI__Loan__c.UW_RFI_Due_Date__c</members>
         <members>LLC_BI__Loan__c.UW_RFI_Received_Date__c</members>
+        <members>LLC_BI__Loan__c.Unemployment__c</members>
         <members>LLC_BI__Loan__c.Unsatisfied_Conditions_Booked__c</members>
         <members>LLC_BI__Loan__c.Unsatisfied_Conditions_Closing__c</members>
         <members>LLC_BI__Loan__c.Unsatisfied_Conditions__c</members>
@@ -23069,6 +23073,7 @@
         <members>LLC_BI__Service_Mgmt_Detail__c.cm_Zoning__c</members>
         <members>LLC_BI__Service_Mgmt_Detail__c.zen_Other_Insurance_Company__c</members>
         <members>LLC_BI__Service_Mgmt_Detail__c.zen_Renewed_Date__c</members>
+        <members>LLC_BI__Service_Mgmt__c.Flood_Process_Notes__c</members>
         <members>LLC_BI__Service_Mgmt__c.LLC_BI__Account__c</members>
         <members>LLC_BI__Service_Mgmt__c.LLC_BI__Collateral__c</members>
         <members>LLC_BI__Service_Mgmt__c.LLC_BI__Contact__c</members>
@@ -28980,6 +28985,14 @@
         <members>LLC_BI__Loan__c.LLC_BI__UI_Loan_Summary</members>
         <members>LLC_BI__Loan__c.LLC_BI__UI_Lookup_Fields</members>
         <members>LLC_BI__Loan__c.LLC_BI__UI_Referral_Information</members>
+        <members>LLC_BI__Loan__c.LP_Reivew_Collateral_Summary</members>
+        <members>LLC_BI__Loan__c.LP_Review_Classification_Data</members>
+        <members>LLC_BI__Loan__c.LP_Review_Customer_Summary</members>
+        <members>LLC_BI__Loan__c.LP_Review_Disbursement</members>
+        <members>LLC_BI__Loan__c.LP_Review_Int_Rate_Selection</members>
+        <members>LLC_BI__Loan__c.LP_Review_Loan_Docs_Doc_Options</members>
+        <members>LLC_BI__Loan__c.LP_Review_Payment_Calculation</members>
+        <members>LLC_BI__Loan__c.LaserPro_Review_Loan_Request</members>
         <members>LLC_BI__Loan__c.Loan_Deal_Proposal_Cancel_Field_Set</members>
         <members>LLC_BI__Loan__c.Loan_Deal_Proposal_Edit_Card</members>
         <members>LLC_BI__Loan__c.MemoCategoryLoanInformation</members>
@@ -29434,6 +29447,7 @@
         <members>SCOC__Credit_Pass_Review_Template_SCOC</members>
         <members>SCOC__Credit_Report_Type_SCOC</members>
         <members>SCOC__Credit_Report_Type_Template_SCOC</members>
+        <members>Service_Mgmt_Chatter</members>
         <members>Service_Mgmt_Record_Created_Chatter_Notification</members>
         <members>Set_Initial_Application_Date</members>
         <members>Sub_Loan_Created_Update_Stage</members>
