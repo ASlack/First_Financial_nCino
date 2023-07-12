@@ -52,7 +52,7 @@ public without sharing class DocumentScanController {
             }
             System.debug('taskIds : ' + taskIds);
             if (taskIds.size() > 0) {
-                System.enqueueJob(new DocumentScanControllerAsync(taskIds, 1), 1);
+                System.enqueueJob(new DocumentScanControllerAsync(taskIds, 1), 2);
             }
         
         return taskIds[0];
@@ -115,7 +115,7 @@ public without sharing class DocumentScanController {
            System.debug(' submit to doc man content versions : ' + idToContentVersionMap);
           }
       } else if(httpResponse.getStatusCode() == 202) {
-                System.enqueueJob(new DocumentScanControllerAsync(taskIds, attempts), 2);
+                System.enqueueJob(new DocumentScanControllerAsync(taskIds, attempts), 1);
       } 
     }
   }

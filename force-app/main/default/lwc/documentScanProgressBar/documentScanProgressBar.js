@@ -4,7 +4,7 @@ export default class DocumentScanProgressBar extends LightningElement {
     @api taskid;
     data;
     isQuerying = false;
-    progress = 7;
+    progress = 5;
     message = 'Scanning documents...'
     @api documents;
     isPolling = false;
@@ -22,7 +22,7 @@ export default class DocumentScanProgressBar extends LightningElement {
         this.isQuerying = setInterval(() => {
             console.log("startDataQuerying called");
             this.progress += 3;
-            this.message = 'Working on it...please give us a moment.';
+            this.message = 'Working on it...please give us a few minutes.';
             getDocuments({ taskid: this.taskid })
                 .then(result => {
     
@@ -46,7 +46,7 @@ export default class DocumentScanProgressBar extends LightningElement {
                     console.log("error: " + error);
                     this.stopDataPolling();
                 });
-        }, 5000); // Query every 5 seconds (adjust as per your requirement)
+        }, 15000); // Query every 5 seconds (adjust as per your requirement)
     }
 
     eventPublisher(result) {
@@ -59,6 +59,8 @@ export default class DocumentScanProgressBar extends LightningElement {
         });
         this.dispatchEvent(event);
     }
+
+
 
     stopDataPolling() {
         clearInterval(this.isQuerying);

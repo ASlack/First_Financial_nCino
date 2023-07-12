@@ -185,7 +185,7 @@
     <textTemplates>
         <name>PendingMessage</name>
         <isViewedAsPlainText>true</isViewedAsPlainText>
-        <text>@[{!$Record.CreatedById}] The status of your flood approval process has been changed to Pending. Please contact the assigned Internal Servicer to determine what is needed.</text>
+        <text>@[{!$Record.CreatedById}] The status of your flood approval process has been changed to Pending. Please review the Flood Process Notes field for additional information or contact your Internal Servicer if you have any additional questions.</text>
     </textTemplates>
     <textTemplates>
         <name>Phase1CompleteMessage</name>

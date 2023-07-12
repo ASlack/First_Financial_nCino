@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LP_Review_Loan_Docs_Doc_Options</fullName>
+    <description>Loan Documents/Document Options screen section in LaserPro sub-route</description>
+    <displayedFields>
+        <field>Loan_Agreement__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>Region__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>LP Review-Loan Docs/Doc Options</label>
+</FieldSet>
