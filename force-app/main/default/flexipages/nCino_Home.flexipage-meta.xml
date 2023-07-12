@@ -57,9 +57,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>richTextValue</name>
-                    <value>Quick Links:&lt;br /&gt;
-&lt;br /&gt;
-Add website links here!</value>
+                    <value>&lt;p&gt;Quick Links:&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://firstfinancialbank.vmpclient.com/Admin/OrderManagement/Orders.aspx&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;Mercury&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://firstfinancialbank.realwired.com/&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;Real Wired&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://ffin.sharepoint.com/Pages/CDPQ%20Documents%20New.aspx&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;CDPQ Forms For DocPrep&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:richText</componentName>
                 <identifier>flexipage_richText</identifier>
@@ -98,8 +96,12 @@ Add website links here!</value>
                     <value>1440</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
+                    <name>label</name>
+                    <value>Approved &amp; Closing Next 30 Days</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
                     <name>reportName</name>
-                    <value>Covenants_Upcoming</value>
+                    <value>Closing_Next_30_DaysRegions_DMn</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>showRefreshButton</name>

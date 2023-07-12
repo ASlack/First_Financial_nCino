@@ -1,81 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>UI_Loan_Attributes</fullName>
-    <description>UI &gt; Loan Information &gt; Loan Attributes</description>
+    <fullName>LP_Review_Classification_Data</fullName>
+    <description>Classification Data screen section in LaserPro sub-route</description>
     <displayedFields>
-        <field>LLC_BI__Is_SBA__c</field>
+        <field>LLC_BI__CloseDate__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>JHJX__LOCCode__c</field>
+        <field>LLC_BI__lookupKey__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>LLC_BI__SBA__c</field>
+        <field>LLC_BI__Product_Type__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>JHJX__LOCGdnceType__c</field>
+        <field>LLC_BI__Branch__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>LLC_BI__SBA_Guarantee__c</field>
+        <field>LLC_BI__Loan_Officer__r.LLC_BI__Officer_Number__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>JHJX__LOCGdnceBorwAck__c</field>
+        <field>LLC_BI__Loan_Class__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>LLC_BI__UCC_County__c</field>
+        <field>Loan_Collateral_Sub_Type__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>JHJX__LOCPrtcpCode__c</field>
+        <field>LLC_BI__Class_Code__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>LLC_BI__Is_Participation__c</field>
+        <field>JHJX__CallReportCode__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>JHJX__LOCGdnceRedType__c</field>
+        <field>ffin_Purpose_Code__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>cm_Property_is_in_a_Flood_Zone__c</field>
+        <field>LLC_BI__Product__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>CreditLife__c</field>
+        <field>cm_Method_of_Doc_Prep__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>Disability__c</field>
+        <field>ffin_Prepayment_Penalty_Setup__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>Unemployment__c</field>
+        <field>LLC_BI__Auto_Pay__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>Loan_Agreement__c</field>
+        <field>Auto_Pay_Account_Type__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
-    <label>UI - Loan Attributes</label>
+    <displayedFields>
+        <field>LLC_BI__Auto_Pay_Account__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>Auto_Pay_Routing_Number__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>LP Review-Classification Data</label>
 </FieldSet>

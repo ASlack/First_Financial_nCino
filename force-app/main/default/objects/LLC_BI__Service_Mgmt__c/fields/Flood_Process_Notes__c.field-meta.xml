@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flood_Process_Notes__c</fullName>
+    <description>Notes for Flood Approval</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This will be used for notes back and forth between the Flood Approval team and the Lender/Lending Assistant</inlineHelpText>
+    <label>Flood Process Notes</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>
