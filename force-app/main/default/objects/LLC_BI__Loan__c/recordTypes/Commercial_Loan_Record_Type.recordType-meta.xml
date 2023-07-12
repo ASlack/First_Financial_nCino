@@ -6,6 +6,29 @@
     <description>This Record Type will Apply to Commercial Loans</description>
     <label>Commercial Loan Record Type</label>
     <picklistValues>
+        <picklist>Loan_Agreement__c</picklist>
+        <values>
+            <fullName>--None--</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agricultural</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asset Based</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>Zen_Hold_Mail_Code__c</picklist>
         <values>
             <fullName>A</fullName>

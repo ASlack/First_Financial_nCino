@@ -1,59 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>UI_Loan_Attributes</fullName>
-    <description>UI &gt; Loan Information &gt; Loan Attributes</description>
+    <fullName>LP_Review_Payment_Calculation</fullName>
+    <description>Payment Calculation screen section in LaserPro sub-route</description>
     <displayedFields>
-        <field>LLC_BI__Is_SBA__c</field>
+        <field>LLC_BI__Payment_Schedule__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>JHJX__LOCCode__c</field>
+        <field>JHJX__OriginationDate__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>LLC_BI__SBA__c</field>
+        <field>LLC_BI__First_Payment_Date__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>JHJX__LOCGdnceType__c</field>
+        <field>LLC_BI__Maturity_Date__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>LLC_BI__SBA_Guarantee__c</field>
+        <field>LLC_BI__Monthly_Payment__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>JHJX__LOCGdnceBorwAck__c</field>
+        <field>LLC_BI__Amortized_Term_Months__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>LLC_BI__UCC_County__c</field>
+        <field>LLC_BI__Calculated_Balloon_Amount__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>JHJX__LOCPrtcpCode__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </displayedFields>
-    <displayedFields>
-        <field>LLC_BI__Is_Participation__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </displayedFields>
-    <displayedFields>
-        <field>JHJX__LOCGdnceRedType__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </displayedFields>
-    <displayedFields>
-        <field>cm_Property_is_in_a_Flood_Zone__c</field>
+        <field>LLC_BI__Balloon_Payment__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
@@ -72,10 +57,5 @@
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
-    <displayedFields>
-        <field>Loan_Agreement__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </displayedFields>
-    <label>UI - Loan Attributes</label>
+    <label>LP Review-Payment Calculation</label>
 </FieldSet>
